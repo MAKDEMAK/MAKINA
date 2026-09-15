@@ -1,0 +1,64 @@
+id: f2-mechanical-machine-tool-automation-1871-cnc-era
+frente: front-2
+cycle_id: 2026-09-15T20
+tema_objeto: automatización mecánica de máquinas-herramienta mediante secuencias físicas
+afirmacion_principal: >-
+  Décadas antes del control numérico, tornos automáticos realizaban ciclos de mecanizado completos mediante mecanismos
+  físicos como levas, trazadores y secuencias de herramientas. La rama no desapareció por fracaso: fue parcialmente
+  desplazada por NC/CNC porque el control codificado desacopló la geometría y la secuencia de trabajo del utillaje físico,
+  aunque máquinas mecánicas continuaron en servicio y pueden seguir siendo competitivas en producción de gran volumen.
+nombre_proyecto_o_artefacto: automatic screw machine / cam-operated automatic lathe
+periodo_historico: 1871-presente, con desplazamiento principal desde 1950s-1970s
+pais_contexto: Estados Unidos y otros centros industriales
+disciplina: [máquinas-herramienta, fabricación, automatización mecánica]
+problema_original: producir piezas torneadas repetitivas con mínima intervención del operador y alta cadencia
+principio_tecnico: >-
+  El movimiento y la secuencia de herramientas se codifican físicamente en mecanismos de máquina —incluidas levas,
+  trazadores, pantógrafos y torretas— que sincronizan operaciones repetibles a partir de un accionamiento común.
+estado_historico: desplazamiento parcial / supervivencia de nicho
+resultado_real_alcanzado: >-
+  Smithsonian conserva la máquina automática de Charles Vander Woerd, inventada en 1871 para fabricar tornillos de reloj;
+  la tecnología evolucionó a familias de screw machines y automatic lathes plenamente automáticas. Desde los años 1950,
+  NC y luego CNC introdujeron control mediante información codificada en lugar de depender exclusivamente de guías físicas.
+causa_documentada: >-
+  NC/CNC permitió programar y modificar trayectorias complejas mediante datos; la literatura histórica describe el paso
+  desde plantillas/trazadores y automatización mecánica hacia control numérico. La flexibilidad favoreció el desplazamiento,
+  no una incapacidad absoluta de las máquinas mecánicas.
+causas_alternativas:
+  - preparación especializada y fabricación de levas para cambiar trabajos
+  - ventaja de CNC para lotes variables y geometrías complejas
+camino_que_lo_desplazo_si_existe: control numérico y posteriormente computer numerical control (CNC)
+fuentes:
+  - url: https://americanhistory.si.edu/collections/object/nmah_1203377
+    titulo: Automatic Screw Making Machine
+    tipo: catálogo museístico Smithsonian
+    fecha: null
+  - url: https://infinite.mit.edu/video/mit-science-reporter%E2%80%94automatically-programmed-tools-1959/
+    titulo: 'MIT Science Reporter — Automatically Programmed Tools (1959)'
+    tipo: documento audiovisual institucional contemporáneo
+    fecha: 1959
+  - url: https://books.google.com/books/about/Automatic_Screw_Machine_Cam_and_Tool_Des.html?id=xMSgpwAACAAJ
+    titulo: Automatic Screw Machine Cam and Tool Design
+    tipo: manual industrial / registro bibliográfico
+    fecha: 1969
+nivel_evidencia: A
+datos_cuantitativos:
+  - Vander Woerd inventó su máquina en 1871 y la mejoró desde 1874
+  - demostración de factibilidad del NC del MIT: 1952
+limitaciones:
+  - no constituye una rama extinta: tornos automáticos mecánicos siguieron funcionando después de la adopción de CNC
+  - la evidencia de este paquete describe una familia tecnológica, no un único modelo abandonado
+contradicciones:
+  - decir que CNC 'reemplazó' por completo las automáticas mecánicas sería falso; coexistieron y persisten nichos de alto volumen
+incertidumbres:
+  - el grado y fecha del desplazamiento varía por industria, pieza y volumen de producción
+etiquetas_neutrales: [machine-tool, mechanical-automation, cams, physical-programming, nc, cnc, partially-displaced]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+hecho_documentado: >-
+  Smithsonian documenta una máquina automática para tornillos de 1871; MIT documentó en 1959 que el control numérico
+  utilizaba números codificados en cinta para gobernar automáticamente servomecanismos de máquinas-herramienta.
+testimonio: null
+interpretacion: >-
+  La característica arqueológica importante es que una secuencia de fabricación podía estar 'programada' en la forma y
+  disposición del mecanismo físico; NC/CNC trasladó esa representación desde materia/utillaje hacia información codificada.
