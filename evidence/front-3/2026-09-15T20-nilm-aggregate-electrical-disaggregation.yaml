@@ -1,0 +1,39 @@
+id: f3-20260915-20-nilm-aggregate-electrical-disaggregation
+frente: front-3
+cycle_id: 2026-09-15T20
+tema_objeto: desagregacion no intrusiva de cargas desde alimentacion electrica agregada
+afirmacion_principal:
+  hecho: "NILM permite inferir estados y consumo de aparatos individuales usando solo señales agregadas de voltaje/corriente/potencia medidas en el punto de entrada, sin instrumentar cada aparato."
+  hipotesis: null
+  interpretacion: "La alimentación común puede funcionar como canal proxy para volver observables múltiples artefactos existentes con un único punto de medición."
+funcion: inferir
+principio_de_mediacion: "detectar cambios o estados característicos en la señal eléctrica agregada y desagregarlos mediante firmas eléctricas/modelos temporales"
+variable_fisica_entrada: "voltaje, corriente y/o potencia eléctrica agregada"
+senal_o_estado_salida: "identidad/estado operativo y estimación de potencia por carga"
+modalidad: electrica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "dependiente del método; revisión 2026 reporta un sistema SVM embebido con 91% de exactitud y métodos recientes >0.9 F1 para ciertos aparatos/datasets"
+latencia: "dependiente del muestreo/modelo; existen implementaciones de tiempo real"
+condiciones_de_prueba: "hogares, edificios e instalaciones industriales; rendimiento sensible a frecuencia de muestreo, simultaneidad de eventos, cargas desconocidas y transferencia entre sitios"
+fuentes:
+  - url: "https://doi.org/10.3390/en19081883"
+    titulo: "Non-Intrusive Load Monitoring: A Systematic Review of Methods, Scenario-Specific Challenges, and Pathways to Practical Deployment"
+    tipo: revision_sistematica
+    fecha: 2026-04-13
+nivel_evidencia: A
+datos_cuantitativos:
+  - "revisión: implementación SVM embebida citada con 91% de exactitud"
+  - "revisión: método Transformer/attention citado con F1 global 92.96% en UK-DALE"
+mecanismo_o_principio: "firmas de estado/transitorios eléctricos + detección de eventos o mapeo temporal estado-a-estado"
+limitaciones:
+  - "eventos simultáneos producen firmas superpuestas"
+  - "aparatos desconocidos y variación entre hogares degradan generalización"
+  - "alta frecuencia mejora riqueza de firmas pero aumenta hardware, datos y coste"
+contradicciones:
+  - "la no intrusividad es respecto de cada carga; sigue requiriendo instrumentar el suministro agregado"
+etiquetas_neutrales: [NILM, proxy, energia, desagregacion, observabilidad, legacy]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
