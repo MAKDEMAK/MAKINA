@@ -1,0 +1,43 @@
+id: f3-20260915-20-self-powered-triboelectric-vibration
+frente: front-3
+cycle_id: 2026-09-15T20
+tema_objeto: transduccion triboelectrica autoalimentada de vibracion
+ afirmacion_principal:
+  hecho: "Un sensor B-TENG convierte vibración mecánica de baja frecuencia en señal eléctrica sin alimentación externa y permite recuperar frecuencia, amplitud y dirección."
+  hipotesis: null
+  interpretacion: "La energía del propio fenómeno observado puede alimentar la transducción, reduciendo la necesidad de electrónica activa en el punto de sensado."
+funcion: medir
+principio_de_mediacion: "movimiento inercial de una esfera PTFE cargada cambia el potencial inducido entre electrodos; la señal eléctrica codifica la excitación mecánica"
+variable_fisica_entrada: "vibración: frecuencia, amplitud y dirección"
+senal_o_estado_salida: "voltaje/corriente triboeléctrica proporcional y periodicidad eléctrica"
+modalidad: triboelectrica_mecanica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "1–5 Hz; resolución 0.1 Hz; sensibilidad de amplitud ~0.97 V/mm y resolución mínima 0.1 mm a 2 Hz; resolución angular reportada 1.5°"
+latencia: "respuesta física inmediata; extracción de frecuencia en experimento mediante FFT"
+condiciones_de_prueba: "excitación sinusoidal 1–5 Hz, amplitudes 2–14 mm; pruebas en aire y dispositivo sellado bajo agua; adquisición experimental a 500 Hz"
+fuentes:
+  - url: "https://doi.org/10.3390/s24123817"
+    titulo: "A Low-Frequency Vibration Sensor Based on Ball Triboelectric Nanogenerator for Marine Pipeline Condition Monitoring"
+    tipo: articulo_experimental_peer_reviewed
+    fecha: 2024-06-14
+nivel_evidencia: B
+datos_cuantitativos:
+  - "error medio de frecuencia ~0.67%"
+  - "error medio de amplitud ~4.4%"
+  - "error de dirección ~5%"
+  - "R² ~0.99 entre frecuencia de señal y excitación"
+  - "10,000 ciclos de estabilidad ensayados, con ligera caída de voltaje"
+mecanismo_o_principio: "triboelectrificación + inducción electrostática de una masa inercial suspendida"
+limitaciones:
+  - "ancho útil depende de geometría y resonancia; prototipo con resonancia ~3.04 Hz"
+  - "al contactar la esfera con electrodos la magnitud deja de crecer, limitando medición de amplitud"
+  - "carga superficial PTFE disminuye con humedad/iones; se observó ligera degradación tras 10,000 ciclos"
+  - "aunque el transductor no necesita alimentación externa, el experimento usa electrómetro, DAQ y computador para lectura/procesamiento"
+contradicciones:
+  - "'self-powered' describe la generación de la señal del transductor, no necesariamente una cadena completa de adquisición autónoma"
+etiquetas_neutrales: [triboelectricidad, self_powered, vibracion, transduccion, mecanica, sensor_pasivo]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
