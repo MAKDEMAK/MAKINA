@@ -1,0 +1,62 @@
+id: f2-fluidic-logic-1957-1970s
+frente: front-2
+cycle_id: 2026-09-15T20
+tema_objeto: lógica y computación fluídica sin partes móviles
+afirmacion_principal: >-
+  Entre 1957 y los años 1960 se desarrolló una línea técnica que usaba chorros de fluido para amplificación,
+  lógica y memoria sin componentes electrónicos ni partes móviles; llegó a producir circuitos de control y
+  un computador digital de prueba de concepto (FLODAC), pero perdió centralidad en control industrial frente
+  a transistores y circuitos integrados, cuyo tamaño y velocidad eran superiores.
+nombre_proyecto_o_artefacto: fluid amplifier / FLODAC
+periodo_historico: 1957-1970s
+pais_contexto: Estados Unidos
+disciplina: [control, computación, neumática, hidráulica]
+problema_original: realizar amplificación, lógica y control robustos mediante fluidos, incluso en entornos hostiles a electrónica
+principio_tecnico: >-
+  Un chorro de fluido de control desvía o modifica un chorro de potencia; configuraciones biestables permiten
+  representar estado y construir funciones lógicas sin partes móviles.
+estado_historico: desplazamiento parcial con supervivencia de nicho
+resultado_real_alcanzado: >-
+  Harry Diamond Laboratories desarrolló amplificadores fluídicos experimentales; la literatura de 1964 documenta
+  FLODAC como computador digital fluídico de prueba de concepto. La tecnología también tuvo aplicaciones reales
+  de control, entre ellas un respirador del Ejército estadounidense.
+causa_documentada: >-
+  La disponibilidad de electrónica de estado sólido y circuitos integrados desplazó muchos controles fluídicos;
+  la literatura posterior identifica tamaño y velocidad como ventajas decisivas de la lógica electrónica.
+causas_alternativas:
+  - necesidad de infraestructura de presión/flujo
+  - menor densidad de integración para lógica general
+camino_que_lo_desplazo_si_existe: lógica digital electrónica basada en transistores y circuitos integrados
+fuentes:
+  - url: https://doi.org/10.1145/1464052.1464112
+    titulo: FLODAC
+    tipo: proceedings primario
+    fecha: 1964-10-27
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3463711/
+    titulo: 'Microfluidic Automation using elastomeric valves and droplets: reducing reliance on external controllers'
+    tipo: revisión académica
+    fecha: 2012
+  - url: https://federallabs.org/communications/federal-lab-news/50-years-later%2C-covid-19-renews-interest-in-army-respirator-idea
+    titulo: '50 years later, COVID-19 renews interest in Army respirator idea'
+    tipo: archivo institucional
+    fecha: 2020
+nivel_evidencia: A
+datos_cuantitativos:
+  - FLODAC fue presentado en AFIPS Fall Joint Computer Conference de 1964
+  - el respirador fluídico del Ejército fue inventado en 1964
+limitaciones:
+  - el desplazamiento no fue extinción total; fluidics sobrevivió en nichos y reapareció en microfluídica
+contradicciones:
+  - narrativas de 'tecnología muerta' son demasiado fuertes porque existen aplicaciones posteriores y renovado interés
+incertidumbres:
+  - no se asigna una fecha única de abandono porque la transición fue gradual y dependió del dominio
+etiquetas_neutrales: [fluidics, fluidic-logic, non-electronic-control, displaced-path, physical-computation]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+hecho_documentado: >-
+  FLODAC fue publicado como computador de lógica fluídica en 1964; literatura académica posterior documenta que
+  muchos controles fluídicos fueron reemplazados al hacerse disponibles transistores y circuitos integrados.
+testimonio: null
+interpretacion: >-
+  El camino histórico relevante no fue simplemente 'neumática', sino representar amplificación, lógica y estado
+  directamente en el flujo físico, una rama que perdió la competencia por computación general pero no desapareció.
