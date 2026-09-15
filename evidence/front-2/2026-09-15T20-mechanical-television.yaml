@@ -1,0 +1,62 @@
+id: f2-mechanical-television-1884-1937
+frente: front-2
+cycle_id: 2026-09-15T20
+tema_objeto: televisión de barrido mecánico
+afirmacion_principal: >-
+  La televisión mecánica convirtió imágenes en una secuencia temporal mediante discos perforados sincronizados,
+  llegó a receptores comerciales y emisiones regulares, pero la rama de barrido mecánico fue desplazada en la BBC
+  por el sistema totalmente electrónico Marconi-EMI de 405 líneas tras una prueba comparativa en 1936-1937.
+nombre_proyecto_o_artefacto: Nipkow disc / Baird Televisor
+periodo_historico: 1884-1937
+pais_contexto: Alemania y Reino Unido
+disciplina: [televisión, óptica, electromecánica, comunicaciones]
+problema_original: descomponer una imagen en una señal transmisible y reconstruirla secuencialmente a distancia
+principio_tecnico: >-
+  Un disco con perforaciones dispuestas en espiral barre espacialmente la escena; una célula fotoeléctrica convierte
+  variaciones luminosas en señal y un disco sincronizado en recepción reconstruye líneas de imagen mediante una fuente luminosa modulada.
+estado_historico: sustitución
+resultado_real_alcanzado: >-
+  Baird demostró televisión de rostros en movimiento en 1926; hubo receptores Televisor comerciales y emisiones
+  regulares desde 1929. En 1936 la BBC alternó el sistema Baird de 240 líneas con Marconi-EMI de 405 líneas.
+causa_documentada: >-
+  La prueba de la BBC mostró ventajas del sistema totalmente electrónico de 405 líneas sobre el Baird de 240 líneas;
+  el último uso BBC del sistema Baird ocurrió en enero de 1937.
+causas_alternativas:
+  - límites mecánicos de velocidad, resolución y sincronización
+  - volumen y poca movilidad de la cámara mecánica de alta definición
+camino_que_lo_desplazo_si_existe: barrido electrónico con cámaras y receptores de tubo de rayos catódicos
+fuentes:
+  - url: https://collection.sciencemuseumgroup.org.uk/people/ap28272/baird-john-logie
+    titulo: John Logie Baird
+    tipo: archivo museístico institucional
+    fecha: null
+  - url: https://collection.sciencemuseumgroup.org.uk/objects/co34349/baird-tin-box-televisor
+    titulo: Baird Tin box Televisor
+    tipo: catálogo de objeto histórico
+    fecha: null
+  - url: https://spectrum.ieee.org/first-tv
+    titulo: 'In 1926, TV Was Mechanical'
+    tipo: historia técnica IEEE
+    fecha: 2024
+nivel_evidencia: A
+datos_cuantitativos:
+  - sistema doméstico temprano: 30 líneas
+  - Baird BBC 1936: 240 líneas
+  - Marconi-EMI: 405 líneas
+  - Televisor tin-box: aproximadamente 1000 unidades vendidas según Science Museum Group
+limitaciones:
+  - Baird continuó desarrollando televisión de gran pantalla, color y estereoscópica; no debe confundirse abandono del barrido mecánico con abandono de toda su investigación televisiva
+contradicciones:
+  - la rama mecánica sí tuvo continuidad temporal y comercial antes de ser sustituida; no fue un mero prototipo fallido
+incertidumbres:
+  - distintas fuentes sitúan el final operativo BBC entre la última transmisión de enero y la decisión/abandono formal de febrero de 1937
+etiquetas_neutrales: [mechanical-scanning, nipkow-disc, television, electromechanical, substituted-path]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+hecho_documentado: >-
+  Science Museum Group registra que la BBC abrió su estación de Londres en noviembre de 1936 usando alternativamente
+  ambos sistemas y eligió el Marconi-EMI de 405 líneas; también conserva receptores Baird comerciales.
+testimonio: null
+interpretacion: >-
+  El principio histórico distintivo es efectuar la serialización espacial de una señal visual mediante geometría y
+  movimiento físico, antes de que el barrido electrónico asumiera esa función.
