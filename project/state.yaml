@@ -1,0 +1,31 @@
+core:
+  title: MAKINA
+  status: initialized
+  description: null
+
+active_modules: []
+waiting_modules: []
+archived_modules: []
+
+current_architecture: null
+last_synthesized_cycle: null
+
+rules:
+  max_active_modules: 3
+  promotion:
+    M0: signal
+    M1: supported_convergence
+    M2: functional_specification
+    M3: real_minimum_prototype
+    M4: test_or_measurement
+    M5: demonstrable_system
+  death_criteria:
+    - insufficient_evidence
+    - aesthetic_or_verbal_only_relation
+    - no_functional_translation
+    - not_measurable
+    - impractical_to_prototype
+    - redundant
+    - disproportionate_cost
+    - contradicted_by_new_evidence
+    - stagnant_without_path_to_M2_M3
