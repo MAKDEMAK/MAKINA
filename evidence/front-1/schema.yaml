@@ -1,0 +1,15 @@
+front: front-1
+purpose: frontier_capabilities
+required_fields:
+  - id
+  - front
+  - cycle_id
+  - tema_objeto
+  - afirmacion_principal
+  - fuentes
+  - nivel_evidencia
+  - mecanismo_o_principio
+  - limitaciones
+  - contradicciones
+  - etiquetas_neutrales
+  - fecha_hallazgo
