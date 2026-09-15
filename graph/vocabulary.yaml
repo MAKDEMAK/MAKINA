@@ -1,0 +1,19 @@
+relation_types:
+  - mechanism_shared
+  - mathematical_equivalence
+  - defensible_morphological_analogy
+  - common_functional_problem
+  - sensory_translation
+  - technological_relation
+  - visual_connection
+  - artistic_connection
+
+relation_classes:
+  - EVIDENCE
+  - DESIGN_INFERENCE
+  - CREATIVE_SPECULATION
+
+confidence:
+  - low
+  - medium
+  - high
