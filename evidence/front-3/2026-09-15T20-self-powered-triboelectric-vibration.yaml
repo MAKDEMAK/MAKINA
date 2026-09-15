@@ -2,7 +2,7 @@ id: f3-20260915-20-self-powered-triboelectric-vibration
 frente: front-3
 cycle_id: 2026-09-15T20
 tema_objeto: transduccion triboelectrica autoalimentada de vibracion
- afirmacion_principal:
+afirmacion_principal:
   hecho: "Un sensor B-TENG convierte vibración mecánica de baja frecuencia en señal eléctrica sin alimentación externa y permite recuperar frecuencia, amplitud y dirección."
   hipotesis: null
   interpretacion: "La energía del propio fenómeno observado puede alimentar la transducción, reduciendo la necesidad de electrónica activa en el punto de sensado."
