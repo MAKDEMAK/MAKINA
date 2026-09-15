@@ -1,0 +1,9 @@
+cycle_id: 2026-09-15T20
+front: front-2
+status: complete
+findings_count: 3
+completed_at: 2026-09-15T20:20:00-03:00
+finding_ids:
+  - f2-fluidic-logic-1957-1970s
+  - f2-mechanical-television-1884-1937
+  - f2-mechanical-machine-tool-automation-1871-cnc-era
