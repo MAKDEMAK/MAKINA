@@ -1,0 +1,44 @@
+id: f3-20260915-20-acoustic-bearing-observability
+frente: front-3
+cycle_id: 2026-09-15T20
+tema_objeto: diagnostico acustico sin contacto de maquinaria rotativa
+afirmacion_principal:
+  hecho: "En el benchmark QU-DMBF, sonido captado externamente permitió detectar fallas de rodamientos con desempeño comparable al mejor enfoque por vibración y mayor robustez frente al cambio de ubicación del sensor."
+  hipotesis: null
+  interpretacion: "El campo acústico ambiental puede actuar como proxy de condición mecánica sin fijar un transductor al artefacto."
+funcion: diagnosticar
+principio_de_mediacion: "fallas mecánicas modulan patrones acústicos radiados; clasificación temporal/espectral convierte el sonido en estado de salud"
+variable_fisica_entrada: "presión acústica radiada por maquinaria rotativa"
+senal_o_estado_salida: "clasificación de condición/falla de rodamiento"
+modalidad: acustica
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "el artículo reporta desempeño de detección de nivel estado-del-arte y comparable al mejor detector por vibración; no se fija aquí una cifra única porque varía por partición/condición"
+latencia: "orientado a detección en tiempo real; cifra única no extraída"
+condiciones_de_prueba: "dos motores, DC y AC trifásico; 1080 condiciones de trabajo; pruebas con condiciones no vistas y cambios de localización/severidad"
+fuentes:
+  - url: "https://doi.org/10.1109/JSEN.2024.3405889"
+    titulo: "Exploring Sound Versus Vibration for Robust Fault Detection on Rotating Machinery"
+    tipo: articulo_experimental_peer_reviewed
+    fecha: 2024-07-15
+  - url: "https://researchportal.tuni.fi/en/publications/exploring-sound-vs-vibration-for-robust-fault-detection-on-rotati/"
+    titulo: "Tampere University Research Portal record"
+    tipo: repositorio_institucional
+    fecha: 2024
+nivel_evidencia: B
+datos_cuantitativos:
+  - "1080 condiciones de trabajo"
+  - "13.5 horas de datos sonido/vibración reportadas en el artículo"
+  - "entrenamiento del detector acústico con menos de 5% de los datos de falla en evaluaciones descritas"
+mecanismo_o_principio: "voiceprint/acoustic signature de defectos mecánicos + clasificador 1-D Self-ONN"
+limitaciones:
+  - "ruido ambiental y múltiples fuentes acústicas pueden confundir la firma"
+  - "resultado demostrado en banco de motores/rodamientos; generalización a otras máquinas requiere validación"
+  - "diagnóstico depende de procesamiento digital/modelo entrenado"
+contradicciones:
+  - "'sin sensor' en el sentido de no requerir sensor adherido a la máquina; sí requiere micrófono/adquisición acústica"
+etiquetas_neutrales: [acustica, no_contacto, bearing, condition_monitoring, proxy, legacy]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
