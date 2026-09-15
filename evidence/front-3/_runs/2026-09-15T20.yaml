@@ -1,0 +1,9 @@
+cycle_id: 2026-09-15T20
+front: front-3
+status: complete
+findings_count: 3
+completed_at: 2026-09-15T20:25:27-03:00
+findings:
+  - f3-20260915-20-nilm-aggregate-electrical-disaggregation
+  - f3-20260915-20-acoustic-bearing-observability
+  - f3-20260915-20-self-powered-triboelectric-vibration
