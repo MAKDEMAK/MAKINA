@@ -1,0 +1,45 @@
+id: f3-20260916-1401
+frente: front-3
+cycle_id: 2026-09-16T14
+tema_objeto: transduccion autoalimentada vibracion-a-pulsos-opticos
+afirmacion_principal:
+  hecho: "Una etiqueta formada por disco piezoelectrico, diodo Zener y LED convierte vibracion mecanica en pulsos opticos dispersos sin bateria, radio ni microcontrolador en la etiqueta; una camara de eventos externa puede observarlos para inferencia indirecta."
+  hipotesis: "La codificacion fisica dispersa puede preservar suficiente estructura temporal de vibracion para distinguir estados o fuentes sin digitalizacion local."
+  interpretacion: "El principio separa la mediacion local, energeticamente pasiva respecto de una bateria, de la computacion y alimentacion del receptor."
+funcion: inferir
+principio_de_mediacion: "deformacion piezoelectrica -> carga electrica -> umbral Zener/LED -> pulsos de luz visible -> eventos temporales"
+variable_fisica_entrada: vibracion mecanica
+señal_o_estado_salida: secuencia temporal de pulsos opticos
+modalidad: piezoelectrica+optica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "No se reporta precision metrologica de amplitud/frecuencia; 94.9% de fitness medio de clasificacion en cinco clases en la canalizacion completa."
+latencia: "trade-off medido por binning temporal; el resultado publicado evalua varias ventanas, por lo que no se asume una latencia unica"
+condiciones_de_prueba: "Cinco clases de dispositivos en entorno de taller; etiqueta fijada al objeto vibrante; enlace optico visible hacia camara de eventos; clasificacion posterior con SNN."
+fuentes:
+  - url: "https://doi.org/10.1109/ICONS69015.2025.00039"
+    titulo: "Vibe2Spike: Wireless, Batteryless Vibration Sensing with Event Cameras and Spiking Neural Networks"
+    tipo: proceedings_paper
+    fecha: "2025-07"
+  - url: "https://epic.eecs.utk.edu/files/ICONS_25_VIBE2SPIKE_Final.pdf"
+    titulo: "Vibe2Spike: Batteryless Wireless Tags for Vibration Sensing with Event Cameras and Spiking Networks"
+    tipo: author_manuscript
+    fecha: "2025-07"
+nivel_evidencia: B
+datos_cuantitativos:
+  clases_evaluadas: 5
+  fitness_clasificacion_promedio_pct: 94.9
+  componentes_tag: 3
+mecanismo_o_principio: "El piezoelectrico simultaneamente obtiene energia de la vibracion y genera la señal; el umbral electrico produce emisiones LED discretas. La etiqueta no interpreta la vibracion: la inferencia ocurre externamente sobre la temporizacion de los pulsos."
+limitaciones:
+  - "Requiere acoplamiento mecanico del piezoelectrico al objeto."
+  - "Requiere linea de vista optica y receptor externo alimentado."
+  - "El 94.9% es inferencia indirecta y dependiente del conjunto de cinco clases, no precision de medicion de vibracion."
+  - "La respuesta depende de amplitud/espectro de vibracion y del umbral electrico/optico."
+contradicciones:
+  - "'Batteryless' describe la etiqueta; la canalizacion completa no es libre de alimentacion ni de computacion digital."
+etiquetas_neutrales: [vibracion, piezoelectrico, visible-light, event-camera, batteryless, proxy-sensing, sparse-encoding]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
