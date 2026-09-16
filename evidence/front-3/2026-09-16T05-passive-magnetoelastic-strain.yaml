@@ -1,0 +1,44 @@
+id: f3-2026-09-16T05-passive-magnetoelastic-strain
+frente: front-3
+cycle_id: 2026-09-16T05
+tema_objeto: deformacion mecanica legible remotamente por resonancia magnetoelastica
+afirmacion_principal:
+  HECHO: Una cinta magnetoelastica puede medir deformacion sin bateria ni conexion electrica local: un campo magnetico AC excita su resonancia y una bobina remota detecta el campo secundario; la carga desplaza la frecuencia resonante.
+  INTERPRETACION: El principio permite convertir deformacion de una estructura en una variable frecuencial interrogable remotamente con electronica concentrada solo en el lector.
+  HIPOTESIS: ninguna
+funcion: medir
+principio_de_mediacion: acoplamiento magneto-mecanico resonante; la deformacion modifica la resonancia de una cinta ferromagnetica magnetostrictiva
+variable_fisica_entrada: strain/deformacion mecanica
+señal_o_estado_salida: desplazamiento de frecuencia resonante detectado magneticamente
+modalidad: magnetoelastica_resonante
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: sensibilidad maxima reportada 37100 Hz/strain; el resumen primario no especifica resolucion absoluta de strain
+latencia: no especificada
+condiciones_de_prueba: sensor magnetoelastico con geometria de reloj de arena fabricado y ensayado; excitacion e interrogacion mediante campo magnetico externo
+fuentes:
+  - url: https://doi.org/10.3390/s20020359
+    titulo: An Hourglass-Shaped Wireless and Passive Magnetoelastic Sensor with an Improved Frequency Sensitivity for Remote Strain Measurements
+    tipo: paper_experimental
+    fecha: 2020-01-08
+  - url: https://pubmed.ncbi.nlm.nih.gov/31936418/
+    titulo: PubMed record - An Hourglass-Shaped Wireless and Passive Magnetoelastic Sensor
+    tipo: indice_institucional
+    fecha: 2020-01-08
+nivel_evidencia: A
+datos_cuantitativos:
+  sensibilidad_maxima: 37100 Hz/strain
+mecanismo_o_principio: magnetostriccion + resonancia mecanica + interrogacion magnetica remota
+limitaciones:
+  - requiere adherir o acoplar mecanicamente el resonador a la estructura cuya deformacion se mide
+  - sensibilidad depende de geometria y acoplamiento mecanico
+  - el lector externo requiere excitacion y deteccion electromagnetica
+  - el paper no establece aqui desempeño en instalaciones industriales de largo plazo
+contradicciones:
+  - pasivo no significa sin energia en el sistema: la energia de interrogacion proviene del campo magnetico externo
+  - la alta sensibilidad en Hz/strain no equivale por si sola a igual exactitud absoluta bajo temperatura, montaje o envejecimiento variables
+etiquetas_neutrales: [strain, magnetoelasticidad, resonancia, pasivo, wireless, retrofit, frecuencia]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
