@@ -1,0 +1,42 @@
+id: f1-20260916-0801
+frente: front-1
+cycle_id: 2026-09-16T08
+tema_objeto: matriz de memristores fluidicos de hidrogel confinado
+afirmacion_principal: "HECHO: una interfaz gel-gel confinada en microporos permite integrar memoria ionica temporal, plasticidad sinaptica y modulacion quimica en una matriz 10x10; INTERPRETACION: la capacidad materialmente relevante es hacer computacion neuromorfica escalable con transporte ionico en un medio blando, no solo emular un memristor aislado."
+capacidad_nueva: "procesamiento temporal y memoria de conductancia ionica integrados en una matriz flexible, con plasticidad modulable por estimulo electrico y ATP"
+mecanismo_o_principio: "redistribucion temporal de iones en una interfaz entre hidrogel neutro agarosa@PAAm y gel ionico Pim con carga espacial asimetrica, confinada en microporo conico; enriquecimiento/deplecion ionica produce histeresis memristiva"
+dominio: "computacion ionica / neuromorfica / materiales blandos"
+fuentes:
+  - url: "https://www.nature.com/articles/s41467-026-70728-1"
+    titulo: "Confined-hydrogel fluidic memristor crossbar array for neuromorphic computing"
+    tipo: "paper experimental, Nature Communications"
+    fecha: "2026-03-20"
+nivel_evidencia: A
+datos_cuantitativos:
+  matriz: "10x10"
+  rendimiento_fabricacion: "94%"
+  precision_MNIST: "89.5%"
+  energia_minima_reportada: "0.54 pJ/spike con pulsos de 5 mV"
+  retencion_PPF: "131 ms"
+  retencion_PPD: "88 ms"
+  estados_conductancia: 65
+  endurance: "500 ciclos SET/RESET"
+  frecuencia_estimulos: "1-100 Hz"
+condiciones_de_prueba: "dispositivos fabricados sobre poliimida con microporos conicos ~5 um tip/~50 um base; caracterizacion electrica, pulsos y matrices 3x3/10x10; reconocimiento MNIST mediante reservoir computing con FMA"
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: "electrico y quimico (ATP modula respuesta)"
+tipo_de_memoria_o_estado: "conductancia ionica transitoria y estados de conductancia programables"
+tipo_de_adaptacion: "plasticidad dependiente de tasa, numero y ancho de pulsos; modulacion quimica"
+tipo_de_actuacion: "cambio de conductancia/corriente ionica"
+madurez_tecnica: "prototipo experimental integrado; no producto"
+limitaciones:
+  - "la demostracion de clasificacion usa algoritmo/readout externo; no es computacion autonoma puramente material"
+  - "medio acuoso/gel y encapsulado siguen siendo retos frente a tecnologias solidas"
+  - "endurance demostrada de 500 ciclos es limitada frente a memorias electronicas maduras"
+contradicciones:
+  - "la matriz mejora la escalabilidad respecto de memristores nanofluidicos aislados, pero 10x10 y 94% de yield aun no prueban escalado industrial"
+  - "HIPOTESIS no aceptada como hecho: que la ventaja energetica del elemento se conserve a nivel de sistema completo con lectura y entrenamiento"
+etiquetas_neutrales: [iontronica, memristor_fluidico, hidrogel, neuromorfica, memoria_temporal, plasticidad, crossbar]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
