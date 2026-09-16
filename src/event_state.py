@@ -1,10 +1,11 @@
 """Event-to-state surrogates for MAKINA.
 
-Behavioral contracts for physical mechanisms that convert transient inputs into
-persistent discrete state. These models do not simulate device energetics.
+Behavioral contracts for physical mechanisms that convert transient or accumulated
+inputs into persistent state. These models do not simulate device energetics.
 """
 
 from dataclasses import dataclass, field
+from typing import Callable
 
 
 @dataclass
@@ -34,11 +35,7 @@ class PersistentCounter:
 
 @dataclass
 class PeakThresholdMemory:
-    """Latch the highest threshold crossed by a transient scalar input.
-
-    State 0 means no threshold has been crossed; state N means thresholds
-    0..N-1 have been exceeded. Lower later inputs cannot erase the peak state.
-    """
+    """Latch the highest threshold crossed by a transient scalar input."""
 
     thresholds: tuple[float, ...] = field(default_factory=lambda: tuple(20 + i * (230 / 9) for i in range(10)))
     state: int = 0
@@ -54,6 +51,28 @@ class PeakThresholdMemory:
 
     def reset(self) -> None:
         self.state = 0
+
+
+@dataclass
+class CumulativeHistoryMemory:
+    """Integrate a calibrated physical rate into a persistent scalar state.
+
+    This captures the information contract of capillary time-temperature indicators:
+    state is an integral of an input-dependent rate, not a recoverable time series.
+    The rate law must come from calibration; no universal temperature law is assumed.
+    """
+
+    rate: Callable[[float], float]
+    state: float = 0.0
+
+    def register(self, input_value: float, duration: float) -> float:
+        if duration < 0:
+            raise ValueError("duration must be non-negative")
+        increment = self.rate(input_value) * duration
+        if increment < 0:
+            raise ValueError("calibrated rate must be non-negative")
+        self.state += increment
+        return self.state
 
 
 def run_event_pipeline(pulse_energies_nj, gate=None, counter=None):
