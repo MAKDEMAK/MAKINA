@@ -1,0 +1,48 @@
+id: f2-2026-09-15T23-parametron
+frente: front-2
+cycle_id: 2026-09-15T23
+tema_objeto: computacion digital con parametrons
+nombre_proyecto_o_artefacto: MUSASINO-1 y familia de computadores parametron
+periodo_historico: 1954-early-1960s
+pais_contexto: Japon
+disciplina: computacion_digital_electronica
+problema_original: construir elementos logicos digitales fiables en una etapa en que los transistores todavía presentaban problemas de fiabilidad
+principio_tecnico: osciladores parametricos excitados por AC representan estados binarios mediante fases estables y realizan logica digital
+afirmacion_principal: "HECHO DOCUMENTADO: Japón desarrolló una rama completa de computadores parametron, desde MUSASINO-1 hasta máquinas comerciales de varias empresas. Eran fiables pero más lentos y consumidores de energía que los computadores transistorizados; al mejorar la fiabilidad del transistor, el desarrollo parametron terminó a comienzos de los 1960. INTERPRETACION: fue una plataforma digital industrialmente real, no un experimento aislado, desplazada por otra implementación física de la misma función lógica."
+estado_historico: sustitucion
+resultado_real_alcanzado: "MUSASINO-1 entró en servicio en 1957; MUSASINO-1B fue comercializado y su arquitectura derivó en FACOM 201. Hitachi, NEC, Fujitsu, Oki y otras compañías produjeron computadores parametron."
+causa_documentada: "Excelente fiabilidad pero menor velocidad, mayor consumo y techo de mejora; la creciente fiabilidad de los transistores eliminó su ventaja relativa."
+causas_alternativas:
+  - mantenimiento elevado del prototipo artesanal MUSASINO-1
+  - ecosistema industrial desplazandose rápidamente hacia semiconductores
+camino_que_lo_desplazo_si_existe: computadores transistorizados
+fuentes:
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/history.html
+    titulo: Brief History - Dawn of Japanese Computers
+    tipo: archivo_institucional_IPSJ
+    fecha: 2007
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/0013.html
+    titulo: MUSASINO-1, MUSASINO-1B
+    tipo: museo_tecnico_IPSJ
+    fecha: desconocida
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/0062.html
+    titulo: FACOM 200, 201, 202, 212 Parametron Computers
+    tipo: museo_tecnico_IPSJ
+    fecha: 2012-11-16
+nivel_evidencia: A
+datos_cuantitativos:
+  - "MUSASINO-1: aproximadamente 5,400 parametrons"
+  - "costo de prototipo: 15 millones de yenes de la epoca"
+  - "memoria inicialmente 32 palabras, ampliada a 256 palabras de 40 bits"
+  - "suma 1,350 microsegundos; multiplicacion 6,800 microsegundos; division 26.1 ms"
+limitaciones:
+  - velocidad inferior a transistores
+  - consumo energetico mayor
+  - techo de mejora documentado
+contradicciones:
+  - "No fue una tecnología puramente abandonada en laboratorio: hubo comercialización y múltiples fabricantes antes de la sustitución."
+incertidumbres:
+  - el volumen total de unidades comerciales no está establecido por las fuentes consultadas
+etiquetas_neutrales: [parametron, Japon, logica_digital, oscilador, sustitucion, computador]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
