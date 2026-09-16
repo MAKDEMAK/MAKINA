@@ -1,0 +1,41 @@
+id: f3-20260916-1201
+frente: front-3
+cycle_id: 2026-09-16T12
+tema_objeto: dosimetria pasiva acumulativa por frente de difusion en cristal liquido
+afirmacion_principal:
+  HECHO: "Un dosimetro pasivo convierte exposicion acumulada a H2S en la longitud visible de un frente optico, sin bomba ni alimentacion en el punto sensor; en pruebas detecto 0.2 ppm TWA a 8 h con exactitud global ±20%."
+  HIPOTESIS: "El principio de frente de difusion/reaccion puede generalizarse a otras especies si existe una quimica selectiva y cinetica calibrable."
+  INTERPRETACION: "Es un mecanismo de registro fisico acumulativo: el estado material conserva una integral aproximada de exposicion, no una serie temporal ni la historia unica de concentracion."
+funcion: registrar
+principio_de_mediacion: "Difusion controlada de H2S por un headspace seguida de reaccion/reorientacion de cristal liquido; la longitud del frente brillante se correlaciona con dosis de exposicion."
+variable_fisica_entrada: "concentracion de H2S integrada en el tiempo"
+señal_o_estado_salida: "longitud de frente optico brillante / cambio de apariencia del cristal liquido"
+modalidad: quimica-optica-difusiva
+invasividad: nula
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: opcional
+resolucion_o_precision: "0.2 ppm TWA (8 h), ±20% de exactitud global reportada"
+latencia: "integradora; demostrada sobre ventana TWA de 8 h, no sensor instantaneo"
+condiciones_de_prueba: "Dosimetro LC con superficie funcionalizada con perclorato de plomo y headspace de vidrio; ensayos de temperatura/humedad, interferentes y uso personal en refineria."
+fuentes:
+  - url: "https://doi.org/10.1080/15459624.2014.916808"
+    titulo: "A Liquid Crystal-Based Passive Badge for Personal Monitoring of Exposure to Hydrogen Sulfide"
+    tipo: paper experimental revisado por pares
+    fecha: 2014-04-25
+nivel_evidencia: A
+datos_cuantitativos:
+  - "deteccion: 0.2 ppm TWA a 8 h"
+  - "exactitud global: ±20%"
+  - "correlacion fuerte reportada frente a metodo NIOSH 1063"
+mecanismo_o_principio: "El H2S induce reorientacion molecular del LC de perpendicular a paralela; limitar el transporte por difusion hace avanzar espacialmente un frente cuya posicion codifica dosis acumulada."
+limitaciones:
+  - "No reconstruye el perfil temporal: historias de exposicion diferentes pueden producir dosis/respuesta semejante."
+  - "Mercaptanos son interferentes documentados."
+  - "La lectura cuantitativa requiere calibracion/algoritmo; la indicacion visual basica no requiere electronica."
+  - "La cinetica depende del diseño difusivo y de la quimica especifica para H2S."
+contradicciones:
+  - "La etiqueta 'pasivo' no implica independencia del ambiente: temperatura, humedad y velocidad de cara fueron variables evaluadas; la estabilidad reportada corresponde a las condiciones ensayadas."
+etiquetas_neutrales: [dosimetria_pasiva, memoria_fisica, difusion, cristal_liquido, exposicion_acumulada, lectura_optica, sin_alimentacion]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
