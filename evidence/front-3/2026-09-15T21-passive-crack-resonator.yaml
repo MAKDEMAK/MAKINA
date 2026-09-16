@@ -1,0 +1,38 @@
+id: f3-20260915-21-passive-crack
+frente: front-3
+cycle_id: 2026-09-15T21
+tema_objeto: passive wireless resonant crack sensing
+afirmacion_principal: A flexible chip-free resonant ring can translate crack width into a remotely readable resonance-frequency shift without an onboard power supply.
+funcion: medir
+principio_de_mediacion: crack-induced perturbation of electromagnetic resonance
+variable_fisica_entrada: crack width
+señal_o_estado_salida: resonant frequency
+modalidad: RF passive resonator
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: sensitivity 67.02 MHz/mm over 0 to 2.5 mm
+latencia: not reported
+condiciones_de_prueba: flexible polyimide resonant-ring samples tested under varying crack width, distance, angle and bending
+fuentes:
+  - url: https://doi.org/10.3390/mi17080943
+    titulo: Flexible Wireless Passive Resonance Ring Sensor for Nondestructive Crack Monitoring of Metal Structures
+    tipo: experimental journal paper
+    fecha: 2026-08-07
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_grieta_mm: 0-2.5
+  sensibilidad_MHz_por_mm: 67.02
+mecanismo_o_principio: Crack growth perturbs the resonator electromagnetic field and shifts resonance; an external reader interrogates the structure wirelessly.
+limitaciones:
+  - Requires attachment of the passive resonator to the monitored structure.
+  - Environmental and installation geometry can shift resonance and require compensation.
+  - Evidence is laboratory-scale rather than long-duration field deployment.
+contradicciones: Practical long-term engineering stability is proposed but not established by the reported laboratory experiments.
+etiquetas_neutrales: [passive, wireless, resonance, crack, structural_monitoring, chip_free]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+distincion_medicion_inferencia:
+  medicion_directa: resonant frequency
+  inferencia_indirecta: crack width from calibrated resonance shift
