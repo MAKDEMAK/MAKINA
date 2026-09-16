@@ -1,0 +1,59 @@
+id: f2-20260915-21-aerotrain
+frente: front-2
+cycle_id: 2026-09-15T21
+tema_objeto: transporte guiado de alta velocidad sobre cojin de aire
+nombre_proyecto_o_artefacto: Aerotrain de Jean Bertin
+periodo_historico: 1965-1977
+pais_contexto: Francia
+disciplina: transporte / mecanica / infraestructura
+problema_original: lograr transporte terrestre guiado de alta velocidad eliminando contacto rueda-riel y gran parte de la friccion mecanica
+principio_tecnico: sustentacion y guiado por cojin de aire sobre via dedicada en T invertida; distintas variantes de propulsion incluyeron helice, turborreactor y estudios de motor lineal
+afirmacion_principal: El Aerotrain alcanzo prototipos a escala real y velocidades superiores a 400 km/h, pero Francia abandono la linea antes de explotacion comercial y priorizo el TGV ferroviario electrico compatible parcialmente con infraestructura existente.
+estado_historico: prototipo no escalado; sustitucion
+resultado_real_alcanzado: >-
+  Se construyeron cinco prototipos en el programa; el Experimental 02 alcanzo 422 km/h el 22-01-1969 sobre una via de ensayo de 6.7 km. Existio tambien una via experimental de aproximadamente 18 km al norte de Orleans y planes avanzados para una linea Cergy-La Defense.
+causa_documentada: >-
+  Fuentes institucionales francesas registran el abandono definitivo durante los anos 1970 y la eleccion estatal del TGV. Fuentes historicas contemporaneas muestran ademas retrasos e incertidumbres tecnicas en la propuesta Cergy-La Defense.
+causas_alternativas:
+  - choque petrolero y desventaja de variantes propulsadas por hidrocarburos
+  - necesidad de infraestructura dedicada
+  - madurez y compatibilidad de la alternativa ferroviaria TGV
+  - retrasos de puesta a punto del motor lineal y su control para la linea proyectada
+camino_que_lo_desplazo_si_existe: TGV electrico sobre tecnologia rueda-riel
+fuentes:
+  - url: https://www.culture.gouv.fr/regions/drac-ile-de-france/actualites/actualite-a-la-une/l-aerotrain-entre-au-patrimoine-trois-prototypes-et-six-maquettes-classes-monuments-historiques
+    titulo: L’aerotrain entre au patrimoine
+    tipo: Ministerio de Cultura de Francia
+    fecha: 2025-07-22
+  - url: https://www.archives.sncf.com/situation-et-perspectives-de-laerotrain-dans-le-domaine-des-transports-terrestres/
+    titulo: Situation et perspectives de l’aerotrain dans le domaine des transports terrestres
+    tipo: archivo institucional SNCF
+    fecha: documento de 1977
+  - url: https://www.jean-bertin.fr/aerotrain-02/
+    titulo: Aerotrain Experimental 02
+    tipo: archivo asociativo tecnico
+    fecha: desconocida
+  - url: https://www.lemonde.fr/archives/article/1974/02/09/en-depit-des-incertitudes-techniques-le-gouvernement-maintient-sa-decision-de-relier-cergy-pontoise-a-sa-defense-par-aerotrain-en-1978_3090552_1819218.html
+    titulo: En depit des incertitudes techniques...
+    tipo: prensa contemporanea
+    fecha: 1974-02-09
+nivel_evidencia: A
+datos_cuantitativos:
+  - Experimental 02: 422 km/h el 22-01-1969
+  - via de ensayo Experimental 02: 6.7 km
+  - Experimental 02: 2.6 t y reactor JT12D de 1200 kg de empuje
+limitaciones:
+  - distintas variantes del programa usaron sistemas de propulsion diferentes; no debe tratarse Aerotrain como una unica configuracion
+contradicciones:
+  - las fuentes difieren en fechar el abandono como 1974, 1977 o 1978 segun contrato, programa tecnico o decision publica considerada
+incertidumbres:
+  - peso relativo exacto de factores politicos, energeticos, economicos y tecnicos en la decision final
+hecho_documentado: >-
+  Hubo prototipos reales, vias de prueba, records medidos y estudios de linea comercial; no llego a servicio comercial.
+testimonio: >-
+  Fuentes patrimoniales posteriores caracterizan el programa como una alternativa pionera finalmente desplazada por el TGV.
+interpretacion: >-
+  El principio de sustentacion por aire para alta velocidad terrestre quedo como camino frances no escalado, mientras el objetivo de alta velocidad se resolvio mediante ferrocarril convencional evolucionado.
+etiquetas_neutrales: [cojin_de_aire, transporte, Francia, prototipo, sustitucion, TGV]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
