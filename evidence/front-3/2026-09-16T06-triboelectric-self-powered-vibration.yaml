@@ -1,0 +1,44 @@
+id: f3-2026-09-16T06-triboelectric-vibration
+frente: front-3
+cycle_id: 2026-09-16T06
+tema_objeto: sensado autoalimentado de vibración mediante nanogenerador triboeléctrico
+afirmacion_principal:
+  HECHO: Un ES-TENG convierte directamente vibración mecánica en señal eléctrica y midió frecuencia entre 2 y 10000 Hz sin alimentación externa, con error medio aproximado de 0.42%.
+  HIPOTESIS: La misma clase de transducción puede reducir cableado/alimentación en observación de maquinaria cuando la variable objetivo está contenida en la vibración disponible.
+  INTERPRETACION: Es mediación directa vibración-a-señal; diagnóstico de fallas posterior sería inferencia indirecta.
+funcion: medir
+principio_de_mediacion: electrificación por contacto e inducción electrostática en modo triboeléctrico de estructura elástica; la vibración excita contacto/separación y genera una señal periódica cuya frecuencia representa la excitación
+variable_fisica_entrada: vibración mecánica
+señal_o_estado_salida: señal eléctrica auto-generada con frecuencia extraíble por transformación tiempo-frecuencia/filtrado
+modalidad: triboelectrica/vibracion
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: error medio de frecuencia ~0.42%; rango experimental 2-10000 Hz
+latencia: no reportada como métrica independiente; adquisición compatible con análisis de señal durante excitación
+condiciones_de_prueba: excitación mecánica controlada; estructura ES-TENG de acero elástico optimizada; frecuencia obtenida mediante transformación tiempo-frecuencia y filtrado
+fuentes:
+  - url: https://www.mdpi.com/2079-4991/12/16/2790
+    titulo: Ultra-Wide Range Vibration Frequency Detection Sensors Based on Elastic Steel Triboelectric Nanogenerators for Intelligent Machinery Monitoring
+    tipo: paper experimental
+    fecha: 2022-08-12
+  - url: https://onlinelibrary.wiley.com/doi/full/10.1002/idm2.70004
+    titulo: Triboelectric Nanogenerators for Condition Monitoring of Machines, Infrastructure and Environment
+    tipo: revision
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_frecuencia_hz: [2, 10000]
+  error_medio_frecuencia_pct: 0.42
+mecanismo_o_principio: La energía de la propia vibración produce transferencia de carga y variación electrostática; la periodicidad eléctrica conserva información temporal de la vibración sin fuente eléctrica local para el elemento sensor.
+limitaciones:
+  - La medición demostrada más sólida es frecuencia; amplitud y diagnóstico requieren calibración o procesamiento adicional.
+  - Salida triboeléctrica puede depender de materiales, desgaste, temperatura y humedad.
+  - Autoalimentado no implica necesariamente transmisión o procesamiento inalámbrico autoalimentados.
+contradicciones:
+  - Revisiones recientes muestran rangos aún mayores en otros TENG, pero esos valores corresponden a arquitecturas diferentes y no se trasladan al ES-TENG.
+  - El requisito de contacto corresponde al mecanismo interno del sensor; su instalación sobre la máquina sigue siendo mínimamente invasiva y no modifica el tren de potencia.
+etiquetas_neutrales: [vibracion, triboelectrico, autoalimentado, condition-monitoring, transduccion, maquinaria]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
