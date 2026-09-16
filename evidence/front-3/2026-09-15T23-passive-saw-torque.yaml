@@ -1,0 +1,38 @@
+id: f3-20260915T23-passive-saw-torque
+frente: front-3
+cycle_id: 2026-09-15T23
+tema_objeto: torque de eje mediante línea de retardo SAW pasiva
+funcion: medir
+afirmacion_principal:
+  hecho: "Un sensor inalámbrico pasivo basado en líneas de retardo SAW a 2.45 GHz midió torque estático de -1000 a +1000 Nm y mantuvo comunicación inalámbrica durante ensayos de rotación paso a paso."
+  interpretacion: "Una variable difícil de cablear en una pieza rotatoria puede traducirse a retardo/respuesta acústica interrogable sin batería en el rotor."
+principio_de_mediacion: "El torque se convierte mecánicamente en deformación de un sustrato LiNbO3; la deformación modifica la respuesta de una línea de retardo de onda acústica superficial interrogada por RF."
+variable_fisica_entrada: torque / deformación torsional
+señal_o_estado_salida: respuesta temporal/fase de línea SAW interrogada a 2.45 GHz
+modalidad: onda acústica superficial + RF
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: "rango demostrado -1000 a +1000 Nm; precisión no especificada en el resumen primario"
+latencia: "no reportada"
+condiciones_de_prueba: "Medición de torque demostrada en condición estática; transmisión inalámbrica investigada con eje rotado paso a paso usando dos antenas flexibles y divisor de potencia."
+fuentes:
+  - url: https://doi.org/10.4271/2012-01-0909
+    titulo: "Development of a Torque Measurement Method on a Rotating Shaft Using a Battery-Less Sensor"
+    tipo: SAE technical paper experimental
+    fecha: 2012-04-16
+nivel_evidencia: A
+datos_cuantitativos:
+  frecuencia_interrogacion: "2.45 GHz"
+  rango_torque: "-1000 a +1000 Nm"
+mecanismo_o_principio: "Un soporte convierte torque en strain; el strain cambia dimensiones/propagación de la línea SAW de LiNbO3, que devuelve una firma RF sin fuente local."
+limitaciones:
+  - demostración cuantitativa de torque indicada bajo condición estática
+  - prueba de rotación fue paso a paso, no valida por sí sola operación continua a alta velocidad
+  - interrogador RF externo y antenas siguen siendo necesarios
+contradicciones:
+  - "Battery-less no significa sistema sin alimentación: la energía/interrogación procede externamente por RF."
+etiquetas_neutrales: [SAW, torque, rotating-shaft, batteryless, RF-interrogation, strain-transduction]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
