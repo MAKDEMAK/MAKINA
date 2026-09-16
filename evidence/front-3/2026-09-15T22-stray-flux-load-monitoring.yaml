@@ -1,0 +1,37 @@
+id: f3-20260915-22-stray-flux
+frente: front-3
+cycle_id: 2026-09-15T22
+tema_objeto: inferencia no invasiva de carga de motores mediante flujo magnético disperso
+afirmacion_principal: El flujo magnético disperso fuera de un motor de inducción contiene características medibles que permiten inferir carga y comportamiento rotor/estator sin acceder a tensión o corriente internas.
+funcion: inferir
+principio_de_mediacion: campo magnético disperso del motor -> sensor GMR -> características tiempo-frecuencia
+variable_fisica_entrada: flujo magnético parásito externo generado por el motor
+señal_o_estado_salida: espectrogramas y características asociadas a carga y estados rotor/estator
+modalidad: magnética
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: no reportada en el resumen consultado
+latencia: respuesta temporal de carga demostrada; valor no reportado en el resumen
+condiciones_de_prueba: tres motores de inducción con perfiles de carga de arranque diferentes en dos bancos de ensayo
+fuentes:
+  - url: https://doi.org/10.1049/iet-pel.2016.0304
+    titulo: Non-invasive load monitoring of induction motor drives using magnetic flux sensors
+    tipo: paper experimental
+    fecha: 2017-02-01
+nivel_evidencia: A
+datos_cuantitativos:
+  motores_ensayados: 3
+  bancos_de_prueba: 2
+mecanismo_o_principio: Sensores de magnetorresistencia gigante detectan el flujo disperso en posiciones externas; el contenido tiempo-frecuencia cambia con el régimen de carga y las características electromagnéticas de la máquina.
+limitaciones:
+  - depende de posición y orientación del sensor respecto del campo disperso
+  - requiere procesamiento de señal para convertir el proxy magnético en estado inferido
+  - el resumen no entrega error absoluto de estimación de carga
+contradicciones:
+  - no es medición directa de carga mecánica; es inferencia mediante una señal proxy electromagnética
+etiquetas_neutrales: [stray-flux, GMR, induction-motor, non-invasive, load-monitoring]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+clasificacion_medicion: inferencia indirecta
