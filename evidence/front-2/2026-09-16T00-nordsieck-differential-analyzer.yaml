@@ -1,0 +1,35 @@
+id: f2-2026-09-16T00-nordsieck-differential-analyzer
+frente: front-2
+cycle_id: 2026-09-16T00
+tema_objeto: computador analogico electromecanico portatil
+afirmacion_principal: "HECHO DOCUMENTADO: Arnold Nordsieck construyo en 1950 un analizador diferencial compacto y barato que resolvia ecuaciones diferenciales usando integradores mecanicos y synchros electricos. INTERPRETACION: representa una rama deliberadamente economica y portatil de computacion analogica que fue desplazada cuando la computacion digital gano precision, reproducibilidad y versatilidad."
+nombre_proyecto_o_artefacto: Nordsieck Differential Analyzer
+periodo_historico: "1950-1956 aprox."
+pais_contexto: "Estados Unidos"
+disciplina: "computacion analogica; instrumentacion matematica; electromecanica"
+problema_original: "Resolver ecuaciones diferenciales con una maquina practica, sencilla, portatil y economica en una epoca en que los computadores digitales de tubos eran costosos y escasos."
+principio_tecnico: "Integracion continua mediante mecanismos disco-rueda; synchros convierten movimiento angular en senales electricas, reduciendo los largos ejes mecanicos de analizadores anteriores."
+estado_historico: "maquina construida y funcional; rama analogica posteriormente sustituida"
+resultado_real_alcanzado: "Nordsieck construyo la maquina con componentes excedentes de guerra; podia resolver ecuaciones diferenciales y disponia de mesas graficadoras de entrada/salida."
+causa_documentada: "Computer History Museum documenta que los computadores analogicos permanecieron preferidos hasta que los digitales fueron suficientemente rapidos; para los anos 1970 los digitales los desplazaron por mayor precision, reproducibilidad y versatilidad."
+causas_alternativas:
+  - "precision limitada por componentes analogicos y mecanicos"
+  - "reconfiguracion fisica menos flexible que programacion digital"
+camino_que_lo_desplazo_si_existe: "computadores digitales programables y simulacion numerica"
+fuentes:
+  - url: "https://www.computerhistory.org/revolution/story/138"
+    titulo: "Nordsieck's Differential Analyzer"
+    tipo: "museo/institucional"
+    fecha: "consulta 2026-09-16"
+  - url: "https://www.computerhistory.org/revolution/analog-computers/3/150/2413"
+    titulo: "General Precision Systems' General Purpose Analog Computer"
+    tipo: "museo/institucional"
+    fecha: "consulta 2026-09-16"
+nivel_evidencia: A
+datos_cuantitativos: "Construido en 1950 con aproximadamente USD 700 en excedentes de la Segunda Guerra Mundial; CHM destaca consumo inferior al de una tostadora."
+limitaciones: "El caso Nordsieck es una instancia especifica de una familia analogica mayor; la evidencia de desplazamiento corresponde en parte a la trayectoria general de la computacion analogica."
+contradicciones: "No fue abandonado por inviabilidad inmediata: su bajo costo y simplicidad eran precisamente ventajas; el desplazamiento ocurrio por mejora relativa de la via digital."
+incertidumbres: "No se determino en esta ronda numero de unidades fabricadas ni fecha exacta de ultimo uso."
+etiquetas_neutrales: [analogico, ecuaciones_diferenciales, integrador, synchro, electromecanica, sustitucion]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
