@@ -1,0 +1,40 @@
+id: f1-20260916-1001
+frente: front-1
+cycle_id: 2026-09-16T10
+tema_objeto: escritura remota programable de memoria mecánica bistable
+afirmacion_principal: "HECHO: un metamaterial 1D de unidades masa-en-masa biestables, desacopladas estáticamente pero conmutables dinámicamente, permite escribir patrones mecánicos arbitrarios mediante ondas no lineales aplicadas sólo en el borde; experimentos y simulaciones muestran transiciones selectivas en unidades internas."
+capacidad_nueva: "Escritura remota y direccionable de bits mecánicos persistentes desde una frontera, sin actuadores locales por bit."
+mecanismo_o_principio: "Pulsos/ondas no lineales diseñados explotan la dinámica de unidades biestables masa-en-masa para superar selectivamente barreras de estado en posiciones internas; la biestabilidad conserva el bit después del tránsito de la onda."
+dominio: "inteligencia física / metamateriales mecánicos / memoria"
+fuentes:
+  - url: "https://journals.aps.org/prl/abstract/10.1103/pkk5-dykb"
+    titulo: "Arbitrary Mechanical Memory Encoding via Nonlinear Waves in Bistable Metamaterials"
+    tipo: "paper experimental revisado por pares, Physical Review Letters"
+    fecha: "2026-08-26"
+  - url: "https://zenodo.org/records/21476531"
+    titulo: "Arbitrary mechanical memory encoding via nonlinear waves in bistable metamaterials"
+    tipo: "dataset experimental y software asociado"
+    fecha: "2026-07-21"
+  - url: "https://arxiv.org/abs/2508.20321"
+    titulo: "Arbitrary mechanical memory encoding via nonlinear waves in bistable metamaterials"
+    tipo: "preprint con acceso al manuscrito"
+    fecha: "2025-08-27"
+nivel_evidencia: A
+datos_cuantitativos: "El artículo publicado identifica una arquitectura 1D y demuestra experimentalmente escritura selectiva profunda; el dataset experimental publicado ocupa 52.8 MB. El resumen accesible no proporciona una tasa de error, densidad de bits ni energía por escritura comparable, por lo que no se inventan esas métricas."
+condiciones_de_prueba: "Prototipo físico 1D de unidades masa-en-masa biestables; señales mecánicas adaptadas aplicadas desde la frontera; validación combinada experimental y numérica."
+requiere_computacion_digital: "opcional"
+requiere_alimentacion: "si"
+tipo_de_sensado: "no es requisito intrínseco del principio de escritura; instrumentación experimental para validación"
+tipo_de_memoria_o_estado: "estado mecánico binario biestable persistente por unidad"
+tipo_de_adaptacion: "programabilidad por forma de la señal de entrada; no aprendizaje autónomo demostrado"
+tipo_de_actuacion: "excitación mecánica de frontera mediante ondas no lineales"
+madurez_tecnica: "demostración experimental de laboratorio revisada por pares; datos experimentales y código de postprocesamiento publicados"
+limitaciones: "Demostrado en una cadena 1D de laboratorio; la señal de escritura debe diseñarse para la dinámica del sistema; no se demuestra escalabilidad, escritura en geometrías generales, eficiencia energética de sistema ni robustez industrial."
+contradicciones: "No contradice que la memoria sea puramente mecánica: la retención reside en biestabilidad, pero generar/controlar las ondas y verificar estados puede requerir instrumentación externa. 'Arbitraria' se refiere a patrones alcanzables en la arquitectura ensayada, no a memoria mecánica universal."
+etiquetas_neutrales: [mechanical-memory, nonlinear-waves, bistability, metamaterial, boundary-actuation, remote-bit-writing, physical-computing]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
+separacion_epistemica:
+  hecho: "El trabajo de PRL demuestra experimentalmente y por simulación escritura selectiva de estados internos usando señales aplicadas en el borde."
+  hipotesis: "El mecanismo podría escalar a memorias mecánicas mayores si pueden mantenerse separabilidad dinámica y ventanas de conmutación; el paper accesible no demuestra esa generalización."
+  interpretacion: "La capacidad relevante es desacoplar espacialmente el punto donde se inyecta la orden del lugar donde queda almacenado el estado, usando propagación no lineal como direccionamiento físico."
