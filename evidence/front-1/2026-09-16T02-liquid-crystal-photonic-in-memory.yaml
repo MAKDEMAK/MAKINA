@@ -1,0 +1,28 @@
+id: f1-20260916-02-lc-photonic-memory
+frente: front-1
+cycle_id: 2026-09-16T02
+tema_objeto: memoria y computacion fotonica no volatil por reorientacion molecular
+afirmacion_principal:
+  HECHO: "Una red fotonica basada en cristal liquido foto-reescribible implemento 9.44 millones de neuronas vectoriales reconfigurables con memoria no volatil, sensado y computacion in situ."
+  HIPOTESIS: "La orientacion molecular persistente puede servir simultaneamente como parametro optico, memoria y elemento computacional a escalas mucho mayores que matrices fotonicas previas."
+  INTERPRETACION: "El avance central es hacer que el propio estado molecular que transforma la luz conserve los pesos sin potencia estatica significativa."
+capacidad_nueva: memoria fotonica no volatil de gran escala que tambien ejecuta transformaciones neuronales opticas
+mecanismo_o_principio: reorientacion fotoinducida persistente de azo-dye SD1 y cristal liquido 5CB; la orientacion modifica la polarizacion y actua como peso neuronal
+dominio: materiales fotonicos / computacion fisica
+fuentes:
+  - {url: "https://doi.org/10.1186/s43593-026-00141-0", titulo: "Light-driven molecular reorientation for large-scale photonic in-memory computing", tipo: paper_original, fecha: 2026-08-31}
+nivel_evidencia: A
+datos_cuantitativos: "9.44 millones de neuronas; 151.04 Mbit; pesos de 8 bits; 576 canales; 94.5% en prueba MNIST de 200 imagenes; transmision 92.5%; reescritura 60 s a 450 nm/2.05 mW cm-2, <100 ms con mayor potencia; 5.44e16 FLOPS es estimacion, no throughput medido."
+condiciones_de_prueba: red optica vectorial multicapa de cristal liquido; programacion mediante iluminacion polarizada; entrenamiento de pesos calculado por backpropagation
+requiere_computacion_digital: opcional
+requiere_alimentacion: parcial
+tipo_de_sensado: polarizacion/luz
+tipo_de_memoria_o_estado: orientacion molecular no volatil
+tipo_de_adaptacion: reescritura optica de orientacion
+tipo_de_actuacion: transformacion de polarizacion optica
+madurez_tecnica: demostracion experimental de laboratorio a gran escala
+limitaciones: "La reescritura de baja potencia es lenta; el entrenamiento usado para obtener orientaciones es externo; complejidad de tarea compite con paralelismo; requiere infraestructura optica."
+contradicciones: "El valor 5.44e16 FLOPS es proyectado suponiendo fotodetectores de 10 MHz y no debe tratarse como rendimiento experimental medido."
+etiquetas_neutrales: [liquid-crystal, photonic-memory, nonvolatile, molecular-state]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
