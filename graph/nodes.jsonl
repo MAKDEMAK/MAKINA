@@ -42,3 +42,6 @@
 {"id":"f3-2026-09-16T06-triboelectric-vibration","front":"front-3","kind":"evidence","label":"ultra-wide-range self-powered triboelectric vibration frequency transduction","cycle_id":"2026-09-16T06"}
 {"id":"f2-2026-09-16T07-elcaset","front":"front-2","kind":"evidence","label":"Elcaset cartridge-decoupled precision magnetic tape transport","cycle_id":"2026-09-16T07"}
 {"id":"f3-20260916T07-passive-impact-threshold-memory","front":"front-3","kind":"evidence","label":"zero-power multi-threshold mechanical shock memory","cycle_id":"2026-09-16T07"}
+{"id":"f1-20260916-0801","front":"front-1","kind":"evidence","label":"confined-hydrogel fluidic memristor crossbar","cycle_id":"2026-09-16T08"}
+{"id":"f2-20260916-0801","front":"front-2","kind":"evidence","label":"Subharchord subharmonic electronic synthesis","cycle_id":"2026-09-16T08"}
+{"id":"f3-20260916-0801","front":"front-3","kind":"evidence","label":"non-contact induction-motor state inference from stray magnetic flux","cycle_id":"2026-09-16T08"}
