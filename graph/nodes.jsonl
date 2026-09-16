@@ -40,3 +40,5 @@
 {"id":"f3-20260915-20-self-powered-triboelectric-vibration","front":"front-3","kind":"evidence","label":"low-frequency self-powered triboelectric vibration transduction","cycle_id":"2026-09-15T20"}
 {"id":"f2-2026-09-16T06-hofgaard-office-machine","front":"front-2","kind":"evidence","label":"Hofgaard integrated electromechanical office automation prototype","cycle_id":"2026-09-16T06"}
 {"id":"f3-2026-09-16T06-triboelectric-vibration","front":"front-3","kind":"evidence","label":"ultra-wide-range self-powered triboelectric vibration frequency transduction","cycle_id":"2026-09-16T06"}
+{"id":"f2-2026-09-16T07-elcaset","front":"front-2","kind":"evidence","label":"Elcaset cartridge-decoupled precision magnetic tape transport","cycle_id":"2026-09-16T07"}
+{"id":"f3-20260916T07-passive-impact-threshold-memory","front":"front-3","kind":"evidence","label":"zero-power multi-threshold mechanical shock memory","cycle_id":"2026-09-16T07"}
