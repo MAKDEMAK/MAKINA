@@ -1,0 +1,38 @@
+id: f1-20260916-1501
+frente: front-1
+cycle_id: 2026-09-16T15
+tema_objeto: aprendizaje neuromorfico analogico autoalimentado multimodal
+afirmacion_principal: "Un circuito compuesto por sensores, componentes pasivos y memristores difusivos/de deriva puede realizar sensado, codificacion temporal, fusion multimodal, aprendizaje no supervisado y memoria persistente sin conversion digital ni alimentacion externa durante la operacion demostrada."
+capacidad_nueva: "aprendizaje asociativo multimodal directamente en hardware alimentado por la energia de los propios estimulos"
+mecanismo_o_principio: "Sensores fotovoltaicos/piezoelectricos generan la energia y señal; memristores difusivos convierten amplitud analogica en tiempo de disparo mediante deriva/difusion ionica; diferencias temporales programan la conductancia no volatil de memristores de deriva mediante plasticidad homo/heterosinaptica."
+dominio: [neuromorfica, computacion_analogica, in-sensor-computing, memristores]
+fuentes:
+  - url: "https://doi.org/10.1038/s44460-026-00067-7"
+    titulo: "Self-powered analogue neuromorphic system for multimodal sensing, encoding and learning with diffusive and drift memristors"
+    tipo: paper_experimental_peer_reviewed
+    fecha: 2026-04-30
+nivel_evidencia: A
+datos_cuantitativos:
+  - "codificacion optica ensayada entre 15.5 y 64.2 mW/cm2; n=10 por intensidad"
+  - "presion ensayada entre 25.5 y 75.1 kPa con replicas tecnicas"
+  - "unidad de fusion: 2 memristores difusivos + 1 memristor de deriva + 2 resistores + 2 capacitores"
+condiciones_de_prueba: "PCB integrado; sensores fotovoltaico y piezoelectrico; estimulos de luz y presion. Un microcontrolador sincronizo externamente el inicio de los estimulos en la demostracion, pero no alimenta ni ejecuta el procesamiento/aprendizaje del SFU."
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: "multimodal: luz fotovoltaica y presion piezoelectrica; extensibilidad a otras señales es interpretacion"
+tipo_de_memoria_o_estado: "conductancia no volatil en memristor de deriva; dinamica volatil temporal en memristor difusivo"
+tipo_de_adaptacion: "plasticidad STDP/ITDP homo- y heterosinaptica no supervisada"
+tipo_de_actuacion: ninguno
+madurez_tecnica: "demostracion experimental integrada en PCB; no producto ni despliegue longitudinal"
+limitaciones:
+  - "variabilidad inherente de dispositivos memristivos; los autores indican que requiere investigacion sistematica"
+  - "la demostracion multimodal sincroniza externamente los estimulos con microcontrolador; autonomia del circuito de aprendizaje no equivale a autonomia experimental total"
+  - "casos de localizacion de rayos y clasificacion de actividad incluyen simulacion/preentrenamiento y no deben confundirse con la demostracion fisica basica"
+contradicciones:
+  - "La afirmacion fully self-powered se sostiene para el SFU y su procesamiento; instrumentacion de laboratorio y generacion/sincronizacion de estimulos siguen siendo externas."
+etiquetas_neutrales: [self-powered, fully-analog, multimodal, unsupervised-learning, temporal-encoding, nonvolatile-memory]
+hecho: "Se demostraron experimentalmente codificacion analogica-a-spike, STDP/ITDP y una unidad integrada de fusion sensorial autoalimentada sin ADC ni procesador digital en el camino de computacion."
+hipotesis: "El principio podria escalar a mas modalidades y redes mayores; no esta demostrado por este montaje."
+interpretacion: "La capacidad materialmente nueva es cerrar localmente el ciclo sensor-codificador-asociacion-memoria usando la energia del fenomeno observado, desplazando parte del aprendizaje desde software hacia dinamica de dispositivos."
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
