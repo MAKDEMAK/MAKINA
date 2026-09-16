@@ -1,0 +1,82 @@
+id: f2-20260916-1701
+frente: front-2
+cycle_id: '2026-09-16T17'
+tema_objeto: computador digital de logica fluida pura sin partes moviles
+afirmacion_principal: >-
+  HECHO DOCUMENTADO: UNIVAC construyo y probo FLODAC como computador digital programable de aire,
+  implementando memoria, aritmetica, control y entrada/salida con amplificadores fluidicos NOR sin
+  partes moviles. Funciono de forma coordinada y automatica, pero quedo como demostrador de muy
+  pequena escala. El propio paper de 1964 identifica la velocidad y propagacion de senal como
+  desventaja estructural frente a electronica; la linea de computacion general fluidica no escalo,
+  aunque la fluidica continuo en nichos de control y ambientes hostiles.
+nombre_proyecto_o_artefacto: FLODAC (Fluid Operated Digital Automatic Computer)
+periodo_historico: '1963-1964; publicado 1964'
+pais_contexto: Estados Unidos
+disciplina: computacion digital; fluidica; control
+problema_original: >-
+  Demostrar que un computador digital de proposito general podia realizar memoria, aritmetica,
+  control y entrada/salida usando exclusivamente logica de fluido, buscando alta fiabilidad,
+  inmunidad ambiental, bajo coste y ausencia de radiacion RF.
+principio_tecnico: >-
+  Chorros de aire biestables basados en transferencia de momento y efecto de pared/Coanda realizan
+  amplificacion y conmutacion. Puertas NOR fluidicas forman toda la logica; pares de NOR forman
+  flip-flops que conservan estado por adhesion estable del chorro a una pared.
+estado_historico: prototipo no escalado; sustitucion parcial; supervivencia en nichos
+resultado_real_alcanzado: >-
+  FLODAC fue construido con 280 elementos instalados, de los cuales el circuito requeria unos 250
+  NOR. Tenia palabras de 4 bits, memoria de 4 palabras y cuatro instrucciones: Transfer, Add,
+  Conditional Jump y Halt. Los autores informaron funcionamiento fiable como sistema coordinado,
+  ejecucion automatica de programas y reloj nominal de 10 Hz; circuitos compactos con los mismos
+  elementos habian alcanzado 250 Hz.
+causa_documentada: >-
+  El paper contemporaneo declara como desventaja principal la velocidad: conmutacion y propagacion
+  del orden de milisegundos y tasas cercanas a kilociclos frente a megaciclos o mas en electronica.
+  FLODAC opero a 10 ciclos/s para evitar reflexiones y problemas de propagacion en interconexiones
+  largas. Los autores reconocen explicitamente areas donde la logica fluida no podia competir con
+  la electronica por esta limitacion.
+causas_alternativas:
+  - HECHO DOCUMENTADO: la recuperacion de presion de los NOR de FLODAC promediaba ~30%, y variaciones dimensionales de fabricacion obligaban a ensayar y rechazar elementos fuera de especificacion.
+  - INTERPRETACION: el rapido aumento de velocidad, integracion y adopcion de la electronica digital redujo el espacio para escalar la arquitectura fluidica como computador general.
+  - HECHO DOCUMENTADO: la fluidica no desaparecio; continuo siendo util donde temperatura, radiacion, vibracion o simplicidad sin partes moviles eran ventajas dominantes.
+camino_que_lo_desplazo_si_existe: logica digital electronica de transistores y circuitos integrados
+fuentes:
+  - url: https://doi.org/10.1145/1464052.1464112
+    titulo: 'FLODAC: a pure fluid digital computer'
+    tipo: paper original / AFIPS Fall Joint Computer Conference
+    fecha: '1964-10-27'
+  - url: https://gwern.net/doc/cs/computable/1964-gluskin.pdf
+    titulo: 'FLODAC: A Pure Fluid Digital Computer (copia del paper, Computer History Museum)'
+    tipo: paper original / copia archivada
+    fecha: '1964'
+  - url: https://ntrs.nasa.gov/citations/19660000176
+    titulo: Binary fluid amplifier solves stability and load problems
+    tipo: NASA Technical Brief
+    fecha: '1966-05-01'
+  - url: https://www.usni.org/magazines/proceedings/1990/october/professional-notes
+    titulo: Professional Notes - fluidics applications
+    tipo: revista profesional / evidencia retrospectiva de continuidad
+    fecha: '1990-10'
+nivel_evidencia: A
+datos_cuantitativos:
+  - '250 NOR requeridos; 280 elementos instalados'
+  - 'palabra: 4 bits; memoria: 4 palabras de 4 bits; 4 instrucciones'
+  - 'reloj nominal FLODAC: 10 ciclos/s; circuitos compactos similares: hasta 250 ciclos/s'
+  - 'conmutacion y propagacion: orden de 1 ms; propagacion ~1 ms/pie'
+  - 'recuperacion de presion promedio ~30%; minimo aceptado 28%; ganancia minima 1.6'
+  - 'presion de alimentacion: 20 pulgadas de agua (~0.8 psi)'
+limitaciones: >-
+  FLODAC fue deliberadamente pequeno y demostrativo; no prueba escalabilidad economica a memoria o
+  programas grandes. Las ventajas de coste y fiabilidad de 1964 eran en parte estimaciones o
+  expectativas y no deben tratarse como ventajas comerciales demostradas.
+contradicciones: >-
+  La narrativa de que la fluidica simplemente fracaso es incorrecta: el propio equipo delimitaba
+  aplicaciones donde la velocidad era suficiente y la tecnologia continuo en controles especiales.
+  Por tanto, el abandono corresponde principalmente a computacion digital general, no al principio
+  fluidico completo.
+incertidumbres: >-
+  No se encontro en esta ronda una decision corporativa primaria de UNIVAC que documente una fecha
+  unica de cancelacion de FLODAC ni una comparacion economica posterior que aisle causalmente cada
+  factor del no escalado.
+etiquetas_neutrales: [fluidica, logica-NOR, aire, computacion-digital, memoria-fluidica, sin-partes-moviles, prototipo-no-escalado, sustitucion-parcial]
+fecha_hallazgo: '2026-09-16'
+fecha_revision: '2026-09-16'
