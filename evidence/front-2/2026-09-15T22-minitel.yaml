@@ -1,0 +1,49 @@
+id: f2-20260915T22-minitel
+frente: front-2
+cycle_id: 2026-09-15T22
+tema_objeto: red telematica publica centralizada
+nombre_proyecto_o_artefacto: Minitel / Teletel
+periodo_historico: 1980-2012
+pais_contexto: Francia
+disciplina: [telecomunicaciones, videotex, servicios_en_linea, interfaz]
+afirmacion_principal: "Minitel fue una via nacional de servicios interactivos sobre red telefonica que alcanzo escala masiva y tres decadas de operacion; no fue un fracaso temprano, sino una arquitectura cerrada y centralizada finalmente sustituida por Internet/TCP-IP y la Web."
+problema_original: "Distribuir directorios y servicios de informacion/interaccion electronica a hogares y empresas usando la red telefonica y terminales simples."
+principio_tecnico: "Terminal ligero dedicado + modem telefonico + videotex + servicios centralizados sobre la red de paquetes Transpac/X.25, con facturacion integrada en telecomunicaciones."
+estado_historico: sustitucion_gradual
+resultado_real_alcanzado:
+  - "Pruebas desde 1980 y despliegue nacional desde 1982."
+  - "Permitio directorio, mensajeria, reservas, compras y otros servicios en linea antes de la Web."
+  - "Supero seis millones de terminales a comienzos de los anos 1990 segun el Heinz Nixdorf MuseumsForum; otras fuentes situan el pico alrededor de nueve millones."
+  - "El servicio continuo hasta el 30 de junio de 2012."
+causa_documentada: "El cierre de Transpac/Minitel se produjo tras decadas de declive frente a Internet y TCP/IP, cuyas capacidades de hipertexto, multimedia, alcance internacional y ecosistema abierto superaron las restricciones del videotex."
+causas_alternativas:
+  - "Pantalla y graficos limitados, navegacion pagina-a-pagina y ausencia de descarga general."
+  - "Persistio por una base instalada, simplicidad y servicios profesionales, de modo que la sustitucion fue lenta y no inmediata."
+camino_que_lo_desplazo_si_existe: "Internet basado en TCP/IP y World Wide Web/HTML."
+fuentes:
+  - url: https://www.lemonde.fr/technologies/article/2012/06/29/le-minitel-faux-frere-d-internet-ferme-definitivement_1718808_651865.html
+    titulo: "Le Minitel, faux frere d'Internet, ferme definitivement"
+    tipo: prensa_contemporanea_al_cierre
+    fecha: 2012-06-29
+  - url: https://blog.hnf.de/die-drei-jahrzehnte-des-minitel/
+    titulo: "Die drei Jahrzehnte des Minitel"
+    tipo: museo_historia_computacion
+    fecha: 2017-01-13
+nivel_evidencia: A
+datos_cuantitativos:
+  lanzamiento_nacional: 1982
+  cierre: 2012-06-30
+  terminales_1993_aprox: '>6_millones'
+limitaciones:
+  - "Terminales de presentacion limitada frente a computadores conectados a la Web."
+  - "Arquitectura y economia dependientes de infraestructura/operador nacional."
+contradicciones:
+  - "Describirlo como un simple precursor fallido de Internet es incorrecto: fue un sistema comercial masivo y longevo con arquitectura y modelo economico propios."
+incertidumbres:
+  - "Las cifras publicadas de terminales y usuarios varian segun ano y si se cuentan terminales instalados, conexiones o usuarios."
+HECHO_DOCUMENTADO: "Minitel funciono comercialmente durante aproximadamente treinta anos y fue cerrado el 30 de junio de 2012 al retirarse su infraestructura frente a Internet/IP."
+TESTIMONIO: "Fuentes historicas francesas describen una transicion progresiva porque ciertos usuarios mantuvieron el servicio por simplicidad y disponibilidad."
+INTERPRETACION: "La trayectoria demuestra una solucion completa al problema de servicios en linea que fue sustituida no por fracaso funcional, sino por una arquitectura de red mas general, abierta y extensible."
+etiquetas_neutrales: [videotex, X25, terminal_ligero, red_centralizada, servicios_en_linea, sustitucion]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
