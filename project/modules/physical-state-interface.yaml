@@ -1,6 +1,6 @@
 id: physical-state-interface
 title: Physical State Interface
-maturity: M2
+maturity: M3
 confidence: 0.78
 classification: INFERENCIA_DE_DISENO
 purpose: >-
@@ -17,8 +17,13 @@ alternative_checked:
   id: f1-20260915-2102
   reason_not_primary: "Integra sensado y computacion con mejor densidad funcional, pero requiere dispositivo semiconductor especializado y no prueba la ruta de minima electronica del nucleo."
 success_criterion: >-
-  Dada una señal fisica normalizada, producir estados discretos reproducibles con histeresis controlada y ejecutar transiciones de estado deterministas; el prototipo digital debe superar tests de umbral, ruido y memoria sin transiciones espurias fuera de tolerancia.
-next_action: "Validar digitalmente el contrato transduccion -> cuantizacion multestable -> FSM antes de especificar hardware."
+  Dada una señal fisica normalizada, producir estados discretos reproducibles con histeresis controlada y ejecutar transiciones de estado deterministas; superar tests de umbral, ruido y memoria sin transiciones espurias fuera de tolerancia.
+prototype:
+  implementation: src/physical_state.py
+  tests: tests/test_physical_state.py
+  status: created_not_executed
+  scope: "sustituto digital del contrato transduccion -> cuantizacion multestable -> FSM; no representa integracion fisica demostrada"
+next_action: "Ejecutar y medir el prototipo; despues parametrizarlo con una curva experimental real de F3 antes de especificar hardware."
 limitations:
   - "No existe aun evidencia de integracion fisica entre los sensores F3 y los mecanismos F1."
   - "La arquitectura es una inferencia de diseño; no una causalidad demostrada."
