@@ -1,0 +1,34 @@
+id: f1-20260915-2103
+front: front-1
+cycle_id: 2026-09-15T21
+tema_objeto: maquina de estados finitos electromecanica con memoria mecanica no reciproca
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+afirmacion_principal:
+  hecho: "Un sistema de unidades rotatorias biestables acopladas integra memoria mecanica dependiente de historia con logica combinacional y opera como FSM de cuatro bits."
+  hipotesis: null
+  interpretacion: "El estado geometrico puede participar directamente en memoria secuencial y decision, en vez de limitar la mecanica a actuar como salida de un controlador."
+capacidad_nueva: "Decision secuencial reprogramable e in-memory electromechanical computing con estado fisico persistente."
+mecanismo_o_principio: "Unidades rotatorias biestables serialmente acopladas generan memoria mecanica no reciproca; su orientacion discreta codifica bits y una red conductora transduce esos estados para logica."
+dominio: computacion_electromecanica
+fuentes:
+  - url: "https://doi.org/10.1002/advs.202522133"
+    titulo: "Rotary Electromechanical System Integrating Non-Reciprocal Memory and Combinational Logic"
+    tipo: paper_original
+    fecha: 2026
+nivel_evidencia: A
+datos_cuantitativos: "Demostracion como FSM de 4 bits; funciones reportadas incluyen combination lock, computacion electromecanica in-memory y control digital reprogramable."
+condiciones_de_prueba: "Pila de unidades rotatorias biestables bajo torque aplicado; reglas de transicion modificadas cambiando acoplamiento electromecanico."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "orientacion/estado geometrico transducido electricamente"
+tipo_de_memoria_o_estado: "memoria mecanica no reciproca dependiente de historia"
+tipo_de_adaptacion: "reglas de transicion reconfigurables mediante acoplamiento electromecanico"
+tipo_de_actuacion: rotacion_biestable
+madurez_tecnica: "demostracion experimental de laboratorio"
+limitaciones:
+  - "Escala demostrada: cuatro bits; no se establece escalabilidad a computacion general."
+  - "Es electromecanico, no puramente mecanico: la logica usa una red conductora."
+contradicciones:
+  - "La novedad es integrar memoria y logica secuencial; literatura previa ya demostraba memoria o logica mecanica por separado." 
+etiquetas_neutrales: [finite-state-machine, mechanical-memory, electromechanical, bistability, sequential-logic]
