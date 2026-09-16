@@ -1,0 +1,56 @@
+id: f2-20260915-21-video2000
+frente: front-2
+cycle_id: 2026-09-15T21
+tema_objeto: seguimiento activo de pistas en cinta magnetica de video
+nombre_proyecto_o_artefacto: Philips/Grundig Video 2000 - Dynamic Track Following (DTF)
+periodo_historico: 1979-1988
+pais_contexto: Paises Bajos / Alemania; mercado principalmente europeo
+disciplina: electronica de consumo / grabacion magnetica / control
+problema_original: aumentar densidad y compatibilidad de reproduccion manteniendo las cabezas de video centradas automaticamente sobre pistas helicoidales sin control manual de tracking
+principio_tecnico: cabezas de video montadas sobre actuadores piezoelectricos que corrigen dinamicamente su posicion a partir de frecuencias piloto grabadas en las pistas
+afirmacion_principal: Video 2000 comercializo seguimiento activo DTF y cassette reversible, pero el formato completo fue retirado tras perder frente a VHS; el principio de cabezal activamente servo-posicionado no fue la causa documentada principal de su desaparicion.
+estado_historico: sustitucion de formato; principio tecnico absorbido parcialmente en otras familias de servo/control
+resultado_real_alcanzado: >-
+  Sistema domestico comercial desde 1979; DTF permitia seguimiento automatico de pista y eliminaba la necesidad del control manual de tracking caracteristico de otros sistemas. El formato termino en 1988.
+causa_documentada: >-
+  La literatura secundaria coincide en que Video 2000 entro despues que VHS, tuvo alcance geografico/licenciamiento menor y sufrio problemas de compatibilidad/madurez inicial. No hay evidencia en esta ronda de que DTF por si mismo causara el fracaso.
+causas_alternativas:
+  - ventaja temporal y ecosistema de licenciatarios de VHS
+  - disponibilidad de peliculas y efecto de red del mercado de alquiler
+  - lanzamiento limitado geograficamente
+  - incompatibilidades y complejidad de primeras generaciones
+camino_que_lo_desplazo_si_existe: VHS como formato domestico dominante
+fuentes:
+  - url: https://en.wikipedia.org/wiki/Video_2000
+    titulo: Video 2000
+    tipo: fuente secundaria con referencias tecnicas
+    fecha: consultada 2026-09-15
+  - url: https://de.wikipedia.org/wiki/Video_2000
+    titulo: Video 2000 - DTF
+    tipo: fuente secundaria que referencia manual de servicio Grundig
+    fecha: consultada 2026-09-15
+  - url: https://www.eachmoment.co.uk/blog/video-2000-v2000-to-digital-uk-the-philips-format-that-lost-to-vhs-and-why
+    titulo: Video 2000 to Digital UK
+    tipo: retrospectiva tecnica de laboratorio de digitalizacion
+    fecha: 2026
+nivel_evidencia: B
+datos_cuantitativos:
+  - lanzamiento comercial: 1979
+  - fin del formato: 1988
+  - actuacion piezoelectrica descrita hasta aproximadamente +/-150 V en documentacion tecnica secundaria
+limitaciones:
+  - no se recupero en esta ronda el manual primario de servicio citado para DTF
+  - el exito o fracaso comercial del formato no mide aisladamente el valor tecnico de DTF
+contradicciones:
+  - la intencion de DTF era mejorar compatibilidad entre maquinas, pero se documentaron problemas de alineacion entre primeras maquinas Philips y Grundig
+incertidumbres:
+  - contribucion cuantitativa de la complejidad/coste de DTF frente a factores de mercado
+hecho_documentado: >-
+  Video 2000 fue comercial, uso DTF con actuacion piezoelectrica y desaparecio como formato a finales de los anos 1980.
+testimonio: >-
+  Retrospectivas tecnicas atribuyen su derrota principalmente a entrada tardia, ecosistema VHS y alcance de mercado, no a incapacidad fundamental del seguimiento activo.
+interpretacion: >-
+  Es un camino donde una solucion sofisticada de servo-seguimiento existio en producto real pero quedo encerrada en un formato que fue sustituido por otra plataforma.
+etiquetas_neutrales: [video_magnetico, servo, piezoelectrico, DTF, formato, sustitucion]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
