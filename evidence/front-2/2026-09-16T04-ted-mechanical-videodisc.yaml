@@ -1,0 +1,63 @@
+id: f2-2026-09-16T04-ted-mechanical-videodisc
+frente: front-2
+cycle_id: 2026-09-16T04
+tema_objeto: videodisco mecánico de alta densidad
+nombre_proyecto_o_artefacto: TeD (Television Electronic Disc / Teldec Television Disc)
+periodo_historico: 1970-1978
+pais_contexto: Alemania Occidental / Reino Unido; licencias posteriores en Japón
+disciplina: almacenamiento audiovisual; mecánica de precisión; electrónica de consumo
+afirmacion_principal: >-
+  HECHO DOCUMENTADO: Telefunken/Teldec llevó a mercado un videodisco analógico flexible leído mecánicamente: surcos verticales de alta densidad, lectura por estilete/pickup piezoeléctrico y disco girando sobre colchón de aire. Llegó a distribución comercial en 1975, pero su límite de unos 10 minutos por disco, problemas técnicos y un ecosistema de software reducido quedaron rápidamente desplazados por videocassette; para 1978 Telefunken había adoptado VHS. No fue sólo concepto ni prototipo.
+problema_original: almacenar y distribuir vídeo doméstico pregrabado en un soporte prensable similar al disco fonográfico
+principio_tecnico: >-
+  Modulación vertical (hill-and-dale) extremadamente densa en lámina plástica flexible; rotación rápida sobre colchón de aire y transducción mecánico-eléctrica mediante estilete/pickup piezoeléctrico. La alta velocidad lineal elevaba el ancho de banda disponible hasta escala de vídeo.
+estado_historico: sustitucion
+resultado_real_alcanzado: >-
+  Anunciado públicamente en 1970 y comercializado en Alemania Occidental desde marzo de 1975. En los primeros tres meses se distribuyeron aproximadamente 6000 reproductores a 2500 distribuidores y había unas 50000 unidades de discos en tiendas. Sanyo y General obtuvieron licencias japonesas; Sanyo desarrolló un cambiador automático de 12 discos. El sistema no escaló como estándar doméstico.
+causa_documentada: >-
+  Reproducción limitada a aproximadamente 10 minutos por disco, problemas técnicos/fragilidad de la base mecánica y mercado de programas insuficiente; simultáneamente videocassette ofrecía grabación doméstica y duraciones aptas para programas/películas completos.
+causas_alternativas:
+  - La llegada comercial tardía respecto del largo desarrollo iniciado antes de 1970 redujo la ventana competitiva.
+  - El autocambiador mitigaba duración pero aumentaba complejidad y no eliminaba la desventaja frente a cinta.
+camino_que_lo_desplazo_si_existe: videocassette, especialmente VHS y Betamax; posteriormente videodisco óptico
+fuentes:
+  - url: https://collection.sciencemuseumgroup.org.uk/documents/aa110092742
+    titulo: The Ernest Walter (Bill) Elliot collection
+    tipo: archivo institucional con documentación técnica y de prensa de época
+    fecha: 1970-1974
+  - url: https://www.worldradiohistory.com/Archive-Radio-Electronics/70s/1977/Radio-Electronics-1977-02.pdf
+    titulo: Radio-Electronics, February 1977 — TED visits United States
+    tipo: prensa técnica contemporánea
+    fecha: 1977-02
+  - url: https://www.tvencyclopedia.org/tv-encyclopedia-17/videodisc
+    titulo: Videodisc — Encyclopedia of TV & Radio
+    tipo: referencia histórica secundaria
+    fecha: desconocida
+  - url: https://www.terramedia.co.uk/media/video/ted_video_disc_2.htm
+    titulo: TeD video disc — Moving to the market
+    tipo: archivo/historia técnica retrospectiva
+    fecha: 2000-06-24
+nivel_evidencia: A
+datos_cuantitativos:
+  - disco flexible: 8 pulgadas / ~21 cm en versión comercial
+  - velocidad PAL: ~1500 rpm
+  - reproducción comercial: ~10 min por disco
+  - mercado inicial: ~6000 reproductores enviados a ~2500 distribuidores y ~50000 discos en tiendas durante los primeros tres meses
+  - precio inicial reportado: justo bajo DM1500; discos desde DM10
+  - prototipo de autocambiador: 12 discos de 10 min
+limitaciones:
+  - El soporte era sólo reproducción; no ofrecía grabación doméstica.
+  - La duración obligaba a múltiples discos/cambios para contenido largo.
+  - La lectura mecánica de vídeo exigía alta precisión y era sensible a problemas del soporte y mecanismo.
+contradicciones:
+  - La narrativa de fracaso inmediato simplifica demasiado: existió producto comercial, distribución significativa inicial, licencias internacionales y desarrollo de autocambiador.
+  - Las fuentes difieren en detalles de diámetro/velocidad entre prototipos PAL/NTSC; las cifras se mantienen ligadas a la configuración descrita por cada fuente.
+incertidumbres:
+  - No se localizó en esta ronda una cifra primaria consolidada de ventas finales al consumidor ni una fecha única formal de cancelación; la adopción de VHS por Telefunken a fines de 1978 fija un límite práctico.
+etiquetas_neutrales: [videodisco, almacenamiento_analogico, transduccion_piezoelectrica, lectura_mecanica, colchón_de_aire, sustitucion]
+separacion_epistemica:
+  hecho_documentado: El sistema fue fabricado, comercializado y licenciado; usó lectura mecánica de surco vertical sobre disco flexible en colchón de aire.
+  testimonio: La prensa técnica de 1977 describía aceptación pública poco espectacular pese a calidad de imagen demostrada como muy buena.
+  interpretacion: El principio de obtener ancho de banda de vídeo mediante velocidad lineal y densidad mecánica funcionó, pero la arquitectura de soporte impuso una duración/operación peor que la trayectoria videocassette.
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
