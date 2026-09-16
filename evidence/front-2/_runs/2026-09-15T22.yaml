@@ -1,0 +1,9 @@
+cycle_id: 2026-09-15T22
+front: front-2
+status: complete
+findings_count: 3
+completed_at: 2026-09-15T22:14:26-03:00
+finding_ids:
+  - f2-20260915T22-cybersyn
+  - f2-20260915T22-magnetic-bubble-memory
+  - f2-20260915T22-minitel
