@@ -7,9 +7,9 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.94
-    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601, f1-20260916-1701, f3-20260916-1701]
+    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601, f1-20260916-1701, f3-20260916-1701, f3-20260916-1801]
     success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable con umbral/rango documentado, persistencia medible y falsos cambios cuantificables; memorias de historia deben medir resolucion, destructividad y ambiguedad; escritura remota debe medir selectividad, error y energia."
-    next_action: "Mantener M3. F1-17 refuerza discretizacion mecanica reprogramable y F3-17 integracion fisica acumulativa, pero faltan metricas abiertas suficientes para M4."
+    next_action: "Mantener M3. El antifusible termico agrega un caso experimental fuerte de evento->estado irreversible (>10^3 HR/LR, ~60 C), pero no resuelve precision, deriva ni falsos cambios para M4."
 
   - id: embodied-dynamics-computation
     maturity: M1
@@ -24,7 +24,7 @@ active_modules:
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401, f1-20260916-1501]
     current_architecture: "synthetic temporal signal -> uniform reference | threshold-event encoder | latency+fading-state encoder -> common event task -> transfer/error/score metrics"
     success_criterion: "Sobre una misma señal y tarea, la cadena fisica/analogica debe conservar >=95% del score de referencia digital o mejorarlo y reducir >=10x el volumen transferido; reportar energia local y periferica por separado."
-    next_action: "Ejecutar src/temporal_benchmark.py y tests/test_temporal_benchmark.py; no M4 hasta obtener resultados medidos."
+    next_action: "Ejecutar src/temporal_benchmark.py y tests/test_temporal_benchmark.py; no M4 hasta obtener resultados medidos. F1-18 se deduplica funcionalmente con f1-20260916-1501 y no cambia madurez."
 
 waiting_modules:
   - id: legacy-noninvasive-observability
@@ -46,9 +46,10 @@ archived_modules:
   - {id: dynamic-track-following-precedent, evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901], reason: "Precedente de feedback medio-transductor, sin promover modulo."}
   - {id: balanced-ternary-precedent, evidence_ids: [f2-20260915-21-setun, f2-20260916-1401], reason: "Continuacion deduplicada; sin traduccion funcional nueva."}
   - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701], reason: "FLODAC demuestra computacion fluida completa pero su limitacion de velocidad y ausencia de necesidad arquitectonica actual no justifican modulo; no confundir con fluidic memristors contemporaneos."}
+  - {id: domestic-humanoid-generalist-precedent, evidence_ids: [f2-20260916-1801], reason: "Prototipos humanoides teleoperados con tareas limitadas; sin traduccion funcional medible al nucleo y sin evidencia de autonomia general demostrada."}
 
 current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse/latency physical encoding -> persistent/fading physical state -> optional local association/learning -> externally observable event/state -> optional physical dynamics/logic -> output/action; characterize information preserved, persistence, reset, ambiguity, selectivity, robustness, local energy and total peripheral cost"
-last_synthesized_cycle: 2026-09-16T17
+last_synthesized_cycle: 2026-09-16T18
 
 rules:
   max_active_modules: 3
