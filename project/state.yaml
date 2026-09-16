@@ -6,7 +6,7 @@ core:
 active_modules:
   - id: physical-state-interface
     maturity: M3
-    confidence: 0.89
+    confidence: 0.91
     evidence_ids:
       - f1-20260915-2101
       - f1-20260915-2103
@@ -17,12 +17,13 @@ active_modules:
       - f1-20260916-02-lc-photonic-memory
       - f3-20260916-02-hygromechanical-indicator
       - f3-20260916-03-adhesive-tape-latching-memory
-    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse tambien resolucion y destructividad de lectura."
-    next_action: "Ejecutar tests existentes de physical_state/event_state; despues incorporar una curva experimental real de transduccion o memoria material y medir falsos cambios, margen, persistencia, resolucion, reversibilidad y si la lectura altera el estado."
+      - f3-20260916T04-passive-tti
+    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse resolucion, destructividad de lectura y ambiguedad entre trayectorias de entrada que producen el mismo estado final."
+    next_action: "Ejecutar tests existentes de physical_state/event_state; despues incorporar una curva experimental real de transduccion o memoria material y medir falsos cambios, margen, persistencia, resolucion, reversibilidad, destructividad de lectura y degeneracion de historia-a-estado."
 
   - id: embodied-dynamics-computation
     maturity: M1
-    confidence: 0.82
+    confidence: 0.87
     evidence_ids:
       - f1-20260915-22-wave-metamaterial-robot
       - f1-20260915-22-light-programmable-mechanical-logic
@@ -32,13 +33,16 @@ active_modules:
       - f1-20260916-02-magnetic-self-learning
       - f1-20260916t03-zro2-aftj
       - f1-20260916t03-learning-shape-metamaterial
-    success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria, aprendizaje y reset/relajacion en la comparacion."
-    next_action: "No promover aun: ZrO2 refuerza reservoir computing fisico y el metamaterial refuerza aprendizaje mecanico, pero siguen siendo funciones distintas. Fijar operador/tarea, metrica, tolerancia y coste de reset antes de construir benchmark M2."
+      - f1-20260916T04-pneumatic-soft-robot-prc
+      - f1-20260916T04-hydrogel-fluidic-memristor
+      - f1-20260916T04-ti3c2tx-homogeneous-rc
+    success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria, aprendizaje, reset/relajacion y coste de perifericos en la comparacion."
+    next_action: "No promover aun. La ronda 04 refuerza fuertemente reservoir computing en sustratos mecanico-neumatico, ionico y MXene, pero sus benchmarks siguen heterogeneos. Especificar un benchmark temporal minimo comun con entrada, readout, metrica de error, memoria requerida, energia del sistema completo y coste de reset antes de M2."
 
 waiting_modules:
   - id: temporal-in-sensor-processing
-    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision]
-    reason: "Convergencia plausible entre flujo temporal disperso y reservorio fisico, pero no hay evidencia directa de integracion y requiere hardware especializado."
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration]
+    reason: "La nueva medicion cuantifica que event vision puede recuperar frecuencia 10-190 Hz con error medio 0.673%, pero tambien muestra dependencia fuerte de amplitud/contraste; sigue sin evidencia directa de integracion con reservorio fisico y requiere hardware especializado."
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state]
     reason: "La evidencia magnetica refuerza inferencia externa de estado de motor, pero sigue validada en montaje/motor especifico; junto a speckle y ultrasonido las modalidades siguen heterogeneas y no justifican modulo activo sin variable objetivo comun y presupuesto de incertidumbre."
@@ -62,9 +66,15 @@ archived_modules:
   - id: parametric-phase-logic-precedent
     evidence_ids: [f2-2026-09-16T03-parametron]
     reason: "Precedente historico fuerte de logica/memoria por fase estable de oscilacion parametrica, pero no hay continuidad funcional suficiente con el nucleo para abrir modulo; queda archivado sin forzar analogia con fotonica o reservorios."
+  - id: saturable-magnetic-logic-precedent
+    evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing]
+    reason: "Demuestra logica real mediante saturacion magnetica y una sustitucion decidida por trayectoria tecnologica, pero no existe traduccion funcional suficientemente especifica al nucleo actual para abrir modulo."
+  - id: mechanical-video-density-precedent
+    evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc]
+    reason: "Demuestra transduccion mecanico-electrica de video de alta densidad, pero sus restricciones de soporte y duracion no convergen funcionalmente con los modulos activos."
 
-current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous state formation -> persistent or fading physical state -> optional physical dynamics/logic/learning -> observable output/action; characterize persistence, relaxation/reset and read destructivity explicitly"
-last_synthesized_cycle: 2026-09-16T03
+current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous state formation -> persistent or fading physical state -> optional physical dynamics/logic/learning -> observable output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity and peripheral cost explicitly"
+last_synthesized_cycle: 2026-09-16T04
 
 rules:
   max_active_modules: 3
