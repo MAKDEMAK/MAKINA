@@ -5,7 +5,7 @@ tema_objeto: matriz memristiva iónica de hidrogel químicamente modulable
 afirmacion_principal: "HECHO: una interfaz gel-gel confinada en microporos produce memoria iónica, plasticidad sináptica y modulación química integrables en una matriz 10x10 flexible."
 capacidad_nueva: integrar memoria/computación neuromórfica iónica y sensibilidad química en el mismo sustrato fluídico escalado a matriz
 mecanismo_o_principio: redistribución temporal de iones entre hidrogeles con densidades de carga distintas en un microporo cónico; enriquecimiento/depleción iónica genera histéresis memristiva y ATP modifica la plasticidad
- dominio: computación neuromórfica; nanofluídica; materiales responsivos
+dominio: computación neuromórfica; nanofluídica; materiales responsivos
 fuentes:
   - url: https://www.nature.com/articles/s41467-026-70728-1
     titulo: Confined-hydrogel fluidic memristor crossbar array for neuromorphic computing
