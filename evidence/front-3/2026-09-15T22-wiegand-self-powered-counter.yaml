@@ -1,0 +1,36 @@
+id: f3-20260915-22-wiegand-counter
+frente: front-3
+cycle_id: 2026-09-15T22
+tema_objeto: conteo pasivo autoalimentado de ciclos rotatorios
+afirmacion_principal: Un sensor Wiegand puede convertir cada inversión de campo magnético asociada a una rotación en un pulso eléctrico suficientemente energético para registrar el evento sin alimentación externa.
+funcion: registrar
+principio_de_mediacion: inversión abrupta de magnetización Wiegand -> pulso eléctrico + energía cosechada
+variable_fisica_entrada: rotación que produce inversión de campo magnético
+señal_o_estado_salida: pulso eléctrico y estado digital de conteo
+modalidad: magnetomecánica / magnética
+invasividad: minima
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: no
+resolucion_o_precision: una rotación individual en la demostración
+latencia: por evento; no cuantificada
+condiciones_de_prueba: prototipo experimental de contador digital de un bit accionado únicamente por pulsos de sensor Wiegand
+fuentes:
+  - url: https://doi.org/10.3390/s20143840
+    titulo: Single-Bit, Self-Powered Digital Counter Using a Wiegand Sensor for Rotary Applications
+    tipo: paper experimental
+    fecha: 2020-07-09
+nivel_evidencia: A
+datos_cuantitativos:
+  energia_maxima_por_pulso: 130 nJ
+  energia_suficiente_para_contador: 38 nJ
+mecanismo_o_principio: El efecto Wiegand genera un pulso de tensión prácticamente independiente de cuán lenta sea la inversión magnética; la energía del propio pulso alimenta el cambio de estado del contador.
+limitaciones:
+  - requiere acoplamiento magnético y geometría que produzca inversiones reproducibles
+  - demostración limitada a conteo digital de un bit
+contradicciones:
+  - autoalimentado no significa ausencia total de electrónica; el prototipo usa circuito de conteo
+etiquetas_neutrales: [Wiegand, event-counting, self-powered, rotation, magnetic-transduction]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+clasificacion_medicion: medición directa de evento/ciclo
