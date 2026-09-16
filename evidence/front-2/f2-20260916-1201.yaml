@@ -1,0 +1,67 @@
+id: f2-20260916-1201
+frente: front-2
+cycle_id: 2026-09-16T12
+tema_objeto: videotex gráfico interactivo sobre redes de telecomunicación existentes
+afirmacion_principal: >-
+  Telidon fue un camino canadiense de videotex de segunda generación que intentó convertir televisores y enlaces de telecomunicación existentes en terminales gráficos interactivos. Existió en prototipos, ensayos de campo y despliegues comerciales, y su lenguaje gráfico sobrevivió parcialmente como NAPLPS, pero el programa Telidon como plataforma integrada no alcanzó masa crítica y el apoyo federal terminó en 1985.
+nombre_proyecto_o_artefacto: Telidon
+periodo_historico: 1978-1985
+pais_contexto: Canadá
+disciplina: telecomunicaciones; videotex; gráficos por computador; interfaces
+problema_original: >-
+  Proporcionar acceso bidireccional doméstico a bases de datos, información y comandos mediante un televisor modificado y enlaces como teléfono, cable, fibra, radiodifusión o satélite, con gráficos 2D más expresivos que los sistemas videotex basados en mosaicos de caracteres.
+principio_tecnico: >-
+  Descripción gráfica independiente del dispositivo mediante Picture Description Instructions: en vez de transmitir una imagen raster completa, el enlace transporta primitivas/instrucciones geométricas que el terminal interpreta y rasteriza localmente. La arquitectura separaba base de datos/host, enlace de telecomunicación y decodificador/pantalla.
+estado_historico: sustitucion_y_absorcion_parcial
+resultado_real_alcanzado: >-
+  HECHO DOCUMENTADO: el Department of Communications lo convirtió en un programa nacional; existieron múltiples ensayos y sistemas comerciales. El informe anual 1980-81 del departamento enumeraba 14 proyectos canadienses anunciados y esperaba 20 sistemas operativos a comienzos de 1983. El Auditor General documentó en 1983 que Telidon era un programa principal del Research Sector, iniciado como programa de cuatro años en abril de 1979. La sintaxis evolucionó hacia el estándar norteamericano NAPLPS y tuvo usos posteriores fuera del programa Telidon.
+causa_documentada: >-
+  HECHO DOCUMENTADO: el Auditor General constató en 1983 deficiencias de planificación/evaluación: el plan de 1979 fue abandonado tras aproximadamente dos meses por cambios rápidos, un sistema de planificación propuesto en 1981 nunca se utilizó y aún no se había evaluado si el programa cumplía sus objetivos. Evidencia histórica posterior documenta que los terminales/equipos auxiliares permanecieron caros, los servicios no lograron una estructura de precios sostenible ni masa crítica, y el apoyo federal terminó el 31 de marzo de 1985.
+causas_alternativas:
+  - INTERPRETACION: la rápida caída del coste y aumento de capacidad de los computadores personales redujo la ventaja de un decodificador videotex dedicado.
+  - INTERPRETACION: el problema no fue únicamente técnico; dependía simultáneamente de terminales, operadores de red, proveedores de información y una economía de servicio viable.
+camino_que_lo_desplazo_si_existe: >-
+  Computadores personales y servicios online de propósito general; posteriormente Internet/Web. Parte del principio de presentación sobrevivió de forma absorbida en NAPLPS y en usos de señalización/BBS, por lo que no corresponde clasificarlo como fracaso técnico total.
+fuentes:
+  - url: https://publications.gc.ca/collections/collection_2015/bvg-oag/FA1-1-1983-eng.pdf
+    titulo: 1983 Report of the Auditor General of Canada — Department of Communications, Telidon program
+    tipo: informe_gubernamental_contemporaneo
+    fecha: 1983-09-15
+  - url: https://ewh.ieee.org/reg/7/millennium/telidon/telidon_telecommunications.html
+    titulo: Telecommunications Research and Development — Department of Communications Annual Report 1980-81 (reprint)
+    tipo: informe_departamental_contemporaneo_reimpreso
+    fecha: 1981
+  - url: https://ewh.ieee.org/reg/7/millennium/telidon/telidon_fingertips.html
+    titulo: A World at Your Fingertips — Department of Communications
+    tipo: documento_promocional_tecnico_contemporaneo_reimpreso
+    fecha: 1982
+  - url: https://www.interaccess.org/exhibitions/telidon
+    titulo: '#telidon'
+    tipo: archivo_institucional_retrospectivo
+    fecha: 2018
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Programa inicial: CAD 9 millones por cuatro años desde abril de 1979."
+  - "Presupuesto acumulado previsto del Department of Communications al cierre de 1985: CAD 59,3 millones."
+  - "Plan 1980-81: compra pública de aproximadamente 6.000 terminales para préstamo a industria."
+  - "14 proyectos Telidon anunciados en Canadá; expectativa contemporánea de 20 sistemas operativos a comienzos de 1983."
+limitaciones:
+  - Las cifras de expansión del informe 1980-81 eran planes/expectativas, no adopción final demostrada.
+  - No se atribuye el cierre a una sola causa porque confluyeron economía de terminal, contenido, mercado, gobernanza del programa y competencia tecnológica.
+contradicciones:
+  - La narrativa de que Telidon simplemente fracasó oculta que su sintaxis gráfica fue estandarizada como NAPLPS y continuó en otros sistemas.
+  - El optimismo oficial contemporáneo sobre expansión contrasta con la auditoría de 1983, que señalaba ausencia de evaluación formal de cumplimiento de objetivos.
+incertidumbres:
+  - No se encontró en esta ronda una evaluación federal final de 1984/1985 que cuantifique causalmente el peso relativo de cada motivo de terminación.
+  - La fecha exacta de algunos documentos promocionales reimpresos por IEEE no está explicitada en la página; se conserva la fecha histórica aproximada indicada por el contexto documental.
+etiquetas_neutrales:
+  - videotex
+  - graficos_vectoriales
+  - terminal_dedicado
+  - protocolo_presentacion
+  - telecomunicaciones
+  - sustitucion
+  - absorcion_parcial
+  - NAPLPS
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
