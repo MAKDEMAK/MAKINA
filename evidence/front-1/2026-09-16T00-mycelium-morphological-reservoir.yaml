@@ -1,0 +1,36 @@
+id: f1-20260916T00-mycelium-reservoir
+frente: front-1
+cycle_id: 2026-09-16T00
+tema_objeto: sustrato neuromorfico de micelio morfologicamente ajustable
+afirmacion_principal:
+  HECHO: "Micelio seco infundido con PEDOT:PSS forma reservorios analogicos cuya morfologia modifica transporte, no linealidad y memoria temporal; se demostro procesamiento temporal y NARMA-10."
+  HIPOTESIS: "La morfologia cultivada puede convertirse en un parametro de diseno computacional reproducible a mayor escala."
+  INTERPRETACION: "La geometria biologicamente fabricada participa directamente en la transformacion de informacion, no solo como soporte del conductor."
+capacidad_nueva: "kernel fisico biodegradable con memoria desvaneciente y expansion no lineal ajustable mediante morfologia"
+mecanismo_o_principio: "red hifal morfologicamente estructurada + PEDOT:PSS produce caminos conductivos distribuidos, respuesta I-V no lineal y relajacion dependiente del historial"
+dominio: [computacion_fisica, neuromorfica, materiales_biofabricados]
+fuentes:
+  - url: https://www.nature.com/articles/s41598-026-55550-5
+    titulo: Morphologically tunable mycelium chips for physical reservoir computing
+    tipo: paper_original_experimental
+    fecha: 2026-06-10
+nivel_evidencia: A
+datos_cuantitativos:
+  - "16 reservorios espacialmente distintos por chip"
+  - "MC_total: chip39 0.209+-0.067; chip47 0.052+-0.023; chip43 0.048+-0.016; n=5 por chip"
+  - "respuesta rapida tau~0.15 s; subida 10-90% ~4.35 s"
+  - "modelo morfologia->propiedad electrica R2=0.74"
+  - "morfologia/resistencia: Moran I significativo p=0.003-0.007"
+condiciones_de_prueba: "muestras 50x100x1 mm, micelio seco <10% humedad, infusion PEDOT:PSS 1.3%; entradas 1-4 V para memoria; tres chips independientes"
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: electrico_analogico
+tipo_de_memoria_o_estado: dinamica_electrica_transitoria_fading_memory
+tipo_de_adaptacion: morfologia_preconfigurada_y_ruteo_de_subreservorios
+tipo_de_actuacion: ninguna_intrinseca_demostrada
+madurez_tecnica: prueba_de_concepto_experimental
+limitaciones: "variabilidad entre dispositivos; un ensayo sinusoidal de tres fue no responsivo; requiere infusion conductora, acondicionamiento analogico y lectura externa; ajuste dinamico por ambiente no fue demostrado"
+contradicciones: "Los autores no atribuyen toda la computacion al micelio: PEDOT:PSS tambien tiene transporte no lineal; el scaffold modula y estructura esa dinamica."
+etiquetas_neutrales: [physical_reservoir, mycelium, morphology, fading_memory, analog, biodegradable]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
