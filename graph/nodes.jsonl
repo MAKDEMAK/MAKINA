@@ -21,3 +21,8 @@
 {"id":"f2-2026-09-16T00-maddida-dda","front":"front-2","kind":"evidence","label":"MADDIDA digital differential analyzer","cycle_id":"2026-09-16T00"}
 {"id":"f2-2026-09-16T00-nordsieck-differential-analyzer","front":"front-2","kind":"evidence","label":"Nordsieck electromechanical differential analyzer","cycle_id":"2026-09-16T00"}
 {"id":"f3-2026-09-16T00-clamp-on-ultrasonic-flow","front":"front-3","kind":"evidence","label":"clamp-on ultrasonic transit-time flow measurement","cycle_id":"2026-09-16T00"}
+{"id":"f1-20260916-02-flare","front":"front-1","kind":"evidence","label":"FLARE multiscale in-memory photonic neurons","cycle_id":"2026-09-16T02"}
+{"id":"f1-20260916-02-lc-photonic-memory","front":"front-1","kind":"evidence","label":"nonvolatile molecular photonic in-memory state","cycle_id":"2026-09-16T02"}
+{"id":"f1-20260916-02-magnetic-self-learning","front":"front-1","kind":"evidence","label":"intrinsic magnetic Oja-rule self-learning","cycle_id":"2026-09-16T02"}
+{"id":"f3-20260916-02-hygromechanical-indicator","front":"front-3","kind":"evidence","label":"passive persistent hygromechanical exposure memory","cycle_id":"2026-09-16T02"}
+{"id":"f3-20260916-02-motor-stray-flux-state","front":"front-3","kind":"evidence","label":"non-contact motor state inference from stray magnetic flux","cycle_id":"2026-09-16T02"}
