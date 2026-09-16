@@ -1,0 +1,9 @@
+cycle_id: 2026-09-15T21
+front: front-3
+status: complete
+findings_count: 3
+completed_at: 2026-09-15T21:33:00-03:00
+findings:
+  - f3-20260915-21-passive-crack
+  - f3-20260915-21-event-vision
+  - f3-20260915-21-passive-rf-temp
