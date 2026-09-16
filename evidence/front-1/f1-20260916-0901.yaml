@@ -1,0 +1,43 @@
+id: f1-20260916-0901
+frente: front-1
+cycle_id: 2026-09-16T09
+tema_objeto: memristor optoelectronico WS2/ZTO como sensor-reservorio
+hecho: "Un dispositivo Cu/ZTO/WS2/Pt integra sensado optico, memoria dinamica y transformacion no lineal temporal para reservoir computing; el readout sigue siendo entrenado externamente."
+hipotesis: "La co-localizacion de sensado y dinamica de reservorio puede reducir transferencia y conversion de datos frente a arquitecturas separadas."
+interpretacion: "La capacidad materialmente util es procesamiento temporal directamente en el elemento fotosensible, no autonomia de aprendizaje completa."
+afirmacion_principal: "Un memristor optoelectronico WS2/ZTO puede actuar simultaneamente como sensor y reservorio fisico, preservando dinamica temporal y realizando codificacion no lineal antes del readout entrenado."
+capacidad_nueva: "sensado optico + memoria temporal + reservoir encoding en el mismo dispositivo, con operacion demostrada bajo humedad alta"
+mecanismo_o_principio: "fotoconductividad persistente y switching resistivo en WS2; dinamica volatil/no lineal transforma secuencias opticas en estados dependientes de historia"
+dominio: neuromorfica/optoelectronica/reservoir-computing
+fuentes:
+  - url: https://doi.org/10.1002/advs.75318
+    titulo: "WS2 Optoelectronic Memristive Reservoir Enabling Ultra-Low-Power, Multi-Task, and Environmentally Stable Neuromorphic Computing"
+    tipo: paper experimental
+    fecha: 2026-04-17
+nivel_evidencia: A
+datos_cuantitativos:
+  energia_optica_reportada: "~25.5 fJ/spike"
+  accuracy_N_MNIST: "~94%; reservoir encoder ~95%"
+  accuracy_motion: "~93%"
+  accuracy_speech: "~89%"
+  endurance: ">1.5e6 ciclos"
+  humedad: "95% RH"
+  constantes_PPF: "tau1=4.97 s; tau2=45.21 s"
+condiciones_de_prueba: "Cu/ZTO/WS2/Pt; tareas N-MNIST, percepcion de movimiento y FSDD; encapsulado ZTO; endurance SET 0.9 V/RESET -1 V, pulsos 1 us, lectura 0.1 V."
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: optico/fotosinaptico
+tipo_de_memoria_o_estado: "fotoconductividad persistente; STP/LTP; estados resistivos"
+tipo_de_adaptacion: "plasticidad optoelectronica; readout entrenado"
+tipo_de_actuacion: "cambio de conductancia/respuesta electrica"
+madurez_tecnica: "demostracion experimental de dispositivo y sistema RC de laboratorio"
+limitaciones:
+  - "El readout y entrenamiento no estan eliminados: la capa de salida usa pesos entrenados."
+  - "Las entradas de movimiento y voz fueron preprocesadas a trenes de spikes; no es percepcion multimodal cruda totalmente integrada."
+  - "La energia ~25.5 fJ/spike corresponde al dispositivo/estimacion optica reportada, no al consumo extremo-a-extremo del sistema."
+  - "Resultados de benchmarks no prueban robustez general fuera de las condiciones experimentales."
+contradicciones:
+  - "La afirmacion de integracion sensor-memoria-computo es compatible con el esquema experimental, pero el sistema completo conserva funciones externas de codificacion/readout."
+etiquetas_neutrales: [WS2, ZTO, optoelectronic-memristor, physical-reservoir, in-sensor-computing, temporal-dynamics, persistent-photoconductivity]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
