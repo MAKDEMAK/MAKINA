@@ -1,0 +1,28 @@
+id: f1-2026-09-16T01-floppy-mode-matrix-vector
+frente: front-1
+cycle_id: 2026-09-16T01
+tema_objeto: multiplicacion matriz-vector pasiva en metamaterial elastico
+afirmacion_principal: "HECHO: un metamaterial blando experimental realiza multiplicacion matriz-vector mediante modos floppy/zero de deformacion y puede reprogramar coeficientes geometricamente."
+capacidad_nueva: "Ejecutar una operacion lineal central para ML como respuesta mecanica pasiva del material, sin procesador digital durante el calculo."
+mecanismo_o_principio: "Una red teselada de celdas con dos modos de energia casi nula implementa y=Ax: desplazamientos son entradas/salidas y angulos geometricos codifican coeficientes Aij; compatibilidad entre celdas compone matrices mayores."
+dominio: computacion_mecanica_in_materia
+fuentes:
+  - url: "https://doi.org/10.1002/aisy.202500062"
+    titulo: "Reprogrammable, In-Materia Matrix-Vector Multiplication with Floppy Modes"
+    tipo: paper_original_experimental
+    fecha: 2025-04-01
+nivel_evidencia: A
+datos_cuantitativos: "Celda experimental 250x275 mm: coeficientes dentro de 20% del objetivo en regimen lineal y saturacion alrededor de 2 mm. Ensamble de dos celdas: 12% de error reportado; lattice 2x2 de 325x400 mm: matriz medida dentro de 15% del objetivo. Simulacion/diseño estima >64x64 posible con relaciones de aspecto MEMS ~1000:1; esto ultimo no fue demostrado fisicamente."
+condiciones_de_prueba: "Muestras de goma cortadas por water-jet; desplazamiento caracterizado por optical flow; entrada mecanica prescrita en regimen de pequeñas deformaciones."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "desplazamiento mecanico; optical flow solo para caracterizacion experimental"
+tipo_de_memoria_o_estado: "configuracion geometrica de coeficientes; no memoria temporal demostrada"
+tipo_de_adaptacion: "reprogramacion estructural reversible de coeficientes discretos"
+tipo_de_actuacion: "deformacion mecanica"
+madurez_tecnica: "prototipo macroscopico experimental 2x2"
+limitaciones: "Bending stiffness y compliance limitan magnitud de coeficientes y tamaño; histeresis y saturacion fuera del regimen lineal; escalado >2x2 es prediccion de diseño, no demostracion."
+contradicciones: "HIPOTESIS de escalabilidad: matrices >64x64 dependen de relaciones de aspecto alcanzables en MEMS, pero el experimento publicado permanece macroscopico y pequeño."
+etiquetas_neutrales: [metamaterial, floppy_modes, matriz_vector, computacion_pasiva, mecanica, reprogramable]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
