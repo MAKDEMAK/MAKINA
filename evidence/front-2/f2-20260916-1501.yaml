@@ -1,0 +1,56 @@
+id: f2-20260916-1501
+frente: front-2
+cycle_id: 2026-09-16T15
+tema_objeto: "parametron como familia lógica y computacional basada en oscilación paramétrica"
+afirmacion_principal:
+  hecho_documentado: "El parametron convirtió dos fases estables separadas por pi de un resonador excitado paramétricamente en dígitos binarios y permitió implementar memoria, retardo y lógica; pasó de investigación a computadores operativos y comerciales japoneses antes de ser desplazado por transistores más rápidos."
+  testimonio: "La retrospectiva IEEE del Milestone atribuye su desaparición a la rápida mejora de frecuencia de los transistores y a un ecosistema de I+D semiconductor mucho más amplio."
+  interpretacion: "No fue un fracaso ni un prototipo aislado: fue una trayectoria tecnológica funcional y parcialmente comercial cuya base física de lógica por fase resonante perdió la competencia de plataforma frente al transistor."
+nombre_proyecto_o_artefacto: "Parametron / MUSASINO-1 / MUSASINO-1B / FACOM 201-212"
+periodo_historico: "1954-mediados de 1960"
+pais_contexto: "Japón"
+disciplina: "computación digital; electrónica; lógica resonante"
+problema_original: "Construir elementos lógicos y de memoria digitales robustos y económicos en una época en que válvulas y transistores tempranos eran caros o problemáticos."
+principio_tecnico: "Resonador LC con reactancia no lineal excitado aproximadamente a 2f; oscila a f en uno de dos estados de fase separados 180 grados. Acoplamientos entre parametrons realizan retardo/memoria dinámica, mayoría, AND, OR y NOT."
+estado_historico: "sustitución tras adopción práctica y comercial"
+resultado_real_alcanzado: "MUSASINO-1 operó desde 1957 y prestó servicios de cálculo; MUSASINO-1B fue completado en 1960 y usado hasta 1967; Fujitsu comercializó derivados FACOM y exportó un FACOM 212 a Manila en 1963."
+causa_documentada: "La mejora rápida de los transistores de unión superó al parametron en frecuencia de operación; el transistor además servía a más dominios, concentrando mayor inversión de I+D."
+causas_alternativas:
+  - "El MUSASINO-1 artesanal tenía numerosos problemas de hardware y requería mucho trabajo de mantenimiento; esto explica limitaciones del primer prototipo, no por sí solo la desaparición de toda la tecnología."
+  - "La especialización del parametron como elemento lógico reducía su economía de plataforma frente al transistor multipropósito."
+camino_que_lo_desplazo_si_existe: "lógica digital basada en transistores de unión"
+fuentes:
+  - url: "https://doi.org/10.1109/JRPROC.1959.287195"
+    titulo: "The Parametron, a Digital Computing Element Which Utilizes Parametric Oscillation"
+    tipo: "paper original, Proceedings of the IRE"
+    fecha: "1959-08"
+  - url: "https://museum.ipsj.or.jp/en/computer/dawn/0013.html"
+    titulo: "MUSASINO-1, MUSASINO-1B"
+    tipo: "archivo/museo técnico institucional IPSJ"
+    fecha: "desconocida"
+  - url: "https://global.fujitsu/en-global/about/corporate/museum/products/products/computer-mainframe-facom212"
+    titulo: "FACOM212 (1959)"
+    tipo: "museo corporativo/documentación histórica"
+    fecha: "desconocida"
+  - url: "https://ethw.org/Milestones%3AParametron%2C_1954"
+    titulo: "Milestones: Parametron, 1954"
+    tipo: "archivo histórico IEEE/ETHW"
+    fecha: "2025"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "MUSASINO-1: aproximadamente 5,400 parametrons; coste de prototipo ~15 millones de yenes."
+  - "Goto documentó fan-out típico máximo de aproximadamente 10-20 parametrons por salida."
+  - "MUSASINO-1B: completado 1960; utilizado hasta 1967."
+  - "FACOM 212: completado 1959; exportado a Manila Customs Office en 1963."
+limitaciones:
+  - "Operación síncrona dependiente de excitación AC multifase."
+  - "Frecuencia de operación terminó siendo inferior a la de transistores en rápida mejora."
+  - "El primer MUSASINO-1 artesanal tuvo fallas de hardware y mantenimiento intensivo."
+contradicciones:
+  - "La narrativa de 'tecnología fallida' contradice la evidencia de uso operativo, comercialización FACOM y exportación; la clasificación adecuada es sustitución."
+  - "La baja velocidad no fue universal desde el inicio: retrospectivas IEEE señalan que PC-2 llegó a superar al ETL Mark IV A transistorado de su momento; la desventaja decisiva apareció con la mejora posterior del transistor."
+incertidumbres:
+  - "No se cuantifica aquí cuánto pesaron por separado velocidad, coste total, consumo, manufactura y economía del ecosistema en la decisión industrial final."
+etiquetas_neutrales: [parametron, oscilacion_parametrica, logica_por_fase, computacion_resonante, japon, sustitucion, FACOM, MUSASINO]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
