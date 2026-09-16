@@ -1,0 +1,36 @@
+id: f1-20260916T00-active-colloid-reservoir
+frente: front-1
+cycle_id: 2026-09-16T00
+tema_objeto: reservorio computacional de materia activa con acoplamiento hidrodinamico
+afirmacion_principal:
+  HECHO: "Una red experimental de cientos de osciladores coloidales activos realiza computacion de reservorio paralela mediante dinamica colectiva y acoplamiento hidrodinamico ajustable, sin multiplexacion temporal."
+  HIPOTESIS: "Otras plataformas de materia activa con actuacion mas simple podrian conservar el principio computacional."
+  INTERPRETACION: "La interaccion fisica entre unidades aporta simultaneamente dimensionalidad, memoria y no linealidad ajustables."
+capacidad_nueva: "prediccion temporal y deteccion de anomalias ocultas mediante dinamica colectiva fisica reconfigurable"
+mecanismo_o_principio: "particulas autopropulsadas orbitantes acopladas por flujo; espaciamiento y damping regulan interaccion, relajacion, memoria y no linealidad"
+dominio: [materia_activa, computacion_fisica, reservoir_computing]
+fuentes:
+  - url: https://www.nature.com/articles/s44488-026-00001-3
+    titulo: Reservoir computing from collective dynamics of active colloidal oscillators
+    tipo: paper_original_experimental
+    fecha: 2026-07-23
+nivel_evidencia: A
+datos_cuantitativos:
+  - "400 osciladores en demostraciones y simulaciones"
+  - "Mackey-Glass: NRMSE ~0.1 para horizonte 1 en ejemplo experimental"
+  - "anomalias tipo spike F1=0.98; anomalias ocultas F1=0.90"
+  - "prediccion robusta aun con 20% de osciladores excitados en simulacion, con acuerdo experimental reportado"
+  - "tiempo de relajacion ajustable por mas de un orden de magnitud"
+condiciones_de_prueba: "silica radio 3 um con hemisferio de carbono 80 nm; mezcla agua-2,6-lutidina; laser 532 nm; feedback optico; arreglo hexagonal"
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: vision_microscopica_de_posicion
+tipo_de_memoria_o_estado: dinamica_colectiva_con_fading_memory
+tipo_de_adaptacion: acoplamiento_y_damping_reconfigurables
+tipo_de_actuacion: propulsion_fototermica_y_direccionamiento_laser
+madurez_tecnica: prueba_de_principio_experimental
+limitaciones: "montaje complejo con laser, microscopia y feedback digital; no supera reservorios fisicos maduros; desempeño sensible al espaciamiento y damping"
+contradicciones: "El propio paper advierte que la implementacion activada por laser puede no ser practicamente aplicable."
+etiquetas_neutrales: [active_matter, hydrodynamic_coupling, parallel_reservoir, anomaly_detection, fading_memory]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
