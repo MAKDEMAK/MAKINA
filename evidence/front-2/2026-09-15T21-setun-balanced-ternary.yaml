@@ -1,0 +1,52 @@
+id: f2-20260915-21-setun
+frente: front-2
+cycle_id: 2026-09-15T21
+tema_objeto: computacion ternaria balanceada
+nombre_proyecto_o_artefacto: Setun
+periodo_historico: 1956-1965; continuacion Setun-70 desde 1967-1970
+pais_contexto: URSS
+Disciplina: arquitectura de computadores
+problema_original: proveer computacion universitaria y cientifica economica con una arquitectura simple y fiable
+principio_tecnico: logica ternaria balanceada con trits -1, 0, +1 y memoria de nucleos de ferrita
+afirmacion_principal: Setun demostro que una computadora electronica ternaria balanceada podia operar de forma fiable y economica; la linea de produccion fue detenida pese a demanda pendiente y la computacion binaria se convirtio en la via dominante.
+estado_historico: sustitucion y linea no escalada
+resultado_real_alcanzado: >-
+  Prototipo operativo terminado en 1958, pruebas oficiales superadas en 1960 y produccion de aproximadamente 50 maquinas hasta 1965; el equipo de MSU desarrollo despues Setun-70.
+causa_documentada: >-
+  La retrospectiva del Russian Virtual Computer Museum atribuye la detencion a oposicion institucional/industrial y afirma que la fabrica paro produccion pese a solicitudes no satisfechas. La evidencia disponible aqui es principalmente retrospectiva del equipo y debe distinguirse de registros administrativos independientes.
+causas_alternativas:
+  - estandarizacion industrial mundial alrededor de logica binaria
+  - ecosistema de componentes y software orientado a binario
+  - incompatibilidad con arquitecturas dominantes
+camino_que_lo_desplazo_si_existe: computadoras binarias convencionales
+fuentes:
+  - url: https://www.computer-museum.ru/english/setun.htm
+    titulo: Development of ternary computers at Moscow State University
+    tipo: museo tecnico / retrospectiva de los desarrolladores
+    fecha: desconocida
+  - url: https://en.wikipedia.org/wiki/Setun
+    titulo: Setun
+    tipo: fuente secundaria de orientacion
+    fecha: consultada 2026-09-15
+nivel_evidencia: B
+datos_cuantitativos:
+  - aproximadamente 50 maquinas producidas entre 1959 y 1965
+  - RAM operativa descrita como 3 paginas de 54 palabras en la retrospectiva del museo
+  - 24 instrucciones en el conjunto descrito
+  - reemplazo binario de rendimiento similar reportado como mas de 2.5 veces mas caro
+limitaciones:
+  - las causas economico-politicas proceden en gran medida de una retrospectiva vinculada a los desarrolladores
+  - el caso no demuestra superioridad general de ternario sobre binario
+contradicciones:
+  - Setun no desaparecio intelectualmente por completo; Setun-70 y DSSP continuaron parte de la linea
+incertidumbres:
+  - faltan en esta ronda documentos de fabrica o ministeriales independientes que confirmen el motivo exacto del cese
+hecho_documentado: >-
+  Setun existio, paso pruebas, fue producido en decenas de unidades y utilizo ternario balanceado.
+testimonio: >-
+  La retrospectiva del equipo sostiene que hubo demanda no satisfecha y resistencia institucional a continuar la produccion.
+interpretacion: >-
+  Es un camino computacional funcional que fue desplazado industrialmente sin que su principio ternario hubiera fallado tecnicamente.
+etiquetas_neutrales: [ternario, arquitectura, ferrita, URSS, sustitucion]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
