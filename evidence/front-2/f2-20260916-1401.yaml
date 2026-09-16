@@ -1,0 +1,46 @@
+id: f2-20260916-1401
+frente: front-2
+cycle_id: 2026-09-16T14
+tema_objeto: computacion ternaria balanceada de proposito general
+afirmacion_principal: "HECHO DOCUMENTADO: Setun demostro que una computadora ternaria balanceada podia construirse, superar pruebas oficiales y operar en serie; se fabricaron 50 unidades entre 1961 y 1965. La linea fue detenida pese a demanda no satisfecha y luego parcialmente continuada como Setun-70 y absorbida conceptualmente en DSSP."
+nombre_proyecto_o_artefacto: Setun / Setun-70
+periodo_historico: "1956-1970s"
+pais_contexto: URSS
+disciplina: arquitectura de computadores / logica ternaria
+problema_original: "crear una computadora pequena y economica para calculo cientifico, ingenieria y docencia en la Universidad Estatal de Moscu"
+principio_tecnico: "ternario balanceado {-1,0,+1}; logica de tres valores; Setun-70 agrego arquitectura de dos pilas y unidades direccionables de 6 trits"
+estado_historico: "sustitucion + continuacion experimental + absorcion parcial"
+resultado_real_alcanzado: "prototipo operativo en 1958; pruebas oficiales superadas en 1960; produccion seriada 1961-1965; 50 maquinas fabricadas, 30 adquiridas por universidades/escuelas tecnicas; Setun-70 experimental operativo en 1970"
+causa_documentada: "la produccion de Setun fue detenida en 1965 pese a solicitudes; fuentes historicas del proyecto atribuyen resistencia institucional/industrial a la arquitectura no planificada y señalan sustitucion por una maquina binaria de prestaciones similares y mayor precio"
+causas_alternativas:
+  - "ecosistema industrial y de componentes crecientemente binario"
+  - "incompatibilidad y menor base instalada frente a arquitecturas binarias"
+  - "para Setun-70, cambio de apoyo institucional y entorno de software incompleto"
+camino_que_lo_desplazo_si_existe: "computacion binaria convencional; parte de la arquitectura de Setun-70 sobrevivio mediante DSSP sobre computadores binarios"
+fuentes:
+  - url: https://www.computer-museum.ru/english/setun.htm
+    titulo: "Development of ternary computers at Moscow State University"
+    tipo: "archivo/museo tecnico; relato de desarrolladores"
+    fecha: desconocida
+  - url: https://computer-museum.ru/articles/materialy-mezhdunarodnoy-konferentsii-sorucom-2020/5055/
+    titulo: "К пятидесятилетию ЭВМ «Сетунь 70»"
+    tipo: "proceedings SoRuCom-2020 / historia tecnica"
+    fecha: "2020"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "50 Setun fabricadas; 30 adquiridas por universidades y escuelas tecnicas"
+  - "produccion seriada 1961-1965"
+  - "fuente historica del proyecto reporta reemplazo binario de rendimiento comparable a >2.5x el precio"
+limitaciones:
+  - "la implementacion original no permite inferir ventaja universal del ternario frente al binario"
+  - "las afirmaciones economicas y sobre oposicion institucional provienen en parte de participantes del proyecto"
+contradicciones:
+  - "no fue un callejon totalmente muerto: Setun-70 continuo la arquitectura y DSSP preservo ideas sobre hardware binario"
+  - "la narrativa de que fracaso tecnicamente contradice las pruebas oficiales y la produccion/uso documentados"
+incertidumbres:
+  - "peso causal exacto de decisiones institucionales frente a economias de ecosistema binario"
+etiquetas_neutrales: [ternario_balanceado, logica_multivaluada, arquitectura_computadores, sustitucion, absorcion_parcial, URSS]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
+interpretacion: "INTERPRETACION: Setun es un camino tecnico desplazado no por imposibilidad demostrada sino por una combinacion de decisiones institucionales y convergencia del ecosistema hacia binario; no puede atribuirse una causa unica con la evidencia disponible."
+testimonio: "TESTIMONIO: los relatos vinculados a los desarrolladores sostienen que existia demanda no satisfecha y oposicion oficial a la maquina no planificada."
