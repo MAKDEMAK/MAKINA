@@ -1,0 +1,37 @@
+id: f3-20260915T23-passive-magnetoelastic-strain
+frente: front-3
+cycle_id: 2026-09-15T23
+tema_objeto: deformación remota mediante resonancia magnetoelástica pasiva
+funcion: medir
+afirmacion_principal:
+  hecho: "Un resonador magnetoelástico pasivo puede convertir deformación mecánica en desplazamiento de frecuencia resonante y ser excitado/leído inalámbricamente mediante campo magnético."
+  interpretacion: "La geometría puede amplificar la mediación física sin añadir alimentación local ni electrónica en el elemento sensor."
+principio_de_mediacion: "La deformación altera el estado tensional y la frecuencia de resonancia magnetomecánica; una bobina externa excita el resonador y detecta su respuesta magnética."
+variable_fisica_entrada: deformación mecánica
+señal_o_estado_salida: frecuencia resonante / voltaje inducido
+modalidad: magnetoelástica resonante RF/magnética
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: "sensibilidad máxima reportada 37,100 Hz/strain"
+latencia: "interrogación resonante; no se reporta latencia temporal única"
+condiciones_de_prueba: "Sensor magnetoelástico con geometría de reloj de arena fabricado y ensayado; frecuencia medida comparada con simulación FEM; alimentación y transmisión mediante campo magnético externo."
+fuentes:
+  - url: https://doi.org/10.3390/s20020359
+    titulo: "An Hourglass-Shaped Wireless and Passive Magnetoelastic Sensor with an Improved Frequency Sensitivity for Remote Strain Measurements"
+    tipo: paper experimental
+    fecha: 2020-01-08
+nivel_evidencia: A
+datos_cuantitativos:
+  sensibilidad_maxima: "37100 Hz/strain"
+mecanismo_o_principio: "Acoplamiento magnetostrictivo convierte tensión mecánica en cambio de resonancia; estrechar la sección central reduce tensión de conexión y eleva sensibilidad."
+limitaciones:
+  - requiere fijación mecánica del resonador al elemento cuya deformación se mide
+  - necesita interrogador/campo magnético externo
+  - sensibilidad depende de geometría, montaje y condiciones magnéticas
+contradicciones:
+  - "Pasivo se refiere al elemento sensor; el sistema de interrogación sí necesita instrumentación y energía."
+etiquetas_neutrales: [magnetoelastic, passive-sensor, strain, resonance, wireless-interrogation]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
