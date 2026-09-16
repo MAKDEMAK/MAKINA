@@ -37,5 +37,6 @@
 {"id":"f2-2026-09-16T04-ted-mechanical-videodisc","front":"front-2","kind":"evidence","label":"TeD high-density mechanical videodisc","cycle_id":"2026-09-16T04"}
 {"id":"f3-20260916T04-event-vibration","front":"front-3","kind":"evidence","label":"event-camera non-contact vibration frequency measurement","cycle_id":"2026-09-16T04"}
 {"id":"f3-20260916T04-passive-tti","front":"front-3","kind":"evidence","label":"passive irreversible time-temperature optical memory","cycle_id":"2026-09-16T04"}
+{"id":"f3-20260915-20-self-powered-triboelectric-vibration","front":"front-3","kind":"evidence","label":"low-frequency self-powered triboelectric vibration transduction","cycle_id":"2026-09-15T20"}
 {"id":"f2-2026-09-16T06-hofgaard-office-machine","front":"front-2","kind":"evidence","label":"Hofgaard integrated electromechanical office automation prototype","cycle_id":"2026-09-16T06"}
 {"id":"f3-2026-09-16T06-triboelectric-vibration","front":"front-3","kind":"evidence","label":"ultra-wide-range self-powered triboelectric vibration frequency transduction","cycle_id":"2026-09-16T06"}
