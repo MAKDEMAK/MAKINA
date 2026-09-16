@@ -1,0 +1,41 @@
+id: f3-20260916-1901
+frente: front-3
+cycle_id: 2026-09-16T19
+tema_objeto: sensado triboelectrico autoalimentado de vibracion de maquinaria
+afirmacion_principal: "HECHO: una estructura triboelectrica de acero elastico convierte vibracion mecanica directamente en una senal electrica cuya frecuencia permite medir vibraciones entre 2 y 10000 Hz sin alimentacion externa, con error medio reportado de ~0.42%. INTERPRETACION: es un principio de mediacion reutilizable para hacer observable maquinaria existente mediante energia extraida del propio fenomeno medido, pero la inferencia de fallas requiere procesamiento posterior."
+funcion: medir
+principio_de_mediacion: "movimiento relativo inducido por vibracion -> contacto/separacion triboelectrica -> carga/voltaje alternante; transformacion tiempo-frecuencia y filtrado recuperan la frecuencia mecanica"
+variable_fisica_entrada: vibracion mecanica
+señal_o_estado_salida: señal electrica triboelectrica periodica y frecuencia estimada
+modalidad: vibracion/triboelectrica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "rango 2-10000 Hz; error medio ~0.42% reportado para frecuencia"
+latencia: desconocido
+condiciones_de_prueba: "excitacion mecanica controlada; estructura ES-TENG optimizada para ampliar respuesta a frecuencias medias/altas; validacion de laboratorio"
+fuentes:
+  - url: https://www.mdpi.com/2079-4991/12/16/2790
+    titulo: Ultra-Wide Range Vibration Frequency Detection Sensors Based on Elastic Steel Triboelectric Nanogenerators for Intelligent Machinery Monitoring
+    tipo: paper experimental
+    fecha: 2022-08-15
+  - url: https://onlinelibrary.wiley.com/doi/full/10.1002/idm2.70004
+    titulo: Triboelectric Nanogenerators for Condition Monitoring of Machines, Infrastructure and Environment
+    tipo: revision
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_frecuencia_hz: "2-10000"
+  error_medio_frecuencia: "~0.42%"
+mecanismo_o_principio: "La geometria elastica ajusta la respuesta mecanica; la triboelectricidad transduce el movimiento sin fuente electrica del sensor. La frecuencia se obtiene de la periodicidad de la señal mediante procesamiento tiempo-frecuencia/FFT."
+limitaciones:
+  - "La medicion cuantitativa publicada se centra principalmente en frecuencia; no equivale a medir de forma universal amplitud, aceleracion o severidad de falla."
+  - "La respuesta depende de estructura, montaje, resonancias y acoplamiento mecanico; requiere calibracion/contexto para inferir estado de una maquina."
+  - "El elemento sensor es autoalimentado, pero adquisicion, filtrado, FFT, almacenamiento o transmision pueden requerir electronica/computacion externa."
+contradicciones:
+  - "Autoalimentado describe la transduccion; no demuestra por si solo una cadena completa de monitorizacion sin energia externa."
+  - "Rango amplio en excitador de laboratorio no demuestra igual precision bajo espectros industriales variables o montaje no controlado."
+etiquetas_neutrales: [vibracion, triboelectricidad, TENG, autoalimentado, condition-monitoring, transduccion, proxy]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
