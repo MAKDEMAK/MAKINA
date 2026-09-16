@@ -1,0 +1,71 @@
+id: f2-2026-09-16T07-elcaset
+frente: front-2
+cycle_id: 2026-09-16T07
+tema_objeto: formato de grabacion magnetica encapsulada de alta fidelidad
+nombre_proyecto_o_artefacto: Elcaset
+periodo_historico: 1976-1980
+pais_contexto: Japon; comercializacion internacional
+disciplina: audio analogico; almacenamiento magnetico; mecanica de transporte de cinta
+afirmacion_principal: >-
+  Elcaset fue una via comercial real para obtener prestaciones cercanas al carrete abierto manteniendo la manipulacion por cassette: uso cinta de 1/4 de pulgada a 9.5 cm/s y, crucialmente, extraia la cinta del cartucho durante operacion para desacoplar la precision de guiado de las tolerancias del propio cassette. Fue desplazado no por incapacidad tecnica demostrada sino por coste/tamano y por la mejora simultanea del Compact Cassette.
+problema_original: >-
+  Combinar la calidad de grabacion/reproduccion de sistemas de carrete abierto con la comodidad de carga, proteccion y manipulacion de un cassette.
+principio_tecnico: >-
+  Aumentar ancho y velocidad de cinta para mejorar margen magnetico y respuesta, y sacar fisicamente la cinta del cartucho hacia un transporte de precision para que el guiado frente a las cabezas no dependa de las tolerancias mecanicas de la carcasa.
+estado_historico: sustitucion
+resultado_real_alcanzado: >-
+  Producto comercial fabricado por Sony y licenciado/adoptado por otros fabricantes. El Sony EL-7 de 1976 operaba a 9.5 cm/s, alcanzaba 15 Hz-27 kHz con cinta FeCr, 67 dB S/R con Dolby B y 0.04% de wow/flutter. El formato fue retirado alrededor de 1980.
+causa_documentada: >-
+  Baja adopcion comercial; mayor volumen y coste frente al Compact Cassette, mientras este mejoro rapidamente mediante mejores materiales de cinta y fabricacion. Sony retiro el sistema alrededor de 1980.
+causas_alternativas:
+  - La incompatibilidad con el enorme ecosistema instalado de Compact Cassette reducia la ventaja practica del aumento de calidad.
+  - La necesidad de un transporte mas grande y complejo erosionaba precisamente la ventaja de portabilidad/conveniencia que motivaba el formato.
+camino_que_lo_desplazo_si_existe: >-
+  Compact Cassette mejorado, especialmente con nuevas formulaciones magneticas y mejores transportes; el mercado de maxima fidelidad tambien podia permanecer en carrete abierto.
+fuentes:
+  - url: https://www.hifiengine.com/manual_library/sony/el-7.shtml
+    titulo: Sony EL-7 Stereo Elcaset Deck Manual / specifications
+    tipo: archivo tecnico de manuales y especificaciones de epoca
+    fecha: 1976
+  - url: https://www.emuseum-tettnang.de/labels/salon/Tonaufzeichnung/elcaset
+    titulo: Sony ELCASET - Kassetten mit normalem 6,3 mm-Tonband
+    tipo: museo tecnico
+    fecha: desconocida
+  - url: https://obsoletemedia.org/elcaset/
+    titulo: Elcaset (1976-1980)
+    tipo: archivo historico de medios
+    fecha: 2015
+nivel_evidencia: B
+datos_cuantitativos:
+  cinta_ancho: 6.3 mm (1/4 pulgada)
+  velocidad_cinta: 9.5 cm/s
+  sony_EL7_respuesta_frecuencia_FeCr: 15 Hz-27 kHz
+  sony_EL7_relacion_senal_ruido_Dolby_B: 67 dB
+  sony_EL7_wow_flutter: 0.04%
+  sony_EL7_peso: 13.5 kg
+limitaciones:
+  - El cartucho y los equipos eran considerablemente mayores que Compact Cassette.
+  - La mejora tecnica no compenso incompatibilidad, coste y menor conveniencia para el mercado masivo.
+  - Las cifras de prestaciones citadas corresponden al Sony EL-7 y no deben generalizarse automaticamente a todos los decks Elcaset.
+contradicciones:
+  - Algunas fuentes describen Elcaset como tecnicamente excelente; esto no demuestra superioridad universal frente a todos los decks Compact Cassette contemporaneos.
+  - La fecha exacta de cese aparece como 1979 o 1980 segun la fuente; se conserva 1980 como fecha aproximada de retirada comercial de Sony.
+incertidumbres:
+  - No se encontro en esta ronda una cifra primaria robusta de unidades mundiales vendidas; no se registra una estimacion.
+  - La contribucion relativa de precio, tamano, incompatibilidad y mejora del Compact Cassette no puede separarse causalmente con la evidencia consultada.
+separacion_epistemica:
+  HECHO_DOCUMENTADO: >-
+    Existieron decks y cintas comerciales Elcaset. El formato empleo cinta de 6.3 mm a 9.5 cm/s; durante reproduccion/grabacion la cinta era extraida del cartucho y guiada por el mecanismo del deck. El EL-7 documenta 15 Hz-27 kHz, 67 dB S/R con Dolby B y 0.04% wow/flutter.
+  TESTIMONIO: >-
+    Fuentes historicas retrospectivas caracterizan el sistema como tecnicamente logrado pero de adopcion muy baja y señalan la mejora del Compact Cassette como factor de desplazamiento.
+  INTERPRETACION: >-
+    El principio tecnico que quedo lateralizado no es simplemente usar una cinta mayor, sino separar mecanicamente las funciones de almacenamiento/proteccion del cartucho y las de guiado de precision: el cassette transporta y protege el medio, mientras el aparato toma control geometrico del medio durante la lectura/escritura.
+etiquetas_neutrales:
+  - magnetic-tape
+  - precision-transport
+  - removable-media
+  - analog-audio
+  - format-substitution
+  - cartridge-decoupled-guidance
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
