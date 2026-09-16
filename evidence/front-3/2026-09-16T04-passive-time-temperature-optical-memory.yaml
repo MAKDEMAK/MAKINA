@@ -1,0 +1,47 @@
+id: f3-20260916T04-passive-tti
+frente: front-3
+cycle_id: 2026-09-16T04
+tema_objeto: registro pasivo irreversible de historia tiempo-temperatura mediante color estructural
+afirmacion_principal:
+  HECHO: Un recubrimiento polimerico CLC supramolecular registra acumulativamente exposicion termica como desplazamiento irreversible de longitud de onda, sin electronica ni computacion; a 60 C cambio ~80 nm en 10 h, a 40 C ~70 nm en 46 h y a 20 C ~20 nm en 480 h.
+  INTERPRETACION: Es un integrador fisico de historia termica, no un termometro instantaneo: el estado optico codifica una combinacion de tiempo y temperatura mediante cinetica del material.
+  HIPOTESIS: La inversion cuantitativa de una historia termica arbitraria no queda demostrada; diferentes trayectorias pueden producir estados finales ambiguos.
+funcion: registrar
+principio_de_mediacion: cinetica termicamente activada de desenrollamiento helicoidal -> cambio irreversible de paso CLC -> corrimiento de color estructural
+variable_fisica_entrada: historia de temperatura y duracion de exposicion
+señal_o_estado_salida: longitud de onda/color reflejado persistente
+modalidad: optica pasiva / material responsivo
+invasividad: minima
+requiere_contacto: no
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: respuesta espectral cuantificada; no se reporta una precision universal de reconstruccion de temperatura
+latencia: dependiente de temperatura; segundos sobre T_NI para perdida de color y horas-dias por debajo para integracion gradual
+condiciones_de_prueba: recubrimiento CLC impreso sobre BOPET; T_NI del ejemplo ~68 C; espectros UV-vis bajo exposicion isotermica a 20, 40 y 60 C
+fuentes:
+  - url: https://doi.org/10.1002/adom.202201462
+    titulo: Thermal Paper and Time Temperature Integrators Made From a Structural Colored Polymer Crosslinked With Hydrogen Bonded Cyclohexanoic Acid Derivatives
+    tipo: paper experimental / Advanced Optical Materials
+    fecha: 2022
+a nivel_evidencia: null
+nivel_evidencia: A
+datos_cuantitativos:
+  T_NI_ejemplo_C: 68
+  exposicion_60C: "~80 nm de corrimiento, ~540->620 nm, en 10 h; mayor parte en primeras 2 h"
+  exposicion_40C: "~70 nm en 46 h"
+  exposicion_20C: "~20 nm en 480 h"
+  energia_activacion_aprox_kJ_mol: 100
+  T_NI_programable_C: "~30-90"
+  escritura_umbral: "5 s a 80 C demostro impresion; por encima de T_NI ocurre perdida irreversible rapida de color"
+mecanismo_o_principio: Los enlaces de hidrogeno dinamicos y el confinamiento de polimerizacion permiten que la helice CLC se desenrolle gradualmente; el paso helicoidal determina la longitud de onda reflejada. La cinetica sigue una respuesta modelable con constante de velocidad y comportamiento tipo Arrhenius.
+limitaciones:
+  - integra tiempo y temperatura y por tanto no identifica necesariamente una trayectoria termica unica
+  - respuesta cinetica fuertemente dependiente de composicion y temperatura
+  - por encima de T_NI la perdida de orden/color cambia el regimen desde integracion gradual a indicador de umbral
+  - requiere lectura visual o espectral posterior; cuantificacion precisa exige instrumentacion/calibracion
+contradicciones:
+  - no es medicion directa de temperatura instantanea aunque el color sea sensible a exposicion termica
+  - la afirmacion de evaluacion precisa de vida util es una posibilidad propuesta; el paper demuestra la respuesta del material, no validacion universal contra degradacion de productos
+etiquetas_neutrales: [time-temperature-integrator, structural-color, passive-memory, thermochromic, no-electronics, cumulative-exposure]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
