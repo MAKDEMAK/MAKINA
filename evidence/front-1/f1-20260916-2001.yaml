@@ -1,0 +1,52 @@
+id: f1-20260916-2001
+frente: front-1
+cycle_id: 2026-09-16T20
+tema_objeto: metamaterial mecanico reprogramable para codificacion analogico-digital y logica
+afirmacion_principal: >-
+  Un metamaterial mecanico multestable puede convertir una entrada mecanica continua en secuencias discretas reprogramables de estados mediante eventos snap-through, realizando experimentalmente conversion analogico-digital, procesamiento de senal y operaciones logicas tipo FPGA sin computacion digital durante la transformacion mecanica.
+capacidad_nueva: >-
+  Codificar estimulos mecanicos continuos en estados digitales y reprogramar fisicamente la funcion de computo en una misma estructura sin remanufacturarla.
+mecanismo_o_principio: >-
+  Arquitectura multestable con unidades de rigidez disenada; la compresion uniaxial induce una secuencia programada de transiciones snap-through. La activacion/desactivacion selectiva de unidades cambia in situ la secuencia y, por tanto, la funcion de codificacion/logica.
+dominio: computacion_mecanica/materiales_programables
+fuentes:
+  - url: https://doi.org/10.1002/adma.74376
+    titulo: Mechanical Metamaterials with Reprogrammable Sequential Deformation for Analog-to-Digital Encoding and Computing
+    tipo: paper_experimental_peer_reviewed
+    fecha: 2026-08-05
+nivel_evidencia: A
+datos_cuantitativos: >-
+  La fuente primaria confirma demostraciones experimentales de conversion analogico-digital, procesamiento de senal y operaciones logicas tipo FPGA; el resumen publico consultado no expone cifras suficientes para registrar precision, numero de bits, error o durabilidad sin especular.
+condiciones_de_prueba: >-
+  Prototipos de metamaterial sometidos a compresion uniaxial; secuencias de deformacion ajustadas mediante distribucion de rigidez y reprogramadas mediante activacion/desactivacion selectiva de unidades.
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: mecanico_directo_por_deformacion
+tipo_de_memoria_o_estado: estados_multestables_discretos
+tipo_de_adaptacion: reprogramacion_estructural_in_situ
+tipo_de_actuacion: deformacion_snap-through_bajo_carga_mecanica
+madurez_tecnica: demostracion_experimental_de_laboratorio
+limitaciones:
+  - La evidencia accesible no cuantifica aqui resolucion efectiva, error de conversion, velocidad, ciclos de vida ni robustez ambiental.
+  - Requiere una entrada mecanica de compresion y una arquitectura fisica disenada para la funcion.
+  - FPGA-like describe operaciones logicas mecanicas reprogramables; no implica equivalencia de escala, velocidad o generalidad con un FPGA electronico.
+contradicciones:
+  - La funcion puede reprogramarse sin remanufactura, pero la capacidad depende de unidades y distribuciones de rigidez previamente disenadas; no es computacion mecanica arbitraria de proposito general.
+  - La ausencia de computacion digital se refiere a la ejecucion fisica de la codificacion/logica; el diseno inverso de la estructura puede usar herramientas computacionales externas.
+etiquetas_neutrales:
+  - mechanical_computing
+  - metamaterial
+  - multistability
+  - snap_through
+  - analog_to_digital
+  - reprogrammable_logic
+  - physical_computation
+separacion_epistemica:
+  hecho: >-
+    El articulo revisado por pares, publicado el 5 de agosto de 2026, reporta experimentos donde una arquitectura multestable reprogramable ejecuta conversion analogico-digital, procesamiento de senal y logica tipo FPGA mediante deformacion secuencial.
+  hipotesis: >-
+    Arquitecturas de mayor escala podrian ampliar el repertorio de funciones si mantienen separacion fiable entre umbrales y transiciones; esta escalabilidad no queda demostrada por la evidencia registrada.
+  interpretacion: >-
+    El avance material frente a logica mecanica fija es que una misma materia estructurada actua simultaneamente como transductor continuo-discreto y sustrato logico reconfigurable.
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
