@@ -1,0 +1,33 @@
+id: f3-2026-09-16T00-clamp-on-ultrasonic-flow
+frente: front-3
+cycle_id: 2026-09-16T00
+tema_objeto: clamp-on ultrasonic flow measurement
+afirmacion_principal: "External ultrasonic transit-time sensing measures flow without penetrating a closed pipe, but field accuracy depends strongly on installation and pipe conditions."
+funcion: medir
+principio_de_mediacion: "Upstream/downstream acoustic transit-time difference encodes fluid velocity."
+variable_fisica_entrada: fluid velocity and flow
+señal_o_estado_salida: acoustic transit-time difference converted to flow
+modalidad: ultrasonido
+invasividad: nula
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: "Systematic review: below 2% error in controlled environments; NIST: 1-3% in nearly ideal tests; industrial report: simultaneous readings can deviate up to 43%."
+latencia: instrument-dependent
+condiciones_de_prueba: "Water pipes and industrial installations; sensitive to flow profile, internal diameter, material, wall thickness, coupling and transducer placement."
+fuentes:
+  - {url: "https://doi.org/10.1016/j.flowmeasinst.2026.103264", titulo: "Non-invasive techniques for flow rate measurement in water pipes: Systematic review", tipo: revision_sistematica, fecha: 2026-06}
+  - {url: "https://www.nist.gov/publications/ultrasonic-technology-prospects-improving-flow-measurements-and-standards", titulo: "Ultrasonic Technology: Prospects for Improving Flow Measurements and Standards", tipo: institucion_metrologica, fecha: 1999-01-01}
+  - {url: "https://doi.org/10.1016/j.rineng.2022.100496", titulo: "Industrial experiences show clamp-on ultrasonic transit time flow meters assumptions lead to erroneous measurement results", tipo: articulo_industrial, fecha: 2022-09}
+nivel_evidencia: A
+datos_cuantitativos: ["<2% controlled-environment error in 2026 review", "1-3% NIST nearly-ideal tests", "up to 43% simultaneous-reading deviation reported in field"]
+mecanismo_o_principio: differential acoustic time of flight through pipe wall and fluid
+limitaciones: ["installation geometry and coupling matter", "flow profile and pipe properties introduce bias", "laboratory accuracy does not transfer automatically to field"]
+contradicciones: ["Near-1% nominal accuracy conflicts with much larger deviations documented in some industrial installations."]
+etiquetas_neutrales: [ultrasonido, caudal, clamp-on, no-invasivo, retrofit, metrologia]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
+separacion_epistemica:
+  HECHO: "Transit-time clamp-on flow sensing is experimentally established and non-penetrating."
+  HIPOTESIS: "none"
+  INTERPRETACION: "Mature retrofit metrology whose uncertainty is installation-dependent."
