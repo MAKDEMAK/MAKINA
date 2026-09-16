@@ -1,0 +1,35 @@
+id: f2-2026-09-16T00-maddida-dda
+frente: front-2
+cycle_id: 2026-09-16T00
+tema_objeto: arquitectura digital diferencial especializada
+afirmacion_principal: "HECHO DOCUMENTADO: Northrop desarrollo MADDIDA sustituyendo integradores mecanicos de analizadores diferenciales por sumadores binarios y pistas de tambor magnetico; llego a vender seis unidades hacia fines de 1952. INTERPRETACION: fue una via intermedia entre computacion analogica y computador digital general, exitosa brevemente pero absorbida/desplazada por arquitecturas digitales programables mas generales."
+nombre_proyecto_o_artefacto: MADDIDA (Magnetic Drum Digital Differential Analyzer)
+periodo_historico: "1949-1950s"
+pais_contexto: "Estados Unidos"
+disciplina: "computacion digital; control; simulacion; aeronautica"
+problema_original: "Realizar integracion y resolver ecuaciones para diseno y control aeronautico/misilistico con mayor precision que analizadores analogicos."
+principio_tecnico: "Digital Differential Analyzer: reemplazar integradores rueda-disco por acumuladores/sumadores binarios; en MADDIDA las pistas de un tambor magnetico realizaban/organizaban la integracion digital."
+estado_historico: "producto especializado comercializado; arquitectura posteriormente absorbida/desplazada"
+resultado_real_alcanzado: "Prototipo desarrollado por Northrop para un proyecto de misil; fue demostrado a John von Neumann y hacia fines de 1952 se habian vendido seis maquinas, cifra que CHM describe como excepcional para computadores comerciales de ese momento."
+causa_documentada: "La familia DDA persistio en control en tiempo real, pero las implementaciones especializadas coexistieron y luego cedieron funciones a computadores digitales de proposito general conforme estos mejoraron en coste y velocidad."
+causas_alternativas:
+  - "especializacion de la arquitectura frente a maquinas almacenadoras de programa"
+  - "DDAs secuenciales eran mas baratos aunque mas lentos que variantes paralelas"
+camino_que_lo_desplazo_si_existe: "computacion digital general programable; DDAs integrados como tecnica especializada en sistemas de control"
+fuentes:
+  - url: "https://www.computerhistory.org/revolution/analog-computers/3/159"
+    titulo: "Analog Computing...On Digital Machines"
+    tipo: "museo/institucional"
+    fecha: "consulta 2026-09-16"
+  - url: "https://www.computerhistory.org/revolution/analog-computers/3/159/441"
+    titulo: "MADDIDA prototype"
+    tipo: "museo/institucional"
+    fecha: "consulta 2026-09-16"
+nivel_evidencia: A
+datos_cuantitativos: "Introducido en 1949; seis unidades vendidas hacia fines de 1952. El descendiente paralelo TRICE costaba USD 89,500 solo en configuracion inicial, ilustrando el coste de esta familia especializada."
+limitaciones: "La arquitectura DDA no desaparecio de inmediato: se utilizo en control de tiempo real y guiado; por ello el estado correcto es absorcion/desplazamiento gradual, no fracaso."
+contradicciones: "La narrativa de 'callejon sin salida' es demasiado fuerte: CHM documenta uso posterior de DDAs y computadores digitales de guiado derivados del mismo espacio tecnico."
+incertidumbres: "No se atribuye una fecha unica de terminacion de MADDIDA ni una causa comercial exclusiva."
+etiquetas_neutrales: [DDA, tambor_magnetico, integracion, control_tiempo_real, arquitectura_especializada, absorcion]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
