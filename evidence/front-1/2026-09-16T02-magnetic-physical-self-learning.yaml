@@ -1,0 +1,28 @@
+id: f1-20260916-02-magnetic-self-learning
+frente: front-1
+cycle_id: 2026-09-16T02
+tema_objeto: aprendizaje fisico intrinseco en textura magnetica
+afirmacion_principal:
+  HECHO: "Un sistema spintronico real implemento una red de Hopfield cuyo tensor de conductancias, definido por texturas magneticas, evoluciona bajo entradas electricas de forma consistente con aprendizaje no supervisado de Oja por descenso de gradiente."
+  HIPOTESIS: "Leyes de relajacion/evolucion material pueden implementar actualizaciones de pesos sin calcular explicitamente cada actualizacion en un procesador externo."
+  INTERPRETACION: "La capacidad relevante no es solo inferencia fisica: parte de la regla de entrenamiento queda incorporada en la dinamica del material."
+capacidad_nueva: autoaprendizaje no supervisado mediante evolucion fisica de pesos magneticos
+mecanismo_o_principio: campos de Oersted inducidos por entradas electricas reorganizan texturas magneticas; la matriz de conductancia dependiente de spin funciona como pesos y su evolucion realiza el gradiente asociado a la regla de Oja
+dominio: spintronica / redes neuronales fisicas
+fuentes:
+  - {url: "https://doi.org/10.1073/pnas.2416294121", titulo: "A self-learning magnetic Hopfield neural network with intrinsic gradient descent adaption", tipo: paper_original, fecha: 2024-12-13}
+nivel_evidencia: A
+datos_cuantitativos: "Experimento: pulsos de entrenamiento multiples de 50 us a 3 V o uno de 200 us a 5 V; corriente de lectura 500 uA. Dinamica intrinseca de spin de orden ns se sustenta por simulacion, no por los pulsos experimentales."
+condiciones_de_prueba: disco de permalloy Fe80Ni20 con capas Al2O3/Au; medicion de conductancia de cuatro puntas; aprendizaje experimental y escalado/recuerdo ampliado evaluado parcialmente por simulacion
+requiere_computacion_digital: no
+requiere_alimentacion: si
+tipo_de_sensado: entrada electrica / conductancia magnetorresistiva
+tipo_de_memoria_o_estado: textura magnetica persistente y matriz de conductancia
+tipo_de_adaptacion: evolucion autonoma de textura bajo estimulo, equivalente a regla de Oja
+tipo_de_actuacion: cambio de conductancia/estado magnetico
+madurez_tecnica: prueba de principio experimental
+limitaciones: "Escalabilidad y rendimiento de redes mayores requieren validacion; pulsos experimentales son mucho mas lentos que la dinamica intrinseca por limitaciones instrumentales; no demuestra backpropagation ni redes profundas."
+contradicciones: "La afirmacion de escalabilidad y memoria de patrones de baja ortogonalidad se apoya en simulaciones ademas del dispositivo fisico; no debe extrapolarse como red grande ya construida."
+etiquetas_neutrales: [spintronics, physical-learning, hopfield, oja-rule, magnetic-texture]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
