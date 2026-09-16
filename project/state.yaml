@@ -6,30 +6,44 @@ core:
 active_modules:
   - id: physical-state-interface
     maturity: M3
-    confidence: 0.78
+    confidence: 0.84
     evidence_ids:
       - f1-20260915-2101
       - f1-20260915-2103
       - f3-20260915-21-passive-crack
       - f3-20260915-21-passive-rf-temp
-    success_criterion: "Cuantizacion con histeresis y transiciones persistentes deterministas verificables bajo ruido de umbral."
-    next_action: "Ejecutar tests y parametrizar el prototipo con una curva experimental de transduccion."
+      - f3-20260915-22-wiegand-counter
+      - f1-20260915-22-light-programmable-mechanical-logic
+    success_criterion: "Una entrada fisica debe producir un evento discreto reproducible, superar un umbral energetico/funcional documentado y modificar estado persistente sin falsos cambios subumbral."
+    next_action: "Ejecutar tests de physical_state y event_state; luego reemplazar umbrales ideales por una curva experimental real de transduccion y medir falsos cambios, margen y persistencia."
+
+  - id: embodied-wave-computation
+    maturity: M1
+    confidence: 0.66
+    evidence_ids:
+      - f1-20260915-22-wave-metamaterial-robot
+      - f1-20260915-22-light-programmable-mechanical-logic
+    success_criterion: "Definir una operacion fisica concreta cuya salida controle directamente una accion y pueda compararse cuantitativamente con una referencia."
+    next_action: "Mantener como linea activa de convergencia; no implementar hardware hasta disponer de una especificacion M2 con operacion, tolerancia y medicion definidas."
 
 waiting_modules:
   - id: temporal-in-sensor-processing
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision]
     reason: "Convergencia plausible entre flujo temporal disperso y reservorio fisico, pero no hay evidencia directa de integracion y requiere hardware especializado."
-  - id: active-physical-tracking
-    evidence_ids: [f2-20260915-21-video2000, f1-20260915-2103]
-    reason: "Precedente de servo activo util, pero la cohorte actual no aporta una cadena moderna completa sensado-actuacion que justifique M2."
+  - id: noncontact-machine-observability
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle]
+    reason: "Dos vias no invasivas validas para inferir/medir estado de maquinas, pero todavia no cambian el nucleo ni justifican un modulo activo frente a la ruta evento-a-estado."
 
 archived_modules:
   - id: air-cushion-transport
     evidence_ids: [f2-20260915-21-aerotrain]
     reason: "Hallazgo valido pero sin convergencia funcional suficiente con el nucleo actual."
+  - id: networked-management-precedents
+    evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel]
+    reason: "Precedentes historicos relevantes de redes y coordinacion, pero sin traduccion funcional directa al nucleo fisico actual."
 
-current_architecture: "physical variable -> transducer/proxy -> hysteretic discrete state -> persistent state machine -> observable output"
-last_synthesized_cycle: 2026-09-15T21
+current_architecture: "physical variable/event -> transducer or harvested pulse -> threshold/hysteresis -> persistent physical/discrete state -> optional physical logic/computation -> observable output/action"
+last_synthesized_cycle: 2026-09-15T22
 
 rules:
   max_active_modules: 3
