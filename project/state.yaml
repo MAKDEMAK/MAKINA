@@ -7,110 +7,74 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.94
-    evidence_ids:
-      - f1-20260915-2101
-      - f1-20260915-2103
-      - f3-20260915-21-passive-crack
-      - f3-20260915-21-passive-rf-temp
-      - f3-20260915-22-wiegand-counter
-      - f1-20260915-22-light-programmable-mechanical-logic
-      - f1-20260916-02-lc-photonic-memory
-      - f3-20260916-02-hygromechanical-indicator
-      - f3-20260916-03-adhesive-tape-latching-memory
-      - f3-20260916T04-passive-tti
-      - f3-20260916T07-passive-impact-threshold-memory
-      - f3-20260916-0901
-      - f1-20260916-1001
-    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse resolucion, destructividad de lectura y ambiguedad entre trayectorias; para escritura remota debe medirse selectividad espacial, tasa de error y energia de escritura desde la frontera."
-    next_action: "Mantener M3. Sustituir en CumulativeHistoryMemory la ley de tasa ilustrativa por una curva experimental publicada o medida; para PeakThresholdMemory sustituir un umbral ideal por curva experimental. La nueva escritura mecanica desde frontera no se simula aun: faltan tasa de error, energia y funcion de transferencia suficientes para un modelo calibrado."
+    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001]
+    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable con umbral/rango documentado, persistencia medible y falsos cambios cuantificables; memorias de historia deben medir resolucion, destructividad y ambiguedad; escritura remota debe medir selectividad, error y energia."
+    next_action: "Mantener M3; sustituir leyes ilustrativas por curvas experimentales publicadas o medidas antes de promover."
 
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.87
-    evidence_ids:
-      - f1-20260915-22-wave-metamaterial-robot
-      - f1-20260915-22-light-programmable-mechanical-logic
-      - f1-20260916T00-mycelium-reservoir
-      - f1-20260916T00-active-colloid-reservoir
-      - f1-20260916-02-flare
-      - f1-20260916-02-magnetic-self-learning
-      - f1-20260916t03-zro2-aftj
-      - f1-20260916t03-learning-shape-metamaterial
-      - f1-20260916T04-pneumatic-soft-robot-prc
-      - f1-20260916T04-hydrogel-fluidic-memristor
-      - f1-20260916T04-ti3c2tx-homogeneous-rc
-      - f1-20260916-0901
-    success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria, aprendizaje, reset/relajacion y coste de perifericos en la comparacion."
-    next_action: "No promover aun. Especificar un benchmark temporal minimo comun antes de M2."
+    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901]
+    success_criterion: "Definir una tarea computacional comun y medible sobre al menos dos clases de sustrato fisico y compararla con referencia digital usando la misma metrica, separando inferencia, memoria, aprendizaje, reset y perifericos."
+    next_action: "No promover; especificar benchmark temporal comun."
+
+  - id: temporal-in-sensor-processing
+    maturity: M2
+    confidence: 0.90
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401, f1-20260916-1501]
+    success_criterion: "Sobre una misma señal y tarea, la cadena fisica/analogica debe conservar >=95% del score de referencia digital o mejorarlo y reducir >=10x el volumen transferido; reportar energia local y periferica por separado."
+    next_action: "Implementar el benchmark digital minimo definido en project/temporal-in-sensor-processing.yaml; no declarar M3 hasta que exista y pueda ejecutarse."
 
 waiting_modules:
-  - id: temporal-in-sensor-processing
-    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401]
-    reason: "Vibe2Spike refuerza codificacion temporal fisica local y desplaza la inferencia al receptor, pero sigue faltando benchmark comun que compare informacion preservada, latencia, energia de perifericos y robustez entre implementaciones."
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001]
-    reason: "La conversion resistencia->RF agrega una ruta de lectura pasiva sin ADC local, pero aun no demuestra distancia, resolucion resistiva ni precision sobre una variable fisica final; sigue faltando una variable objetivo comun con presupuesto de incertidumbre y coste total de adquisicion."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001, f3-20260916-1501]
+    reason: "El nuevo GMR confirma y cuantifica de nuevo stray-flux como proxy de carga, pero sigue sin aportar una variable objetivo comun ni presupuesto de incertidumbre transferible entre maquinas."
 
 archived_modules:
   - id: air-cushion-transport
     evidence_ids: [f2-20260915-21-aerotrain]
-    reason: "Hallazgo valido pero sin convergencia funcional suficiente con el nucleo actual."
+    reason: "Sin convergencia funcional suficiente con el nucleo."
   - id: networked-management-precedents
     evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel]
-    reason: "Precedentes historicos relevantes de redes y coordinacion, pero sin traduccion funcional directa al nucleo fisico actual."
+    reason: "Precedentes de redes/coordinacion sin traduccion funcional directa al nucleo fisico."
   - id: synchronized-facsimile-path
     evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph]
-    reason: "Camino historico valido de barrido y sincronizacion, pero no aporta traduccion funcional suficiente al nucleo actual."
+    reason: "Barrido/sincronizacion historicos sin traduccion funcional suficiente."
   - id: differential-computing-precedents
     evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001]
-    reason: "Lukyanov refuerza que ecuaciones diferenciales se mapearon operacionalmente a dinamica fisica durante decadas; junto con Nordsieck/MADDIDA forma un precedente fuerte de computacion especializada, pero no demuestra que el nucleo actual deba adoptar integracion diferencial fisica."
+    reason: "Precedente fuerte de integracion diferencial fisica, sin necesidad arquitectonica actual."
   - id: magnetic-mobile-state-precedent
     evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory]
-    reason: "Precedente de estado magnetico fisico y sustitucion tecnologica; evidencia posterior deduplicada."
+    reason: "Precedente de estado magnetico fisico; evidencia posterior deduplicada."
   - id: parametric-phase-logic-precedent
-    evidence_ids: [f2-2026-09-16T03-parametron]
-    reason: "Precedente historico fuerte de logica/memoria por fase estable, sin continuidad funcional suficiente con el nucleo."
+    evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501]
+    reason: "El ciclo 15 fortalece que el parametron fue una plataforma operativa/comercial sustituida, pero no agrega traduccion funcional nueva al nucleo; deduplicado."
   - id: saturable-magnetic-logic-precedent
     evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing]
-    reason: "Logica real mediante saturacion magnetica, pero sin traduccion funcional suficientemente especifica al nucleo actual."
+    reason: "Logica por saturacion magnetica sin traduccion funcional especifica al nucleo."
   - id: mechanical-video-density-precedent
     evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc]
-    reason: "Transduccion mecanico-electrica de video de alta densidad sin convergencia funcional con los modulos activos."
+    reason: "Transduccion mecanico-electrica de video sin convergencia funcional."
   - id: integrated-office-automation-precedent
     evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine]
-    reason: "Prototipo historico valido de integracion mecanica-electromecanica, sin traduccion funcional medible al nucleo fisico actual."
+    reason: "Integracion electromecanica historica sin traduccion funcional medible."
   - id: cartridge-decoupled-precision-transport
     evidence_ids: [f2-2026-09-16T07-elcaset]
-    reason: "Elcaset demuestra separar almacenamiento/proteccion del medio y guiado de precision en la maquina, pero no converge de forma medible con los modulos activos."
+    reason: "Separacion medio/guiado valida, sin convergencia medible."
   - id: subharmonic-synthesis-precedent
     evidence_ids: [f2-20260916-0801]
-    reason: "Subharchord demuestra generacion por divisiones subarmonicas discretas y conformacion analogica, sin traduccion funcional medible al nucleo actual."
+    reason: "Sintesis subarmonica historica sin traduccion funcional medible."
   - id: dynamic-track-following-precedent
     evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901]
-    reason: "Video 2000/DTF queda deduplicado como precedente de feedback medio-transductor, sin promover modulo."
+    reason: "Precedente de feedback medio-transductor, sin promover modulo."
   - id: balanced-ternary-precedent
     evidence_ids: [f2-20260915-21-setun, f2-20260916-1401]
-    reason: "Setun del ciclo 14 confirma y amplifica un precedente ya registrado; no crea traduccion funcional nueva al nucleo y queda deduplicado."
+    reason: "Continuacion Setun deduplicada; no crea traduccion funcional nueva."
 
-current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse physical encoding -> persistent/fading physical state or externally observable event stream -> optional physical dynamics/logic/learning -> local or remotely interrogated output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity, write selectivity, information preserved by encoding, environmental sensitivity and total peripheral cost explicitly"
-last_synthesized_cycle: 2026-09-16T14
+current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse/latency physical encoding -> persistent/fading physical state -> optional local association/learning -> externally observable event/state -> optional physical dynamics/logic -> output/action; characterize information preserved, persistence, reset, ambiguity, selectivity, robustness, local energy and total peripheral cost"
+last_synthesized_cycle: 2026-09-16T15
 
 rules:
   max_active_modules: 3
-  promotion:
-    M0: signal
-    M1: supported_convergence
-    M2: functional_specification
-    M3: real_minimum_prototype
-    M4: test_or_measurement
-    M5: demonstrable_system
-  death_criteria:
-    - insufficient_evidence
-    - aesthetic_or_verbal_only_relation
-    - no_functional_translation
-    - not_measurable
-    - impractical_to_prototype
-    - redundant
-    - disproportionate_cost
-    - contradicted_by_new_evidence
-    - stagnant_without_path_to_M2_M3
+  promotion: {M0: signal, M1: supported_convergence, M2: functional_specification, M3: real_minimum_prototype, M4: test_or_measurement, M5: demonstrable_system}
+  death_criteria: [insufficient_evidence, aesthetic_or_verbal_only_relation, no_functional_translation, not_measurable, impractical_to_prototype, redundant, disproportionate_cost, contradicted_by_new_evidence, stagnant_without_path_to_M2_M3]
