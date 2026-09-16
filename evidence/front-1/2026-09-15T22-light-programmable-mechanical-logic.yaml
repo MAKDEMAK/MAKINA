@@ -1,0 +1,38 @@
+id: f1-20260915-22-light-programmable-mechanical-logic
+frente: front-1
+cycle_id: 2026-09-15T22
+tema_objeto: pelicula compuesta que convierte luz en reconfiguracion mecanica de logica
+afirmacion_principal:
+  HECHO: "Una pelicula PANi-PNIPAm/AgNW/PDMS convierte iluminacion en deformacion mecanica reversible que conmuta rutas conductoras; relays SPST/SPDT interconectados realizaron puertas logicas y sumadores completos de 1 y 2 bits."
+  HIPOTESIS: "Redes mayores podrian ampliar la complejidad computacional, pero el trabajo solo valida escalabilidad hasta circuitos combinacionales pequenos."
+  INTERPRETACION: "El material funciona simultaneamente como transductor optico, actuador mecanico y elemento reconfigurador de rutas de informacion, reduciendo la separacion sensor-computo."
+capacidad_nueva: "Programar y reconfigurar fisicamente rutas logicas mediante luz, con sensado-computacion-respuesta distribuido en una pelicula flexible."
+mecanismo_o_principio: "Conversion fototermica en polianilina calienta PNIPAm y PDMS; contraccion/expansion diferencial curva la pelicula y cambia contactos de nanohilos de plata, formando relays SPST/SPDT controlados opticamente."
+dominio: "materiales responsivos; computacion mecanica; logica reconfigurable; sensado integrado"
+fuentes:
+  - url: "https://www.nature.com/articles/s41467-026-70425-z"
+    titulo: "Light-programmable mechanical computing via polyaniline composite film"
+    tipo: "paper original experimental, Nature Communications"
+    fecha: 2026-03-16
+nivel_evidencia: A
+datos_cuantitativos:
+  - "SPST mantuvo operacion consistente durante mas de 600 ciclos continuos de actuacion-reset sin fatiga observable."
+  - "Sumador de 2 bits probado en las 16 combinaciones de entrada; todas coincidieron con la tabla de verdad teorica."
+  - "Modulo de sensado-computacion-emision 3x3 demostro percepcion y reconstruccion de patrones opticos."
+condiciones_de_prueba: "Peliculas multicapa flexibles fabricadas y circuitos fisicos medidos bajo entradas luminosas; recuperacion de estado apoyada por control de humedad."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "intensidad/patron de luz mediante respuesta fototermica del material"
+tipo_de_memoria_o_estado: "estado mecanico/contacto reversible; no se demuestra memoria no volatil"
+tipo_de_adaptacion: "reconfiguracion de rutas conductoras inducida por estimulo optico y reset por humedad"
+tipo_de_actuacion: "curvatura mecanica de pelicula y conmutacion de contactos electricos"
+madurez_tecnica: "prototipo experimental de laboratorio"
+limitaciones:
+  - "La logica usa conduccion electrica y LEDs/fuentes auxiliares; no es electronica-free en sentido absoluto."
+  - "La fidelidad del modulo visual cae cuando las caracteristicas de textura se aproximan al tamano de la ventana sensora 3x3."
+  - "La recuperacion demostrada depende de humedad/control ambiental."
+contradicciones:
+  - "La afirmacion de escalabilidad esta respaldada por sumadores de hasta 2 bits, no por circuitos de gran escala."
+etiquetas_neutrales: [responsive-material, light-programmable, mechanical-relay, reconfigurable-logic, in-material-computing]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
