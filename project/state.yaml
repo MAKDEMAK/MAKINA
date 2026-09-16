@@ -7,72 +7,48 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.94
-    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601]
+    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601, f1-20260916-1701, f3-20260916-1701]
     success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable con umbral/rango documentado, persistencia medible y falsos cambios cuantificables; memorias de historia deben medir resolucion, destructividad y ambiguedad; escritura remota debe medir selectividad, error y energia."
-    next_action: "Mantener M3; sustituir leyes ilustrativas por curvas experimentales publicadas o medidas antes de promover. La nueva memoria plastica de maximo refuerza peak-hold pasivo, pero carece de resolucion/error abierto para M4."
+    next_action: "Mantener M3. F1-17 refuerza discretizacion mecanica reprogramable y F3-17 integracion fisica acumulativa, pero faltan metricas abiertas suficientes para M4."
 
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.88
     evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901, f1-20260916-1601]
     success_criterion: "Definir una tarea computacional comun y medible sobre al menos dos clases de sustrato fisico y compararla con referencia digital usando la misma metrica, separando inferencia, memoria, aprendizaje, reset y perifericos."
-    next_action: "No promover; la red de fibras refuerza reservoir computing mecanico distribuido pero no aporta cifras comparables. Especificar benchmark temporal comun."
+    next_action: "No promover; especificar benchmark temporal comun para al menos dos sustratos."
 
   - id: temporal-in-sensor-processing
-    maturity: M2
+    maturity: M3
     confidence: 0.90
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401, f1-20260916-1501]
+    current_architecture: "synthetic temporal signal -> uniform reference | threshold-event encoder | latency+fading-state encoder -> common event task -> transfer/error/score metrics"
     success_criterion: "Sobre una misma señal y tarea, la cadena fisica/analogica debe conservar >=95% del score de referencia digital o mejorarlo y reducir >=10x el volumen transferido; reportar energia local y periferica por separado."
-    next_action: "Implementar el benchmark digital minimo definido en project/temporal-in-sensor-processing.yaml; no declarar M3 hasta que exista y pueda ejecutarse."
+    next_action: "Ejecutar src/temporal_benchmark.py y tests/test_temporal_benchmark.py; no M4 hasta obtener resultados medidos."
 
 waiting_modules:
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001, f3-20260916-1501]
-    reason: "El nuevo GMR confirma y cuantifica de nuevo stray-flux como proxy de carga, pero sigue sin aportar una variable objetivo comun ni presupuesto de incertidumbre transferible entre maquinas."
+    reason: "Sin variable objetivo comun ni presupuesto de incertidumbre transferible entre maquinas."
 
 archived_modules:
-  - id: air-cushion-transport
-    evidence_ids: [f2-20260915-21-aerotrain]
-    reason: "Sin convergencia funcional suficiente con el nucleo."
-  - id: networked-management-precedents
-    evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel]
-    reason: "Precedentes de redes/coordinacion sin traduccion funcional directa al nucleo fisico."
-  - id: synchronized-facsimile-path
-    evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph]
-    reason: "Barrido/sincronizacion historicos sin traduccion funcional suficiente."
-  - id: differential-computing-precedents
-    evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001]
-    reason: "Precedente fuerte de integracion diferencial fisica, sin necesidad arquitectonica actual."
-  - id: magnetic-mobile-state-precedent
-    evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory]
-    reason: "Precedente de estado magnetico fisico; evidencia posterior deduplicada."
-  - id: parametric-phase-logic-precedent
-    evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501]
-    reason: "El ciclo 15 fortalece que el parametron fue una plataforma operativa/comercial sustituida, pero no agrega traduccion funcional nueva al nucleo; deduplicado."
-  - id: saturable-magnetic-logic-precedent
-    evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing]
-    reason: "Logica por saturacion magnetica sin traduccion funcional especifica al nucleo."
-  - id: mechanical-video-density-precedent
-    evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc]
-    reason: "Transduccion mecanico-electrica de video sin convergencia funcional."
-  - id: integrated-office-automation-precedent
-    evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine, f2-20260916-1601]
-    reason: "El ciclo 16 aporta una revision mas fuerte de Hofgaard pero sigue sin traduccion funcional medible al nucleo; deduplicado como precedente electromecanico."
-  - id: cartridge-decoupled-precision-transport
-    evidence_ids: [f2-2026-09-16T07-elcaset]
-    reason: "Separacion medio/guiado valida, sin convergencia medible."
-  - id: subharmonic-synthesis-precedent
-    evidence_ids: [f2-20260916-0801]
-    reason: "Sintesis subarmonica historica sin traduccion funcional medible."
-  - id: dynamic-track-following-precedent
-    evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901]
-    reason: "Precedente de feedback medio-transductor, sin promover modulo."
-  - id: balanced-ternary-precedent
-    evidence_ids: [f2-20260915-21-setun, f2-20260916-1401]
-    reason: "Continuacion Setun deduplicada; no crea traduccion funcional nueva."
+  - {id: air-cushion-transport, evidence_ids: [f2-20260915-21-aerotrain], reason: "Sin convergencia funcional suficiente con el nucleo."}
+  - {id: networked-management-precedents, evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel], reason: "Redes/coordinacion sin traduccion funcional directa al nucleo fisico."}
+  - {id: synchronized-facsimile-path, evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph], reason: "Barrido/sincronizacion historicos sin traduccion funcional suficiente."}
+  - {id: differential-computing-precedents, evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001], reason: "Integracion diferencial fisica sin necesidad arquitectonica actual."}
+  - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory], reason: "Precedente de estado magnetico fisico; deduplicado."}
+  - {id: parametric-phase-logic-precedent, evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501], reason: "Plataforma operativa sustituida; sin traduccion funcional nueva."}
+  - {id: saturable-magnetic-logic-precedent, evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing], reason: "Logica por saturacion sin traduccion funcional especifica."}
+  - {id: mechanical-video-density-precedent, evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc], reason: "Sin convergencia funcional."}
+  - {id: integrated-office-automation-precedent, evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine, f2-20260916-1601], reason: "Sin traduccion funcional medible al nucleo."}
+  - {id: cartridge-decoupled-precision-transport, evidence_ids: [f2-2026-09-16T07-elcaset], reason: "Sin convergencia medible."}
+  - {id: subharmonic-synthesis-precedent, evidence_ids: [f2-20260916-0801], reason: "Sin traduccion funcional medible."}
+  - {id: dynamic-track-following-precedent, evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901], reason: "Precedente de feedback medio-transductor, sin promover modulo."}
+  - {id: balanced-ternary-precedent, evidence_ids: [f2-20260915-21-setun, f2-20260916-1401], reason: "Continuacion deduplicada; sin traduccion funcional nueva."}
+  - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701], reason: "FLODAC demuestra computacion fluida completa pero su limitacion de velocidad y ausencia de necesidad arquitectonica actual no justifican modulo; no confundir con fluidic memristors contemporaneos."}
 
 current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse/latency physical encoding -> persistent/fading physical state -> optional local association/learning -> externally observable event/state -> optional physical dynamics/logic -> output/action; characterize information preserved, persistence, reset, ambiguity, selectivity, robustness, local energy and total peripheral cost"
-last_synthesized_cycle: 2026-09-16T16
+last_synthesized_cycle: 2026-09-16T17
 
 rules:
   max_active_modules: 3
