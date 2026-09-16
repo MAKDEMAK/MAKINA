@@ -1,0 +1,37 @@
+id: f3-20260915-21-passive-rf-temp
+frente: front-3
+cycle_id: 2026-09-15T21
+tema_objeto: passive wireless temperature sensing by magneto-inductive delay line
+afirmacion_principal: A passive electromagnetic sensor can translate temperature into the amplitude of a remotely interrogated backscattered pulse without an onboard power source.
+funcion: medir
+principio_de_mediacion: temperature-dependent thermistor termination modulates the backscattered response of a magneto-inductive-wave delay line
+variable_fisica_entrada: temperature
+señal_o_estado_salida: amplitude of delayed RF backscatter pulse
+modalidad: RF magneto-inductive wave
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: not quantified in consulted summary
+latencia: time-domain delayed pulse; absolute readout latency not reported
+condiciones_de_prueba: fabricated sensor characterized at multiple temperatures; operation at 2.55 GHz; measured response agreed with simulations and retained integrity after heating
+fuentes:
+  - url: https://www.iit.comillas.edu/publicacion/revista/en/1227/Design%20and%20characterization%20of%20a%20passive%20temperature%20sensor%20based%20on%20a%20printed%20MIW%20delay%20line
+    titulo: Design and characterization of a passive temperature sensor based on a printed MIW delay line
+    tipo: IEEE Sensors Journal experimental paper summary
+    fecha: 2016
+nivel_evidencia: A
+datos_cuantitativos:
+  frecuencia_operacion_GHz: 2.55
+mecanismo_o_principio: An external reader sends an RF pulse; the passive delay line returns a delayed pulse whose amplitude is modulated by a thermistor at its termination and therefore by temperature.
+limitaciones:
+  - Requires placement of a passive transducer on or near the measured object.
+  - Requires an external RF reader.
+  - Precision, range and interrogation distance were not available in the consulted summary and must not be inferred.
+contradicciones: None identified in the consulted primary-paper institutional summary; field robustness beyond heating tests is not established here.
+etiquetas_neutrales: [passive, RF, temperature, backscatter, delay_line, batteryless]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+distincion_medicion_inferencia:
+  medicion_directa: RF pulse amplitude
+  inferencia_indirecta: temperature from calibrated amplitude response
