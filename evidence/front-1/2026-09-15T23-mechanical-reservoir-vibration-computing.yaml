@@ -1,0 +1,34 @@
+id: f1-20260915-23-mechanical-reservoir
+frente: front-1
+cycle_id: 2026-09-15T23
+tema_objeto: metamaterial mecánico como computador de reservorio físico
+afirmacion_principal: "HECHO: una red mecánica no lineal experimental puede transformar vibraciones ambientales en representaciones útiles para cálculo y propiocepción, dejando sólo una lectura lineal digital simple."
+capacidad_nueva: sensar y procesar dinámicas vibratorias mediante la propia estructura mecánica
+mecanismo_o_principio: "Red 5x5 de celdas con no linealidades de contacto tipo ReLU; la dinámica distribuye contenido frecuencial y memoria entre múltiples lecturas de deformación, usadas como reservoir readouts."
+dominio: inteligencia_fisica/mecanica; reservoir_computing
+fuentes:
+  - url: https://arxiv.org/abs/2605.19098
+    titulo: Embodying Intelligence into Mechanical Metamaterials via Reservoir Computing
+    tipo: preprint_primario_experimental
+    fecha: 2026-05-18
+  - url: https://smasis.secure-platform.com/a/solicitations/282/sessiongallery/24309/application/197558
+    titulo: Embodying Intelligence Into Mechanical Metamaterials via Reservoir Computing
+    tipo: proceeding_ASME
+    fecha: 2026
+nivel_evidencia: B
+datos_cuantitativos: "Metamaterial 5x5; 78 señales virtuales de strain reportadas en la caracterización; análisis secundario del manuscrito reporta R2 test 0.84 en propiocepción y 0.85 en ReLU-10."
+condiciones_de_prueba: "Estructura TPU impresa 3D, excitación vibratoria por shaker y lectura full-field mediante DIC; tareas de reservoir computing con readout lineal entrenado digitalmente."
+requiere_computacion_digital: opcional
+requiere_alimentacion: parcial
+tipo_de_sensado: vibracion/deformacion estructural
+tipo_de_memoria_o_estado: memoria_dinamica_transitoria_del_reservorio
+tipo_de_adaptacion: pesos_del_readout_entrenados; estructura_fisica_no_se_reconfigura_durante_aprendizaje
+tipo_de_actuacion: vibracion/deformacion
+madurez_tecnica: prototipo_experimental_de_laboratorio
+limitaciones: "El readout y entrenamiento siguen siendo digitales; requiere excitación y adquisición DIC en la demostración; no prueba autonomía integrada ni aprendizaje físico de pesos."
+contradicciones: "La no linealidad mejora tareas compatibles, pero lecturas muy no lineales pueden presentar menor SNR; no equivale a una red neuronal mecánica autónoma."
+etiquetas_neutrales: [physical_reservoir_computing, metamaterial, vibration, embodied_computation, nonlinear_dynamics]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+hipotesis: "HIPÓTESIS DE LOS AUTORES: el espacio memoria-no-linealidad puede servir para diseñar reservorios mecánicos orientados a clases de tareas."
+interpretacion: "INTERPRETACIÓN: la novedad relevante es desplazar parte de la expansión de características y memoria temporal desde cómputo digital hacia dinámica estructural medible."
