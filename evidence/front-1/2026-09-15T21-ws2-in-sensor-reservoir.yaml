@@ -1,0 +1,35 @@
+id: f1-20260915-2102
+front: front-1
+cycle_id: 2026-09-15T21
+tema_objeto: reservorio optoelectronico WS2-ZTO que integra sensado memoria y computacion
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+afirmacion_principal:
+  hecho: "Un memristor optoelectronico WS2/ZTO funciona simultaneamente como sensor y reservorio fisico, procesando dinamica temporal mediante respuesta volatil y no lineal."
+  hipotesis: null
+  interpretacion: "Integrar sensado, memoria temporal y transformacion no lineal en el dispositivo reduce transferencias de datos entre bloques separados."
+capacidad_nueva: "Procesamiento neuromorfico multitarea directamente en el sensor con memoria temporal fisica y consumo optico extremadamente bajo."
+mecanismo_o_principio: "Dinamica memristiva optoelectronica volatil/no lineal de WS2 encapsulado con ZTO usada como reservorio fisico."
+dominio: neuromorfica_in_sensor
+fuentes:
+  - url: "https://doi.org/10.1002/advs.75318"
+    titulo: "WS2 Optoelectronic Memristive Reservoir Enabling Ultra-Low-Power, Multi-Task, and Environmentally Stable Neuromorphic Computing"
+    tipo: paper_original
+    fecha: 2026
+afirmacion_cuantitativa: "~94% N-MNIST; ~93% percepcion de movimiento; ~89% reconocimiento de voz; ~95% reservoir encoder; ~25.5 fJ/spike; operacion bajo 95% RH; endurance >1.5 millones de ciclos."
+nivel_evidencia: A
+datos_cuantitativos: "94/93/89/95% segun tarea; 25.5 fJ/spike; 95% humedad relativa; >1.5M ciclos AC."
+condiciones_de_prueba: "Dispositivo Cu/ZTO/WS2/Pt; entradas convertidas a trenes de spikes; datasets N-MNIST, movimiento y FSDD/voz."
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: optoelectronico
+tipo_de_memoria_o_estado: "plasticidad de corto/largo plazo y fading dynamics memristivas"
+tipo_de_adaptacion: "entrenamiento de capa de lectura/reservoir computing"
+tipo_de_actuacion: ninguno
+madurez_tecnica: "dispositivo experimental de laboratorio"
+limitaciones:
+  - "Las tareas se validan en benchmarks/datasets; no equivale a un sistema edge completo desplegado."
+  - "Fabricacion usa capas depositadas y electrodos; no es computacion sin electronica."
+contradicciones:
+  - "El ahorro energetico reportado es energia optica por spike del dispositivo y no necesariamente consumo total del sistema." 
+etiquetas_neutrales: [memristor, WS2, reservoir-computing, in-sensor, neuromorphic, edge]
