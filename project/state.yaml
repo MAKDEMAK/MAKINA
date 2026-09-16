@@ -6,7 +6,7 @@ core:
 active_modules:
   - id: physical-state-interface
     maturity: M3
-    confidence: 0.87
+    confidence: 0.89
     evidence_ids:
       - f1-20260915-2101
       - f1-20260915-2103
@@ -16,12 +16,13 @@ active_modules:
       - f1-20260915-22-light-programmable-mechanical-logic
       - f1-20260916-02-lc-photonic-memory
       - f3-20260916-02-hygromechanical-indicator
-    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable."
-    next_action: "Ejecutar tests existentes de physical_state/event_state; despues incorporar una curva experimental real de transduccion o memoria material y medir falsos cambios, margen, persistencia y reversibilidad."
+      - f3-20260916-03-adhesive-tape-latching-memory
+    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse tambien resolucion y destructividad de lectura."
+    next_action: "Ejecutar tests existentes de physical_state/event_state; despues incorporar una curva experimental real de transduccion o memoria material y medir falsos cambios, margen, persistencia, resolucion, reversibilidad y si la lectura altera el estado."
 
   - id: embodied-dynamics-computation
     maturity: M1
-    confidence: 0.77
+    confidence: 0.82
     evidence_ids:
       - f1-20260915-22-wave-metamaterial-robot
       - f1-20260915-22-light-programmable-mechanical-logic
@@ -29,8 +30,10 @@ active_modules:
       - f1-20260916T00-active-colloid-reservoir
       - f1-20260916-02-flare
       - f1-20260916-02-magnetic-self-learning
-    success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria y aprendizaje en la comparacion."
-    next_action: "No promover aun: la nueva evidencia agrega memoria fotonica multiescala y aprendizaje magnetico intrinseco, pero no una tarea comun. Fijar primero operador/tarea, metrica y tolerancia antes de construir benchmark M2."
+      - f1-20260916t03-zro2-aftj
+      - f1-20260916t03-learning-shape-metamaterial
+    success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria, aprendizaje y reset/relajacion en la comparacion."
+    next_action: "No promover aun: ZrO2 refuerza reservoir computing fisico y el metamaterial refuerza aprendizaje mecanico, pero siguen siendo funciones distintas. Fijar operador/tarea, metrica, tolerancia y coste de reset antes de construir benchmark M2."
 
 waiting_modules:
   - id: temporal-in-sensor-processing
@@ -38,7 +41,7 @@ waiting_modules:
     reason: "Convergencia plausible entre flujo temporal disperso y reservorio fisico, pero no hay evidencia directa de integracion y requiere hardware especializado."
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state]
-    reason: "La nueva evidencia magnetica refuerza inferencia externa de estado de motor, pero sigue validada en montaje/motor especifico; junto a speckle y ultrasonido las modalidades siguen heterogeneas y no justifican modulo activo sin variable objetivo comun y presupuesto de incertidumbre."
+    reason: "La evidencia magnetica refuerza inferencia externa de estado de motor, pero sigue validada en montaje/motor especifico; junto a speckle y ultrasonido las modalidades siguen heterogeneas y no justifican modulo activo sin variable objetivo comun y presupuesto de incertidumbre."
 
 archived_modules:
   - id: air-cushion-transport
@@ -56,9 +59,12 @@ archived_modules:
   - id: magnetic-mobile-state-precedent
     evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory]
     reason: "La ronda 02 aporta mejor documentacion historica de bubble memory pero no una linea funcional nueva; se deduplica como precedente de estado magnetico fisico y sustitucion tecnologica."
+  - id: parametric-phase-logic-precedent
+    evidence_ids: [f2-2026-09-16T03-parametron]
+    reason: "Precedente historico fuerte de logica/memoria por fase estable de oscilacion parametrica, pero no hay continuidad funcional suficiente con el nucleo para abrir modulo; queda archivado sin forzar analogia con fotonica o reservorios."
 
-current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous state formation -> persistent physical/discrete state -> optional physical dynamics/logic/learning -> observable output/action"
-last_synthesized_cycle: 2026-09-16T02
+current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous state formation -> persistent or fading physical state -> optional physical dynamics/logic/learning -> observable output/action; characterize persistence, relaxation/reset and read destructivity explicitly"
+last_synthesized_cycle: 2026-09-16T03
 
 rules:
   max_active_modules: 3
