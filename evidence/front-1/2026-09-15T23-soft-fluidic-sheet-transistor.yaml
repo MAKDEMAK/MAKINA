@@ -1,0 +1,34 @@
+id: f1-20260915-23-fluidic-sheet-transistor
+frente: front-1
+cycle_id: 2026-09-15T23
+tema_objeto: transistor fluídico blando con lógica y latch puramente neumáticos
+afirmacion_principal: "HECHO: una válvula laminar de uretano amplifica/controla flujo neumático con una señal de presión menor y permite construir NOT, NAND, NOR y un latch, conectando detección táctil y actuación sin electrónica digital."
+capacidad_nueva: procesamiento lógico, memoria de estado y respuesta física usando únicamente presión neumática en una arquitectura blanda planar
+mecanismo_o_principio: "La presión en una cámara de control comprime axialmente el canal principal, provoca buckling y lo bloquea; el comportamiento transistor-like permite componer puertas y auto-retención."
+dominio: logica_fluidica; soft_robotics; computacion_fisica
+fuentes:
+  - url: https://arxiv.org/abs/2511.22318
+    titulo: Soft Fluidic Sheet Transistor for Soft Robotic System Enabling Fluid Logic Operations
+    tipo: preprint_primario_experimental
+    fecha: 2025-11-27
+  - url: https://dblp.uni-trier.de/rec/journals/corr/abs-2511-22318.html
+    titulo: Soft Fluidic Sheet Transistor for Soft Robotic System Enabling Fluid Logic Operations
+    tipo: indice_bibliografico
+    fecha: 2025
+nivel_evidencia: B
+datos_cuantitativos: "El trabajo reporta amplificación neumática y demuestra composiciones NOT, NAND, NOR y latch; la evidencia accesible en esta ronda no permite fijar de forma segura latencia, presión mínima o fan-out cuantitativo."
+condiciones_de_prueba: "Prototipos de válvulas sheet-like de uretano y sistema robótico blando con detector táctil fluídico y actuadores alimentados desde una sola línea de aire."
+requiere_computacion_digital: no
+requiere_alimentacion: si
+tipo_de_sensado: presion/tacto_fluidico
+tipo_de_memoria_o_estado: latch_neumatico_auto_retenido
+tipo_de_adaptacion: ninguna_demostrada
+tipo_de_actuacion: flujo_presion_y_cambio_de_postura
+madurez_tecnica: prototipo_experimental_preprint
+limitaciones: "Necesita fuente neumática; no se verificaron en esta ronda métricas completas de velocidad, escalabilidad, pérdidas o robustez; preprint aún no tratado aquí como validación peer-reviewed."
+contradicciones: "No es computación sin energía: elimina electrónica de control pero conserva una fuente de presión; tampoco demuestra aprendizaje o reconfiguración autónoma."
+etiquetas_neutrales: [fluidic_logic, pneumatic, soft_transistor, latch, embodied_control]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+hipotesis: "HIPÓTESIS: la arquitectura planar puede permitir circuitos fluídicos más integrables que válvulas discretas, pero la escalabilidad no está establecida por la evidencia revisada."
+interpretacion: "INTERPRETACIÓN: el avance relevante es integrar ganancia lógica, memoria y actuación en el mismo dominio físico de presión, reduciendo conversiones entre sensado, cómputo y acción."
