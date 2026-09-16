@@ -45,8 +45,8 @@ active_modules:
 
 waiting_modules:
   - id: temporal-in-sensor-processing
-    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901]
-    reason: "Sensado+procesamiento temporal co-localizado sigue requiriendo benchmark comun y perifericos externos en varias implementaciones."
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401]
+    reason: "Vibe2Spike refuerza codificacion temporal fisica local y desplaza la inferencia al receptor, pero sigue faltando benchmark comun que compare informacion preservada, latencia, energia de perifericos y robustez entre implementaciones."
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001]
     reason: "La conversion resistencia->RF agrega una ruta de lectura pasiva sin ADC local, pero aun no demuestra distancia, resolucion resistiva ni precision sobre una variable fisica final; sigue faltando una variable objetivo comun con presupuesto de incertidumbre y coste total de adquisicion."
@@ -88,9 +88,12 @@ archived_modules:
   - id: dynamic-track-following-precedent
     evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901]
     reason: "Video 2000/DTF queda deduplicado como precedente de feedback medio-transductor, sin promover modulo."
+  - id: balanced-ternary-precedent
+    evidence_ids: [f2-20260915-21-setun, f2-20260916-1401]
+    reason: "Setun del ciclo 14 confirma y amplifica un precedente ya registrado; no crea traduccion funcional nueva al nucleo y queda deduplicado."
 
-current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or remotely addressed transition -> persistent or fading physical state -> optional physical dynamics/logic/learning -> local or remotely interrogated observable output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity, write selectivity, environmental sensitivity and peripheral cost explicitly"
-last_synthesized_cycle: 2026-09-16T10
+current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse physical encoding -> persistent/fading physical state or externally observable event stream -> optional physical dynamics/logic/learning -> local or remotely interrogated output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity, write selectivity, information preserved by encoding, environmental sensitivity and total peripheral cost explicitly"
+last_synthesized_cycle: 2026-09-16T14
 
 rules:
   max_active_modules: 3
