@@ -1,0 +1,43 @@
+id: f2-2026-09-15T23-hydraulic-integrator
+frente: front-2
+cycle_id: 2026-09-15T23
+tema_objeto: computacion analogica hidraulica
+nombre_proyecto_o_artefacto: Integrador hidraulico de Vladimir Lukyanov
+periodo_historico: 1936-1980s
+pais_contexto: URSS
+disciplina: computacion_analogica_e_ingenieria
+problema_original: resolver con rapidez ecuaciones diferenciales que modelaban transferencia termica y fisuracion del hormigon
+principio_tecnico: analogia fisico-matematica entre flujo hidraulico y transferencia termica; niveles de agua representan variables y resistencias hidraulicas parametrizan coeficientes de la ecuacion
+afirmacion_principal: "HECHO DOCUMENTADO: el integrador hidráulico no fue una curiosidad aislada: evolucionó a arquitectura modular, entró en producción en 1955 y fue aplicado a problemas de ingeniería durante décadas. Fue finalmente desplazado cuando computadores digitales pudieron resolver de forma práctica problemas comparables. INTERPRETACION: constituye una ruta madura de computación por isomorfismo físico que desapareció por sustitución funcional, no por fracaso experimental."
+estado_historico: sustitucion_tardia
+resultado_real_alcanzado: "IG-1 operativo en 1936; versiones modulares 2D/3D posteriores; producción serial IGL desde 1955; uso reportado en construcción, geología, metalurgia y otros dominios de ingeniería hasta décadas posteriores."
+causa_documentada: "Los computadores digitales más pequeños y rápidos terminaron absorbiendo las tareas de modelado; fuentes históricas sitúan uso de integradores hidráulicos soviéticos hasta los años 1980."
+causas_alternativas:
+  - configuración física manual específica al problema
+  - escalabilidad y reutilización inferiores al software digital general
+camino_que_lo_desplazo_si_existe: simulacion_numerica_en_computadores_digitales
+fuentes:
+  - url: https://coe.psu.ac.th/ad/Y379/March/March_04.pdf
+    titulo: Vladimir Sergeevich Lukyanov
+    tipo: nota_historica_academica
+    fecha: 2021
+  - url: https://sudonull.com/post/109718-Hydraulic-integrator-Lukyanova
+    titulo: Hydraulic integrator Lukyanova
+    tipo: reconstruccion_tecnica_secundaria
+    fecha: 2014-07-01
+nivel_evidencia: B
+datos_cuantitativos:
+  - "primer integrador unidimensional IG-1: 1936"
+  - "produccion comercial/serial reportada desde 1955"
+  - "uso reportado hasta los años 1980"
+limitaciones:
+  - evidencia primaria digital accesible limitada en esta ronda
+  - reconfiguracion mediante vasos, tubos y resistencias hidráulicas físicas
+contradicciones:
+  - "No debe describirse como proyecto abandonado temprano: fue una tecnología usada y fabricada durante décadas antes de ser sustituida."
+incertidumbres:
+  - cantidades exactas de unidades producidas no verificadas
+  - algunas aplicaciones específicas aparecen principalmente en relatos retrospectivos
+etiquetas_neutrales: [hidraulica, analogico, ecuaciones_diferenciales, isomorfismo_fisico, URSS, sustitucion]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
