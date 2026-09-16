@@ -1,0 +1,48 @@
+id: f3-2026-09-16T05-clamp-on-ultrasonic-flow
+frente: front-3
+cycle_id: 2026-09-16T05
+tema_objeto: caudal en tuberia existente medido externamente por tiempo de transito ultrasonico
+afirmacion_principal:
+  HECHO: Transductores ultrasonicos fijados externamente a una tuberia pueden inferir velocidad/caudal por la diferencia de tiempo de transito a favor y contra el flujo, sin perforar la tuberia; en condiciones controladas se reportan errores menores a 2%, pero perturbaciones de perfil y materiales dispersivos pueden elevar fuertemente el error.
+  INTERPRETACION: Es una mediacion no invasiva madura para volver observable flujo interno de infraestructura legacy, siempre que geometria, material y perfil de velocidad se caractericen o corrijan.
+  HIPOTESIS: ninguna
+funcion: medir
+principio_de_mediacion: diferencia de tiempo de vuelo ultrasonico entre propagacion aguas arriba y aguas abajo a traves de pared y fluido
+variable_fisica_entrada: velocidad del fluido y perfil de velocidad dentro de la tuberia
+señal_o_estado_salida: diferencia de tiempo de transito convertida a velocidad/caudal
+modalidad: ultrasonido_clamp_on
+invasividad: nula
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: tipicamente <=2% en condiciones controladas; experimento tras codo encontro factor de correccion <=1.02 a 8 diametros nominales, mientras distancias menores sin correccion alcanzaron errores sistematicos de hasta 10.8%
+latencia: compatible con medicion en linea; valor exacto depende del instrumento
+condiciones_de_prueba: agua en tuberia con Reynolds 70000 y 100000 y velocidades aproximadas 1.42 y 2.04 m/s; sensores evaluados en 12 distancias tras codo de 90 grados y multiples orientaciones
+fuentes:
+  - url: https://doi.org/10.3390/s21030868
+    titulo: Influence of Flow Disturbances behind the 90° Bend on the Indications of the Ultrasonic Flow Meter with Clamp-On Sensors on Pipelines
+    tipo: paper_experimental
+    fecha: 2021-01-28
+  - url: https://doi.org/10.1016/j.flowmeasinst.2026.103264
+    titulo: Non-invasive techniques for flow rate measurement in water pipes: Systematic review
+    tipo: revision_sistematica
+    fecha: 2026-06
+nivel_evidencia: A
+datos_cuantitativos:
+  error_controlado_revision: '<2%'
+  velocidad_prueba: [1.42 m/s, 2.04 m/s]
+  reynolds_prueba: [70000, 100000]
+  error_sistematico_cerca_de_codo_sin_correccion: 'hasta 10.8%'
+  distancia_con_factor_correccion_no_mayor_1_02: '8 diametros nominales'
+mecanismo_o_principio: el flujo altera diferencialmente el tiempo de propagacion acustica en sentidos opuestos; geometria conocida permite estimar velocidad media
+limitaciones:
+  - requiere conocimiento suficientemente preciso de geometria, espesor y material de tuberia
+  - codos, valvulas y perfiles no desarrollados sesgan la estimacion
+  - acoplamiento y posicion angular de transductores afectan la lectura
+  - desempeño de laboratorio no garantiza exactitud equivalente en campo
+contradicciones:
+  - aunque fabricantes suelen declarar aproximadamente 1%, experiencias industriales publicadas reportan discrepancias mucho mayores cuando fallan supuestos de instalacion
+  - no es medicion directa de volumen desplazado sino inferencia de caudal desde tiempo de transito y modelo geometrico
+etiquetas_neutrales: [caudal, ultrasonido, clamp-on, no-invasivo, tuberia, tiempo-de-transito, retrofit]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
