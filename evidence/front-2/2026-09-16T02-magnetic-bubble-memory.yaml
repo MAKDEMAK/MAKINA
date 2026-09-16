@@ -1,0 +1,45 @@
+id: f2-2026-09-16T02-magnetic-bubble-memory
+frente: front-2
+cycle_id: 2026-09-16T02
+tema_objeto: memoria magnetica de dominios moviles
+afirmacion_principal: "HECHO DOCUMENTADO: la memoria de burbujas magneticas llevo dominios magneticos no volatiles y desplazables a productos reales; pese a fuerte desarrollo industrial, no se convirtio en memoria universal y fue desplazada economicamente por memorias semiconductoras y discos. INTERPRETACION: el camino no fue un simple fracaso de laboratorio sino una sustitucion de una arquitectura de estado movil en el propio medio magnetico."
+nombre_proyecto_o_artefacto: magnetic bubble memory
+periodo_historico: "1967-1980s (desarrollo principal; continuidad especializada posterior)"
+pais_contexto: "Estados Unidos; Japon; desarrollo internacional"
+disciplina: "almacenamiento magnetico; materiales; computacion"
+problema_original: "obtener almacenamiento no volatil, denso, sin partes mecanicas moviles y potencialmente competitivo con memoria principal y almacenamiento masivo"
+principio_tecnico: "dominios magneticos cilindricos ('burbujas') en peliculas con magnetizacion perpendicular, propagados por campos/patrones magneticos y leidos mediante detectores magneticos"
+estado_historico: sustitucion
+resultado_real_alcanzado: "Se fabricaron y comercializaron dispositivos; hacia 1980 la literatura de Science describia la tecnologia ya introducida en el mercado. La investigacion exploro burbujas de ~2 um hacia 0.5 um y arquitecturas de mayor densidad; en 1985 aun se publicaban prototipos con redes autoestructuradas y tolerancia a defectos demostrada."
+causa_documentada: "En 1981 una revision japonesa señalaba que, aunque la densidad por bit superaba a memoria semiconductor, el coste era algo mayor y seguian pendientes reduccion de coste y mejora de velocidad de conmutacion. La historia del Computer History Museum clasifica las memorias bubble entre tecnologias probadas que finalmente perdieron en el mercado."
+causas_alternativas: "Competencia simultanea de semiconductores y discos; requisitos de campos/drive y acceso secuencial/latencia; dificultad de escalar materiales, litografia y velocidad. No se atribuye el desplazamiento a una unica causa."
+camino_que_lo_desplazo_si_existe: "memorias semiconductoras para memoria electronica y discos magneticos para almacenamiento masivo"
+fuentes:
+  - url: "https://research.ibm.com/publications/the-frontiers-of-magnetic-bubble-technology"
+    titulo: "The Frontiers of Magnetic Bubble Technology"
+    tipo: "paper contemporaneo, Proceedings of the IEEE"
+    fecha: "1975-01-01"
+  - url: "https://research.ibm.com/publications/magnetic-bubble-materials"
+    titulo: "Magnetic bubble materials"
+    tipo: "paper contemporaneo, Science"
+    fecha: "1980-01-01"
+  - url: "https://www.jstage.jst.go.jp/article/jmsjmag1977/5/4/5_4_220/_article/-char/en"
+    titulo: "Outline of Magnetic Bubble Memory"
+    tipo: "revision tecnica contemporanea"
+    fecha: "1981-08-30"
+  - url: "https://www.computerhistory.org/storageengine/bubbles-ccds-other-forgotten-memories/"
+    titulo: "1977: Bubbles, CCDs & other forgotten memories"
+    tipo: "interpretacion historica institucional"
+    fecha: "desconocida"
+  - url: "https://ntrs.nasa.gov/citations/19870027900"
+    titulo: "Self-structured, current aperture approach for bubble memory"
+    tipo: "paper/prototipo tecnico"
+    fecha: "1985-09-01"
+nivel_evidencia: A
+datos_cuantitativos: "La literatura de 1980 discutia reducir diametros de burbuja de 2 a 0.5 um. Un tester de 1980 soportaba chips hasta 512x512 bits y operacion hasta 1 MHz. El trabajo de 1985 proyectaba espaciamiento de 2.5 diametros de burbuja y reportaba tolerancia a defectos demostrada."
+limitaciones: "No se localizo en esta ronda una fuente primaria unica que cuantifique el punto exacto de cruce de coste contra DRAM/disco ni una fecha universal de abandono; hubo continuidad especializada."
+contradicciones: "TESTIMONIO/INTERPRETACION HISTORICA: llamarla tecnologia 'olvidada' simplifica una trayectoria que incluyo mercado real y trabajo de I+D posterior; en 1981-85 seguia considerandose tecnicamente activa."
+incertidumbres: "La importancia relativa de coste, velocidad, latencia, complejidad de drive y mejoras rivales varia por fabricante y aplicacion."
+etiquetas_neutrales: [memoria_magnetica, dominios_moviles, no_volatil, sustitucion, almacenamiento, materiales]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
