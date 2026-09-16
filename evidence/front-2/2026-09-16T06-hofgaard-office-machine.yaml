@@ -1,0 +1,84 @@
+id: f2-2026-09-16T06-hofgaard-office-machine
+frente: front-2
+cycle_id: 2026-09-16T06
+tema_objeto: automatizacion electromecanica integrada de oficina
+afirmacion_principal: >-
+  La maquina Hofgaard fue una linea real de automatizacion de oficina que intento integrar indexacion,
+  calculo, entrada, impresion y gestion de registros mediante mecanica de precision y electromecanica
+  de reles; llego a prototipo demostrable a mediados de los anos 1950, pero no obtuvo financiacion
+  para convertirse en producto industrial y fue sobrepasada por computadores electronicos digitales.
+nombre_proyecto_o_artefacto: Hofgaard machine
+periodo_historico: 1924-1956; prototipo final 1955-1956
+pais_contexto: Noruega, con desarrollo previo en Estados Unidos
+disciplina: maquinas de oficina; automatizacion; electromecanica; calculo
+problema_original: >-
+  Automatizar contabilidad, facturacion, indexacion, bases de datos/inventario y calculo dentro de una
+  maquina de oficina integrada y reproducible industrialmente.
+principio_tecnico: >-
+  Integracion de modelos matematicos y codificacion con mecanismos de precision y logica/control
+  electromecanico por reles; los antecedentes patentados de Hofgaard enlazaban teclas numericas,
+  contactos electricos y dispositivos de registro para ejecutar y dejar registro de operaciones.
+estado_historico: prototipo no escalado; posteriormente sustituido tecnologicamente
+resultado_real_alcanzado: >-
+  Existio un prototipo fisico, conservado por el Norwegian Museum of Science and Technology. Fue
+  demostrado y reconocido por su potencial, pero nunca entro en produccion. El museo documenta una
+  unidad de 1956 con modulos de indexacion, calculo, entrada e impresion.
+causa_documentada: >-
+  El prototipo de mediados de los 1950 no consiguio financiacion para completar el producto comercial.
+  A finales de esa decada sus soluciones habian sido sobrepasadas por computadores electronicos
+  digitales. Una trayectoria anterior Hofgaard-Remington ya habia terminado tras el crash de 1929 y
+  la liquidacion de la sociedad, cuyos activos/patentes pasaron a NCR.
+causas_alternativas:
+  - La sustitucion no demuestra por si sola inferioridad funcional del prototipo; coincide con una transicion industrial general hacia electronica digital.
+  - El museo investiga aun si parte del trabajo de Hofgaard influyo posteriormente en Remington, NCR o IBM; esa continuidad no esta establecida.
+camino_que_lo_desplazo_si_existe: computadores electronicos digitales de posguerra y sistemas de procesamiento de datos asociados
+fuentes:
+  - url: https://www.tekniskmuseum.no/en/research/the-hofgaard-machine
+    titulo: 'The Hofgaard machine: An early Norwegian computer?'
+    tipo: museo tecnico / investigacion institucional
+    fecha: desconocida
+  - url: https://www.tekniskmuseum.no/en/reports/research-and-development-2021
+    titulo: Research and Development 2021
+    tipo: informe institucional
+    fecha: '2021'
+  - url: https://patents.google.com/patent/US2262235A/en
+    titulo: US2262235A - Electric calculating machine
+    tipo: patente
+    fecha: '1941-11-11'
+nivel_evidencia: A
+datos_cuantitativos:
+  - Hofgaard mantuvo patentes relacionadas con calculadoras/maquinas de oficina entre 1924 y mediados de los 1950.
+  - El prototipo conservado se fecha en 1955-1956.
+  - La asociacion Hofgaard-Remington mantuvo un laboratorio de desarrollo en Bridgeport antes de desaparecer tras 1929.
+limitaciones:
+  - La documentacion institucional disponible no proporciona benchmark cuantitativo de velocidad, fiabilidad o coste del prototipo frente a computadores electronicos contemporaneos.
+  - No se ha establecido produccion en serie ni uso operacional prolongado.
+contradicciones:
+  - No debe describirse como una simple idea fallida: hubo prototipo fisico demostrado y una larga base de patentes.
+  - Tampoco debe afirmarse que su principio desaparecio por completo; existe una pregunta historica abierta sobre transferencia de propiedad intelectual a fabricantes posteriores.
+incertidumbres:
+  - Influencia efectiva de las patentes vendidas a NCR sobre maquinas posteriores.
+  - Grado exacto de funcionalidad integrada alcanzado por cada subsistema del prototipo conservado.
+etiquetas_neutrales:
+  - office-automation
+  - electromechanical
+  - relay-logic
+  - precision-mechanics
+  - accounting-machine
+  - transitional-technology
+  - prototype-not-scaled
+fecha_hallazgo: '2026-09-16'
+fecha_revision: '2026-09-16'
+separacion_epistemica:
+  hecho_documentado: >-
+    Existe el prototipo conservado; fue demostrado; integraba funciones de indexacion, calculo, entrada
+    e impresion; no entro en produccion y los computadores electronicos digitales lo sobrepasaron al
+    final de los anos 1950.
+  testimonio: >-
+    El museo atribuye a Hofgaard el relato de que aproximadamente cien patentes formaron parte de la
+    venta de los activos de Hofgaard-Remington a NCR; se conserva como testimonio, no como hecho
+    independiente plenamente verificado en esta ronda.
+  interpretacion: >-
+    El valor arqueologico del caso esta en una arquitectura transicional que trataba la automatizacion
+    administrativa como una sola maquina fisico-informacional antes de que esa funcion convergiera en
+    el computador digital de proposito general.
