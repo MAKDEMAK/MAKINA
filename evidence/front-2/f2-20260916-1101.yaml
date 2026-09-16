@@ -1,0 +1,59 @@
+id: f2-20260916-1101
+frente: front-2
+cycle_id: 2026-09-16T11
+tema_objeto: lógica fluídica sin partes móviles y FLODAC
+nombre_proyecto_o_artefacto: FLODAC / pure-fluid logic
+periodo_historico: 1957-1970s
+pais_contexto: Estados Unidos; investigación paralela documentada en URSS y Reino Unido
+disciplina: control industrial; computación; neumática; fluídica
+afirmacion_principal:
+  hecho_documentado: "En 1960 Harry Diamond Laboratories anunció un amplificador fluídico sin partes móviles; hacia 1964 FLODAC documentó la construcción experimental de lógica/computación digital basada en fluidos, y en 1967 existía un breadboard de control secuencial neumático para motor cohete."
+  testimonio: "La literatura técnica contemporánea de 1969 describía alta fiabilidad y vidas de conmutación superiores a 1e8 operaciones como ventajas de dispositivos fluídicos."
+  interpretacion: "La línea no fue un fracaso puntual sino una plataforma de lógica/control que perdió la competencia general frente a la microelectrónica por escala y velocidad, conservándose principios en nichos y reapareciendo después a otras escalas."
+problema_original: realizar amplificación, lógica y control robustos usando flujo de gas/líquido, especialmente donde partes móviles o electrónica presentaban limitaciones
+principio_tecnico: un chorro principal es desviado/controlado por chorros de menor potencia y geometrías fluídicas; efectos no lineales permiten amplificación, conmutación y composición de funciones lógicas sin elementos mecánicos móviles
+estado_historico: sustitucion parcial; absorcion en nichos; camino de computación general no escalado
+resultado_real_alcanzado:
+  - amplificador fluídico sin partes móviles anunciado en 1960
+  - FLODAC presentado en AFIPS Fall Joint Computer Conference de 1964 como sistema de computación/lógica fluídica
+  - breadboard de control secuencial de motor cohete documentado por NASA/AIAA en 1967
+  - métodos sistemáticos de síntesis de circuitos fluídico-neumáticos publicados todavía en 1972
+causa_documentada: "La electrónica de estado sólido y los circuitos integrados ofrecieron ventajas marcadas de tamaño y velocidad; una revisión técnica posterior describe su disponibilidad creciente como causa del reemplazo de muchos controles fluídicos."
+causas_alternativas:
+  - circuitos relativamente voluminosos y caros frente a equivalentes electrónicos, ya señalados contemporáneamente en 1967
+  - velocidad limitada por propagación/acústica y dinámica del fluido
+  - dificultad de miniaturizar familias dependientes de efectos inerciales manteniendo prestaciones
+camino_que_lo_desplazo_si_existe: transistores, circuitos integrados y posteriormente control electrónico/programable
+fuentes:
+  - url: https://doi.org/10.1145/1464052.1464112
+    titulo: FLODAC
+    tipo: proceedings primario
+    fecha: 1964-10-27
+  - url: https://ntrs.nasa.gov/citations/19670055252
+    titulo: Pneumatic logic rocket engine sequence control
+    tipo: NASA Technical Reports Server / conference paper
+    fecha: 1967-07-01
+  - url: https://www.worldradiohistory.com/Archive-IEEE/1969/IEEE-Spectrum-1969-11.pdf
+    titulo: Fluidics — a new control tool
+    tipo: revista técnica contemporánea IEEE Spectrum
+    fecha: 1969-11
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3463711/
+    titulo: "Microfluidic Automation using elastomeric valves and droplets: reducing reliance on external controllers"
+    tipo: revisión académica retrospectiva
+    fecha: 2012
+nivel_evidencia: A
+datos_cuantitativos:
+  - "IEEE Spectrum (1969): vidas de conmutación >1e8 operaciones descritas como usuales para dispositivos de la época."
+  - "TIME (1967, fuente contextual no usada como evidencia primaria principal): estimación de mercado de productos fluídicos de USD 30 millones ese año."
+limitaciones:
+  - no se obtuvo en esta ronda una especificación completa de FLODAC que permita comparar velocidad, tamaño y consumo con computadores electrónicos contemporáneos
+  - fluidics comprende familias físicas distintas; no debe generalizarse una limitación de escalado de un dispositivo a toda la disciplina
+contradicciones:
+  - la narrativa de 'tecnología abandonada' es incompleta: la lógica fluídica continuó en aplicaciones especializadas y principios relacionados reaparecieron en microfluídica y control neumático
+  - la existencia de métodos de diseño publicados en 1972 contradice una desaparición inmediata tras la llegada del transistor
+incertidumbres:
+  - peso causal relativo de coste, velocidad, tamaño, herramientas de diseño y ecosistema industrial en el desplazamiento
+  - alcance funcional exacto de FLODAC más allá de la demostración publicada sin consultar el texto completo del proceedings
+etiquetas_neutrales: [fluidics, pneumatic_logic, pure_fluid_amplifier, FLODAC, no_moving_parts, sequential_control, substitution]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
