@@ -1,0 +1,28 @@
+id: f1-2026-09-16T01-self-powered-analogue-memristive-learning
+frente: front-1
+cycle_id: 2026-09-16T01
+tema_objeto: sistema neuromorfico analogico autoalimentado multimodal
+afirmacion_principal: "HECHO: un circuito experimental integra sensado, codificacion temporal, fusion, aprendizaje no supervisado y memoria no volatil sin ADC, logica digital ni fuente electrica externa durante la operacion sensorial."
+capacidad_nueva: "Aprender correlaciones temporales entre modalidades fisicas directamente en hardware analogico alimentado por los propios sensores."
+mecanismo_o_principio: "Memristores difusivos convierten amplitud analogica en tiempo de disparo mediante deriva/difusion ionica; memristores de deriva acumulan cambios de conductancia no volatiles segun coincidencia temporal, implementando plasticidad homo- y heterosinaptica."
+dominio: neuromorfica_analogica
+fuentes:
+  - url: "https://doi.org/10.1038/s44460-026-00067-7"
+    titulo: "Self-powered analogue neuromorphic system for multimodal sensing, encoding and learning with diffusive and drift memristors"
+    tipo: paper_original_experimental
+    fecha: 2026-04-30
+nivel_evidencia: A
+datos_cuantitativos: "Luz ensayada 15.5-64.2 mW/cm2 (n=10 por intensidad); presion 25.5-75.1 kPa con n=5-19 segun nivel. La unidad de fusion usa 2 memristores difusivos + 1 de deriva + 2 resistencias + 2 capacitores."
+condiciones_de_prueba: "PCB integrado con sensor fotovoltaico y PVDF piezoelectrico; los sensores generan directamente la energia/señal que acciona los memristores. Un microcontrolador externo sincronizo el inicio de los estimulos en la demostracion controlada, pero no forma parte de la ruta analogica de sensado/aprendizaje."
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: "optico fotovoltaico y mecanico piezoelectrico; extensible por transduccion analogica"
+tipo_de_memoria_o_estado: "memoria temporal volatil en memristor difusivo + peso sinaptico no volatil en memristor de deriva"
+tipo_de_adaptacion: "STDP e ITDP/heterosinaptica por modificacion de conductancia"
+tipo_de_actuacion: "ninguna; salida electrica analogica/conductancia"
+madurez_tecnica: "demostrador experimental integrado en PCB"
+limitaciones: "Variabilidad inherente de memristores; el experimento multimodal sincronizo estimulos con microcontrolador externo; aplicaciones de localizacion de rayos fueron simuladas, no demostradas fisicamente; escalabilidad de redes grandes no demostrada."
+contradicciones: "INTERPRETACION: 'sin computacion digital' describe la ruta funcional del dispositivo, no implica que todo el montaje experimental carezca de instrumentacion digital externa."
+etiquetas_neutrales: [memristor, analogico, autoalimentado, aprendizaje_no_supervisado, fusion_sensorial, memoria_no_volatil]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
