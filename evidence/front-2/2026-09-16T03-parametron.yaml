@@ -1,0 +1,51 @@
+id: f2-2026-09-16T03-parametron
+frente: front-2
+cycle_id: 2026-09-16T03
+tema_objeto: logica digital por oscilacion parametrica
+nombre_proyecto_o_artefacto: Parametron y computadores parametron japoneses
+periodo_historico: 1954-principios de 1960
+pais_contexto: Japon
+disciplina: computacion digital/electronica
+problema_original: realizar logica y memoria digital fiable y barata cuando tubos y transistores eran costosos o poco fiables
+principio_tecnico: circuito resonante LC con ferrita excitado parametricamente a 2f; las dos fases estables 0 y pi de la oscilacion a f codifican bits y permiten logica/memoria
+estado_historico: sustitucion tras comercializacion real
+resultado_real_alcanzado: "PC-1 (1958) uso 4200 parametrons, memoria de 512 palabras cortas; suma/resta 0.4 ms, multiplicacion 36-bit 4.4 ms, division 16.1 ms. Varias empresas japonesas comercializaron computadores parametron; FACOM212 fue exportado a Filipinas en 1963."
+causa_documentada: "IPSJ: excelente fiabilidad, pero menor velocidad, mayor consumo y techo de mejora frente a computadores transistorizados; al mejorar la fiabilidad del transistor, el desarrollo parametron termino a comienzos de los 1960."
+causas_alternativas: "IEEE/ETHW señala ademas que el transistor servia a mercados mas amplios que la logica digital, concentrando mucha mas inversion de I+D."
+camino_que_lo_desplazo_si_existe: logica digital transistorizada
+fuentes:
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/history.html
+    titulo: Brief History - Computer Museum
+    tipo: archivo institucional IPSJ
+    fecha: desconocida
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/0016.html
+    titulo: PC-1 Parametron Computer
+    tipo: archivo institucional IPSJ
+    fecha: desconocida
+  - url: https://global.fujitsu/en-global/about/corporate/museum/products/products/computer-mainframe-facom212
+    titulo: FACOM212 (1959)
+    tipo: museo corporativo/documentacion historica
+    fecha: desconocida
+  - url: https://ethw.org/Milestones%3AParametron%2C_1954
+    titulo: "Milestones: Parametron, 1954"
+    tipo: archivo historico IEEE/ETHW
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos:
+  pc1_parametrons: 4200
+  pc1_memoria_palabras_cortas: 512
+  pc1_suma_resta_ms: 0.4
+  pc1_multiplicacion_36bit_ms: 4.4
+  pc1_division_ms: 16.1
+  facom212_completado: 1959
+  facom212_exportacion_filipinas: 1963
+limitaciones: baja velocidad y mayor consumo que la trayectoria transistor; limite de mejora documentado por IPSJ
+contradicciones: "No fue un simple fracaso ni prototipo: existio una familia comercial y aplicaciones fuera de computadores; algunas fuentes simplifican su historia como obsolescencia inmediata."
+incertidumbres: "La contribucion relativa exacta de velocidad, consumo, escalabilidad e inversion industrial a su sustitucion no queda cuantificada de forma comparable en las fuentes consultadas."
+etiquetas_neutrales: [parametric-oscillation, ferrite, phase-logic, digital-logic, historical-computing, substitution]
+separacion_epistemica:
+  hecho_documentado: "Inventado por Eiichi Goto en 1954; computadores parametron fueron prototipados y comercializados en Japon; IPSJ documenta su sustitucion por transistores por velocidad, consumo y techo de mejora."
+  testimonio: "ETHW reproduce la afirmacion contemporanea de Goto (1959) de que casi la mitad de los computadores electronicos japoneses en operacion usaban parametrons."
+  interpretacion: "El camino tecnico abandonado no fue la computacion resonante en abstracto, sino una familia digital concreta donde fase estable de oscilacion parametrica realizaba logica/memoria; quedo desplazada antes de una evolucion comparable a la integracion transistor."
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
