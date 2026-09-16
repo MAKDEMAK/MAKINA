@@ -1,0 +1,53 @@
+id: f2-20260916-1001
+frente: front-2
+cycle_id: 2026-09-16T10
+tema_objeto: computacion_analogica_hidraulica_para_ecuaciones_diferenciales
+nombre_proyecto_o_artefacto: Integrador Hidraulico de Lukyanov (IG/IGL)
+periodo_historico: 1934-1980s
+pais_contexto: URSS
+disciplina: [computacion_analogica, ingenieria_civil, modelado_termico]
+afirmacion_principal:
+  hecho_documentado: "Lukyanov construyo en 1936 un integrador hidraulico para modelar procesos termicos en hormigon mediante analogia entre flujo de calor y flujo de agua; la linea evoluciono a unidades modulares, fue producida en serie desde 1955 y siguio usandose en ingenieria sovietica hasta los anos 1980."
+  testimonio: "Fuentes historicas retrospectivas atribuyen su origen a la dificultad de resolver con rapidez y precision las ecuaciones diferenciales parciales asociadas a temperaturas y fisuracion del hormigon."
+  interpretacion: "No fue un prototipo fallido: fue una rama de computacion analogica fisica operacional durante decadas que finalmente fue desplazada por computacion electronica/digital de proposito mas general. El principio discontinuado como linea dominante fue mapear directamente una ecuacion diferencial sobre una red fisica hidraulica configurable."
+problema_original: "Calcular distribuciones transitorias de temperatura en estructuras de hormigon y otros problemas descritos por ecuaciones diferenciales, cuando el calculo analitico era lento y exigia simplificaciones."
+principio_tecnico: "Analogia fisica: niveles de agua representan variables/estado y resistencias y caudales hidraulicos representan coeficientes, transferencia e integracion; la evolucion continua de la red resuelve analogicamente la dinamica de la ecuacion."
+estado_historico: sustitucion
+resultado_real_alcanzado: "IG-1 funcional en 1936; diseno modular en 1941; versiones 2D/3D; unidades estandarizadas desarrolladas 1949-1955; produccion seriada IGL desde 1955; exportacion a Checoslovaquia, Polonia, Bulgaria y China; uso documentado en grandes obras y sectores industriales hasta los anos 1980."
+causa_documentada: "Sustitucion progresiva por dispositivos/computacion electronica; las fuentes consultadas no documentan un unico acto de cancelacion ni una fecha causal precisa."
+causas_alternativas:
+  - "Configuracion fisica/manual y especializacion del modelo frente a la creciente generalidad y programabilidad de computadoras electronicas. Esta es una inferencia historico-tecnica, no una causa cuantificada en las fuentes consultadas."
+camino_que_lo_desplazo_si_existe: "Computacion electronica y posteriormente digital para solucion numerica de ecuaciones diferenciales."
+fuentes:
+  - url: "https://history-computer.com/people/vladimir-lukianov/"
+    titulo: "Vladimir Lukianov - History-Computer"
+    tipo: historia_tecnica_retrospectiva
+    fecha: "2025"
+  - url: "https://en.wikipedia.org/wiki/Water_integrator"
+    titulo: "Water integrator"
+    tipo: sintesis_secundaria_con_referencias_bibliograficas
+    fecha: desconocida
+  - url: "https://www.infobae.com/en/2022/03/22/the-water-computer-a-little-known-invention-that-challenged-mathematics/"
+    titulo: "The water computer, a little-known invention that challenged mathematics"
+    tipo: entrevista_retrospectiva_museologica
+    fecha: "2022-03-22"
+nivel_evidencia: B
+datos_cuantitativos:
+  - "Primer modelo: 1936"
+  - "Diseno modular: 1941"
+  - "Desarrollo de unidades estandarizadas: 1949-1955"
+  - "Produccion seriada IGL: desde 1955"
+  - "Lectura de nivel reportada historicamente con precision de fracciones de milimetro"
+  - "Uso de la familia documentado hasta los anos 1980"
+limitaciones:
+  - "La configuracion dependia de una correspondencia fisica entre parametros del problema y componentes hidraulicos."
+  - "Las primeras versiones eran especificas para problemas concretos; la modularidad posterior redujo esta limitacion."
+  - "No se encontro en esta ronda una fuente primaria de fabrica que cuantifique volumen total de produccion, error numerico o coste."
+contradicciones:
+  - "La narrativa popular lo presenta a veces como curiosidad o prototipo aislado; la evidencia de produccion seriada, exportacion y uso durante decadas contradice esa caracterizacion."
+incertidumbres:
+  - "No se pudo atribuir cuantitativamente el abandono a coste, velocidad, precision o mantenimiento por separado."
+  - "La fecha exacta del ultimo uso operacional no esta establecida por las fuentes consultadas."
+etiquetas_neutrales: [analog_computing, hydraulic_analogy, physical_computation, differential_equations, thermal_modeling, substitution]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
