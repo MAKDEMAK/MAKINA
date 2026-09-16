@@ -1,0 +1,44 @@
+id: f1-20260916-06-mycelium-reservoir
+frente: front-1
+cycle_id: 2026-09-16T06
+tema_objeto: sustrato neuromorfico biodegradable de micelio conductor
+afirmacion_principal:
+  HECHO: "Micelio no vivo infusionado con PEDOT:PSS forma reservorios analogicos cuya morfologia modifica transporte, no linealidad y memoria temporal; se demostro procesamiento temporal y NARMA-10."
+  HIPOTESIS: "La morfologia cultivada puede convertirse en un parametro de diseno computacional reproducible a escala."
+  INTERPRETACION: "La geometria biologicamente fabricada funciona como parte del kernel fisico, no solo como soporte del conductor."
+capacidad_nueva: "fabricar un kernel temporal analogico biodegradable y ajustar parte de su dinamica mediante morfologia de crecimiento"
+mecanismo_o_principio: "red hifal morfologicamente estructurada + infusion PEDOT:PSS produce caminos conductivos distribuidos, respuesta I-V no lineal y relajacion con memoria; el estado fisico realiza expansion temporal/no lineal antes del readout"
+dominio: "computacion fisica / neuromorfica / materiales biofabricados"
+fuentes:
+  - url: "https://www.nature.com/articles/s41598-026-55550-5"
+    titulo: "Morphologically tunable mycelium chips for physical reservoir computing"
+    tipo: "paper experimental peer-reviewed, Scientific Reports"
+    fecha: 2026-06-10
+nivel_evidencia: A
+datos_cuantitativos:
+  - "16 reservorios espacialmente distintos por chip"
+  - "muestras 50x100x1 mm; infusion PEDOT:PSS al 1.3%, -0.8 bar durante 30 s"
+  - "morfologia predijo PC1 electrico con R2=0.74; organizacion resistencia-morfologia p=0.003-0.007"
+  - "respuesta escalon: tau ~0.15 s y subida 10-90% ~4.35 s"
+  - "memoria lineal total: chip 39 0.209±0.067; chip 47 0.052±0.023; chip 43 0.048±0.016; n=5 por chip"
+  - "en seno representativo, R2 estado siguiente: entrada actual 0.4745 vs entrada+historia 0.5005"
+condiciones_de_prueba: "tres sustratos fabricados independientemente; caracterizacion de memoria con dt=300 ms, 60 s, entradas aleatorias 1-4 V y K=10; interfaz externa analogica y ADC"
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: "entrada electrica analogica; el paper indica posibilidad de entrada directa desde sensor pero no la valida como sensing autonomo"
+tipo_de_memoria_o_estado: "fading memory electrica sub-segundo a segundos dependiente de morfologia"
+tipo_de_adaptacion: "morfologia ajustada durante crecimiento; routing posterior de subconjuntos de reservorios; no aprendizaje material online demostrado"
+tipo_de_actuacion: "ninguna intrinseca demostrada"
+madurez_tecnica: "prueba de concepto experimental de laboratorio"
+limitaciones:
+  - "variabilidad fuerte entre dispositivos/morfologias"
+  - "requiere PEDOT:PSS, carrier PCB, amplificacion y adquisicion externa"
+  - "el readout ML sigue siendo externo"
+  - "la afirmacion de >3 millones de chips por ciclo es capacidad de infraestructura/proyeccion de escalado, no despliegue computacional demostrado"
+  - "una de tres corridas sinusoidales fue no responsiva"
+contradicciones:
+  - "no es computacion realizada por micelio puro: el comportamiento emerge del compuesto micelio-PEDOT:PSS y su interfaz electronica"
+  - "la mejora por historia en el ejemplo sinusoidal es pequena (delta R2=0.026), por lo que no debe equipararse memoria fisica con alto rendimiento general"
+etiquetas_neutrales: [physical-reservoir-computing, mycelium, PEDOT-PSS, analog-computing, fading-memory, morphology, biodegradable]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
