@@ -1,0 +1,62 @@
+id: f3-20260916-1801
+frente: front-3
+cycle_id: 2026-09-16T18
+tema_objeto: memoria térmica pasiva por antifusible polimérico irreversible
+afirmacion_principal: >-
+  HECHO: un compuesto termorresponsivo de negro de acetileno y una mezcla de PEG de dos pesos moleculares cambia irreversiblemente de alta a baja resistencia al superar aproximadamente 60 °C, convirtiendo una excursión térmica en un bit físico no volátil. Integrado a una etiqueta RFID con entrada de tamper, el estado puede leerse digitalmente sin batería en el sensor.
+funcion: registrar
+principio_de_mediacion: >-
+  Una transición térmica reorganiza la red conductora de partículas de negro de acetileno dentro de la matriz PEG y forma una red de percolación persistente; al enfriar, la baja resistencia no revierte, por lo que el propio material enclava el hecho de haber cruzado el umbral.
+variable_fisica_entrada: temperatura máxima / cruce de umbral térmico
+señal_o_estado_salida: estado resistivo irreversible HR->LR, legible como 1 bit por RFID
+modalidad: termo-resistiva + RFID pasivo
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: >-
+  No es un termómetro continuo: registra un evento binario alrededor del umbral diseñado (~60 °C en la composición óptima reportada). La fuente primaria consultada no proporciona una incertidumbre metrológica única del umbral que justifique declarar precisión en °C.
+latencia: >-
+  Dependiente de temperatura, cinética térmica y geometría; no se reduce a una latencia única en la evidencia consultada.
+condiciones_de_prueba: >-
+  Compuestos AB/PEG caracterizados eléctricamente durante calentamiento; la composición destacada usa mezcla PEG1450:PEG10k 80:20 con 2.5 wt.% de negro de acetileno. Se reportan ensayos prolongados a 40, 50 y 60 °C, ciclos repetidos a 60 °C y ciclos de temperatura creciente de 30 a 60 °C, sobre vidrio ITO y/o PCB según ensayo; también se integró el antifusible con una etiqueta RFID pasiva con detección de tamper.
+fuentes:
+  - url: https://doi.org/10.1002/admt.202401499
+    titulo: A Polymer Composite as a Thermal Antifuse for Battery-free RFID Temperature Indicators
+    tipo: paper experimental original, Advanced Materials Technologies
+    fecha: 2025-02-12
+  - url: https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202401499
+    titulo: A Polymer Composite as a Thermal Antifuse for Battery-free RFID Temperature Indicators
+    tipo: registro editorial y resumen del artículo original
+    fecha: 2025-02-12
+nivel_evidencia: A
+datos_cuantitativos:
+  umbral_composicion_optima_C_aprox: 60
+  relacion_resistencia_HR_LR: '>10^3'
+  fraccion_negro_acetileno_wt_pct_composicion_mostrada: 2.5
+  relacion_PEG1450_PEG10k_composicion_mostrada: '80:20'
+  memoria_bits: 1
+mecanismo_o_principio: >-
+  HECHO: el calentamiento por encima de la transición relevante del aglutinante permite que la fase conductora alcance una conectividad de percolación que persiste tras el enfriamiento. La resistencia funciona así como memoria material irreversible del cruce térmico. La interrogación RFID es una capa de lectura y no la memoria primaria.
+limitaciones:
+  - Sólo conserva si se cruzó el umbral; no reconstruye cuándo ocurrió, cuánto duró ni la temperatura máxima exacta.
+  - El umbral depende de formulación, historia térmica, geometría y transferencia de calor; requiere calibración para otra composición o montaje.
+  - La lectura remota requiere un lector RFID y la integración electrónica correspondiente, aunque el enclavamiento térmico del compuesto no requiere batería ni cómputo digital.
+  - La evidencia publicada demuestra laboratorio e integración RFID; no establece por sí sola vida útil, deriva y robustez para todas las condiciones ambientales o industriales.
+contradicciones:
+  - La expresión 'battery-free RFID temperature indicator' no significa ausencia total de electrónica: la memoria física es pasiva, pero la lectura digital usa un circuito/tag RFID energizado por el campo del lector.
+  - Es un indicador de umbral, no una medición continua de temperatura; tratar su bit como temperatura cuantitativa sería una sobreinterpretación.
+  - El artículo declara conflicto de interés: uno de los autores es directivo, miembro del consejo y accionista minoritario de una spin-off que comercializa tecnologías derivadas; esto no invalida los datos experimentales pero debe conservarse como contexto.
+etiquetas_neutrales: [thermal_antifuse, passive_memory, threshold_sensor, irreversible_state, percolation, polymer_composite, RFID, battery_free]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
+distincion_medicion_inferencia:
+  medicion_directa: cambio de resistencia eléctrica HR->LR del compuesto
+  inferencia_indirecta: que la temperatura local del sensor superó el umbral calibrado
+separacion_epistemica:
+  HECHO: >-
+    El paper experimental reporta transición irreversible HR->LR, umbral aproximado de 60 °C, razón HR/LR >10^3 e integración como memoria no volátil de 1 bit en RFID pasivo.
+  HIPOTESIS: >-
+    Formulaciones y geometrías distintas podrían desplazar o afinar el umbral, pero no se asume aquí desempeño fuera de las composiciones ensayadas.
+  INTERPRETACION: >-
+    El principio reusable es materializar un evento físico como cambio irreversible de conectividad eléctrica: el estado queda almacenado localmente antes de cualquier adquisición digital.
