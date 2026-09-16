@@ -1,0 +1,43 @@
+id: f2-20260916-1901
+frente: front-2
+cycle_id: 2026-09-16T19
+tema_objeto: logica digital por oscilacion parametrica
+afirmacion_principal:
+  hecho_documentado: "Eiichi Goto invento en 1954 el parametron, elemento logico resonante que representa bits mediante dos fases estables separadas por pi. PC-1 fue completado en 1958 y el principio se difundio a varias empresas japonesas."
+  testimonio: "La retrospectiva IEEE atribuye su desplazamiento a la mejora rapida de los transistores de union, que superaron al parametron en frecuencia y concentraron mayor inversion de I+D."
+  interpretacion: "Fue una rama industrial real de logica digital, no un prototipo fallido; alcanzo computadores utiles y derivados comerciales antes de ser sustituida por el transistor."
+nombre_proyecto_o_artefacto: Parametron / PC-1 y familia japonesa
+periodo_historico: 1954-mediados de 1960
+pais_contexto: Japon
+disciplina: computacion digital y circuitos logicos
+problema_original: construir elementos logicos digitales robustos, estables y baratos
+principio_tecnico: "Circuito resonante LC con reactancia no lineal y excitacion parametrica; dos fases estacionarias separadas por pi codifican estados binarios y redes de elementos implementan logica de mayoria."
+estado_historico: sustitucion
+resultado_real_alcanzado: "PC-1 funciono desde 1958 para calculos cientificos; MUSASINO-1 uso ~5400 parametrons y derivo en MUSASINO-1B/FACOM 201; NEAC-1101 uso 3600 y opero ~8 anos; OPC-1 uso ~6000."
+causa_documentada: "Los transistores de union mejoraron rapidamente, superaron al parametron en frecuencia, tenian aplicaciones mas amplias y atrajeron mucha mas I+D; hacia mediados de los 1960 los parametrons estaban casi totalmente reemplazados."
+causas_alternativas:
+  - primeros equipos artesanales exigian mantenimiento considerable
+  - el transistor era una plataforma mas general que el elemento parametron especializado
+camino_que_lo_desplazo_si_existe: logica digital basada en transistores semiconductores
+fuentes:
+  - {url: "https://doi.org/10.1109/JRPROC.1959.287195", titulo: "The Parametron, a Digital Computing Element Which Utilizes Parametric Oscillation", tipo: "paper original", fecha: "1959-08"}
+  - {url: "https://museum.ipsj.or.jp/en/computer/dawn/0016.html", titulo: "PC-1 Parametron Computer", tipo: "archivo institucional IPSJ", fecha: desconocida}
+  - {url: "https://museum.ipsj.or.jp/en/computer/dawn/0013.html", titulo: "MUSASINO-1, MUSASINO-1B", tipo: "archivo institucional IPSJ", fecha: desconocida}
+  - {url: "https://museum.ipsj.or.jp/en/computer/dawn/0017.html", titulo: "NEAC-1101", tipo: "archivo institucional IPSJ", fecha: desconocida}
+  - {url: "https://ieeemilestones.ethw.org/Milestone-Proposal:Parametron,_1954", titulo: "Parametron, 1954", tipo: "retrospectiva institucional IEEE", fecha: desconocida}
+nivel_evidencia: A
+datos_cuantitativos:
+  PC-1: "512 palabras; suma/resta 0.4 ms; multiplicacion 4.4 ms; division 16.1 ms"
+  MUSASINO-1: "~5400 parametrons; prototipo 15 millones de yenes"
+  NEAC-1101: "3600 parametrons; suma/resta 3.5 ms; multiplicacion/division 8.0 ms; ~8 anos de uso"
+  OPC-1: "~6000 parametrons; suma/resta 6 ms; multiplicacion 70 ms; division 80 ms; ~2 kVA"
+limitaciones:
+  - las cifras de maquinas distintas no son una comparacion controlada contra transistores contemporaneos
+contradicciones:
+  - "La narrativa de fracaso es incorrecta: hubo maquinas operativas, uso sostenido y derivados comerciales."
+  - "La sustitucion del parametron clasico no implica desaparicion total del principio de oscilacion parametrica."
+incertidumbres:
+  - no se encontro una unica decision institucional que explique el fin de toda la familia; la evidencia sostiene sustitucion gradual
+etiquetas_neutrales: [parametron, oscilacion_parametrica, logica_de_fase, computacion_japonesa, sustitucion_tecnologica]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
