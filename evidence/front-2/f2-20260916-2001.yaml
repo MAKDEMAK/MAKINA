@@ -1,0 +1,49 @@
+id: f2-20260916-2001
+frente: front-2
+cycle_id: 2026-09-16T20
+tema_objeto: computacion_analogica_hidraulica_para_ecuaciones_diferenciales
+nombre_proyecto_o_artefacto: Integrador hidraulico de Lukyanov / IGL
+periodo_historico: 1936-decada_de_1980
+pais_contexto: URSS
+disciplina: [computacion_analogica, ingenieria_civil, modelado_fisico]
+afirmacion_principal:
+  hecho_documentado: "Lukyanov construyo en 1936 un integrador hidraulico para resolver ecuaciones diferenciales parciales mediante una analogia fisica entre flujo de agua y procesos de difusion; la linea evoluciono a arquitectura modular, unidades estandarizadas y produccion en serie IGL desde 1955, con uso practico durante decadas."
+  testimonio: "Fuentes historicas retrospectivas documentan empleo en el canal de Karakum, la linea Baikal-Amur y campos como geologia, mineria, metalurgia y produccion de cohetes."
+  interpretacion: "No fue un fracaso ni un prototipo aislado: fue una via de computacion analogica fisica finalmente sustituida por computacion digital mas compacta y general. El principio discontinuado como plataforma dominante fue mapear directamente la estructura matematica de una PDE a una red hidraulica configurable."
+problema_original: "Calcular distribuciones termicas en estructuras de hormigon, incluyendo condiciones donde los metodos manuales disponibles eran lentos o insuficientes para estudiar agrietamiento."
+principio_tecnico: "Niveles de agua representan variables/estado; caudales y resistencias hidraulicas implementan relaciones diferenciales. La semejanza matematica entre difusion termica y flujo hidraulico permite obtener la solucion observando la evolucion fisica de la red."
+estado_historico: sustitucion
+resultado_real_alcanzado: "Primeros modelos experimentales; version modular desde 1941; variantes 2D/3D; unidades estandarizadas desarrolladas 1949-1955; produccion en serie IGL desde 1955; distribucion internacional y uso sovietico hasta la decada de 1980."
+causa_documentada: "La computacion digital termino desplazando esta clase de modelado analogico; las fuentes consultadas sitúan el uso hidraulico sovietico hasta los anos 1980 y su posterior sustitucion por computadores digitales."
+causas_alternativas:
+  - "Configuracion fisica especifica por problema y operacion menos general que una maquina digital programable."
+  - "No se encontro en esta ronda evidencia primaria suficiente para atribuir el desplazamiento a una unica variable economica, de precision o mantenimiento."
+camino_que_lo_desplazo_si_existe: computacion_digital_programable
+datos_cuantitativos:
+  - "Produccion en serie IGL iniciada en 1955."
+  - "Fuentes historicas describen lectura de niveles de agua con precision de fracciones de milimetro; no se convierte aqui esa cifra en precision numerica global de solucion."
+limitaciones:
+  - "Requiere configurar fisicamente la red para representar el problema y sus condiciones de contorno."
+  - "La evidencia web accesible sobre cifras de despliegue y precision global es principalmente retrospectiva; se evitan cifras no trianguladas."
+contradicciones:
+  - "La narrativa popular de 'computador de agua olvidado' puede sugerir fracaso temprano; la evidencia contradice eso: hubo estandarizacion, produccion seriada, exportacion y uso durante decadas."
+incertidumbres:
+  - "Fecha exacta de retirada de la ultima unidad operacional no establecida."
+  - "No se verifico con fuente primaria accesible una cifra total de unidades fabricadas."
+fuentes:
+  - url: https://en.wikipedia.org/wiki/Water_integrator
+    titulo: Water integrator
+    tipo: sintesis_historica_con_referencias
+    fecha: desconocida
+  - url: https://www.neoteo.com/de/hydraulischer-integrator-der-wasserbetriebene-computer-von-1936
+    titulo: "Hydraulischer Integrator: Der wasserbetriebene Computer von 1936"
+    tipo: revision_historica
+    fecha: 2023-04-16
+  - url: https://handwiki.org/wiki/Engineering%3AWater_integrator
+    titulo: Water integrator
+    tipo: sintesis_historica_con_bibliografia
+    fecha: desconocida
+nivel_evidencia: B
+etiquetas_neutrales: [hidraulica, analog_computing, PDE, physical_analogy, modularidad, sustitucion, URSS]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
