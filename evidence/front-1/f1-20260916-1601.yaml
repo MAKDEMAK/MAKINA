@@ -1,0 +1,40 @@
+id: f1-20260916-1601
+frente: front-1
+cycle_id: 2026-09-16T16
+tema_objeto: red de fibras complaciente como reservorio mecanico
+afirmacion_principal:
+  HECHO: "Una red fisica de fibras estructuradas puede realizar transformacion no lineal y retener historia de entrada mediante su dinamica mecanica; el trabajo fue validado con un prototipo fisico ademas de simulaciones."
+  HIPOTESIS: "La topologia, geometria, tension axial y seleccion de puntos de lectura permiten ajustar la capacidad computacional de redes mecanicas distribuidas."
+  INTERPRETACION: "La capacidad emergente relevante es computacion temporal parcialmente encarnada en estructura y dinamica, reduciendo la parte que debe ejecutar un procesador digital."
+capacidad_nueva: "procesamiento temporal mecanico distribuido con memoria de entrada y transformacion no lineal en una red de fibras"
+mecanismo_o_principio: "physical reservoir computing: la dinamica no lineal y transitoria de una red de filamentos complacientes mapea entradas a estados mecanicos distribuidos; un readout interpreta esos estados"
+dominio: inteligencia_fisica_mecanica
+fuentes:
+  - url: https://doi.org/10.1177/1045389X261470871
+    titulo: Spider web-inspired sensing and computation with fiber network physical reservoirs
+    tipo: paper_original_experimental
+    fecha: 2026-08-10
+  - url: https://github.com/NaughtonLab/ReservoirFiberNetworks
+    titulo: ReservoirFiberNetworks
+    tipo: repositorio_oficial_codigo_simulacion
+    fecha: 2026
+nivel_evidencia: A
+datos_cuantitativos: "El resumen accesible confirma estudio de topologia, geometria, actuacion, tension axial y estrategias de reduccion de readouts, pero no expone cifras comparables de error/capacidad; no se inventan valores."
+condiciones_de_prueba: "Simulaciones con modelos de barras de Cosserat y validacion experimental mediante prototipo fisico de red de fibras; se variaron diseno/condiciones de operacion y numero/ubicacion de salidas medidas."
+requiere_computacion_digital: opcional
+requiere_alimentacion: parcial
+tipo_de_sensado: "lectura de estados/respuestas mecanicas distribuidas de la red"
+tipo_de_memoria_o_estado: "memoria dinamica transitoria de historia de entrada"
+tipo_de_adaptacion: "ajuste estructural/operativo; entrenamiento concentrado en readout"
+tipo_de_actuacion: "excitacion mecanica de la red"
+madurez_tecnica: "prototipo fisico experimental con simulacion y codigo disponible"
+limitaciones:
+  - "El articulo completo esta bajo acceso restringido; el resumen publico no permite extraer cifras de benchmark sin riesgo de inventarlas."
+  - "La lectura de estados y el readout siguen requiriendo instrumentacion y, segun implementacion, computacion externa."
+  - "Es demostracion de reservorio fisico, no evidencia de ventaja universal frente a computacion digital convencional."
+contradicciones:
+  - "El principio de reservoir computing mecanico no es nuevo por si mismo; la novedad material esta en la red de fibras distribuida, su parametrizacion estructural y validacion fisica."
+  - "No equivale a computacion sin electronica: la transformacion ocurre mecanicamente, pero medicion/readout pueden ser electronicos."
+etiquetas_neutrales: [physical-reservoir-computing, fiber-network, mechanical-intelligence, nonlinear-dynamics, fading-memory, embodied-computation]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
