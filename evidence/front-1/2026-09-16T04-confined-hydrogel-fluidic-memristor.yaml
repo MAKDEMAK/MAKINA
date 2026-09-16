@@ -1,0 +1,28 @@
+id: f1-20260916T04-hydrogel-fluidic-memristor
+frente: front-1
+cycle_id: 2026-09-16T04
+tema_objeto: matriz memristiva iónica de hidrogel químicamente modulable
+afirmacion_principal: "HECHO: una interfaz gel-gel confinada en microporos produce memoria iónica, plasticidad sináptica y modulación química integrables en una matriz 10x10 flexible."
+capacidad_nueva: integrar memoria/computación neuromórfica iónica y sensibilidad química en el mismo sustrato fluídico escalado a matriz
+mecanismo_o_principio: redistribución temporal de iones entre hidrogeles con densidades de carga distintas en un microporo cónico; enriquecimiento/depleción iónica genera histéresis memristiva y ATP modifica la plasticidad
+ dominio: computación neuromórfica; nanofluídica; materiales responsivos
+fuentes:
+  - url: https://www.nature.com/articles/s41467-026-70728-1
+    titulo: Confined-hydrogel fluidic memristor crossbar array for neuromorphic computing
+    tipo: paper experimental revisado por pares
+    fecha: 2026-03-20
+nivel_evidencia: A
+datos_cuantitativos: "matriz 10x10; rendimiento funcional 94%; 89.5% MNIST; 65 estados de conductancia; >500 ciclos SET/RESET; microporo ~5 µm punta/~50 µm base; estabilidad funcional observada hasta 17 h con degradación por deshidratación."
+condiciones_de_prueba: hidrogeles Pim y agarosa@PAAm sobre poliimida; pulsos eléctricos y exposición a ATP; matrices 3x3 y 10x10
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: químico iónico, demostrado con ATP
+tipo_de_memoria_o_estado: distribución iónica memristiva; estados de conductancia
+tipo_de_adaptacion: plasticidad dependiente de tasa, número y ancho de pulsos; modulación química
+tipo_de_actuacion: cambio de conductancia iónica
+madurez_tecnica: matriz experimental integrada de laboratorio
+limitaciones: "La matriz no encapsulada se deshidrata: corriente disminuye con el tiempo y un sitio se desactivó en 17 h. El reconocimiento MNIST usa un marco algorítmico externo; no demuestra computador fluídico autónomo."
+contradicciones: "HIPÓTESIS/INTERPRETACIÓN: el trabajo propone escalabilidad, pero 10x10 y 17 h de caracterización no prueban aún densidad o estabilidad práctica de gran escala."
+etiquetas_neutrales: [fluidic-memristor, hydrogel, ionic-computing, chemical-plasticity, neuromorphic]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
