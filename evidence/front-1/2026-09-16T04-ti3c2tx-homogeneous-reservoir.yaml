@@ -1,0 +1,28 @@
+id: f1-20260916T04-ti3c2tx-homogeneous-rc
+frente: front-1
+cycle_id: 2026-09-16T04
+tema_objeto: transistor sináptico MXene reconfigurable entre memoria volátil y no volátil
+afirmacion_principal: "HECHO: el mismo tipo de transistor ion-gated f-Ti3C2Tx puede configurarse para dinámica volátil de reservorio o pesos no volátiles de readout, permitiendo una arquitectura RC físicamente homogénea."
+capacidad_nueva: realizar transformación temporal y almacenamiento de pesos con una sola familia de dispositivo neuromórfico de energía sub-fJ por spike
+mecanismo_o_principio: funcionalización covalente con sal de iodonio modifica estructura de bandas y dinámica iónica; características sinápticas ajustables alternan memoria temporal volátil y actualización lineal no volátil
+dominio: neuromórfica; memristiva; computación física
+fuentes:
+  - url: https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75734
+    titulo: Ultralow-Energy Ti3C2Tx Ion-Gated Synaptic Transistors for Homogeneous Physical Reservoir Computing
+    tipo: paper experimental revisado por pares
+    fecha: 2026-06-06
+nivel_evidencia: A
+datos_cuantitativos: "0.77 fJ/spike; 0.6 V; 97.9% reconocimiento de dígitos manuscritos."
+condiciones_de_prueba: transistores ion-gated f-Ti3C2Tx caracterizados en modos volátil/no volátil e integrados conceptualmente/experimentalmente en flujo RC con reconocimiento y predicción temporal
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: eléctrico
+tipo_de_memoria_o_estado: dinámica iónica volátil y conductancia no volátil
+tipo_de_adaptacion: actualización de pesos sinápticos en dispositivo
+tipo_de_actuacion: modulación de corriente/conductancia
+madurez_tecnica: demostración experimental de dispositivo y sistema RC de laboratorio
+limitaciones: "El artículo demuestra benchmarks de reconocimiento/predicción, no un sistema autónomo de propósito general. La cifra energética corresponde al evento del dispositivo y no necesariamente al consumo total de adquisición, codificación y readout."
+contradicciones: "INTERPRETACIÓN: homogeneidad de dispositivo reduce heterogeneidad de fabricación, pero no equivale a eliminar periféricos o cómputo digital del sistema completo."
+etiquetas_neutrales: [MXene, ion-gated-transistor, physical-reservoir, volatile-memory, nonvolatile-memory]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
