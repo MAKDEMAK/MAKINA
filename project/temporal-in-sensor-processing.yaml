@@ -1,0 +1,40 @@
+module_id: temporal-in-sensor-processing
+maturity: M2
+cycle_promoted: 2026-09-16T15
+purpose: "Comparar cadenas donde el fenómeno físico se convierte localmente en una representación temporal dispersa y, opcionalmente, en estado aprendido antes de digitalización convencional."
+evidence_ids:
+  - f1-20260915-2102
+  - f3-20260915-21-event-vision
+  - f3-20260916T04-event-vibration
+  - f1-20260916-0901
+  - f3-20260916-1401
+  - f1-20260916-1501
+contract:
+  input: "señal física temporal x(t)"
+  local_output: "eventos {t_i,a_i} y/o estado físico persistente s"
+  reference: "adquisición convencional de la misma señal seguida de codificación digital"
+metrics:
+  - event_rate_hz
+  - temporal_error_ms
+  - information_preservation
+  - classification_or_reconstruction_score
+  - local_energy_per_event_j
+  - peripheral_energy_j
+  - latency_ms
+  - robustness_to_amplitude_and_timing_shift
+success_criterion: "Sobre una misma señal y tarea, una cadena física/analógica debe conservar al menos 95% del score de la referencia digital o mejorar su score, mientras reduce en >=10x el volumen de muestras/eventos transferidos; energía local y de periféricos deben reportarse por separado."
+minimum_experiment:
+  dataset: "una señal temporal sintética reproducible con eventos, amplitudes y jitter controlados"
+  variants:
+    - conventional_uniform_sampling
+    - threshold_event_encoding
+    - latency_encoding_with_fading_state
+  outputs:
+    - metrics.json
+    - event_stream.jsonl
+    - comparison.csv
+constraints:
+  - "No asumir que self-powered elimina energía de instrumentación o lectura."
+  - "Separar evidencia experimental de emulación digital del mecanismo."
+  - "No equiparar clasificación con precisión metrológica."
+next_action: "Implementar un benchmark digital mínimo de las tres variantes con señal sintética común; sólo entonces M3."
