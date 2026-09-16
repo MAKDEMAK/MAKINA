@@ -1,0 +1,34 @@
+id: f1-20260915-2101
+front: front-1
+cycle_id: 2026-09-15T21
+tema_objeto: metamaterial mecanico reprogramable para conversion analogico-digital y logica
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+afirmacion_principal:
+  hecho: "Un metamaterial multestable convierte entradas mecanicas continuas en secuencias discretas mediante eventos snap-through y puede reprogramar in situ la secuencia sin refabricacion."
+  hipotesis: null
+  interpretacion: "La geometria y distribucion de rigidez pueden realizar codificacion y logica antes de cualquier computador digital externo."
+capacidad_nueva: "Codificacion analogico-digital mecanica reprogramable, procesamiento de senal y operaciones logicas tipo FPGA en un mismo material."
+mecanismo_o_principio: "Arquitectura multestable con secuencias de snap-through; inverse design ajusta la distribucion de rigidez y la activacion selectiva de unidades reprograma la secuencia."
+dominio: inteligencia_fisica_metamateriales
+fuentes:
+  - url: "https://doi.org/10.1002/adma.74376"
+    titulo: "Mechanical Metamaterials with Reprogrammable Sequential Deformation for Analog-to-Digital Encoding and Computing"
+    tipo: paper_original
+    fecha: 2026-08-05
+nivel_evidencia: A
+datos_cuantitativos: "El resumen accesible confirma demostracion experimental pero no expone aqui metricas numericas de resolucion/error."
+condiciones_de_prueba: "Compresion uniaxial de arquitectura multestable; secuencia ajustada por distribucion de rigidez."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "entrada mecanica continua codificada por deformacion"
+tipo_de_memoria_o_estado: "estados multestables discretos"
+tipo_de_adaptacion: "reprogramacion in situ por activacion/desactivacion de unidades"
+tipo_de_actuacion: "deformacion secuencial snap-through"
+madurez_tecnica: "demostracion experimental de laboratorio"
+limitaciones:
+  - "La fuente revisada no establece escalabilidad industrial, vida de fatiga ni densidad logica comparable a electronica."
+  - "La reprogramacion sigue dependiendo de configurar fisicamente unidades."
+contradicciones:
+  - "No sustituye computacion electronica general; demuestra un conjunto acotado de operaciones fisicas." 
+etiquetas_neutrales: [mechanical-computing, metamaterial, multistability, analog-to-digital, reprogrammable-logic]
