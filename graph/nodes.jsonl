@@ -30,3 +30,10 @@
 {"id":"f1-20260916t03-zro2-aftj","front":"front-1","kind":"evidence","label":"self-relaxing ZrO2 antiferroelectric physical reservoir","cycle_id":"2026-09-16T03"}
 {"id":"f2-2026-09-16T03-parametron","front":"front-2","kind":"evidence","label":"Parametron phase-state logic and memory","cycle_id":"2026-09-16T03"}
 {"id":"f3-20260916-03-adhesive-tape-latching-memory","front":"front-3","kind":"evidence","label":"passive adhesive mechanical latching memory","cycle_id":"2026-09-16T03"}
+{"id":"f1-20260916T04-pneumatic-soft-robot-prc","front":"front-1","kind":"evidence","label":"pneumatic soft-body physical reservoir","cycle_id":"2026-09-16T04"}
+{"id":"f1-20260916T04-hydrogel-fluidic-memristor","front":"front-1","kind":"evidence","label":"chemically modulated hydrogel fluidic memristor array","cycle_id":"2026-09-16T04"}
+{"id":"f1-20260916T04-ti3c2tx-homogeneous-rc","front":"front-1","kind":"evidence","label":"homogeneous volatile/nonvolatile MXene reservoir computing","cycle_id":"2026-09-16T04"}
+{"id":"f2-2026-09-16T04-magnetic-amplifier-computing","front":"front-2","kind":"evidence","label":"magnetic-amplifier saturation logic computing","cycle_id":"2026-09-16T04"}
+{"id":"f2-2026-09-16T04-ted-mechanical-videodisc","front":"front-2","kind":"evidence","label":"TeD high-density mechanical videodisc","cycle_id":"2026-09-16T04"}
+{"id":"f3-20260916T04-event-vibration","front":"front-3","kind":"evidence","label":"event-camera non-contact vibration frequency measurement","cycle_id":"2026-09-16T04"}
+{"id":"f3-20260916T04-passive-tti","front":"front-3","kind":"evidence","label":"passive irreversible time-temperature optical memory","cycle_id":"2026-09-16T04"}
