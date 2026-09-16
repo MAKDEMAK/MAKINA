@@ -1,0 +1,39 @@
+id: f1-20260916-1801
+frente: front-1
+cycle_id: 2026-09-16T18
+tema_objeto: aprendizaje neuromorfico analogico autoalimentado multimodal
+afirmacion_principal: "Un sistema compuesto por sensores y memristores puede realizar sensado multimodal, codificacion temporal, fusion, aprendizaje no supervisado y memoria no volatil enteramente en hardware analogico, sin ADC, circuiteria digital ni fuente electrica externa durante la operacion demostrada."
+capacidad_nueva: "Asociar autonomamente entradas analogicas de modalidades distintas por correlacion temporal y conservar la asociacion como peso sinaptico no volatil usando la energia generada por los propios sensores."
+mecanismo_o_principio: "Memristores difusivos Ag/SiO2 convierten amplitud analogica en latencia de conmutacion mediante deriva/difusion ionica; memristores de deriva Ta/HfO2/Pt acumulan cambios de conductancia no volatiles. La coincidencia temporal entre spikes determina la actualizacion del peso (plasticidad homo/heterosinaptica)."
+dominio: neuromorfica_analogica
+fuentes:
+  - url: "https://doi.org/10.1038/s44460-026-00067-7"
+    titulo: "Self-powered analogue neuromorphic system for multimodal sensing, encoding and learning with diffusive and drift memristors"
+    tipo: paper_experimental_original
+    fecha: 2026-04-30
+nivel_evidencia: A
+datos_cuantitativos:
+  luz_codificacion: "15.5-64.2 mW cm^-2; n=10 por intensidad"
+  presion_codificacion: "25.5-75.1 kPa; n=5-19 segun nivel"
+  componentes_SFU: "2 memristores difusivos + 1 memristor de deriva + 2 resistores + 2 capacitores, integrados con sensores"
+  demostracion_multimodal: "sensor fotovoltaico + sensor piezoelectrico; peso almacenado como conductancia del memristor de deriva"
+condiciones_de_prueba: "PCB integrado; luz blanca sobre sensor fotovoltaico y presion sobre PVDF piezoelectrico. Para la demostracion de fusion, un microcontrolador sincronizo fisicamente el inicio de los estimulos, pero no participo en sensado, codificacion, aprendizaje ni memoria. Aplicaciones posteriores de localizacion de rayos y clasificacion de actividad incluyen simulacion/dataset y no equivalen a validacion fisica completa del sistema final."
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: "multimodal; fotovoltaico y piezoelectrico demostrados"
+tipo_de_memoria_o_estado: "estado volatil temporal en memristor difusivo + conductancia no volatil en memristor de deriva"
+tipo_de_adaptacion: "aprendizaje no supervisado por STDP/ITDP y plasticidad heterosinaptica"
+tipo_de_actuacion: ninguna
+madurez_tecnica: "prototipo experimental integrado en PCB; no sistema de campo"
+limitaciones:
+  - "Variabilidad inherente de dispositivos memristivos; los autores indican que requiere mitigacion y estudio sistematico."
+  - "La demostracion integrada sincronizo el inicio de luz y presion con microcontrolador externo; esto no alimenta ni computa el aprendizaje, pero limita la afirmacion de autonomia ambiental completa del protocolo experimental."
+  - "La localizacion de rayos fue una extension conceptual/simulada y la clasificacion de actividad uso dataset y simulacion de red; no deben contarse como demostraciones fisicas equivalentes al SFU."
+contradicciones:
+  - "Los autores describen el sistema como sin circuiteria digital ni fuente externa; sin embargo, un microcontrolador externo se uso para sincronizar los estimulos en el ensayo de fusion. La computacion neuromorfica sigue siendo analogica y autoalimentada, pero el montaje experimental completo no fue totalmente libre de control digital auxiliar."
+etiquetas_neutrales: [memristor, analogico, autoalimentado, multimodal, sensor_fusion, aprendizaje_no_supervisado, plasticidad, temporal_encoding, memoria_no_volatil]
+hecho: "El paper demuestra experimentalmente codificacion de luz y presion por latencia, STDP/ITDP y una unidad de fusion sensorial analogica autoalimentada que modifica y conserva conductancia."
+hipotesis: "La arquitectura podria generalizarse a otras parejas de transductores capaces de entregar directamente energia/señal compatible; no esta demostrado para cualquier modalidad."
+interpretacion: "La capacidad materialmente relevante no es solo in-sensor computing: es cerrar sensado->codificacion->asociacion->aprendizaje->memoria sin ADC ni procesador digital en la ruta funcional."
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
