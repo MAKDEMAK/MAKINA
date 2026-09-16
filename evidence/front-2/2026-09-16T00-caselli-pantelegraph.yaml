@@ -1,0 +1,35 @@
+id: f2-2026-09-16T00-caselli-pantelegraph
+frente: front-2
+cycle_id: 2026-09-16T00
+tema_objeto: facsimil electromecanico sobre red telegrafica
+afirmacion_principal: "HECHO DOCUMENTADO: Giovanni Caselli construyo un sistema funcional para transmitir escritura e imagenes por lineas telegraficas mediante barrido pendular sincronizado; fue una via comercial temprana de facsimil que no se convirtio en la arquitectura dominante de la telegrafia. INTERPRETACION: el principio relevante no fue un concepto no realizado, sino una rama de telecomunicacion visual que alcanzo operacion real antes de quedar desplazada por otras formas de telegrafia y posteriores sistemas de facsimil."
+nombre_proyecto_o_artefacto: Pantelegraph de Caselli
+periodo_historico: "1856-1870 aprox."
+pais_contexto: "Italia / Francia"
+disciplina: "telegrafia; facsimil; electromecanica"
+problema_original: "Transmitir a distancia escritura, dibujos y documentos sin recodificarlos manualmente como texto telegrafico."
+principio_tecnico: "Barrido espacial de un original conductor/aislante y reproduccion sincronizada mediante dos mecanismos pendulares sobre una linea telegrafica."
+estado_historico: "sistema construido y operado; linea tecnica posteriormente discontinuada/sustituida"
+resultado_real_alcanzado: "Existen transmisores-receptores originales conservados por Smithsonian; fuentes historicas documentan servicio comercial entre ciudades francesas en la decada de 1860."
+causa_documentada: "La evidencia institucional consultada confirma realizacion material pero no establece por si sola una causa unica de terminacion; fuentes historicas secundarias vinculan el cese del servicio frances con la guerra franco-prusiana de 1870."
+causas_alternativas:
+  - "complejidad de sincronizacion electromecanica"
+  - "infraestructura telegrafica orientada principalmente a mensajes codificados de texto"
+camino_que_lo_desplazo_si_existe: "telegrafia textual y, posteriormente, tecnologias de facsimil fotoelectricas/electronicas"
+fuentes:
+  - url: "https://americanhistory.si.edu/collections/object/nmah_713233"
+    titulo: "Caselli Pantelegraph"
+    tipo: "museo/institucional"
+    fecha: "consulta 2026-09-16"
+  - url: "https://museumofthefallen.org/technology/pantelegraph/"
+    titulo: "The Pantelegraph"
+    tipo: "historia tecnica secundaria"
+    fecha: "consulta 2026-09-16"
+nivel_evidencia: B
+datos_cuantitativos: "Smithsonian fecha el artefacto en 1856 y conserva dos transmisores-receptores de aproximadamente 213.36 x 91.44 x 25.4 cm cada uno; la fuente historica secundaria reporta cerca de 5000 mensajes durante el primer ano de servicio comercial."
+limitaciones: "La causa exacta del abandono no queda establecida por una unica fuente primaria en esta ronda."
+contradicciones: "No fue simplemente un prototipo fallido: hubo hardware real y servicio; por tanto se clasifica como linea operativa discontinuada, no concepto no realizado."
+incertidumbres: "Peso relativo de guerra, economia, mantenimiento y competencia telegrafica en la terminacion."
+etiquetas_neutrales: [facsimil, telegrafia, sincronizacion, barrido, electromecanica, sustitucion]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
