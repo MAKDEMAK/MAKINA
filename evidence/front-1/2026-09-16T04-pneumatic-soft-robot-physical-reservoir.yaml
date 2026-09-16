@@ -1,0 +1,28 @@
+id: f1-20260916T04-pneumatic-soft-robot-prc
+frente: front-1
+cycle_id: 2026-09-16T04
+tema_objeto: cuerpo neumático blando como reservorio físico para estimación de estado
+afirmacion_principal: "HECHO: la dinámica presión-deformación de un brazo neumático puede actuar como reservorio físico; la topología de las cavidades determina cuánta información de estado permanece observable."
+capacidad_nueva: estimar ángulo de flexión usando la dinámica física distribuida del propio cuerpo y un readout lineal
+mecanismo_o_principio: cavidades neumáticas selladas generan estados de presión menos redundantes; 0.2 s de historia de presión se transforma mediante dinámica mecánico-neumática y se decodifica con ridge regression
+dominio: computación física; robótica blanda; estimación de estado
+fuentes:
+  - url: https://arxiv.org/abs/2609.02157
+    titulo: Towards Effective Physical Reservoir Computing with a Pneumatic Soft Robot
+    tipo: preprint aceptado MECC 2026; experimento
+    fecha: 2026-09-02
+nivel_evidencia: B
+datos_cuantitativos: "36 ensayos pareados; columna sensora de 5 bolsas; ventana de presión 0.2 s; 2 sensores estratégicos recuperan la mayor parte del beneficio y 3 prácticamente todo en topología sellada."
+condiciones_de_prueba: comparación de topologías sellada/acoplada, rigidez, presión base, waveform y rango de actuación bajo el mismo benchmark de estimación angular
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: presión neumática distribuida
+tipo_de_memoria_o_estado: memoria dinámica transitoria del cuerpo neumático
+tipo_de_adaptacion: pesos de readout entrenados digitalmente; cuerpo no entrenado
+tipo_de_actuacion: neumática
+madurez_tecnica: prototipo experimental de laboratorio; paper aceptado en proceedings
+limitaciones: "La computación no es autónoma ni enteramente física: sensores y ridge readout son digitales. Validación restringida a un brazo y tarea de ángulo; aumentar excitación no recupera diversidad perdida por una topología pobre."
+contradicciones: "INTERPRETACIÓN: más sensores no implica mejor reservorio; los datos reportados muestran saturación alrededor de 3 sensores y mayor presión puede aumentar redundancia."
+etiquetas_neutrales: [physical-reservoir, soft-robotics, pneumatics, state-estimation, morphology]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
