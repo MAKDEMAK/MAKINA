@@ -1,0 +1,24 @@
+id: physical-state-interface
+title: Physical State Interface
+maturity: M2
+confidence: 0.78
+classification: INFERENCIA_DE_DISENO
+purpose: >-
+  Arquitectura para traducir variables fisicas continuas a estados discretos persistentes y operar sobre esos estados con la menor separacion posible entre sensado, memoria y computacion.
+evidence_ids:
+  - f1-20260915-2101
+  - f1-20260915-2103
+  - f3-20260915-21-passive-crack
+  - f3-20260915-21-passive-rf-temp
+support:
+  - "F3 demuestra transduccion pasiva de grieta y temperatura a señales RF interrogables."
+  - "F1 demuestra discretizacion mecanica multestable y memoria/logica secuencial fisica."
+alternative_checked:
+  id: f1-20260915-2102
+  reason_not_primary: "Integra sensado y computacion con mejor densidad funcional, pero requiere dispositivo semiconductor especializado y no prueba la ruta de minima electronica del nucleo."
+success_criterion: >-
+  Dada una señal fisica normalizada, producir estados discretos reproducibles con histeresis controlada y ejecutar transiciones de estado deterministas; el prototipo digital debe superar tests de umbral, ruido y memoria sin transiciones espurias fuera de tolerancia.
+next_action: "Validar digitalmente el contrato transduccion -> cuantizacion multestable -> FSM antes de especificar hardware."
+limitations:
+  - "No existe aun evidencia de integracion fisica entre los sensores F3 y los mecanismos F1."
+  - "La arquitectura es una inferencia de diseño; no una causalidad demostrada."
