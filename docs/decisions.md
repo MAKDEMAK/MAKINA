@@ -18,3 +18,11 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Consecuencia:** se crean `src/event_state.py` y `tests/test_event_state.py`; no se declara M4 porque los tests aún no fueron ejecutados y el modelo energético es contractual, no una simulación eléctrica.
 - **Nueva línea activa M1:** `embodied-wave-computation`; la evidencia de computación mecánica reprogramable es fuerte, pero todavía falta una especificación cuantitativa única para M2.
 - **Archivado:** Cybersyn/Minitel se conservan como precedentes históricos pero no se fuerzan dentro del núcleo; magnetic bubble memory queda como precedente de estado físico, no como tecnología elegida.
+
+## 2026-09-16 — embodied-dynamics-computation
+- **Decisión:** ampliar `embodied-wave-computation` a `embodied-dynamics-computation`, mantenerlo en M1 y no construir todavía un benchmark.
+- **Evidencia:** `f1-20260916T00-mycelium-reservoir` y `f1-20260916T00-active-colloid-reservoir` demuestran reservoir computing mediante dinámica material/colectiva; se suman a `f1-20260915-22-wave-metamaterial-robot` sin asumir equivalencia entre mecanismos.
+- **Alternativa rechazada:** promover directamente a M2/M3 por acumulación de ejemplos. Se rechaza porque los reservorios temporales y los operadores ondulatorios no comparten todavía una tarea y métrica única.
+- **Razón:** la convergencia funcional aumentó, pero la evidencia contradictoria también importa: el reservorio coloidal depende de láser, microscopía y feedback digital, y el micelio presenta variabilidad entre dispositivos.
+- **Consecuencia:** se eleva confianza de la línea a 0.73, se redefine su criterio de éxito y se exige una tarea común medible antes de promoción.
+- **Otras decisiones:** clamp-on ultrasonic se incorpora a observabilidad legacy en espera, no activa, por fuerte dependencia de instalación y desviaciones de campo reportadas hasta 43%; Nordsieck/MADDIDA se archivan como precedente coherente de integración física→digital especializada; Pantelegraph se archiva por falta de traducción funcional al núcleo.
