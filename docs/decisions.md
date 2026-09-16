@@ -37,8 +37,13 @@ Registro breve de decisiones de síntesis y desarrollo.
 
 ## 2026-09-16 — temporal-in-sensor-processing, cycle 15
 - **Decisión:** promover `temporal-in-sensor-processing` de espera a tercer módulo activo M2 y crear su especificación funcional.
-- **Evidencia:** `f1-20260916-1501` demuestra en hardware integrado sensor→codificación temporal→asociación→memoria sin ADC/procesamiento digital local; se suma a `f3-20260916-1401`, `f3-20260916T04-event-vibration`, `f1-20260915-2102` y `f1-20260916-0901`.
-- **Alternativa rechazada:** promover `legacy-noninvasive-observability`; `f3-20260916-1501` refuerza stray-flux pero sigue siendo dependiente de máquina/posición y sin presupuesto de incertidumbre común.
-- **Razón:** ahora existe una cadena física completa que permite formular un benchmark común de preservación de información, reducción de tráfico, latencia y energía periférica.
-- **Consecuencia:** `project/temporal-in-sensor-processing.yaml` fija contrato y criterio de éxito. No M3: todavía no existe el benchmark ejecutable.
-- **Deduplicación:** `f2-20260916-1501` fortalece el precedente Parametron ya archivado; no abre línea nueva.
+- **Evidencia:** `f1-20260916-1501`, `f3-20260916-1401`, `f3-20260916T04-event-vibration`, `f1-20260915-2102`, `f1-20260916-0901`.
+- **Alternativa rechazada:** promover `legacy-noninvasive-observability`; sigue dependiente de máquina/posición y sin presupuesto de incertidumbre común.
+- **Consecuencia:** `project/temporal-in-sensor-processing.yaml`; no M3 hasta benchmark ejecutable.
+
+## 2026-09-16 — temporal benchmark prototype, cycle 17
+- **Decisión:** implementar el benchmark mínimo y promover `temporal-in-sensor-processing` a M3 `created_not_executed`.
+- **Evidencia usada:** la cadena acumulada del módulo; `f1-20260916-1701` y `f3-20260916-1701` refuerzan por separado discretización e integración física, pero se fusionan en `physical-state-interface` y no son causa de la promoción temporal.
+- **Alternativa rechazada:** abrir una línea fluidica desde `f2-20260916-1701`; FLODAC es precedente fuerte pero no aporta una necesidad funcional nueva y su velocidad fue una limitación documentada.
+- **Razón:** el siguiente paso de menor coste era convertir la especificación M2 ya existente en código reproducible con referencia uniforme, encoding por umbral y encoding por latencia+estado desvaneciente.
+- **Consecuencia:** `src/temporal_benchmark.py` y `tests/test_temporal_benchmark.py`. M4 queda bloqueado hasta ejecutar tests/benchmark y registrar métricas; energía de hardware permanece explícitamente no medida.
