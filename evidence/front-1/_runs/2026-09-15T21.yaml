@@ -1,0 +1,9 @@
+cycle_id: 2026-09-15T21
+front: front-1
+status: complete
+findings_count: 3
+completed_at: 2026-09-15T21:08:00-03:00
+finding_ids:
+  - f1-20260915-2101
+  - f1-20260915-2102
+  - f1-20260915-2103
