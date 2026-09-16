@@ -1,0 +1,43 @@
+id: f3-20260915-21-event-vision
+frente: front-3
+cycle_id: 2026-09-15T21
+tema_objeto: non-contact vibration measurement with event vision
+afirmacion_principal: Event-based vision can recover vibration information from visible surface motion without attaching an accelerometer.
+funcion: medir
+principio_de_mediacion: asynchronous brightness-change sensing and time-domain reconstruction
+variable_fisica_entrada: visible surface motion
+señal_o_estado_salida: vibration signal and spectral features
+modalidad: optical event vision
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: quantitative displacement accuracy not reported in consulted 2023 source
+latencia: not reported end-to-end
+condiciones_de_prueba: rotating bearing experiments; later open dataset varied camera distance, angle and rotor speed
+fuentes:
+  - url: https://doi.org/10.1109/SAFEPROCESS58597.2023.10295762
+    titulo: Non-Contact Machine Vibration Sensing and Fault Diagnosis Method Based on Event Camera
+    tipo: experimental conference paper
+    fecha: 2023
+  - url: https://doi.org/10.1016/j.cjme.2025.100163
+    titulo: XJTU-DV Open-source dynamic vision dataset for non-contact vibration measurement and fault diagnosis of mechanical systems
+    tipo: experimental dataset paper
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos:
+  distancias_cm: [15, 18]
+  angulos_grados: [-30, 0, 30]
+  velocidades_Hz: [20, 30, 40]
+  registro_s: 10
+mecanismo_o_principio: Event pixels report brightness changes instead of complete frames; periodic image motion therefore carries vibration timing information at high temporal resolution.
+limitaciones:
+  - Sensitive to viewing angle, distance, lens and visible texture.
+  - Requires line of sight and digital processing.
+contradicciones: Later dataset work explicitly treats placement geometry as a source of variation rather than assuming placement independence.
+etiquetas_neutrales: [event_vision, vibration, noncontact, optical]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+distincion_medicion_inferencia:
+  medicion_directa: brightness-change events
+  inferencia_indirecta: mechanical vibration
