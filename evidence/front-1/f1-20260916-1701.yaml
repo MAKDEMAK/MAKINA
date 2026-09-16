@@ -1,0 +1,36 @@
+id: f1-20260916-1701
+frente: front-1
+cycle_id: 2026-09-16T17
+tema_objeto: metamaterial mecanico reprogramable para codificacion analogico-digital
+afirmacion_principal: "HECHO: una arquitectura mecanica multiestable convierte una entrada continua de compresion en secuencias discretas reprogramables de snap-through y fue demostrada experimentalmente realizando conversion analogico-digital, procesamiento de senal y logica tipo FPGA."
+capacidad_nueva: "Codificar mecanicamente estimulos continuos en estados/secuencias digitales reprogramables sin remanufacturar la estructura."
+mecanismo_o_principio: "Distribucion de rigidez disenada inversamente en unidades multiestables; umbrales de snap-through producen una secuencia discreta y la activacion/desactivacion selectiva de unidades reprograma dicha secuencia in situ."
+dominio: computacion_mecanica_materiales_programables
+fuentes:
+  - url: https://doi.org/10.1002/adma.74376
+    titulo: "Mechanical Metamaterials with Reprogrammable Sequential Deformation for Analog-to-Digital Encoding and Computing"
+    tipo: paper_experimental_peer_reviewed
+    fecha: 2026-08-05
+nivel_evidencia: A
+datos_cuantitativos: "La fuente primaria accesible confirma demostraciones experimentales y material suplementario (1 archivo + 5 videos), pero el resumen/texto abierto recuperado no expone error de cuantizacion, numero de niveles/bits, repetibilidad ni ciclos; no se inventan esas metricas."
+condiciones_de_prueba: "Compresion uniaxial de arquitectura multiestable; secuencias ajustadas mediante distribucion de rigidez y activacion/desactivacion selectiva de unidades."
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: "mecanico intrinseco; la magnitud continua de desplazamiento/carga cruza umbrales estructurales"
+tipo_de_memoria_o_estado: "estados multiestables discretos y secuencia de deformacion"
+tipo_de_adaptacion: "reprogramacion estructural in situ por activacion/desactivacion de unidades"
+tipo_de_actuacion: "snap-through mecanico secuencial"
+madurez_tecnica: "prototipo experimental de laboratorio"
+limitaciones:
+  - "La evidencia recuperada corresponde a compresion uniaxial y no establece generalidad frente a otras variables fisicas."
+  - "No se recuperaron metricas abiertas de precision ADC, resolucion efectiva, fatiga o velocidad de conmutacion."
+  - "Reprogramable no equivale a auto-adaptativo: la configuracion de unidades es externa."
+contradicciones:
+  - "La computacion mecanica, la logica reprogramable y la memoria mecanica ya existian; la contribucion material aqui es cerrar experimentalmente la interfaz continuo-a-discreto mediante deformacion secuencial reprogramable, no inventar la computacion mecanica."
+etiquetas_neutrales: [mechanical-computing, metamaterial, multistability, snap-through, analog-to-digital, reprogrammable, inverse-design]
+separacion_epistemica:
+  hecho: "El paper peer-reviewed reporta experimentos de conversion analogico-digital mecanica, procesamiento de senal y operaciones logicas tipo FPGA en una misma arquitectura reprogramable."
+  hipotesis: "La arquitectura podria generalizarse a otras formas de entrada si pueden mapearse a carga/deformacion; esto no fue establecido por la evidencia recuperada."
+  interpretacion: "La capacidad relevante para F1 es trasladar la discretizacion de una senal continua desde electronica/digital a umbrales fisicos programados en la materia."
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
