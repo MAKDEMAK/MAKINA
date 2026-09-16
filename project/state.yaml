@@ -7,16 +7,16 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.94
-    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001]
+    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601]
     success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable con umbral/rango documentado, persistencia medible y falsos cambios cuantificables; memorias de historia deben medir resolucion, destructividad y ambiguedad; escritura remota debe medir selectividad, error y energia."
-    next_action: "Mantener M3; sustituir leyes ilustrativas por curvas experimentales publicadas o medidas antes de promover."
+    next_action: "Mantener M3; sustituir leyes ilustrativas por curvas experimentales publicadas o medidas antes de promover. La nueva memoria plastica de maximo refuerza peak-hold pasivo, pero carece de resolucion/error abierto para M4."
 
   - id: embodied-dynamics-computation
     maturity: M1
-    confidence: 0.87
-    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901]
+    confidence: 0.88
+    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901, f1-20260916-1601]
     success_criterion: "Definir una tarea computacional comun y medible sobre al menos dos clases de sustrato fisico y compararla con referencia digital usando la misma metrica, separando inferencia, memoria, aprendizaje, reset y perifericos."
-    next_action: "No promover; especificar benchmark temporal comun."
+    next_action: "No promover; la red de fibras refuerza reservoir computing mecanico distribuido pero no aporta cifras comparables. Especificar benchmark temporal comun."
 
   - id: temporal-in-sensor-processing
     maturity: M2
@@ -56,8 +56,8 @@ archived_modules:
     evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc]
     reason: "Transduccion mecanico-electrica de video sin convergencia funcional."
   - id: integrated-office-automation-precedent
-    evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine]
-    reason: "Integracion electromecanica historica sin traduccion funcional medible."
+    evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine, f2-20260916-1601]
+    reason: "El ciclo 16 aporta una revision mas fuerte de Hofgaard pero sigue sin traduccion funcional medible al nucleo; deduplicado como precedente electromecanico."
   - id: cartridge-decoupled-precision-transport
     evidence_ids: [f2-2026-09-16T07-elcaset]
     reason: "Separacion medio/guiado valida, sin convergencia medible."
@@ -72,7 +72,7 @@ archived_modules:
     reason: "Continuacion Setun deduplicada; no crea traduccion funcional nueva."
 
 current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse/latency physical encoding -> persistent/fading physical state -> optional local association/learning -> externally observable event/state -> optional physical dynamics/logic -> output/action; characterize information preserved, persistence, reset, ambiguity, selectivity, robustness, local energy and total peripheral cost"
-last_synthesized_cycle: 2026-09-16T15
+last_synthesized_cycle: 2026-09-16T16
 
 rules:
   max_active_modules: 3
