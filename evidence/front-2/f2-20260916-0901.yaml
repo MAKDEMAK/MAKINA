@@ -1,0 +1,57 @@
+id: f2-20260916-0901
+frente: front-2
+cycle_id: 2026-09-16T09
+tema_objeto: seguimiento dinamico de pista en grabacion magnetica de video
+nombre_proyecto_o_artefacto: Philips/Grundig Video 2000 (VCC) - Dynamic Track Following (DTF)
+periodo_historico: 1979-1988
+pais_contexto: Paises Bajos / Alemania Occidental; mercado principalmente europeo
+disciplina: grabacion magnetica; servo-control; electronica de consumo
+afirmacion_principal:
+  hecho_documentado: Video 2000 implemento seguimiento activo de las pistas de video mediante cabezales montados sobre actuadores piezoelectricos y frecuencias piloto grabadas con la señal, eliminando la necesidad del control manual de tracking y de una pista de control convencional; el sistema llego al mercado pero fue discontinuado tras perder frente a VHS.
+  testimonio: Fuentes tecnicas retrospectivas describen DTF como una de las partes mas sofisticadas del formato y senalan que su precision, complejidad y coste contribuyeron a dificultades de fabricacion/compatibilidad.
+  interpretacion: El camino tecnico residual es cerrar localmente el lazo entre informacion embebida en el propio medio y posicionamiento fisico del transductor, en vez de depender de una referencia mecanica separada o ajuste manual.
+problema_original: mantener automaticamente el cabezal centrado sobre pistas helicoidales muy estrechas y permitir reproduccion estable, incluida busqueda de imagen, sin ajuste manual de tracking.
+principio_tecnico: cuatro frecuencias piloto de tracksensing se registran junto al video; la lectura relativa de pistas vecinas genera una senal de error que gobierna actuadores piezoelectricos del cabezal para desplazarlo transversalmente y seguir el centro de la pista.
+estado_historico: sustitucion comercial; tecnologia realizada y comercializada, luego discontinuada
+resultado_real_alcanzado: grabadores comerciales desde 1979; seguimiento automatico de pista; cassette reversible; hasta 8 h totales en formatos iniciales y posteriormente hasta 16 h con long-play segun modelos; produccion finalizada durante la segunda mitad de los 1980 y distribucion residual hasta 1988.
+causa_documentada: entrada tardia frente a VHS/Betamax, costes elevados asociados a la precision del transporte/DTF/electronica, menor ecosistema de equipos y contenido, y problemas de fiabilidad/compatibilidad entre maquinas; Philips y Grundig pasaron a ofrecer VHS.
+causas_alternativas:
+  - ventaja de red y politica de licencias de VHS
+  - distribucion geografica mas limitada de Video 2000
+  - catalogo pregrabado menor
+camino_que_lo_desplazo_si_existe: VHS, basado en un ecosistema de fabricantes y contenido mas amplio y un sistema de transporte/seguimiento comercialmente mas consolidado
+fuentes:
+  - url: https://www.videorekorder-museum.de/sammlung/videorekorder/video-2000/
+    titulo: Video 2000
+    tipo: museo tecnico especializado
+    fecha: desconocida
+  - url: https://www.konstruktionspraxis.vogel.de/die-entwicklung-des-videorekorders-a-877068/
+    titulo: Die Entwicklung des Videorekorders
+    tipo: revista tecnica retrospectiva
+    fecha: 2019
+  - url: https://en.wikipedia.org/wiki/Video_2000
+    titulo: Video 2000
+    tipo: sintesis secundaria con referencias bibliograficas
+    fecha: revision consultada 2026-09-16
+nivel_evidencia: B
+datos_cuantitativos:
+  lanzamiento: 1979
+  fin_distribucion: 1988
+  cinta_ancho_mm: 12.5
+  uso_por_cara_aprox_mm: 6.25
+  frecuencias_piloto_dtf: 4
+  tension_actuador_piezo_reportada: hasta aproximadamente +/-150 V
+  resolucion_luminancia_aprox_lineas: 240
+limitaciones:
+  - DTF exigia tolerancias estrechas, actuacion piezoelectrica y electronica de control compleja.
+  - la sofisticacion tecnica no compenso la desventaja de ecosistema y entrada tardia.
+  - existieron problemas de compatibilidad entre grabaciones de primeras generaciones Philips/Grundig.
+contradicciones:
+  - no todos los modelos implementaron exactamente la misma variante de seguimiento; algunas fuentes distinguen DTF y variantes ATF.
+  - atribuir el fracaso a una sola causa es inconsistente con la evidencia: coexistieron factores tecnicos, de coste, red de mercado y catalogo.
+incertidumbres:
+  - la contribucion causal exacta del coste de DTF frente a efectos de red no esta cuantificada de forma comparable en las fuentes consultadas.
+  - algunas cifras tecnicas detalladas provienen de reconstrucciones retrospectivas y requieren manual de servicio original para nivel A.
+etiquetas_neutrales: [video-magnetico, servo-control, piezoelectrico, tracking, frecuencia-piloto, medio-con-referencia-embebida, formato-desplazado]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
