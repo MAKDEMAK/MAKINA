@@ -1,0 +1,30 @@
+id: f3-20260916-02-motor-stray-flux-state
+frente: front-3
+cycle_id: 2026-09-16T02
+tema_objeto: estado operativo de motor por flujo magnetico de fuga
+afirmacion_principal: "INFERENCIA INDIRECTA: un unico sensor magneto-impedancia externo puede extraer velocidad de rotor, estimar torque y derivar potencia de un motor de induccion desde picos espectrales del flujo magnetico de fuga, sin contacto con el motor ni medicion de corriente en la ruta propuesta."
+funcion: inferir
+principio_de_mediacion: correlacion fisica entre slip/corrientes inducidas y componentes espectrales del campo magnetico de fuga
+variable_fisica_entrada: campo magnetico de fuga alrededor del motor
+señal_o_estado_salida: frecuencia de rotor, torque estimado y potencia de salida estimada
+modalidad: magnetica
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "No se publica una cifra unica de error; relacion experimental torque-intensidad: tau[Nm]=0.1*Imag[µT]+0.0068. Ventanas STFT de 1.125 s separadas 0.15 s."
+latencia: "escala sub-segundo entre actualizaciones espectrales; ventana de analisis 1.125 s"
+condiciones_de_prueba: "motor monofasico de jaula; sensor MI de un eje; muestreo 4 kHz; carga variada durante ~8 s; referencia simultanea con celda de carga y sensor optico."
+fuentes:
+  - url: https://doi.org/10.3390/s25144471
+    titulo: Measuring the Operating Condition of Induction Motor Using High-Sensitivity Magnetic Sensor
+    tipo: paper experimental
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos: "Sensor ~30 mV/Oe, ruido 100-200 pT/sqrtHz; muestreo 4000 Hz; STFT 1.125 s y paso 0.15 s; ajuste de torque a=0.1 y b=0.0068."
+mecanismo_o_principio: "El slip requerido para producir torque modifica corrientes del rotor y genera sidebands/transiciones en el espectro de fuga; frecuencia del pico codifica rotacion y amplitud del primer pico se correlaciona con torque."
+limitaciones: "Validado en un solo motor pequeno y montaje controlado; posicion/orientacion del sensor se optimizo empiricamente; vibracion/chatter produjo errores alrededor de 0.015-0.018 Nm; lineas de alimentacion y geometria del motor pueden contaminar el campo."
+contradicciones: "Los autores sugieren generalizacion a otros motores por principios electromagneticos, pero no la demuestran; la potencia estimada muestra desviaciones sin error agregado numerico reportado."
+etiquetas_neutrales: [sensor_no_contacto, flujo_magnetico, motor_induccion, estado_operativo, inferencia_indirecta, legacy]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
