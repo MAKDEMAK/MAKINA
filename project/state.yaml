@@ -7,16 +7,16 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.94
-    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601, f1-20260916-1701, f3-20260916-1701, f3-20260916-1801]
+    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601, f1-20260916-1701, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001]
     success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable con umbral/rango documentado, persistencia medible y falsos cambios cuantificables; memorias de historia deben medir resolucion, destructividad y ambiguedad; escritura remota debe medir selectividad, error y energia."
-    next_action: "Mantener M3. El antifusible termico agrega un caso experimental fuerte de evento->estado irreversible (>10^3 HR/LR, ~60 C), pero no resuelve precision, deriva ni falsos cambios para M4."
+    next_action: "Mantener M3. F1-20 es continuacion/deduplicacion del metamaterial mecanico ADC ya incorporado: confirma reprogramacion estructural y logica, pero sigue sin cifras de precision, bits efectivos, velocidad o durabilidad necesarias para M4."
 
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.88
-    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901, f1-20260916-1601, f1-20260916-1901]
+    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901, f1-20260916-1601, f1-20260916-1901, f1-20260916-2001]
     success_criterion: "Definir una tarea computacional comun y medible sobre al menos dos clases de sustrato fisico y compararla con referencia digital usando la misma metrica, separando inferencia, memoria, aprendizaje, reset y perifericos."
-    next_action: "No promover. F1-19 mejora evidencia de escalado del sustrato hidrogel (10x10, 94% funcional, 0.54 pJ/spike local), pero sigue usando readout digital y presenta degradacion por deshidratacion. Especificar benchmark comun antes de M2."
+    next_action: "No promover. F1-20 refuerza computacion mecanica reprogramable pero no aporta benchmark comun ni metricas suficientes; especificar benchmark comun antes de M2."
 
   - id: temporal-in-sensor-processing
     maturity: M3
@@ -24,18 +24,18 @@ active_modules:
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401, f1-20260916-1501]
     current_architecture: "synthetic temporal signal -> uniform reference | threshold-event encoder | latency+fading-state encoder -> common event task -> transfer/error/score metrics"
     success_criterion: "Sobre una misma señal y tarea, la cadena fisica/analogica debe conservar >=95% del score de referencia digital o mejorarlo y reducir >=10x el volumen transferido; reportar energia local y periferica por separado."
-    next_action: "Ejecutar src/temporal_benchmark.py y tests/test_temporal_benchmark.py en entorno reproducible y persistir resultados antes de M4. F3-19 se deduplica con f3-2026-09-16T06-triboelectric-vibration; no cambia el contrato del modulo."
+    next_action: "Ejecutar src/temporal_benchmark.py y tests/test_temporal_benchmark.py en entorno reproducible y persistir resultados antes de M4."
 
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001, f3-20260916-1501, f3-20260916-1901]
-    reason: "Sin variable objetivo comun ni presupuesto de incertidumbre transferible entre maquinas; F3-19 replica el principio triboelectrico ya incorporado y no resuelve esa carencia."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001, f3-20260916-1501, f3-20260916-1901, f3-20260916-2001]
+    reason: "F3-20 agrega observabilidad espacial basada en modelo (RRMSE 6.8-13.4% y localizacion de inicio de grieta), pero requiere FEM/sensores de contacto y no resuelve una variable objetivo comun ni presupuesto de incertidumbre transferible entre maquinas; permanece en espera."
 
 archived_modules:
   - {id: air-cushion-transport, evidence_ids: [f2-20260915-21-aerotrain], reason: "Sin convergencia funcional suficiente con el nucleo."}
   - {id: networked-management-precedents, evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel], reason: "Redes/coordinacion sin traduccion funcional directa al nucleo fisico."}
   - {id: synchronized-facsimile-path, evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph], reason: "Barrido/sincronizacion historicos sin traduccion funcional suficiente."}
-  - {id: differential-computing-precedents, evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001], reason: "Integracion diferencial fisica sin necesidad arquitectonica actual."}
+  - {id: differential-computing-precedents, evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001, f2-20260916-2001], reason: "F2-20 es continuacion/deduplicacion del integrador hidraulico ya registrado: confirma produccion y sustitucion digital, sin necesidad arquitectonica actual."}
   - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory], reason: "Precedente de estado magnetico fisico; deduplicado."}
   - {id: parametric-phase-logic-precedent, evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501, f2-20260916-1901], reason: "F2-19 confirma linea industrial y sustitucion por transistor; no aporta traduccion funcional nueva al nucleo y queda deduplicado."}
   - {id: saturable-magnetic-logic-precedent, evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing], reason: "Logica por saturacion sin traduccion funcional especifica."}
@@ -49,7 +49,7 @@ archived_modules:
   - {id: domestic-humanoid-generalist-precedent, evidence_ids: [f2-20260916-1801], reason: "Prototipos humanoides teleoperados con tareas limitadas; sin traduccion funcional medible al nucleo y sin evidencia de autonomia general demostrada."}
 
 current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse/latency physical encoding -> persistent/fading physical state -> optional local association/learning -> externally observable event/state -> optional physical dynamics/logic -> output/action; characterize information preserved, persistence, reset, ambiguity, selectivity, robustness, local energy and total peripheral cost"
-last_synthesized_cycle: 2026-09-16T19
+last_synthesized_cycle: 2026-09-16T20
 
 rules:
   max_active_modules: 3
