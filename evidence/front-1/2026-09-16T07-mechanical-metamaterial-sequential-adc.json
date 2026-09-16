@@ -1,0 +1,30 @@
+{
+  "id":"f1-2026-09-16T07-mechanical-sequential-adc",
+  "frente":"front-1",
+  "cycle_id":"2026-09-16T07",
+  "tema_objeto":"metamaterial mecánico reprogramable para codificación analógico-digital y lógica",
+  "afirmacion_principal":{
+    "HECHO":"Un metamaterial multestable convierte una entrada mecánica continua en secuencias discretas de snap-through y puede reprogramar in situ esa secuencia activando o desactivando unidades; los autores demostraron experimentalmente conversión analógico-digital mecánica, procesamiento de señal y operaciones lógicas tipo FPGA.",
+    "HIPOTESIS":"La secuencia de transiciones metastables puede tratarse como un alfabeto físico programable para computación directamente sobre magnitudes mecánicas continuas.",
+    "INTERPRETACION":"La capacidad materialmente nueva no es una puerta lógica mecánica aislada, sino integrar cuantización de una entrada continua, estado discreto y lógica reconfigurable en la misma arquitectura física sin remanufacturarla."
+  },
+  "capacidad_nueva":"codificar estímulos mecánicos continuos en estados digitales programables y ejecutar lógica reconfigurable mediante la propia secuencia de deformación",
+  "mecanismo_o_principio":"arquitectura multestable con eventos secuenciales de snap-through bajo compresión uniaxial; diseño inverso de la distribución de rigidez fija el orden de transición y la activación/desactivación selectiva de unidades reprograma ese orden",
+  "dominio":["computacion_mecanica","metamateriales","logica_fisica","conversion_analogico_digital"],
+  "fuentes":[{"url":"https://doi.org/10.1002/adma.74376","titulo":"Mechanical Metamaterials with Reprogrammable Sequential Deformation for Analog-to-Digital Encoding and Computing","tipo":"paper_original_experimental","fecha":"2026-08-05"}],
+  "nivel_evidencia":"A",
+  "datos_cuantitativos":"La fuente primaria abierta confirma demostraciones experimentales e inverse design, pero el resumen accesible no expone métricas numéricas suficientes para registrar resolución, número de niveles o error sin inferirlos del material suplementario.",
+  "condiciones_de_prueba":"prototipos de metamaterial multestable sometidos a compresión uniaxial; secuencias configuradas por distribución de rigidez y reprogramadas mediante activación/desactivación de unidades",
+  "requiere_computacion_digital":"no",
+  "requiere_alimentacion":"parcial",
+  "tipo_de_sensado":"entrada mecánica continua codificada por umbrales de inestabilidad estructural",
+  "tipo_de_memoria_o_estado":"estados multestables discretos y secuencia de deformación",
+  "tipo_de_adaptacion":"reprogramación estructural in situ de unidades activas/inactivas",
+  "tipo_de_actuacion":"compresión mecánica y snap-through secuencial",
+  "madurez_tecnica":"demostración experimental de laboratorio",
+  "limitaciones":["La demostración se realiza bajo carga uniaxial controlada.","La reprogramación no equivale a aprendizaje autónomo: requiere cambiar qué unidades están activas.","El resumen primario disponible no permite cuantificar todavía resolución ADC, tolerancias, velocidad, fatiga o coste energético."],
+  "contradicciones":["La literatura previa ya contenía lógica, memoria y secuenciación mecánicas por separado; la novedad defendible es su integración reprogramable con conversión continua-a-discreta, no la existencia de lógica mecánica en sí."],
+  "etiquetas_neutrales":["multistability","snap-through","mechanical-computing","analog-to-digital","reprogrammable","inverse-design"],
+  "fecha_hallazgo":"2026-09-16",
+  "fecha_revision":"2026-09-16"
+}
