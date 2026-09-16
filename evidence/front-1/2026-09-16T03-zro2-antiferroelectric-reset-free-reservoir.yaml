@@ -1,0 +1,25 @@
+id: f1-20260916t03-zro2-aftj
+frente: front-1
+cycle_id: 2026-09-16T03
+tema_objeto: reservorio fisico antiferroelectrico auto-relajante
+afirmacion_principal: "HECHO: una union tunel antiferroelectrica ZrO2/a-IGZO realiza no linealidad y memoria evanescente sub-ms mediante transicion estructural y back-switching espontaneo, eliminando pulsos explicitos de reset. INTERPRETACION: la relajacion del propio material puede sustituir parte del control temporal externo en computacion de reservorio."
+capacidad_nueva: procesamiento temporal rapido con memoria evanescente intrinseca y reset autonomo
+mecanismo_o_principio: transicion tetragonal-a-ortorrombica inducida por campo y despolarizacion espontanea del ZrO2 antiferroelectrico
+dominio: computacion neuromorfica fisica
+fuentes:
+  - {url: "https://doi.org/10.1002/advs.76692", titulo: "Volatile ZrO2 Antiferroelectric Tunnel Junctions for Rapid, Energy-Efficient Physical Reservoir Computing", tipo: paper experimental, fecha: "2026-07-23"}
+nivel_evidencia: A
+datos_cuantitativos: "Ion/Ioff ~890; no linealidad maxima ~48.4; PPF 1.79; MNIST 90.4% +/-0.1%; dispositivo experimental 40000 um2: ~2 us/operacion y <480 pJ/operacion; proyeccion 100 um2: ~192 ns y <115 fJ, no medida directamente."
+condiciones_de_prueba: "heteroestructura TiN/6-nm ZrO2/1.8-nm a-IGZO/TaN; medidas ambiente; composicion a-IGZO 2:2:1 optimizada; tareas temporales largas parcialmente evaluadas con modelo de circuito calibrado experimentalmente"
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: electrico corriente de tunel
+tipo_de_memoria_o_estado: polarizacion antiferroelectrica volatil / fading memory
+tipo_de_adaptacion: ninguna intrinseca demostrada; dinamica temporal dependiente de historia
+tipo_de_actuacion: conmutacion de fase inducida electricamente
+madurez_tecnica: prototipo experimental de dispositivo
+limitaciones: "clasificacion MNIST usa SVM de lectura; tareas temporales extensas usan simulacion calibrada; valores de 100 um2 son extrapolados y omiten parasitos/interconexion; mecanismo transitorio puede incluir contribucion de trampas interfaciales"
+contradicciones: "los autores advierten que las medidas estaticas y de pulsos no separan completamente back-switching AFE de dinamica de carga/trampas IGZO/ZrO2"
+etiquetas_neutrales: [antiferroelectricidad, reservoir-computing, fading-memory, reset-free, ZrO2, tunel]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
