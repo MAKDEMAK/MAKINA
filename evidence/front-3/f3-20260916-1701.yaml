@@ -1,0 +1,95 @@
+id: f3-20260916-1701
+frente: front-3
+cycle_id: '2026-09-16T17'
+tema_objeto: cupon testigo de fatiga acumulativa para estructuras soldadas
+afirmacion_principal: >-
+  Un cupon metalico delgado precargado y fijado junto a una union soldada puede convertir
+  el historial real de esfuerzos ciclicos de la estructura en crecimiento irreversible de
+  una grieta testigo; la longitud de esa grieta representa daño acumulativo de fatiga y
+  permite estimar fraccion de vida de diseno consumida sin reconstruir digitalmente todo
+  el historial de cargas.
+funcion: registrar
+principio_de_mediacion: >-
+  Concentracion de tensiones y propagacion de una pregrieta por fatiga en un cupon cuya
+  respuesta S-N se ajusta a la clase de detalle soldado objetivo. Pistas conductoras
+  secuenciales atravesadas por la grieta discretizan posteriormente su longitud para lectura.
+variable_fisica_entrada: historial local de esfuerzo ciclico transferido desde la estructura
+señal_o_estado_salida: longitud irreversible de grieta testigo; secundariamente numero de pistas conductoras seccionadas
+modalidad: mecanica_fractura_con_lectura_electrica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: >-
+  El prototipo CrackFirst usa 12 pistas conductoras a cada lado de la ranura central;
+  la primera pista se secciono tipicamente alrededor de 10-20% de la vida total del sensor
+  y las siguientes de forma aproximadamente regular. No equivale a una precision universal
+  en porcentaje de vida.
+latencia: acumulativa; determinada por crecimiento de grieta bajo ciclos de carga
+condiciones_de_prueba: >-
+  Cupon de acero de 0.25 mm de espesor, 20 mm de ancho y 51 mm de largo, precargado
+  aproximadamente a 120 MPa y montado junto a uniones soldadas de acero. Ensayos axiales
+  de amplitud constante y variable; en evaluacion 2007 se ensayaron 10 sensores sobre
+  probetas con uniones soldadas, R=0.1. Validacion anterior cubrio vidas de 1e5 a 5e6 ciclos
+  y R=0.1 y -1, ademas de amplitud variable.
+fuentes:
+  - url: https://www.twi-global.com/technical-knowledge/published-papers/development-of-a-fatigue-sensor-for-welded-steel-structures-may-2006
+    titulo: Development of a Fatigue Sensor for Welded Steel Structures
+    tipo: paper_conferencia_fuente_institucional
+    fecha: '2006-05-30'
+  - url: https://www.twi-global.com/technical-knowledge/published-papers/evaluation-of-crackfirst-fatigue-sensors-june-2007
+    titulo: Evaluation of CrackFirst fatigue sensors
+    tipo: paper_conferencia_fuente_institucional
+    fecha: '2007-06-05'
+  - url: https://www.twi-global.com/who-we-are/innovation/intellectual-property-licensing/crackfirst
+    titulo: CrackFirst
+    tipo: documentacion_institucional
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  - 'geometria del cupon evaluado: 0.25 x 20 x 51 mm'
+  - '12 pistas conductoras por cada lado de la pregrieta'
+  - 'precarga de instalacion aproximada: 120 MPa'
+  - 'ensayos de desarrollo: aproximadamente 1e5 a 5e6 ciclos'
+  - 'carga variable en desarrollo: endurance sensor/endurance soldadura 0.44-0.84'
+  - 'evaluacion posterior: todos los sensores alcanzaron su indicacion final antes que las uniones ensayadas'
+mecanismo_o_principio: >-
+  El propio daño por fatiga funciona como integrador fisico del historial de carga. En vez
+  de medir cada ciclo y aplicar despues una regla de acumulacion, un testigo calibrado
+  experimenta el mismo historial y conserva fisicamente su efecto acumulado como grieta.
+limitaciones:
+  - requiere transferencia representativa del esfuerzo mediante ubicacion, orientacion, fijacion y precarga correctas
+  - responde al esfuerzo medio sobre su longitud activa y es inadecuado para gradientes muy pronunciados o componentes muy pequenos
+  - la correspondencia depende de emparejar el cupon con la clase de fatiga de la union objetivo
+  - el modo de carga importa; mayor componente de flexion produjo vidas del sensor ligeramente mayores
+  - la lectura electrica, memoria y descarga de datos requieren electronica, aunque el registro mecanico acumulativo no
+contradicciones:
+  - >-
+    No es una medicion directa del dano microscopico de la union objetivo: es un objeto testigo
+    sometido a un historial que se busca hacer representativo.
+  - >-
+    Bajo secuencias variables, ni la soldadura ni el sensor siguieron exactamente la regla de Miner;
+    el trabajo reporto desviaciones y pidio validar secuencias capaces de producir predicciones inseguras.
+  - >-
+    La documentacion institucional indica que el sistema llego a licenciarse; por tanto no debe
+    describirse como mera prueba de laboratorio.
+etiquetas_neutrales:
+  - fatigue_witness
+  - cumulative_physical_memory
+  - crack_growth
+  - welded_structure
+  - minimally_invasive
+  - passive_recording
+  - proxy_measurement
+medicion_directa_o_inferencia: inferencia_indirecta
+hecho: >-
+  Ensayos de laboratorio documentados muestran crecimiento secuencial de la grieta/pistas y
+  advertencia conservadora respecto de las uniones probadas; TWI documenta ademas licencia comercial.
+hipotesis: >-
+  Un testigo correctamente calibrado puede aproximar el consumo de vida de la clase de detalle
+  objetivo bajo historiales de servicio compatibles con su validacion.
+interpretacion: >-
+  Es un principio reusable de mediacion porque traslada la integracion temporal desde un logger
+  y un modelo numerico hacia un proceso fisico irreversible que conserva localmente el historial acumulado.
+fecha_hallazgo: '2026-09-16'
+fecha_revision: '2026-09-16'
