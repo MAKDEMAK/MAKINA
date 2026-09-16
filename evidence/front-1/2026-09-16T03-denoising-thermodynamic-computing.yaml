@@ -1,0 +1,32 @@
+id: f1-20260916T03-denoising-thermodynamic-computing
+frente: front-1
+cycle_id: 2026-09-16T03
+tema_objeto: computacion probabilistica termodinamica CMOS para modelos generativos
+afirmacion_principal: "HECHO: un generador aleatorio experimental solo-transistores explota ruido de disparo en subumbral y fue combinado, a nivel de arquitectura/simulacion, con modelos termodinamicos de denoising que encadenan distribuciones condicionales mas simples. HIPOTESIS/PROYECCION: el sistema completo podria aproximar rendimiento GPU en un benchmark simple con ~10^4 menos energia; no existe aun un chip DTCA completo medido."
+capacidad_nueva: muestreo probabilistico fisico CMOS de muy baja energia y arquitectura generativa que evita parcialmente el compromiso mezcla-expresividad de EBMs monoliticos
+mecanismo_o_principio: ruido de disparo subumbral para RNG sigmoidal + Gibbs sampling local + cadena de modelos de energia condicionales de denoising
+dominio: computacion probabilistica / hardware generativo / analog-digital co-design
+fuentes:
+  - url: https://www.nature.com/articles/s44335-026-00075-3
+    titulo: An efficient probabilistic hardware architecture for diffusion-like models
+    tipo: paper revisado por pares / npj Unconventional Computing
+    fecha: 2026-07-02
+  - url: https://arxiv.org/abs/2510.23972
+    titulo: An efficient probabilistic hardware architecture for diffusion-like models
+    tipo: preprint del trabajo primario
+    fecha: 2025-10-28
+nivel_evidencia: B
+datos_cuantitativos: "RNG experimental: decorrelacion ~100 ns, ~350 aJ/bit, area reportada ~3x3 um. Mayor DTM simulado ~50,000 nodos. Ventaja energetica sistema ~10,000x frente a GPU es estimacion de sistema, no medicion de chip completo."
+condiciones_de_prueba: "Circuito RNG medido experimentalmente; modelos DTM evaluados mediante simulacion de hardware termodinamico en computador convencional; benchmark generativo simple."
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: no aplica
+tipo_de_memoria_o_estado: variables binarias estocasticas y pesos del modelo
+tipo_de_adaptacion: entrenamiento del DTM fuera del circuito de muestreo; inferencia por dinamica Gibbs
+tipo_de_actuacion: conmutacion estocastica de transistores / estados binarios
+madurez_tecnica: circuito elemental medido + arquitectura completa simulada
+limitaciones: "No existe demostracion fisica a escala del computador completo; autores declaran que el sistema esta lejos del estado del arte en potencia de modelado; efectos de circuitos reales, interconexion, cuantizacion y escalado aun requieren ingenieria."
+contradicciones: "La cifra ~10^4 de energia es analisis/proyeccion y no debe tratarse como benchmark de silicio; el propio paper indica que las pruebas de modelos se ejecutaron en simulacion y que el sistema propuesto esta lejos del estado del arte en capacidad generativa."
+etiquetas_neutrales: [probabilistic-computing, thermodynamic-computing, CMOS, shot-noise, Gibbs-sampling, generative-models]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
