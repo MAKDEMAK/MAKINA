@@ -1,0 +1,31 @@
+id: f1-20260916-1201
+frente: front-1
+cycle_id: '2026-09-16T12'
+tema_objeto: active colloidal oscillator physical reservoir
+afirmacion_principal: 'Experimental arrays of hundreds of hydrodynamically coupled active colloidal oscillators perform parallel physical reservoir computation without time multiplexing, with coupling and memory tunable in situ.'
+capacidad_nueva: 'chaotic time-series forecasting and real-time hidden-anomaly detection using reconfigurable collective physical dynamics'
+mecanismo_o_principio: 'many-body hydrodynamic coupling supplies nonlinearity, spatial dimensionality and fading memory; lattice spacing and damping tune dynamics'
+dominio: 'active matter; physical reservoir computing'
+fuentes:
+  - url: 'https://www.nature.com/articles/s44488-026-00001-3'
+    titulo: 'Reservoir computing from collective dynamics of active colloidal oscillators'
+    tipo: 'peer-reviewed experimental paper'
+    fecha: '2026-07-23'
+nivel_evidencia: A
+datos_cuantitativos: ['400 oscillators', 'experimental example NRMSE about 0.1 for one-step Mackey-Glass prediction', 'F1 0.98 spike anomalies', 'F1 0.90 hidden anomalies', 'relaxation time tunable over more than one order of magnitude']
+condiciones_de_prueba: '3 um radius silica Janus colloids with 80 nm carbon layer in water-2,6-lutidine at 28 C; 532 nm laser; 100 kHz acousto-optical steering; optical position feedback'
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: 'microscopic optical position and velocity readout'
+tipo_de_memoria_o_estado: 'collective fading dynamical memory'
+tipo_de_adaptacion: 'tunable coupling/damping and task-trained linear readout'
+tipo_de_actuacion: 'photothermal propulsion with laser-steered targets'
+madurez_tecnica: 'laboratory experimental proof'
+HECHO: 'Collective dynamics produced forecasting and anomaly-detection results experimentally.'
+HIPOTESIS: 'Tunable active matter can form genuinely parallel physical reservoirs without virtual nodes.'
+INTERPRETACION: 'Material novelty is genuine spatial many-body computational dimensionality plus in-situ tunable interactions.'
+limitaciones: ['requires microscope, digital tracking, laser actuation and external feedback', 'does not outperform established physical reservoirs', 'authors state the laser-activated implementation may not be practical', 'some parameter sweeps rely on simulations with experimental validation']
+contradicciones: ['computation is embodied in collective physics, but the complete apparatus is neither digital-free nor power-free']
+etiquetas_neutrales: [active-matter, physical-reservoir-computing, hydrodynamic-coupling, many-body-dynamics, fading-memory]
+fecha_hallazgo: '2026-09-16'
+fecha_revision: '2026-09-16'
