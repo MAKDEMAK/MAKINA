@@ -16,33 +16,29 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa considerada:** activar observabilidad no-contacto por stray-flux/speckle. Se mantiene en espera porque aporta lectura rica pero requiere adquisición/procesamiento continuo y cambia menos la arquitectura central.
 - **Razón:** Wiegand aporta una cadena medida de transducción + energía + registro de evento, cerrando una debilidad del prototipo anterior: el origen físico del símbolo discreto.
 - **Consecuencia:** se crean `src/event_state.py` y `tests/test_event_state.py`; no se declara M4 porque los tests aún no fueron ejecutados y el modelo energético es contractual, no una simulación eléctrica.
-- **Nueva línea activa M1:** `embodied-wave-computation`; la evidencia de computación mecánica reprogramable es fuerte, pero todavía falta una especificación cuantitativa única para M2.
-- **Archivado:** Cybersyn/Minitel se conservan como precedentes históricos pero no se fuerzan dentro del núcleo; magnetic bubble memory queda como precedente de estado físico, no como tecnología elegida.
 
 ## 2026-09-16 — embodied-dynamics-computation
 - **Decisión:** ampliar `embodied-wave-computation` a `embodied-dynamics-computation`, mantenerlo en M1 y no construir todavía un benchmark.
 - **Evidencia:** `f1-20260916T00-mycelium-reservoir` y `f1-20260916T00-active-colloid-reservoir` demuestran reservoir computing mediante dinámica material/colectiva; se suman a `f1-20260915-22-wave-metamaterial-robot` sin asumir equivalencia entre mecanismos.
-- **Alternativa rechazada:** promover directamente a M2/M3 por acumulación de ejemplos. Se rechaza porque los reservorios temporales y los operadores ondulatorios no comparten todavía una tarea y métrica única.
-- **Razón:** la convergencia funcional aumentó, pero la evidencia contradictoria también importa: el reservorio coloidal depende de láser, microscopía y feedback digital, y el micelio presenta variabilidad entre dispositivos.
-- **Consecuencia:** se eleva confianza de la línea a 0.73, se redefine su criterio de éxito y se exige una tarea común medible antes de promoción.
-- **Otras decisiones:** clamp-on ultrasonic se incorpora a observabilidad legacy en espera, no activa, por fuerte dependencia de instalación y desviaciones de campo reportadas hasta 43%; Nordsieck/MADDIDA se archivan como precedente coherente de integración física→digital especializada; Pantelegraph se archiva por falta de traducción funcional al núcleo.
+- **Alternativa rechazada:** promover directamente a M2/M3 por acumulación de ejemplos.
+- **Razón:** reservorios temporales y operadores ondulatorios no comparten todavía una tarea y métrica única.
 
 ## 2026-09-16 — material-state extension, cycle 02
 - **Decisión:** fusionar memoria molecular fotónica y memoria higromecánica persistente dentro de `physical-state-interface`; no abrir un tercer módulo.
 - **Evidencia:** `f1-20260916-02-lc-photonic-memory`, `f3-20260916-02-hygromechanical-indicator`.
-- **Alternativa rechazada:** crear `material-memory` como módulo independiente. Ambos hallazgos amplían el mismo problema ya activo —formar y conservar estado físico observable— y separarlos produciría redundancia.
-- **Razón:** hay convergencia funcional pero no equivalencia de mecanismo: orientación molecular óptica y deformación higromecánica persistente. El criterio del núcleo se amplía de estado discreto a estado persistente verificable sin declarar nueva madurez.
-- **Consecuencia:** `physical-state-interface` permanece M3; confianza 0.87. No se crea prototipo nuevo porque la evidencia no aporta todavía parámetros compatibles con el sustituto digital existente suficientes para una prueba física.
+- **Consecuencia:** `physical-state-interface` permanece M3; no se crea prototipo nuevo sin parámetros suficientes para prueba física.
 
 ## 2026-09-16 — physical learning remains M1, cycle 02
 - **Decisión:** incorporar `f1-20260916-02-flare` y `f1-20260916-02-magnetic-self-learning` a `embodied-dynamics-computation`, pero mantener M1.
-- **Alternativa rechazada:** promover a M2 por diversidad de sustratos. FLARE, Hopfield magnético, reservorios y operador mecánico realizan funciones distintas y no existe todavía tarea/métrica común.
-- **Razón:** el aprendizaje magnético demuestra adaptación material intrínseca y FLARE memoria temporal multiescala, ampliando la arquitectura posible; esto aumenta evidencia de computación física pero también hace más importante separar memoria, inferencia y aprendizaje.
-- **Consecuencia:** confianza 0.77; no se construye benchmark hasta formular una comparación funcional única. La nueva inferencia de motor por stray flux refuerza `legacy-noninvasive-observability` pero sigue en espera por validación específica de montaje. La nueva ficha histórica de bubble memory se deduplica con el precedente ya registrado y no genera una línea nueva.
+- **Razón:** diversidad de sustratos no sustituye una tarea/métrica común.
 
 ## 2026-09-16 — history-state and self-relaxing dynamics, cycle 03
-- **Decisión:** fusionar la memoria de latching adhesivo en `physical-state-interface` y sumar ZrO2 auto-relajante + metamaterial entrenable a `embodied-dynamics-computation`; ninguna promoción de madurez.
-- **Evidencia:** `f3-20260916-03-adhesive-tape-latching-memory`, `f1-20260916t03-zro2-aftj`, `f1-20260916t03-learning-shape-metamaterial`.
-- **Alternativa rechazada:** abrir módulos separados de `mechanical-history-memory` o `adaptive-metamaterial`. La primera es una instancia directa del problema estado físico; la segunda todavía no comparte tarea/métrica con los otros sustratos de cómputo físico.
-- **Razón:** la cinta añade una propiedad medible nueva al núcleo —memoria de máximo con resolución espacial y lectura potencialmente destructiva—; ZrO2 aporta fading-memory con relajación/reset intrínseco; el metamaterial aporta parámetros mecánicos entrenables. Son extensiones funcionales, no prueba de una arquitectura integrada.
-- **Consecuencia:** `physical-state-interface` sigue M3 (confianza 0.89) y su criterio incluye resolución/destructividad de lectura; `embodied-dynamics-computation` sigue M1 (0.82) y deberá medir explícitamente coste de reset/relajación. Parametron se archiva como precedente de lógica/memoria por fase estable: su semejanza con sistemas oscilatorios actuales no basta para inferir continuidad tecnológica.
+- **Decisión:** fusionar memoria de latching adhesivo en `physical-state-interface` y sumar ZrO2 auto-relajante + metamaterial entrenable a `embodied-dynamics-computation`; ninguna promoción.
+- **Razón:** son extensiones funcionales, no prueba de una arquitectura integrada.
+
+## 2026-09-16 — boundary-addressed state, cycle 10
+- **Decisión:** incorporar `f1-20260916-1001` a `physical-state-interface` como evidencia de escritura física direccionada desde frontera; mantener M3 y no crear un simulador no calibrado.
+- **Evidencia:** `f1-20260916-1001`; `f3-20260916-1001` agrega lectura pasiva resistencia→RF pero sin resolución/distancia final; `f2-20260916-1001` refuerza el precedente de cómputo diferencial físico.
+- **Alternativa rechazada:** abrir módulos independientes de memoria mecánica remota o backscatter pasivo.
+- **Razón:** la primera amplía directamente el contrato estado/escritura existente; la segunda todavía carece de cadena metrológica completa. Lukyanov es precedente histórico, no una instrucción arquitectónica.
+- **Consecuencia:** el criterio del núcleo incorpora selectividad espacial, tasa de error y energía de escritura; backscatter permanece en observabilidad en espera y Lukyanov se fusiona con precedentes diferenciales archivados.
