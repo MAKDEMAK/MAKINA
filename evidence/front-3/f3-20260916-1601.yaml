@@ -1,0 +1,52 @@
+id: f3-20260916-1601
+frente: front-3
+cycle_id: 2026-09-16T16
+tema_objeto: memoria mecánica pasiva para registrar máximos e índices de daño
+afirmacion_principal:
+  hecho: "Un elemento mecánico puede memorizar físicamente el máximo de deformación o desplazamiento sin alimentación durante la medición: el pandeo elástico de un alambre induce una extensión plástica irreversible en la sección sensora, que conserva el máximo alcanzado."
+  hipotesis: "La misma familia de mecanismo puede codificar otros índices acumulativos si la geometría traduce el índice físico a deformación plástica monotónica."
+  interpretacion: "Es una mediación físico-informacional en la que la memoria está en el estado mecánico irreversible del sensor, no en electrónica ni software."
+funcion: registrar
+principio_de_mediacion: "pandeo elástico de alambre -> extensión plástica irreversible -> cambio persistente de longitud; lectura posterior por resistencia, inductancia o capacitancia, opcionalmente mediante resonancia LC inalámbrica"
+variable_fisica_entrada: "deformación o desplazamiento máximo; trabajos posteriores de la misma línea describen también aceleración pico y deformación acumulada"
+señal_o_estado_salida: "elongación plástica retenida y cambio correspondiente de R/L/C; frecuencia resonante LC si se usa lectura inalámbrica"
+modalidad: "mecánica irreversible / eléctrica pasiva opcional"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: "no cuantificada de forma recuperable en las fuentes abiertas consultadas; los trabajos reportan validación teórica y experimental"
+latencia: "estado mecánico actualizado durante la carga; lectura posterior bajo demanda"
+condiciones_de_prueba: "prototipos de laboratorio para peak strain/displacement; la línea posterior documenta un prototipo instalado en un edificio base-aislado de 7 pisos"
+fuentes:
+  - url: "https://doi.org/10.1088/0964-1726/12/2/307"
+    titulo: "A smart sensor using a mechanical memory for structural health monitoring of a damage-controlled building"
+    tipo: "paper original revisado por pares"
+    fecha: "2003-04"
+  - url: "https://doi.org/10.12989/sem.2004.17.3_4.331"
+    titulo: "Damage index sensor for smart structures"
+    tipo: "paper original revisado por pares / seguimiento experimental"
+    fecha: "2004"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "prototipo posterior instalado en edificio base-aislado de 7 pisos"
+  - "paper base: 6 páginas (Smart Materials and Structures 12(2), 204-209); no se recuperó del acceso abierto una cifra fiable de resolución/error y no se infiere"
+mecanismo_o_principio: "La inestabilidad por pandeo desacopla el movimiento global de una sección que se alarga plásticamente. Al descargar, esa elongación no vuelve a cero y funciona como memoria física del extremo alcanzado. El cambio geométrico puede interrogarse directamente o transducirse a R/L/C; un circuito LC cerrado permite lectura pasiva por inducción electromagnética."
+limitaciones:
+  - "la memoria básica es de extremo/índice, no una serie temporal ni conteo ordenado de eventos"
+  - "la deformación plástica implica histéresis e irreversibilidad; el rearme/reutilización no está establecido en la evidencia consultada"
+  - "la lectura inalámbrica requiere interrogador externo energizado aunque memorizar el estado no requiere alimentación"
+  - "transferencia de deformación, montaje y calibración condicionan la correspondencia entre estado retenido y variable estructural"
+contradicciones:
+  - "llamarlo sensor sin alimentación puede inducir a pensar que toda la cadena es autónoma: la medición/memoria mecánica es pasiva, pero la lectura eléctrica o inalámbrica requiere instrumentación externa"
+  - "las extensiones a aceleración pico, energía absorbida o deformación acumulada aparecen en la línea posterior; no deben atribuirse automáticamente al prototipo de 2003"
+etiquetas_neutrales:
+  - mechanical-memory
+  - passive-sensing
+  - peak-hold
+  - plastic-deformation
+  - buckling
+  - structural-health-monitoring
+  - chipless-state
+fecha_hallazgo: "2026-09-16T16:24:17-03:00"
+fecha_revision: "2026-09-16T16:24:17-03:00"
