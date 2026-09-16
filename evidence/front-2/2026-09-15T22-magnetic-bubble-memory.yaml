@@ -1,0 +1,53 @@
+id: f2-20260915T22-magnetic-bubble-memory
+frente: front-2
+cycle_id: 2026-09-15T22
+tema_objeto: memoria magnetica no volatil sin partes moviles
+nombre_proyecto_o_artefacto: Magnetic Bubble Memory
+periodo_historico: 1967-mediados_de_1980
+pais_contexto: Estados Unidos / Japon / industria internacional
+disciplina: [almacenamiento, magnetismo, electronica]
+afirmacion_principal: "La memoria de burbujas intento converger propiedades de memoria principal y almacenamiento masivo mediante dominios magneticos moviles en pelicula fina; llego a productos comerciales, pero no escalo como memoria universal y quedo relegada por memorias semiconductoras y almacenamiento convencional mas competitivo."
+problema_original: "Obtener almacenamiento reescribible, no volatil, denso y robusto sin partes mecanicas moviles."
+principio_tecnico: "Cada bit es un dominio magnetico cilindrico estable en una pelicula; campos magneticos desplazan secuencias de dominios por pistas fisicas hasta regiones de lectura/escritura."
+estado_historico: sustitucion_y_nicho_residual
+resultado_real_alcanzado:
+  - "Bell Labs desarrollo la tecnologia desde 1967; multiples fabricantes la comercializaron en los anos 1970."
+  - "Texas Instruments comercializo dispositivos y Intel lanzo el 7110 de 1 Mbit en 1979."
+  - "Fujitsu la uso como memoria de archivos de precios POS y en cassettes removibles para computadores, procesadores de texto y control numerico."
+  - "Sharp comercializo en 1983 un cartucho removible CE-100B de 128 KB para el PC-5000."
+causa_documentada: "La tecnologia fue superada comercialmente por la mejora rapida de alternativas semiconductoras y de almacenamiento; su complejidad de accionamiento/lectura y restricciones operativas redujeron la ventaja de no tener partes moviles."
+causas_alternativas:
+  - "Su acceso era inherentemente secuencial/circulante, no equivalente a RAM aleatoria de alta velocidad."
+  - "Productos concretos presentaban sensibilidad termica; el cartucho Sharp CE-100B bloqueaba operacion fuera de 5-35 C."
+camino_que_lo_desplazo_si_existe: "RAM/ROM semiconductora, discos y posteriormente memoria flash cubrieron las funciones de memoria y almacenamiento con mejor costo, velocidad o simplicidad de integracion."
+fuentes:
+  - url: https://www.computerhistory.org/storageengine/bubbles-ccds-other-forgotten-memories/
+    titulo: "1977: Bubbles, CCDs & other forgotten memories"
+    tipo: museo_historia_computacion
+    fecha: desconocida
+  - url: https://global.fujitsu/en-global/about/corporate/museum/products/products/electroniccomponents-others-magneticbubble
+    titulo: "Magnetic Bubble Memory (1967)"
+    tipo: museo_corporativo
+    fecha: desconocida
+  - url: https://obsoletemedia.org/sharp-magnetic-bubble-memory/
+    titulo: "Sharp Magnetic Bubble Memory (1983-1986)"
+    tipo: archivo_tecnico
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos:
+  intel_7110: 1_Mbit
+  sharp_CE100B: 128_KB
+  sharp_operating_range: 5-35_C
+limitaciones:
+  - "Acceso por desplazamiento de dominios introduce latencia dependiente de posicion."
+  - "Necesita campos de accionamiento y circuiteria periferica pese a que el medio no posee partes mecanicas moviles."
+contradicciones:
+  - "No fue simplemente un prototipo fallido: tuvo productos comerciales y aplicaciones de nicho reales."
+incertidumbres:
+  - "El peso relativo exacto de costo, velocidad, temperatura y competencia varia entre fabricantes y aplicaciones."
+HECHO_DOCUMENTADO: "La tecnologia fue fabricada y vendida comercialmente por varias companias; existieron dispositivos de 1 Mbit y cartuchos removibles de 128 KB."
+TESTIMONIO: "Fuentes museisticas describen su expectativa inicial como candidata a cubrir varias clases de almacenamiento."
+INTERPRETACION: "El principio fisico sobrevivio tecnicamente, pero la trayectoria hacia memoria de uso general fue desplazada por una ecologia de memorias especializadas mas competitivas."
+etiquetas_neutrales: [dominios_magneticos, no_volatil, sin_partes_moviles, almacenamiento, sustitucion]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
