@@ -1,0 +1,34 @@
+id: f1-20260915-23-oscillator-learning
+frente: front-1
+cycle_id: 2026-09-15T23
+tema_objeto: red de osciladores multimodales que entrena e infiere mediante dinámica física
+afirmacion_principal: "HECHO: un modelo físico de red masa-resorte no lineal realiza entrenamiento e inferencia mediante evolución dinámica, usando multistabilidad para memoria persistente y ruido/simetría para actualizar pesos sin control individual de cada peso."
+capacidad_nueva: aprendizaje supervisado incorporado en dinámica de una red física, no sólo inferencia física
+mecanismo_o_principio: "Resonadores multimodales paramétricos; estados binarios multistables almacenan pesos, modos oscilatorios mantienen activaciones y una regla probabilística de flip dependiente del desacuerdo free/clamped implementa aprendizaje tipo contrastivo."
+dominio: aprendizaje_fisico; metamateriales; computacion_no_convencional
+fuentes:
+  - url: https://www.nature.com/articles/s44455-025-00015-4
+    titulo: Multimodal oscillator networks learn to solve a classification problem
+    tipo: paper_primario_peer_reviewed_numerico
+    fecha: 2026-01-31
+  - url: https://amolf.nl/publications/multimodal-oscillator-networks-learn-to-solve-a-classification-problem
+    titulo: Multimodal oscillator networks learn to solve a classification problem
+    tipo: repositorio_institucional
+    fecha: 2026-01-31
+nivel_evidencia: B
+datos_cuantitativos: "Iris: 3 redes de 13x13; 150 muestras; 156 bits de estado; accuracy desde 33.2±22.1% hasta 71.9±9.8%; protocolo avanzado 80.0±7.0%, mejor corrida 87.3%; referencia digital lineal simulada 97.3%."
+condiciones_de_prueba: "Demostración numérica mediante ecuaciones diferenciales estocásticas/modelo masa-resorte efectivo; 2000 iteraciones de aprendizaje en el experimento Iris."
+requiere_computacion_digital: no
+requiere_alimentacion: si
+tipo_de_sensado: amplitud_de_fuerzas_armonicas_codifica_entradas
+tipo_de_memoria_o_estado: multistabilidad_binaria_persistente_mas_estado_oscilatorio_transitorio
+tipo_de_adaptacion: flips_probabilisticos_de_pesos_inducidos_por_dinamica_y_ruido
+tipo_de_actuacion: oscilacion_mecanica_modelada
+madurez_tecnica: demostracion_numerica_peer_reviewed
+limitaciones: "No existe todavía realización física del sistema completo; precisión inferior a ML digital convencional; necesita señales globales de clock y condiciones clamped/free."
+contradicciones: "Los autores muestran que una arquitectura físicamente representada pero entrenada digitalmente llega a 97.3%, indicando que la principal limitación observada está en la dinámica de entrenamiento y no sólo en pesos binarios."
+etiquetas_neutrales: [physical_learning, oscillator_network, multistability, contrastive_learning, mechanical_computing]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+hipotesis: "HIPÓTESIS: arquitecturas físicas realizables podrían implementar el mecanismo; el artículo no demuestra hardware."
+interpretacion: "INTERPRETACIÓN: es materialmente distinto de reservoir computing porque la propia física modifica y conserva los parámetros aprendidos, en vez de limitarse a generar features para un readout externo."
