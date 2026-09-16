@@ -1,0 +1,46 @@
+id: f3-20260916-0901
+frente: front-3
+cycle_id: 2026-09-16T09
+tema_objeto: indicador pasivo acumulativo tiempo-temperatura por flujo capilar
+afirmacion_principal:
+  hecho: "Una membrana porosa puede convertir historia térmica acumulada en una distancia física visible mediante flujo capilar cuya cinética depende de temperatura, sin alimentación ni registro electrónico."
+  hipotesis: "La distancia recorrida puede funcionar como memoria física acumulativa de exposición cuando la química y geometría se calibran para el rango térmico objetivo."
+  interpretacion: "Es un principio general de mediación en el que el propio transporte de materia integra una variable en el tiempo y conserva un estado legible posteriormente."
+funcion: registrar
+principio_de_mediacion: "integración físico-química por transporte capilar dependiente de temperatura; posición del frente como estado acumulado"
+variable_fisica_entrada: "historia de tiempo y temperatura"
+señal_o_estado_salida: "distancia visible recorrida por el frente líquido en membrana porosa"
+modalidad: "microfluídica capilar / óptica pasiva"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: "El estudio reporta mejora de legibilidad mediante relación distancia-tiempo lineal; no se extrae de la fuente consultada una incertidumbre metrológica universal."
+latencia: "integrativa; deliberadamente del orden de horas/días según fluido y temperatura, no medición instantánea"
+condiciones_de_prueba: "Membrana de nitrocelulosa de 0.45 µm; ácidos oleico, octanoico y decanoico ensayados a 5, 15 y 30 °C; dispositivo flexible laminado."
+fuentes:
+  - url: "https://doi.org/10.1007/s10404-017-1883-x"
+    titulo: "Flexible time–temperature indicator: a versatile platform for laminated paper-based analytical devices"
+    tipo: "paper experimental / Microfluidics and Nanofluidics"
+    fecha: "2017-03-01"
+  - url: "https://pure.skku.edu/en/publications/flexible-timetemperature-indicator-a-versatile-platform-for-lamin/"
+    titulo: "Registro institucional del paper y resumen experimental"
+    tipo: "repositorio institucional"
+    fecha: "2017-03-01"
+nivel_evidencia: A
+datos_cuantitativos:
+  membrana_poro: "0.45 µm"
+  temperaturas_ensayo: ["5 °C", "15 °C", "30 °C"]
+  switch_inicio: "cover glass de 150 µm"
+  extension_escala_geometria_abanico: "+170% frente a canal recto"
+mecanismo_o_principio: "La capilaridad desplaza espontáneamente un líquido por una matriz porosa. La viscosidad/movilidad dependiente de temperatura modifica la velocidad del frente. La geometría de canal en abanico altera la cinética y puede linealizar distancia frente a tiempo, haciendo que una posición material observable codifique exposición acumulada."
+limitaciones:
+  - "No entrega una serie temporal ni permite reconstruir qué secuencia exacta de temperaturas produjo el estado final."
+  - "La lectura integra simultáneamente tiempo y temperatura; separar ambas variables exige supuestos o calibración adicional."
+  - "La química del fluido y la matriz fija el rango y escala temporal; no existe calibración universal."
+  - "Humedad, propiedades de la matriz y fabricación pueden alterar transporte capilar y deben controlarse para uso metrológico."
+contradicciones:
+  - "Es un registrador acumulativo, no un termómetro continuo ni un data logger; una distancia final equivalente puede corresponder a historias térmicas distintas."
+etiquetas_neutrales: ["passive-sensing", "time-temperature-integration", "capillary-flow", "physical-memory", "microfluidics", "no-power", "direct-state-readout"]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
