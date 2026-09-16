@@ -1,0 +1,43 @@
+id: f1-20260916-1901
+frente: front-1
+cycle_id: 2026-09-16T19
+tema_objeto: matriz de memristores fluídicos de hidrogel confinado
+afirmacion_principal: "HECHO: una interfaz gel-gel confinada en microporos permite integrar memristores iónicos químicamente sensibles en una matriz 10x10 y explotar su dinámica volátil como reservorio físico; INTERPRETACIÓN: la mejora material es hacer escalable una computación neuromórfica fluídica donde estado temporal y sensibilidad química emergen del transporte iónico; HIPÓTESIS: su utilidad fuera de laboratorio dependerá de resolver deshidratación, estabilidad y plasticidad de largo plazo."
+capacidad_nueva: procesamiento temporal neuromórfico y plasticidad modulada químicamente en una matriz fluídica integrada
+mecanismo_o_principio: enriquecimiento y depleción iónica dependientes del tiempo en una interfaz gel-gel confinada con asimetría espacial de carga
+dominio: computación neuromórfica iontrónica / reservorio físico
+fuentes:
+  - url: https://www.nature.com/articles/s41467-026-70728-1
+    titulo: Confined-hydrogel fluidic memristor crossbar array for neuromorphic computing
+    tipo: paper experimental revisado por pares
+    fecha: 2026-03-20
+nivel_evidencia: A
+datos_cuantitativos:
+  - matriz 10x10 con rendimiento funcional de 94%
+  - energia minima reportada 0.54 pJ por spike con pulsos de 5 mV
+  - retencion PPF 131 ms y PPD 88 ms
+  - respuesta temporal ensayada entre 1 y 100 Hz
+  - 500 ciclos SET/RESET ensayados
+  - estabilidad funcional de matriz evaluada hasta 17 h, con descenso gradual de corriente y una unidad desactivada
+  - MNIST 89.5% usando reservorio fisico y readout entrenado digitalmente
+condiciones_de_prueba: dispositivos de hidrogel sobre poliimida; caracterizacion electroquimica externa; para reconocimiento, estados conductivos del reservorio fisico y entrenamiento del readout mediante regresion logistica en MATLAB
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: sensibilidad ionica/quimica intrinseca; ATP y concentracion de electrolito modulan respuesta
+tipo_de_memoria_o_estado: memoria volatil por redistribucion ionica; plasticidad de corto plazo
+tipo_de_adaptacion: plasticidad dependiente de tasa, numero y ancho de pulsos; modulacion quimica
+tipo_de_actuacion: desconocido
+madurez_tecnica: demostracion experimental de laboratorio en matriz integrada; no validacion de sistema practico autonomo
+limitaciones:
+  - deshidratacion aumenta resistencia y degrada corriente
+  - estabilidad demostrada solo a escala temporal corta
+  - plasticidad de largo plazo sigue sin resolver
+  - el readout de MNIST fue entrenado digitalmente fuera del sustrato fisico
+  - instrumentacion electroquimica externa durante caracterizacion
+contradicciones:
+  - no es computacion completamente autonoma ni completamente fluida: usa sustrato polimerico, electrodos e instrumentacion externa
+  - el 89.5% de MNIST no corresponde a entrenamiento enteramente fisico; el readout fue regresion logistica en MATLAB
+  - la afirmacion de escalabilidad esta sustentada en 10x10, no en densidades comparables a hardware electronico convencional
+etiquetas_neutrales: [fluidic-memristor, hydrogel, iontronics, physical-reservoir, chemical-plasticity, short-term-memory, crossbar]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
