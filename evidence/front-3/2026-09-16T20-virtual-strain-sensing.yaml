@@ -1,0 +1,45 @@
+id: f3-20260916-2001
+frente: front-3
+cycle_id: 2026-09-16T20
+tema_objeto: sensado virtual de deformacion en puntos no instrumentados
+afirmacion_principal: "HECHO: deformacion y fatiga en zonas fisicamente no instrumentadas pueden inferirse desde un numero reducido de galgas accesibles mediante observadores basados en modelo; en un prototipo de bancada de prensa, LSSE y SSKF reprodujeron deformacion con RRMSE <15% y localizaron correctamente el inicio de grieta. HIPOTESIS: la transferencia a maquinaria legacy requiere que el modelo estructural y las condiciones de carga sigan representando adecuadamente al sistema real. INTERPRETACION: es un principio general de observabilidad espacial: sensores en puntos accesibles pueden actuar como proxies de estados mecanicos en puntos inaccesibles."
+funcion: inferir
+principio_de_mediacion: "Reconstruccion de deformacion no medida mediante relaciones modales/estructurales entre un conjunto reducido de mediciones accesibles y estados en puntos remotos; LSSE usa estimacion por minimos cuadrados y SSKF incorpora correccion estocastica."
+variable_fisica_entrada: "deformacion medida en galgas accesibles; opcionalmente fuerza aplicada segun algoritmo"
+señal_o_estado_salida: "deformacion virtual y tension Hot Spot en puntos no instrumentados; estimacion indirecta de daño e inicio de grieta"
+modalidad: mecanica/deformacion + estimacion basada en modelo
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "LSSE: RRMSE 6.8% (gauge 2-REF) y 13.3% (gauge 6-REF); SSKF: 7.0% y 13.4%."
+latencia: "no caracterizada como tiempo real; ensayo cuasi-estatico"
+condiciones_de_prueba: "Prototipo soldado de acero S-275 de 127 kg; carga sinusoidal 15-150 kN a 3 Hz; cuatro galgas de entrada accesibles; modelo FEM de 2.14 millones de elementos; ensayo hasta 1,150,000 ciclos."
+fuentes:
+  - url: "https://doi.org/10.3390/s24113354"
+    titulo: "Strain Virtual Sensing Applied to Industrial Presses for Fatigue Monitoring"
+    tipo: paper experimental revisado por pares
+    fecha: 2024-05-23
+  - url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11174725/"
+    titulo: "Strain Virtual Sensing Applied to Industrial Presses for Fatigue Monitoring"
+    tipo: repositorio institucional de texto completo
+    fecha: 2024-05-23
+nivel_evidencia: A
+datos_cuantitativos:
+  - "LSSE RRMSE: 6.8% y 13.3% en dos puntos de referencia."
+  - "SSKF RRMSE: 7.0% y 13.4%."
+  - "LSSE predijo inicio en B-1 a 300,305 ciclos; SSKF a 301,090."
+  - "El experimento situo el inicio de grieta en B-1 entre 300,000 y 400,000 ciclos; FEM habia estimado 370,000."
+  - "DSO produjo 258,000 ciclos y no pudo distinguir cual de los cuatro puntos criticos fallaria."
+mecanismo_o_principio: "observabilidad estructural/model-based virtual sensing: inferir estados mecanicos espacialmente remotos a partir de mediciones parciales y un modelo que relaciona grados de libertad."
+limitaciones:
+  - "Validado en estructura escalada y cargas estaticas/cuasi-estaticas; no demuestra igual precision bajo dinamica compleja."
+  - "Requiere caracterizacion/modelo estructural y sensores fisicos en puntos accesibles."
+  - "Cambios estructurales, condiciones de contorno o cargas fuera del modelo pueden degradar la inferencia."
+  - "La prediccion de grieta es inferencia indirecta derivada de deformacion/tension virtual, no deteccion directa de la grieta."
+contradicciones:
+  - "No todos los observadores rindieron igual: DSO supero 20% RRMSE en un caso y no localizo el punto de inicio de grieta."
+  - "'Sensor virtual' no elimina sensores: reduce o relocaliza instrumentacion fisica."
+etiquetas_neutrales: [virtual-sensing, strain, observability, structural-health, fatigue, legacy-machinery, model-based-estimation]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
