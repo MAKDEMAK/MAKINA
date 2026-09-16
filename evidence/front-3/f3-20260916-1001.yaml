@@ -1,0 +1,45 @@
+id: f3-20260916-1001
+frente: front-3
+cycle_id: 2026-09-16T10
+tema_objeto: transduccion_pasiva_resistencia_a_RF
+afirmacion_principal:
+  HECHO: "Un prototipo pasivo con diodo Schottky convirtió variaciones de carga resistiva DC en cambios de impedancia RF observables en la señal reflejada, sin batería local."
+  HIPOTESIS: "Su desempeño con transductores resistivos físicos y distancias prácticas requiere validación."
+  INTERPRETACION: "El principio desplaza alimentación e instrumentación al lector RF y hace observable remotamente una variación resistiva sin ADC ni microcontrolador local."
+funcion: observar
+principio_de_mediacion: "conversión DC-RF de impedancia mediante no linealidad Schottky y lectura por backscatter"
+variable_fisica_entrada: "resistencia eléctrica DC de carga"
+señal_o_estado_salida: "variación de magnitud S11 / señal RF reflejada"
+modalidad: RF_backscatter_pasivo
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: no
+resolucion_o_precision: "No se reporta resolución de una magnitud física final; diferencia máxima-mínima S11 = 0.223 a 1.003 GHz."
+latencia: no_reportada
+condiciones_de_prueba: "VNA en modo pulso, excitación -25 dBm, barrido 800 MHz–1.5 GHz."
+fuentes:
+  - url: "https://doi.org/10.1109/WPTCE62521.2025.11062150"
+    titulo: "Zero-Power Backscattering Through DC-RF Impedance Conversion for Wireless IoT Sensing"
+    tipo: paper_original_IEEE_WPTCE
+    fecha: "2025-07-07"
+  - url: "https://research-information.bris.ac.uk/en/publications/zero-power-backscattering-through-dc-rf-impedance-conversion-for-/"
+    titulo: "Zero-Power Backscattering Through DC-RF Impedance Conversion for Wireless IoT Sensing"
+    tipo: repositorio_institucional_manuscrito_aceptado
+    fecha: "2025-07-07"
+nivel_evidencia: A
+datos_cuantitativos:
+  banda: "800 MHz–1.5 GHz"
+  excitacion: "-25 dBm"
+  diferencia_S11_max_min: "0.223 a 1.003 GHz"
+mecanismo_o_principio: "La carga resistiva modifica la impedancia RF del circuito; el lector detecta la modificación en la reflexión de la portadora."
+limitaciones:
+  - "Demostración preliminar de circuito, no cadena completa con variable física final."
+  - "Requiere interrogador RF externo; el experimento utilizó VNA."
+  - "No reporta distancia de lectura, resolución resistiva, estabilidad térmica ni desempeño multi-tag."
+contradicciones:
+  - "Sin batería local no significa sistema sin energía: existe interrogación RF externa."
+  - "Cambio de S11 no equivale a precisión metrológica demostrada sobre una magnitud física final."
+etiquetas_neutrales: [backscatter, RF, transduccion_pasiva, impedancia, sensor_resistivo, sin_bateria, mediacion_analogica]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
