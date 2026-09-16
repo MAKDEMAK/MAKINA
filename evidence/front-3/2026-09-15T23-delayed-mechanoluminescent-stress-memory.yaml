@@ -1,0 +1,37 @@
+id: f3-20260915T23-delayed-stress-memory
+frente: front-3
+cycle_id: 2026-09-15T23
+tema_objeto: memoria material diferida de esfuerzo
+funcion: registrar
+afirmacion_principal:
+  hecho: "Una película flexible de CaAl2O4:Eu2+,Sm3+ puede registrar distribución de esfuerzo y permitir lectura óptica posterior mediante láser NIR, sin monitorización en tiempo real durante la carga."
+  interpretacion: "La población de trampas electrónicas funciona como estado físico persistente entre el evento mecánico y la interrogación óptica."
+principio_de_mediacion: "El esfuerzo modifica la ocupación de trampas electrónicas del fósforo mecanoluminiscente; una excitación NIR posterior libera portadores y reconstruye ópticamente la información espacial almacenada."
+variable_fisica_entrada: esfuerzo mecánico / distribución de carga
+señal_o_estado_salida: emisión óptica NIR diferida que codifica distribución de esfuerzo
+modalidad: mecanoluminiscencia + lectura óptica NIR
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: "No se reporta una precisión metrológica única en el resumen; se demuestra recuperación espacial de distribución de esfuerzo en rodamientos y engranajes."
+latencia: "diferida; lectura posible después de aplicada la fuerza"
+condiciones_de_prueba: "Película flexible con CaAl2O4:Eu2+,Sm3+; demostraciones sobre estructuras mecánicas cerradas, incluyendo rodamientos y engranajes; lectura posterior con láser NIR."
+fuentes:
+  - url: https://doi.org/10.1007/s40145-022-0614-2
+    titulo: "Delayed stress memory by CaAl2O4:Eu2+ mechanoluminescent phosphor with defect engineering regulation"
+    tipo: paper experimental
+    fecha: 2022-07-11
+nivel_evidencia: A
+datos_cuantitativos:
+  profundidad_trampas: "0.662–1.042 eV"
+mecanismo_o_principio: "Ingeniería de defectos ajusta la profundidad de trampas para retener portadores; el estado atrapado conserva información del esfuerzo hasta su lectura ópticamente estimulada."
+limitaciones:
+  - requiere incorporar la película en contacto mecánico con la zona observada
+  - la lectura requiere excitación óptica NIR y acceso óptico posterior
+  - el artículo no establece universalidad de calibración entre geometrías/materiales
+contradicciones:
+  - "No es sensado remoto durante el evento: deliberadamente intercambia observación en tiempo real por memoria física diferida."
+etiquetas_neutrales: [stress-memory, mechanoluminescence, material-state, delayed-readout, passive-recording]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
