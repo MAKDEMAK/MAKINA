@@ -1,0 +1,37 @@
+id: f3-20260916-03-adhesive-tape-latching-memory
+frente: front-3
+cycle_id: 2026-09-16T03
+tema_objeto: memoria mecánica pasiva de amplitudes de perturbación por pelado
+HECHO:
+  afirmacion_principal: Una cinta adhesiva sensible a presión puede registrar físicamente amplitudes sucesivas de pelado como líneas localizadas de adhesión reforzada y recuperarlas posteriormente mediante picos de fuerza de pelado, sin electrónica durante escritura ni almacenamiento.
+  funcion: registrar
+  principio_de_mediacion: El frente de pelado genera compresión local que refuerza la adhesión en el punto de inversión; ese estado queda enclavado y una lectura posterior por pelado produce un pico de fuerza en la posición almacenada.
+  variable_fisica_entrada: distancia/amplitud máxima de pelado en cada ciclo
+  señal_o_estado_salida: línea espacial de adhesión reforzada; durante lectura, pico de fuerza de pelado
+  modalidad: mecánica/adhesión
+  invasividad: minima
+  requiere_contacto: si
+  requiere_electronica: no
+  requiere_computacion_digital: no
+  resolucion_o_precision: separación mínima entre memorias del orden de 1 mm, comparable al ancho de la línea de adhesión
+  latencia: escritura durante el ciclo de pelado; lectura durante barrido mecánico; ensayo a 5 mm/s
+  condiciones_de_prueba: cinta de 1.3 cm; pelado y reposición mediante etapa motorizada; ejemplos codificados a 20, 22.5 y 25 mm; sustrato de respaldo de cinta y acrílico ensayados
+  datos_cuantitativos: Los picos asociados a memorias aproximadamente duplicaron la fuerza de pelado respecto del baseline en el protocolo base; una pausa de envejecimiento de 100 s reforzó y prolongó la memoria; baseline aproximado ~1 N sobre respaldo de cinta y ~2 N sobre acrílico; separación espacial distinguible ~1 mm.
+  mecanismo_o_principio: latching mecánico bajo excitación rectificada mediante adhesión sensible a presión
+  nivel_evidencia: A
+HIPOTESIS: El latching constituye un principio general de memoria para excitaciones rectificadas con realizaciones físicas distintas.
+INTERPRETACION: El resultado demuestra registro material directo de historia mecánica y lectura mecánica; no equivale a una medición continua ni a un sensor calibrado de fuerza.
+limitaciones: La lectura por pelado puede borrar memorias; múltiples memorias requieren amplitudes codificadas en orden decreciente; fuerza de lectura depende de tasa, ángulo, envejecimiento y afinidad del sustrato; la persistencia reforzada no está completamente explicada.
+contradicciones: No se observó daño persistente evidente en backing/adhesivo bajo inspección, aunque los autores señalan deformación plástica o cambios del adhesivo como posibles mecanismos para memorias persistentes reforzadas.
+etiquetas_neutrales: [memoria_mecanica, sensado_pasivo, registro_material, adhesion, latching, historial_mecanico]
+fuentes:
+  - url: https://doi.org/10.1088/1367-2630/ae4acc
+    titulo: The mechanical latching memory of an adhesive tape
+    tipo: paper experimental peer-reviewed
+    fecha: 2026-03-09
+  - url: https://arxiv.org/abs/2511.08804
+    titulo: The mechanical latching memory of an adhesive tape
+    tipo: preprint del autor
+    fecha: 2025-11-11
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
