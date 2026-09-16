@@ -1,0 +1,32 @@
+id: f1-20260916-1101
+frente: front-1
+cycle_id: 2026-09-16T11
+tema_objeto: metamaterial mecanico reprogramable para conversion analogico-digital
+afirmacion_principal: >-
+  HECHO: un metamaterial multestable convierte una entrada mecanica continua en secuencias discretas de deformacion mediante eventos snap-through programables; los experimentos demuestran conversion analogico-digital mecanica, procesamiento de senal y operaciones logicas tipo FPGA reprogramables in situ. HIPOTESIS: la arquitectura podria generalizarse a otras entradas fisicas si pueden acoplarse mecanicamente a la coordenada de carga. INTERPRETACION: la novedad material es desplazar parte de cuantizacion, codificacion y logica desde electronica hacia la propia estructura.
+capacidad_nueva: cuantizar/codificar una magnitud mecanica continua y ejecutar logica reprogramable mediante deformacion secuencial del material
+mecanismo_o_principio: arquitectura multestable con secuencia de snap-through ajustada por distribucion de rigidez; activacion/desactivacion selectiva de unidades reprograma la secuencia sin refabricar
+dominio: computacion mecanica / metamateriales / conversion analogico-digital
+fuentes:
+  - url: https://doi.org/10.1002/adma.74376
+    titulo: Mechanical Metamaterials with Reprogrammable Sequential Deformation for Analog-to-Digital Encoding and Computing
+    tipo: paper experimental, Advanced Materials
+    fecha: 2026-08-05
+nivel_evidencia: A
+datos_cuantitativos: >-
+  La fuente primaria accesible confirma demostracion experimental y un espacio amplio de secuencias programables, pero el resumen no publica ENOB, error de cuantizacion, energia por operacion, ciclos de endurance ni velocidad; no se inventan esos valores.
+condiciones_de_prueba: compresion uniaxial de metamaterial multestable; secuencias configuradas mediante distribucion de rigidez y reprogramacion por activacion/desactivacion de unidades
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: entrada mecanica continua por compresion
+tipo_de_memoria_o_estado: estados discretos multestables y configuracion estructural de unidades activas/inactivas
+tipo_de_adaptacion: reprogramacion estructural in situ; no aprendizaje autonomo demostrado
+tipo_de_actuacion: snap-through y deformacion secuencial
+madurez_tecnica: demostracion experimental de laboratorio
+limitaciones: >-
+  Demostrado bajo compresion uniaxial; faltan en la fuente accesible precision metrologica comparable con ADC electronicos, velocidad, energia, endurance, tolerancias de fabricacion y escalabilidad. La reprogramacion no equivale a autoaprendizaje.
+contradicciones: >-
+  La afirmacion FPGA-like describe funciones logicas reprogramables, no equivalencia de densidad, velocidad o universalidad con un FPGA electronico. El trabajo requiere diseno inverso previo para fijar las secuencias.
+etiquetas_neutrales: [mechanical-computing, metamaterial, multistability, snap-through, analog-to-digital, reprogrammable-logic, physical-computation]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
