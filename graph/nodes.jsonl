@@ -26,3 +26,7 @@
 {"id":"f1-20260916-02-magnetic-self-learning","front":"front-1","kind":"evidence","label":"intrinsic magnetic Oja-rule self-learning","cycle_id":"2026-09-16T02"}
 {"id":"f3-20260916-02-hygromechanical-indicator","front":"front-3","kind":"evidence","label":"passive persistent hygromechanical exposure memory","cycle_id":"2026-09-16T02"}
 {"id":"f3-20260916-02-motor-stray-flux-state","front":"front-3","kind":"evidence","label":"non-contact motor state inference from stray magnetic flux","cycle_id":"2026-09-16T02"}
+{"id":"f1-20260916t03-learning-shape-metamaterial","front":"front-1","kind":"evidence","label":"contrastively trained shape-learning mechanical metamaterial","cycle_id":"2026-09-16T03"}
+{"id":"f1-20260916t03-zro2-aftj","front":"front-1","kind":"evidence","label":"self-relaxing ZrO2 antiferroelectric physical reservoir","cycle_id":"2026-09-16T03"}
+{"id":"f2-2026-09-16T03-parametron","front":"front-2","kind":"evidence","label":"Parametron phase-state logic and memory","cycle_id":"2026-09-16T03"}
+{"id":"f3-20260916-03-adhesive-tape-latching-memory","front":"front-3","kind":"evidence","label":"passive adhesive mechanical latching memory","cycle_id":"2026-09-16T03"}
