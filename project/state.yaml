@@ -6,7 +6,7 @@ core:
 active_modules:
   - id: physical-state-interface
     maturity: M3
-    confidence: 0.93
+    confidence: 0.94
     evidence_ids:
       - f1-20260915-2101
       - f1-20260915-2103
@@ -20,8 +20,9 @@ active_modules:
       - f3-20260916T04-passive-tti
       - f3-20260916T07-passive-impact-threshold-memory
       - f3-20260916-0901
-    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse resolucion, destructividad de lectura y ambiguedad entre trayectorias de entrada que producen el mismo estado final."
-    next_action: "Sustituir en CumulativeHistoryMemory la ley de tasa ilustrativa por una curva experimental publicada o medida y contrastar historias distintas que producen el mismo estado; para PeakThresholdMemory sustituir al menos un umbral ideal por curva experimental y medir falsos cambios, margen, persistencia, orientacion y reset."
+      - f1-20260916-1001
+    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse resolucion, destructividad de lectura y ambiguedad entre trayectorias; para escritura remota debe medirse selectividad espacial, tasa de error y energia de escritura desde la frontera."
+    next_action: "Mantener M3. Sustituir en CumulativeHistoryMemory la ley de tasa ilustrativa por una curva experimental publicada o medida; para PeakThresholdMemory sustituir un umbral ideal por curva experimental. La nueva escritura mecanica desde frontera no se simula aun: faltan tasa de error, energia y funcion de transferencia suficientes para un modelo calibrado."
 
   - id: embodied-dynamics-computation
     maturity: M1
@@ -40,15 +41,15 @@ active_modules:
       - f1-20260916T04-ti3c2tx-homogeneous-rc
       - f1-20260916-0901
     success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria, aprendizaje, reset/relajacion y coste de perifericos en la comparacion."
-    next_action: "No promover aun. El WS2/ZTO agrega evidencia de sensado optico co-localizado con dinamica de reservorio, pero conserva readout entrenado y preprocesamiento externo. Especificar un benchmark temporal minimo comun antes de M2."
+    next_action: "No promover aun. Especificar un benchmark temporal minimo comun antes de M2."
 
 waiting_modules:
   - id: temporal-in-sensor-processing
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901]
-    reason: "El WS2/ZTO refuerza sensado+procesamiento temporal co-localizado, pero no elimina readout/preprocesamiento externo ni demuestra integracion con las otras modalidades; permanece en espera hasta existir benchmark comun."
+    reason: "Sensado+procesamiento temporal co-localizado sigue requiriendo benchmark comun y perifericos externos en varias implementaciones."
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration]
-    reason: "Sigue faltando una variable objetivo comun con presupuesto de incertidumbre y coste total de adquisicion."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001]
+    reason: "La conversion resistencia->RF agrega una ruta de lectura pasiva sin ADC local, pero aun no demuestra distancia, resolucion resistiva ni precision sobre una variable fisica final; sigue faltando una variable objetivo comun con presupuesto de incertidumbre y coste total de adquisicion."
 
 archived_modules:
   - id: air-cushion-transport
@@ -61,8 +62,8 @@ archived_modules:
     evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph]
     reason: "Camino historico valido de barrido y sincronizacion, pero no aporta traduccion funcional suficiente al nucleo actual."
   - id: differential-computing-precedents
-    evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda]
-    reason: "La continuidad integrador mecanico -> DDA digital es tecnicamente fuerte como precedente, pero no demuestra que el nucleo actual deba adoptar integracion diferencial especializada."
+    evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001]
+    reason: "Lukyanov refuerza que ecuaciones diferenciales se mapearon operacionalmente a dinamica fisica durante decadas; junto con Nordsieck/MADDIDA forma un precedente fuerte de computacion especializada, pero no demuestra que el nucleo actual deba adoptar integracion diferencial fisica."
   - id: magnetic-mobile-state-precedent
     evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory]
     reason: "Precedente de estado magnetico fisico y sustitucion tecnologica; evidencia posterior deduplicada."
@@ -80,16 +81,16 @@ archived_modules:
     reason: "Prototipo historico valido de integracion mecanica-electromecanica, sin traduccion funcional medible al nucleo fisico actual."
   - id: cartridge-decoupled-precision-transport
     evidence_ids: [f2-2026-09-16T07-elcaset]
-    reason: "Elcaset demuestra separar almacenamiento/proteccion del medio y guiado de precision en la maquina, pero no converge de forma medible con los modulos activos; se conserva como precedente historico."
+    reason: "Elcaset demuestra separar almacenamiento/proteccion del medio y guiado de precision en la maquina, pero no converge de forma medible con los modulos activos."
   - id: subharmonic-synthesis-precedent
     evidence_ids: [f2-20260916-0801]
-    reason: "Subharchord demuestra una arquitectura real de generacion por divisiones subarmonicas discretas y conformacion analogica, pero no aporta una traduccion funcional medible al nucleo actual; se conserva como precedente historico."
+    reason: "Subharchord demuestra generacion por divisiones subarmonicas discretas y conformacion analogica, sin traduccion funcional medible al nucleo actual."
   - id: dynamic-track-following-precedent
     evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901]
-    reason: "Video 2000/DTF ya estaba representado desde T21. T09 aporta mejor causalidad historica pero es el mismo artefacto; se deduplica y conserva como precedente de feedback medio-transductor, sin promover modulo."
+    reason: "Video 2000/DTF queda deduplicado como precedente de feedback medio-transductor, sin promover modulo."
 
-current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation -> persistent or fading physical state -> optional physical dynamics/logic/learning -> observable output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity, environmental sensitivity and peripheral cost explicitly"
-last_synthesized_cycle: 2026-09-16T09
+current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or remotely addressed transition -> persistent or fading physical state -> optional physical dynamics/logic/learning -> local or remotely interrogated observable output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity, write selectivity, environmental sensitivity and peripheral cost explicitly"
+last_synthesized_cycle: 2026-09-16T10
 
 rules:
   max_active_modules: 3
