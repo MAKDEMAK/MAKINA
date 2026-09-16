@@ -1,0 +1,43 @@
+id: f3-20260916-1501
+frente: front-3
+cycle_id: 2026-09-16T15
+tema_objeto: observabilidad no invasiva de motores de induccion mediante flujo magnetico disperso
+afirmacion_principal: "HECHO DOCUMENTADO: el flujo magnetico disperso que atraviesa externamente la carcasa de un motor de induccion contiene componentes vinculadas a corrientes de estator/rotor y puede usarse como proxy para observar carga y respuesta transitoria sin acceder a terminales electricos ni al eje. En ensayos con sensores GMR adheridos externamente, la amplitud del flujo aumento de forma monotona con carga y los espectrogramas permitieron seguir variaciones dinamicas. INTERPRETACION: es una capa de observabilidad indirecta: no mide torque directamente; infiere estado mecanico/electromagnetico desde un campo de fuga accesible fuera de la maquina."
+funcion: inferir
+principio_de_mediacion: "captura externa de flujo magnetico disperso con magnetorresistencia gigante (GMR), seguida de analisis temporal/espectral"
+variable_fisica_entrada: "campo magnetico disperso generado por corrientes y flujo interno del motor"
+señal_o_estado_salida: "tension GMR y rasgos tiempo-frecuencia correlacionados con carga/estado transitorio"
+modalidad: magnetica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: "el estudio 2017 demuestra correlacion y seguimiento de carga, no publica una precision metrologica unica de torque; en dos motores de 1.5 kW el pico GMR paso respectivamente de 68.1 a 198 mV y de 87.1 a 200 mV entre los extremos de carga ensayados"
+latencia: "respuesta transitoria observable en espectrograma; no se especifica una latencia unica de extremo a extremo"
+condiciones_de_prueba: "dos bancos; dos motores de induccion identicos de 1.5 kW para repetibilidad mas banco de rodamientos; carga 0-5 N·m; sensor NVE AA002 pegado en el centro del yugo/carcasa; salida registrada con osciloscopio y PC"
+fuentes:
+  - url: "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-pel.2016.0304"
+    titulo: "Non-invasive load monitoring of induction motor drives using magnetic flux sensors"
+    tipo: "paper experimental"
+    fecha: "2017-02-01"
+  - url: "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/elp2.12157"
+    titulo: "Airgap and stray magnetic flux monitoring techniques for fault diagnosis of electrical machines: An overview"
+    tipo: "revision"
+    fecha: "2021-11-13"
+nivel_evidencia: A
+datos_cuantitativos:
+  motores_principales: "2 x 1.5 kW"
+  rango_carga: "0-5 N·m"
+  pico_GMR_motor_1: "68.1-198 mV"
+  pico_GMR_motor_2: "87.1-200 mV"
+mecanismo_o_principio: "El flujo de fuga es una version atenuada del flujo de entrehierro y depende de las corrientes de estator y rotor. La posicion del sensor cambia la mezcla de componentes observada. Un GMR convierte el campo local en tension y conserva respuesta a campos estaticos que una bobina de busqueda no puede medir; el espectro y su evolucion temporal exponen proxies de carga y estado."
+limitaciones:
+  - "la colocacion y orientacion del sensor son criticas; el trabajo usa FEA para seleccionar ambas"
+  - "la inferencia depende de geometria de maquina, carcasa, regimen y entorno magnetico; no es una lectura universal de torque"
+  - "el sensor se pega a la carcasa: no altera el circuito electrico ni el eje, pero requiere contacto superficial"
+  - "procesamiento espectral digital mejora la inferencia aunque la transduccion campo-a-tension no lo requiere"
+contradicciones:
+  - "la literatura de revision confirma utilidad diagnostica del flujo disperso, pero tambien muestra que el contenido observable depende fuertemente de direccion/posicion y tipo de falla; no debe equipararse flujo externo con una medicion directa de variable interna"
+etiquetas_neutrales: [stray-flux, GMR, motor-induccion, proxy-fisico, condition-monitoring, sensado-no-intrusivo, campo-magnetico]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
