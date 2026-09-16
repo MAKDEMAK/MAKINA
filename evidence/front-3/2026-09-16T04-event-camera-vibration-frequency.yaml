@@ -1,0 +1,44 @@
+id: f3-20260916T04-event-vibration
+frente: front-3
+cycle_id: 2026-09-16T04
+tema_objeto: medicion visual no-contacto de frecuencia de vibracion con camara de eventos
+afirmacion_principal:
+  HECHO: Una camara de eventos puede convertir cambios locales de intensidad causados por vibracion en una serie temporal asincrona desde la que se mide frecuencia sin contacto; en vibracion forzada se midieron 10-190 Hz con error relativo medio de 0.673% mediante conteo de eventos.
+  INTERPRETACION: El principio es reutilizable como mediacion no intrusiva cuando el movimiento produce contraste optico suficiente; no equivale a medir directamente fuerza, dano o estado interno.
+  HIPOTESIS: desconocida fuera de geometria, iluminacion y amplitudes comparables a las pruebas publicadas.
+funcion: medir
+principio_de_mediacion: cambios logaritmicos de intensidad por movimiento -> eventos asincronos -> periodicidad/frecuencia
+variable_fisica_entrada: desplazamiento/vibracion visible de una superficie
+señal_o_estado_salida: frecuencia de vibracion estimada desde flujo de eventos
+modalidad: vision neuromorfica/event-based
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "event-count: error maximo 1%, medio 0.673% en 10-190 Hz; marker-tracking: maximo 1.43%, medio 0.575% para amplitud grande"
+latencia: microsegundos a nivel de sensor; latencia completa del estimador no reportada de forma suficiente
+condiciones_de_prueba: vibracion forzada experimental; amplitud visual critica para marker tracking; por debajo de 3 pixeles el error de frecuencia supera 30%
+fuentes:
+  - url: https://doi.org/10.1088/1361-6501/ad42bf
+    titulo: Structural vibration frequency monitoring based on event camera
+    tipo: paper experimental / Measurement Science and Technology
+    fecha: 2024-05-13
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_frecuencia_Hz: [10, 190]
+  event_count_error_medio_pct: 0.673
+  event_count_error_max_pct: 1.0
+  marker_tracking_error_medio_pct: 0.575
+  marker_tracking_error_max_pct: 1.43
+  umbral_amplitud_problematico_px: 3
+  error_bajo_umbral_pct: ">30"
+mecanismo_o_principio: El sensor emite eventos cuando cambia suficientemente el logaritmo de intensidad en un pixel; la vibracion modula espacial y temporalmente esos eventos. Conteo de eventos o seguimiento de marcador recupera periodicidad sin adquirir frames completos.
+limitaciones:
+  - sensibilidad a contraste, iluminacion, sesgos del sensor y amplitud aparente
+  - marker tracking se vuelve no fiable con amplitudes menores de 3 px en el experimento
+  - trabajo posterior de 2026 muestra que la respuesta espectral de camaras de eventos puede ser dependiente de frecuencia, atenuar coeficientes e introducir armonicos no fisicos; amplitud espectral no debe asumirse metrologicamente fiel sin calibracion
+contradicciones:
+  - alta precision de frecuencia no implica precision equivalente de amplitud; literatura posterior identifica distorsion espectral dependiente de frecuencia
+etiquetas_neutrales: [event-camera, vibration, non-contact, frequency, optical-proxy, condition-monitoring]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
