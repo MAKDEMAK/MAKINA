@@ -1,0 +1,54 @@
+id: f2-2026-09-16T04-magnetic-amplifier-computing
+frente: front-2
+cycle_id: 2026-09-16T04
+tema_objeto: lógica digital mediante saturación magnética
+nombre_proyecto_o_artefacto: Magnetic-amplifier / Ferractor computing (MAGSTEC, AFCRC/UNIVAC Solid State)
+periodo_historico: 1950s-1960s; reutilización parcial en electrónica de potencia en 1990s
+pais_contexto: Estados Unidos; desarrollos paralelos en Reino Unido y Europa
+disciplina: computación digital; electrónica magnética; control de potencia
+afirmacion_principal: >-
+  HECHO DOCUMENTADO: los amplificadores magnéticos de núcleo saturable llegaron a implementar lógica digital real y computadores operativos, no sólo investigación. Sperry Rand construyó Ferractors de varios MHz, un computador militar con ~1500 Ferractors y 9000 diodos, y después máquinas comerciales UNIVAC Solid State; una comparación directa MAGSTEC vs TRANSTEC mostró que la vía magnética podía competir, pero la trayectoria transistor ganó por su mejora y escalabilidad. La tecnología no desapareció completamente: sobrevivió en funciones de potencia y tuvo una reutilización en fuentes ATX, por lo que el caso es sustitución funcional, no extinción del principio.
+problema_original: >-
+  Obtener amplificación, conmutación y lógica robustas con menor mantenimiento que válvulas y, durante una ventana histórica, evitar transistores todavía caros o poco fiables.
+principio_tecnico: >-
+  Un pequeño flujo/corriente de control lleva un núcleo ferromagnético hacia saturación y modifica fuertemente su impedancia AC, permitiendo que una señal pequeña controle una mayor. Operado no linealmente, el núcleo puede implementar conmutación y suma/umbral de múltiples entradas.
+estado_historico: sustitucion con absorcion parcial
+resultado_real_alcanzado: >-
+  El Ferractor de Sperry Rand operaba a varios MHz. El AFCRC/UNIVAC Magnetic Computer empleó ~1500 Ferractors y ~9000 diodos; derivó en la línea comercial UNIVAC Solid State, de la que se vendieron cientos según IEEE Spectrum. Cinco computadores Bogart con circuitos de amplificador magnético diseñados por Seymour Cray fueron entregados a NSA entre 1957 y 1959. MAGSTEC fue construido para comparación tecnológica directa con TRANSTEC.
+causa_documentada: >-
+  La rápida mejora de prestaciones, fiabilidad, coste y potencial de integración de los transistores durante los años 1950-60 desplazó a los amplificadores magnéticos de la lógica computacional; aun cuando MAGSTEC rindió ligeramente mejor en una comparación, Sperry Rand eligió transistores para Athena porque la trayectoria futura era claramente semiconductor.
+causas_alternativas:
+  - Los amplificadores magnéticos seguían siendo voluminosos y, para lógica rápida, su velocidad resultaba limitante frente a semiconductores en evolución.
+  - La inversión industrial y amplitud de aplicaciones de los semiconductores reforzaron su curva de mejora.
+camino_que_lo_desplazo_si_existe: lógica transistor y posteriormente circuitos integrados; en regulación de potencia moderna, convertidores DC-DC
+fuentes:
+  - url: https://spectrum.ieee.org/the-vacuum-tubes-forgotten-rival
+    titulo: The Vacuum Tube’s Forgotten Rival
+    tipo: historia técnica IEEE Spectrum basada en documentación histórica
+    fecha: 2022-03-24
+  - url: https://en.wikipedia.org/wiki/MAGSTEC
+    titulo: MAGSTEC
+    tipo: referencia secundaria que remite a historia IEEE Computer Society
+    fecha: desconocida
+nivel_evidencia: B
+datos_cuantitativos:
+  - Ferractor Sperry Rand: operación de varios MHz
+  - AFCRC/UNIVAC Magnetic Computer: ~1500 Ferractors, ~9000 diodos y algunos transistores/válvulas
+  - UNIVAC Solid State: cientos de unidades vendidas según la reconstrucción histórica de IEEE Spectrum
+  - Bogart: 5 computadores entregados a NSA entre 1957 y 1959
+  - conferencia de amplificadores magnéticos de 1957: más de 400 ingenieros asistentes
+limitaciones:
+  - El núcleo saturable no ofrecía la trayectoria de miniaturización/integración de los semiconductores.
+  - La velocidad era insuficiente para algunas funciones: por ejemplo, no se usaron como lógica del UNIVAC LARC, aunque sí para accionar su memoria de núcleos.
+contradicciones:
+  - No fue una tecnología simplemente inferior: en la comparación MAGSTEC/TRANSTEC, MAGSTEC rindió ligeramente mejor, pero se eligió transistor por expectativa de trayectoria futura.
+  - Tampoco desapareció: continuó en control/potencia y reapareció en regulación de 3.3 V de muchas fuentes ATX en los 1990s antes de ser desplazada allí por DC-DC.
+incertidumbres:
+  - La fuente histórica principal consultada es retrospectiva; no se recuperó en esta ronda el informe técnico primario completo de MAGSTEC.
+etiquetas_neutrales: [amplificador_magnetico, ferractor, nucleo_saturable, logica_magnetica, computacion, sustitucion, transistor]
+separacion_epistemica:
+  hecho_documentado: Hubo computadores militares y comerciales que usaron amplificadores magnéticos/Ferractors para funciones lógicas; la tecnología fue comparada directamente con transistores y luego desplazada de la lógica principal.
+  testimonio: La reconstrucción IEEE reporta que MAGSTEC superó ligeramente a TRANSTEC en la comparación interna, pero la organización consideró al transistor la trayectoria futura.
+  interpretacion: El camino abandonado no es el magnetismo como tecnología, sino usar saturación magnética como elemento lógico general de computador; el principio sobrevivió donde robustez/control de potencia compensaban sus desventajas.
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
