@@ -7,3 +7,11 @@
 {"id":"f3-20260915-21-passive-crack","front":"front-3","kind":"evidence","label":"passive resonant crack transduction","cycle_id":"2026-09-15T21"}
 {"id":"f3-20260915-21-event-vision","front":"front-3","kind":"evidence","label":"event-vision vibration transduction","cycle_id":"2026-09-15T21"}
 {"id":"f3-20260915-21-passive-rf-temp","front":"front-3","kind":"evidence","label":"passive RF temperature transduction","cycle_id":"2026-09-15T21"}
+{"id":"f1-20260915-22-wave-metamaterial-robot","front":"front-1","kind":"evidence","label":"wave metamaterial embodied computation","cycle_id":"2026-09-15T22"}
+{"id":"f1-20260915-22-light-programmable-mechanical-logic","front":"front-1","kind":"evidence","label":"light-programmable mechanical relay logic","cycle_id":"2026-09-15T22"}
+{"id":"f2-20260915T22-cybersyn","front":"front-2","kind":"evidence","label":"Cybersyn distributed cybernetic management","cycle_id":"2026-09-15T22"}
+{"id":"f2-20260915T22-magnetic-bubble-memory","front":"front-2","kind":"evidence","label":"magnetic bubble nonvolatile memory","cycle_id":"2026-09-15T22"}
+{"id":"f2-20260915T22-minitel","front":"front-2","kind":"evidence","label":"Minitel lightweight network terminals","cycle_id":"2026-09-15T22"}
+{"id":"f3-20260915-22-wiegand-counter","front":"front-3","kind":"evidence","label":"self-powered Wiegand event counter","cycle_id":"2026-09-15T22"}
+{"id":"f3-20260915-22-stray-flux","front":"front-3","kind":"evidence","label":"non-invasive motor stray-flux inference","cycle_id":"2026-09-15T22"}
+{"id":"f3-20260915-22-laser-speckle","front":"front-3","kind":"evidence","label":"remote laser-speckle vibration measurement","cycle_id":"2026-09-15T22"}
