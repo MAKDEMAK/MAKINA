@@ -1,0 +1,85 @@
+id: f2-20260916-1801
+frente: front-2
+cycle_id: 2026-09-16T18
+tema_objeto: robotica_humanoide_cibernetica_domestica
+afirmacion_principal: >-
+  La serie vienesa Maschinenmenschen de Claus Christian Scholz-Nauendorff materializo entre finales de los 1950 y los 1970 una via de robot domestico humanoide basada en actuacion electrohidraulica/electromecanica, teleoperacion y realimentacion; existieron varios aparatos, pero la linea no escalo a producto autonomo y sus tareas domesticas permanecieron limitadas.
+nombre_proyecto_o_artefacto: "Maschinenmenschen MM6 / MM7 Selektor / MM8 Contina"
+periodo_historico: "1957-1973 aprox."
+pais_contexto: Austria
+disciplina: robotica_cibernetica_electromecanica
+problema_original: >-
+  Construir maquinas humanoides de servicio capaces de manipular objetos y realizar tareas domesticas, avanzando desde control remoto hacia reconocimiento/reaccion y conducta autonoma.
+principio_tecnico: >-
+  Cuerpo antropomorfo con articulaciones accionadas; MM6 exploro miembros electrohidraulicos, mientras MM7/MM8 combinaron motores/controles remotos y mecanismos de realimentacion. La arquitectura perseguia trasladar acciones humanas a una maquina de proposito domestico general.
+estado_historico: prototipo_no_escalado
+a_resultado_real_alcanzado: null
+resultado_real_alcanzado: >-
+  MM6, MM7 y MM8 fueron construidos y se conservan ejemplares. Documentacion audiovisual contemporanea de 1964 muestra robots realizando acciones como abrir/cerrar puerta, tomar un sombrero, caminar/rodar, manipular botella y vaso y verter una bebida bajo control instrumental. El catalogo del Technisches Museum Wien advierte que para MM6 no se conoce documento audiovisual que pruebe movimiento efectivo y que estaba montado sobre un bastidor.
+causa_documentada: >-
+  Para MM6, el relato curatorial del Technisches Museum Wien documenta que problemas mecanicos llevaron a Scholz-Nauendorff a detener su desarrollo y construir un modelo sucesor. Para la linea completa, fuentes museales/historicas describen que las funciones domesticas se cumplian insuficientemente y que la investigacion no obtuvo exito duradero; no se localizo evidencia primaria suficiente para atribuir su terminacion a una unica causa economica o institucional.
+causas_alternativas:
+  - complejidad_mecanica_y_fiabilidad
+  - dependencia_de_teleoperacion
+  - autonomia_perceptiva_no_demostrada
+  - capacidad_domestica_limitada
+camino_que_lo_desplazo_si_existe: >-
+  No se establece sustituto unico. La robotica industrial posterior privilegio manipuladores especializados y entornos estructurados frente al humanoide domestico general; se registra como interpretacion historica, no como causalidad documentada de cierre.
+fuentes:
+  - url: https://data.tmw.at/object/597926
+    titulo: "Maschinenmensch MM 6 - Technisches Museum Wien"
+    tipo: catalogo_museal_institucional
+    fecha: desconocida
+  - url: https://cyberneticzoo.com/robots/1961-mm7-selektor-claus-scholz-austrian/
+    titulo: "1957-73 - MM6, MM7 Selektor & MM8 Contina Selektor - Claus Scholz"
+    tipo: archivo_historico_secundario_con_transcripcion_reuters_y_material_museal
+    fecha: 2010-02-10
+  - url: https://futurezone.at/digital-life/die-kybernetische-maschine/24.590.732
+    titulo: "Die Kybernetische Maschine"
+    tipo: prensa_tecnica_retrospectiva
+    fecha: 2013-01-03
+  - url: https://www.icohtec.org/wp-content/uploads/2022/09/27-1-36.pdf
+    titulo: "ICON / ICOHTEC historical study referencing Scholz-Nauendorff's robots"
+    tipo: estudio_historico_academico
+    fecha: 2022
+nivel_evidencia: B
+datos_cuantitativos:
+  mm6_catalogo_museo:
+    altura_cm: 184
+    anchura_cm: 60
+    profundidad_cm: 67.5
+    masa_kg: 55
+  demostracion_reuters:
+    fecha: 1964-03-16
+    duracion_s: 109
+limitaciones:
+  - "MM6 no tiene evidencia audiovisual conocida de locomocion efectiva segun el catalogo del museo."
+  - "Las demostraciones de MM7/MM8 dependian de controles externos; no prueban autonomia domestica general."
+  - "No se encontro documentacion suficiente para cuantificar precision, carga util, velocidad, fiabilidad o horas de operacion."
+contradicciones:
+  - >-
+    La narrativa de robot autonomo/inteligente debe limitarse: la filmacion Reuters de 1964 describe movimientos gobernados desde un panel complejo y la fuente retrospectiva indica que las tareas domesticas se realizaban solo insuficientemente.
+  - >-
+    Fuentes secundarias discrepan en dimensiones/masa de MM6; se priorizan 184 cm y 55 kg del catalogo institucional del Technisches Museum Wien.
+incertidumbres:
+  - "Alcance real de la realimentacion visual de MM7 frente a objetivos anunciados por el inventor."
+  - "Fecha y prestaciones exactas de MM9."
+  - "Causa institucional/economica del fin definitivo de la linea."
+etiquetas_neutrales:
+  - robotica_humanoide
+  - cibernetica
+  - teleoperacion
+  - electrohidraulica
+  - automatizacion_domestica
+  - prototipo_no_escalado
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
+separacion_epistemica:
+  HECHO_DOCUMENTADO:
+    - "MM6 existe en la coleccion del Technisches Museum Wien y el museo lo identifica como primer modelo de la serie."
+    - "MM6 estaba soportado por bastidor y sus miembros estaban previstos para accionamiento mediante pistones hidraulicos."
+    - "La filmacion Reuters de 1964 documenta robots posteriores ejecutando manipulaciones bajo control externo."
+  TESTIMONIO:
+    - "El relato del curador Christian Stadelmann atribuye el abandono de MM6 a problemas mecanicos y el paso a un modelo sucesor."
+  INTERPRETACION:
+    - "La serie representa una via temprana de robot domestico humanoide general que quedo en demostradores, mientras la robotica practica se especializo en arquitecturas mas restringidas."
