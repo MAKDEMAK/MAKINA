@@ -1,0 +1,25 @@
+id: f1-20260916t03-learning-shape-metamaterial
+frente: front-1
+cycle_id: 2026-09-16T03
+tema_objeto: metamaterial mecanico que aprende respuestas de cambio de forma
+afirmacion_principal: "HECHO: un metamaterial puede aprender respuestas mecanicas complejas mediante aprendizaje contrastivo que modifica progresivamente rigideces locales internas; se demostraron aprendizaje secuencial, olvido, respuestas no reciprocas y multistabilidad. INTERPRETACION: parametros mecanicos internos pueden funcionar como grados de libertad entrenables y memoria fisica de una tarea."
+capacidad_nueva: aprendizaje fisico reprogramable de mapas entrada-forma con memoria incorporada en rigideces locales
+mecanismo_o_principio: aprendizaje contrastivo fisico mediante actualizacion de grados de libertad de rigidez local a partir de ejemplos de deformacion objetivo
+dominio: inteligencia fisica / metamateriales adaptativos
+fuentes:
+  - {url: "https://doi.org/10.1038/s41567-026-03226-2", titulo: "Metamaterials that learn to change shape", tipo: paper experimental, fecha: "2026-04-07"}
+nivel_evidencia: A
+datos_cuantitativos: "demostraciones experimentales de aprendizaje de multiples cambios de forma, respuestas que rompen reciprocidad, estados multistables, agarre reflejo y locomocion; el resumen primario accesible no aporta una metrica unica de precision generalizable"
+condiciones_de_prueba: prototipos mecanicos de laboratorio entrenados mostrando configuraciones objetivo
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: deformacion mecanica durante entrenamiento
+tipo_de_memoria_o_estado: rigideces locales ajustables y configuraciones multistables
+tipo_de_adaptacion: aprendizaje contrastivo por modificacion progresiva de rigidez
+tipo_de_actuacion: cambio de forma mecanico
+madurez_tecnica: demostracion experimental de laboratorio
+limitaciones: "no equivale a aprendizaje autonomo general; requiere procedimiento de entrenamiento y grados de libertad ajustables; escalabilidad, fatiga, velocidad de entrenamiento y robustez fuera del montaje experimental no establecidas en la evidencia revisada"
+contradicciones: "la capacidad se denomina aprendizaje porque los parametros fisicos se actualizan por ejemplos; no implica inferencia digital ni cognicion, y parte del procedimiento de entrenamiento puede depender de control externo"
+etiquetas_neutrales: [metamaterial, physical-learning, contrastive-learning, stiffness-memory, shape-morphing, multistability]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
