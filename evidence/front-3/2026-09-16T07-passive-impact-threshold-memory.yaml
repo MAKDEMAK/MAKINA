@@ -1,0 +1,46 @@
+id: f3-20260916T07-passive-impact-threshold-memory
+frente: front-3
+cycle_id: 2026-09-16T07
+tema_objeto: registro mecánico pasivo de aceleración transitoria por umbrales
+afirmacion_principal:
+  HECHO: "Un microsensor masa-resorte con enclavamiento mecánico puede registrar sin alimentación cuál de varios umbrales de aceleración transitoria fue excedido y conservar físicamente ese estado hasta lectura y reset."
+  HIPOTESIS: "La discretización mecánica por enclavamiento permite que el propio sensor actúe como registro histórico de severidad sin adquisición continua."
+  INTERPRETACION: "Convierte un máximo transitorio de aceleración en un estado mecánico persistente y posteriormente legible."
+funcion: registrar
+principio_de_mediacion: "masa sísmica accionada por aceleración y posiciones discretas de enclavamiento que codifican el máximo umbral alcanzado"
+variable_fisica_entrada: "aceleración transitoria"
+señal_o_estado_salida: "posición mecánica enclavada discreta y persistente"
+modalidad: "inercial/mecánica MEMS"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: "10 niveles discretos en rango experimental 20–250 g; no equivale a acelerometría continua"
+latencia: "evento mecánico transitorio; la fuente no establece aquí una latencia de lectura comparable a sensado continuo"
+condiciones_de_prueba: "dispositivo MEMS fabricado y ensayado; aceleraciones transitorias de 20–250 g; estado retenido mecánicamente sin alimentación externa"
+fuentes:
+  - url: "https://doi.org/10.1016/j.sna.2019.05.036"
+    titulo: "A zero-power sensing MEMS shock sensor with a latch-reset mechanism for multi-threshold events monitoring"
+    tipo: "paper experimental, Sensors and Actuators A: Physical"
+    fecha: "2019-05"
+  - url: "https://drum.lib.umd.edu/items/fc455dcd-0756-48b6-9ea3-b7d63da1604d"
+    titulo: "Latching Microelectromechanical Shock Sensor Systems: Design, Modeling, and Experiments"
+    tipo: "tesis doctoral experimental/institucional"
+    fecha: "2010"
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_aceleracion: "20–250 g"
+  niveles_umbral: 10
+  energia_durante_monitoreo: "sin alimentación externa para registrar y conservar el estado mecánico"
+mecanismo_o_principio: "La fuerza inercial desplaza una masa sísmica; superar sucesivos umbrales lleva el mecanismo a posiciones de enclavamiento estables. La posición final funciona como cuantización y memoria física del máximo evento experimentado."
+limitaciones:
+  - "Registra umbrales, no la forma de onda completa ni el instante exacto del evento."
+  - "La respuesta depende de dinámica masa-resorte, duración y forma del pulso, tolerancias y orientación."
+  - "Requiere reset para recuperar el rango completo después de un evento enclavado."
+  - "La lectura automática puede requerir electrónica aunque el registro físico no la requiera."
+contradicciones:
+  - "Zero-power describe sensado y retención pasivos; no implica que consulta o reset remotos sean energéticamente autónomos."
+  - "El nivel enclavado representa cruce de umbral bajo una dinámica calibrada, no una medición continua del pico independiente de la forma temporal."
+etiquetas_neutrales: [aceleracion, MEMS, latch, memoria_mecanica, sensor_pasivo, umbral, registro_evento]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
