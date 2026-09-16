@@ -1,0 +1,28 @@
+id: f1-2026-09-16T01-reversible-digital-mechanics
+frente: front-1
+cycle_id: 2026-09-16T01
+tema_objeto: propagacion reversible no reciproca de informacion mecanica
+afirmacion_principal: "HECHO: circuitos mecanicos flexurales integraron memoria bistable y logica AND con propagacion reversible pero direccional de señales binarias, validada experimentalmente a macroescala y fabricada/accionada a microescala."
+capacidad_nueva: "Propagar y procesar estado digital mecanicamente a traves de cadenas con memoria y ramificacion manteniendo reversibilidad del estado y direccion preferente de propagacion."
+mecanismo_o_principio: "Transiciones bistables secuenciales con pozos energeticos simetricos permiten reversibilidad; gradiente decreciente de energia, ajuste de rigidez/impedancia y no linealidad AND producen propagacion no reciproca."
+dominio: mecanica_digital
+fuentes:
+  - url: "https://doi.org/10.1039/D5MH00509D"
+    titulo: "Signal propagation in reversible digital mechanics"
+    tipo: paper_original_experimental
+    fecha: 2025-11-04
+nivel_evidencia: A
+datos_cuantitativos: "Demostrador macro: cadena AND con 3 bits de memoria de entrada y 3 de salida; diodo de 10 bits bistables. El modelo identifica eficiencia maxima reportada de 63% para un parametro de rigidez r_kad=0.15, aunque los prototipos usaron menor eficiencia para tolerar variacion de espesor. Arquitectura fabricada desde escala metrica hasta micrometrica."
+condiciones_de_prueba: "Macroprototipos medidos con seguimiento de movimiento de alta velocidad y comparados con modelo dinamico; dispositivos micro fabricados por polimerizacion de dos fotones y accionados cualitativamente."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "entrada por desplazamiento/configuracion mecanica"
+tipo_de_memoria_o_estado: "bits bistables mecanicos con pozos de energia simetricos"
+tipo_de_adaptacion: "ninguna demostrada; parametros de rigidez se diseñan/ajustan"
+tipo_de_actuacion: "propagacion de desplazamiento y cambio bistable"
+madurez_tecnica: "validacion experimental macro; demostracion micro cualitativa"
+limitaciones: "La propagacion atraviesa AND y memoria pero no constituye computacion general; señal se atenúa y ralentiza; los resultados micro son cualitativos; requiere precarga/energia mecanica almacenada."
+contradicciones: "INTERPRETACION: reversible se refiere a poder invertir transiciones logicas/mecanicas; no equivale a operacion sin disipacion ni a reversibilidad termodinamica perfecta."
+etiquetas_neutrales: [logica_mecanica, memoria_bistable, propagacion, reversible, no_reciproca, flexuras]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
