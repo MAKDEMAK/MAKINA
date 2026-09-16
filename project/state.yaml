@@ -17,22 +17,24 @@ active_modules:
     success_criterion: "Una entrada fisica debe producir un evento discreto reproducible, superar un umbral energetico/funcional documentado y modificar estado persistente sin falsos cambios subumbral."
     next_action: "Ejecutar tests de physical_state y event_state; luego reemplazar umbrales ideales por una curva experimental real de transduccion y medir falsos cambios, margen y persistencia."
 
-  - id: embodied-wave-computation
+  - id: embodied-dynamics-computation
     maturity: M1
-    confidence: 0.66
+    confidence: 0.73
     evidence_ids:
       - f1-20260915-22-wave-metamaterial-robot
       - f1-20260915-22-light-programmable-mechanical-logic
-    success_criterion: "Definir una operacion fisica concreta cuya salida controle directamente una accion y pueda compararse cuantitativamente con una referencia."
-    next_action: "Mantener como linea activa de convergencia; no implementar hardware hasta disponer de una especificacion M2 con operacion, tolerancia y medicion definidas."
+      - f1-20260916T00-mycelium-reservoir
+      - f1-20260916T00-active-colloid-reservoir
+    success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica."
+    next_action: "No promover aun: seleccionar una unica tarea temporal u operador comun y fijar metrica/tolerancia antes de crear un benchmark M2; evitar mezclar reservoir computing con operadores mecanicos como si fueran equivalentes."
 
 waiting_modules:
   - id: temporal-in-sensor-processing
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision]
     reason: "Convergencia plausible entre flujo temporal disperso y reservorio fisico, pero no hay evidencia directa de integracion y requiere hardware especializado."
-  - id: noncontact-machine-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle]
-    reason: "Dos vias no invasivas validas para inferir/medir estado de maquinas, pero todavia no cambian el nucleo ni justifican un modulo activo frente a la ruta evento-a-estado."
+  - id: legacy-noninvasive-observability
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow]
+    reason: "Tres vias externas/no penetrantes demuestran observabilidad de sistemas existentes, pero son modalidades heterogeneas y la nueva evidencia de caudal muestra errores de campo de hasta 43%; no justifica modulo activo sin una variable objetivo comun y presupuesto de incertidumbre."
 
 archived_modules:
   - id: air-cushion-transport
@@ -41,9 +43,15 @@ archived_modules:
   - id: networked-management-precedents
     evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel]
     reason: "Precedentes historicos relevantes de redes y coordinacion, pero sin traduccion funcional directa al nucleo fisico actual."
+  - id: synchronized-facsimile-path
+    evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph]
+    reason: "Camino historico valido de barrido y sincronizacion, pero no aporta traduccion funcional suficiente al nucleo actual."
+  - id: differential-computing-precedents
+    evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda]
+    reason: "La continuidad integrador mecanico -> DDA digital es tecnicamente fuerte como precedente, pero no demuestra que el nucleo actual deba adoptar integracion diferencial especializada."
 
-current_architecture: "physical variable/event -> transducer or harvested pulse -> threshold/hysteresis -> persistent physical/discrete state -> optional physical logic/computation -> observable output/action"
-last_synthesized_cycle: 2026-09-15T22
+current_architecture: "physical variable/event -> transducer or harvested pulse -> threshold/hysteresis -> persistent physical/discrete state -> optional physical dynamics/logic/computation -> observable output/action"
+last_synthesized_cycle: 2026-09-16T00
 
 rules:
   max_active_modules: 3
