@@ -1,0 +1,57 @@
+id: f2-20260916-1301
+frente: front-2
+cycle_id: 2026-09-16T13
+tema_objeto: memoria de dominios magneticos cilindricos
+nombre_proyecto_o_artefacto: magnetic bubble memory
+afirmacion_principal:
+  HECHO_DOCUMENTADO: "La memoria de burbujas magneticas alcanzo chips y modulos funcionales y produccion comercial, pero fue desplazada del almacenamiento general por memorias y discos mas baratos, rapidos y densos; sobrevivio temporalmente en nichos de robustez."
+  TESTIMONIO: "No se usa testimonio personal como evidencia principal."
+  INTERPRETACION: "Clasificacion: sustitucion con supervivencia de nicho, no fracaso experimental. El principio que perdio continuidad masiva fue almacenar y desplazar bits no volatiles como dominios magneticos fisicamente moviles en una pelicula, compartiendo infraestructura de propagacion y acceso."
+periodo_historico: "1967-decada de 1980"
+pais_contexto: "Estados Unidos; desarrollo internacional posterior"
+disciplina: "memoria magnetica; almacenamiento; microelectronica"
+problema_original: "Conseguir memoria no volatil, densa y robusta con menos interconexiones/periferia que arreglos convencionales y apta para almacenamiento sin partes mecanicas rotatorias."
+principio_tecnico: "Bits representados por dominios magneticos cilindricos estables ('burbujas') en peliculas magneticas; campos y patrones de propagacion desplazan los dominios por bucles hasta puntos de escritura/lectura."
+estado_historico: "sustitucion; produccion comercial; supervivencia de nicho"
+resultado_real_alcanzado: "IBM demostro en 1973 un chip de 1024 bits a 1.5e6 bit/in^2, operado a 500 kHz en chip y 100 kHz en modulo, con no volatilidad establecida. Intel introdujo en 1979 un arreglo comercial de 4 Mbit; hubo uso en videojuegos y controladores de maquinas."
+causa_documentada: "Soluciones de memoria mas baratas, rapidas y de mayor densidad volvieron obsoleta la memoria de burbujas; literatura de 1981 tambien identificaba coste y velocidad de conmutacion como problemas pendientes."
+causas_alternativas:
+  - "Complejidad de campos de accionamiento, materiales magneticos y circuiteria periferica."
+  - "Competencia simultanea de almacenamiento semiconductor y discos con curvas de mejora mas favorables."
+camino_que_lo_desplazo_si_existe: "memoria semiconductor y almacenamiento en disco; posteriormente otras memorias no volatiles de estado solido"
+fuentes:
+  - url: "https://research.ibm.com/publications/1024-bit-bubble-memory-chip"
+    titulo: "1024 Bit Bubble Memory Chip"
+    tipo: "paper original, IEEE Transactions on Magnetics / IBM Research"
+    fecha: "1973-01-01"
+  - url: "https://research.ibm.com/publications/the-frontiers-of-magnetic-bubble-technology"
+    titulo: "The Frontiers of Magnetic Bubble Technology"
+    tipo: "paper/revision tecnica contemporanea, Proceedings of the IEEE / IBM Research"
+    fecha: "1975-01-01"
+  - url: "https://www.jstage.jst.go.jp/article/jmsjmag1977/5/4/5_4_220/_article/-char/en"
+    titulo: "Outline of Magnetic Bubble Memory"
+    tipo: "revision tecnica contemporanea"
+    fecha: "1981-08-30"
+  - url: "https://www.computerhistory.org/timeline/memory-storage/"
+    titulo: "Memory & Storage - Timeline of Computer History"
+    tipo: "archivo/museo tecnico"
+    fecha: "sin_fecha"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "1024 bits; 1.5e6 bit/in^2; 500 kHz a nivel chip; 100 kHz a nivel modulo (IBM, 1973)."
+  - "Diseno conceptual NASA 1972: 1e8 bits, <=25 W, 6.4 Mbit/s, acceso de 200 ms a bloque de 800 palabras + 4 ms promedio a palabra."
+  - "Demostracion IBM 1977: burbujas de 1 um y >3e7 bit/in^2 en circuitos contiguous-disk."
+  - "Arreglo Intel comercial de 4 Mbit introducido en 1979."
+limitaciones:
+  - "Acceso inherentemente condicionado por propagacion/organizacion de bucles, no equivalente a RAM aleatoria moderna."
+  - "Coste y velocidad seguian siendo desventajas explicitamente documentadas en 1981."
+  - "Requeria campos de accionamiento y periferia aunque el medio fuese no volatil y sin partes rotatorias."
+contradicciones:
+  - "La narrativa de 'tecnologia que nunca funciono' es falsa: existieron chips funcionales, modulos y productos comerciales."
+  - "Tampoco fue reemplazada instantaneamente: persistio en nichos como videojuegos y control de maquinas."
+incertidumbres:
+  - "No se atribuye el declive a una unica tecnologia competidora ni a una fecha universal de abandono."
+  - "La importancia relativa de coste, velocidad, densidad y complejidad vario por aplicacion y fabricante."
+etiquetas_neutrales: [memoria_magnetica, dominio_movil, no_volatil, almacenamiento, sustitucion, nicho, sin_partes_rotatorias]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
