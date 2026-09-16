@@ -1,0 +1,48 @@
+id: f2-20260915T22-cybersyn
+frente: front-2
+cycle_id: 2026-09-15T22
+tema_objeto: red cibernetica distribuida de gestion industrial
+nombre_proyecto_o_artefacto: Project Cybersyn / Proyecto Synco
+periodo_historico: 1971-1973
+pais_contexto: Chile
+disciplina: [cibernetica, telecomunicaciones, control, interfaz_humano_maquina]
+afirmacion_principal: "Synco implemento una red de telex, procesamiento estadistico por excepcion, simulacion economica y una sala de operaciones para aproximar gestion industrial en tiempo casi real; alcanzo prototipo avanzado y uso operacional parcial, pero fue interrumpido por el golpe de Estado de 1973, no por una refutacion tecnica del principio."
+problema_original: "Reducir el retraso informacional de la gestion de empresas estatales distribuidas geograficamente y permitir que desviaciones relevantes escalaran entre niveles organizativos."
+principio_tecnico: "Red distribuida sobre infraestructura telex existente + deteccion estadistica de desviaciones + escalamiento algedonico por excepcion + interfaz fisica colectiva para decision."
+estado_historico: abandono_por_interrupcion_politica
+resultado_real_alcanzado:
+  - "Cybernet conecto aproximadamente 500 telex en fabricas y oficinas segun archivos y reconstrucciones historicas."
+  - "Se construyo un prototipo funcional de Opsroom en Santiago a fines de 1972."
+  - "Cyberstride proceso indicadores industriales y genero reportes de excepcion; la red telex tambien se uso para coordinacion logistica durante la crisis de octubre de 1972."
+causa_documentada: "El golpe de Estado del 11 de septiembre de 1973 termino el proyecto; la sala de operaciones fue posteriormente desmantelada/destruida."
+causas_alternativas:
+  - "El sistema nunca llego a completarse en toda la industria y la Opsroom tuvo uso ejecutivo limitado antes de la interrupcion."
+  - "La infraestructura informatica chilena era escasa, por lo que el diseno dependia deliberadamente de telex y un numero reducido de mainframes."
+camino_que_lo_desplazo_si_existe: "No hubo sustituto tecnico inmediato documentado dentro del mismo programa: el camino fue interrumpido institucionalmente. Sistemas posteriores de ERP, redes IP, dashboards y control distribuido resolvieron partes del problema por arquitecturas distintas, pero no constituyen continuidad directa demostrada."
+fuentes:
+  - url: https://thereader.mitpress.mit.edu/project-cybersyn-chiles-radical-experiment-in-cybernetic-socialism/
+    titulo: "Project Cybersyn: Chile's Radical Experiment in Cybernetic Socialism"
+    tipo: historia_tecnica_MIT_Press
+    fecha: 2023
+  - url: https://sarc.systems/library/entry/project-cybersyn/
+    titulo: Project Cybersyn
+    tipo: archivo_institucional
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  telex_aprox: 500
+  inicio: 1971
+  fin: 1973
+limitaciones:
+  - "No se completo el sistema nacional previsto."
+  - "La Opsroom era prototipo y parte de sus visualizaciones dependia de material preparado."
+contradicciones:
+  - "La narrativa de 'internet socialista' simplifica el sistema: no era Internet ni una red digital packet-switched; Cybernet se apoyaba en telex y procesamiento central."
+incertidumbres:
+  - "Las fuentes historicas varian en el numero exacto de fabricas conectadas y en el grado de uso operacional de cada modulo."
+HECHO_DOCUMENTADO: "Existieron Cybernet, Cyberstride, CHECO y una Opsroom prototipo; el proyecto termino tras el golpe de 1973."
+TESTIMONIO: "Reconstrucciones de participantes describen Cybernet como un sistema que evoluciono desde transmision de indicadores hacia usos mas amplios de coordinacion."
+INTERPRETACION: "El camino tecnico no fracaso por demostrar inviabilidad: quedo truncado antes de poder evaluarse como sistema completo a escala nacional."
+etiquetas_neutrales: [telex, cibernetica, control_por_excepcion, interfaz_colectiva, sistema_distribuido, abandono_politico]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
