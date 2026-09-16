@@ -1,0 +1,32 @@
+id: f1-20260916T03-photonic-network-laser-few-shot
+frente: front-1
+cycle_id: 2026-09-16T03
+tema_objeto: vision neuromorfica fotonica con laser de red no lineal
+afirmacion_principal: "HECHO: modos laser espacialmente competidores actuan como neuronas heterogeneas con acoplamiento inhibitorio y realizan deteccion de rasgos, clasificacion few-shot y segmentacion mediante dinamica fisica no lineal. INTERPRETACION: la heterogeneidad fisica puede aportar representaciones utiles cuando los datos de entrenamiento son escasos; no implica que todo el aprendizaje ocurra en hardware, pues la salida usa regresion/logistica digital."
+capacidad_nueva: extraccion paralela de rasgos y clasificacion robusta con pocos ejemplos usando dinamica fotonica fisica
+mecanismo_o_principio: competencia modal, inhibicion lateral y respuestas no lineales heterogeneas en una red laser aleatoria de InP
+dominio: fotonica neuromorfica / vision / aprendizaje few-shot
+fuentes:
+  - url: https://pubmed.ncbi.nlm.nih.gov/42696569/
+    titulo: Few-shot neuromorphic vision in a nonlinear photonic network laser
+    tipo: paper experimental revisado por pares / Science Advances
+    fecha: 2026-09-04
+  - url: https://doi.org/10.1126/sciadv.aec6546
+    titulo: Few-shot neuromorphic vision in a nonlinear photonic network laser
+    tipo: DOI / articulo primario
+    fecha: 2026-09-04
+nivel_evidencia: A
+datos_cuantitativos: "98.05% MNIST; 87.85% Fashion-MNIST; 90.12% BreaKHis; 77.7% BreaKHis con 10 imagenes de entrenamiento; HAM10k DICE 84.49%, Jaccard 74.80%; prototipo ~150 um; throughput de medicion reportado hasta 100 Hz para esquema de una capa."
+condiciones_de_prueba: "Benchmarks de imagen MNIST, Fashion-MNIST, BreaKHis y HAM10k; comparaciones few-shot y desbalanceadas contra modelos software; lectura hiperespectral y clasificador lineal/logistico posterior."
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: optico / hiperespectral
+tipo_de_memoria_o_estado: estado dinamico optico; no se demuestra memoria no volatil intrinseca
+tipo_de_adaptacion: pesos de lectura entrenados digitalmente; respuesta fisica fija/heterogenea
+tipo_de_actuacion: emision laser multimodo
+madurez_tecnica: demostracion experimental de laboratorio
+limitaciones: "La cadena no es totalmente fotonica: seleccion de rasgos, binning y regresion final son digitales; parte de la seleccion de regiones de deteccion fue manual; benchmarks pequenos/medianos y montaje de laboratorio; no se aporta aqui comparacion completa de energia extremo-a-extremo."
+contradicciones: "El trabajo atribuye ventaja few-shot a alta dimensionalidad y heterogeneidad no lineal, pero esa explicacion es mecanistica/interpretativa y no demuestra causalidad exclusiva; software con augmentacion y fine-tuning puede superar algunos resultados aunque con pasos adicionales."
+etiquetas_neutrales: [photonic-computing, network-laser, few-shot, lateral-inhibition, heterogeneous-nonlinearity, vision]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
