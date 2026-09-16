@@ -1,0 +1,37 @@
+id: f1-20260915-22-wave-metamaterial-robot
+frente: front-1
+cycle_id: 2026-09-15T22
+tema_objeto: computacion mecanica ondulatoria reprogramable integrada con locomocion
+afirmacion_principal:
+  HECHO: "Un robot metamaterial experimental integra computacion analogica espacial, logica binaria, operaciones matriciales tipo qubit y locomocion mediante propagacion de ondas elasticas y capas mecanicas reprogramables."
+  HIPOTESIS: "La misma arquitectura ondulatoria puede escalar hacia computacion mecanica multitarea mas general, pero la escalabilidad practica aun no esta demostrada."
+  INTERPRETACION: "La novedad material es unir procesamiento analogico, logico y accion fisica en un unico sustrato mecanico reprogramable, no solo demostrar una puerta mecanica aislada."
+capacidad_nueva: "Procesar derivadas, integrales, convoluciones, ecuaciones, AND/OR/XOR y transformaciones matriciales mientras el resultado mecanico regula el movimiento del propio sistema."
+mecanismo_o_principio: "Arquitectura espacial F1-H-F2 inspirada en optica de Fourier: lentes GRIN mecanicas realizan transformadas espaciales y una capa de transferencia ajustable modula masa/amortiguamiento; armonicos no lineales y bandas fononicas permiten paralelismo y seleccion de tareas."
+dominio: "computacion mecanica; metamateriales; robotica; procesamiento analogico de ondas"
+fuentes:
+  - url: "https://www.nature.com/articles/s41467-026-71368-1"
+    titulo: "Reprogrammable metamaterial robot with embodied versatile computation and mechanical intelligence"
+    tipo: "paper original experimental, Nature Communications"
+    fecha: 2026-04-03
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Demostraciones experimentales de integral, diferencial, convolucion y solucion de ecuaciones."
+  - "Entradas experimentales de 70, 140 y 300 Hz usadas para demostrar transformacion entre computos fundamental/subarmonico."
+  - "Incluye logica AND, OR, XOR y mapeos matriciales Hadamard, Pauli-X y CNOT."
+condiciones_de_prueba: "Prototipo fisico de red periodica de bloques hexagonales, resortes laminares, masas ajustables y motores de vibracion; resultados comparados con teoria mediante perfiles de onda experimentales."
+requiere_computacion_digital: no
+requiere_alimentacion: si
+tipo_de_sensado: "entrada espacial codificada como perfil de vibracion/onda elastica"
+tipo_de_memoria_o_estado: "configuracion fisica reprogramada de masa, rigidez, amortiguamiento y filtros; no se demuestra memoria no volatil como funcion central"
+tipo_de_adaptacion: "reprogramacion de funcion de transferencia y seleccion por frecuencia; locomocion autorregulada por salida mecanica"
+tipo_de_actuacion: "vibracion y locomocion por friccion asimetrica"
+madurez_tecnica: "prototipo experimental de laboratorio"
+limitaciones:
+  - "La arquitectura usa motores de vibracion y configuracion fisica especializada; no es un computador mecanico pasivo."
+  - "La demostracion es de laboratorio y no establece escalado a grandes circuitos o precision industrial."
+contradicciones:
+  - "Aunque el procesamiento principal es mecanico, la plataforma no elimina alimentacion ni componentes electromecanicos de excitacion."
+etiquetas_neutrales: [wave-computing, metamaterial, mechanical-logic, analog-computing, embodied-computation, robotics]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
