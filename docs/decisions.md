@@ -26,3 +26,16 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Razón:** la convergencia funcional aumentó, pero la evidencia contradictoria también importa: el reservorio coloidal depende de láser, microscopía y feedback digital, y el micelio presenta variabilidad entre dispositivos.
 - **Consecuencia:** se eleva confianza de la línea a 0.73, se redefine su criterio de éxito y se exige una tarea común medible antes de promoción.
 - **Otras decisiones:** clamp-on ultrasonic se incorpora a observabilidad legacy en espera, no activa, por fuerte dependencia de instalación y desviaciones de campo reportadas hasta 43%; Nordsieck/MADDIDA se archivan como precedente coherente de integración física→digital especializada; Pantelegraph se archiva por falta de traducción funcional al núcleo.
+
+## 2026-09-16 — material-state extension, cycle 02
+- **Decisión:** fusionar memoria molecular fotónica y memoria higromecánica persistente dentro de `physical-state-interface`; no abrir un tercer módulo.
+- **Evidencia:** `f1-20260916-02-lc-photonic-memory`, `f3-20260916-02-hygromechanical-indicator`.
+- **Alternativa rechazada:** crear `material-memory` como módulo independiente. Ambos hallazgos amplían el mismo problema ya activo —formar y conservar estado físico observable— y separarlos produciría redundancia.
+- **Razón:** hay convergencia funcional pero no equivalencia de mecanismo: orientación molecular óptica y deformación higromecánica persistente. El criterio del núcleo se amplía de estado discreto a estado persistente verificable sin declarar nueva madurez.
+- **Consecuencia:** `physical-state-interface` permanece M3; confianza 0.87. No se crea prototipo nuevo porque la evidencia no aporta todavía parámetros compatibles con el sustituto digital existente suficientes para una prueba física.
+
+## 2026-09-16 — physical learning remains M1, cycle 02
+- **Decisión:** incorporar `f1-20260916-02-flare` y `f1-20260916-02-magnetic-self-learning` a `embodied-dynamics-computation`, pero mantener M1.
+- **Alternativa rechazada:** promover a M2 por diversidad de sustratos. FLARE, Hopfield magnético, reservorios y operador mecánico realizan funciones distintas y no existe todavía tarea/métrica común.
+- **Razón:** el aprendizaje magnético demuestra adaptación material intrínseca y FLARE memoria temporal multiescala, ampliando la arquitectura posible; esto aumenta evidencia de computación física pero también hace más importante separar memoria, inferencia y aprendizaje.
+- **Consecuencia:** confianza 0.77; no se construye benchmark hasta formular una comparación funcional única. La nueva inferencia de motor por stray flux refuerza `legacy-noninvasive-observability` pero sigue en espera por validación específica de montaje. La nueva ficha histórica de bubble memory se deduplica con el precedente ya registrado y no genera una línea nueva.
