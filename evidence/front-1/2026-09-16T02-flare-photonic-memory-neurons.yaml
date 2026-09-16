@@ -1,0 +1,28 @@
+id: f1-20260916-02-flare
+frente: front-1
+cycle_id: 2026-09-16T02
+tema_objeto: neuronas fotonicas con memoria corta y larga integrada
+afirmacion_principal:
+  HECHO: "FLARE integra sensado, procesamiento y memoria en neuronas fotonicas reconfigurables; un chip monolitico de 7378 neuronas retuvo memoria de largo plazo 7.45 s mientras preservo dinamica de corto plazo en GHz."
+  HIPOTESIS: "La coexistencia de escalas temporales de memoria en el mismo nodo puede reducir movimientos de datos en redes fisicas profundas."
+  INTERPRETACION: "Es una mejora material de capacidad porque memoria sensorial/intermedia deja de depender exclusivamente de memoria digital externa."
+capacidad_nueva: computacion fotonica profunda totalmente in-memory con memoria temporal multiescala
+mecanismo_o_principio: acoplamiento fotonico-electronico en neuronas reconfigurables que mantienen estados de memoria de corto y largo plazo
+dominio: fotonica neuromorfica / in-memory computing
+fuentes:
+  - {url: "https://www.nature.com/articles/s44460-026-00123-2", titulo: "Fully in-memory photonic computing", tipo: paper_original, fecha: 2026-08-27}
+nivel_evidencia: A
+datos_cuantitativos: "7378 neuronas monoliticas; 7.45 s retencion; dinamica GHz; sistema multicapa de 10 nucleos; 61.87 aJ/operacion reportados a nivel de sistema en demostracion de navegacion."
+condiciones_de_prueba: chip fotonico monolitico y sistema multicapa de diez nucleos; demostracion end-to-end de vision/navegacion
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: optico
+tipo_de_memoria_o_estado: memoria fotonica/electronica de corto y largo plazo
+tipo_de_adaptacion: reconfiguracion de neuronas y red
+tipo_de_actuacion: salida optoelectronica
+madurez_tecnica: demostracion experimental integrada
+limitaciones: "Arquitectura hibrida fotonico-electronica; el articulo no demuestra sustitucion general de memoria digital; la cifra energetica depende de la configuracion experimental."
+contradicciones: "'Fully in-memory' describe el flujo de la arquitectura demostrada, no ausencia total de electronica ni de infraestructura externa."
+etiquetas_neutrales: [photonics, in-memory, multiscale-memory, neuromorphic]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
