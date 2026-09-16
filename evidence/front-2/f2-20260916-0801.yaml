@@ -1,0 +1,68 @@
+id: f2-20260916-0801
+frente: front-2
+cycle_id: 2026-09-16T08
+tema_objeto: sintetizador electronico de sintesis subarmonica de la RDA
+afirmacion_principal: >-
+  HECHO DOCUMENTADO: el Subharchord fue desarrollado entre 1959 y 1968 en el RFZ Berlin-Adlershof como generador central de sonidos y ruidos para estudios de radio, cine, television y musica electroacustica; existio como prototipo y pequena serie de aproximadamente siete instrumentos, pero su desarrollo institucional se detuvo tras el endurecimiento de la politica cultural de la RDA y no escalo a produccion sostenida.
+nombre_proyecto_o_artefacto: Subharchord
+periodo_historico: 1959-1970
+pais_contexto: Republica Democratica Alemana
+disciplina: electroacustica; instrumentacion musical electronica
+problema_original: proporcionar a estudios un generador electronico central, rapido y operable de sonidos y ruidos artificiales
+principio_tecnico: >-
+  Sintesis subarmonica mediante division de una frecuencia fundamental en relaciones discretas (aprox. 1/2 a 1/16 en el prototipo Subharchord II), mezcla de subarmonicos y posterior conformacion mediante filtros y modulacion.
+estado_historico: prototipo y pequena serie no escalada; desarrollo detenido por decision institucional/politica
+resultado_real_alcanzado: >-
+  Se construyeron aproximadamente siete instrumentos; hubo uso real en produccion musical, radio, cine y television, presentacion publica en Leipzig en 1965 y unidades enviadas fuera de la RDA, incluida una a NRK en Oslo.
+causa_documentada: >-
+  Fuentes institucionales atribuyen el fin del desarrollo al endurecimiento de la politica cultural de la RDA tras el 11. Plenum del SED de 1965; el laboratorio dejo de sostener la linea y el prototipo Subharchord II fue transferido al museo postal en 1968.
+causas_alternativas:
+  - TESTIMONIO/INTERPRETACION: condiciones economicas y materiales de produccion limitadas pudieron contribuir, pero no se registran aqui como causa primaria demostrada.
+  - INTERPRETACION: la posterior expansion de sintetizadores analogicos controlados por tension ofrecio una trayectoria tecnica distinta y mas flexible; no demuestra por si sola que causara la cancelacion del Subharchord.
+camino_que_lo_desplazo_si_existe: sintetizadores analogicos modulares y posteriormente comerciales basados en control por tension; estudios electroacusticos con equipos de generacion mas generales
+fuentes:
+  - url: https://artsandculture.google.com/story/historic-musical-artifacts-at-the-studio-for-electroacoustic-music-at-the-adk-akademie-der-kuenste/GAURsLgJrrtH_w?hl=en
+    titulo: Historic Musical Artifacts at the Studio for Electroacoustic Music at the AdK
+    tipo: archivo/institucion
+    fecha: desconocida
+  - url: https://www.tekniskmuseum.no/en/exhibitions/subharchord
+    titulo: The sound of an East German musical instrument
+    tipo: museo
+    fecha: 2021-10-18
+  - url: https://www.wista.de/en/news-press/news/sounds-from-another-dimension
+    titulo: Sounds from another dimension
+    tipo: institucion/historia tecnica
+    fecha: 2026
+nivel_evidencia: A
+datos_cuantitativos:
+  instrumentos_producidos_aprox: 7
+  prototipo_subharchord_II_osciladores: 4
+  rango_division_subarmonica: 1/2 a 1/16
+  masa_ejemplar_restaurado_kg_aprox: 150
+limitaciones:
+  - produccion extremadamente pequena
+  - caracter sonoro especializado
+  - documentacion tecnica superviviente incompleta
+  - deriva y degradacion de componentes en ejemplares conservados
+contradicciones:
+  - Las fuentes varian entre seis unidades de serie mas prototipo y siete instrumentos totales; se conserva aproximadamente siete en vez de fijar una cifra falsa.
+  - Fuentes secundarias mencionan competencia de sintetizadores occidentales, pero las fuentes institucionales enfatizan la politica cultural como causa del cese.
+incertidumbres:
+  - peso relativo exacto de restricciones economicas frente a decisiones culturales
+  - alcance exacto de una eventual fabricacion comercial prevista fuera del RFZ
+etiquetas_neutrales:
+  - sintesis-subarmonica
+  - electronica-analogica
+  - pequena-serie
+  - estudio-electroacustico
+  - RDA
+  - desarrollo-detenido
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
+separacion_epistemica:
+  hecho_documentado: >-
+    Desarrollo 1959-1968, prototipo funcional, pequena serie, uso productivo y transferencia de unidades estan documentados por archivos y museos.
+  testimonio: >-
+    Relatos retrospectivos de participantes e historiadores vinculan directamente el frenado a la politica cultural contra la experimentacion electronica.
+  interpretacion: >-
+    El principio tecnico que quedo como camino discontinuado fue un instrumento de estudio dedicado a generar timbre mediante divisiones subarmonicas discretas y mezcla/filtrado, en lugar de la arquitectura generalista de control por tension que domino posteriormente.
