@@ -1,0 +1,36 @@
+id: f3-20260915-22-laser-speckle
+frente: front-3
+cycle_id: 2026-09-15T22
+tema_objeto: vibración remota mediante desplazamiento de speckle láser
+afirmacion_principal: El movimiento de un patrón de speckle generado al iluminar una superficie permite recuperar vibración sin contacto físico; una demostración reconstruyó vibración acústica en tiempo real a 20 ksample/s.
+funcion: medir
+principio_de_mediacion: vibración superficial -> desplazamiento del patrón de speckle coherente -> estimación subpíxel de desplazamiento
+variable_fisica_entrada: desplazamiento/vibración de una superficie iluminada
+señal_o_estado_salida: serie temporal de desplazamiento y señal vibratoria reconstruida
+modalidad: óptica
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: estimación subpíxel; precisión absoluta no indicada en el resumen consultado
+latencia: procesamiento en tiempo real a 20 ksample/s
+condiciones_de_prueba: imagen de speckle láser unidimensional aplicada a vibración acústica de una fuente sonora
+fuentes:
+  - url: https://doi.org/10.3390/s21092938
+    titulo: The 20k Samples-Per-Second Real Time Detection of Acoustic Vibration Based on Displacement Estimation of One-Dimensional Laser Speckle Images
+    tipo: paper experimental
+    fecha: 2021-04-22
+nivel_evidencia: A
+datos_cuantitativos:
+  tasa_muestreo: 20000 samples/s
+mecanismo_o_principio: Una superficie rugosa iluminada coherentemente produce un patrón granular dependiente de geometría; su desplazamiento codifica el movimiento de la superficie y puede estimarse ópticamente.
+limitaciones:
+  - requiere línea de visión e iluminación coherente
+  - speckle puede introducir ruido y depender de rugosidad, geometría y movimiento del objetivo
+  - la tasa demostrada no implica igual desempeño para toda amplitud/frecuencia o distancia
+contradicciones:
+  - la ausencia de contacto no elimina la necesidad de óptica activa, adquisición electrónica y procesamiento
+etiquetas_neutrales: [laser-speckle, vibration, optical-metrology, non-contact, displacement]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
+clasificacion_medicion: medición indirecta de desplazamiento mediante transducción óptica
