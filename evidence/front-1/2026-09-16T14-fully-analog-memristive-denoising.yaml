@@ -1,0 +1,40 @@
+id: f1-20260916-1401
+frente: front-1
+cycle_id: 2026-09-16T14
+tema_objeto: denoising neuromorfico completamente analogico con memoria y computacion homogeneas
+afirmacion_principal: "HECHO: una arquitectura experimental basada en RRAM usa nucleos memristivos homogeneos tanto como almacenamiento temporal analogico como para computacion neuronal, manteniendo el flujo de procesamiento en dominio analogico y evitando buffers analogicos separados de gran area."
+capacidad_nueva: "Procesar y reducir ruido en señales dentro de una ruta analogica continua usando el mismo tipo de dispositivo resistivo para memoria temporal y operaciones de red neuronal."
+mecanismo_o_principio: "Las conductancias de matrices RRAM 32x32 representan estados/pesos; nucleos homogeneos implementan memoria temporal y multiply-accumulate analogico, inspirados funcionalmente en memoria episodica."
+dominio: [computacion_analogica, compute_in_memory, neuromorfica, memristores]
+fuentes:
+  - url: "https://doi.org/10.1002/aisy.70419"
+    titulo: "Neuromorphic Denoising with Fully Analog Memristive In-Memory Computing"
+    tipo: paper_experimental
+    fecha: 2026-05-18
+nivel_evidencia: A
+datos_cuantitativos:
+  array_RRAM: "32x32"
+  mejora_eficiencia_potencia: "1.849-3.002x frente a trabajos analogicos de redes neuronales comparados por los autores"
+  reduccion_buffer_analogico_on_chip: "2.98-27.66x"
+  mejora_eficiencia_area: "3.12x"
+condiciones_de_prueba: "Demostracion experimental de sistema de denoising neuromorfico con matrices RRAM y circuiteria analogica de interfaz; las comparaciones de eficiencia dependen de los baselines seleccionados en el paper."
+requiere_computacion_digital: no
+requiere_alimentacion: si
+tipo_de_sensado: "post-sensing; no integra el transductor primario"
+tipo_de_memoria_o_estado: "conductancia resistiva RRAM; almacenamiento temporal y pesos de largo plazo"
+tipo_de_adaptacion: "programacion de estados conductivos/pesos"
+tipo_de_actuacion: ninguno
+madurez_tecnica: "prototipo experimental de laboratorio"
+limitaciones:
+  - "No elimina periferia analogica ni alimentacion."
+  - "La demostracion es de denoising; no prueba generalidad para cualquier tarea ML."
+  - "Las mejoras cuantitativas son comparativas respecto de arquitecturas seleccionadas por los autores."
+contradicciones:
+  - "'Fully analog' describe el flujo de procesamiento demostrado, no un sistema autonomo sin control/periferia externa."
+etiquetas_neutrales: [RRAM, analog_CIM, temporal_memory, denoising, homogeneous_memristor_core]
+separacion_epistemica:
+  HECHO: "Se construyo experimentalmente un sistema de denoising analogico con nucleos memristivos homogeneos para almacenamiento temporal y computacion; se reportan las mejoras cuantitativas indicadas."
+  HIPOTESIS: "La homogeneidad del sustrato podria reducir conversiones y movimiento de datos en otras cadenas post-sensado."
+  INTERPRETACION: "La capacidad relevante es fusionar memoria temporal y calculo en el mismo medio fisico, no simplemente acelerar una red digital."
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
