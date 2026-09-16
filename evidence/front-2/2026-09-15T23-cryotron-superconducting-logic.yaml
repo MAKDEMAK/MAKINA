@@ -1,0 +1,46 @@
+id: f2-2026-09-15T23-cryotron
+frente: front-2
+cycle_id: 2026-09-15T23
+tema_objeto: logica superconductora criotron
+nombre_proyecto_o_artefacto: Cryotron de Dudley A. Buck
+periodo_historico: 1953-1960s
+pais_contexto: Estados Unidos
+disciplina: computacion superconductora
+problema_original: miniaturizar logica y memoria digital evitando tubos de vacio y disipacion resistiva
+principio_tecnico: un campo magnetico de control fuerza un conductor superconductivo a pasar al estado resistivo; el dispositivo presenta ganancia y puede encadenarse como elemento logico
+afirmacion_principal: "HECHO DOCUMENTADO: el cryotron pasó de concepto a dispositivos, puertas, flip-flops, memorias y arrays experimentales; programas de MIT, IBM, GE, RCA y otros exploraron una ruta de computacion superconductora que fue eclipsada por la rápida mejora del silicio. INTERPRETACION: no fue un concepto no realizado, sino una familia técnica desplazada cuyo principio sobrevivió parcialmente en tecnologías superconductoras posteriores."
+estado_historico: sustitucion_y_absorcion_parcial
+resultado_real_alcanzado: "Buck construyó y probó decenas de prototipos; realizó puerta lógica, flip-flop y amplificador fan-out; investigaciones posteriores fabricaron arrays y un computador experimental."
+causa_documentada: "Los cryotrones tradicionales conmutaban lentamente y exigían refrigeración criogénica; el rápido descenso de coste y avance de circuitos integrados de silicio eclipsó la vía durante los años 1960."
+causas_alternativas:
+  - muerte de Buck en 1959 interrumpió su programa personal
+  - complejidad de refrigeracion con helio liquido
+camino_que_lo_desplazo_si_existe: transistores y circuitos integrados de silicio
+fuentes:
+  - url: https://dome.mit.edu/handle/1721.3/40618
+    titulo: The cryotron - a superconductive computer component
+    tipo: informe_tecnico_primario_MIT
+    fecha: 1955-08-22
+  - url: https://spectrum.ieee.org/dudley-bucks-forgotten-cryotron-computer
+    titulo: Dudley Buck's Forgotten Cryotron Computer
+    tipo: historia_tecnica_IEEE
+    fecha: 2014
+  - url: https://www.aps.org/apsnews/2012/02/1957-mit-introduces-first-cryotron
+    titulo: MIT introduces the first cryotron
+    tipo: historia_institucional_APS
+    fecha: 2012-02-01
+nivel_evidencia: A
+datos_cuantitativos:
+  - "cryotron de hilo: conmutacion reportada de 5 microsegundos"
+  - "pelicula experimental Pb-Bi-Sr: 0.1 microsegundo"
+  - "el transistor más rápido contemporáneo era aproximadamente 100 veces más rápido que el cryotron de 5 microsegundos"
+limitaciones:
+  - refrigeracion criogenica
+  - velocidad de transición superconductivo-normal en diseños tradicionales
+contradicciones:
+  - "La narrativa de desaparicion total es incorrecta: variantes con uniones Josephson continuaron y la computacion superconductora persiste."
+incertidumbres:
+  - no atribuir el abandono a una sola causa; coexistieron rendimiento, coste del silicio y criogenia
+etiquetas_neutrales: [superconductividad, logica, memoria, conmutacion, criogenia, sustitucion]
+fecha_hallazgo: 2026-09-15
+fecha_revision: 2026-09-15
