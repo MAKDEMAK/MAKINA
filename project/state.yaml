@@ -6,7 +6,7 @@ core:
 active_modules:
   - id: physical-state-interface
     maturity: M3
-    confidence: 0.91
+    confidence: 0.93
     evidence_ids:
       - f1-20260915-2101
       - f1-20260915-2103
@@ -18,8 +18,9 @@ active_modules:
       - f3-20260916-02-hygromechanical-indicator
       - f3-20260916-03-adhesive-tape-latching-memory
       - f3-20260916T04-passive-tti
+      - f3-20260916T07-passive-impact-threshold-memory
     success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable —discreto o material persistente— con umbral/rango documentado, persistencia medible y tasa de falsos cambios cuantificable; para memorias de historia debe medirse resolucion, destructividad de lectura y ambiguedad entre trayectorias de entrada que producen el mismo estado final."
-    next_action: "Ejecutar tests existentes de physical_state/event_state; despues incorporar una curva experimental real de transduccion o memoria material y medir falsos cambios, margen, persistencia, resolucion, reversibilidad, destructividad de lectura y degeneracion de historia-a-estado."
+    next_action: "Ejecutar tests de physical_state/event_state incluyendo PeakThresholdMemory; despues sustituir al menos un umbral ideal por una curva experimental real y medir falsos cambios, margen, persistencia, resolucion, dependencia de forma temporal/orientacion, reset y destructividad de lectura."
 
   - id: embodied-dynamics-computation
     maturity: M1
@@ -37,7 +38,7 @@ active_modules:
       - f1-20260916T04-hydrogel-fluidic-memristor
       - f1-20260916T04-ti3c2tx-homogeneous-rc
     success_criterion: "Definir una tarea computacional comun y medible que pueda ejecutarse sobre al menos dos clases de sustrato fisico y compararse con una referencia digital usando la misma metrica; separar inferencia, memoria, aprendizaje, reset/relajacion y coste de perifericos en la comparacion."
-    next_action: "No promover aun. El hallazgo F1 de la ronda 06 es duplicado material del mismo paper de micelio ya sintetizado en T00 y no aumenta evidencia independiente. Especificar un benchmark temporal minimo comun con entrada, readout, metrica de error, memoria requerida, energia del sistema completo y coste de reset antes de M2."
+    next_action: "No promover aun. F1 T07 vuelve a reportar el mismo paper DOI 10.1002/adma.74376 ya registrado como f1-20260915-2101, por lo que se deduplica y no aumenta evidencia independiente. Especificar un benchmark temporal minimo comun antes de M2."
 
 waiting_modules:
   - id: temporal-in-sensor-processing
@@ -45,7 +46,7 @@ waiting_modules:
     reason: "Event vision recupera frecuencia con precision demostrada pero sigue dependiendo de amplitud/contraste y hardware especializado; no existe integracion demostrada con reservorio fisico."
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration]
-    reason: "La ronda 06 refuerza una subfamilia coherente de transduccion vibracion-a-electricidad autoalimentada: dos arquitecturas TENG independientes cubren baja frecuencia multidimensional y 2-10000 Hz de frecuencia. Aun no se activa porque las modalidades de observabilidad restantes son heterogeneas y falta una variable objetivo comun con presupuesto de incertidumbre y coste total de adquisicion."
+    reason: "La ronda 06 refuerza una subfamilia coherente de transduccion vibracion-a-electricidad autoalimentada, pero falta una variable objetivo comun con presupuesto de incertidumbre y coste total de adquisicion."
 
 archived_modules:
   - id: air-cushion-transport
@@ -62,22 +63,25 @@ archived_modules:
     reason: "La continuidad integrador mecanico -> DDA digital es tecnicamente fuerte como precedente, pero no demuestra que el nucleo actual deba adoptar integracion diferencial especializada."
   - id: magnetic-mobile-state-precedent
     evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory]
-    reason: "La ronda 02 aporta mejor documentacion historica de bubble memory pero no una linea funcional nueva; se deduplica como precedente de estado magnetico fisico y sustitucion tecnologica."
+    reason: "Precedente de estado magnetico fisico y sustitucion tecnologica; evidencia posterior deduplicada."
   - id: parametric-phase-logic-precedent
     evidence_ids: [f2-2026-09-16T03-parametron]
-    reason: "Precedente historico fuerte de logica/memoria por fase estable de oscilacion parametrica, pero no hay continuidad funcional suficiente con el nucleo para abrir modulo."
+    reason: "Precedente historico fuerte de logica/memoria por fase estable, sin continuidad funcional suficiente con el nucleo."
   - id: saturable-magnetic-logic-precedent
     evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing]
-    reason: "Demuestra logica real mediante saturacion magnetica y una sustitucion decidida por trayectoria tecnologica, pero no existe traduccion funcional suficientemente especifica al nucleo actual para abrir modulo."
+    reason: "Logica real mediante saturacion magnetica, pero sin traduccion funcional suficientemente especifica al nucleo actual."
   - id: mechanical-video-density-precedent
     evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc]
-    reason: "Demuestra transduccion mecanico-electrica de video de alta densidad, pero sus restricciones de soporte y duracion no convergen funcionalmente con los modulos activos."
+    reason: "Transduccion mecanico-electrica de video de alta densidad sin convergencia funcional con los modulos activos."
   - id: integrated-office-automation-precedent
     evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine]
-    reason: "Prototipo historico valido de integracion mecanica-electromecanica de funciones administrativas, pero su valor es arquitectonico-historico y no aporta una traduccion funcional medible al nucleo fisico actual."
+    reason: "Prototipo historico valido de integracion mecanica-electromecanica, sin traduccion funcional medible al nucleo fisico actual."
+  - id: cartridge-decoupled-precision-transport
+    evidence_ids: [f2-2026-09-16T07-elcaset]
+    reason: "Elcaset demuestra separar almacenamiento/proteccion del medio y guiado de precision en la maquina, pero no converge de forma medible con los modulos activos; se conserva como precedente historico."
 
 current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous state formation -> persistent or fading physical state -> optional physical dynamics/logic/learning -> observable output/action; characterize persistence, relaxation/reset, read destructivity, history-to-state ambiguity, environmental sensitivity and peripheral cost explicitly"
-last_synthesized_cycle: 2026-09-16T06
+last_synthesized_cycle: 2026-09-16T07
 
 rules:
   max_active_modules: 3
