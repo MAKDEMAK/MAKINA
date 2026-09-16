@@ -1,0 +1,30 @@
+id: f3-20260916-02-hygromechanical-indicator
+frente: front-3
+cycle_id: 2026-09-16T02
+tema_objeto: registro pasivo de exposicion a humedad
+afirmacion_principal: "MEDICION INDIRECTA: una bicapa de caseinato y glicerol transforma humedad alta en enrollamiento mecanico persistente, dejando una memoria fisica de la exposicion sin electronica."
+funcion: registrar
+principio_de_mediacion: hinchamiento higroscopico diferencial y transporte de agua y glicerol
+variable_fisica_entrada: humedad relativa y tiempo de exposicion
+señal_o_estado_salida: curvatura mecanica persistente
+modalidad: higromecanica
+invasividad: minima
+requiere_contacto: no
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: "Indicador de exposicion, no medidor continuo de RH. En pruebas a 80% RH, una geometria tuvo 25 min de retardo y ~30 min de enrollamiento; otra 60 min y ~90 min."
+latencia: "decenas de minutos a horas, ajustable geometricamente"
+condiciones_de_prueba: "bicapas de caseinato/glicerol; pruebas a 80% RH; muestras permanecieron planas al menos 15 dias a 10% RH."
+fuentes:
+  - url: https://doi.org/10.1021/acsapm.3c00344
+    titulo: An Edible Humidity Indicator That Responds to Changes in Humidity Mechanically
+    tipo: paper experimental
+    fecha: 2023
+nivel_evidencia: A
+datos_cuantitativos: "Una configuracion evoluciono de 0 a 50 cm^-1 de curvatura tras ~13 h de retardo y 47 h de respuesta; configuraciones ajustadas mostraron 25/30 min y 60/90 min de retardo/respuesta."
+mecanismo_o_principio: "La absorcion de agua causa deformacion diferencial entre capas; el transporte de agua/glicerol y el hinchamiento generan flexion que persiste al volver a baja humedad."
+limitaciones: "respuesta lenta; sensibilidad a espesor, geometria, temperatura y acondicionamiento; no separa de forma unica intensidad y duracion de exposicion."
+contradicciones: "El mecanismo de transporte se presenta como hipotesis apoyada por caracterizacion; el efecto de temperatura no fue evaluado sistematicamente."
+etiquetas_neutrales: [sensor_pasivo, memoria_material, humedad, deformacion_persistente, sin_electronica, inferencia_indirecta]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
