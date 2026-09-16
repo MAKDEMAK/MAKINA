@@ -1,4 +1,4 @@
-from src.event_state import EventEnergyGate, PersistentCounter, run_event_pipeline
+from src.event_state import EventEnergyGate, PeakThresholdMemory, PersistentCounter, run_event_pipeline
 
 
 def test_energy_gate_uses_experimental_counter_threshold():
@@ -22,3 +22,24 @@ def test_reported_wiegand_maximum_has_energy_margin():
     gate = EventEnergyGate(required_nj=38.0)
     assert gate.accepts(130.0)
     assert 130.0 / 38.0 > 3.4
+
+
+def test_peak_threshold_memory_latches_highest_crossing():
+    memory = PeakThresholdMemory(thresholds=(20.0, 50.0, 100.0, 250.0))
+    assert [memory.register(x) for x in (10.0, 55.0, 30.0, 120.0, 80.0)] == [0, 2, 2, 3, 3]
+
+
+def test_peak_threshold_memory_reset_and_top_level():
+    memory = PeakThresholdMemory(thresholds=(20.0, 50.0, 100.0, 250.0))
+    assert memory.register(300.0) == 4
+    memory.reset()
+    assert memory.state == 0
+
+
+def test_peak_threshold_memory_rejects_invalid_thresholds():
+    try:
+        PeakThresholdMemory(thresholds=(20.0, 20.0, 50.0))
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("non-increasing thresholds must be rejected")
