@@ -1,0 +1,46 @@
+id: f3-20260916-0801
+frente: front-3
+cycle_id: 2026-09-16T08
+tema_objeto: inferencia no-contacto del estado operativo de motor de induccion mediante flujo magnetico de fuga
+afirmacion_principal:
+  hecho: Un unico sensor magnetico externo de alta sensibilidad y el espectro tiempo-frecuencia del flujo de fuga permiten extraer frecuencia de rotor y estimar indirectamente torque y potencia sin intervenir el cableado ni el eje.
+  interpretacion: El campo magnetico de fuga funciona como señal proxy multivariable de un artefacto electromecanico legacy; la medicion primaria es campo magnetico y las variables mecanicas son inferencias calibradas.
+funcion: inferir
+principio_de_mediacion: captacion no-contacto del flujo magnetico de fuga externo y separacion espectral mediante STFT; la frecuencia de picos transitorios sigue la rotacion y su intensidad se correlaciona con carga/torque
+variable_fisica_entrada: campo magnetico de fuga producido por corrientes y movimiento electromecanico del motor
+senal_o_estado_salida: espectro magnetico; frecuencia de rotor directa desde pico espectral; torque y potencia inferidos mediante calibracion
+modalidad: magnetica
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: El paper demuestra correlacion experimental pero no reporta una metrica global de error de torque/potencia; ajuste de torque publicado tau_Nm = 0.1*I_mag1st_uT + 0.0068.
+latencia: desconocido; procesamiento por STFT en ventanas temporales
+condiciones_de_prueba: Motor de induccion monofasico de laboratorio alimentado a 50 Hz; sensor probado en dos posiciones/orientaciones externas; torque aplicado al eje y contrastado simultaneamente con load cell, corriente y sensor optico de velocidad; ruido <3 Hz excluido.
+fuentes:
+  - url: https://doi.org/10.3390/s25144471
+    titulo: Measuring the Operating Condition of Induction Motor Using High-Sensitivity Magnetic Sensor
+    tipo: paper experimental original
+    fecha: 2025-07-18
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12299784/
+    titulo: Measuring the Operating Condition of Induction Motor Using High-Sensitivity Magnetic Sensor - full text
+    tipo: repositorio institucional de texto completo
+    fecha: 2025-07-18
+nivel_evidencia: A
+datos_cuantitativos:
+  alimentacion_motor_Hz: 50
+  ruido_excluido_menor_que_Hz: 3
+  relacion_torque: "tau [Nm] = 0.1 * I_mag_1st [uT] + 0.0068"
+  posiciones_sensor_evaluadas: 2
+mecanismo_o_principio: El flujo de fuga contiene una componente fija asociada a la alimentacion y picos de transicion simetricos cuya frecuencia cambia con slip/rotacion. La intensidad del primer pico de transicion varia aproximadamente linealmente con torque en el montaje calibrado; combinando frecuencia inferida y torque se estima potencia.
+limitaciones:
+  - La ubicacion y eje del sensor deben optimizarse por relacion senal-ruido.
+  - La relacion intensidad-torque es una calibracion del motor y montaje ensayados; no se demuestra universalidad entre motores.
+  - Vibracion mecanica/chatter incremento el error aproximadamente entre 0.015 y 0.018 Nm.
+  - Diagnostico de fallas se plantea como uso futuro; el estudio demuestra estado operativo, no una tasa validada de deteccion de fallas.
+contradicciones:
+  - La tecnica se denomina monitorizacion no-contacto, pero requiere proximidad espacial y electronica/sensor activo; no es sensado pasivo ni remoto de largo alcance.
+  - Torque y potencia no son mediciones directas: dependen de correlaciones/calibracion con el espectro magnetico.
+etiquetas_neutrales: [campo_magnetico_de_fuga, motor_induccion, no_contacto, STFT, proxy, velocidad, torque, potencia, condition_monitoring]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
