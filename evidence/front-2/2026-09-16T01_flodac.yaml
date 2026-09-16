@@ -1,0 +1,44 @@
+id: f2-2026-09-16T01-flodac
+frente: front-2
+cycle_id: 2026-09-16T01
+tema_objeto: computador digital de lógica fluídica sin partes móviles
+afirmacion_principal: "HECHO DOCUMENTADO: FLODAC demostró en 1964 que funciones digitales de computador podían implementarse con amplificadores y elementos lógicos puramente fluídicos, evitando partes mecánicas móviles; fue una prueba de concepto y no una arquitectura que desplazara a la electrónica. INTERPRETACIÓN: el camino técnico quedó reducido principalmente a nichos de control robusto cuando la lógica electrónica digital ganó velocidad, densidad e implantación industrial."
+nombre_proyecto_o_artefacto: FLODAC (pure fluid digital computer)
+periodo_historico: "1963-1964; auge general de fluidics durante los años 1960"
+pais_contexto: Estados Unidos
+disciplina: computacion digital / control fluídico
+problema_original: "realizar lógica y control con fluidos, especialmente donde temperatura, radiación, vibración o choque podían perjudicar electrónica o mecanismos móviles"
+principio_tecnico: "chorros de fluido y amplificadores sin partes móviles; pequeñas corrientes de control desvían/amplifican una corriente principal y permiten construir lógica digital"
+estado_historico: prototipo no escalado; línea posteriormente reducida/desplazada en computación general
+resultado_real_alcanzado: "UNIVAC presentó FLODAC como computador digital puramente fluídico en AFIPS Fall Joint Computer Conference de 1964; el artículo original ocupa pp. 631-641 y documenta la realización experimental."
+causa_documentada: "la literatura histórica posterior señala menor velocidad de los circuitos fluídicos y el avance/aceptación de la lógica digital electrónica; la fluídica persistió en aplicaciones especializadas, por lo que no fue una desaparición total"
+causas_alternativas:
+  - "limitaciones de miniaturización/densidad de elementos basados en efectos inerciales"
+  - "consumo continuo de fluido/potencia y complejidad de interconexión"
+  - "ventaja creciente de transistores y circuitos integrados en velocidad y escala"
+camino_que_lo_desplazo_si_existe: lógica digital electrónica basada en transistores y circuitos integrados
+fuentes:
+  - url: https://doi.org/10.1145/1464052.1464112
+    titulo: "FLODAC: a pure fluid digital computer"
+    tipo: proceedings / paper original
+    fecha: 1964-10-27
+  - url: https://ntrs.nasa.gov/citations/19680000494
+    titulo: "Fluidic analog amplifier"
+    tipo: NASA Tech Brief
+    fecha: 1968-12-01
+  - url: https://doi.org/10.4271/670707
+    titulo: "Flueric Operational Amplifier Survey"
+    tipo: technical paper / SAE
+    fecha: 1967-02-01
+nivel_evidencia: A
+datos_cuantitativos: "El paper primario está publicado en AFIPS 1964, pp. 631-641. Las cifras populares de número de puertas, palabra y memoria no se incorporan aquí porque no quedaron verificadas directamente en el texto primario accesible durante esta ronda."
+limitaciones:
+  - "la fuente primaria accesible confirma el artefacto y el principio, pero no expone en el resumen métricas completas de velocidad, tamaño o consumo"
+  - "no debe interpretarse el declive de computación fluídica general como abandono de toda la fluídica: continuó en control y nichos hostiles"
+contradicciones:
+  - "narrativas secundarias describen fluidics como 'abandonada', pero existen aplicaciones posteriores; clasificación correcta: desplazamiento/reducción, no desaparición"
+incertidumbres:
+  - "causalidad relativa entre velocidad, densidad, consumo y economía frente a circuitos integrados no está cuantificada en las fuentes primarias consultadas"
+etiquetas_neutrales: [fluidics, pure-fluid-logic, digital-computing, no-moving-parts, prototype, substitution]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
