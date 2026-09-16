@@ -1,14 +1,35 @@
 core:
   title: MAKINA
-  status: initialized
-  description: null
+  status: active
+  description: "Ecosistema experimental para trasladar sensado, estado, memoria y computacion hacia la capa fisica cuando la evidencia lo justifique."
 
-active_modules: []
-waiting_modules: []
-archived_modules: []
+active_modules:
+  - id: physical-state-interface
+    maturity: M3
+    confidence: 0.78
+    evidence_ids:
+      - f1-20260915-2101
+      - f1-20260915-2103
+      - f3-20260915-21-passive-crack
+      - f3-20260915-21-passive-rf-temp
+    success_criterion: "Cuantizacion con histeresis y transiciones persistentes deterministas verificables bajo ruido de umbral."
+    next_action: "Ejecutar tests y parametrizar el prototipo con una curva experimental de transduccion."
 
-current_architecture: null
-last_synthesized_cycle: null
+waiting_modules:
+  - id: temporal-in-sensor-processing
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision]
+    reason: "Convergencia plausible entre flujo temporal disperso y reservorio fisico, pero no hay evidencia directa de integracion y requiere hardware especializado."
+  - id: active-physical-tracking
+    evidence_ids: [f2-20260915-21-video2000, f1-20260915-2103]
+    reason: "Precedente de servo activo util, pero la cohorte actual no aporta una cadena moderna completa sensado-actuacion que justifique M2."
+
+archived_modules:
+  - id: air-cushion-transport
+    evidence_ids: [f2-20260915-21-aerotrain]
+    reason: "Hallazgo valido pero sin convergencia funcional suficiente con el nucleo actual."
+
+current_architecture: "physical variable -> transducer/proxy -> hysteretic discrete state -> persistent state machine -> observable output"
+last_synthesized_cycle: 2026-09-15T21
 
 rules:
   max_active_modules: 3
