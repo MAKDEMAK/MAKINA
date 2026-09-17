@@ -1,0 +1,45 @@
+id: f1-20260917-0002
+frente: front-1
+cycle_id: 2026-09-17T00
+tema_objeto: sinapsis neuromorfica flexible autoalimentada por tacto
+afirmacion_principal: "HECHO: un transistor de grafeno con compuerta ion-gel, accionado directamente por nanogeneradores triboelectricos P(VDF-TrFE), convierte contacto mecanico en pulsos que modifican conductancia sin bateria externa y demuestra memoria temporal multiescala y plasticidad dependiente de frecuencia. INTERPRETACION: sensado, cosecha de energia y actualizacion de estado analogico pueden colocalizarse de modo que el propio estimulo aporte tanto informacion como energia de escritura."
+capacidad_nueva: "sensar tacto y actualizar un peso sinaptico analogico usando directamente la energia del estimulo mecanico, con memoria de distintas escalas temporales"
+mecanismo_o_principio: "electrificacion triboelectrica genera pulsos pre/post-sinapticos; estos desplazan iones del ion-gel y modulan la conductancia del canal de grafeno, produciendo plasticidad y decaimiento temporal"
+dominio: "neuromorfica; materiales flexibles; sensado autoalimentado; memoria analogica"
+fuentes:
+  - url: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202520540"
+    titulo: "Self-Powered Flexible Triboelectric-Gated Ion-Gel Transistor for Neuromorphic Tactile Sensing and Human Activity Recognition"
+    tipo: paper original revisado por pares
+    fecha: 2026-03-09
+  - url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13327195/"
+    titulo: "Self-Powered Flexible Triboelectric-Gated Ion-Gel Transistor for Neuromorphic Tactile Sensing and Human Activity Recognition"
+    tipo: copia de texto completo del paper original
+    fecha: 2026
+nivel_evidencia: A
+datos_cuantitativos:
+  memoria_sensorial: "~70 ms"
+  memoria_corto_plazo: "0.2-0.45 s"
+  memoria_largo_plazo: ">2.0 s"
+  no_linealidad_actualizacion: "NL ~1.3-2.5"
+  reconocimiento_actividad: ">88% en perceptron con perfiles LTP/LTD medidos"
+  ruido_alto: ">75% en el benchmark reportado"
+  flexion: "operacion reportada bajo 1.1 MPa de esfuerzo de flexion"
+condiciones_de_prueba: "dispositivo flexible sobre PET; pulsos triboelectricos de contacto alimentan directamente la modulacion sinaptica; perfiles de actualizacion medidos se trasladan posteriormente a un perceptron para evaluar reconocimiento de seis clases"
+requiere_computacion_digital: opcional
+requiere_alimentacion: parcial
+tipo_de_sensado: "tactil triboelectrico"
+tipo_de_memoria_o_estado: "conductancia analogica ionica/electrostatica con decaimiento multiescala"
+tipo_de_adaptacion: "plasticidad dependiente de tasa de spikes; potenciacion/depresion"
+tipo_de_actuacion: "modulacion de corriente postsinaptica"
+madurez_tecnica: "prototipo experimental de dispositivo; benchmark de reconocimiento parcialmente evaluado fuera del dispositivo"
+limitaciones:
+  - "la demostracion >88% no es una red clasificadora completa ejecutada fisicamente en el dispositivo; usa kernels LTP/LTD medidos dentro de un perceptron"
+  - "la autoalimentacion se refiere a los eventos sinapticos/tactiles; la instrumentacion de lectura y el benchmark de red no son battery-free end-to-end"
+  - "memoria denominada long-term en el experimento es >2 s, no retencion no volatil"
+contradicciones:
+  - "el articulo usa lenguaje de system-level relevance y real-time on-body computation, pero la clasificacion reportada incorpora perfiles de hardware en un modelo de perceptron; debe evitarse interpretarla como inferencia completamente fisica"
+etiquetas_neutrales: [triboelectric, ion-gel, graphene, neuromorphic, self-powered, tactile, analog-memory, rate-coded-plasticity]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
+hipotesis: "La colocalizacion de transduccion y memoria podria reducir conversiones y alimentacion auxiliar; no se cuantifica aqui ahorro end-to-end."
+interpretacion: "La capacidad relevante no es el reconocimiento de actividad por si solo, sino que un estimulo mecanico puede simultaneamente energizar, codificar y modificar estado sinaptico local sin acondicionamiento externo de potencia."
