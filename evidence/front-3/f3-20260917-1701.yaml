@@ -1,0 +1,46 @@
+id: f3-20260917-1701
+frente: front-3
+cycle_id: 2026-09-17T17
+tema_objeto: caracterizacion pasiva e inalambrica de corrosion bajo recubrimiento mediante resonancias RF
+afirmacion_principal: "HECHO: una superficie selectiva en frecuencia (FSS) chipless colocada sobre metal convierte cambios dielectricos asociados a corrosion bajo recubrimiento en desplazamientos monotónicos de varias frecuencias resonantes; puede interrogarse externamente sin bateria ni chip local. INTERPRETACION: la respuesta RF es observable directamente, mientras espesor/etapa de corrosion es inferencia calibrada."
+funcion: inferir
+principio_de_mediacion: "La corrosion modifica las propiedades electromagneticas/dielectricas del sistema metal-recubrimiento-sensor y desplaza las resonancias de una FSS; tres resonancias entre 2 y 6 GHz aportan rasgos redundantes que pueden fusionarse."
+variable_fisica_entrada: "progresion/espesor de corrosion bajo recubrimiento y propiedades dielectricas asociadas"
+señal_o_estado_salida: "desplazamiento de tres frecuencias resonantes RF; estimacion de progresion de corrosion tras calibracion/fusion"
+modalidad: "RF / resonancia electromagnetica / chipless RFID"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "La fuente primaria abierta consultada demuestra relaciones monotónicas y mejora por fusion, pero no expone en el resumen una precision absoluta; tesis asociada documenta interrogacion portable hasta 15 cm."
+latencia: "dependiente del barrido/interrogacion RF; no cuantificada en las fuentes abiertas consultadas"
+condiciones_de_prueba: "muestras metalicas dedicadas con corrosion bajo recubrimiento; FSS con tres resonancias en 2-6 GHz; simulacion y validacion experimental. La tesis asociada evalua sistemas chipless en entorno realista y lector portable."
+fuentes:
+  - url: "https://doi.org/10.1088/1361-665X/abbff4"
+    titulo: "Chipless RFID sensor for corrosion characterization based on frequency selective surface and feature fusion"
+    tipo: "paper experimental, Smart Materials and Structures"
+    fecha: "2020-10-28"
+  - url: "https://theses.ncl.ac.uk/jspui/handle/10443/5308"
+    titulo: "Chipless RFID sensor systems for structural health monitoring"
+    tipo: "tesis doctoral, Newcastle University"
+    fecha: "2021"
+  - url: "https://doi.org/10.1016/j.cjme.2025.100117"
+    titulo: "A comprehensive review of passive RFID sensors for structural health monitoring: Developments, challenges, and opportunities"
+    tipo: "revision"
+    fecha: "2025"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "3 resonancias de sensado entre 2 y 6 GHz"
+  - "simulacion de corrosion asociada: 0-200 um en pasos de 40 um (tesis)"
+  - "demostracion de lector portable hasta 15 cm (tesis/revision)"
+mecanismo_o_principio: "Transduccion electromagnetica pasiva: el estado material altera permitividad/acoplamiento y con ello la firma resonante retrodispersada. La fusion de multiples resonancias aumenta sensibilidad/robustez frente a depender de un unico pico."
+limitaciones:
+  - "La lectura requiere interrogador RF externo energizado; 'pasivo' describe el tag, no el sistema completo."
+  - "La revision de 2025 reporta alcance de lectura limitado a aproximadamente 15 cm para la FSS citada."
+  - "Orientacion, distancia, multipath, geometria metalica y ambiente pueden alterar la firma resonante."
+  - "Traducir frecuencia a cantidad de corrosion requiere calibracion/modelo; no es medicion directa de perdida de espesor."
+contradicciones:
+  - "La literatura describe alta sensibilidad y fiabilidad por fusion multirresonante, pero tambien reconoce interferencia ambiental y alcance corto; por tanto no debe interpretarse como cuantificacion universal de corrosion."
+etiquetas_neutrales: [corrosion, chipless-rfid, fss, resonancia, rf, pasivo, wireless, inferencia-indirecta, legacy-observability]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
