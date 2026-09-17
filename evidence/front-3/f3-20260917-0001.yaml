@@ -1,0 +1,57 @@
+id: f3-20260917-0001
+frente: front-3
+cycle_id: 2026-09-17T00
+tema_objeto: registro material pasivo de historia de esfuerzo por postluminiscencia
+afirmacion_principal:
+  hecho: "Un recubrimiento de Li0.12Na0.88NbO3:Pr (LNNO) puede conservar información espacial de esfuerzos mecánicos previos y recuperarla posteriormente mediante la distribución de postluminiscencia tras excitación UV."
+  hipotesis: "La función de registro se atribuye a la eliminación de sitios de trampa poco profundos, que hace que las características de postluminiscencia dependan de la carga mecánica previa."
+  interpretacion: "El material funciona como memoria física distribuida del historial de esfuerzo: el estado queda almacenado en el material y la lectura óptica puede realizarse después del evento."
+funcion: registrar
+principio_de_mediacion: "La carga mecánica modifica estados de trampa relevantes para la postluminiscencia en LNNO; una excitación UV posterior convierte ese estado retenido en un mapa óptico correlacionado con la distribución histórica de esfuerzo."
+variable_fisica_entrada: "distribución de esfuerzo mecánico aplicada previamente"
+señal_o_estado_salida: "intensidad/distribución espacial de postluminiscencia tras excitación UV"
+modalidad: "material mecanoluminiscente + lectura óptica diferida"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "El paper reporta recuperación cuantitativa y espacial del historial de esfuerzo; el resumen accesible no entrega una cifra única de error/resolución."
+latencia: "lectura diferida; requiere excitación UV y adquisición de la postluminiscencia"
+condiciones_de_prueba:
+  - "LNNO diseñado cerca del límite estructural R3c/P21ma y dopado con Pr."
+  - "El historial se recupera después de la carga mediante excitación UV y lectura de afterglow."
+  - "La distribución recuperada fue comparada cuantitativamente con análisis por elementos finitos."
+  - "La institución autora reportó retención del registro durante al menos cinco meses."
+fuentes:
+  - url: "https://doi.org/10.1063/5.0209065"
+    titulo: "Direct recording and reading of mechanical force by afterglow evaluation of multi-piezo mechanoluminescent material Li0.12Na0.88NbO3 on well-designed morphotropic phase boundary"
+    tipo: "paper experimental, Applied Physics Letters"
+    fecha: "2024-04-25"
+  - url: "https://www.tohoku.ac.jp/en/press/newly_developed_material_logs_and_stores_stress_information_of_infrastructure.html"
+    titulo: "Newly Developed Material Logs and Stores Stress Information of Infrastructure"
+    tipo: "fuente institucional del equipo autor"
+    fecha: "2024-06"
+nivel_evidencia: A
+datos_cuantitativos:
+  retencion_demostrada: ">= 5 meses (fuente institucional del equipo autor)"
+  dimensionalidad_registro: "distribución espacial 2D de esfuerzo"
+  validacion: "comparación cuantitativa con análisis por elementos finitos; cifra de error no disponible en el resumen consultado"
+mecanismo_o_principio: "memoria material de carga mediante modificación de trampas + interrogación óptica por postluminiscencia"
+limitaciones:
+  - "La lectura no es autónoma: requiere excitación UV y cámara o fotodetector."
+  - "Debe aplicarse/incorporarse el material sensor a la superficie observada."
+  - "No se verificó aquí una resolución temporal capaz de separar múltiples eventos sucesivos superpuestos."
+  - "La cifra de retención de cinco meses procede de la comunicación institucional del equipo, no del resumen bibliográfico consultado."
+contradicciones:
+  - "La mecanoluminiscencia convencional suele describir el esfuerzo en tiempo real y no conservar por sí sola una historia; este resultado depende específicamente del LNNO y de su comportamiento de postluminiscencia."
+  - "Existe literatura previa de registro histórico de propagación de grietas con películas mecanoluminiscentes, por lo que la novedad defendible aquí es el almacenamiento material y lectura diferida cuantitativa del esfuerzo mediante afterglow, no la idea general de usar ML para reconstruir daño pasado."
+etiquetas_neutrales:
+  - mecanoluminiscencia
+  - memoria_material
+  - historial_de_esfuerzo
+  - postluminiscencia
+  - sensado_pasivo
+  - lectura_optica
+  - estado_distribuido
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
