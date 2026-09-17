@@ -1,0 +1,91 @@
+id: f2-20260917-0401
+frente: front-2
+cycle_id: 2026-09-17T04
+tema_objeto: conmutacion telefonica electronica analogica PAM/TDM
+nombre_proyecto_o_artefacto: Highgate Wood Electronic Telephone Exchange
+afirmacion_principal: >-
+  HECHO DOCUMENTADO: Highgate Wood llevo a servicio publico experimental una central telefonica
+  totalmente electronica basada en multiplexacion temporal con modulacion por amplitud de pulsos
+  (PAM/TDM), pero esa rama concreta fue retirada del desarrollo britanico tras revelar ruido,
+  interferencia, incompatibilidades y costes que la hacian impracticable con la tecnologia disponible.
+  No fue un concepto no realizado: existio una instalacion de campo de 800 lineas aceptada en 1962.
+periodo_historico: "1956-1965"
+pais_contexto: Reino Unido
+disciplina: telecomunicaciones / conmutacion electronica
+problema_original: >-
+  Sustituir centrales electromecanicas por conmutacion electronica escalable, manteniendo servicio
+  telefonico publico e interoperabilidad con la red y aparatos existentes.
+principio_tecnico: >-
+  Multiplexacion temporal de conversaciones analogicas: hasta 100 conversaciones compartian una
+  highway mediante ranuras de 1 microsegundo repetidas a 10 kHz; puertas electronicas sincronizadas
+  conectaban lineas, highways y control comun.
+estado_historico: abandono de la rama PAM/TDM analogica; sustitucion y desviacion hacia reed-electronic y posteriormente TDM digital PCM
+resultado_real_alcanzado: >-
+  Central de campo de 800 lineas aceptada por el Post Office el 12-12-1962 y conectada experimentalmente
+  al servicio publico. El control/equipamiento se habia concebido con capacidad aplicable a centrales
+  mayores; el ensayo produjo experiencia operacional real antes de retirarse en 1965.
+causa_documentada: >-
+  La transmision analogica PAM sufria ruido/interferencia y problemas de calidad en trayectos reales;
+  las fuentes historicas tambien documentan coste elevado, necesidad de mejores componentes,
+  compatibilidad con sistemas existentes y reduccion sustancial del coste global.
+causas_alternativas:
+  - complejidad de interconexion con la red electromecanica existente
+  - fiabilidad y prestaciones limitadas de componentes electronicos de la epoca
+  - mantenimiento y crecimiento insuficientemente resueltos
+camino_que_lo_desplazo_si_existe: >-
+  En el corto plazo, conmutacion espacial reed-electronic/TXE y crossbar como transicion; posteriormente
+  TDM reaparecio sobre voz digitalizada mediante PCM y condujo a centrales digitales como System X.
+fuentes:
+  - url: https://api.parliament.uk/historic-hansard/lords/1963/feb/26/the-post-office
+    titulo: The Post Office - House of Lords, 26 February 1963
+    tipo: documento parlamentario contemporaneo
+    fecha: 1963-02-26
+  - url: https://www.researchgate.net/publication/295747653_Electronic_telephone_exchanges_in_the_UK_Early_research_and_development_1947-1963
+    titulo: "Electronic telephone exchanges in the UK: Early research and development 1947-1963"
+    tipo: articulo historico-tecnico
+    fecha: 2001-10
+  - url: https://discovery.ucl.ac.uk/10049443/1/Ward_12092965_thesis%20Copyright%20Material%20Removed.pdf
+    titulo: Integrating Cybernetics and the Government Machine
+    tipo: tesis historica con referencias de archivo
+    fecha: 2018
+  - url: https://www.communicationsmuseum.org.uk/emuseum/electronicswitching/
+    titulo: History of Electronic & Digital Switching
+    tipo: archivo/museo tecnico
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  lineas_en_servicio: 800
+  canales_por_highway: 100
+  ranura_temporal_us: 1
+  frecuencia_repeticion_khz: 10
+  aceptacion_servicio: 1962-12-12
+  retirada: 1965
+limitaciones: >-
+  Las cifras publicadas de numero total de valvulas/transistores difieren entre fuentes secundarias;
+  se omiten del paquete para evitar falsa precision. El ensayo no equivale a despliegue comercial masivo.
+contradicciones: >-
+  No debe narrarse como fracaso de TDM en general: fracaso/abandono fue de PAM/TDM analogico bajo las
+  condiciones tecnicas de entonces. TDM continuo posteriormente combinado con PCM digital.
+incertidumbres: >-
+  La proporcion exacta de trafico publico frente a trafico artificial durante toda la prueba varia segun
+  testimonios retrospectivos; esta ficha solo afirma conexion y servicio publico experimental documentados.
+etiquetas_neutrales:
+  - PAM
+  - TDM
+  - conmutacion_telefonica
+  - electronica_analogica
+  - field_trial
+  - sustitucion
+  - infraestructura_legacy
+separacion_epistemica:
+  hecho_documentado: >-
+    Highgate Wood existio, entro en prueba/servicio publico experimental en 1962 con 800 lineas y la rama
+    PAM/TDM fue retirada del programa de desarrollo.
+  testimonio: >-
+    Relatos tecnicos retrospectivos describen la transmision analogica como demasiado ruidosa en recorridos
+    reales y el ensayo como abortivo, aunque tecnicamente formativo.
+  interpretacion: >-
+    El principio no desaparecio: se abandono la representacion analogica PAM para telefonia de red, mientras
+    la multiplexacion temporal sobrevivio y resulto viable al cambiar la representacion de la voz a PCM.
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
