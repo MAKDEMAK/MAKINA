@@ -1,0 +1,51 @@
+id: f2-20260917-0901
+frente: front-2
+cycle_id: 2026-09-17T09
+tema_objeto: memoria magnetica de burbujas como memoria no volatil de estado solido
+afirmacion_principal: "HECHO DOCUMENTADO: la memoria de burbujas magneticas paso de prototipos Bell Labs a productos comerciales y aplicaciones reales, pero su aspiracion de memoria universal fue desplazada por memorias semiconductoras mas rapidas y discos mas densos/baratos; persistio temporalmente en nichos de robustez. INTERPRETACION: el principio no quedo simplemente 'fallido': fue una via comercialmente realizada pero sustituida por una combinacion de tecnologias especializadas."
+nombre_proyecto_o_artefacto: Magnetic bubble memory
+periodo_historico: 1967-1980s
+pais_contexto: "Estados Unidos; desarrollo/comercializacion internacional posterior, incluido Japon"
+disciplina: almacenamiento magnetico y microelectronica
+problema_original: "obtener memoria digital no volatil, densa, de estado solido y sin partes mecanicas, potencialmente capaz de cubrir memoria principal y almacenamiento masivo"
+principio_tecnico: "dominios magneticos cilindricos en peliculas delgadas de granate representan bits y son propagados por campos magneticos a traves de patrones de guiado; lectura magnetorresistiva"
+estado_historico: sustitucion con supervivencia temporal en nichos
+resultado_real_alcanzado: "productos comerciales desde 1977; TI introdujo un chip comercial de 92 kbit; Intel comercializo dispositivos de 1 Mbit y posteriormente 4 Mbit; hubo uso en terminales, controladores de maquinas, instrumentacion y computadores portatiles"
+causa_documentada: "competencia simultanea de memoria semiconductor mas rapida y de discos con mayor densidad, velocidad de acceso y menor coste; la literatura japonesa de 1981 aun identificaba coste y velocidad de conmutacion como problemas"
+causas_alternativas:
+  - "arquitectura de acceso serial/por bucles con latencia"
+  - "complejidad periferica: campo rotatorio, deteccion/control y requisitos de material/fabricacion"
+  - "la ventaja de ausencia de partes moviles solo justificaba el coste en ciertos entornos"
+camino_que_lo_desplazo_si_existe: "DRAM/otras memorias semiconductoras para memoria rapida; discos magneticos para almacenamiento masivo; posteriormente flash para nichos no volatiles robustos"
+fuentes:
+  - url: https://research.ibm.com/publications/the-frontiers-of-magnetic-bubble-technology
+    titulo: The Frontiers of Magnetic Bubble Technology
+    tipo: paper contemporaneo, Proceedings of the IEEE / IBM Research
+    fecha: 1975-01-01
+  - url: https://ntrs.nasa.gov/api/citations/19780015029/downloads/19780015029.pdf
+    titulo: "NASA technical report: state of the art in magnetic bubble memories"
+    tipo: informe tecnico contemporaneo
+    fecha: 1978
+  - url: https://www.jstage.jst.go.jp/article/jmsjmag1977/5/4/5_4_220/_article/-char/en
+    titulo: Outline of Magnetic Bubble Memory
+    tipo: revision tecnica contemporanea, Magnetics Society of Japan
+    fecha: 1981-08-30
+  - url: https://www.computerhistory.org/storageengine/bubbles-ccds-other-forgotten-memories/
+    titulo: "1977: Bubbles, CCDs & other forgotten memories"
+    tipo: interpretacion historica institucional
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  - "TI TBM 1.01/TIB 0103: 92 kbit comercial en 1977; informe NASA describe 157 bucles menores x 641 posiciones, con minimo 144 bucles buenos"
+  - "IBM 1975 discutia escalado de burbujas y configuraciones para aumentar densidad/velocidad"
+  - "revision japonesa 1981: burbujas <1 micrometro en desarrollo; mayor densidad de bit que memoria semiconductor, pero coste mayor"
+limitaciones:
+  - "no fue una tecnologia puramente abandonada: alcanzo produccion y aplicaciones reales"
+  - "la causalidad del declive es multivariable y varia segun si se compara contra RAM, disco o almacenamiento no volatil posterior"
+contradicciones:
+  - "la narrativa de 'fracaso inmediato' contradice la comercializacion y uso durante anos; tambien hubo desarrollo de segunda generacion incluso despues del retiro de varios fabricantes"
+incertidumbres:
+  - "no se atribuye una unica fecha de abandono global porque fabricantes y mercados regionales siguieron trayectorias distintas"
+etiquetas_neutrales: [memoria_magnetica, estado_solido, no_volatil, dominios_magneticos, sustitucion, comercializado, almacenamiento]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
