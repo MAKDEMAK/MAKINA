@@ -47,3 +47,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** abrir una línea fluidica desde `f2-20260916-1701`; FLODAC es precedente fuerte pero no aporta una necesidad funcional nueva y su velocidad fue una limitación documentada.
 - **Razón:** el siguiente paso de menor coste era convertir la especificación M2 ya existente en código reproducible con referencia uniforme, encoding por umbral y encoding por latencia+estado desvaneciente.
 - **Consecuencia:** `src/temporal_benchmark.py` y `tests/test_temporal_benchmark.py`. M4 queda bloqueado hasta ejecutar tests/benchmark y registrar métricas; energía de hardware permanece explícitamente no medida.
+
+## 2026-09-17 — cycle 07 consolidation
+- **Decisión:** fusionar `f1-20260917-0701` en `embodied-dynamics-computation`, `f3-20260917-0701` en `physical-state-interface` y deduplicar `f2-20260917-0701` dentro del precedente cryotron; sin promoción de madurez ni cuarto módulo.
+- **Evidencia:** `f1-20260917-0701`, `f2-20260917-0701`, `f3-20260917-0701`.
+- **Alternativa rechazada:** abrir un módulo específico de resonador temporal o memoria tiempo-temperatura.
+- **Razón:** ambos mecanismos nuevos encajan en contratos activos existentes; el resonador aún no comparte benchmark ejecutado y el TTI no reconstruye un historial térmico único. El cryotron es evidencia histórica redundante.
+- **Consecuencia:** se mantiene el límite de tres módulos y se prioriza medir artefactos M3 existentes.
