@@ -70,3 +70,5 @@
 {"id":"f1-20260916-2001","front":"front-1","kind":"evidence","label":"reprogrammable sequential mechanical ADC and FPGA-like logic","cycle_id":"2026-09-16T20"}
 {"id":"f2-20260916-2001","front":"front-2","kind":"evidence","label":"Lukyanov IGL hydraulic PDE integrator historical continuation","cycle_id":"2026-09-16T20"}
 {"id":"f3-20260916-2001","front":"front-3","kind":"evidence","label":"model-based virtual strain sensing for inaccessible points","cycle_id":"2026-09-16T20"}
+{"id":"f1-20260916-2101","front":"front-1","kind":"evidence","label":"self-powered analog multimodal memristive sensing and learning","cycle_id":"2026-09-16T21"}
+{"id":"f2-20260916-2101","front":"front-2","kind":"evidence","label":"FLODAC pure-fluid digital computer historical continuation","cycle_id":"2026-09-16T21"}
