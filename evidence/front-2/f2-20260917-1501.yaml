@@ -1,0 +1,31 @@
+id: f2-20260917-1501
+frente: front-2
+cycle_id: 2026-09-17T15
+tema_objeto: microvehiculo_aereo_biomimetico_con_oscilador_fluidico
+nombre_proyecto_o_artefacto: Insectothopter
+periodo_historico: decada_de_1970
+pais_contexto: Estados_Unidos
+disciplina: [microaeronautica, mecanica, fluidica, control]
+problema_original: transportar_un_sensor_de_escucha_en_una_plataforma_aerea_del_tamano_de_un_insecto
+principio_tecnico: oscilador_fluidico_miniatura_accionado_por_gas_para_batimiento_de_alas; gas_de_escape_aporta_empuje; guiado_por_laser_y_tira_bimetalica
+afirmacion_principal:
+  HECHO_DOCUMENTADO: La CIA construyo y volo un microvehiculo con forma de libelula; alcanzo 200_m en 60_s con masa_de_lanzamiento de 1_g, pero no se hizo operacional porque el control fallaba con viento_cruzado.
+  TESTIMONIO: La retrospectiva oficial de CIA indica que vientos cruzados superiores a aproximadamente 5_mph desviaban la trayectoria y que el prototipo estimulo investigacion posterior en UAV.
+  INTERPRETACION: Es un prototipo_no_escalado/abandonado por fragilidad del esquema de control frente a perturbaciones ambientales, no por incapacidad de generar vuelo a esa escala.
+estado_historico: prototipo_no_escalado
+resultado_real_alcanzado: vuelo_demostrado; 200_m_de_alcance; 60_s_de_vuelo; plataforma_de_1_g; nunca_operacional
+causa_documentada: control_insuficiente_en_viento_cruzado
+causas_alternativas: [dependencia_de_guiado_optico_externo, baja_autoridad_de_control_por_escala_y_masa]
+camino_que_lo_desplazo_si_existe: UAV_convencionales_y_posterior_microaeronautica_con_control_activo_electronico
+fuentes:
+  - {url: "https://www.cia.gov/legacy/museum/artifact/insectothopter/", titulo: "Insectothopter", tipo: archivo_institucional_museo, fecha: desconocida}
+  - {url: "https://www.cia.gov/stories/story/natural-spies-animals-in-espionage/", titulo: "Natural Spies: Animals in Espionage", tipo: retrospectiva_institucional, fecha: 2024}
+  - {url: "https://www.history.com/articles/pigeon-cameras-and-other-cia-cold-war-spy-gear", titulo: "Pigeon Cameras and Other CIA Cold War Spy Gear", tipo: historia_secundaria, fecha: 2017-09-18}
+nivel_evidencia: B
+datos_cuantitativos: {dimensiones_cm: [6,9,1.5], masa_lanzamiento_g: 1, alcance_m: 200, tiempo_vuelo_s: 60, limite_viento_cruzado_reportado_mph: 5}
+limitaciones: [control_muy_sensible_al_viento, guiado_dependiente_de_laser, no_llego_a_operacion]
+contradicciones: La fuente oficial resume el umbral como viento_cruzado_superior_a_5_mph; relatos secundarios varian al describir la intensidad exacta del viento.
+incertidumbres: [fecha_exacta_de_cada_prueba, arquitectura_completa_del_control, prestaciones_fuera_de_condiciones_calmas]
+etiquetas_neutrales: [biomimetica, micro_UAV, oscilador_fluidico, alas_batientes, guiado_laser, prototipo_no_escalado]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
