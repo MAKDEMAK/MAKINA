@@ -58,3 +58,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** desplazar `embodied-dynamics-computation` por PhyKAN o abrir una línea de control fluidico biomimetico.
 - **Razón:** PhyKAN demuestra conexiones no lineales físicas entrenables pero su ventaja es dependiente de tareas suaves, el entrenamiento es externo y el consumo dedicado es proyectado; Insectothopter demuestra vuelo pero documenta insuficiente robustez de control; AE aporta diagnóstico medido pero depende de acoplamiento y calibración por proceso.
 - **Consecuencia:** se mantienen M3/M1/M3 y el siguiente incremento de evidencia continúa siendo medir los prototipos M3 existentes.
+
+## 2026-09-17 — cycle 17 consolidation
+- **Decisión:** fusionar `f1-20260917-1701` en `embodied-dynamics-computation`; sumar `f3-20260917-1701` a `legacy-noninvasive-observability`; archivar `f2-20260917-1701` como `rasterized-videotex-precedent`. Sin promoción ni nuevo prototipo.
+- **Evidencia:** `f1-20260917-1701`, `f2-20260917-1701`, `f3-20260917-1701`.
+- **Alternativa rechazada:** desplazar un módulo activo por nanomecánica viscoelástica o promover la observabilidad RF como cuarto módulo.
+- **Razón:** F1 aporta memoria temporal material y umbral experimental, pero no red ni benchmark común; F3 aporta firma pasiva multirresonante de corrosión, pero la corrosión es inferida, el alcance reportado es hasta 15 cm y exige calibración/interrogador; CAPTAIN es un precedente real de desplazamiento de complejidad de representación sin traducción funcional medible al núcleo.
+- **Consecuencia:** se mantienen M3/M1/M3; el incremento de menor coste sigue siendo ejecutar y medir los prototipos M3 existentes.
