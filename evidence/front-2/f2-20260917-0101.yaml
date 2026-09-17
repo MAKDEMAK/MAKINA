@@ -1,0 +1,52 @@
+id: f2-20260917-0101
+frente: front-2
+cycle_id: 2026-09-17T01
+tema_objeto: logica_y_memoria_superconductora_controlada_magneticamente
+afirmacion_principal: "HECHO DOCUMENTADO: entre 1953 y mediados de los 1960 el cryotron paso de interruptores superconductores experimentales a circuitos logicos, memoria asociativa, registros integrados y al menos un computador experimental; fue desplazado principalmente por la rapida reduccion de coste de los circuitos integrados de silicio, aunque la computacion superconductora continuo por otras ramas."
+nombre_proyecto_o_artefacto: Cryotron
+periodo_historico: "1953-mediados de 1960; continuaciones posteriores"
+pais_contexto: Estados Unidos
+disciplina: computacion_superconductora_y_microelectronica
+problema_original: "Construir logica y memoria digital mucho mas compactas y de muy baja disipacion que los sistemas de tubos de vacio, incluyendo memoria direccionable por contenido."
+principio_tecnico: "Un campo magnetico generado por una corriente de control fuerza un conductor superconductivo a pasar al estado resistivo; el dispositivo presenta ganancia y puede interconectarse como elemento logico. La miniaturizacion mediante peliculas delgadas permitia integrar matrices de estos interruptores."
+estado_historico: sustitucion_con_absorcion_parcial
+resultado_real_alcanzado: "Buck construyo y probo cryotrons, puertas, flip-flops y amplificadores; se desarrollo una memoria de reconocimiento/contenido direccionable; GE produjo registros de desplazamiento integrados y, segun la reconstruccion historica IEEE, un computador experimental formado por tres matrices de cryotrons integrados."
+causa_documentada: "La evolucion de los microchips de silicio durante los anos 1960 redujo rapidamente el coste de la electronica y eclipsó al cryotron; hacia mediados de la decada la mayor parte de los grupos abandono esta linea."
+causas_alternativas:
+  - "Los primeros dispositivos bobinados conmutaban lentamente; una combinacion Pb-Nb citada historicamente alcanzaba 5 microsegundos, aunque peliculas delgadas posteriores llegaron a 0.1 microsegundos."
+  - "El funcionamiento exigia refrigeracion criogenica con helio liquido, imponiendo infraestructura ajena al dispositivo logico."
+camino_que_lo_desplazo_si_existe: "Circuitos integrados de silicio para logica y memoria convencional. Parte de la linea superconductora se desvio posteriormente hacia dispositivos Josephson y computacion superconductora especializada."
+fuentes:
+  - url: "https://dome.mit.edu/handle/1721.3/40618"
+    titulo: "The cryotron - a superconductive computer component"
+    tipo: "informe_tecnico_primario_MIT_Lincoln_Laboratory"
+    fecha: "1955-08-22"
+  - url: "https://spectrum.ieee.org/dudley-bucks-forgotten-cryotron-computer"
+    titulo: "Dudley Buck's Forgotten Cryotron Computer"
+    tipo: "reconstruccion_historica_tecnica_IEEE"
+    fecha: "2014"
+  - url: "https://www.aps.org/apsnews/2012/02/1957-mit-introduces-first-cryotron"
+    titulo: "February 6, 1957: MIT introduces the first cryotron"
+    tipo: "historia_institucional_APS"
+    fecha: "2012-02-01"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Cryotron bobinado Pb-Nb: tiempo de conmutacion historicamente reportado de 5 us."
+  - "Pelicula superconductora experimental de ~100 nm: conmutacion de 0.1 us."
+  - "Unidad de reconocimiento propuesta: 75000 cryotrons, ~3.2 kB."
+  - "GE alcanzo un registro de desplazamiento integrado en 1961 y posteriormente un computador experimental de tres matrices."
+limitaciones:
+  - "Necesidad de operacion criogenica."
+  - "La ventaja de integracion fue erosionada rapidamente por la economia y escalado del silicio."
+  - "El computador de tres matrices esta documentado aqui mediante reconstruccion historica IEEE, no mediante un informe primario localizado en esta ronda."
+contradicciones:
+  - "No es correcto describir el cryotron como tecnologia que simplemente desaparecio: la computacion superconductora continuo, especialmente mediante dispositivos Josephson; lo abandonado fue su trayectoria como competidor general del silicio."
+incertidumbres:
+  - "No se verifico en fuente primaria durante esta ronda la arquitectura y prestaciones exactas del computador experimental de GE."
+etiquetas_neutrales: [superconductividad, interruptor_magnetico, logica, memoria_asociativa, peliculas_delgadas, criogenia, sustitucion]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
+separacion_epistemica:
+  hecho_documentado: "El principio fue construido y probado; existieron circuitos logicos y memorias y la linea alcanzo integracion experimental antes de perder frente al silicio."
+  testimonio: "La reconstruccion IEEE atribuye a GE un computador experimental construido con tres matrices integradas de cryotrons."
+  interpretacion: "El camino representa sustitucion tecnologica y desviacion, no fracaso fisico del principio: perdio como plataforma general mientras descendientes superconductores continuaron en nichos distintos."
