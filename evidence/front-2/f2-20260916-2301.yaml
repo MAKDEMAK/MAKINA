@@ -1,0 +1,30 @@
+id: f2-20260916-2301
+frente: front-2
+cycle_id: 2026-09-16T23
+tema_objeto: acceso directo mediante tiras magneticas seleccionadas mecanicamente
+afirmacion_principal: IBM 2321 Data Cell materializo un camino intermedio entre cinta secuencial y disco mediante tiras magneticas cortas seleccionables. Llego a producto comercial, pero la complejidad mecanica y la dependabilidad quedaron en desventaja frente al disco.
+nombre_proyecto_o_artefacto: IBM 2321 Data Cell Drive
+periodo_historico: 1964-1975
+pais_contexto: Estados Unidos
+disciplina: almacenamiento informatico electromecanico
+problema_original: cubrir el hueco coste-capacidad-rendimiento entre cinta secuencial y discos de acceso directo
+principio_tecnico: seleccionar una tira magnetica corta, extraerla, envolverla sobre un tambor de lectura-escritura y reinsertarla para obtener direccionamiento directo sobre medio tipo cinta
+estado_historico: sustitucion
+resultado_real_alcanzado: producto comercial System/360 de 400 MB por unidad; hasta ocho unidades superaban 3 GB
+causa_documentada: IBM atribuyo el desplazamiento a complejidades mecanicas demasiado grandes y costosas frente a discos; Columbia documento problemas de dependabilidad en la reinsercion de las tiras
+causas_alternativas: [mejora de capacidad y coste del disco, mantenimiento del transporte mecanico del medio]
+camino_que_lo_desplazo_si_existe: almacenamiento magnetico en disco
+fuentes:
+  - {url: 'https://archive.computerhistory.org/resources/access/text/2023/12/102803785-05-01-acc.pdf', titulo: 'IBM San Jose: A Quarter Century of Innovation', tipo: 'historia institucional archivada', fecha: '1977'}
+  - {url: 'https://www.columbia.edu/cu/computinghistory/datacell.html', titulo: 'The IBM 2321 Data Cell Drive', tipo: 'archivo institucional', fecha: desconocida}
+nivel_evidencia: A
+datos_cuantitativos: {capacidad_por_unidad: '400 MB', capacidad_ocho_unidades: '>3 GB', celdas_por_unidad: 10, tiras_por_celda: 200, seleccion_tira: '175-600 ms', acceso_otro_cilindro_promedio: '95 ms'}
+limitaciones: [complejidad de seleccion y reinsercion, latencia variable, manipulacion repetida de medio flexible]
+contradicciones: algunas fuentes retrospectivas describen buena fiabilidad en ciertas instalaciones, mientras Columbia documenta problemas concretos; no se clasifica como fracaso funcional general
+incertidumbres: no se establecio una tasa global de fallas entre instalaciones
+etiquetas_neutrales: [direct-access-storage, removable-media, magnetic-strip, electromechanical-selection, legacy-storage]
+hecho_documentado: IBM comercializo el 2321 y su historia institucional concluyo que la complejidad mecanica perdio frente al disco
+TESTIMONIO: Columbia identifica la reinsercion de la tira como punto debil de su instalacion
+INTERPRETACION: el camino intento convertir direccionamiento logico en seleccion mecanica granular de unidades de medio magnetico
+fecha_hallazgo: '2026-09-16'
+fecha_revision: '2026-09-16'
