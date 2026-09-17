@@ -1,0 +1,58 @@
+id: f2-20260917-0201
+frente: front-2
+cycle_id: 2026-09-17T02
+tema_objeto: memoria magnetica de burbujas como almacenamiento solido no volatil
+nombre_proyecto_o_artefacto: Magnetic Bubble Memory
+periodo_historico: "1967-1980s"
+pais_contexto: "Estados Unidos; desarrollo y comercializacion internacional"
+disciplina: "memoria y almacenamiento magnetico"
+afirmacion_principal: "La memoria de burbujas magneticas constituyo una via comercial real hacia almacenamiento no volatil sin partes mecanicas: dominios magneticos moviles almacenaban bits y se desplazaban por una pelicula magnetica. Tras fuerte inversion y productos comerciales, fue desplazada durante los anos 1980 por discos y memorias semiconductoras mas baratas, rapidas y densas, sobreviviendo temporalmente en nichos de robustez."
+problema_original: "obtener almacenamiento no volatil, robusto y sin mecanismos rotatorios, con potencial para sustituir discos/cintas en aplicaciones de alta fiabilidad"
+principio_tecnico: "pequenos dominios magnetizados de polaridad opuesta ('burbujas') permanecen estables en una pelicula magnetica bajo bias y son desplazados secuencialmente mediante campos/caminos magneticos para escritura, transporte y lectura de bits"
+estado_historico: sustitucion
+resultado_real_alcanzado:
+  - "Intel introdujo una matriz comercial de 4 Mbit en 1979; el ejemplar documentado por CHM contiene cuatro unidades de 1 Mbit."
+  - "Hubo uso comercial en videojuegos, controladores de maquinas y equipos robustos; GRiD Compass incorporo 384 KB de bubble memory."
+  - "Western Electric puso en operacion una linea de produccion en 1976 y proyecto modulos de 272 kbit para 10 s de voz digitalizada."
+causa_documentada: "memorias semiconductoras y discos evolucionaron hacia menor coste, mayor velocidad y mayor densidad; CHM documenta que esas alternativas volvieron obsoleta la tecnologia"
+causas_alternativas:
+  - "acceso inherentemente secuencial/por propagacion, mas cercano a cinta o disco que a RAM"
+  - "complejidad magnetica y termica; implementaciones comerciales podian generar calor"
+camino_que_lo_desplazo_si_existe: "RAM/almacenamiento semiconductor de mayor velocidad y densidad, junto con discos magneticos cada vez mas compactos y economicos"
+fuentes:
+  - url: "https://www.computerhistory.org/revolution/memory-storage/8/263"
+    titulo: "Innovative Ideas & Stepping Stones Part I"
+    tipo: "museo/archivo tecnico institucional"
+    fecha: "s.f."
+  - url: "https://www.computerhistory.org/timeline/memory-storage/"
+    titulo: "Memory & Storage | Timeline of Computer History"
+    tipo: "cronologia institucional"
+    fecha: "s.f."
+  - url: "https://archive.computerhistory.org/resources/access/text/2013/04/102723173-05-01-acc.pdf"
+    titulo: "Semiconductor industry service: manufacturing markets, 1975-1983"
+    tipo: "informe industrial contemporaneo archivado"
+    fecha: "1970s"
+  - url: "https://archive.computerhistory.org/resources/access/text/2013/04/102723457-05-01-acc.pdf"
+    titulo: "Semiconductor industry service: research newsletters, 1981-1982"
+    tipo: "informe de mercado contemporaneo archivado"
+    fecha: "1981"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Intel: matriz de 4 Mbit introducida en 1979."
+  - "Mercado mundial estimado por Dataquest: USD 8.5M (1979), 22.5M (1980), 49M (1981), 80M (1982), 145M (1983)."
+  - "Western Electric: modulo previsto de 272 kbit para 10 s de voz digitalizada."
+limitaciones:
+  - "mas lenta que RAM semiconductor contemporanea"
+  - "la propagacion de burbujas impone acceso secuencial y latencia"
+  - "ventaja de ausencia de partes moviles no compenso finalmente coste/velocidad/densidad"
+contradicciones:
+  - "No fue un prototipo fallido: llego a produccion, mercado y aplicaciones reales."
+  - "La narrativa de desaparicion total es excesiva: persistio en nichos donde robustez y ausencia de partes moviles eran valiosas."
+incertidumbres:
+  - "Las cifras de mercado de 1982-1983 en el informe Dataquest son estimaciones contemporaneas, no necesariamente ventas finales realizadas."
+etiquetas_neutrales: [memoria_magnetica, dominios_moviles, almacenamiento_no_volatil, estado_solido, acceso_secuencial, sustitucion]
+hecho_documentado: "Bell Labs exploro la tecnologia desde fines de los 1960; multiples fabricantes invirtieron fuertemente; existieron chips, lineas de produccion y usos comerciales; en los 1980 fue eclipsada por discos y memoria semiconductor."
+testimonio: "La prensa tecnica y publicidad de epoca promovian la robustez frente a discos; fuentes institucionales posteriores confirman que esa ventaja existia pero no basto comercialmente."
+interpretacion: "El principio tecnico que quedo reducido fue almacenamiento no volatil mediante transporte controlado de estados magneticos discretos dentro de un medio solido, sin desplazar fisicamente el soporte completo."
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
