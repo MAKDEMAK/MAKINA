@@ -33,35 +33,22 @@ Registro breve de decisiones de síntesis y desarrollo.
 
 ## 2026-09-17 — cycle 10 consolidation
 - **Decisión:** mantener `f1-20260917-1001` como `thermodynamic-molecular-computation` en espera; sumar `f3-20260917-1001` a `legacy-noninvasive-observability`; deduplicar `f2-20260917-1001` dentro de `parametric-phase-logic-precedent`. Sin promoción ni nuevo prototipo.
-- **Evidencia:** `f1-20260917-1001`, `f2-20260917-1001`, `f3-20260917-1001`.
-- **Alternativa rechazada:** desplazar un módulo activo por computación molecular o abrir un módulo SAW.
-- **Razón:** F1 demuestra un mecanismo computacional nuevo para el grafo pero con horas de latencia y periferia de laboratorio; F3 mejora la ruta de observabilidad de vibración pero requiere contacto y lector externo; F2 es continuidad histórica de parametron ya registrado.
-- **Consecuencia:** se conserva el límite de tres módulos; el incremento de evidencia de menor coste sigue siendo medir los prototipos M3 existentes.
 
 ## 2026-09-17 — cycle 11 consolidation
 - **Decisión:** fusionar `f1-20260917-1101` en `embodied-dynamics-computation`; sumar `f3-20260917-1101` a `legacy-noninvasive-observability`; archivar `f2-20260917-1101` dentro de `saturable-magnetic-logic-precedent`. Sin promoción ni nuevo prototipo.
-- **Evidencia:** `f1-20260917-1101`, `f2-20260917-1101`, `f3-20260917-1101`.
-- **Alternativa rechazada:** promover observabilidad magnética a módulo activo o tratar ALWAC 800 como nueva línea de cómputo físico.
-- **Razón:** el micelio refuerza una línea activa ya existente pero su NARMA-10 (~0.984), SNR y periferia externa no resuelven el benchmark común; la inversión magnética es funcionalmente relevante pero carece de error/resolución cuantificados en la evidencia abierta; ALWAC 800 es un precedente histórico sin traducción funcional nueva.
-- **Consecuencia:** se mantienen tres módulos activos y las madureces M3/M1/M3; el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3.
 
 ## 2026-09-17 — cycle 13 consolidation
 - **Decisión:** fusionar `f1-20260917-1301` en `temporal-in-sensor-processing`, `f3-20260917-1301` en `physical-state-interface` y deduplicar `f2-20260917-1301` dentro de `balanced-ternary-precedent`. Sin promoción ni nuevo prototipo.
-- **Evidencia:** `f1-20260917-1301`, `f2-20260917-1301`, `f3-20260917-1301`.
-- **Alternativa rechazada:** abrir un módulo neuromórfico autoalimentado independiente o promover observabilidad magnética adherida como cuarto módulo.
-- **Razón:** F1 refuerza la cadena sensado->codificación temporal->plasticidad->memoria, pero las tareas mayores incluyen simulación; F3 aporta error cuantificado (3.4% fuerza, 4.2% torque) y pasividad local, pero exige adhesión, calibración y lector externo; Setun ya estaba representado como precedente ternario.
-- **Consecuencia:** se mantienen tres módulos activos M3/M1/M3; el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3.
 
 ## 2026-09-17 — cycle 15 consolidation
 - **Decisión:** no promover `f1-20260917-1501`; sumar `f3-20260917-1501` a observabilidad legacy en espera; archivar `f2-20260917-1501` como precedente de vuelo fluidico. Sin nuevo prototipo.
-- **Evidencia:** `f1-20260917-1501`, `f2-20260917-1501`, `f3-20260917-1501`.
-- **Alternativa rechazada:** desplazar `embodied-dynamics-computation` por PhyKAN o abrir una línea de control fluidico biomimetico.
-- **Razón:** PhyKAN demuestra conexiones no lineales físicas entrenables pero su ventaja es dependiente de tareas suaves, el entrenamiento es externo y el consumo dedicado es proyectado; Insectothopter demuestra vuelo pero documenta insuficiente robustez de control; AE aporta diagnóstico medido pero depende de acoplamiento y calibración por proceso.
-- **Consecuencia:** se mantienen M3/M1/M3 y el siguiente incremento de evidencia continúa siendo medir los prototipos M3 existentes.
 
 ## 2026-09-17 — cycle 17 consolidation
 - **Decisión:** fusionar `f1-20260917-1701` en `embodied-dynamics-computation`; sumar `f3-20260917-1701` a `legacy-noninvasive-observability`; archivar `f2-20260917-1701` como `rasterized-videotex-precedent`. Sin promoción ni nuevo prototipo.
-- **Evidencia:** `f1-20260917-1701`, `f2-20260917-1701`, `f3-20260917-1701`.
-- **Alternativa rechazada:** desplazar un módulo activo por nanomecánica viscoelástica o promover la observabilidad RF como cuarto módulo.
-- **Razón:** F1 aporta memoria temporal material y umbral experimental, pero no red ni benchmark común; F3 aporta firma pasiva multirresonante de corrosión, pero la corrosión es inferida, el alcance reportado es hasta 15 cm y exige calibración/interrogador; CAPTAIN es un precedente real de desplazamiento de complejidad de representación sin traducción funcional medible al núcleo.
-- **Consecuencia:** se mantienen M3/M1/M3; el incremento de menor coste sigue siendo ejecutar y medir los prototipos M3 existentes.
+
+## 2026-09-17 — cycle 18 consolidation
+- **Decisión:** fusionar `f1-20260917-1801` y `f3-20260917-1801` en `physical-state-interface`; deduplicar `f2-20260917-1801` dentro de `fluidic-general-computing-precedent`. Mantener M3/M1/M3 y no crear prototipo nuevo.
+- **Evidencia:** `f1-20260917-1801`, `f2-20260917-1801`, `f3-20260917-1801`.
+- **Alternativa rechazada:** abrir un cuarto módulo de control mecánico pasivo o una línea independiente de memoria química acumulativa.
+- **Razón:** F1 demuestra sensado+decisión+reconfiguración mecánica sin electrónica, pero con lógica predeterminada; F3 demuestra memoria material acumulativa sin electrónica, pero no identifica de forma única la trayectoria térmica; ambos convergen funcionalmente con el módulo físico existente. FLODAC es continuidad histórica ya representada.
+- **Consecuencia:** el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3 existentes antes de M4.
