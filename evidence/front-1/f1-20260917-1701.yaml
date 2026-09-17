@@ -1,0 +1,35 @@
+id: f1-20260917-1701
+frente: front-1
+cycle_id: 2026-09-17T17
+tema_objeto: dispositivo nanomecanico viscoelastico para computacion neuromorfica
+afirmacion_principal: Una pelicula nanometrica de PDMS convierte deformacion electromeccanica reversible y relajacion viscoelastica en memoria temporal y respuesta de umbral tipo neurona dentro del mismo elemento.
+capacidad_nueva: integrar acumulacion temporal, memoria de estimulos y disparo no lineal en un dispositivo nanomecanico de escala nanometrica sin capacitor o circuito complejo separado
+mecanismo_o_principio: La atraccion electrostatica comprime PDMS entre electrodos; la viscoelasticidad retarda la recuperacion y conserva historia de estimulos, mientras la separacion nanometrica modula fuertemente la corriente de tunel.
+dominio: computacion nanomecanica; neuromorfica; materiales viscoelasticos
+fuentes:
+  - url: https://doi.org/10.1126/sciadv.aeg9893
+    titulo: Viscoelastic nanomechanical devices for neuromorphic information processing
+    tipo: paper experimental peer-reviewed
+    fecha: 2026-09-16
+  - url: https://news.mit.edu/2026/nanoscale-mechanics-could-enable-brain-inspired-computing-0916
+    titulo: Nanoscale mechanics could enable brain-inspired computing
+    tipo: fuente institucional
+    fecha: 2026-09-16
+nivel_evidencia: A
+datos_cuantitativos: pelicula PDMS ~2 nm; control mecanico subnanometrico reportado; eficiencia superior a sistemas biologicos solo proyectada, no medida end-to-end
+condiciones_de_prueba: dispositivo metal/PDMS/metal fabricado experimentalmente; excitacion por voltaje y lectura electrica
+requiere_computacion_digital: no
+requiere_alimentacion: si
+tipo_de_sensado: estado electromeccanico interno inducido por voltaje
+tipo_de_memoria_o_estado: memoria temporal viscoelastica de fuerzas/voltajes previos
+tipo_de_adaptacion: dinamica temporal ajustable mediante propiedades del polimero y geometria
+tipo_de_actuacion: compresion nanomecanica electrostatica y respuesta electrica de umbral
+madurez_tecnica: demostracion experimental de dispositivo; no sistema integrado a escala de red
+limitaciones: no demuestra red neuromorfica completa ni ventaja energetica end-to-end; escalabilidad, uniformidad, interconexion y durabilidad quedan por demostrar
+contradicciones: la eficiencia energetica superior a sistemas biologicos es una proyeccion; no debe tratarse como medicion experimental del sistema
+etiquetas_neutrales: [nanomecanica, viscoelasticidad, PDMS, memoria_material, neurona_artificial, tunelamiento, computacion_fisica]
+hecho: Se demostro experimentalmente que la relajacion viscoelastica permite acumular historia de estimulos y producir una respuesta de disparo en un unico dispositivo nanomecanico.
+hipotesis: La plataforma podria extenderse a materia computacional con sensado, memoria, computacion y actuacion mas integrados.
+interpretacion: El avance material es usar el tiempo de relajacion mecanica del material como variable de estado computacional, reduciendo funciones que normalmente requieren componentes electronicos separados.
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
