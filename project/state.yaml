@@ -9,7 +9,7 @@ active_modules:
     evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901]
     current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente. F3-0901 agrega transduccion mecano-optica localizada en tiempo real, pero intensidad depende de concentracion y tasa de carga y no satisface M4 del artefacto existente."
+    next_action: "Mantener M3 y medir el prototipo existente; T10 no aporta medicion del artefacto actual."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.90
@@ -23,38 +23,41 @@ active_modules:
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101, f1-20260917-0002, f1-20260917-0901]
     current_architecture: "temporal signal -> local transduction/state or event encoder -> common event task -> metrics"
     success_criterion: "Conservar >=95% del score digital o mejorarlo y reducir >=10x volumen transferido; separar energia local y periferica."
-    next_action: "Ejecutar benchmark y tests existentes antes de M4. F1-0901 refuerza integracion sensor-estado-computo, pero sus ~25.5 fJ/spike no son energia end-to-end y mantiene preprocesamiento/readout externo."
+    next_action: "Ejecutar benchmark y tests existentes antes de M4."
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301]
-    reason: "Aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001]
+    reason: "F3-1001 agrega vibracion SAW pasiva e inalambrica, pero requiere contacto y lector externo; aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
   - id: implicit-analog-solver
     evidence_ids: [f1-20260917-0001]
     reason: "La solucion inversa por equilibrio de lazo analogico esta demostrada en chip, pero no converge todavia con una funcion del nucleo ni justifica desplazar uno de los tres modulos activos."
   - id: spatial-in-sensor-processing
     evidence_ids: [f1-20260917-0401]
-    reason: "Convolucion optica programable en sensor esta demostrada con 98.09% frente a 98.42% software y ventaja energetica reportada, pero un solo sustrato y comparacion periferica incompleta no justifican desplazar temporal-in-sensor-processing ni crear M2 separado."
+    reason: "Convolucion optica programable demostrada, pero comparacion periferica incompleta."
+  - id: thermodynamic-molecular-computation
+    evidence_ids: [f1-20260917-1001]
+    reason: "Computacion programable y autocorreccion por relajacion termodinamica demostradas, pero la escala temporal, preparacion/lectura externa y ausencia de traduccion funcional al nucleo impiden desplazar un modulo activo."
 archived_modules:
   - {id: air-cushion-transport, reason: "sin convergencia funcional"}
   - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
   - {id: synchronized-facsimile-path, reason: "sin traduccion funcional suficiente"}
   - {id: differential-computing-precedents, reason: "deduplicado; sin necesidad arquitectonica actual"}
-  - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-20260917-0901], reason: "deduplicado; F2-0901 confirma comercializacion, sustitucion y supervivencia de nicho sin nueva traduccion funcional al nucleo"}
-  - {id: parametric-phase-logic-precedent, reason: "sustituido; sin traduccion funcional nueva"}
+  - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-20260917-0901], reason: "deduplicado"}
+  - {id: parametric-phase-logic-precedent, evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501, f2-20260916-1901, f2-20260917-1001], reason: "T10 confirma escala comercial, logica de fase y sustitucion por transistor; precedente deduplicado sin traduccion funcional nueva"}
   - {id: saturable-magnetic-logic-precedent, reason: "sin traduccion funcional especifica"}
-  - {id: mechanical-video-density-precedent, reason: "sin convergencia funcional"}
+  - {id: mechanical-video-density-precedent, reason: "sin convergencia medible"}
   - {id: integrated-office-automation-precedent, reason: "sin traduccion funcional medible"}
   - {id: cartridge-decoupled-precision-transport, reason: "sin convergencia medible"}
   - {id: subharmonic-synthesis-precedent, reason: "sin traduccion funcional medible"}
   - {id: dynamic-track-following-precedent, reason: "precedente sin modulo activo"}
   - {id: balanced-ternary-precedent, reason: "deduplicado"}
-  - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101, f2-20260917-0301], reason: "evidencia historica adicional confirma logica/control fluido real y continuidad de nicho; sigue redundante y sin traduccion funcional medible que desplace modulos activos"}
+  - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101, f2-20260917-0301], reason: "redundante y sin traduccion funcional medible"}
   - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
-  - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "direccionamiento mecanico granular demostrado, pero complejidad/dependabilidad perdieron frente al disco y no hay traduccion funcional medible al nucleo actual"}
-  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "transduccion capacitiva por contacto demostrada comercialmente, pero el contacto/desgaste y la sustitucion por rutas grabables/opticas no aportan traduccion funcional medible al nucleo actual"}
-  - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101, f2-20260917-0701], reason: "evidencia historica adicional confirma logica/memoria superconductora y sustitucion por silicio; sigue siendo precedente deduplicado sin traduccion funcional medible al nucleo actual"}
-  - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "demuestra multiplexacion temporal analogica en servicio experimental y posterior sustitucion por PCM/TDM; precedente historico valido pero sin traduccion funcional medible que desplace modulos activos"}
+  - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "sin traduccion funcional medible"}
+  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "sin traduccion funcional medible"}
+  - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101, f2-20260917-0701], reason: "deduplicado"}
+  - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
 current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos existentes. T09 refuerza sensor-computo temporal y transduccion mecano-optica, pero no satisface criterios de M4 ni justifica cuarto modulo."
-last_synthesized_cycle: 2026-09-17T09
+next_action: "Priorizar medicion de prototipos M3. T10 agrega una ruta molecular termodinamica en espera y sensado SAW pasivo a observabilidad; ninguna satisface M4 ni desplaza los tres modulos activos."
+last_synthesized_cycle: 2026-09-17T10
