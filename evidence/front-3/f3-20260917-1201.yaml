@@ -1,0 +1,55 @@
+id: f3-20260917-1201
+frente: front-3
+cycle_id: 2026-09-17T12
+tema_objeto: sensor mecano-cromico pasivo adherido para hacer visible deformacion y apertura de grietas
+afirmacion_principal: "Una lamina mecano-cromica adherida por sus extremos puede transducir elongacion superficial en un cambio de color visible sin alimentacion; el evento fisico de deformacion se observa directamente, mientras estimar ancho de grieta desde el color es una inferencia calibrada y sensible a geometria y fabricacion."
+funcion: medir
+principio_de_mediacion: "La deformacion modifica la estructura/condicion de resonancia optica del sensor y por ello su color; el componente hue H del espacio HSV cambia aproximadamente de forma lineal con la deformacion en las condiciones ensayadas."
+variable_fisica_entrada: deformacion longitudinal superficial / apertura local de grieta
+señal_o_estado_salida: cambio de color visible; hue HSV para lectura cuantitativa
+modalidad: optica_mecanocromica_pasiva
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: opcional
+resolucion_o_precision: "Se detecto deformacion de concreto hasta 0.01 mm. En viga, ejemplos escala→imagen: 0.050→0.043 mm y 0.300→0.272 mm; a grietas mayores aparecieron errores importantes (1.400→0.558 mm; 4.000→1.517 mm)."
+latencia: "respuesta visual durante deformacion; no se reporta una latencia temporal instrumental. Tras freeze-thaw, la capacidad de decoloracion se recupero en ~2 h al retornar hacia ~15 °C."
+condiciones_de_prueba: "Ensayos de traccion sobre concreto con sensor pegado mediante Loctite SF 770/406; analisis de video/color HSV; ensayo freeze-thaw segun ASTM C666/C666M-15; ensayo en miembro de viga con grietas diagonales."
+fuentes:
+  - url: https://doi.org/10.3390/ma16020662
+    titulo: Crack Evaluation of Concrete Using Mechanochromic Sensor
+    tipo: paper_experimental
+    fecha: 2023-01-10
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9860578/
+    titulo: Crack Evaluation of Concrete Using Mechanochromic Sensor (PMC full text)
+    tipo: repositorio_institucional_fulltext
+    fecha: 2023-01-10
+nivel_evidencia: A
+datos_cuantitativos:
+  deteccion_deformacion_mm: 0.01
+  ejemplos_crack_scale_vs_imaging_mm:
+    - [0.050, 0.043]
+    - [0.300, 0.272]
+    - [1.400, 0.558]
+    - [4.000, 1.517]
+    - [0.250, 0.334]
+    - [0.650, 1.041]
+    - [1.700, 2.094]
+    - [5.000, 7.003]
+  recuperacion_post_freeze_thaw_h: 2
+  temperatura_recuperacion_aprox_C: 15
+mecanismo_o_principio:
+  medicion_directa: "La elongacion/deformacion mecanica causa directamente la decoloracion del sensor."
+  inferencia_indirecta: "Convertir hue/decoloracion a deformacion numerica o ancho de grieta requiere calibracion y analisis; no equivale a medir directamente la separacion geometrica de las caras de la grieta."
+limitaciones:
+  - "La cuantificacion pierde fiabilidad con propagacion y geometria irregular de grieta."
+  - "Hubo decoloracion fuera del area de grieta en un especimen."
+  - "Condicion de fabricacion del sensor afecta los resultados."
+  - "Las zonas cubiertas por adhesivo no deforman/decoloran como la zona libre."
+  - "La respuesta a baja temperatura queda temporalmente alterada y debe recuperarse."
+  - "La lectura visual cualitativa no requiere electronica, pero cuantificacion reproducible mediante HSV requiere camara/procesamiento."
+contradicciones:
+  - "El articulo describe mediciones de ancho de grieta como precisas en algunos casos, pero sus propios datos muestran errores grandes para varias grietas mayores y excluyen un especimen por decoloracion espuria; por tanto no se generaliza precision alta."
+etiquetas_neutrales: [mecanocromismo, sensor_pasivo, deformacion, grieta, color, concreto, sin_alimentacion, medicion_directa, inferencia_indirecta]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
