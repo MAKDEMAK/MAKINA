@@ -1,0 +1,40 @@
+id: f1-20260917-0701
+frente: front-1
+cycle_id: 2026-09-17T07
+tema_objeto: resonador piezoelectrico unico como reservoir fisico temporal
+afirmacion_principal:
+  hecho: Un disco ceramico PZT operado cerca de resonancia realizo reservoir computing sin feedback ni mascara externa; sus transitorios subamortiguados aportan memoria evanescente y la no linealidad Duffing realiza el mapeo no lineal.
+  hipotesis: La misma arquitectura podria integrar sensado resonante y procesamiento temporal en un unico elemento, pero esa integracion no fue demostrada end-to-end en una tarea sensorial real.
+  interpretacion: La mejora material es reducir un reservoir mecanico temporal a un solo resonador fisico manteniendo procesamiento no lineal de alta tasa.
+capacidad_nueva: procesamiento temporal no lineal con memoria corta en un unico resonador piezoelectrico, sin red mecanica multicomponente ni linea de retardo externa
+mecanismo_o_principio: transitorios subamortiguados generan fading memory; no linealidad intrinseca tipo Duffing expande la entrada a estados no lineales; lectura temporal permite clasificacion
+dominio: [computacion_fisica, reservoir_computing, piezoelectricidad, dinamica_no_lineal]
+fuentes:
+  - url: https://doi.org/10.1049/ell2.70520
+    titulo: Piezoelectric Ceramic Resonator for Physical Reservoir Computing
+    tipo: paper_original
+    fecha: 2026-01-13
+nivel_evidencia: A
+datos_cuantitativos:
+  tarea: parity-check de 3 bits
+  precision: 98.5%
+  tasa: 5000 bit/s
+  comparacion_reportada: uno a dos ordenes de magnitud mayor throughput que implementaciones MEMS RC complejas citadas por los autores
+condiciones_de_prueba: disco ceramico PZT excitado cerca de resonancia; capacidad fisica verificada experimentalmente y tarea end-to-end apoyada por modelo/simulacion validado contra admitancia medida
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: respuesta piezoelectrica/admitancia del resonador
+tipo_de_memoria_o_estado: memoria temporal evanescente por transitorio subamortiguado
+tipo_de_adaptacion: pesos de lectura entrenados; dinamica fisica del reservoir no entrenada
+tipo_de_actuacion: excitacion electrica piezoelectrica
+madurez_tecnica: demostracion experimental de laboratorio
+limitaciones:
+  - la tarea demostrada es un benchmark simple de paridad, no una carga sensorial compleja
+  - la integracion simultanea sensado-computo se plantea como posibilidad, no se demuestra como sistema completo
+  - requiere excitacion y lectura electronica
+contradicciones:
+  - no elimina computacion externa para entrenamiento/lectura; desplaza principalmente la transformacion temporal no lineal al sustrato fisico
+  - la afirmacion de throughput superior depende de la comparacion con implementaciones MEMS previas seleccionadas por los autores
+etiquetas_neutrales: [single-resonator, PZT, Duffing, fading-memory, physical-reservoir]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
