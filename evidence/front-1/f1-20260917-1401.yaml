@@ -1,0 +1,43 @@
+id: f1-20260917-1401
+frente: front-1
+cycle_id: 2026-09-17T14
+tema_objeto: reservorio fotonico en cristal organico con acoplamiento spin-orbita
+afirmacion_principal:
+  HECHO: "La interferencia en un resonador-guia de onda de cristal organico BPDBNA separa patrones opticos; al leer tambien grados de libertad de polarizacion habilitados por acoplamiento spin-orbita, aumenta la dimensionalidad de salida del reservorio."
+  HIPOTESIS: "La ingenieria de grados de libertad spin-orbita puede ser una via general para elevar dimensionalidad util de reservorios fotonicos sin ampliar proporcionalmente la red digital de lectura."
+  INTERPRETACION: "La capacidad materialmente mejorada es obtener representaciones opticas mas separables usando polarizacion y estructura espacial como dimensiones computacionales fisicas adicionales."
+capacidad_nueva: "Expansion fisica de dimensionalidad para clasificacion optica que permite hasta 10x menor red y 3x aceleracion de entrenamiento frente a usar solo intensidad en los simbolos complejos probados."
+mecanismo_o_principio: "Interferencia optica en microcavidad/resonador organico; el acoplamiento spin-orbita fotonico mezcla estructura espacial/momento y polarizacion, generando canales de salida adicionales que funcionan como estados del reservorio."
+dominio: fotonica_neuromorfica
+fuentes:
+  - url: "https://doi.org/10.1021/jacs.6c07761"
+    titulo: "Reservoir Neuromorphic Computing Based on Spin-Orbit Coupling in an Organic Crystal Resonator"
+    tipo: paper_original_peer_reviewed
+    fecha: 2026-09-10
+  - url: "https://arxiv.org/abs/2511.23155"
+    titulo: "Reservoir neuromorphic computing based on spin-orbit coupling in an organic crystal resonator"
+    tipo: preprint_autores
+    fecha: 2025-11-28
+nivel_evidencia: A
+datos_cuantitativos:
+  reduccion_tamano_red: "hasta 10x para simbolos complejos al ampliar la salida mediante spin-orbita vs lectura de intensidad"
+  aceleracion_entrenamiento: "3x en la comparacion reportada"
+  no_linealidad_interferencia_ejemplo: "c_NL aprox. -0.3 en una region de interferencia destructiva (informacion suplementaria)"
+condiciones_de_prueba: "Cristal organico BPDBNA; caracterizacion a temperatura ambiente; tomografia de polarizacion H/V, D/A y circular; demostraciones experimentales de reconocimiento de patrones opticos."
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: optico
+tipo_de_memoria_o_estado: "estado optico espacial/polarizacion del reservorio; no se demuestra memoria no volatil"
+tipo_de_adaptacion: "pesos de lectura entrenados externamente; reservorio fisico fijo"
+tipo_de_actuacion: "salida optica multicanal/polarizacion"
+madurez_tecnica: "prototipo experimental de laboratorio; paper peer-reviewed"
+limitaciones:
+  - "La aceleracion 3x corresponde al entrenamiento de la red de lectura/comparacion reportada, no a una medicion end-to-end de energia o latencia de un sistema integrado."
+  - "La lectura experimental usa instrumentacion optica externa (objetivo, polarizadores/placas de onda, espectrometro/CCD); no se demuestra integracion completa en chip."
+  - "No se establece ventaja energetica end-to-end frente a aceleradores digitales."
+contradicciones:
+  - "El preprint existia desde 2025; la novedad temporal de esta ronda es su publicacion peer-reviewed del 10-09-2026, no el origen del concepto."
+  - "El propio resultado muestra mejora al aumentar canales de salida, por lo que parte de la ganancia implica mayor riqueza de lectura y no computacion gratuita sin hardware de adquisicion."
+etiquetas_neutrales: [physical_reservoir_computing, photonic_computing, organic_crystal, spin_orbit_coupling, polarization, interference]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
