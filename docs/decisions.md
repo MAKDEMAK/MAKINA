@@ -20,44 +20,20 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Evidencia:** `f1-20260916T00-mycelium-reservoir`, `f1-20260916T00-active-colloid-reservoir`, `f1-20260915-22-wave-metamaterial-robot`.
 - **Razón:** falta tarea y métrica común.
 
-## 2026-09-16 — material-state extension, cycle 02
-- **Decisión:** fusionar memoria molecular fotónica e higromecánica en `physical-state-interface`; no abrir módulo.
-- **Evidencia:** `f1-20260916-02-lc-photonic-memory`, `f3-20260916-02-hygromechanical-indicator`.
-
-## 2026-09-16 — physical learning remains M1, cycle 02
-- **Decisión:** incorporar `f1-20260916-02-flare` y `f1-20260916-02-magnetic-self-learning` a `embodied-dynamics-computation`, mantener M1.
-
-## 2026-09-16 — history-state and self-relaxing dynamics, cycle 03
-- **Decisión:** fusionar latching adhesivo en `physical-state-interface` y sumar ZrO2 + metamaterial entrenable a `embodied-dynamics-computation`; sin promoción.
-
-## 2026-09-16 — boundary-addressed state, cycle 10
-- **Decisión:** incorporar `f1-20260916-1001` a `physical-state-interface`; mantener M3.
-- **Alternativa rechazada:** abrir módulos independientes de memoria mecánica remota o backscatter pasivo.
-- **Razón:** amplía directamente el contrato estado/escritura; backscatter carece de cadena metrológica completa.
-
-## 2026-09-16 — temporal-in-sensor-processing, cycle 15
-- **Decisión:** promover `temporal-in-sensor-processing` de espera a tercer módulo activo M2 y crear su especificación funcional.
+## 2026-09-16 — temporal-in-sensor-processing
+- **Decisión:** promover a tercer módulo activo y posteriormente M3 mediante benchmark mínimo.
 - **Evidencia:** `f1-20260916-1501`, `f3-20260916-1401`, `f3-20260916T04-event-vibration`, `f1-20260915-2102`, `f1-20260916-0901`.
-- **Alternativa rechazada:** promover `legacy-noninvasive-observability`; sigue dependiente de máquina/posición y sin presupuesto de incertidumbre común.
-- **Consecuencia:** `project/temporal-in-sensor-processing.yaml`; no M3 hasta benchmark ejecutable.
-
-## 2026-09-16 — temporal benchmark prototype, cycle 17
-- **Decisión:** implementar el benchmark mínimo y promover `temporal-in-sensor-processing` a M3 `created_not_executed`.
-- **Evidencia usada:** la cadena acumulada del módulo; `f1-20260916-1701` y `f3-20260916-1701` refuerzan por separado discretización e integración física, pero se fusionan en `physical-state-interface` y no son causa de la promoción temporal.
-- **Alternativa rechazada:** abrir una línea fluidica desde `f2-20260916-1701`; FLODAC es precedente fuerte pero no aporta una necesidad funcional nueva y su velocidad fue una limitación documentada.
-- **Razón:** el siguiente paso de menor coste era convertir la especificación M2 ya existente en código reproducible con referencia uniforme, encoding por umbral y encoding por latencia+estado desvaneciente.
-- **Consecuencia:** `src/temporal_benchmark.py` y `tests/test_temporal_benchmark.py`. M4 queda bloqueado hasta ejecutar tests/benchmark y registrar métricas; energía de hardware permanece explícitamente no medida.
+- **Consecuencia:** `src/temporal_benchmark.py` y `tests/test_temporal_benchmark.py`; M4 bloqueado hasta ejecución y métricas.
 
 ## 2026-09-17 — cycle 07 consolidation
-- **Decisión:** fusionar `f1-20260917-0701` en `embodied-dynamics-computation`, `f3-20260917-0701` en `physical-state-interface` y deduplicar `f2-20260917-0701` dentro del precedente cryotron; sin promoción de madurez ni cuarto módulo.
-- **Evidencia:** `f1-20260917-0701`, `f2-20260917-0701`, `f3-20260917-0701`.
-- **Alternativa rechazada:** abrir un módulo específico de resonador temporal o memoria tiempo-temperatura.
-- **Razón:** ambos mecanismos nuevos encajan en contratos activos existentes; el resonador aún no comparte benchmark ejecutado y el TTI no reconstruye un historial térmico único. El cryotron es evidencia histórica redundante.
-- **Consecuencia:** se mantiene el límite de tres módulos y se prioriza medir artefactos M3 existentes.
+- **Decisión:** fusionar `f1-20260917-0701` en `embodied-dynamics-computation`, `f3-20260917-0701` en `physical-state-interface` y deduplicar `f2-20260917-0701`; sin promoción.
 
 ## 2026-09-17 — cycle 09 consolidation
-- **Decisión:** fusionar `f1-20260917-0901` en `temporal-in-sensor-processing`, `f3-20260917-0901` en `physical-state-interface` y deduplicar `f2-20260917-0901` con el precedente de magnetic bubble memory; sin promoción.
-- **Evidencia:** `f1-20260917-0901`, `f2-20260917-0901`, `f3-20260917-0901`.
-- **Alternativa rechazada:** abrir módulos específicos para optoelectronic reservoir o damage imaging.
-- **Razón:** F1-0901 repite y fortalece una arquitectura sensor-estado-computo ya activa pero no aporta coste end-to-end; F3-0901 aporta transduccion mecano-optica localizada pero su intensidad no es una medida universal de daño; F2-0901 es continuidad historica de un nodo ya existente.
-- **Consecuencia:** se mantiene el límite de tres módulos y M3; el siguiente incremento de evidencia sigue siendo ejecutar/medir los prototipos existentes.
+- **Decisión:** fusionar `f1-20260917-0901` en `temporal-in-sensor-processing`, `f3-20260917-0901` en `physical-state-interface` y deduplicar `f2-20260917-0901`; sin promoción.
+
+## 2026-09-17 — cycle 10 consolidation
+- **Decisión:** mantener `f1-20260917-1001` como `thermodynamic-molecular-computation` en espera; sumar `f3-20260917-1001` a `legacy-noninvasive-observability`; deduplicar `f2-20260917-1001` dentro de `parametric-phase-logic-precedent`. Sin promoción ni nuevo prototipo.
+- **Evidencia:** `f1-20260917-1001`, `f2-20260917-1001`, `f3-20260917-1001`.
+- **Alternativa rechazada:** desplazar un módulo activo por computación molecular o abrir un módulo SAW.
+- **Razón:** F1 demuestra un mecanismo computacional nuevo para el grafo pero con horas de latencia y periferia de laboratorio; F3 mejora la ruta de observabilidad de vibración pero requiere contacto y lector externo; F2 es continuidad histórica de parametron ya registrado.
+- **Consecuencia:** se conserva el límite de tres módulos; el incremento de evidencia de menor coste sigue siendo medir los prototipos M3 existentes.
