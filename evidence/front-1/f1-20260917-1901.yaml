@@ -1,0 +1,35 @@
+id: f1-20260917-1901
+frente: front-1
+cycle_id: 2026-09-17T19
+tema_objeto: procesamiento neuromorfico ionico multestado en gel multiphasico
+afirmacion_principal: "HECHO: trampas ionicas en heterointerfaces en cascada realizan rectificacion, memoria temporal y plasticidad multestado en materia blanda; el sistema fue ademas acoplado in vivo a un nervio de rata para reconfigurar senales neuronales. HIPOTESIS: la arquitectura podria escalar hacia procesadores ionicos blandos mas integrados. INTERPRETACION: la capacidad emergente es codificar memoria y reglas de adaptacion en la propia dinamica de transporte ionico entre interfaces, evitando depender de nanoconfinamiento rigido."
+capacidad_nueva: procesamiento ionico multestado con memoria corta/larga, plasticidad dependiente de fuerza y tiempo de spikes, y procesamiento bioimpulsado
+mecanismo_o_principio: retardacion y disipacion jerarquica de iones al cruzar heterointerfaces en gel multiphasico; acumulacion/liberacion en trampas interfaciales produce estados conductivos dependientes de historia
+dominio: iontronica; neuromorfica; materiales blandos; biointerfaces
+fuentes:
+  - url: https://www.nature.com/articles/s41928-026-01688-z
+    titulo: Soft-matter multistate ionic neuromorphic processing based on cascaded-heterointerface ion traps
+    tipo: paper original peer-reviewed
+    fecha: 2026-09-10
+  - url: https://english.him.cas.cn/news/research_progress/202609/t20260914_1200371.html
+    titulo: Researchers Develop Gel-Based Ionic Devices for Neuromorphic Processing
+    tipo: fuente institucional
+    fecha: 2026-09-14
+nivel_evidencia: A
+datos_cuantitativos:
+  rectificacion_bipolar: ">1e3"
+  energia_minima_por_spike: "0.61 pJ"
+  estimulacion: escala_milivoltios
+condiciones_de_prueba: caracterizacion de transportadores de gel; reglas de plasticidad; procesador de dos canales conectado a segmentos proximal y distal de nervio ciatico transectado de rata
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: potenciales electricos/ionicos; en demostracion biohibrida, potencial neural endogeno
+tipo_de_memoria_o_estado: memoria ionica temporal de corto y largo plazo por acumulacion/disipacion interfacial
+tipo_de_adaptacion: potenciacion/depresion; plasticidad dependiente de intensidad y timing; reglas Hebbian, anti-Hebbian y BCM demostradas
+tipo_de_actuacion: reconfiguracion de transmision ionica; modulacion de actividad neural downstream en demostracion in vivo
+madurez_tecnica: demostracion experimental de laboratorio peer-reviewed, incluyendo interfaz biohibrida in vivo
+limitaciones: no demuestra integracion a gran escala; 0.61 pJ es minimo reportado por spike y no consumo end-to-end de un sistema completo; experimento neural fue en rata y no establece durabilidad cronica
+contradicciones: la ausencia de fuente externa aplica a la demostracion biohibrida impulsada por potencial neural; no debe generalizarse a toda caracterizacion del dispositivo
+etiquetas_neutrales: [iontronica, gel-multiphasico, memoria-ionica, plasticidad, neuromorfica, biointerfaz, computacion-en-material]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
