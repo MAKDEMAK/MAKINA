@@ -6,17 +6,17 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.95
-    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001]
-    current_architecture: "physical input -> material transduction/state -> externally readable state"
-    success_criterion: "Entrada fisica produce estado reproducible con rango, persistencia y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente. F3-00 refuerza memoria material distribuida y F1-00 colocalizacion estimulo-energia-escritura, pero ninguno mide el artefacto del repo para M4."
+    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101]
+    current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
+    success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
+    next_action: "Mantener M3 y medir el prototipo existente. F1-01 refuerza que la geometria puede optimizar la representacion antes de transduccion; F3-01 replica la ruta resonante pasiva para apertura de grieta. Ninguno mide el artefacto del repo para M4."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.89
     evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301]
     current_architecture: "physical dynamics -> distributed transient state -> readout"
     success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
-    next_action: "No promover: falta benchmark comun entre sustratos."
+    next_action: "No promover: falta benchmark comun entre sustratos. F1-01 se asigna prioritariamente a interfaz/representacion fisica porque demuestra preprocesamiento perceptivo, no el benchmark computacional requerido aqui."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
@@ -49,7 +49,8 @@ archived_modules:
   - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
   - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "direccionamiento mecanico granular demostrado, pero complejidad/dependabilidad perdieron frente al disco y no hay traduccion funcional medible al nucleo actual"}
   - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "transduccion capacitiva por contacto demostrada comercialmente, pero el contacto/desgaste y la sustitucion por rutas grabables/opticas no aportan traduccion funcional medible al nucleo actual"}
-current_architecture: "physical variable/event -> transduction/direct response -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
+  - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101], reason: "logica y memoria superconductora demostradas e integradas experimentalmente, pero la criogenia y sustitucion por silicio no aportan una traduccion funcional medible al nucleo actual"}
+current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
 next_action: "Priorizar medicion de prototipos existentes sobre nueva documentacion."
-last_synthesized_cycle: 2026-09-17T00
+last_synthesized_cycle: 2026-09-17T01
