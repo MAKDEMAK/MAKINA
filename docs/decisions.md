@@ -51,3 +51,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** abrir un módulo neuromórfico autoalimentado independiente o promover observabilidad magnética adherida como cuarto módulo.
 - **Razón:** F1 refuerza la cadena sensado->codificación temporal->plasticidad->memoria, pero las tareas mayores incluyen simulación; F3 aporta error cuantificado (3.4% fuerza, 4.2% torque) y pasividad local, pero exige adhesión, calibración y lector externo; Setun ya estaba representado como precedente ternario.
 - **Consecuencia:** se mantienen tres módulos activos M3/M1/M3; el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3.
+
+## 2026-09-17 — cycle 15 consolidation
+- **Decisión:** no promover `f1-20260917-1501`; sumar `f3-20260917-1501` a observabilidad legacy en espera; archivar `f2-20260917-1501` como precedente de vuelo fluidico. Sin nuevo prototipo.
+- **Evidencia:** `f1-20260917-1501`, `f2-20260917-1501`, `f3-20260917-1501`.
+- **Alternativa rechazada:** desplazar `embodied-dynamics-computation` por PhyKAN o abrir una línea de control fluidico biomimetico.
+- **Razón:** PhyKAN demuestra conexiones no lineales físicas entrenables pero su ventaja es dependiente de tareas suaves, el entrenamiento es externo y el consumo dedicado es proyectado; Insectothopter demuestra vuelo pero documenta insuficiente robustez de control; AE aporta diagnóstico medido pero depende de acoplamiento y calibración por proceso.
+- **Consecuencia:** se mantienen M3/M1/M3 y el siguiente incremento de evidencia continúa siendo medir los prototipos M3 existentes.
