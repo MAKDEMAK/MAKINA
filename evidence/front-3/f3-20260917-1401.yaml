@@ -1,0 +1,49 @@
+id: f3-20260917-1401
+frente: front-3
+cycle_id: 2026-09-17T14
+tema_objeto: ruido_magnetico_barkhausen_para_tension_residual
+afirmacion_principal: "La excitacion magnetica superficial y la lectura del ruido de Barkhausen permiten hacer observable de forma no destructiva el estado de tension en aceros ferromagneticos; la senal es directa respecto de la dinamica de paredes de dominio, mientras convertirla a tension cuantitativa es inferencia calibrada y sensible a microestructura."
+funcion: medir
+principio_de_mediacion: "Un campo magnetico alterno desplaza paredes de dominio de Bloch de forma discontinua; una bobina capta los pulsos electromagneticos. La tension mecanica modifica esa dinamica magnetoelastica y por tanto la intensidad/estadistica de la senal MBN."
+variable_fisica_entrada: "tension aplicada o residual y microestructura ferromagnetica superficial"
+senal_o_estado_salida: "intensidad/parametros de ruido magnetico Barkhausen; tension estimada tras calibracion"
+modalidad: magnetica
+invasividad: nula
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: "En ensayo sobre rail 50 kgN, correlacion tension-senal >0.988; no se generaliza como precision absoluta."
+latencia: "medicion rapida; valor temporal absoluto no reportado en las fuentes consultadas"
+condiciones_de_prueba: "Rail 50 kgN: seleccion de excitacion 120 Hz y banda 20-200 Hz; ensayos de traccion y rail usado. Estudios adicionales: aceros carburizados, soldados y muestras con microestructura controlada."
+fuentes:
+  - url: "https://www.mdpi.com/1996-1944/14/18/5374"
+    titulo: "Experimental Consideration of Conditions for Measuring Residual Stresses of Rails Using Magnetic Barkhausen Noise Method"
+    tipo: paper_experimental
+    fecha: "2021-09-17"
+  - url: "https://doi.org/10.3139/120.111186"
+    titulo: "Application of magnetic Barkhausen noise for residual stress analysis – Consideration of the microstructure"
+    tipo: paper_experimental
+    fecha: "2018"
+  - url: "https://avesis.metu.edu.tr/yayin/c70577f2-2734-4371-bd2a-aded883526dc/non-destructive-determination-of-residual-stress-state-in-steel-weldments-by-magnetic-barkhausen-noise-technique"
+    titulo: "Non-destructive determination of residual stress state in steel weldments by Magnetic Barkhausen Noise technique"
+    tipo: paper_experimental
+    fecha: "2010"
+nivel_evidencia: A
+datos_cuantitativos:
+  correlacion_rail: ">0.988"
+  frecuencia_excitacion_rail: "120 Hz"
+  banda_ruido_rail: "20-200 Hz"
+mecanismo_o_principio: "acoplamiento magnetoelastico + saltos de paredes de Bloch inducidos por magnetizacion alterna"
+limitaciones:
+  - "La amplitud MBN responde tanto a tension como a microestructura; no identifica tension de forma univoca sin calibracion."
+  - "Cambios modestos de tamano de grano entre lote de calibracion y muestra produjeron errores significativos."
+  - "La direccion de carga/sensor importa; en el ensayo de rail la orientacion perpendicular apenas cambio con el aumento de carga."
+  - "Requiere material ferromagnetico y acceso superficial para excitacion/lectura."
+contradicciones:
+  - "Un estudio comparativo observo diferencias significativas MBN-XRD cuando la microestructura de calibracion no coincidia; tras considerar tamano de grano mejoro la concordancia."
+etiquetas_neutrales: [magnetismo, barkhausen, tension_residual, NDT, acero, proxy_fisico, calibracion]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
+distincion_medicion_inferencia:
+  medicion_directa: "pulsos electromagneticos generados por saltos de paredes de dominio bajo excitacion"
+  inferencia_indirecta: "tension mecanica/residual estimada desde parametros MBN mediante calibracion"
