@@ -6,10 +6,10 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.95
-    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901, f3-20260917-1301, f1-20260917-1801, f3-20260917-1801]
-    current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
+    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901, f3-20260917-1301, f1-20260917-1801, f3-20260917-1801, f1-20260917-1901, f3-20260917-1901]
+    current_architecture: "physical input -> geometry/material/ionic transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente; F1-1801 refuerza logica mecanica umbral y F3-1801 memoria acumulativa material, pero ninguno mide el artefacto del repo."
+    next_action: "Mantener M3 y medir el prototipo existente; T19 amplía estado material hacia plasticidad ionica multestado y memoria espacial mecano-quimica, pero no mide el artefacto del repo."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.91
@@ -38,7 +38,7 @@ waiting_modules:
     evidence_ids: [f1-20260917-1001]
     reason: "Computacion programable y autocorreccion demostradas, pero escala temporal y periferia impiden desplazar un modulo activo."
 archived_modules:
-  - {id: air-cushion-transport, reason: "sin convergencia funcional"}
+  - {id: air-cushion-transport, evidence_ids: [f2-20260915-21-aerotrain, f2-20260917-1901], reason: "sin convergencia funcional; T19 triangula Aerotrain pero no aporta traduccion al nucleo"}
   - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
   - {id: synchronized-facsimile-path, reason: "sin traduccion funcional suficiente"}
   - {id: differential-computing-precedents, reason: "deduplicado; sin necesidad arquitectonica actual"}
@@ -59,7 +59,7 @@ archived_modules:
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
   - {id: insectothopter-fluidic-flight-precedent, evidence_ids: [f2-20260917-1501], reason: "sin convergencia funcional medible"}
   - {id: rasterized-videotex-precedent, evidence_ids: [f2-20260917-1701], reason: "sin traduccion funcional medible al nucleo"}
-current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
+current_architecture: "physical variable/event -> geometry/material/ionic transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos M3. T18 refuerza physical-state-interface mediante logica mecanica pasiva y memoria material acumulativa; FLODAC es continuidad historica deduplicada."
-last_synthesized_cycle: 2026-09-17T18
+next_action: "Priorizar medicion de prototipos M3. T19 refuerza physical-state-interface mediante plasticidad ionica multestado y memoria espacial pasiva de presion; Aerotrain es continuidad historica sin traduccion funcional."
+last_synthesized_cycle: 2026-09-17T19
