@@ -1,0 +1,34 @@
+id: f3-20260917-0801
+frente: front-3
+cycle_id: 2026-09-17T08
+tema_objeto: memoria optica pasiva de esfuerzo maximo en elastomeros
+afirmacion_principal: "Un mecanoforo spiropirano integrado como reticulante convierte carga mecanica en un estado cromatico que permite inferir tanto esfuerzo actual como el esfuerzo maximo previamente experimentado; la componente de maximo queda retenida tras descargar en la escala temporal experimental."
+funcion: registrar
+principio_de_mediacion: "La fuerza abre spiropirano (SP) a merocianina (MC); la concentracion de MC depende del maximo esfuerzo previo, mientras la isomerizacion reversible entre estados MC desplaza el espectro con el esfuerzo instantaneo."
+variable_fisica_entrada: esfuerzo mecanico local y maximo historico
+señal_o_estado_salida: cromaticidad visible espacial; concentracion persistente de MC + estado isomerico reversible
+modalidad: optica_mecanoquimica
+invasividad: integrada
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: "Mapeo espacial por pixel tras calibracion cromaticidad-esfuerzo; el articulo no reporta una precision metrologica unica. El cambio visible aparece antes de la histeresis mecanica detectable; en el material EA0.2-0.05(2.61) la histeresis aparece alrededor de 3 MPa."
+latencia: "La isomerizacion MC usada para esfuerzo actual es descrita como instantanea/reversible en la escala del ensayo; SP->MC no revierte en esa escala."
+condiciones_de_prueba: "Elastomeros multiple-network de acrilato de etilo con SP como reticulante; ensayos ciclicos uniaxiales y propagacion de grieta; RGB/UV-vis y comparacion con simulacion por elementos finitos."
+fuentes:
+  - url: https://doi.org/10.1039/D0SC06157C
+    titulo: "Fast reversible isomerization of merocyanine as a tool to quantify stress history in elastomers"
+    tipo: paper_experimental
+    fecha: 2020-12-17
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8179306/
+    titulo: "Fast reversible isomerization of merocyanine as a tool to quantify stress history in elastomers"
+    tipo: repositorio_institucional_texto_completo
+    fecha: 2020-12-17
+nivel_evidencia: A
+datos_cuantitativos: "Ejemplo ciclico hasta lambda=2.8; pico UV-vis ~600-650 nm cargado y ~580 nm descargado; inicio observable de histeresis mecanica alrededor de 3 MPa en EA0.2-0.05(2.61); tasas de deformacion ensayadas tuvieron poco efecto en ese material."
+mecanismo_o_principio: "Medicion/inferencia dual: el equilibrio isomerico MC codifica esfuerzo presente de forma reversible; la cantidad acumulada de MC generada por activacion SP codifica indirectamente el maximo esfuerzo pasado y permanece observable post-mortem."
+limitaciones: "Requiere incorporar quimicamente el mecanoforo al material y calibracion especifica. Los mecanoforos no son comercialmente disponibles de forma general y la sintesis depende de la matriz. La tecnica entrega actualmente menos informacion cuantitativa que DIC para campos de deformacion; camara estandar no resolvio en detalle la propagacion rapida de grieta. Sensible a iluminacion/entorno y a la quimica del material."
+contradicciones: "No es memoria permanente universal: SP->MC es irreversible solo dentro de la escala temporal experimental y sistemas spiropirano pueden revertir termica o fotoquimicamente. Tampoco mide directamente geometria/deformacion; el esfuerzo se infiere desde una calibracion cromatica dependiente del material."
+etiquetas_neutrales: [mecanoforo, mecanoquimica, mechanochromism, stress_history, passive_memory, optical_readout, peak_hold, elastomer]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
