@@ -9,7 +9,7 @@ active_modules:
     evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901, f3-20260917-1301]
     current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente; F3-1301 aporta una referencia cuantificada de transduccion pasiva esfuerzo->respuesta magnetica, pero no mide el artefacto actual."
+    next_action: "Mantener M3 y medir el prototipo existente; la evidencia T15 no mide este artefacto."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.90
@@ -23,11 +23,11 @@ active_modules:
     evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101, f1-20260917-0002, f1-20260917-0901, f1-20260917-1301]
     current_architecture: "temporal signal -> local transduction/state or event encoder -> common event task -> metrics"
     success_criterion: "Conservar >=95% del score digital o mejorarlo y reducir >=10x volumen transferido; separar energia local y periferica."
-    next_action: "Ejecutar benchmark y tests existentes antes de M4; F1-1301 refuerza integracion sensado-codificacion-plasticidad, pero las tareas mayores reportadas incluyen simulacion."
+    next_action: "Ejecutar benchmark y tests existentes antes de M4."
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101]
-    reason: "Sigue sin variable objetivo comun y presupuesto de incertidumbre transferible; F3-1301 no entra aqui porque exige adhesion/contacto y encaja mejor en physical-state-interface."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101, f3-20260917-1501]
+    reason: "F3-1501 amplía observabilidad de maquinaria mediante emisión acústica con evidencia A, pero exige contacto/acoplamiento, calibración por proceso y no aporta una variable objetivo común transferible; no desplaza un módulo activo."
   - id: implicit-analog-solver
     evidence_ids: [f1-20260917-0001]
     reason: "La solucion inversa por equilibrio de lazo analogico esta demostrada en chip, pero no converge todavia con una funcion del nucleo ni justifica desplazar uno de los tres modulos activos."
@@ -57,7 +57,8 @@ archived_modules:
   - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "sin convergencia funcional medible"}
   - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101, f2-20260917-0701], reason: "deduplicado"}
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
+  - {id: insectothopter-fluidic-flight-precedent, evidence_ids: [f2-20260917-1501], reason: "prototipo real de oscilador fluidico para vuelo, pero el limite documentado fue control ante perturbaciones y no converge con una funcion medible del nucleo"}
 current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos M3. T13 refuerza integracion neuromorfica autoalimentada y aporta referencia cuantificada de esfuerzo magnetico pasivo, pero no satisface M4 ni desplaza los tres modulos activos."
-last_synthesized_cycle: 2026-09-17T13
+next_action: "Priorizar medicion de prototipos M3. T15 aporta PhyKAN como evidencia de conexiones analogicas no lineales entrenables y AE como observabilidad de desgaste, pero ninguno satisface los criterios de los modulos activos ni justifica nuevo prototipo."
+last_synthesized_cycle: 2026-09-17T15
