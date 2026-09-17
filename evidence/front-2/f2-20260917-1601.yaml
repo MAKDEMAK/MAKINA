@@ -1,0 +1,60 @@
+id: f2-20260917-1601
+frente: front-2
+cycle_id: 2026-09-17T16
+tema_objeto: "videodisco analógico de alta densidad leído por capacitancia"
+afirmacion_principal: "RCA llevó a producción masiva una vía de video doméstico prensable como un disco: información audiovisual codificada como microvariaciones geométricas en un surco conductor y leída por una aguja como capacitancia variable. La vía funcionó técnicamente y comercializó millones de discos, pero fue retirada tras llegar tarde frente al videocassette y conservar problemas inherentes al contacto físico, contaminación y desgaste."
+nombre_proyecto_o_artefacto: "RCA SelectaVision Capacitance Electronic Disc (CED)"
+periodo_historico: "1964-1986; mercado 1981-1986"
+pais_contexto: "Estados Unidos"
+disciplina: "almacenamiento audiovisual; electrónica; fabricación por prensado; transducción capacitiva"
+problema_original: "Crear reproducción doméstica de video pregrabado con reproductores simples y discos baratos de duplicar mediante técnicas derivadas del prensado fonográfico."
+principio_tecnico: "Un stylus conductor en contacto con un disco de PVC cargado con carbono forma un capacitor variable; microondulaciones del fondo del surco modifican la capacitancia y recuperan la señal audiovisual analógica. El surco guía mecánicamente el pickup."
+estado_historico: "sustitución; línea comercial discontinuada"
+resultado_real_alcanzado: "Producto de consumo lanzado en 1981. RCA informó el envío del disco número 2.000.000 en noviembre de 1981; el archivo corporativo registra más de 1.000 programas disponibles en septiembre de 1983. La fabricación regular de discos terminó en 1986."
+causa_documentada: "La lectura por contacto hacía al sistema sensible a polvo/debris, saltos y desgaste; una patente RCA presentada antes del lanzamiento documenta explícitamente pérdida de señal, saltos de varios surcos y desgaste acelerado por contaminación. El desarrollo iniciado en 1964 llegó al mercado recién en 1981, cuando el videocassette ya ofrecía una vía competidora establecida. RCA cesó la producción de reproductores en 1984 y la de discos en 1986."
+causas_alternativas:
+  - "Competencia funcional de VHS/Betamax, que además permitían grabación doméstica."
+  - "Competencia de videodiscos ópticos sin contacto físico."
+  - "El largo desarrollo obligó a resolver repetidamente materiales, fabricación, lubricación, contaminación y seguimiento del surco antes de comercializar."
+camino_que_lo_desplazo_si_existe: "Principalmente videocassette VHS/Betamax en video doméstico; en medios de disco, lectura óptica sin contacto (LaserDisc y descendientes)."
+fuentes:
+  - url: "https://www.cedmagic.com/museum/ced-patents/4145718-patent.html"
+    titulo: "US04145718: Video disc pickup with preplay stylus"
+    tipo: "patente de época reproducida/comentada en archivo técnico CED"
+    fecha: "1977-03-25 / patente publicada 1979"
+  - url: "https://www.cedmagic.com/museum/press/press-releases.html"
+    titulo: "Archive of RCA CED Related Press Releases"
+    tipo: "archivo de comunicados corporativos contemporáneos RCA, copias David Sarnoff Library"
+    fecha: "1981-1983"
+  - url: "https://www.cedmagic.com/mem/memories-of-videodisc.html"
+    titulo: "Memories of RCA VideoDisc"
+    tipo: "documento/testimonio corporativo retrospectivo de cierre"
+    fecha: "1986-06-27"
+  - url: "https://obsoletemedia.org/rca-ced-videodisc/"
+    titulo: "RCA CED VideoDisc (1981–1986)"
+    tipo: "archivo/museo histórico secundario"
+    fecha: "2014"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "disco: 12 pulgadas; hasta 60 min de video por lado"
+  - "tracking force de producción: ~65 mg"
+  - "RCA anunció 2.000.000 de discos enviados al 5 nov 1981"
+  - "RCA anunció >1.000 programas disponibles al 14 sep 1983"
+  - "RCA estimaba ~500 reproducciones por disco bajo condiciones ideales (fuente histórica secundaria)"
+limitaciones:
+  - "contacto físico stylus-disco y desgaste acumulativo"
+  - "polvo/debris podía producir pérdida momentánea, salto de múltiples surcos o locked groove"
+  - "60 min por lado obligaba a voltear o usar múltiples discos para contenidos largos"
+contradicciones:
+  - "La narrativa de 'fracaso puramente técnico' es incompleta: hubo fabricación industrial, catálogo amplio y millones de discos; coexistieron causas técnicas, temporales y competitivas."
+  - "La continuación japonesa VHD demuestra que lectura capacitiva de videodisco no desapareció inmediatamente; JVC eliminó el surco pero mantuvo lectura capacitiva por contacto."
+incertidumbres:
+  - "No se asigna un peso causal único entre retraso de desarrollo, competencia, desgaste/contaminación y estrategia comercial."
+  - "Las cifras globales de reproductores vendidos y pérdidas financieras varían entre fuentes retrospectivas y no se usan aquí como hecho principal."
+etiquetas_neutrales: [almacenamiento-analogico, capacitancia, transduccion, contacto-fisico, medio-prensado, videodisco, sustitucion, desgaste]
+fecha_hallazgo: "2026-09-17T16:13:58-03:00"
+fecha_revision: "2026-09-17T16:13:58-03:00"
+evidencia_separada:
+  hecho_documentado: "Existió producción comercial; la patente RCA documentó antes del lanzamiento los modos de fallo por polvo y contacto; comunicados RCA contemporáneos documentan escala de discos y catálogo."
+  testimonio: "Memories of VideoDisc (1986), producido al cierre de la planta y con presentación del ex gerente general Jay J. Brandinger, preserva la retrospectiva interna de RCA."
+  interpretacion: "El caso se clasifica como sustitución de una ruta técnicamente realizada, no como concepto fallido: el principio capacitivo alcanzó mercado pero quedó atrapado entre las desventajas del contacto físico y vías magnéticas/ópticas con mejores propiedades sistémicas."
