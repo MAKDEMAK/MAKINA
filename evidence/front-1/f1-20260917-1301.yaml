@@ -1,0 +1,36 @@
+id: f1-20260917-1301
+frente: front-1
+cycle_id: 2026-09-17T13
+tema_objeto: sistema neuromorfico analogico autoalimentado multimodal
+afirmacion_principal: "HECHO: sensores y memristores difusivos/de deriva integran sensado, codificacion temporal, aprendizaje no supervisado y memoria en hardware analogico sin circuiteria digital ni alimentacion externa durante la operacion demostrada. HIPOTESIS: la arquitectura podria escalar a fusion sensorial autonoma mas compleja. INTERPRETACION: la capacidad materialmente nueva es cerrar la cadena sensado->spikes->plasticidad->memoria usando la energia del propio estimulo."
+capacidad_nueva: aprendizaje neuromorfico multimodal analogico y autoalimentado
+mecanismo_o_principio: "Memristores difusivos Ag/SiO2 realizan conmutacion volatil dependiente del tiempo por deriva/difusion ionica y codifican amplitud/temporalidad en latencia de spike; memristores de deriva Ta/HfO2/Pt almacenan pesos no volatiles mediante migracion de vacancias de oxigeno. Sensores fotovoltaicos/piezoelectricos aportan simultaneamente señal y energia."
+dominio: neuromorfica_analogica_memristiva
+fuentes:
+  - url: https://www.nature.com/articles/s44460-026-00067-7
+    titulo: Self-powered analogue neuromorphic system for multimodal sensing, encoding and learning with diffusive and drift memristors
+    tipo: paper_experimental_peer_reviewed
+    fecha: 2026-04-30
+nivel_evidencia: A
+datos_cuantitativos:
+  luz_probada: "15.5-64.2 mW/cm2"
+  presion_probada: "32.7-75.1 kPa"
+  actividad_humana_con_fusion_simulada: "89% entrenamiento; 79% test tras 250 epocas"
+  actividad_humana_sin_fusion_simulada: "55% entrenamiento; 58% test"
+condiciones_de_prueba: "PCB analogica; demostracion fisica de codificacion con sensor fotovoltaico y PVDF directamente acoplados a memristor; fusion optico-mecanica y plasticidad en hardware; tareas de localizacion/actividad de mayor escala incluyen simulacion."
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: optico_y_mecanico_multimodal
+tipo_de_memoria_o_estado: "volatil temporal en memristor difusivo + no volatil en conductancia de memristor de deriva"
+tipo_de_adaptacion: plasticidad_homosinaptica_y_heterosinaptica_no_supervisada
+tipo_de_actuacion: ninguna_demostrada
+madurez_tecnica: prototipo_experimental_en_PCB
+limitaciones:
+  - "Las demostraciones de aplicacion a mayor escala (localizacion de rayos y clasificacion de actividad) son simuladas, no sistemas fisicos end-to-end."
+  - "Los memristores requieren electroforming/fabricacion especializada y el paper no demuestra escalado masivo."
+  - "Autoalimentado describe la operacion sensorial/neuromorfica demostrada; instrumentacion de laboratorio para caracterizacion no desaparece."
+contradicciones:
+  - "No contradice que el hardware sea analogico y autoalimentado, pero limita cualquier lectura de que todas las tareas reportadas fueron ejecutadas enteramente en hardware."
+etiquetas_neutrales: [memristor, analogico, autoalimentado, sensor_fusion, aprendizaje_no_supervisado, spike_encoding, temporalidad]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
