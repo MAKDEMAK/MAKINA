@@ -1,0 +1,53 @@
+id: f2-20260917-1101
+frente: front-2
+cycle_id: 2026-09-17T11
+tema_objeto: computador de logica magnetica de nucleos
+nombre_proyecto_o_artefacto: ALWAC 800
+periodo_historico: 1956-1959
+pais_contexto: Estados Unidos / Suecia
+disciplina: computacion digital / logica magnetica
+problema_original: construir un computador general de alta velocidad y bajo mantenimiento evitando tubos como elementos logicos principales
+principio_tecnico: nucleos magneticos usados no solo como memoria sino como elementos logicos y registros, combinados con diodos
+estado_historico: fracaso de desarrollo / prototipo no escalado / sustitucion
+afirmacion_principal:
+  HECHO_DOCUMENTADO: "Wegematic contrato un ALWAC 800 con la Reserva Federal en 1956 por USD 231800, prometiendo nucleos magneticos para memoria, logica y registros; tras redisenos y dificultades de ingenieria declaro impracticable la entrega en 1957. IBM entrego un 650 sustituto en 1958."
+  TESTIMONIO: "Fuentes historicas posteriores indican que existio un prototipo y que el desarrollo continuo brevemente tras trasladarse a Suecia, sin llegar al mercado."
+  INTERPRETACION: "El camino no demuestra que la logica magnetica fuese intrinsecamente inviable: otros computadores contemporaneos usaron principios magneticos. El caso documenta el fracaso de esta implementacion y contrato concreto, dentro de una via que fue rapidamente desplazada por semiconductores."
+resultado_real_alcanzado: "Se anuncio comercialmente en 1956 con 11000 sumas/s, 2000 multiplicaciones/s y 13000 comparaciones/s; evidencia retrospectiva describe un prototipo, pero la maquina contratada nunca fue entregada."
+causa_documentada: "Necesidad de rediseno y posteriores 'engineering difficulties'; Wegematic declaro que la entrega se habia vuelto impracticable."
+causas_alternativas:
+  - "La transicion acelerada hacia logica transistorada redujo la ventana economica de la arquitectura magnetica."
+  - "La evidencia disponible no permite atribuir el fracaso exclusivamente al principio magnetico; gestion, integracion y calendario contractual tambien son variables plausibles."
+camino_que_lo_desplazo_si_existe: "IBM 650 para la necesidad concreta de la Reserva Federal; a escala industrial, computadores basados en semiconductores."
+fuentes:
+  - url: https://law.resource.org/pub/us/case/reporter/F2/360/360.F2d.674.225.29855_1.html
+    titulo: United States v. Wegematic Corp., 360 F.2d 674
+    tipo: sentencia judicial / registro contemporaneo-retrospectivo
+    fecha: 1966-05-04
+  - url: https://electronicsandbooks.com/edt/manual/Magazine/E/Electronics%20US/50s/Electronics-1956-06.pdf
+    titulo: Electronics, June 1956 - ALWAC 800 announcement
+    tipo: revista tecnica contemporanea
+    fecha: 1956-06
+  - url: https://spectrum.ieee.org/the-vacuum-tubes-forgotten-rival
+    titulo: The Vacuum Tube's Forgotten Rival
+    tipo: historia tecnica IEEE / interpretacion retrospectiva
+    fecha: 2022-03-27
+nivel_evidencia: A
+datos_cuantitativos:
+  contrato_usd: 231800
+  danos_por_retraso_usd_dia: 100
+  entrega_contratada: 1957-06-30
+  sustituto_ibm_650_entregado: 1958-10-06
+  anuncio_1956_sumas_por_segundo: 11000
+  anuncio_1956_multiplicaciones_por_segundo: 2000
+  anuncio_1956_comparaciones_por_segundo: 13000
+limitaciones:
+  - "Las cifras de rendimiento proceden de un anuncio previo a la entrega y no prueban rendimiento sostenido de una unidad aceptada por cliente."
+  - "No se recupero en esta ronda un informe de pruebas completo del prototipo ALWAC 800."
+contradicciones:
+  - "Fuentes secundarias discrepan entre describirlo como computador construido y como diseno que nunca funciono fuera del laboratorio; la sentencia solo establece con certeza que la unidad contratada no fue entregada."
+incertidumbres:
+  - "Grado exacto de funcionalidad del prototipo y porcentaje de la logica implementada con nucleos magneticos."
+etiquetas_neutrales: [logica_magnetica, nucleos_magneticos, computador, prototipo_no_escalado, fracaso_de_desarrollo, sustitucion]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
