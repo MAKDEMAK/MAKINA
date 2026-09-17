@@ -1,0 +1,52 @@
+id: f1-20260916-2301
+frente: front-1
+cycle_id: 2026-09-16T23
+tema_objeto: redes de fibras conformables como reservorios físicos
+
+HECHO:
+  afirmacion_principal: "Una red física de fibras cruzadas puede transformar mecánicamente una señal de entrada en estados espaciales con no linealidad y memoria temporal medibles; un prototipo 4x4/6x6 validó experimentalmente tendencias predichas por simulación."
+  capacidad_nueva: "computación temporal y transformación no lineal distribuidas en la dinámica mecánica de una red de fibras, con reducción fuerte de puntos de lectura sin perder proporcionalmente capacidad"
+  mecanismo_o_principio: "La deformación, acoplamiento, pandeo, tensión axial y dinámica transitoria de fibras conformables generan un espacio de estados físico; sólo la capa de lectura se ajusta digitalmente."
+  dominio: "computación física / reservoir computing mecánico / estructuras conformables"
+  fuentes:
+    - url: "https://doi.org/10.1177/1045389X261470871"
+      titulo: "Spider web-inspired sensing and computation with fiber network physical reservoirs"
+      tipo: "paper experimental revisado por pares"
+      fecha: "2026-08-10"
+    - url: "https://arxiv.org/abs/2601.03536"
+      titulo: "Spider web-inspired sensing and computation with fiber network physical reservoirs"
+      tipo: "preprint con texto completo"
+      fecha: "2026-01-07"
+  nivel_evidencia: A
+  datos_cuantitativos:
+    - "prototipos físicos 4x4 y 6x6"
+    - "entrada experimental: perfil aleatorio interpolado a 2 Hz y muestreado a 100 Hz"
+    - "ensayos de 150 s; seguimiento óptico a 120 FPS, 1920x1080"
+    - "ángulo máximo de actuación experimental: 25° a 50° en pasos de 5°"
+    - "en simulación, el grupo de puntos medios laterales conservó >85% del rendimiento total usando ~35% de las características"
+    - "pretensión simulada explorada: 0.01–5 N; capacidad de memoria alcanzó máximo alrededor de 1 N en la configuración reportada"
+  condiciones_de_prueba: "Simulaciones Cosserat-rod variaron topología, separación, fuerza y pretensión; validación física mediante redes 4x4 y 6x6 accionadas por motor, con desplazamientos x-y de marcadores ópticos como estados del reservorio."
+  requiere_computacion_digital: opcional
+  requiere_alimentacion: parcial
+  tipo_de_sensado: "desplazamiento mecánico distribuido; en el experimento leído ópticamente"
+  tipo_de_memoria_o_estado: "memoria de desvanecimiento en dinámica mecánica transitoria"
+  tipo_de_adaptacion: "no adaptativa durante inferencia; capacidad ajustable por geometría, pretensión y régimen de actuación"
+  tipo_de_actuacion: "deformación mecánica de la red mediante motor"
+  madurez_tecnica: "prototipo físico de laboratorio validado contra simulación"
+  limitaciones:
+    - "la lectura experimental usa cámara y procesamiento digital; la computación física no equivale a sistema autónomo sin electrónica"
+    - "la capacidad depende fuertemente de geometría, pretensión, amplitud de actuación y ubicación de readouts"
+    - "las métricas de capacidad no demuestran todavía ventaja práctica frente a hardware digital convencional"
+  contradicciones:
+    - "más complejidad estructural no mejora monotónicamente todas las capacidades: la memoria del 6x6 fue casi nula a baja actuación y sólo superó al 4x4 a mayores ángulos"
+    - "mayor pretensión puede aumentar memoria hasta un régimen óptimo pero reduce capacidad no lineal"
+
+HIPOTESIS:
+  - "La memoria observada parece vinculada a dinámica resonante y pretensión, pero el mecanismo causal exacto no queda aislado por completo."
+
+INTERPRETACION:
+  - "El resultado materialmente nuevo no es sólo 'usar una estructura como computador': demuestra que la distribución espacial de lectura puede reducirse drásticamente y que memoria/no linealidad pueden sintonizarse mediante parámetros mecánicos distintos."
+
+etiquetas_neutrales: [physical-reservoir-computing, fiber-network, compliant-structure, mechanical-memory, nonlinear-dynamics, readout-reduction]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
