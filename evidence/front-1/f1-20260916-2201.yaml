@@ -1,0 +1,72 @@
+id: f1-20260916-2201
+frente: front-1
+cycle_id: 2026-09-16T22
+tema_objeto: logica_acustica_pasiva_en_guia_de_ondas
+afirmacion_principal:
+  hecho: "Guias de ondas elasticas optimizadas topologicamente implementaron experimentalmente compuertas logicas y se ensamblaron como un sumador completo mecanico; la computacion ocurre por propagacion, dispersion e interferencia de ondas, sin transducir primero la entrada vibratoria a computacion electronica."
+  hipotesis: null
+  interpretacion: "La geometria puede ejecutar procesamiento digital combinacional directamente sobre una senal mecanica/acustica incidente."
+capacidad_nueva: "logica combinacional pasiva y sumador completo mediante ondas elasticas"
+mecanismo_o_principio: "vacios optimizados en un sustrato uniforme redirigen ondas y producen interferencia; la energia se localiza selectivamente en readouts que codifican la funcion logica"
+dominio: computacion_mecanica_acustica
+fuentes:
+  - url: "https://doi.org/10.1177/1045389X261447386"
+    titulo: "Passive acoustic logic via topology-optimized waveguides"
+    tipo: paper_experimental
+    fecha: 2026-05-26
+nivel_evidencia: A
+datos_cuantitativos: "El resumen accesible confirma demostracion experimental de compuertas y composicion en full adder, pero no expone frecuencia, tasa de error o energia numericas; no se inventan."
+condiciones_de_prueba: "prototipos de guias elasticas optimizadas; cargas incidentes no uniformes incluidas en pruebas de robustez"
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "entrada acustica/vibratoria como onda elastica; readout por localizacion de energia"
+tipo_de_memoria_o_estado: ninguno_combinacional
+tipo_de_adaptacion: "geometria fija obtenida por optimizacion topologica previa"
+tipo_de_actuacion: "redistribucion pasiva de energia elastica"
+madurez_tecnica: "demostracion experimental de compuertas y full adder; no plataforma general"
+limitaciones:
+  - "la geometria queda especializada tras fabricacion"
+  - "la optimizacion de diseno requiere computacion externa aunque la ejecucion fisica no"
+  - "la fuente accesible no cuantifica tasa de error, ancho de banda ni energia"
+contradicciones:
+  - "no implica computacion sin energia: requiere una onda incidente; 'pasiva' describe ausencia de alimentacion activa para la logica"
+etiquetas_neutrales: [acoustic_logic, elastic_waves, topology_optimization, passive_computing, full_adder]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
+---
+id: f1-20260916-2202
+frente: front-1
+cycle_id: 2026-09-16T22
+tema_objeto: transistor_sinaptico_homogeneo_reservorio_y_readout
+arfimacion_principal: null
+afirmacion_principal:
+  hecho: "Un transistor sinaptico Ti3C2Tx funcionalizado y controlado ionicamente puede conmutar entre dinamica volatil de memoria corta para reservorio y estados no volatiles para pesos de readout dentro de la misma plataforma de dispositivo; se reportan 0.77 fJ/spike a 0.6 V y 97.9% en reconocimiento de digitos."
+  hipotesis: null
+  interpretacion: "Una sola familia fisica puede realizar dinamica temporal y memoria persistente, reduciendo heterogeneidad funcional del hardware neuromorfico."
+capacidad_nueva: "reservoir computing homogeneo con memoria volatil y pesos no volatiles configurables en el mismo tipo de transistor"
+mecanismo_o_principio: "grupos fuertemente electroatractores modifican estructura de bandas y dinamica ionica; ajuste de caracteristicas sinapticas selecciona regimen volatil/no volatil"
+dominio: neuromorfica_computacion_fisica
+fuentes:
+  - url: "https://doi.org/10.1002/adfm.75734"
+    titulo: "Ultralow-Energy Ti3C2Tx Ion-Gated Synaptic Transistors for Homogeneous Physical Reservoir Computing"
+    tipo: paper_experimental
+    fecha: 2026-06-06
+nivel_evidencia: A
+datos_cuantitativos: "0.77 fJ por spike; 0.6 V; 97.9% reconocimiento de digitos manuscritos; tambien se reporta prediccion de series temporales."
+condiciones_de_prueba: "dispositivos ion-gated f-Ti3C2Tx configurados en modos volatil y no volatil dentro de un sistema RC homogeneo"
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: "entrada electrica"
+tipo_de_memoria_o_estado: "memoria corta no lineal volatil + conductancia no volatil"
+tipo_de_adaptacion: "actualizacion lineal de pesos en modo no volatil"
+tipo_de_actuacion: "modulacion de conductancia"
+madurez_tecnica: "demostracion experimental de dispositivo/sistema de laboratorio"
+limitaciones:
+  - "benchmark de digitos no demuestra generalidad de tareas"
+  - "datos disponibles no establecen endurance, yield o escalado industrial"
+  - "0.77 fJ/spike es metrica de dispositivo, no necesariamente energia total del sistema"
+contradicciones:
+  - "la baja energia del elemento no debe interpretarse como consumo equivalente del sistema completo"
+etiquetas_neutrales: [physical_reservoir, synaptic_transistor, volatile_memory, nonvolatile_memory, ion_gating, ultralow_energy]
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
