@@ -1,0 +1,62 @@
+id: f2-20260917-0301
+frente: front-2
+cycle_id: 2026-09-17T03
+tema_objeto: logica_y_control_fluidico_sin_partes_moviles
+afirmacion_principal: "La fluídica de alta Reynolds convirtió chorros de aire o líquido en amplificadores, lógica booleana, memoria y control secuencial sin electrónica ni partes móviles; llegó a prototipos y aplicaciones industriales, pero fue desplazada como plataforma general por la microelectrónica por ventajas de tamaño y velocidad, sobreviviendo en nichos y reapareciendo a otra escala en microfluídica."
+nombre_proyecto_o_artefacto: "fluidic logic / fluidic amplifiers (incl. FLODAC y controles industriales)"
+periodo_historico: "1959-1970s (auge); continuidad posterior en nichos"
+pais_contexto: "Estados Unidos y Reino Unido; difusión industrial internacional"
+disciplina: "control, automatización, neumática, computación"
+problema_original: "Realizar amplificación, lógica, memoria y control automático robusto mediante el propio flujo de un fluido, especialmente donde electrónica o mecanismos móviles eran indeseables."
+principio_tecnico: "Interacción de chorros, desviación de haz, adhesión a pared/Coanda y vórtices permiten que un flujo pequeño controle uno mayor; presión/flujo codifican señales y estados."
+estado_historico: sustitucion_con_continuidad_de_nicho
+resultado_real_alcanzado:
+  - "En los años 1960 se fabricaron AND/OR/NOT/XOR, amplificadores, contadores y registros de desplazamiento fluídicos."
+  - "NASA documentó en 1967 una versión breadboard de control secuencial neumático para motor cohete."
+  - "Un prototipo de control fluídico para estación booster de oleoducto realizó más de 1000 secuencias start-stop sin incertidumbre reportada (1969)."
+  - "En 1972 ya existían métodos formales de síntesis de circuitos secuenciales fluídico-neumáticos mediante álgebra de conmutación."
+causa_documentada: "La disponibilidad creciente de transistores y circuitos integrados durante los 1960 aceleró el reemplazo; revisiones técnicas señalan que la lógica electrónica tenía ventajas decisivas de tamaño y velocidad."
+causas_alternativas:
+  - "Necesidad de suministro y acondicionamiento de fluido/presión."
+  - "Complejidad de interconexión y menor densidad frente a circuitos electrónicos integrados."
+camino_que_lo_desplazo_si_existe: "control electrónico de estado sólido, circuitos integrados y posteriormente control digital/PLC"
+fuentes:
+  - url: "https://ntrs.nasa.gov/citations/19670055252"
+    titulo: "Pneumatic logic rocket engine sequence control"
+    tipo: "conference paper / NASA NTRS"
+    fecha: "1967-07-01"
+  - url: "https://journals.sagepub.com/doi/10.1177/002034837218600125"
+    titulo: "Systematic Method of Designing Fluidic–Pneumatic Control Circuits"
+    tipo: "paper"
+    fecha: "1972-06"
+  - url: "https://trid.trb.org/View/19433"
+    titulo: "How Fluidics Control Pipeline Booster"
+    tipo: "contemporary technical article record"
+    fecha: "1969-11"
+  - url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3463711/"
+    titulo: "Microfluidic Automation using elastomeric valves and droplets: reducing reliance on external controllers"
+    tipo: "review / historical technical synthesis"
+    fecha: "2012"
+  - url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6553589/"
+    titulo: "A brief history of liquid computers"
+    tipo: "review"
+    fecha: "2019"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Pipeline booster prototype: >1000 start-stop sequences, no uncertainty reported."
+  - "Contemporary IEEE account (1969) reported switching lives >10^8 operations as usual for fluidic devices; retained as contextual, not universal performance guarantee."
+limitaciones:
+  - "Inferior size and switching speed versus solid-state electronic logic for general computation/control."
+  - "Requires a fluid-energy source and pneumatic/hydraulic distribution."
+  - "Performance depends on flow regime, geometry, pressure and contamination."
+contradicciones:
+  - "The path did not disappear: fluidic devices remained useful in specialized environments and principles later re-emerged in microfluidic control, so 'abandoned technology' is too strong."
+  - "Modern microfluidic logic often uses different scale and operating mechanisms; it is not simply uninterrupted continuation of 1960s macroscale fluidics."
+incertidumbres:
+  - "FLODAC is historically reported as a 1964 proof-of-concept fluidic digital computer, but this package does not rely on it for quantitative performance because a sufficiently strong primary performance record was not verified in this cycle."
+etiquetas_neutrales: [fluidics, pneumatic_logic, fluid_amplifier, no_moving_parts, sequential_control, substitution, industrial_automation]
+hecho_documentado: "Working fluidic logic/control hardware existed and was applied beyond laboratory gates; contemporary records document rocket-engine-control breadboards and an industrial pipeline-booster prototype."
+testimonio: "Contemporary and retrospective technical literature describes a 1960s boom and high reliability in appropriate control applications."
+interpretacion: "The technically unfinished branch is not 'fluid computing failed', but the attempt to make fluid-domain logic a general control/computation substrate; semiconductor integration captured that role while fluid-domain computation retained specialized advantages."
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
