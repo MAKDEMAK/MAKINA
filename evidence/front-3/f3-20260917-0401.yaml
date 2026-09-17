@@ -1,0 +1,45 @@
+id: f3-20260917-0401
+frente: front-3
+cycle_id: 2026-09-17T04
+tema_objeto: medicion remota pasiva de deformacion mediante resonancia magnetoelastica
+afirmacion_principal:
+  hecho: "Una cinta magnetoelastica puede convertir deformacion mecanica en desplazamiento de su frecuencia resonante y ser interrogada remotamente mediante campo magnetico, sin bateria ni conexion electrica al elemento sensor."
+  hipotesis: "La misma familia de transduccion puede hacer observables otras variables que modifiquen tension, masa, amortiguamiento o propiedades magnetoelasticas, pero cada variable exige calibracion especifica."
+  interpretacion: "La resonancia del propio material funciona como portadora fisica del estado: la energia de interrogacion y la telemetria se acoplan magneticamente, evitando adquisicion electronica local."
+funcion: medir
+principio_de_mediacion: "magnetostriccion e inversa magnetostriccion; un campo AC excita mecanicamente la cinta y la deformacion desplaza su frecuencia resonante, recuperada externamente desde el campo magnetico secundario"
+variable_fisica_entrada: deformacion mecanica
+senal_o_estado_salida: frecuencia resonante magnetoelastica interrogable remotamente
+modalidad: magnetica_mecanica_resonante
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: "sensibilidad maxima reportada 37100 Hz/strain; el articulo no establece una precision universal independiente del montaje"
+latencia: "interrogacion resonante; no se reporta una latencia operacional universal"
+condiciones_de_prueba: "Sensor resonante magnetoelastico con geometria de reloj de arena y cinta estrecha central; fabricado y ensayado experimentalmente, con comparacion FEM de frecuencia resonante."
+fuentes:
+  - url: "https://doi.org/10.3390/s20020359"
+    titulo: "An Hourglass-Shaped Wireless and Passive Magnetoelastic Sensor with an Improved Frequency Sensitivity for Remote Strain Measurements"
+    tipo: paper experimental revisado por pares
+    fecha: "2020-01-08"
+  - url: "https://doi.org/10.3390/s20700294"
+    titulo: "Wireless Magnetoelastic Resonance Sensors: A Critical Review"
+    tipo: revision tecnica revisada por pares
+    fecha: "2002-07-23"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Sensibilidad maxima de deformacion reportada: 37100 Hz/strain."
+  - "Una geometria magnetoelastica tipo resorte previa citada por los autores alcanzo 12.5 x 10^3 ppm/mstrain, pero requeria micromecanizado especializado."
+mecanismo_o_principio: "El campo magnetico alterno induce vibracion por magnetostriccion. Cerca de la resonancia mecanica la respuesta aumenta; la deformacion aplicada modifica las condiciones mecanicas y desplaza la resonancia. La vibracion genera a su vez un campo magnetico secundario detectable por una bobina externa."
+limitaciones:
+  - "El elemento debe estar mecanicamente acoplado a la estructura cuya deformacion se mide; no es sensado a distancia del fenomeno fisico."
+  - "La frecuencia resonante tambien puede responder a temperatura, masa, presion, viscosidad, campo magnetico y otras variables, por lo que existen sensibilidades cruzadas."
+  - "La lectura sigue necesitando instrumentacion externa para excitar e identificar la resonancia; lo pasivo y sin bateria es el elemento sensor."
+  - "La sensibilidad depende de geometria, material, fijacion y transferencia de esfuerzo, por lo que requiere calibracion del montaje."
+contradicciones:
+  - "'Wireless y pasivo' no significa ausencia total de energia o electronica: el interrogador externo suministra el campo AC y mide la respuesta."
+  - "El principio magnetoelastico remoto es anterior a 2020; la contribucion del trabajo seleccionado es mejorar sensibilidad mediante geometria sencilla, no originar la modalidad."
+etiquetas_neutrales: [magnetoelastic, resonancia, strain, passive-sensing, wireless-interrogation, magnetostriction, structural-monitoring]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
