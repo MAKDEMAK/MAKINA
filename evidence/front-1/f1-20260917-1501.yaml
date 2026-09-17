@@ -1,0 +1,39 @@
+id: f1-20260917-1501
+frente: front-1
+cycle_id: 2026-09-17T15
+tema_objeto: redes_neuronales_analogicas_con_conexiones_no_lineales_entrenables
+afirmacion_principal:
+  hecho: "Una red física tipo KAN reemplaza pesos escalares por funciones no lineales entrenables realizadas con bancos de filtros analógicos; los parámetros entrenados se transfirieron a hardware en aproximadamente 35000 conexiones."
+  hipotesis: "La eficiencia física puede aumentar cuando la no linealidad nativa del dispositivo se usa como función de conexión en vez de reducirse a un peso escalar."
+  interpretacion: "La capacidad emergente es trasladar expresividad computacional desde nodos digitales hacia la respuesta física entrenable de cada conexión, especialmente para mapas continuos suaves."
+capacidad_nueva: "Aprender mapas continuos y control con conexiones físicas que computan funciones no lineales entrenables, reduciendo nodos/conexiones frente a MLP en las tareas suaves estudiadas."
+mecanismo_o_principio: "PhyKAN inspirado en Kolmogorov-Arnold: cada arista suma respuestas de filtros pasa-banda analógicos ajustables; frecuencia de entrada codifica la variable y frecuencias de corte/ganancia forman la función univariada entrenable."
+dominio: [ml_analogico, redes_neuronales_fisicas, control_continuo, computacion_analogica]
+fuentes:
+  - url: "https://arxiv.org/abs/2606.23742"
+    titulo: "Low-power analogue neural networks with trainable nonlinear connections for continuous control"
+    tipo: preprint_original
+    fecha: 2026-06-21
+nivel_evidencia: B
+datos_cuantitativos:
+  - "Transferencia hardware evaluada sobre ~35000 conexiones."
+  - "Implementación CMOS dedicada proyectada: ~30 uW; proyección, no medición del sistema final."
+  - "El paper reporta ventaja de parámetros/conexiones en cinemática robótica de seis ejes, control continuo y maximum-power-point tracking fotovoltaico."
+condiciones_de_prueba: "Funciones entrenadas con modelos diferenciables de filtros y transferidas a field-programmable analogue arrays; realización memristiva sólo simulada."
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: ninguno_intrinseco
+tipo_de_memoria_o_estado: parametros_fisicos_programados
+tipo_de_adaptacion: entrenamiento_por_gradiente_y_transferencia_a_hardware
+tipo_de_actuacion: salida_analogica
+madurez_tecnica: prototipo_hardware_preprint
+limitaciones:
+  - "Ventaja dependiente de la tarea: no mostró ventaja de eficiencia paramétrica en fronteras de decisión tipo clasificación."
+  - "~30 uW es una proyección para CMOS dedicado, no consumo end-to-end medido."
+  - "El trabajo es preprint y declara que continúa la verificación de simulaciones."
+  - "El entrenamiento no se demuestra como aprendizaje autónomo enteramente dentro del sustrato analógico."
+contradicciones:
+  - "No es una ventaja universal de KAN físico: los propios resultados delimitan la ganancia a objetivos suaves y continuamente valuados."
+etiquetas_neutrales: [PhyKAN, analog_computing, physical_neural_network, trainable_nonlinearity, continuous_control]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
