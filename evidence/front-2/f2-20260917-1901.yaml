@@ -1,0 +1,52 @@
+id: f2-20260917-1901
+frente: front-2
+cycle_id: 2026-09-17T19
+tema_objeto: transporte terrestre guiado sobre colchon de aire
+afirmacion_principal: "HECHO DOCUMENTADO: Aerotrain demostro a escala real transporte terrestre de alta velocidad sustentado por colchon de aire sobre via dedicada. El I80-HV alcanzo 417.6 km/h de media y 430.4 km/h de punta en 1974. La linea comercial Cergy-La Defense fue cancelada en 1974 por una combinacion documentada de costes, retrasos e incertidumbres tecnicas de su variante comercial; la posterior estrategia francesa privilegio el ferrocarril de alta velocidad convencional."
+nombre_proyecto_o_artefacto: Aerotrain / I80-HV
+periodo_historico: 1965-1977
+pais_contexto: Francia
+disciplina: [transporte, mecanica_de_fluidos, propulsion, control, infraestructura]
+problema_original: "Reducir la friccion mecanica del transporte terrestre y alcanzar alta velocidad mediante sustentacion sin contacto."
+principio_tecnico: "Vehiculo guiado por via especial en T invertida, sustentado mediante cojines de aire. I80-HV uso turborreactor; Cergy-La Defense proyectaba motor lineal electrico."
+estado_historico: "prototipo no escalado + abandono de despliegue comercial + sustitucion"
+resultado_real_alcanzado:
+  hecho_documentado:
+    - "Cinco prototipos originales fueron construidos; tres sobreviven."
+    - "I80-HV: 417.6 km/h de media y 430.4 km/h de punta el 1974-03-05."
+    - "La via de Orleans transporto mas de 1400 pasajeros durante unas 100 horas de funcionamiento."
+    - "El gobierno confirmo en febrero de 1974 una linea Cergy-La Defense prevista para 1978 y la cancelo en julio de 1974."
+  testimonio: []
+  interpretacion: ["La via supero la demostracion fisica pero no alcanzo una red comercial operativa."]
+causa_documentada:
+  hecho_documentado:
+    - "Fuentes gubernamentales citadas por Le Monde atribuyeron la cancelacion a razones economicas ligadas al plan de austeridad."
+    - "La estimacion paso de 325 a cerca de 600 millones de francos, valor fin de 1973."
+    - "Motor lineal, control de velocidad y rail de guiado de la variante comercial aun presentaban dificultades."
+  testimonio:
+    - "El grupo industrial sostuvo tras la cancelacion que sus soluciones estaban suficientemente avanzadas para asumir los riesgos."
+  interpretacion:
+    - "La cancelacion no demuestra inviabilidad fisica del principio de sustentacion por aire; mezcla riesgo tecnico, coste, calendario y decision de infraestructura."
+causas_alternativas:
+  - "Infraestructura dedicada incompatible directamente con la red SNCF."
+  - "Para servicio suburbano, capacidad y flexibilidad favorecian al ferrocarril convencional."
+camino_que_lo_desplazo_si_existe: "Ferrocarril convencional para Cergy y, en alta velocidad interurbana francesa, TGV. La cancelacion especifica de Cergy precedio la decision posterior de privilegiar TGV."
+fuentes:
+  - {url: "https://www.archives.sncf.com/laerotrain-situation-des-recherches-et-experimentations/", titulo: "L'aerotrain : situation des recherches et experimentations", tipo: "archivo institucional / informe contemporaneo", fecha: "1968-06-01"}
+  - {url: "https://www.lemonde.fr/archives/article/1974/02/09/en-depit-des-incertitudes-techniques-le-gouvernement-maintient-sa-decision-de-relier-cergy-pontoise-a-sa-defense-par-aerotrain-en-1978_3090552_1819218.html", titulo: "Le gouvernement maintient sa decision...", tipo: "prensa contemporanea", fecha: "1974-02-09"}
+  - {url: "https://www.lemonde.fr/archives/article/1974/07/19/le-gouvernement-cherche-une-solution-ferroviaire-economique-pour-relier-cergy-pontoise-a-la-defense_2516461_1819218.html", titulo: "Le gouvernement cherche une solution ferroviaire economique...", tipo: "prensa contemporanea", fecha: "1974-07-19"}
+  - {url: "https://www.culture.gouv.fr/regions/drac-ile-de-france/actualites/actualite-a-la-une/l-aerotrain-entre-au-patrimoine-trois-prototypes-et-six-maquettes-classes-monuments-historiques", titulo: "L'aerotrain entre au patrimoine", tipo: "institucion publica retrospectiva", fecha: "2025-07-22"}
+  - {url: "https://www.jean-bertin.fr/voie-dessais-dorleans/", titulo: "Voie d'essais d'Orleans", tipo: "archivo asociativo tecnico retrospectivo", fecha: "sin fecha visible"}
+nivel_evidencia: A
+datos_cuantitativos: {velocidad_media_record_kmh: 417.6, velocidad_punta_record_kmh: 430.4, pasajeros_pruebas_aprox: 1400, horas_operacion_aprox: 100, capacidad_i80: 80, masa_i80_t: 30, coste_inicial_cergy_millones_francos: 325, coste_estimado_1973_millones_francos_aprox: 600}
+limitaciones:
+  - "I80-HV usaba turborreactor y no era tecnicamente identico al vehiculo electrico previsto para Cergy."
+contradicciones:
+  - "En febrero de 1974 el gobierno mantenia la linea; cinco meses despues la cancelo."
+  - "Industriales afirmaron poder asumir riesgos mientras fuentes contemporaneas registraban subsistemas aun problematicos."
+incertidumbres:
+  - "No se conoce el coste final que habria alcanzado una linea operativa."
+  - "La narrativa de que TGV simplemente mato Aerotrain simplifica la cronologia."
+etiquetas_neutrales: [aerotrain, air-cushion, guided-transport, dedicated-infrastructure, linear-motor, prototype-not-scaled, substitution, france, 1970s]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
