@@ -44,3 +44,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** promover observabilidad magnética a módulo activo o tratar ALWAC 800 como nueva línea de cómputo físico.
 - **Razón:** el micelio refuerza una línea activa ya existente pero su NARMA-10 (~0.984), SNR y periferia externa no resuelven el benchmark común; la inversión magnética es funcionalmente relevante pero carece de error/resolución cuantificados en la evidencia abierta; ALWAC 800 es un precedente histórico sin traducción funcional nueva.
 - **Consecuencia:** se mantienen tres módulos activos y las madureces M3/M1/M3; el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3.
+
+## 2026-09-17 — cycle 13 consolidation
+- **Decisión:** fusionar `f1-20260917-1301` en `temporal-in-sensor-processing`, `f3-20260917-1301` en `physical-state-interface` y deduplicar `f2-20260917-1301` dentro de `balanced-ternary-precedent`. Sin promoción ni nuevo prototipo.
+- **Evidencia:** `f1-20260917-1301`, `f2-20260917-1301`, `f3-20260917-1301`.
+- **Alternativa rechazada:** abrir un módulo neuromórfico autoalimentado independiente o promover observabilidad magnética adherida como cuarto módulo.
+- **Razón:** F1 refuerza la cadena sensado->codificación temporal->plasticidad->memoria, pero las tareas mayores incluyen simulación; F3 aporta error cuantificado (3.4% fuerza, 4.2% torque) y pasividad local, pero exige adhesión, calibración y lector externo; Setun ya estaba representado como precedente ternario.
+- **Consecuencia:** se mantienen tres módulos activos M3/M1/M3; el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3.
