@@ -1,0 +1,54 @@
+id: f3-20260917-1801
+frente: front-3
+cycle_id: 2026-09-17T18
+tema_objeto: "Integradores tiempo-temperatura pasivos como memoria material acumulativa de exposición térmica"
+afirmacion_principal: "Una reacción química, fisicoquímica o biológica con cinética dependiente de temperatura puede actuar como memoria material sin electrónica: integra el historial tiempo-temperatura y lo transforma en un cambio irreversible visible. La lectura del cambio es observación directa del estado del indicador; inferir deterioro o calidad del objeto acompañado exige emparejar y validar las cinéticas de ambos."
+funcion: registrar
+principio_de_mediacion: "Cinética acumulativa dependiente de temperatura (aproximable por Arrhenius) que transforma exposición térmica integrada en cambio cromático irreversible."
+variable_fisica_entrada: "historial de temperatura a lo largo del tiempo"
+señal_o_estado_salida: "estado cromático irreversible / absorbancia del indicador"
+modalidad: "química-pasiva / colorimétrica / memoria acumulativa"
+invasividad: minima
+requiere_contacto: no
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: "No es un termómetro instantáneo ni entrega una resolución térmica universal. En el sistema fructosa-glicina se modeló absorbancia a 420 nm frente a tiempo y temperatura; la sensibilidad térmica fue ajustable mediante formulación, con energías de activación de 58.09–95.54 kJ/mol."
+latencia: "Intrínsecamente acumulativa y dependiente de formulación y temperatura; no corresponde a respuesta instantánea."
+condiciones_de_prueba: "TTI no enzimático fructosa-glicina ensayado en cuatro concentraciones de sustrato y pH 8.0–10.0. Como evidencia independiente de la necesidad de emparejamiento cinético, un TTI microbiano fue probado a distintas temperaturas y niveles iniciales de inóculo."
+fuentes:
+  - url: "https://onlinelibrary.wiley.com/doi/abs/10.1111/jfpe.13027"
+    titulo: "Development and characterization of a new nonenzymatic colored time–temperature indicator"
+    tipo: "paper experimental revisado por pares"
+    fecha: "2019-02-15"
+  - url: "https://journals.asm.org/doi/10.1128/AEM.02717-07"
+    titulo: "Development of a Microbial Time/Temperature Indicator Prototype for Monitoring the Microbiological Quality of Chilled Foods"
+    tipo: "paper experimental revisado por pares"
+    fecha: "2008"
+  - url: "https://scholars.lib.ntu.edu.tw/entities/publication/2dc58d84-2e09-4162-816e-6f4b25a2a51e"
+    titulo: "Development of a gallic acid based time temperature indicator with adjustable activation energy"
+    tipo: "paper experimental / registro institucional"
+    fecha: "2023-02-01"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Fructosa-glicina: Ea ajustable entre 58.09 y 95.54 kJ/mol mediante pH y proporción de reactivos."
+  - "TTI microbiano: endpoint visual pasó de 27 días a 0 °C a 2.5 días a 16 °C; Ea del indicador 97.7 kJ/mol frente a 103.2 kJ/mol para crecimiento de L. sakei en el sustrato."
+  - "En el TTI microbiano a 8 °C, variar el inóculo de 10^1 a 10^6 CFU/ml desplazó el endpoint aproximadamente de 6 a 2 días."
+  - "Sistema de ácido gálico: Ea ajustable de 17.57 kJ/mol a pH 8.0 a 70.36 kJ/mol a pH 6.0; modelo de calidad de leche Ea 51.68 kJ/mol, emparejado con formulación pH 6.5."
+mecanismo_o_principio: "HECHO DOCUMENTADO: la velocidad de cambio del indicador aumenta con temperatura y puede parametrizarse cinéticamente; el estado resultante conserva el efecto acumulado del historial térmico. HECHO DOCUMENTADO: modificar formulación/pH permite desplazar la energía de activación y, por tanto, la sensibilidad térmica. INTERPRETACIÓN: el valor general para observabilidad es usar una transformación material irreversible como memoria analógica acumulativa, no como sensor instantáneo."
+limitaciones:
+  - "El estado del indicador no identifica de manera única la trayectoria temperatura-tiempo que lo produjo; historiales distintos pueden converger a respuestas similares."
+  - "No mide directamente calidad, deterioro ni carga microbiana del objeto acompañado: esas variables son inferencias que requieren correspondencia cinética y validación específica."
+  - "La formulación, pH, concentración e inicialización alteran fuertemente el endpoint y la sensibilidad."
+  - "La lectura visual es cualitativa; cuantificación por absorbancia exige instrumentación óptica."
+contradicciones:
+  - "No se encontró contradicción con el principio de integración; las fuentes sí muestran que 'indicar calidad' no es una propiedad universal del TTI sino una relación calibrada con el proceso objetivo."
+etiquetas_neutrales:
+  - time-temperature-integrator
+  - passive-sensing
+  - irreversible-memory
+  - colorimetry
+  - chemical-kinetics
+  - cumulative-exposure
+  - no-electronics
+fecha_hallazgo: "2026-09-17T18:24:11-03:00"
+fecha_revision: "2026-09-17T18:24:11-03:00"
