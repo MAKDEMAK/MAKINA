@@ -1,0 +1,46 @@
+id: f1-20260917-1101
+frente: front-1
+cycle_id: 2026-09-17T11
+tema_objeto: sustrato de micelio no vivo morfologicamente ajustable para reservoir computing fisico
+afirmacion_principal:
+  HECHO: "Micelio seco e infusionado con PEDOT:PSS funciona como reservorio analogico: su red hifal y transporte de carga transforman entradas temporales en estados no lineales con memoria evanescente; la morfologia de crecimiento modifica resistencia, capacitancia, decaimiento y capacidad de memoria."
+  HIPOTESIS: "El control previo de la morfologia puede convertirse en un grado de libertad de diseno computacional reproducible, pero el trabajo aun no demuestra optimizacion cerrada morfologia-tarea ni ajuste dinamico del sustrato."
+  INTERPRETACION: "La capacidad materialmente nueva es fabricar el kernel temporal parcialmente mediante crecimiento biologico dirigido, en vez de definirlo exclusivamente mediante topologia electronica o pesos digitales."
+capacidad_nueva: "kernel analogico temporal biodegradable cuya dinamica computacional puede variarse mediante morfologia del sustrato cultivado"
+mecanismo_o_principio: "red hifal porosa infusionada con PEDOT:PSS; transporte no lineal compatible con conduccion limitada por carga espacial, capacitancia y relajacion producen expansion no lineal y fading memory; condiciones de crecimiento alteran la topologia y por tanto la dinamica electrica"
+dominio: [computacion_no_convencional, reservoir_computing_fisico, biofabricacion, neuromorfica]
+fuentes:
+  - url: "https://doi.org/10.1038/s41598-026-55550-5"
+    titulo: "Morphologically tunable mycelium chips for physical reservoir computing"
+    tipo: paper_original_experimental
+    fecha: 2026-06-10
+nivel_evidencia: A
+datos_cuantitativos:
+  - "16 reservorios espacialmente distintos por chip prototipo"
+  - "caracterizacion de memoria: dt=300 ms, 60 s, entradas 1-4 V, K=10; n=5 ensayos por chip en 3 sustratos independientes"
+  - "NARMA-10: NRMSE medio ~0.984 en ejecuciones repetidas del dispositivo seleccionado"
+  - "SNR de meseta ~5-8 dB"
+  - "mas de 50 pruebas por chip dentro de la ventana controlada"
+  - "requiere ~16-18 V para activar el regimen no lineal en el prototipo actual"
+  - "materiales reportados <USD 1 por chip"
+condiciones_de_prueba: "muestras de micelio de 50x100x1 mm, secadas a ~10% humedad, infusion PEDOT:PSS 1.3% a -0.8 bar por 30 s; montaje entre acrilicos y carrier PCB; estimulacion y adquisicion de laboratorio; sin sellado o estabilizacion de humedad"
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: "entrada electrica analogica o digital; el paper indica compatibilidad conceptual con señal directa de sensor, no demuestra sensado ambiental end-to-end"
+tipo_de_memoria_o_estado: "fading memory electrica transitoria dependiente de capacitancia, relajacion y transporte de carga; propiedades fijas postfabricacion salvo reconfiguracion externa de rutas"
+tipo_de_adaptacion: "morfologia parametrizada durante crecimiento; seleccion/ruteo posterior entre reservorios; ajuste dinamico por ambiente queda fuera del alcance experimental"
+tipo_de_actuacion: "ninguna intrinseca demostrada; salida electrica analogica"
+madurez_tecnica: "prueba de concepto experimental replicada en varios sustratos; requiere electronica externa de acondicionamiento, ADC y readout"
+limitaciones:
+  - "NRMSE NARMA-10 ~0.984, inferior a reservorios electronicos optimizados"
+  - "voltaje de activacion 16-18 V y necesidad de amplificacion externa"
+  - "deriva por intercambio de humedad y reconfiguracion morfologica"
+  - "SNR modesto de 5-8 dB"
+  - "la inferencia final usa readouts externos como ridge regression/random forest"
+  - "no se demuestra ajuste dinamico de la morfologia ni aprendizaje material in situ"
+contradicciones:
+  - "La escalabilidad declarada se apoya en infraestructura de cultivo existente y estimaciones de produccion, pero la demostracion computacional es de laboratorio y no valida rendimiento de millones de chips."
+  - "El sustrato es biodegradable y barato, pero el sistema demostrado no lo es completamente: carrier PCB, amplificacion, ADC y adquisicion permanecen convencionales."
+etiquetas_neutrales: [mycelium, PEDOT_PSS, physical_reservoir, morphology, fading_memory, analog_computing, biodegradable]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
