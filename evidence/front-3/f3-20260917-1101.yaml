@@ -1,0 +1,28 @@
+id: f3-20260917-1101
+frente: front-3
+cycle_id: 2026-09-17T11
+tema_objeto: medicion magnetica no intrusiva de corriente
+afirmacion_principal: Un arreglo externo de sensores magneticos permite estimar corrientes individuales de varios conductores encerrados sin abrir el conduit; eventos de cambio de carga ayudan a identificar conexiones y posiciones para construir la transformacion de lectura magnetica a corriente.
+funcion: medir
+principio_de_mediacion: campo magnetico de corriente -> arreglo magnetico -> estimacion geometrica -> matriz de transimpedancia -> corriente
+variable_fisica_entrada: campo magnetico de conductores AC encerrados
+señal_o_estado_salida: corrientes individuales estimadas
+modalidad: magnetica
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: no cuantificada en las fuentes abiertas consultadas
+latencia: tiempo real reportado; sin cifra numerica abierta
+condiciones_de_prueba: tres conductores residenciales norteamericanos, dos activos y neutro; laboratorio y campo
+fuentes:
+  - {url: 'https://doi.org/10.1109/TSG.2017.2698035', titulo: 'Event-Based Non-Intrusive Home Current Measurement Using Sensor Array', tipo: paper experimental, fecha: '2018-11'}
+  - {url: 'https://scholars.hkbu.edu.hk/en/publications/event-based-non-intrusive-home-current-measurement-using-sensor-a/', titulo: 'Event-Based Non-Intrusive Home Current Measurement Using Sensor Array', tipo: repositorio institucional, fecha: '2018-11'}
+nivel_evidencia: A
+datos_cuantitativos: {conductores_objetivo: 3, pruebas: laboratorio_y_campo}
+mecanismo_o_principio: 'Medicion directa del campo producido por corriente; separar las contribuciones individuales es estimacion inversa modelada mediante eventos, minimos cuadrados no lineales y matriz de transimpedancia.'
+limitaciones: ['La geometria de conductores afecta la inversion y requiere identificacion/calibracion.', 'La demostracion publicada se formula para tres conductores residenciales norteamericanos.', 'Las fuentes abiertas consultadas no exponen cifras completas de error o resolucion; no se infieren.']
+contradicciones: ['Contactless no significa pasivo: requiere sensores electronicos externos y computacion.', 'El campo es efecto directo de la corriente, pero separar corrientes individuales es inferencia dependiente del modelo.']
+etiquetas_neutrales: [campo_magnetico, corriente, sensor_array, contactless, estimacion_inversa, eventos]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
