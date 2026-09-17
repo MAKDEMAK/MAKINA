@@ -5,29 +5,32 @@ core:
 active_modules:
   - id: physical-state-interface
     maturity: M3
-    confidence: 0.94
-    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001]
+    confidence: 0.95
+    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001]
     current_architecture: "physical input -> material transduction/state -> externally readable state"
     success_criterion: "Entrada fisica produce estado reproducible con rango, persistencia y falsos cambios cuantificados."
-    next_action: "Mantener M3; ciclo 23 no aporta medicion del prototipo existente para M4."
+    next_action: "Mantener M3 y medir el prototipo existente. F3-00 refuerza memoria material distribuida y F1-00 colocalizacion estimulo-energia-escritura, pero ninguno mide el artefacto del repo para M4."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.89
     evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301]
     current_architecture: "physical dynamics -> distributed transient state -> readout"
     success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
-    next_action: "No promover: F1-23 confirma memoria/no linealidad mecanicas y >85% de rendimiento con ~35% de variables de lectura en simulacion, pero falta benchmark comun."
+    next_action: "No promover: falta benchmark comun entre sustratos."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
-    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101]
-    current_architecture: "temporal signal -> event/latency encoder -> common event task -> metrics"
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101, f1-20260917-0002]
+    current_architecture: "temporal signal -> local transduction/state or event encoder -> common event task -> metrics"
     success_criterion: "Conservar >=95% del score digital o mejorarlo y reducir >=10x volumen transferido; separar energia local y periferica."
-    next_action: "Ejecutar benchmark y tests existentes antes de M4; ciclo 23 no cambia este requisito."
+    next_action: "Ejecutar benchmark y tests existentes antes de M4; la sinapsis tactil agrega evidencia de estado temporal local pero su >88% fue evaluado parcialmente fuera del dispositivo."
 waiting_modules:
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301]
-    reason: "F3-23 agrega deformacion pasiva magnetoelastica con 37100 Hz/strain, pero requiere fijacion e instrumentacion externa y aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
+    reason: "Aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
+  - id: implicit-analog-solver
+    evidence_ids: [f1-20260917-0001]
+    reason: "La solucion inversa por equilibrio de lazo analogico esta demostrada en chip, pero no converge todavia con una funcion del nucleo ni justifica desplazar uno de los tres modulos activos."
 archived_modules:
   - {id: air-cushion-transport, reason: "sin convergencia funcional"}
   - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
@@ -45,7 +48,8 @@ archived_modules:
   - {id: fluidic-general-computing-precedent, reason: "limitado por propagacion; sustituido"}
   - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
   - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "direccionamiento mecanico granular demostrado, pero complejidad/dependabilidad perdieron frente al disco y no hay traduccion funcional medible al nucleo actual"}
+  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "transduccion capacitiva por contacto demostrada comercialmente, pero el contacto/desgaste y la sustitucion por rutas grabables/opticas no aportan traduccion funcional medible al nucleo actual"}
 current_architecture: "physical variable/event -> transduction/direct response -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
 next_action: "Priorizar medicion de prototipos existentes sobre nueva documentacion."
-last_synthesized_cycle: 2026-09-16T23
+last_synthesized_cycle: 2026-09-17T00
