@@ -1,0 +1,42 @@
+id: f1-20260917-1801
+frente: front-1
+cycle_id: 2026-09-17T18
+tema_objeto: logica_mecanica_pasiva_por_geometria_y_compliance
+afirmacion_principal:
+  hecho: "Una estructura mecanicamente programada puede sensar torque y ejecutar una decision umbral para reconfigurar su estado sin sensores, actuadores auxiliares, electronica ni control digital."
+  hipotesis: "El principio de codificar condiciones y transiciones en geometria, cinematica y rigidez puede constituir una clase general de control fisico pasivo; el trabajo solo valida directamente una arquitectura."
+  interpretacion: "La capacidad emergente es desplazar sensado, decision y adaptacion desde un controlador hacia la propia ruta de fuerzas del mecanismo."
+capacidad_nueva: "Adaptacion determinista bidireccional condicionada por carga, con sensado y logica realizados por fuerzas y geometria."
+mecanismo_o_principio: "Un acoplador slider-crank evalua mecanicamente umbrales de fuerza/torque; struts con resortes torsionales codifican el segundo umbral y cambian la geometria cuando se supera."
+dominio: inteligencia_fisica_mecanica
+fuentes:
+  - url: https://arxiv.org/abs/2602.06265
+    titulo: "MORPH Wheel: A Passive Variable-Radius Wheel Embedding Mechanical Behavior Logic for Input-Responsive Transformation"
+    tipo: preprint_original_con_validacion_experimental
+    fecha: 2026-02-05
+nivel_evidencia: B
+datos_cuantitativos:
+  radio_demostrado_mm: "80 -> 40"
+  fuerza_objetivo_contraccion_N: ">=10"
+  cargas_robot_kg: "0-25"
+  masas_rueda_validadas_kg: "1.8, 2.3, 2.8"
+  resortes_torsionales: 12
+  rigidez_resorte_Nmm_deg: 2.14
+condiciones_de_prueba: "Modelo analitico, banco de medicion y robot movil bajo cargas, pendientes y terreno no estructurado."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "mecanico intrinseco de torque/resistencia mediante equilibrio de fuerzas"
+tipo_de_memoria_o_estado: "estado geometrico y elastico; sin memoria persistente demostrada"
+tipo_de_adaptacion: "conmutacion pasiva por umbrales mecanicos entre transmision directa, reconfiguracion y stall"
+tipo_de_actuacion: "reconfiguracion mecanica impulsada por el mismo torque de entrada"
+madurez_tecnica: "prototipo experimental integrado en robot; preprint"
+limitaciones:
+  - "La logica demostrada es pequena y predeterminada; no aprende ni cambia autonomamente sus umbrales."
+  - "La estructura no crea energia: usa la potencia mecanica de entrada, por eso requiere_alimentacion se marca parcial."
+  - "No hay validacion de vida util extensa, manufactura a escala o rango amplio de velocidades."
+contradicciones:
+  - "Los autores lo describen como inteligencia/decision mecanica; funcionalmente implementa logica umbral determinista, no inferencia general."
+  - "Existen CVT pasivos previos; la novedad reclamada es combinar bidireccionalidad continua, mayor capacidad de carga y comportamiento determinista en una rueda, no inventar la transmision pasiva."
+etiquetas_neutrales: [mechanical_intelligence, passive_control, mechanical_logic, compliant_mechanism, threshold_logic, sensorless]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
