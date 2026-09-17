@@ -1,0 +1,45 @@
+id: f3-20260917-0501
+frente: front-3
+cycle_id: 2026-09-17T05
+tema_objeto: visualizacion pasiva de deformacion y defectos mediante mecanoluminiscencia
+afirmacion_principal:
+  hecho: "Una pelicula de SrAl2O4:Eu convierte deformacion mecanica superficial en emision optica espacial; en tuberia presurizada, la distribucion de intensidad ML concordo con galgas extensometricas y FEM y permitio estimar localizacion/profundidad de un defecto."
+  hipotesis: "La intensidad luminosa puede funcionar como proxy cuantitativo de deformacion bajo calibracion y condiciones mecanicas/materiales equivalentes."
+  interpretacion: "Es una capa de mediacion fisico-informacional: la superficie convierte directamente esfuerzo/deformacion en una imagen legible sin alimentar electronicamente el elemento sensor."
+funcion: diagnosticar
+principio_de_mediacion: "mecanoluminiscencia de fosforo SrAl2O4:Eu embebido en pelicula; la excitacion mecanica produce emision optica cuya distribucion/intensidad sigue la deformacion local"
+variable_fisica_entrada: "deformacion/esfuerzo mecanico superficial"
+senal_o_estado_salida: "intensidad y distribucion espacial de luz visible"
+modalidad: optica_mecanoluminiscente
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "No se reporta una cifra unica en la fuente primaria consultada; la distribucion de hoop strain inferida por ML mostro buena concordancia con galga extensometrica y FEM."
+latencia: "tiempo real/dinamica; sin cifra unica reportada en el experimento de tuberia"
+condiciones_de_prueba: "pelicula ML sobre superficie exterior de tuberia presurizada con defecto; comparacion con strain gauge y calculo FEM; literatura adicional valida visualizacion dinamica en CFRP bajo traccion"
+fuentes:
+  - url: "https://doi.org/10.11395/jjsem.10.s152"
+    titulo: "Visualization of Internal Defect of a Pipe Using Mechanoluminescent Sensor"
+    tipo: paper_experimental
+    fecha: "2010"
+  - url: "https://doi.org/10.3390/s22155476"
+    titulo: "Flexible Mechanoluminescent SrAl2O4:Eu Film with Tracking Performance of CFRP Fracture Phenomena"
+    tipo: paper_experimental
+    fecha: "2022-07-28"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "El estudio de tuberia compara ML con strain gauge y FEM; el resumen primario no entrega error numerico agregado."
+  - "En peliculas flexibles posteriores, la fraccion de fosforo afecta el seguimiento: exceso puede fracturar la propia pelicula y defecto reduce la señal ML."
+mecanismo_o_principio: "transduccion mecanico-optica distribuida por mecanoluminiscencia; medicion directa de la respuesta luminosa, inferencia indirecta de deformacion/defecto mediante calibracion"
+limitaciones:
+  - "Requiere aplicar/adherir una pelicula sensora a la superficie: no es invasividad nula."
+  - "Para registro cuantitativo/dinamico normalmente se requiere camara o fotodetector externo; la pelicula en si no requiere alimentacion electrica."
+  - "La relacion intensidad-deformacion depende del material, concentracion de fosforo, geometria, historia de excitacion y condiciones opticas."
+  - "La estimacion de profundidad de defecto es inferencia indirecta, no medicion geometrica directa."
+contradicciones:
+  - "No debe describirse como sensor completamente sin electronica cuando se exige adquisicion automatica: la transduccion es pasiva, la lectura puede no serlo."
+  - "Mayor carga de fosforo no mejora monotonicamente el desempeño: puede fragilizar la pelicula; menor carga empeora luminiscencia."
+etiquetas_neutrales: [mechanoluminescence, strain, stress, optical_transduction, passive_sensor, structural_monitoring, proxy_inference]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
