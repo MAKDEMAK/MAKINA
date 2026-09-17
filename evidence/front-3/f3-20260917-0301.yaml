@@ -1,0 +1,41 @@
+id: f3-20260917-0301
+frente: front-3
+cycle_id: 2026-09-17T03
+tema_objeto: memoria mecanica pasiva para registrar indices de dano
+afirmacion_principal: Un sensor basado en pandeo elastico y extension plastica de un alambre puede memorizar mecanicamente el valor pico de deformacion o desplazamiento sin alimentacion durante la medicion.
+funcion: registrar
+principio_de_mediacion: El evento mecanico produce pandeo elastico y una extension plastica residual; la longitud retenida codifica el maximo historico y puede leerse por resistencia, inductancia o capacitancia.
+variable_fisica_entrada: deformacion o desplazamiento mecanico
+senal_o_estado_salida: elongacion residual mecanica y cambio electrico opcional para lectura
+modalidad: mecanica_pasiva
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: no cuantificada en la fuente accesible
+latencia: registro ligado al evento y lectura posterior
+condiciones_de_prueba: estudios teoricos y experimentales para estructuras con control de dano
+fuentes:
+  - url: https://doi.org/10.1088/0964-1726/12/2/307
+    titulo: A smart sensor using a mechanical memory for structural health monitoring of a damage-controlled building
+    tipo: paper revisado por pares
+    fecha: 2003-04
+  - url: https://keio.elsevierpure.com/en/publications/damage-index-sensor-for-smart-structures/
+    titulo: Damage index sensor for smart structures
+    tipo: registro institucional de publicacion
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos: []
+mecanismo_o_principio: memoria fisica irreversible por deformacion plastica inducida mediante pandeo de alambre fino
+limitaciones:
+  - La memoria basica conserva un indice extremo, no una serie temporal ni el instante del evento.
+  - La lectura electrica o inalambrica requiere instrumentacion al recuperar el dato, aunque el registro no requiere alimentacion.
+  - La relacion entre elongacion residual e indice de dano requiere calibracion.
+contradicciones:
+  - No es completamente libre de electronica cuando se desea lectura remota; lo pasivo es el registro.
+HECHO: El mecanismo de memoria de pico fue construido y estudiado experimentalmente.
+HIPOTESIS: El principio puede generalizarse a otros indices de dano si existe una transformacion mecanica monotona y calibrable hacia deformacion residual.
+INTERPRETACION: El propio elemento fisico funciona simultaneamente como detector y memoria historica, evitando adquisicion continua.
+etiquetas_neutrales: [mechanical-memory, passive-sensing, peak-strain, peak-displacement, buckling, plastic-deformation, structural-health-monitoring]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
