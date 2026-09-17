@@ -1,0 +1,46 @@
+id: f3-20260917-0901
+frente: front-3
+cycle_id: 2026-09-17T09
+tema_objeto: recubrimientos triboluminiscentes para hacer visible daño mecánico
+firmacion_principal: "Un recubrimiento triboluminiscente puede convertir deformación/fractura local en emisión óptica localizada, permitiendo observar en tiempo real aparición y posición de daño sin instrumentar electrónicamente el objeto en cada punto; la cuantificación posterior de la luz es inferencia indirecta del daño."
+funcion: diagnosticar
+principio_de_mediacion: "fractura/deformación de cristales triboluminiscentes -> emisión de fotones espacialmente coincidente con la zona activada"
+variable_fisica_entrada: deformación, formación/propagación de grietas y carga mecánica local
+señal_o_estado_salida: emisión óptica transitoria localizada
+modalidad: óptica/triboluminiscencia
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: opcional
+resolucion_o_precision: "No se reporta una resolución métrica universal. En CFRP, recubrimientos de 10%, 20% y 30% produjeron 25.3, 27.9 y 40.4 unidades arbitrarias de luminiscencia total, respectivamente; la localización se obtuvo por imagen."
+latencia: "tiempo real respecto a formación de daño en las pruebas; no se reporta constante temporal universal"
+condiciones_de_prueba: "Mortero y hormigón armado bajo flexión con ZnS:Mn/acoplamiento a fibra óptica; cupones CFRP bajo carga cuasiestática combinada flexión-compresión con recubrimiento triboluminiscente."
+fuentes:
+  - url: https://doi.org/10.1177/1475921713513976
+    titulo: Getting light through cementitious composites with in situ triboluminescent damage sensor
+    tipo: paper experimental
+    fecha: 2013-12-24
+  - url: https://doi.org/10.1177/1045389X14535017
+    titulo: Detection of crack formation and stress distribution for carbon fiber-reinforced polymer specimens through triboluminescent-based imaging
+    tipo: paper experimental
+    fecha: 2014-05-23
+  - url: https://doi.org/10.1177/1045389X13484100
+    titulo: Triboluminescence for distributed damage assessment in cement-based materials
+    tipo: paper experimental
+    fecha: 2013-04-10
+nivel_evidencia: A
+datos_cuantitativos:
+  - "CFRP: 10%, 20%, 30% de concentración -> 25.3, 27.9, 40.4 unidades arbitrarias de luminiscencia total."
+  - "Mortero: probetas cúbicas de 5.1 x 5.1 cm; luminiscencia aumentó con concentración triboluminiscente y tasa de carga."
+  - "Hormigón: detección experimental en tiempo real de múltiples grietas antes del fallo mediante sensor triboluminiscente/fibra."
+mecanismo_o_principio: "La energía mecánica liberada durante deformación/fractura activa centros luminiscentes del material. La emisión constituye una transducción física directa del evento a luz; identificar una grieta o estimar severidad desde intensidad/imagen es inferencia indirecta y dependiente de calibración."
+limitaciones:
+  - "La amplitud depende de concentración del material triboluminiscente y tasa de carga, no sólo del daño."
+  - "Materiales opacos pueden impedir observar directamente la emisión; el trabajo en cemento requirió acoplamiento a fibra óptica para transportar la señal interna."
+  - "La intensidad luminosa no equivale de forma universal a longitud de grieta, tensión o energía de fractura."
+  - "Lectura cuantitativa normalmente requiere cámara/fotodetector; observación cualitativa del destello no requiere computación digital."
+contradicciones:
+  - "La literatura demuestra detección de eventos de daño, pero no sustenta tratar la intensidad como medición directa y universal de esfuerzo o tamaño de grieta."
+etiquetas_neutrales: [triboluminescencia, daño, grieta, transduccion_mecano-optica, recubrimiento, sensado_pasivo, condition_monitoring]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
