@@ -6,17 +6,17 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.95
-    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901, f3-20260917-1301]
+    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901, f3-20260917-1301, f1-20260917-1801, f3-20260917-1801]
     current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente; la evidencia T17 no mide este artefacto."
+    next_action: "Mantener M3 y medir el prototipo existente; F1-1801 refuerza logica mecanica umbral y F3-1801 memoria acumulativa material, pero ninguno mide el artefacto del repo."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.91
     evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301, f1-20260917-0701, f1-20260917-1101, f1-20260917-1601, f1-20260917-1701]
     current_architecture: "physical dynamics -> distributed transient state -> readout"
     success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
-    next_action: "No promover: F1-1701 demuestra memoria temporal y umbral en dinamica viscoelastica nanomecanica, pero no aporta benchmark comun entre sustratos, red integrada ni ventaja end-to-end."
+    next_action: "No promover: sigue faltando benchmark comun entre sustratos y ventaja end-to-end."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
@@ -27,16 +27,16 @@ active_modules:
 waiting_modules:
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101, f3-20260917-1501, f3-20260917-1601, f3-20260917-1701]
-    reason: "F3-1701 añade inferencia pasiva RF de corrosion bajo recubrimiento mediante tres resonancias 2-6 GHz y lectura portable hasta 15 cm; refuerza observabilidad legacy, pero requiere contacto del tag, calibracion e interrogador externo y no desplaza un modulo activo."
+    reason: "Ruta fuerte de observabilidad legacy, pero no desplaza un modulo activo y depende de calibracion/lectores externos segun modalidad."
   - id: implicit-analog-solver
     evidence_ids: [f1-20260917-0001]
-    reason: "La solucion inversa por equilibrio de lazo analogico esta demostrada en chip, pero no converge todavia con una funcion del nucleo ni justifica desplazar uno de los tres modulos activos."
+    reason: "Demostrado en chip, sin convergencia suficiente con una funcion del nucleo."
   - id: spatial-in-sensor-processing
     evidence_ids: [f1-20260917-0401]
     reason: "Convolucion optica programable demostrada, pero comparacion periferica incompleta."
   - id: thermodynamic-molecular-computation
     evidence_ids: [f1-20260917-1001]
-    reason: "Computacion programable y autocorreccion por relajacion termodinamica demostradas, pero la escala temporal, preparacion/lectura externa y ausencia de traduccion funcional al nucleo impiden desplazar un modulo activo."
+    reason: "Computacion programable y autocorreccion demostradas, pero escala temporal y periferia impiden desplazar un modulo activo."
 archived_modules:
   - {id: air-cushion-transport, reason: "sin convergencia funcional"}
   - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
@@ -45,21 +45,21 @@ archived_modules:
   - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-20260917-0901], reason: "deduplicado"}
   - {id: parametric-phase-logic-precedent, evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501, f2-20260916-1901, f2-20260917-1001], reason: "precedente deduplicado sin traduccion funcional nueva"}
   - {id: saturable-magnetic-logic-precedent, evidence_ids: [f2-20260917-1101], reason: "precedente historico sin ventaja transferible demostrada"}
-  - {id: balanced-ternary-precedent, evidence_ids: [f2-20260915-21-setun, f2-20260916-1401, f2-20260917-1301], reason: "F2-1301 confirma produccion y uso real de Setun pero es continuidad/deduplicacion; no aporta traduccion funcional nueva al nucleo"}
+  - {id: balanced-ternary-precedent, evidence_ids: [f2-20260915-21-setun, f2-20260916-1401, f2-20260917-1301], reason: "continuidad/deduplicacion"}
   - {id: mechanical-video-density-precedent, reason: "sin convergencia medible"}
   - {id: integrated-office-automation-precedent, reason: "sin traduccion funcional medible"}
   - {id: cartridge-decoupled-precision-transport, reason: "sin convergencia medible"}
   - {id: subharmonic-synthesis-precedent, reason: "sin traduccion funcional medible"}
   - {id: dynamic-track-following-precedent, reason: "precedente sin modulo activo"}
-  - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101, f2-20260917-0301], reason: "redundante y sin traduccion funcional medible"}
+  - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101, f2-20260917-0301, f2-20260917-1801], reason: "FLODAC T18 triangula prototipo real y causas de sustitucion, pero es continuidad deduplicada y no aporta traduccion funcional nueva"}
   - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
   - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "sin convergencia medible"}
-  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001, f2-20260917-1601], reason: "CED confirma escala comercial y limites de lectura capacitiva por contacto; precedente deduplicado sin convergencia funcional medible"}
+  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001, f2-20260917-1601], reason: "precedente deduplicado"}
   - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101, f2-20260917-0701], reason: "deduplicado"}
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
-  - {id: insectothopter-fluidic-flight-precedent, evidence_ids: [f2-20260917-1501], reason: "prototipo real de oscilador fluidico para vuelo, pero el limite documentado fue control ante perturbaciones y no converge con una funcion medible del nucleo"}
-  - {id: rasterized-videotex-precedent, evidence_ids: [f2-20260917-1701], reason: "CAPTAIN demuestra desplazar complejidad de representacion desde terminal a patron transmitido, pero es una arquitectura de telecomunicaciones sin traduccion funcional medible al nucleo fisico actual"}
+  - {id: insectothopter-fluidic-flight-precedent, evidence_ids: [f2-20260917-1501], reason: "sin convergencia funcional medible"}
+  - {id: rasterized-videotex-precedent, evidence_ids: [f2-20260917-1701], reason: "sin traduccion funcional medible al nucleo"}
 current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos M3. T17 refuerza embodied-dynamics mediante memoria viscoelastica nanomecanica y observabilidad legacy mediante resonancia RF pasiva, pero no satisface criterios de promocion ni justifica nuevo prototipo."
-last_synthesized_cycle: 2026-09-17T17
+next_action: "Priorizar medicion de prototipos M3. T18 refuerza physical-state-interface mediante logica mecanica pasiva y memoria material acumulativa; FLODAC es continuidad historica deduplicada."
+last_synthesized_cycle: 2026-09-17T18
