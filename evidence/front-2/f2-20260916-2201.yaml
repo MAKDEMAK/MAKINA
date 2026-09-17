@@ -1,0 +1,52 @@
+id: f2-20260916-2201
+frente: front-2
+cycle_id: 2026-09-16T22
+tema_objeto: memoria de burbuja magnetica como camino de memoria universal de estado solido
+afirmacion_principal:
+  hecho_documentado: "La memoria de burbuja magnetica llego a chips y modulos funcionales y a productos comerciales, pero fue desplazada primero de memoria principal por semiconductores mas rapidos y despues de almacenamiento masivo por discos de mayor capacidad/coste; sobrevivio temporalmente en nichos donde ausencia de partes moviles y no volatilidad eran valiosas."
+  testimonio: "La literatura tecnica de 1981 aun la describia como de mayor densidad de bit que memoria semiconductor, pero mas cara, y señalaba coste y velocidad de conmutacion como problemas pendientes."
+  interpretacion: "No fue un fracaso experimental ni un concepto no realizado: fue una linea industrial sustituida en dos frentes competitivos distintos. El principio que quedo reducido fue transportar dominios magneticos discretos dentro de una pelicula para almacenar datos sin partes mecanicas moviles."
+nombre_proyecto_o_artefacto: magnetic bubble memory
+periodo_historico: "1967-finales de 1980s"
+pais_contexto: "Estados Unidos; Japon; desarrollo internacional"
+disciplina: "memoria magnetica; almacenamiento; microelectronica"
+problema_original: "Conseguir memoria no volatil, densa, robusta y sin partes moviles que pudiera competir tanto con memoria principal como con almacenamiento secundario."
+principio_tecnico: "Dominios magneticos cilindricos (burbujas) en peliculas delgadas se crean, propagan por pistas bajo campos magneticos y se llevan a puntos de lectura/escritura; cada burbuja representa un bit."
+estado_historico: sustitucion
+resultado_real_alcanzado: "IBM documento en 1973 un chip de 1024 bits a 1.5e6 bits/in2: todas las funciones operaron a 500 kHz a nivel chip y 100 kHz en modulo, demostrando no volatilidad. En 1978 Rockwell suministraba dispositivos de 256 Kbit como alternativa solid-state a cinta y disco."
+causa_documentada:
+  - "La revision japonesa de 1981 identifica coste superior y necesidad de mejorar velocidad de conmutacion."
+  - "La evolucion rapida de memoria semiconductor la desplazo del extremo rapido; las mejoras de capacidad/coste de discos duros la hicieron no competitiva como almacenamiento masivo."
+causas_alternativas:
+  - "La arquitectura de acceso por propagacion de burbujas imponia latencia frente a RAM de acceso aleatorio."
+  - "La ventaja de robustez mantuvo nichos aun despues de perder el mercado general."
+camino_que_lo_desplazo_si_existe: "DRAM/otras memorias semiconductor para memoria principal; discos duros para almacenamiento masivo; posteriormente flash en nichos no volatiles y robustos."
+fuentes:
+  - url: "https://research.ibm.com/publications/1024-bit-bubble-memory-chip"
+    titulo: "1024 Bit Bubble Memory Chip"
+    tipo: "paper IEEE / fuente institucional IBM"
+    fecha: "1973-01-01"
+  - url: "https://www.jstage.jst.go.jp/article/jmsjmag1977/5/4/5_4_220/_article/-char/en"
+    titulo: "Outline of Magnetic Bubble Memory"
+    tipo: "revision tecnica contemporanea"
+    fecha: "1981-08-30"
+  - url: "https://sid.onlinelibrary.wiley.com/doi/full/10.1002/j.2637-496X.1978.tb01316.x"
+    titulo: "New Rockwell Bubble Memory System"
+    tipo: "revista tecnica contemporanea"
+    fecha: "1978-11-01"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "IBM 1973: 1024 bits; 1.5e6 bits/in2; 500 kHz chip; 100 kHz modulo."
+  - "Rockwell 1978: 256 Kbit; chip de aproximadamente 1 cm cuadrado; burbujas ~4 micrometros de diametro."
+limitaciones:
+  - "Coste mayor que memoria semiconductor segun revision contemporanea de 1981."
+  - "Velocidad de conmutacion seguia requiriendo mejora."
+  - "Acceso dependiente del desplazamiento fisico de dominios, no RAM arbitraria instantanea."
+contradicciones:
+  - "La narrativa de fracaso total es incorrecta: existieron dispositivos comerciales y usos de nicho."
+  - "Tampoco fue una memoria universal realizada: perdio mercados diferentes frente a tecnologias diferentes."
+incertidumbres:
+  - "No se atribuye el cierre industrial a una unica causa empresarial; la evidencia disponible sostiene competencia simultanea en coste, velocidad y capacidad."
+etiquetas_neutrales: [magnetic-domain, nonvolatile-memory, solid-state-storage, moving-information, substitution, industrialized]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
