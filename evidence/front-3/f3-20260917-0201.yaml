@@ -1,0 +1,43 @@
+id: f3-20260917-0201
+frente: front-3
+cycle_id: 2026-09-17T02
+tema_objeto: inferencia no invasiva de carga de motores mediante flujo magnetico disperso
+afirmacion_principal:
+  hecho: "Un sensor GMR colocado externamente sobre la carcasa puede medir el flujo magnetico disperso de un motor de induccion y usar sus rasgos estacionarios y transitorios como proxy de carga sin medir corriente ni torque directamente."
+  interpretacion: "La carcasa no necesita una interfaz de datos propia: el campo magnetico que escapa de la maquina funciona como canal fisico de observabilidad."
+  hipotesis: "La generalizacion a maquinas, geometrías y entornos electromagneticos distintos requiere calibracion/validacion especifica."
+funcion: inferir
+principio_de_mediacion: "magnetorresistencia gigante (GMR) aplicada al campo magnetico disperso externo; amplitud y espectrograma STFT se correlacionan con carga"
+variable_fisica_entrada: "densidad de flujo magnetico disperso producida por corrientes de estator y rotor"
+señal_o_estado_salida: "voltaje GMR y rasgos tiempo-frecuencia; estimacion indirecta del estado de carga"
+modalidad: magnetica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: "no reportada como error absoluto de torque; se demuestra monotonicidad/sensibilidad frente a niveles de carga"
+latencia: "en transitorio, primer pico alrededor de 80 ms; la estimacion por tiempo de respuesta depende del arranque hasta estado estacionario"
+condiciones_de_prueba: "Dos motores de induccion identicos de 1.5 kW con carcasa de aluminio, cargas 0-5 N·m, mas un motor trifasico de 59 kW en banco de fatiga de rodamiento; sensor NVE AA002 pegado al punto medio de la carcasa."
+fuentes:
+  - url: "https://doi.org/10.1049/iet-pel.2016.0304"
+    titulo: "Non-invasive load monitoring of induction motor drives using magnetic flux sensors"
+    tipo: paper experimental revisado por pares
+    fecha: "2017-02-01"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "En dos motores de 1.5 kW, con carga de 0 a 5 N·m, el pico de salida GMR aumento de 68.1 a 198 mV y de 87.1 a 200 mV respectivamente."
+  - "En arranques con 1-5 N·m aparece un primer pico del flujo disperso alrededor de 80 ms cuyo valor aumenta con la carga."
+  - "La simulacion situo el campo disperso mas fuerte medido en la direccion seleccionada alrededor de 5 mT en el punto medio de la carcasa."
+  - "Se valido adicionalmente el principio sobre un motor de 59 kW asociado a un banco de fatiga de rodamiento."
+mecanismo_o_principio: "Las corrientes de estator y rotor generan flujo de entrehierro; una fraccion atenuada atraviesa laminaciones y carcasa. El GMR convierte ese campo externo en voltaje. Cambios de carga modifican amplitud y dinamica del flujo, y STFT hace visibles sus firmas transitorias."
+limitaciones:
+  - "Es inferencia indirecta de carga, no medicion directa de torque."
+  - "La posicion y orientacion del sensor afectan fuertemente la señal; el estudio optimizo ambas mediante FEA."
+  - "Campos magneticos externos, geometria/material de carcasa y regimen de accionamiento pueden alterar la relacion proxy-carga."
+  - "El paper no entrega una precision universal de torque ni demuestra transferencia sin recalibracion entre familias arbitrarias de motores."
+contradicciones:
+  - "Las bobinas de busqueda externas ya permitian condition monitoring magnetico; la contribucion GMR mejora sensibilidad a bajo nivel/baja frecuencia y respuesta transitoria, no inaugura el principio de flujo disperso."
+  - "Aunque se denomina no invasivo, el montaje experimental pega el sensor a la carcasa: no modifica internamente la maquina pero si requiere contacto superficial."
+etiquetas_neutrales: [stray-flux, GMR, motor-induccion, proxy, carga, condition-monitoring, STFT, legacy]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
