@@ -1,0 +1,45 @@
+id: f1-20260917-0901
+frente: front-1
+cycle_id: 2026-09-17T09
+tema_objeto: memristor optoelectronico WS2/ZTO como sensor-reservorio
+HECHO:
+  afirmacion_principal: "Un unico dispositivo WS2/ZTO integra sensado optico, memoria dinamica y computacion temporal por reservoir computing, con operacion demostrada bajo humedad elevada."
+  capacidad_nueva: "Decodificacion temporal in-sensor multimodal con memoria volatil/no volatil y computacion en el mismo elemento."
+  mecanismo_o_principio: "La fotorespuesta y dinamica memristiva no lineal dependiente de historia del heterodispositivo WS2/ZTO generan estados de reservorio; el encapsulado ZTO estabiliza la respuesta ambiental."
+HIPOTESIS: "La co-localizacion fisica de sensado, estado y transformacion temporal puede reducir transferencias de datos frente a cadenas sensor-memoria-procesador separadas; el paper no demuestra esa ventaja a nivel de sistema completo."
+INTERPRETACION: "El avance materialmente util es la combinacion experimental de reservoir optoelectronico, sensado y robustez a 95% RH, no solamente una mejora de accuracy."
+dominio: [neuromorfica, optoelectronica, physical_reservoir_computing, in_sensor_computing]
+fuentes:
+  - url: "https://doi.org/10.1002/advs.75318"
+    titulo: "WS2 Optoelectronic Memristive Reservoir Enabling Ultra-Low-Power, Multi-Task, and Environmentally Stable Neuromorphic Computing"
+    tipo: paper_original
+    fecha: "2026"
+  - url: "https://doi.org/10.1002/advs.75476"
+    titulo: "Memristive Physical Reservoir Computing"
+    tipo: revision
+    fecha: "2026-04-28"
+nivel_evidencia: A
+datos_cuantitativos:
+  energia_optica: "~25.5 fJ/spike"
+  accuracy_N_MNIST: "~94-95%"
+  accuracy_motion: "~93%"
+  accuracy_speech: "~89%"
+  humedad_probada: "95% RH"
+  endurance: ">1.5 millones de ciclos AC"
+condiciones_de_prueba: "Tareas N-MNIST, percepcion de movimiento y reconocimiento de habla; entradas convertidas a trenes de spikes; estabilidad evaluada hasta 95% RH."
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: optico
+tipo_de_memoria_o_estado: "dinamica memristiva volatil y plasticidad de corto/largo plazo"
+tipo_de_adaptacion: "respuesta sinaptica dependiente de historia; readout entrenado externamente"
+tipo_de_actuacion: electrica/optoelectronica
+madurez_tecnica: "demostracion experimental de dispositivo y tareas benchmark; no sistema autonomo desplegado"
+limitaciones:
+  - "Las tareas de audio y movimiento requieren preprocesamiento/conversion de entradas a spikes."
+  - "La energia reportada es energia optica por spike y no consumo end-to-end del sistema."
+  - "Benchmarks y humedad controlada no equivalen a validacion prolongada en campo."
+contradicciones:
+  - "La afirmacion de integracion sensor-computo es fuerte a nivel de dispositivo, pero no elimina completamente computacion digital externa para codificacion/readout en las demostraciones."
+etiquetas_neutrales: [WS2, ZTO, memristor, reservoir_computing, in_sensor, temporal_processing]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
