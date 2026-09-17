@@ -1,0 +1,41 @@
+id: f2-20260917-0501
+frente: front-2
+cycle_id: 2026-09-17T05
+tema_objeto: memoria magnetica no volatil de dominios moviles
+afirmacion_principal: La memoria de burbujas fue una via comercial real hacia almacenamiento no volatil y sin partes moviles; alcanzo productos de 1 Mbit, pero fue desplazada como memoria general por discos y memorias semiconductoras que mejoraron mas rapido.
+nombre_proyecto_o_artefacto: Magnetic Bubble Memory / Intel 7110
+periodo_historico: 1967-1980s
+pais_contexto: Estados Unidos, con desarrollo internacional
+disciplina: almacenamiento magnetico y computacion
+problema_original: Conseguir memoria no volatil de alta densidad y sin mecanismos rotatorios.
+principio_tecnico: Cada bit es un dominio magnetico cilindrico estable en una pelicula de granate; un campo magnetico rotatorio desplaza secuencialmente los dominios por patrones de propagacion hasta puntos de lectura y escritura.
+estado_historico: sustitucion_con_continuidad_de_nicho
+resultado_real_alcanzado: Texas Instruments comercializo memoria de burbujas en 1977. Intel introdujo el 7110 de 1048576 bits en 1979; su manual especifica burbujas de 2.7 um, 50 kHz de desplazamiento y unos 40 ms de acceso aleatorio medio de pagina. Intel tambien vendio placas iSBC 254 de hasta 512 KB.
+causa_documentada: El Computer History Museum documenta que, pese a una inversion estimada de mil millones de dolares en investigacion, la tecnologia fue eclipsada durante los anos 1980 por discos duros y RAM semiconductor.
+causas_alternativas:
+  - La arquitectura serial imponia latencia.
+  - El sistema exigia bobinas, campo rotatorio y circuiteria de control.
+  - Competidores con mercados mayores siguieron curvas de mejora mas fuertes.
+camino_que_lo_desplazo_si_existe: Discos magneticos y memorias semiconductoras; posteriormente flash cubrio gran parte del nicho no volatil de estado solido.
+fuentes:
+  - {url: 'https://www.computerhistory.org/revolution/memory-storage/8/263', titulo: 'Innovative Ideas & Stepping Stones Part I', tipo: museo_archivo_tecnico, fecha: desconocida}
+  - {url: 'https://www.lo-tech.co.uk/downloads/manuals/intel/BubbleMemoryDesignHandbook_text.pdf', titulo: 'Intel Bubble Memory Design Handbook', tipo: manual_tecnico_de_epoca, fecha: '1979'}
+  - {url: 'https://www.bitsavers.org/components/intel/_dataBooks/1981_Systems_Data_Catalog.pdf', titulo: 'Intel Systems Data Catalog', tipo: catalogo_tecnico_de_epoca, fecha: '1981'}
+  - {url: 'https://ntrs.nasa.gov/api/citations/19780015029/downloads/19780015029.pdf', titulo: 'State of the Art in Magnetic Bubble Memories', tipo: informe_institucional_contemporaneo, fecha: '1978'}
+nivel_evidencia: A
+datos_cuantitativos: {capacidad_7110_bits: 1048576, diametro_burbuja_um: 2.7, shift_rate_kHz: 50, acceso_medio_ms: 40, lectura_pagina_min_ms: 6.5, isbc254_capacidad_max_KB: 512, isbc254_transferencia_max_KB_s: 50, isbc254_potencia_max_W: 35}
+limitaciones:
+  - Acceso secuencial por desplazamiento de dominios.
+  - Necesidad de periferia electronica y magnetica.
+  - La robustez mecanica no compenso la evolucion de alternativas.
+contradicciones:
+  - No fue un simple fracaso; hubo produccion y aplicaciones comerciales reales.
+  - Persistio en nichos donde vibracion y fiabilidad mecanica penalizaban al disco.
+incertidumbres:
+  - La cifra de inversion es una estimacion historica agregada del Computer History Museum.
+HECHO_DOCUMENTADO: Existieron productos comerciales TI e Intel; el 7110 fue de 1 Mbit y su documentacion de epoca cuantifica arquitectura y rendimiento.
+TESTIMONIO: No usado como soporte principal.
+INTERPRETACION: El camino desplazado fue almacenar bits como entidades fisicas moviles en un medio solido, competitivo en robustez pero no en la trayectoria conjunta de coste, velocidad y densidad.
+etiquetas_neutrales: [magnetic-bubble-memory, dominios-magneticos, almacenamiento-no-volatil, memoria-serial, sustitucion]
+fecha_hallazgo: '2026-09-17'
+fecha_revision: '2026-09-17'
