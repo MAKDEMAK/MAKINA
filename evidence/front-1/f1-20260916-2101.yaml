@@ -1,0 +1,47 @@
+id: f1-20260916-2101
+frente: front-1
+cycle_id: 2026-09-16T21
+tema_objeto: sistema neuromorfico analogico autoalimentado multimodal
+afirmacion_principal: >-
+  HECHO: sensores fotovoltaicos y piezoelectricos alimentan directamente memristores difusivos que codifican intensidad en tiempo de disparo; memristores de deriva almacenan pesos no volatiles, permitiendo fusion multimodal y aprendizaje no supervisado en hardware sin ADC, procesador digital ni fuente externa durante la operacion demostrada.
+capacidad_nueva: fusion sensorial multimodal con codificacion temporal, aprendizaje no supervisado y memoria no volatil enteramente analogicos y autoalimentados
+mecanismo_o_principio: >-
+  Memristores difusivos Ag/SiO2 convierten amplitud analogica en latencia mediante deriva y difusion ionica/formacion-disolucion de filamentos; memristores de deriva HfO2 almacenan cambios de conductancia no volatiles. La coincidencia temporal de canales produce plasticidad homo/heterosinaptica.
+dominio: neuromorfica; computacion analogica; sensores autoalimentados
+fuentes:
+  - url: https://doi.org/10.1038/s44460-026-00067-7
+    titulo: Self-powered analogue neuromorphic system for multimodal sensing, encoding and learning with diffusive and drift memristors
+    tipo: paper experimental primario
+    fecha: 2026-04-30
+nivel_evidencia: A
+datos_cuantitativos:
+  - luz ensayada: 15.5-64.2 mW/cm2; n=10 por condicion
+  - presion ensayada: 25.5-75.1 kPa; n=5-19 segun condicion
+  - unidad de fusion: 2 memristores difusivos + 1 memristor de deriva + 2 resistores de 2.2 Mohm + 2 capacitores de 1 nF
+  - demostracion integrada en PCB sin fuente externa para sensado/codificacion/aprendizaje
+condiciones_de_prueba: >-
+  Sensores fotovoltaico y PVDF piezoelectrico conectados directamente a memristores; luz LED blanca y presion mecanica. Para sincronizar artificialmente el inicio de estimulos en una demostracion se uso un microcontrolador, que no forma parte de la cadena de computacion/aprendizaje autoalimentada.
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: optico fotovoltaico y mecanico piezoelectrico
+tipo_de_memoria_o_estado: temporal volatil en memristor difusivo; peso no volatil en memristor de deriva
+tipo_de_adaptacion: plasticidad STDP e ITDP homo/heterosinaptica no supervisada
+tipo_de_actuacion: salida electrica/conductancia; sin actuacion mecanica demostrada
+madurez_tecnica: demostracion experimental integrada en PCB
+limitaciones:
+  - variabilidad inherente de memristores; autores indican que requiere estudio sistematico y mitigacion
+  - las demostraciones fisicas cubren pocas modalidades y una unidad de fusion compacta; no demuestran escalado masivo
+  - el microcontrolador sincronizo el inicio de luz/presion en el ensayo, aunque no realizo el aprendizaje ni procesamiento
+  - casos de localizacion de rayos y clasificacion de actividad incluyen simulacion/dataset y no equivalen a despliegue fisico autonomo completo
+contradicciones:
+  - La afirmacion sin circuiteria digital es valida para la cadena analogica demostrada, pero instrumentacion de laboratorio y sincronizacion experimental externa existieron; no debe interpretarse como ausencia absoluta de electronica auxiliar en toda la prueba.
+etiquetas_neutrales: [memristor, analogico, autoalimentado, fusion_sensorial, aprendizaje_no_supervisado, codificacion_temporal, memoria_no_volatil]
+separacion_epistemica:
+  hecho: >-
+    El PCB integrado realizo codificacion analogica de luz/presion, fusion y actualizacion no volatil de pesos usando sensores, componentes pasivos y memristores, sin ADC ni fuente externa en la cadena funcional.
+  hipotesis: >-
+    La arquitectura podria escalar a mas canales/modalidades si se controlan variabilidad y acoplamiento; el paper no demuestra ese escalado fisico.
+  interpretacion: >-
+    La capacidad materialmente relevante es que energia del propio fenomeno sensado puede simultaneamente transportar informacion y accionar procesamiento/aprendizaje analogico local.
+fecha_hallazgo: 2026-09-16
+fecha_revision: 2026-09-16
