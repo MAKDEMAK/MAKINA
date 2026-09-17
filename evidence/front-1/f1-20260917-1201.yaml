@@ -1,0 +1,42 @@
+id: f1-20260917-1201
+frente: front-1
+cycle_id: 2026-09-17T12
+tema_objeto: computacion neuromorfica fisica basada en interferencia de ondas
+afirmacion_principal: "Un reservorio fisico de ondas puede transformar informacion sensorial y cerrar un lazo de control robotico en tiempo real; la demostracion experimental usa ondas de agua y una extension a ondas de espin GHz permanece simulada."
+capacidad_nueva: "percepcion/clasificacion y control autonomo mediante dinamica ondulatoria fisica con entrenamiento limitado al readout"
+mecanismo_o_principio: "La propagacion, interferencia y dinamica espacio-temporal de ondas implementan el mapeo no lineal de reservoir computing; patrones resultantes codifican clases de obstaculos y alimentan decisiones de movimiento."
+dominio: [computacion_fisica, neuromorfica, reservoir_computing, control, ondas]
+fuentes:
+  - url: "https://doi.org/10.1038/s41467-026-77661-3"
+    titulo: "Autonomous robotic operation controlled by wave-based neuromorphic hardware"
+    tipo: paper_original_peer_reviewed
+    fecha: 2026-09-10
+  - url: "https://www.physics.ox.ac.uk/news/robotics-meets-physics"
+    titulo: "Robotics meets physics"
+    tipo: fuente_institucional
+    fecha: 2026-09-15
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Reconocimiento de obstaculos: hasta 100% de exactitud tras entrenamiento en las pruebas reportadas."
+  - "La extension micromagnetica propuesta opera con ondas de espin a frecuencias GHz; no fue fabricada."
+condiciones_de_prueba: "Reservorio experimental: recipiente circular con agua, actuadores que generan ondas, iluminacion LED y camara para leer patrones; probado con vehiculo virtual y coche fisico basado en Arduino. Extension solida evaluada por simulacion micromagnetica."
+requiere_computacion_digital: opcional
+requiere_alimentacion: si
+tipo_de_sensado: "informacion de obstaculos codificada como excitaciones ondulatorias; lectura optica del patron en el prototipo acuatico"
+tipo_de_memoria_o_estado: "estado dinamico transitorio del campo de ondas / fading memory del reservorio"
+tipo_de_adaptacion: "entrenamiento del readout; el medio fisico permanece sin entrenamiento interno"
+tipo_de_actuacion: "comandos de movimiento para vehiculo robotico"
+madurez_tecnica: "prueba experimental de laboratorio con control fisico cerrado; version spin-wave solo simulada"
+limitaciones:
+  - "El prototipo experimental depende de tanque de agua, actuadores, iluminacion y camara; no es un procesador compacto."
+  - "No se reporta comparacion experimental end-to-end de energia frente a hardware digital convencional."
+  - "La implementacion nanomagnetica GHz es simulacion, no dispositivo fabricado."
+contradicciones:
+  - "La fuente primaria describe una ruta escalable y energeticamente eficiente, pero la ventaja energetica del sistema solido aun no esta validada experimentalmente."
+etiquetas_neutrales: [wave_computing, physical_reservoir, closed_loop_control, water_waves, spin_waves, analog_computing]
+separacion_epistemica:
+  HECHO: "El reservorio de ondas de agua realizo reconocimiento de obstaculos y controlo en tiempo real un vehiculo fisico; se reporta hasta 100% de exactitud en las pruebas."
+  HIPOTESIS: "Una realizacion nanomagnetica basada en ondas de espin podria trasladar el principio a hardware compacto GHz."
+  INTERPRETACION: "El avance materialmente util es demostrar que una dinamica ondulatoria fisica puede ocupar el nucleo de inferencia dentro de un lazo sensor-decision-actuacion, no solo resolver benchmarks offline."
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
