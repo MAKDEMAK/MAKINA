@@ -9,14 +9,14 @@ active_modules:
     evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901, f3-20260917-1301]
     current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente; la evidencia T15 no mide este artefacto."
+    next_action: "Mantener M3 y medir el prototipo existente; la evidencia T16 no mide este artefacto."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.90
-    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301, f1-20260917-0701, f1-20260917-1101]
+    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301, f1-20260917-0701, f1-20260917-1101, f1-20260917-1601]
     current_architecture: "physical dynamics -> distributed transient state -> readout"
     success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
-    next_action: "No promover: falta benchmark comun entre sustratos."
+    next_action: "No promover: F1-1601 refuerza diversidad fisica programable por geometria, pero falta benchmark comun entre sustratos y ventaja end-to-end."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
@@ -26,8 +26,8 @@ active_modules:
     next_action: "Ejecutar benchmark y tests existentes antes de M4."
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101, f3-20260917-1501]
-    reason: "F3-1501 amplía observabilidad de maquinaria mediante emisión acústica con evidencia A, pero exige contacto/acoplamiento, calibración por proceso y no aporta una variable objetivo común transferible; no desplaza un módulo activo."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101, f3-20260917-1501, f3-20260917-1601]
+    reason: "F3-1601 añade caudal ultrasónico clamp-on con evidencia A y nula invasividad; el contraste <0.76% en banco frente a errores de campo de hasta 43% refuerza que contexto/calibración deben ser parte explícita del criterio, pero no desplaza un módulo activo."
   - id: implicit-analog-solver
     evidence_ids: [f1-20260917-0001]
     reason: "La solucion inversa por equilibrio de lazo analogico esta demostrada en chip, pero no converge todavia con una funcion del nucleo ni justifica desplazar uno de los tres modulos activos."
@@ -54,11 +54,11 @@ archived_modules:
   - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101, f2-20260917-0301], reason: "redundante y sin traduccion funcional medible"}
   - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
   - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "sin convergencia medible"}
-  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "sin convergencia funcional medible"}
+  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001, f2-20260917-1601], reason: "CED confirma escala comercial y limites de lectura capacitiva por contacto; precedente deduplicado sin convergencia funcional medible"}
   - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101, f2-20260917-0701], reason: "deduplicado"}
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
   - {id: insectothopter-fluidic-flight-precedent, evidence_ids: [f2-20260917-1501], reason: "prototipo real de oscilador fluidico para vuelo, pero el limite documentado fue control ante perturbaciones y no converge con una funcion medible del nucleo"}
 current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos M3. T15 aporta PhyKAN como evidencia de conexiones analogicas no lineales entrenables y AE como observabilidad de desgaste, pero ninguno satisface los criterios de los modulos activos ni justifica nuevo prototipo."
-last_synthesized_cycle: 2026-09-17T15
+next_action: "Priorizar medicion de prototipos M3. T16 refuerza embodied-dynamics con heterogeneidad geométrica y observabilidad legacy con clamp-on ultrasónico, pero no satisface criterios de promoción ni justifica nuevo prototipo."
+last_synthesized_cycle: 2026-09-17T16
