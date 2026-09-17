@@ -1,0 +1,36 @@
+id: f1-20260917-0301
+frente: front-1
+cycle_id: 2026-09-17T03
+tema_objeto: sensado neuromorfico autoalimentado dependiente de morfologia
+afirmacion_principal:
+  HECHO: "Un arreglo de vibrisas artificiales triboelectricas acoplado directamente a memristores HfOx volatiles convierte flujo de aire analogico en disparos por umbral; pares bilaterales fueron integrados en un vehiculo robotico para discriminar direccion del viento."
+  HIPOTESIS: "La geometria/morfologia del elemento sensorial puede funcionar como una etapa fisica de codificacion que modifica materialmente la calidad de la percepcion antes del procesamiento posterior."
+  INTERPRETACION: "La capacidad emergente relevante es co-realizar captacion de energia, transduccion y codificacion neuronal mediante la cadena mecanica-triboelectrica-memristiva, haciendo que la morfologia sea parte funcional del calculo perceptivo."
+capacidad_nueva: "Percepcion direccional de flujo autoalimentada en la etapa sensorial, con codificacion analogica-a-spikes por memristor y rendimiento dependiente de la morfologia fisica del sensor."
+mecanismo_o_principio: "Fibras tipo vibrisa deformadas por flujo accionan un nanogenerador triboelectrico (TENG); su salida alimenta directamente un memristor HfOx volatil con conmutacion por umbral, que transforma amplitud/dinamica analogica en eventos tipo spike. Dos unidades laterales forman un par diferencial para direccion."
+dominio: "neuromorfica; inteligencia fisica; sensado autoalimentado; morfologia computacional"
+fuentes:
+  - url: "https://doi.org/10.1002/adfm.76981"
+    titulo: "A Self-Powered Neuromorphic Whisker Array With Memristive Encoding for Morphology-Dependent Wind Tracking"
+    tipo: "paper experimental revisado por pares"
+    fecha: "2026-07-14"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "La fuente primaria declara diferencia significativa de precision direccional entre morfologias adult-mimetic y aged-mimetic; el resumen accesible no expone el valor numerico, por lo que no se inventa una cifra."
+condiciones_de_prueba: "Arreglos TENG con fibras artificiales que imitan variaciones morfologicas de vibrisas de rata; acoplamiento a memristor HfOx volatil; demostracion de anemotaxis/discriminacion direccional en un vehiculo robotico."
+requiere_computacion_digital: parcial
+requiere_alimentacion: parcial
+tipo_de_sensado: "flujo de aire por transduccion triboelectrica mecanica"
+tipo_de_memoria_o_estado: "estado volatil de memristor HfOx; codificacion temporal por umbral"
+tipo_de_adaptacion: "no hay aprendizaje fisico en linea demostrado; la variacion funcional proviene de morfologias fisicas distintas"
+tipo_de_actuacion: "ninguna en el elemento sensor; el paper demuestra uso posterior en anemotaxis robotica"
+madurez_tecnica: "demostracion experimental integrada en robot; no producto ni validacion de campo amplia"
+limitaciones:
+  - "El procesamiento posterior del sistema integrado incluye computacion; no debe interpretarse como cadena robotica completamente libre de computacion digital."
+  - "La morfologia no se adapta autonomamente durante operacion: se fabrica previamente."
+  - "El resumen primario accesible no permite extraer cifras exactas de precision, energia, velocidad de aire o latencia."
+contradicciones:
+  - "Sensores capilares neuromorficos y TENG previos ya demostraban percepcion de flujo de muy bajo consumo; la novedad material aqui es la comparacion morfologica y el acoplamiento TENG-memristor para codificacion, no la existencia del sensado de viento por pelos artificiales."
+etiquetas_neutrales: [TENG, HfOx, memristor_volatil, vibrisa_artificial, wind_sensing, spiking_encoding, morphology_dependent, self_powered]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
