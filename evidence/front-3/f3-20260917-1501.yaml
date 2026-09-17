@@ -1,0 +1,47 @@
+id: f3-20260917-1501
+frente: front-3
+cycle_id: 2026-09-17T15
+tema_objeto: "Emisión acústica como proxy de desgaste y mecanismo de desgaste durante mecanizado"
+afirmacion_principal: "Un sensor de emisión acústica acoplado a la máquina puede hacer observable indirectamente el desgaste de una herramienta no instrumentada: eventos micromecánicos de fricción, deformación, abrasión y fractura generan ondas elásticas de alta frecuencia cuya distribución tiempo-frecuencia cambia con el mecanismo y estado de desgaste."
+funcion: diagnosticar
+principio_de_mediacion: "Transducción piezoeléctrica de ondas elásticas espontáneas generadas por procesos micromecánicos; análisis STFT separa componentes espectrales asociadas a mecanismos distintos."
+variable_fisica_entrada: "Ondas elásticas/acústicas de alta frecuencia producidas durante corte, fricción, deformación, desgaste y fractura."
+señal_o_estado_salida: "Señal eléctrica AE y espectrograma tiempo-frecuencia; identificación indirecta de mecanismos/estado de desgaste."
+modalidad: "emisión acústica / vibración ultrasónica"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "El estudio 2024 no entrega una precisión universal de desgaste; demuestra separación espectral de mecanismos. Un trabajo independiente de estimación AE+SVR en mecanizado ultrasónico reportó 96.13% frente a 84.89% usando sólo parámetros de proceso, pero no es directamente transferible entre procesos."
+latencia: "Compatible con análisis durante el mecanizado; no se documentó en las fuentes consultadas una latencia end-to-end generalizable."
+condiciones_de_prueba: "Torneado de acero AISI 4340 con herramientas de carburo sin recubrimiento, AlCrN y AlCrN nanoestructurado; velocidades 150-250 m/min, avances 0.10-0.20 mm/rev y profundidades 0.25/0.75 mm en la línea experimental documentada."
+fuentes:
+  - url: "https://doi.org/10.3390/lubricants12110380"
+    titulo: "Enhancing Machining Efficiency: Real-Time Monitoring of Tool Wear with Acoustic Emission and STFT Techniques"
+    tipo: "paper experimental"
+    fecha: "2024-10-31"
+  - url: "https://repositorio.ufmg.br/handle/1843/42001"
+    titulo: "Avaliação de desempenho de recobrimentos em ferramentas de metal duro no torneamento do aço ABNT 4340 temperado por meio de sinais de emissão acústica"
+    tipo: "tese / repositório institucional"
+    fecha: "2015"
+  - url: "https://doi.org/10.1080/10910344.2023.2299443"
+    titulo: "Machine learning coupled with acoustic emission signal features for tool wear estimation during ultrasonic machining of Inconel 718"
+    tipo: "paper experimental"
+    fecha: "2024"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "En el ensayo AISI 4340, un caso al fin de vida mostró pico AE de 253 kHz a 0.75 s (250 m/min, 0.25 mm/rev, 0.75 mm, herramienta K sin recubrimiento)."
+  - "El artículo 2024 resume abrasión predominantemente en 200-230 kHz y adhesión en 15-115 kHz; propagación de grietas se sitúa en la literatura empleada en 350-550 kHz."
+  - "La tesis institucional ensayó 150, 200 y 250 m/min; avances 0.10, 0.15 y 0.20 mm/rev; profundidades 0.25 y 0.75 mm, y encontró mayor sensibilidad al desgaste en condiciones bajas y medias."
+  - "Estudio independiente AE+SVR sobre Inconel 718: 96.13% de precisión reportada frente a 84.89% con sólo parámetros de proceso."
+mecanismo_o_principio: "MEDICIÓN DIRECTA: el transductor mide ondas elásticas AE presentes físicamente en la estructura. INFERENCIA INDIRECTA: atribuir bandas/amplitudes a desgaste, mecanismo específico, vida restante o fallo de herramienta depende del proceso, material, herramienta, posición del sensor y procesamiento."
+limitaciones:
+  - "No existe una banda espectral universal que equivalga directamente a una cantidad de desgaste; la respuesta depende del proceso y condiciones de corte."
+  - "La AE contiene contribuciones simultáneas de deformación/fractura de pieza, formación de viruta, fricción y herramienta; STFT ayuda a separarlas pero no elimina ambigüedad física."
+  - "Sensores AE pueden ser sensibles a ruido ambiental; revisiones recientes favorecen fusión multisensor cuando se requiere clasificación robusta."
+  - "Requiere contacto/acoplamiento mecánico del transductor con una ruta de propagación adecuada, electrónica de adquisición de alta frecuencia y procesamiento."
+contradicciones:
+  - "La literatura presenta AE como relativamente inmune a vibraciones mecánicas de baja frecuencia por operar en bandas superiores, pero también documenta susceptibilidad a ruido ambiental; por tanto 'robusto al ruido' depende del espectro y montaje, no es una propiedad absoluta."
+etiquetas_neutrales: [acoustic-emission, tool-wear, machining, proxy-signal, condition-monitoring, piezoelectric, stft, indirect-inference]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
