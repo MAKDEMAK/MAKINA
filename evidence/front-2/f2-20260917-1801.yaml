@@ -1,0 +1,63 @@
+id: f2-20260917-1801
+frente: front-2
+cycle_id: 2026-09-17T18
+tema_objeto: computacion digital mediante logica fluidica sin partes mecanicas moviles
+afirmacion_principal:
+  hecho_documentado: "FLODAC demostro en 1964 que amplificadores fluidicos sin partes mecanicas moviles podian integrarse como elementos de logica de un computador digital; la misma familia tecnica fue ensayada para sensado, logica y control industrial/aeroespacial."
+  testimonio: "Una retrospectiva profesional de ASME de 1985 describe que a mediados de los 60 la fluidica fue promovida como solucion general, pero sufrio por aire industrial insuficientemente limpio y por expectativas sobredimensionadas."
+  interpretacion: "El camino no fracaso como principio: fue desplazado como plataforma general de logica/control por electronica de menor coste y mayor velocidad, mientras sobrevivio en nichos donde ausencia de partes moviles y tolerancia ambiental eran ventajas."
+nombre_proyecto_o_artefacto: FLODAC
+periodo_historico: "1960-1970s; FLODAC presentado en 1964"
+pais_contexto: Estados Unidos
+disciplina: "computacion; automatizacion; control; fluidica"
+problema_original: "Realizar amplificacion, conmutacion, memoria/logica y control usando flujo de gas o liquido, especialmente donde componentes electromecanicos/electronicos presentaban limitaciones ambientales o de fiabilidad."
+principio_tecnico: "Un chorro de potencia se conmuta o desvia mediante un chorro de control; dispositivos de interaccion de flujo y efecto de adherencia a pared proporcionan ganancia, conmutacion y estados biestables sin partes mecanicas moviles."
+estado_historico: "prototipo no escalado como computador de proposito general; sustitucion en control general; continuidad especializada"
+resultado_real_alcanzado: "UNIVAC construyo FLODAC y publico su arquitectura como 'pure fluid digital computer' en AFIPS 1964. NASA documentaba en 1964 aplicaciones simples ya realizadas y en 1966 una combinacion compleja serie/paralelo de dispositivos fluidicos controlando un actuador neumatico. Un paper SAE de 1967 reporto analisis y resultados de prueba de controles fluidicos para ramjet, cubriendo sensado, logica y actuacion."
+causa_documentada:
+  - "ASME (retrospectiva 1985): los circuitos fluidicos exigian aire limpio, poco habitual entonces en plantas industriales."
+  - "ASME: durante los anos 70 la electronica entro al mercado y su bajo coste contribuyo al retroceso de la fluidica."
+  - "La literatura historica/tecnica coincide en una desventaja de velocidad frente a electronica, aunque no se encontro en esta ronda una metrica primaria unica que explique por si sola el abandono de FLODAC."
+causas_alternativas:
+  - "sobreventa inicial y formacion insuficiente de usuarios, segun retrospectiva ASME"
+  - "ventaja creciente de coste, integracion y velocidad de la electronica"
+  - "necesidad de suministro y acondicionamiento del fluido"
+camino_que_lo_desplazo_si_existe: "logica electronica de estado solido y, posteriormente, control digital basado en circuitos integrados/microprocesadores"
+fuentes:
+  - url: "https://doi.org/10.1145/1464052.1464112"
+    titulo: "FLODAC: a pure fluid digital computer"
+    tipo: "paper original / proceedings AFIPS"
+    fecha: "1964-10-27"
+  - url: "https://ntrs.nasa.gov/citations/19640021785"
+    titulo: "Fluid amplifier state of the art. Volume I - research and development - fluid amplifiers and logic"
+    tipo: "informe tecnico NASA/General Electric"
+    fecha: "1964-10-01"
+  - url: "https://ntrs.nasa.gov/citations/19660000591"
+    titulo: "Fluid logic control circuit operates nutator actuator motor"
+    tipo: "NASA Tech Brief"
+    fecha: "1966-12-01"
+  - url: "https://doi.org/10.4271/670552"
+    titulo: "Application of Fluidics to Ramjet Control Systems"
+    tipo: "paper tecnico SAE"
+    fecha: "1967-02-01"
+  - url: "https://magazine.asme.org/issues/march-2025/vault-1985-pneumatic-logic-present-and-future"
+    titulo: "1985 Pneumatic Logic—Present and Future"
+    tipo: "testimonio profesional retrospectivo / ASME"
+    fecha: "1985"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "La fuente primaria AFIPS identifica a FLODAC como computador digital puramente fluidico; cifras secundarias sobre numero de puertas/word size no se incorporan como hecho cuantitativo en esta ronda al no verificarse directamente en el texto primario accesible."
+  - "Un articulo industrial de 1969 documenta un manipulador controlado por logica fluidica capaz de clasificar hasta 3,600 circuitos integrados por hora, evidencia de uso industrial de la familia tecnica, no de FLODAC."
+limitaciones:
+  - "velocidad inferior a la electronica contemporanea/posterior"
+  - "calidad/limpieza del aire de suministro critica en implantaciones industriales"
+  - "infraestructura de fluido necesaria"
+contradicciones:
+  - "La narrativa de que 'la fluidica fracaso' contradice aplicaciones documentadas posteriores en industria, medicina, instrumentacion y control especializado."
+  - "NASA en 1964 calificaba el campo como temprano pero prometedor; la retrospectiva ASME atribuye parte de su posterior retroceso a sobreventa y condiciones industriales, no a imposibilidad tecnica."
+incertidumbres:
+  - "No se establecio en esta ronda una causa administrativa concreta para terminar especificamente el programa FLODAC."
+  - "No se usan cifras populares de 250 puertas NOR, 4-bit/4-word como datos verificados porque no quedaron confirmadas directamente en el extracto primario accesible."
+etiquetas_neutrales: [fluidica, logica-fluidica, computador-digital, sin-partes-moviles, control, sustitucion, prototipo-no-escalado, continuidad-especializada]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
