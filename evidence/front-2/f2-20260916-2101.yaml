@@ -1,0 +1,54 @@
+id: f2-20260916-2101
+frente: front-2
+cycle_id: 2026-09-16T21
+tema_objeto: computacion_digital_fluidica_sin_partes_moviles
+afirmacion_principal:
+  hecho_documentado: "FLODAC demostro en 1964 que un computador digital programable de proposito general podia implementarse exclusivamente con logica de fluido, usando aire presurizado y elementos NOR sin partes mecanicas moviles."
+  testimonio: "Los autores concluyeron que el computador fluido era factible, pero reconocieron que no podia competir con la electronica en muchas areas por la limitacion intrinseca de velocidad de propagacion de señales fluidas."
+  interpretacion: "Fue un prototipo no escalado y una via parcialmente sustituida: la computacion digital fluidica general no continuo como plataforma competitiva, mientras principios fluidicos sobrevivieron en controles especializados."
+nombre_proyecto_o_artefacto: FLODAC
+periodo_historico: "1963-1964"
+pais_contexto: "Estados Unidos"
+disciplina: "computacion digital / fluidica / control"
+problema_original: "Explorar logica y computacion digital robustas sin electronica ni partes mecanicas moviles, especialmente para ambientes extremos."
+principio_tecnico: "Chorros de aire presurizado realizan conmutacion y amplificacion; elementos NOR fluidicos se interconectan para implementar memoria, control y aritmetica digital."
+estado_historico: prototipo_no_escalado
+resultado_real_alcanzado: "Computador experimental programable construido y operando de forma fiable; ejecutaba automaticamente programas con cuatro instrucciones y memoria de cuatro palabras. Reloj nominal de 10 ciclos/s; circuitos compactos con elementos equivalentes fueron probados hasta 250 ciclos/s."
+causa_documentada: "Los propios autores identificaron la velocidad como limite fisico: la propagacion de señales en aire es aproximadamente un millon de veces mas lenta que en conductores electricos, por lo que la logica fluidica no podia competir con electronica en muchas aplicaciones."
+causas_alternativas:
+  - "La literatura historica posterior describe el desplazamiento de la fluidica en control industrial conforme la logica digital electronica se consolido; no se atribuye aqui una causa comercial unica a FLODAC."
+camino_que_lo_desplazo_si_existe: "logica digital electronica de estado solido"
+fuentes:
+  - url: "https://doi.org/10.1145/1464052.1464112"
+    titulo: "FLODAC: a pure fluid digital computer"
+    tipo: "paper original / AFIPS Fall Joint Computer Conference"
+    fecha: "1964-10-27"
+  - url: "https://ntrs.nasa.gov/citations/19640021785"
+    titulo: "Fluid amplifier state of the art. Volume I - research and development - fluid amplifiers and logic"
+    tipo: "informe tecnico contemporaneo NASA/General Electric"
+    fecha: "1964-10-01"
+  - url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6553589/"
+    titulo: "A brief history of liquid computers"
+    tipo: "revision historica academica"
+    fecha: "2019"
+nivel_evidencia: A
+datos_cuantitativos:
+  reloj_nominal: "10 ciclos/s"
+  circuitos_compactos_elementos_equivalentes: "hasta 250 ciclos/s"
+  memoria: "4 palabras"
+  instrucciones: 4
+  instrucciones_documentadas: [transferencia, suma, salto_condicional, halt]
+  diferencia_propagacion_aproximada: "señal en aire ~10^6 veces mas lenta que señal electrica en cable, segun autores"
+limitaciones:
+  - "Velocidad de propagacion fluidica intrinsecamente baja frente a electronica."
+  - "El prototipo usaba conductos largos y no optimizo adaptacion de impedancias; 10 Hz no representa un limite absoluto de componentes fluidicos."
+  - "Necesita fuente de fluido presurizado."
+contradicciones:
+  - "No fue un fracaso funcional: el paper informa operacion fiable pocas semanas despues de iniciada la construccion."
+  - "La fluidica no desaparecio completamente; continuo en nichos de control y ambientes donde la electronica era desfavorable."
+incertidumbres:
+  - "No se encontro evidencia primaria suficiente para atribuir el fin de FLODAC a una decision empresarial concreta o fecha formal de cancelacion."
+  - "No se registra aqui el numero de elementos NOR porque fuentes secundarias difieren y el extracto primario consultado no basta para fijarlo con seguridad."
+etiquetas_neutrales: [fluidica, logica_digital, aire_presurizado, NOR, computacion_no_electronica, sin_partes_moviles, prototipo_no_escalado, sustitucion]
+fecha_hallazgo: "2026-09-16"
+fecha_revision: "2026-09-16"
