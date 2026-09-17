@@ -1,0 +1,45 @@
+id: f3-20260917-0101
+frente: front-3
+cycle_id: 2026-09-17T01
+tema_objeto: passive wireless crack-width sensing by electromagnetic resonance
+afirmacion_principal:
+  HECHO: A flexible chipless resonator attached to metal converts crack opening into a monotonic resonant-frequency shift readable wirelessly without local power.
+  HIPOTESIS: Resonant frequency can act as a quantitative proxy for crack opening inside the calibrated geometry and environment.
+  INTERPRETACION: The resonator combines transduction and communication; its electromagnetic geometry is both sensing element and readout target.
+funcion: medir
+principio_de_mediacion: Crack opening perturbs the electromagnetic field and equivalent LC parameters of an interdigital resonant ring, shifting its externally interrogated resonance.
+variable_fisica_entrada: crack opening
+senal_o_estado_salida: resonant-frequency shift
+modalidad: passive RF electromagnetic resonance
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no en sensor; si en interrogador externo
+requiere_computacion_digital: opcional
+resolucion_o_precision: Experimental range 0-2.5 mm; sensitivity 67.02 MHz/mm; minimum resolvable opening not established in the verified source.
+latencia: desconocido
+condiciones_de_prueba: Flexible printed polyimide samples on metal; 0-2.5 mm crack opening; interrogation distance, installation angle and bending variations tested.
+fuentes:
+  - url: https://doi.org/10.3390/mi17080943
+    titulo: Flexible Wireless Passive Resonance Ring Sensor for Nondestructive Crack Monitoring of Metal Structures
+    tipo: peer-reviewed experimental paper
+    fecha: 2026-08-07
+  - url: https://pubmed.ncbi.nlm.nih.gov/42653584/
+    titulo: PubMed record for the same paper
+    tipo: institutional index
+    fecha: 2026-08-07
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_apertura_mm: [0, 2.5]
+  sensibilidad_MHz_por_mm: 67.02
+mecanismo_o_principio: Mechanical perturbation of resonant geometry changes field distribution and impedance, producing an RF spectral shift.
+limitaciones:
+  - Requires an externally powered RF interrogation system.
+  - Quantification depends on calibration and sensor-metal-reader coupling.
+  - Minimum resolution and long-term field performance are not established by the verified abstract.
+  - Environmental and mounting effects remain potential confounders for passive resonant sensing.
+contradicciones:
+  - Passive resonant crack sensing predates this work; the material contribution is the flexible conformal implementation and experimentally tested robustness, not invention of the base principle.
+  - Wireless passive describes the sensing element, not the complete measurement system.
+etiquetas_neutrales: [chipless-RFID, resonance, cracks, RF, passive-sensor, flexible, indirect-measurement]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
