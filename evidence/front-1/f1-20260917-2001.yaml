@@ -1,0 +1,38 @@
+id: f1-20260917-2001
+frente: front-1
+cycle_id: 2026-09-17T20
+tema_objeto: interfaz digital-analogica superconductora con neurona Sigma fisica
+afirmacion_principal:
+  hecho: "Una neurona superconductora Sigma fabricada presenta una transferencia tipo sigmoide utilizable como no linealidad fisica entre comunicacion digital SFQ; su respuesta medida fue incorporada en simulaciones de redes perceptron."
+  hipotesis: "La interfaz DAD puede permitir redes superconductoras que mantengan comunicacion robusta por pulsos SFQ mientras realizan activaciones neuronales compactas en dominio analogico."
+  interpretacion: "La capacidad emergente es desacoplar representacion/comunicacion digital de la transformacion neuronal: los pulsos se acumulan fisicamente en una variable analogica, atraviesan una no linealidad superconductora y vuelven a codificarse como pulsos."
+capacidad_nueva: transformacion neuronal analogica fisica interoperable con comunicacion digital superconductora por pulsos
+mecanismo_o_principio: conversion SFQ digital-a-analogica; suma y transferencia no lineal en neurona Sigma superconductora; recodificacion analogica-a-SFQ
+dominio: [neuromorfica, superconductividad, computacion_hibrida_digital_analogica]
+fuentes:
+  - url: https://doi.org/10.1103/y84t-zzch
+    titulo: "Digital-analog concept for superconducting perceptron-like neural networks"
+    tipo: paper_peer_reviewed
+    fecha: 2026-09-17
+nivel_evidencia: B
+datos_cuantitativos:
+  accuracy_MNIST_sigmoide_matematica: "97.0%"
+  accuracy_MNIST_transferencia_Sigma_medida: "91.9%"
+condiciones_de_prueba: "Neurona Sigma rediseñada fabricada y caracterizada experimentalmente; interfaz DAD completa y redes perceptron evaluadas a nivel de simulacion de circuito/sistema usando parametros y curva experimental."
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: ninguno
+tipo_de_memoria_o_estado: estado_analogico_transitorio_superconductor
+tipo_de_adaptacion: pesos_entrenados_fuera_del_dispositivo
+tipo_de_actuacion: salida_codificada_en_pulsos_SFQ
+madurez_tecnica: componente_fisico_demostrado_sistema_completo_simulado
+limitaciones:
+  - la cadena DAC-Sigma-ADC completa no fue demostrada como red fisica integrada
+  - accuracy de 91.9% proviene de red simulada usando la transferencia medida
+  - requiere criogenia y alimentacion
+  - no demuestra aprendizaje fisico on-chip ni ventaja energetica end-to-end
+contradicciones:
+  - "El titulo/concepto puede sugerir una red superconductora funcional completa, pero el paso experimental demostrado es la neurona Sigma; la red completa permanece en simulacion."
+etiquetas_neutrales: [SFQ, Josephson, Sigma-neuron, mixed-signal, perceptron, physical-nonlinearity]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
