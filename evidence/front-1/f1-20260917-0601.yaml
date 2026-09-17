@@ -1,0 +1,45 @@
+id: f1-20260917-0601
+frente: front-1
+cycle_id: 2026-09-17T06
+tema_objeto: metamaterial elastico reprogramable para multiplicacion matriz-vector in-materia
+afirmacion_principal: Un metamaterial mecanico blando puede ejecutar experimentalmente transformaciones lineales matriz-vector mediante modos floppy y reprogramar coeficientes despues de fabricado, trasladando una operacion computacional a deformaciones mecanicas pasivas.
+capacidad_nueva: computacion lineal mecanica reprogramable en materia, con entrada y salida codificadas como desplazamientos
+mecanismo_o_principio: modos floppy de energia elastica casi nula; celdas mecanicas parametrizadas implementan coeficientes y se teselan para y=A*x; mecanismos biestables de rigidez variable cambian restricciones y coeficientes
+dominio: computacion mecanica / metamateriales / in-materia computing
+fuentes:
+  - url: https://doi.org/10.1002/aisy.202500062
+    titulo: Reprogrammable, In-Materia Matrix-Vector Multiplication with Floppy Modes
+    tipo: paper experimental primario
+    fecha: 2025-04-01
+nivel_evidencia: A
+datos_cuantitativos:
+  - prototipo experimental 2x2: transformacion medida dentro de 15% de la matriz objetivo
+  - dos celdas: 12% de error reportado respecto de la matriz objetivo
+  - celda individual en regimen lineal: coeficientes dentro de 20% del objetivo
+  - prototipo macroscopico 2x2: 325 x 400 mm
+  - celda: 250 x 275 mm; saturacion alrededor de 2 mm de desplazamiento
+  - celda reprogramable demostro coeficientes aproximadamente +0.25, 0 y -0.33; dos transformaciones utiles preservaron los dos modos floppy
+  - autores estiman que aspect ratios MEMS existentes permitirian dimensiones superiores a 64x64; esto es proyeccion, no demostracion
+condiciones_de_prueba: muestras de caucho cortadas por water-jet; desplazamiento medido mediante optical flow; regimen lineal de desplazamientos pequenos; simulacion FEM usada para compensar rigidez de flexion y compliance reales
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: ninguno intrinseco; lectura experimental optica de desplazamiento
+tipo_de_memoria_o_estado: configuracion mecanica biestable selecciona coeficientes; no demuestra memoria dinamica de datos
+tipo_de_adaptacion: reconfiguracion mecanica discreta posterior a fabricacion; no aprendizaje autonomo
+tipo_de_actuacion: desplazamiento mecanico de entradas; conmutacion mecanica de restricciones para reprogramar pesos
+madurez_tecnica: prototipo experimental de laboratorio
+limitaciones:
+  - rigidez longitudinal y de flexion finitas limitan el rango de coeficientes y el escalado
+  - histeresis viscoelastica y holgura mecanica
+  - saturacion y asimetria entre compresion y tension fuera del regimen lineal
+  - demostracion fisica limitada a escala pequena; >64x64 es una extrapolacion tecnologica
+  - la reprogramacion demostrada es discreta y mecanica, no aprendizaje en operacion
+contradicciones:
+  - el modelo ideal admite coeficientes arbitrarios y actuacion de energia casi nula, pero las vigas reales introducen rigidez, saturacion y errores medibles
+  - zero-power describe el calculo mecanico pasivo ideal/entrada impulsada por la señal; la caracterizacion experimental uso actuadores y vision externa
+etiquetas_neutrales: [mechanical-computing, metamaterial, matrix-vector-multiplication, floppy-modes, reprogrammable, passive-computation, embodied-computation]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
+hecho: El paper demuestra fisicamente una celda, una red 2x2 y una celda reconfigurable; las transformaciones se realizan por relaciones de desplazamiento impuestas por modos floppy.
+hipotesis: Escalar el principio a matrices mayores mediante MEMS de alto aspect ratio es una proyeccion de los autores y no una capacidad experimentalmente demostrada en este trabajo.
+interpretacion: La novedad materialmente util es que los pesos de una transformacion lineal pueden estar codificados y modificarse en la geometria/restricciones de una estructura mecanica, sin ejecutar la multiplicacion en computacion digital.
