@@ -29,11 +29,22 @@ waiting_modules:
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301]
     reason: "F3-23 agrega deformacion pasiva magnetoelastica con 37100 Hz/strain, pero requiere fijacion e instrumentacion externa y aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
 archived_modules:
-  - id: mechanically-addressed-storage-precedent
-    evidence_ids: [f2-20260916-2301]
-    reason: "Direccionamiento mecanico granular demostrado, pero complejidad/dependabilidad perdieron frente al disco y no hay traduccion funcional medible al nucleo actual."
-  - id: prior-archived-lines
-    reason: "Conservadas en historial Git; ninguna es reactivada por ciclo 23."
+  - {id: air-cushion-transport, reason: "sin convergencia funcional"}
+  - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
+  - {id: synchronized-facsimile-path, reason: "sin traduccion funcional suficiente"}
+  - {id: differential-computing-precedents, reason: "deduplicado; sin necesidad arquitectonica actual"}
+  - {id: magnetic-mobile-state-precedent, reason: "deduplicado"}
+  - {id: parametric-phase-logic-precedent, reason: "sustituido; sin traduccion funcional nueva"}
+  - {id: saturable-magnetic-logic-precedent, reason: "sin traduccion funcional especifica"}
+  - {id: mechanical-video-density-precedent, reason: "sin convergencia funcional"}
+  - {id: integrated-office-automation-precedent, reason: "sin traduccion funcional medible"}
+  - {id: cartridge-decoupled-precision-transport, reason: "sin convergencia medible"}
+  - {id: subharmonic-synthesis-precedent, reason: "sin traduccion funcional medible"}
+  - {id: dynamic-track-following-precedent, reason: "precedente sin modulo activo"}
+  - {id: balanced-ternary-precedent, reason: "deduplicado"}
+  - {id: fluidic-general-computing-precedent, reason: "limitado por propagacion; sustituido"}
+  - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
+  - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "direccionamiento mecanico granular demostrado, pero complejidad/dependabilidad perdieron frente al disco y no hay traduccion funcional medible al nucleo actual"}
 current_architecture: "physical variable/event -> transduction/direct response -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
 next_action: "Priorizar medicion de prototipos existentes sobre nueva documentacion."
