@@ -1,0 +1,49 @@
+id: f3-20260917-1601
+frente: front-3
+cycle_id: 2026-09-17T16
+tema_objeto: "medición externa de caudal en tuberías existentes mediante ultrasonido clamp-on"
+afirmacion_principal: "El tiempo de tránsito ultrasónico entre transductores montados externamente permite medir caudal sin cortar ni penetrar una tubería existente; la medición puede alcanzar incertidumbre sub-1% en banco calibrado, pero errores de campo pueden crecer fuertemente por perfil de flujo, geometría y propiedades de la tubería."
+funcion: medir
+principio_de_mediacion: "Dos trayectorias ultrasónicas externas atraviesan pared y fluido; la diferencia de tiempo de tránsito a favor/en contra del flujo codifica velocidad axial. Combinar trayectorias V/Z reduce sensibilidad a parámetros geométricos respecto de una sola trayectoria."
+variable_fisica_entrada: "velocidad del fluido / tiempo de propagación acústica"
+señal_o_estado_salida: "tiempos de tránsito ultrasónicos y caudal volumétrico estimado"
+modalidad: "ultrasonido de tiempo de tránsito clamp-on"
+invasividad: nula
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: "En KRISS, V/Z combinado: incertidumbre expandida <0.76% (k=2) entre 100–400 m3/h en tubería de 250 mm; trayectorias Z y V individuales: 1.61% y 1.17%. En campo, supuestos de instalación pueden producir desviaciones mucho mayores."
+latencia: "compatible con lectura en línea; no cuantificada de forma comparable en las fuentes usadas"
+condiciones_de_prueba:
+  - "Banco patrón de agua KRISS; tubería 250 mm; 100–400 m3/h para evaluación V/Z."
+  - "Experimentos tras codo de 90 grados, Re 70000 y 100000: sin corrección, errores sistemáticos hasta 10.8% a menos de 8D del disturbio."
+fuentes:
+  - url: "https://doi.org/10.1007/s12206-014-0505-8"
+    titulo: "Assessment of combined V/Z clamp-on ultrasonic flow metering"
+    tipo: "paper experimental / metrología"
+    fecha: "2014-06"
+  - url: "https://doi.org/10.3390/s21030868"
+    titulo: "Influence of Flow Disturbances behind the 90° Bend on the Indications of the Ultrasonic Flow Meter with Clamp-On Sensors on Pipelines"
+    tipo: "paper experimental"
+    fecha: "2021"
+  - url: "https://doi.org/10.1016/j.rineng.2022.100496"
+    titulo: "Industrial experiences show clamp-on ultrasonic transit time flow meters assumptions lead to erroneous measurement results"
+    tipo: "paper técnico / experiencia industrial"
+    fecha: "2022-09"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "V/Z combinado: incertidumbre expandida <0.76% (k=2), 100–400 m3/h, diámetro 250 mm."
+  - "V y Z individuales: 1.17% y 1.61% de incertidumbre expandida en el mismo banco."
+  - "Tras codo de 90°: errores sin corrección de hasta 10.8% antes de 8 diámetros nominales; a 8D el factor de corrección no superó 1.02."
+  - "Experiencia industrial publicada reporta mediciones simultáneas con instrumentos idénticos que pueden diferir hasta 43%, mostrando que la especificación nominal no se transfiere automáticamente al campo."
+mecanismo_o_principio: "MEDICIÓN DIRECTA: diferencia de tiempos de propagación acústica causada por el movimiento del fluido. INFERENCIA: convertir esa velocidad de trayectoria en caudal total requiere geometría interna y un modelo/perfil de velocidad; por ello diámetro real, depósitos, pared, codos y swirl introducen sesgo."
+limitaciones:
+  - "Pierde precisión a baja velocidad; literatura reporta degradación por debajo de ~0.5 m/s."
+  - "Necesita buen acoplamiento acústico y conocimiento suficiente de material/espesor/diámetro de tubería."
+  - "Perfil no desarrollado, codos, swirl, erosión o depósitos internos sesgan la inferencia de caudal."
+  - "No debe trasladarse la incertidumbre de banco calibrado directamente a instalaciones industriales."
+contradicciones:
+  - "La literatura de banco demuestra incertidumbre sub-1% bajo condiciones controladas, mientras experiencias industriales documentan desviaciones de hasta 43%; no es contradicción del principio físico sino evidencia de fuerte sensibilidad al contexto y a supuestos de instalación."
+etiquetas_neutrales: [ultrasonido, clamp-on, caudal, tuberia-legacy, no-intrusivo, tiempo-de-transito, metrologia, retrofit]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
