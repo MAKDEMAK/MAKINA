@@ -1,0 +1,58 @@
+id: f3-20260917-2001
+frente: front-3
+cycle_id: 2026-09-17T20
+tema_objeto: "Precarga axial en uniones atornilladas existentes mediante tiempo de vuelo ultrasónico"
+afirmacion_principal: "La precarga de un perno puede hacerse observable sin desmontar la unión midiendo el cambio del tiempo de vuelo de pulsos ultrasónicos a lo largo del perno; la carga altera simultáneamente su longitud efectiva y la velocidad acústica por efecto acustoelástico."
+funcion: medir
+principio_de_mediacion: "Pulso-eco ultrasónico y efecto acustoelástico: la tensión axial modifica la longitud de propagación y la velocidad del sonido; el cambio de TOF respecto del estado de referencia se calibra contra carga axial."
+variable_fisica_entrada: "tensión/deformación axial producida por la precarga del perno"
+señal_o_estado_salida: "cambio de tiempo de vuelo ultrasónico (CTOF), convertible por calibración a fuerza de precarga"
+modalidad: "ultrasonido; pulso-eco; acustoelasticidad"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: si
+requiere_computacion_digital: opcional
+resolucion_o_precision: "En pernos M8 de superaleación de níquel con sensor piezoeléctrico de película delgada de alta frecuencia se reportó error inferior a 3% entre 4 y 20 kN."
+latencia: "No cuantificada como latencia operacional en las fuentes revisadas; la magnitud primaria se obtiene del tiempo de vuelo de cada interrogación pulso-eco."
+condiciones_de_prueba: "Perno M8 de superaleación de níquel; película piezoeléctrica integrada, espectro longitudinal centrado en 17.14 MHz; carga 0–20 kN. Se verificó señal ultrasónica a 320 °C durante 1 h. Literatura histórica documenta el mismo principio con transductor aplicado al extremo/cabeza del perno para control de pretensión."
+fuentes:
+  - url: "https://doi.org/10.3390/s23010220"
+    titulo: "Ultrasonic Measurement of Axial Preload in High-Frequency Nickel-Based Superalloy Smart Bolt"
+    tipo: "paper experimental"
+    fecha: "2022-12-26"
+  - url: "https://pubmed.ncbi.nlm.nih.gov/36616818/"
+    titulo: "Ultrasonic Measurement of Axial Preload in High-Frequency Nickel-Based Superalloy Smart Bolt"
+    tipo: "registro institucional / paper"
+    fecha: "2022-12-26"
+  - url: "https://doi.org/10.62913/engj.v22i2.438"
+    titulo: "Bolt Preload Measurements Using Ultrasonic Methods"
+    tipo: "paper técnico"
+    fecha: "1985-06-30"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "error de medición <3% para 4–20 kN"
+  - "relación aproximadamente lineal CTOF–precarga entre 0 y 20 kN"
+  - "frecuencia central longitudinal medida: 17.14 MHz"
+  - "señal conservada tras ensayo a 320 °C durante 1 h"
+mecanismo_o_principio: "Medición directa: el instrumento mide tiempo de propagación acústica dentro del propio perno. Inferencia indirecta: la fuerza de precarga no se observa directamente; se estima desde CTOF mediante el modelo/calibración acustoelástica y la longitud efectivamente tensionada. El principio es reutilizable porque convierte una pieza estructural no diseñada para telemetría en su propio camino de medición."
+limitaciones:
+  - "Requiere acceso físico al menos a una cabeza/extremo y acoplamiento acústico reproducible, salvo sensores integrados."
+  - "La conversión TOF→fuerza depende de material, geometría, longitud efectiva tensionada y coeficientes acustoelásticos."
+  - "Cambios de temperatura también modifican dimensiones y velocidad acústica; métodos mono-onda requieren compensación o referencia térmica, mientras combinaciones longitudinal/transversal pueden reducir esa dependencia."
+  - "Roscas, posición del transductor, ancho de banda y regiones no uniformemente tensionadas afectan la propagación y calibración."
+  - "La precisión <3% citada corresponde a un montaje experimental con película piezoeléctrica integrada y no debe generalizarse automáticamente a un transductor temporal sobre cualquier perno."
+contradicciones:
+  - "Algunas fuentes describen la precarga como medida 'directamente' por ultrasonido; metrológicamente aquí se separa la medición directa de TOF de la inferencia calibrada de fuerza."
+  - "El sensor integrado mejora repetibilidad frente a cambios de posición/capa de acoplante, pero aumenta invasividad de fabricación; el principio clásico con sonda externa es retrofit mínimo pero más sensible al acoplamiento."
+etiquetas_neutrales:
+  - ultrasonido
+  - pulso-eco
+  - acustoelasticidad
+  - pernos
+  - precarga
+  - retrofit
+  - metrologia
+  - contacto
+  - condition-monitoring
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
