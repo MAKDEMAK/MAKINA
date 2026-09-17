@@ -9,14 +9,14 @@ active_modules:
     evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901]
     current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente; T10 no aporta medicion del artefacto actual."
+    next_action: "Mantener M3 y medir el prototipo existente; T11 no aporta medicion del artefacto actual."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.90
-    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301, f1-20260917-0701]
+    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301, f1-20260917-0701, f1-20260917-1101]
     current_architecture: "physical dynamics -> distributed transient state -> readout"
     success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
-    next_action: "No promover: falta ejecutar un benchmark comun entre sustratos."
+    next_action: "No promover: T11 refuerza control morfologico del reservorio de micelio, pero NARMA-10 ~0.984 y falta benchmark comun entre sustratos."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
@@ -26,8 +26,8 @@ active_modules:
     next_action: "Ejecutar benchmark y tests existentes antes de M4."
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001]
-    reason: "F3-1001 agrega vibracion SAW pasiva e inalambrica, pero requiere contacto y lector externo; aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101]
+    reason: "F3-1101 agrega inversion de corrientes individuales desde un arreglo magnetico externo sin abrir conduit, pero la fuente abierta no cuantifica error/resolucion y requiere calibracion geometrica; aun falta variable objetivo comun y presupuesto de incertidumbre transferible."
   - id: implicit-analog-solver
     evidence_ids: [f1-20260917-0001]
     reason: "La solucion inversa por equilibrio de lazo analogico esta demostrada en chip, pero no converge todavia con una funcion del nucleo ni justifica desplazar uno de los tres modulos activos."
@@ -44,7 +44,7 @@ archived_modules:
   - {id: differential-computing-precedents, reason: "deduplicado; sin necesidad arquitectonica actual"}
   - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-20260917-0901], reason: "deduplicado"}
   - {id: parametric-phase-logic-precedent, evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501, f2-20260916-1901, f2-20260917-1001], reason: "T10 confirma escala comercial, logica de fase y sustitucion por transistor; precedente deduplicado sin traduccion funcional nueva"}
-  - {id: saturable-magnetic-logic-precedent, reason: "sin traduccion funcional especifica"}
+  - {id: saturable-magnetic-logic-precedent, evidence_ids: [f2-20260917-1101], reason: "ALWAC 800 agrega un caso contractual de logica de nucleos magneticos no escalada; no demuestra ventaja transferible y permanece como precedente historico"}
   - {id: mechanical-video-density-precedent, reason: "sin convergencia medible"}
   - {id: integrated-office-automation-precedent, reason: "sin traduccion funcional medible"}
   - {id: cartridge-decoupled-precision-transport, reason: "sin convergencia medible"}
@@ -53,11 +53,11 @@ archived_modules:
   - {id: balanced-ternary-precedent, reason: "deduplicado"}
   - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101, f2-20260917-0301], reason: "redundante y sin traduccion funcional medible"}
   - {id: domestic-humanoid-generalist-precedent, reason: "sin traduccion funcional medible"}
-  - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "sin traduccion funcional medible"}
-  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "sin traduccion funcional medible"}
+  - {id: mechanically-addressed-storage-precedent, evidence_ids: [f2-20260916-2301], reason: "sin convergencia medible"}
+  - {id: capacitive-contact-media-precedent, evidence_ids: [f2-20260917-0001], reason: "sin convergencia funcional medible"}
   - {id: cryotron-superconducting-logic-precedent, evidence_ids: [f2-20260917-0101, f2-20260917-0701], reason: "deduplicado"}
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
 current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos M3. T10 agrega una ruta molecular termodinamica en espera y sensado SAW pasivo a observabilidad; ninguna satisface M4 ni desplaza los tres modulos activos."
-last_synthesized_cycle: 2026-09-17T10
+next_action: "Priorizar medicion de prototipos M3. T11 refuerza morfologia como parametro de dinamica fisica y observabilidad magnetica no invasiva, pero no satisface M4 ni desplaza los tres modulos activos."
+last_synthesized_cycle: 2026-09-17T11
