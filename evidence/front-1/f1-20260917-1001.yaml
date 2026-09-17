@@ -1,0 +1,32 @@
+id: f1-20260917-1001
+frente: front-1
+cycle_id: 2026-09-17T10
+tema_objeto: computacion molecular de ADN favorecida termodinamicamente
+afirmacion_principal: "HECHO: un Scaffolded DNA Computer ejecuta programas dejando que el sistema relaje hacia una configuracion de salida energeticamente favorecida, corrigiendo desajustes mediante reemplazo reversible de tiles en vez de control cinetico paso-a-paso o correccion redundante explicita. HIPOTESIS: paisajes energeticos bien formados pueden extender este principio a sistemas sinteticos mayores. INTERPRETACION: demuestra computacion programable cuyo progreso y supresion de errores se apoyan directamente en relajacion termodinamica."
+capacidad_nueva: "computacion molecular programable, reutilizable y con autocorreccion energetica cerca del equilibrio"
+mecanismo_o_principio: "tiles de ADN compiten por posiciones de un scaffold; coincidencias entre dominios vecinos son entalpicamente favorecidas y los mismatches sufren penalizacion, permitiendo reemplazo reversible hasta una configuracion objetivo de menor energia libre"
+dominio: computacion_molecular_termodinamica
+fuentes:
+  - url: https://www.nature.com/articles/s41586-026-10996-5
+    titulo: "A thermodynamically favoured molecular computer"
+    tipo: paper_original_peer_reviewed
+    fecha: 2026-09-16
+  - url: https://zenodo.org/records/15869378
+    titulo: "Data and code for A Thermodynamically Favoured Molecular Computer"
+    tipo: repositorio_datos_codigo
+    fecha: 2025-07-16
+nivel_evidencia: A
+datos_cuantitativos: "10 programas; >700 computaciones; entradas binarias de hasta 50 bits; hasta 100 bits de compute; adicion hasta 25 bits; instancias pequenas <1 min; M=4 ~1 h; M=5 con buena finalizacion en 14 h; reutilizacion demostrada hasta 25 calculos; en una escala N=11, mismatches de bases mejoraron yield de 39% a 57% en anneal de 8 h."
+condiciones_de_prueba: "mezcla acuosa con scaffold y strands/tiles de ADN; tiles tipicamente a 10x concentracion respecto del scaffold; calentamiento/enfriamiento (annealing); dominios de computo de 12 bases y dominio de posicion de 24 bases en la implementacion descrita."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: ninguno_intrinseco
+tipo_de_memoria_o_estado: configuracion_molecular_de_tiles_sobre_scaffold
+tipo_de_adaptacion: reemplazo_reversible_guiado_por_energia_libre
+tipo_de_actuacion: autoensamblaje_molecular
+madurez_tecnica: demostracion_experimental_de_laboratorio
+limitaciones: "la velocidad cae al escalar; una adicion dificil puede requerir ~14 h; energeticas heterogeneas del scaffold reducen yield; para N mayor la favorabilidad termodinamica por si sola puede ser insuficiente y exige un paisaje energetico transitable; lectura y preparacion siguen requiriendo instrumentacion externa."
+contradicciones: "no demuestra que toda computacion molecular de equilibrio escale eficientemente; los autores reconocen que no caracterizaron ni eliminaron todas las interacciones off-pathway y que la cinetica experimental exacta no fue impuesta."
+etiquetas_neutrales: [DNA, molecular_computing, thermodynamic_computing, equilibrium, self_assembly, error_correction, programmable_matter]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
