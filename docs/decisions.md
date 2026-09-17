@@ -37,3 +37,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** desplazar un módulo activo por computación molecular o abrir un módulo SAW.
 - **Razón:** F1 demuestra un mecanismo computacional nuevo para el grafo pero con horas de latencia y periferia de laboratorio; F3 mejora la ruta de observabilidad de vibración pero requiere contacto y lector externo; F2 es continuidad histórica de parametron ya registrado.
 - **Consecuencia:** se conserva el límite de tres módulos; el incremento de evidencia de menor coste sigue siendo medir los prototipos M3 existentes.
+
+## 2026-09-17 — cycle 11 consolidation
+- **Decisión:** fusionar `f1-20260917-1101` en `embodied-dynamics-computation`; sumar `f3-20260917-1101` a `legacy-noninvasive-observability`; archivar `f2-20260917-1101` dentro de `saturable-magnetic-logic-precedent`. Sin promoción ni nuevo prototipo.
+- **Evidencia:** `f1-20260917-1101`, `f2-20260917-1101`, `f3-20260917-1101`.
+- **Alternativa rechazada:** promover observabilidad magnética a módulo activo o tratar ALWAC 800 como nueva línea de cómputo físico.
+- **Razón:** el micelio refuerza una línea activa ya existente pero su NARMA-10 (~0.984), SNR y periferia externa no resuelven el benchmark común; la inversión magnética es funcionalmente relevante pero carece de error/resolución cuantificados en la evidencia abierta; ALWAC 800 es un precedente histórico sin traducción funcional nueva.
+- **Consecuencia:** se mantienen tres módulos activos y las madureces M3/M1/M3; el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3.
