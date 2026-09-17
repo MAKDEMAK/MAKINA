@@ -1,0 +1,43 @@
+id: f1-20260917-1601
+frente: front-1
+cycle_id: 2026-09-17T16
+tema_objeto: reservorio nanomagnetico heterogeneo con geometria como grado computacional
+afirmacion_principal: La heterogeneidad geometrica controlada dentro de un unico metamaterial nanomagnetico produce dinamicas magneticas complementarias que aumentan la expresividad de reservoir computing fisico; combinar selectivamente canales de anillos con distintos anchos reduce el error frente a canales individuales y frente a usar indiscriminadamente todos los canales.
+capacidad_nueva: ajustar fisicamente memoria/no linealidad y diversidad de estados computacionales mediante variacion geometrica local, obteniendo multiples respuestas dinamicas direccionables dentro de un solo dispositivo
+mecanismo_o_principio: subarrays de nanorings Ni80Fe20 con anchos de pista 300-500 nm presentan umbrales y dinamicas distintas de nucleacion, pinning y propagacion de domain walls; una entrada temporal modula un campo magnetico rotatorio y seis canales independientes de efecto Hall planar leen estados complementarios; solo el readout lineal se entrena
+dominio: [physical_reservoir_computing, nanomagnetismo, metamateriales, computacion_no_convencional]
+fuentes:
+  - url: https://arxiv.org/abs/2608.08879
+    titulo: Reservoir Computing with Heterogeneous Magnetic Metamaterials
+    tipo: preprint_original_experimental
+    fecha: 2026-08-09
+nivel_evidencia: B
+datos_cuantitativos:
+  anillos: 1024
+  rango_ancho_pista_nm: 300-500
+  canales_PHE: 6
+  nodos_virtuales_por_canal: 50
+  nodos_virtuales_totales: 300
+  tareas: [nonlinear_signal_transformation, Mackey_Glass_time_series_prediction]
+  resultado: combinaciones multicanal optimizadas reducen NRMSE respecto de single-channel y, segun tarea, respecto de all-channel; el abstract no reporta aqui una cifra unica generalizable
+condiciones_de_prueba: dispositivo experimental; entrada codificada como modulacion temporal de amplitud de campo magnetico rotatorio; lectura multicanal PHE; ridge regression para readout
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: efecto Hall planar multicanal del estado magnetico
+tipo_de_memoria_o_estado: dinamica magnetica dependiente de historia/domain walls
+tipo_de_adaptacion: readout lineal entrenado; heterogeneidad del reservorio fijada por geometria
+tipo_de_actuacion: campo magnetico rotatorio modulado
+madurez_tecnica: prototipo experimental de laboratorio
+limitaciones:
+  - preprint sin peer review confirmada
+  - requiere generacion externa de campo magnetico, adquisicion PHE y entrenamiento digital del readout
+  - benchmarks de series temporales; no demuestra ventaja end-to-end de energia, area o latencia
+  - la combinacion optima de canales depende de la tarea
+contradicciones:
+  - mas canales no implican automaticamente mejor rendimiento; usar todos puede ser inferior a una seleccion de canales, por correlacion y ruido
+etiquetas_neutrales: [geometric_heterogeneity, nanorings, planar_Hall_effect, physical_reservoir, domain_walls, multichannel_readout]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
+hecho: Se fabrico y midio un array heterogeneo de nanorings con seis lecturas PHE; combinaciones de canales mejoraron tareas SigT y Mackey-Glass.
+hipotesis: La heterogeneidad geometrica podria servir como grado de libertad escalable para bloques computacionales magneticos configurables.
+interpretacion: El aporte materialmente nuevo no es solo usar magnetismo como reservorio, sino convertir variaciones geometricas deliberadas dentro del mismo sustrato en diversidad computacional util y seleccionable.
