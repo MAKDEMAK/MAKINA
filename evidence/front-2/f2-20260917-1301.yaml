@@ -1,0 +1,76 @@
+id: f2-20260917-1301
+frente: front-2
+cycle_id: 2026-09-17T13
+tema_objeto: computacion ternaria balanceada con nucleos de ferrita
+nombre_proyecto_o_artefacto: Setun
+afirmacion_principal: >-
+  Setun demostro que una computadora ternaria balanceada podia pasar de prototipo universitario a
+  produccion y uso real; la linea fue detenida pese a superar pruebas y mantener demanda, y fue
+  desplazada institucionalmente por computacion binaria, no por una refutacion tecnica del principio ternario.
+periodo_historico: 1956-1965; continuacion Setun-70 desde 1970
+pais_contexto: URSS, Universidad Estatal de Moscu / planta de maquinas matematicas de Kazan
+disciplina: arquitectura de computadores; logica multivaluada; memoria magnetica
+problema_original: >-
+  Proveer una computadora pequena, fiable y economica para calculo cientifico, educacion y control,
+  explorando representacion ternaria balanceada en lugar de binaria.
+principio_tecnico: >-
+  Representacion balanceada de tres estados (-1, 0, +1) y logica ternaria; memoria y elementos
+  logicos implementados mediante nucleos magneticos de ferrita y diodos semiconductores.
+estado_historico: sustitucion; linea productiva detenida; principio continuado parcialmente en Setun-70 y DSSP
+resultado_real_alcanzado:
+  hecho_documentado:
+    - Prototipo operativo terminado en diciembre de 1958 y aprobado en pruebas oficiales en abril de 1960.
+    - Se fabricaron 50 maquinas; 30 fueron instaladas en universidades/colegios y el resto en laboratorios y plantas.
+    - Se utilizo para calculos de ingenieria, procesamiento experimental, control industrial y educacion.
+    - Setun-70 fue introducido en 1970 como nueva arquitectura ternaria.
+  testimonio:
+    - El relato de los disenadores sostiene que las pruebas mostraron alta fiabilidad y estabilidad ante variaciones de temperatura y alimentacion.
+    - El mismo relato sostiene que habia pedidos no satisfechos y que una sustituta binaria de prestaciones similares costo mas de 2.5 veces mas.
+  interpretacion: >-
+    El caso prueba viabilidad practica de computacion ternaria balanceada a escala de maquina completa,
+    pero no demuestra superioridad general de ternario sobre binario ni que una implementacion moderna fuese competitiva.
+causa_documentada: >-
+  La retrospectiva de los disenadores atribuye el fin de produccion en 1965 a oposicion de autoridades
+  industriales a una maquina no planificada/no convencional, pese a pedidos pendientes.
+causas_alternativas:
+  - La infraestructura industrial y el ecosistema mundial convergian sobre componentes y arquitecturas binarias.
+  - La evidencia disponible sobre motivos economicos e institucionales procede en gran parte de retrospectivas de participantes y debe tratarse como tal.
+camino_que_lo_desplazo_si_existe: computadores binarios basados en la cadena industrial semiconductor convencional
+fuentes:
+  - url: https://www.computer-museum.ru/english/setun.htm
+    titulo: Development of ternary computers at Moscow State University
+    tipo: archivo tecnico / retrospectiva de disenadores, Russian Virtual Computer Museum
+    fecha: desconocida
+  - url: https://doi.org/10.1007/978-3-642-22816-2_10
+    titulo: 'Ternary Computers: The Setun and the Setun 70'
+    tipo: capitulo academico IFIP / Springer
+    fecha: '2011'
+  - url: https://cs.msu.ru/en/laboratories/tc
+    titulo: Laboratory of Ternary Informatics
+    tipo: fuente institucional, Moscow State University
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  - 50 computadores producidos en total segun la retrospectiva del equipo.
+  - 30 instalados en universidades/colegios; restantes en laboratorios y plantas.
+  - Memoria caracteristica documentada en fuentes historicas: 81 palabras de 18 trits y 1944 palabras en tambor magnetico.
+  - La retrospectiva afirma que el reemplazo binario de prestaciones comparables costo mas de 2.5 veces el Setun.
+limitaciones:
+  - El hardware de finales de los anos 1950 no permite extrapolar competitividad a tecnologias posteriores.
+  - Parte de la memoria secundaria representaba estados ternarios sobre soporte magnetico que no materializaba necesariamente tres estados fisicos independientes por celda.
+contradicciones:
+  - La narrativa de que Setun fue detenido por ser demasiado barato es mas fuerte que lo que permiten afirmar las fuentes institucionales verificadas; se conserva solo la oposicion industrial y la sustitucion documentadas.
+  - La linea ternaria no desaparecio inmediatamente: Setun-70 y posteriormente DSSP continuaron aspectos arquitectonicos y de programacion.
+incertidumbres:
+  - No se localizaron en esta ronda archivos administrativos de la planta de Kazan o del ministerio que permitan aislar una unica causa formal de cancelacion.
+  - Las cifras de demanda pendiente y comparacion exacta de costes dependen principalmente del relato retrospectivo del equipo.
+etiquetas_neutrales:
+  - ternary-computing
+  - balanced-ternary
+  - ferrite-core
+  - multivalued-logic
+  - nonbinary-architecture
+  - substitution
+  - soviet-computing
+fecha_hallazgo: '2026-09-17'
+fecha_revision: '2026-09-17'
