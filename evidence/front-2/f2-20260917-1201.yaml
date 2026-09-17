@@ -1,0 +1,47 @@
+id: f2-20260917-1201
+frente: front-2
+cycle_id: 2026-09-17T12
+tema_objeto: lógica digital con amplificadores magnéticos de alta frecuencia
+afirmacion_principal: "El Ferractor llevó núcleos magnéticos saturables desde amplificación/control hasta lógica digital de MHz y un computador operacional; la vía llegó a producto comercial pero fue desplazada cuando los transistores mejoraron rápidamente en coste, velocidad y fiabilidad."
+nombre_proyecto_o_artefacto: "Ferractor / UNIVAC Magnetic Computer (AFCRC)"
+periodo_historico: "1956-1960s"
+pais_contexto: "Estados Unidos"
+disciplina: "computación digital; electrónica magnética"
+problema_original: "Sustituir válvulas de vacío frágiles y de mantenimiento alto por elementos lógicos sólidos, robustos y fiables para computación de alta velocidad."
+principio_tecnico: "Amplificador magnético con núcleo saturable de Permalloy ultrafino; el estado de magnetización y devanados múltiples permiten conmutación, amplificación y composición lógica."
+estado_historico: "sustitución; absorción parcial; línea comercial posteriormente desplazada"
+resultado_real_alcanzado: "HECHO DOCUMENTADO: Bonn reportó operación del Ferractor hasta 2.5 MHz y síntesis de flip-flops, contadores y registros. El computador AFCRC fue operacional; fuentes históricas registran ~90% de razón good/attempted y uso científico/tiempo real. La arquitectura derivó en la familia comercial UNIVAC Solid State."
+causa_documentada: "El interés decayó durante los años 1960 conforme los transistores y otros semiconductores mejoraron y pasaron a dominar la lógica informática."
+causas_alternativas:
+  - "INTERPRETACIÓN: la necesidad de excitación de corriente relativamente alta y la complejidad magnética redujeron su ventaja sistémica frente a lógica semiconductor cada vez más integrada."
+  - "La narrativa de fracaso técnico simple es contradicha por operación sostenida y comercialización posterior."
+camino_que_lo_desplazo_si_existe: "lógica transistor y posteriormente circuitos integrados semiconductor"
+fuentes:
+  - url: "https://bitsavers.computerhistory.org/pdf/afips/1956-02_%2309.pdf"
+    titulo: "The Megacycle Ferractor — Proceedings of the Western Joint Computer Conference"
+    tipo: "proceedings contemporáneo"
+    fecha: "1956"
+  - url: "https://ntrs.nasa.gov/api/citations/19820007113/downloads/19820007113.pdf"
+    titulo: "NASA historical technical report discussing magnetic amplifiers and AFCRC computer"
+    tipo: "informe histórico institucional"
+    fecha: "1982"
+  - url: "https://spectrum.ieee.org/the-vacuum-tubes-forgotten-rival"
+    titulo: "The Vacuum Tube's Forgotten Rival"
+    tipo: "interpretación histórica técnica"
+    fecha: "2022-03-27"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Ferractor: hasta 2.5 MHz reportados en 1956."
+  - "BRL 1961: 600 paquetes Ferractor y 15 válvulas en AFCRC; 15 kVA; ~4000 lb; coste del sistema incluyendo desarrollo US$800,000."
+  - "BRL 1961: periodo medio sin error 30 h y razón good/attempted 0.90 para 1959-04-01 a 1960-04-01."
+limitaciones:
+  - "No era una máquina puramente magnética: utilizaba diodos y algunas válvulas/electrónica auxiliar."
+  - "Las cifras de número de Ferractors difieren entre fuentes retrospectivas (600 paquetes frente a 1,500 elementos), probablemente por diferencias de conteo/unidad; no se fuerza equivalencia."
+contradicciones:
+  - "TESTIMONIO/interpretación retrospectiva suele describir la vía como olvidada; la evidencia contemporánea e institucional muestra computador operacional y descendencia comercial."
+  - "No se documenta una única causa de abandono; la sustitución semiconductor fue gradual."
+incertidumbres:
+  - "Relación exacta entre 'paquete Ferractor' y elemento Ferractor en las distintas cuentas históricas."
+etiquetas_neutrales: [magnetic_logic, saturable_core, ferractor, alternative_computing, substitution, commercialized]
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
