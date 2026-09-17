@@ -1,0 +1,71 @@
+id: f2-20260917-1701
+frente: front-2
+cycle_id: 2026-09-17T17
+tema_objeto: videotex rasterizado sobre red telefonica
+nombre_proyecto_o_artefacto: CAPTAIN (Character And Pattern Telephone Access Information Network System)
+periodo_historico: 1978-2002
+pais_contexto: Japon
+disciplina: telecomunicaciones / interfaces / servicios de informacion
+afirmacion_principal: >-
+  CAPTAIN fue una via japonesa de videotex que resolvio la dificultad de representar kanji y graficos complejos en terminales domesticos baratos transmitiendo patrones de puntos pre-renderizados por la red telefonica hacia televisores, en vez de depender de generadores locales de caracteres. Paso de experimentos nacionales a servicio comercial, pero no alcanzo adopcion masiva y termino siendo desplazado por servicios de PC/red e Internet.
+problema_original: >-
+  Dar acceso domestico bajo demanda a informacion textual y grafica usando lineas telefonicas existentes y televisores, incluyendo miles de kanji y otras formas complejas cuya generacion local encarecia el terminal.
+principio_tecnico: >-
+  Transmision de informacion como patrones de puntos (pattern transmission): el centro codifica y transmite la imagen/patron que el terminal presenta en el televisor, permitiendo caracteres y dibujos arbitrarios sin almacenar un repertorio completo de glifos en cada terminal.
+estado_historico: sustitucion con despliegue comercial prolongado
+resultado_real_alcanzado:
+  hecho_documentado: >-
+    El primer experimento opero de diciembre de 1979 a marzo de 1981 con 1000 terminales, 199 proveedores de informacion y 100000 cuadros/paginas; un segundo experimento comenzo en agosto de 1981 con 2000 terminales y 200000 cuadros. El servicio comercial comenzo en noviembre de 1984 y finalizo el 31 de marzo de 2002.
+  testimonio: >-
+    El paper de 1981 reporta que los usuarios valoraban especialmente el atractivo de las pantallas y que muchos declaraban querer usar el sistema cuando comenzara el servicio comercial.
+  interpretacion: >-
+    La ruta demostro que era viable desplazar complejidad tipografica desde el terminal hacia la representacion transmitida, pero esa ventaja no produjo por si sola un mercado masivo.
+causa_documentada: >-
+  Las fuentes historicas coinciden en adopcion limitada: para marzo de 1992 CAPTAIN tenia aproximadamente 120000 abonados pese al despliegue nacional. Fuentes japonesas retrospectivas senalan ademas el elevado precio inicial de terminales dedicados y, posteriormente, el desplazamiento por comunicaciones de PC e Internet.
+causas_alternativas:
+  - terminal dedicado y coste de acceso
+  - transmision raster menos eficiente que representar contenido simbolicamente cuando el terminal puede renderizarlo
+  - competencia posterior de redes de PC, TCP/IP y Web
+camino_que_lo_desplazo_si_existe: comunicaciones por computador e Internet/Web sobre redes IP
+fuentes:
+  - url: https://hcs64.com/files/Harashima%2C%20Kumamoto%2C%20Kitamura%20-%20Japanese%20VIDEOTEX%20System%20CAPTAIN%20-%20tcom.1981.1094931.pdf
+    titulo: Japanese VIDEOTEX System CAPTAIN - Experimental Service and User Reactions Outline
+    tipo: paper experimental IEEE / documento contemporaneo
+    fecha: 1981-12
+  - url: https://www.wdic.org/w/WDIC/CAPTAIN
+    titulo: CAPTAIN - 通信用語の基礎知識
+    tipo: referencia tecnica japonesa retrospectiva
+    fecha: desconocida
+  - url: https://kotobank.jp/word/%E3%81%B3%E3%81%A7%E3%81%8A%E3%81%A6%E3%81%A4%E3%81%8F%E3%81%99-3165904
+    titulo: ビデオテックス
+    tipo: diccionario/enciclopedia japonesa
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  primer_experimento_terminales: 1000
+  primer_experimento_proveedores: 199
+  primer_experimento_cuadros: 100000
+  segundo_experimento_terminales: 2000
+  segundo_experimento_cuadros: 200000
+  abonados_1992_aprox: 120000
+  cierre_servicio: 2002-03-31
+limitaciones:
+  - La transmision de patrones evita el generador local completo de caracteres pero intercambia esa simplificacion por mayor volumen de informacion visual transmitida.
+  - Las cifras de adopcion prueban alcance limitado, no aislan causalmente una unica razon del resultado comercial.
+contradicciones:
+  - La encuesta experimental de 1981 mostraba intencion de uso y alta valoracion visual, pero la adopcion comercial posterior permanecio limitada; intencion declarada no predijo penetracion masiva.
+incertidumbres:
+  - El peso causal relativo del precio del terminal, velocidad/eficiencia de transmision, modelo de servicio y competencia posterior no queda cuantificado de forma comparable en las fuentes consultadas.
+  - La afirmacion de que el precio fue la causa principal procede de una fuente tecnica retrospectiva, no de una evaluacion econometrica contemporanea.
+etiquetas_neutrales:
+  - videotex
+  - pattern-transmission
+  - raster
+  - kanji
+  - telefono
+  - television
+  - terminal-dedicado
+  - Japon
+  - sustitucion
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
