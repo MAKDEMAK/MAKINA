@@ -1,0 +1,49 @@
+id: f3-20260917-1001
+frente: front-3
+cycle_id: 2026-09-17T10
+tema_objeto: sensado inalámbrico pasivo de vibración mediante transducción piezoeléctrica SAW
+afirmacion_principal:
+  HECHO: Un resonador SAW sobre LiNbO3 puede convertir directamente vibración mecánica en potencial eléctrico y devolver la señal por acoplamiento inductivo sin alimentación aplicada al sensor; en prueba sobre viga en voladizo recuperó correctamente una resonancia de 43 Hz y formas de onda/espectros concordantes con vibrometría láser Doppler.
+  INTERPRETACION: El principio permite hacer observable vibración de una estructura mediante un elemento adherido sin batería ni electrónica activa local durante la medición pasiva.
+  HIPOTESIS: Su utilidad fuera de la geometría y distancias ensayadas requiere validación específica.
+funcion: medir
+principio_de_mediacion: vibración mecánica -> potencial piezoeléctrico en sustrato LiNbO3 -> señal electromagnética recuperada por acoplamiento inductivo
+variable_fisica_entrada: vibración mecánica local
+señal_o_estado_salida: forma de onda eléctrica inalámbrica y espectro de frecuencia
+modalidad: piezoeléctrica + inductiva/inalámbrica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: opcional
+requiere_computacion_digital: no
+resolucion_o_precision: No se reporta incertidumbre metrológica en el texto principal; frecuencia resonante de 43 Hz correctamente recuperada frente a LDV.
+latencia: tiempo real en prueba; no cuantificada
+condiciones_de_prueba: sensor SAW adherido a viga en voladizo; comparación simultánea con laser Doppler vibrometer; resonador ~39 MHz; electrodos IDT de 25.5 um; ensayos de vibración a 35 y 43 Hz.
+fuentes:
+  - url: https://doi.org/10.1002/adsr.202400083
+    titulo: Frequency-Locked Wireless Multifunctional Surface Acoustic Wave Sensors
+    tipo: paper experimental revisado por pares
+    fecha: 2024
+  - url: https://pubmed.ncbi.nlm.nih.gov/39989624/
+    titulo: Frequency-locked Wireless Multifunctional Surface Acoustic Wave Sensors
+    tipo: indice institucional / abstract
+    fecha: 2024
+nivel_evidencia: A
+datos_cuantitativos:
+  resonancia_SAW: ~39 MHz
+  ancho_y_espaciado_IDT: 25.5 um
+  vibraciones_demostradas: [35 Hz, 43 Hz]
+  resonancia_viga_recuperada: 43 Hz
+  rango_mecanismo_frequency_locked: '<0.1 GHz'
+mecanismo_o_principio: El sustrato piezoeléctrico genera potencial dinámico entre grupos de electrodos IDT al vibrar. Esa energía se acopla desde la bobina receptora del sensor a una bobina lectora; no se inyecta potencia durante el modo pasivo de vibración. Es medición directa de vibración/frecuencia; atribuir causa, daño o estado de máquina desde esa vibración sería inferencia indirecta.
+limitaciones:
+  - La amplitud/SNR disminuye al aumentar la separación entre bobinas.
+  - El sensor debe estar mecánicamente acoplado a la estructura.
+  - La demostración pasiva es proof-of-concept sobre una viga; no establece robustez industrial.
+  - El lector externo sí requiere instrumentación (bobina y osciloscopio en el experimento).
+  - No se publica incertidumbre, resolución mínima de amplitud ni distancia máxima fiable en el texto principal consultado.
+contradicciones:
+  - 'power-free passive' describe el elemento sensor durante vibración, no un sistema end-to-end sin energía ni electrónica.
+  - Las funciones de strain/temperatura/agua del mismo dispositivo usan modo activo; sólo la medición de vibración fue demostrada sin potencia de entrada.
+etiquetas_neutrales: [SAW, piezoelectricidad, vibracion, sensado_pasivo, wireless, acoplamiento_inductivo, instrumentacion, retrofit_minimo]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
