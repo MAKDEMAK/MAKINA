@@ -1,0 +1,46 @@
+id: f2-20260917-1401
+frente: front-2
+cycle_id: 2026-09-17T14
+tema_objeto: memoria acústica serial por línea de retardo
+nombre_proyecto_o_artefacto: Mercury delay-line memory
+periodo_historico: 1947-1970s
+pais_contexto: Reino Unido / Estados Unidos / Australia
+disciplina: computación; memoria; acústica
+afirmacion_principal: Las líneas de retardo hicieron viable memoria electrónica útil convirtiendo bits en ondas acústicas recirculantes; fueron desplegadas en computadores reales y luego sustituidas por memorias de acceso aleatorio y semiconductores.
+problema_original: almacenar suficientes bits para computadores electrónicos de programa almacenado
+principio_tecnico: Pulsos eléctricos se convierten mediante transductores en pulsos ultrasónicos que atraviesan un medio físico, se reconvierten, regeneran y recirculan; el tiempo de propagación almacena el tren de bits.
+estado_historico: sustitucion con continuidad parcial
+resultado_real_alcanzado:
+  hecho_documentado:
+    - EDSAC operó en 1949 con 32 líneas de mercurio y 512 palabras de 35 bits.
+    - UNIVAC I empleó memoria de línea de retardo con acceso medio reportado de 222 microsegundos.
+    - CSIRAC implementó líneas acústicas con capacidad teórica total de 1024 palabras.
+  testimonio: []
+  interpretacion:
+    - No fue un fracaso; resolvió una carencia crítica y fue desplazada por tecnologías con acceso aleatorio más conveniente.
+causa_documentada:
+  - acceso intrinsecamente secuencial
+  - control térmico preciso en implementaciones con mercurio
+  - peso y volumen del medio
+  - aparición de memorias de acceso aleatorio
+causas_alternativas:
+  - variantes magnetostrictivas prolongaron la familia técnica durante los años 1960
+camino_que_lo_desplazo_si_existe: memoria de núcleos magnéticos; posteriormente memoria semiconductor
+fuentes:
+  - {url: 'https://www.computerhistory.org/storageengine/edsac-computer-employs-delay-line-storage/', titulo: '1949: EDSAC computer employs delay-line storage', tipo: 'museo técnico', fecha: 's.f.'}
+  - {url: 'https://americanhistory.si.edu/collections/object/nmah_334294', titulo: 'SEAC Mercury Delay Line Memory', tipo: 'Smithsonian / colección', fecha: 's.f.'}
+  - {url: 'https://cis.unimelb.edu.au/about/history/csirac', titulo: 'CSIRAC: Our first computer', tipo: 'historia institucional', fecha: 's.f.'}
+  - {url: 'https://books.google.com/books/about/An_Ultrasonic_Memory_Unit_for_the_EDSAC.html?id=XlChwgEACAAJ', titulo: 'An Ultrasonic Memory Unit for the EDSAC', tipo: 'paper contemporáneo', fecha: '1948-07'}
+nivel_evidencia: A
+datos_cuantitativos:
+  - 'EDSAC: 512 palabras de 35 bits en 32 líneas.'
+  - 'UNIVAC I: acceso medio ~222 microsegundos.'
+  - 'CSIRAC: tubos ~1.5 m y propagación ~960 microsegundos.'
+limitaciones: [acceso_secuencial, sensibilidad_termica, regeneracion_continua, volumen_fisico]
+contradicciones:
+  - La sustitución no fue inmediata; líneas magnetostrictivas siguieron en productos durante los años 1960.
+incertidumbres:
+  - Las capacidades varían según máquina y generación y no representan una especificación universal.
+etiquetas_neutrales: [memoria_acustica, linea_de_retardo, almacenamiento_serial, ultrasonido, transduccion, recirculacion]
+fecha_hallazgo: '2026-09-17'
+fecha_revision: '2026-09-17'
