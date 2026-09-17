@@ -1,0 +1,63 @@
+id: f3-20260917-1901
+frente: front-3
+cycle_id: 2026-09-17T19
+tema_objeto: "película microencapsulada como memoria espacial pasiva de presión de contacto"
+afirmacion_principal: "Una película delgada con microcápsulas de ruptura calibrada puede insertarse temporalmente entre superficies de un artefacto existente y convertir la presión de contacto en una huella cromática irreversible que conserva distribución y magnitud aproximada sin electrónica; la cuantificación absoluta requiere calibración y es sensible al ambiente y al propio espesor del film."
+funcion: registrar
+principio_de_mediacion: "ruptura mecánica dependiente de presión de microcápsulas, liberación de colorante y reacción/fijación química; densidad óptica espacial como registro de la carga"
+variable_fisica_entrada: "presión normal de contacto distribuida sobre una superficie"
+señal_o_estado_salida: "mapa cromático permanente; densidad óptica local correlacionada con presión"
+modalidad: "mecano-química / colorimétrica / memoria material pasiva"
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: "En campos de contacto relativamente suaves, literatura experimental reporta errores aproximadamente 10–15%; documentación técnica reporta ±10% por densitometría bajo condiciones especificadas. Un paper SAE de 1985 reportó ±2% usando densitómetro. La resolución/precisión efectiva empeora con gradientes, geometría, rugosidad y condiciones ambientales."
+latencia: "respuesta esencialmente inmediata al aplicar presión para lectura cualitativa; la densidad óptica puede evolucionar después de la carga, por lo que la lectura cuantitativa debe hacerse en una ventana temporal controlada"
+condiciones_de_prueba: "Hale y Brown (1992): distribuciones estandarizadas generadas comprimiendo película entre cilindros rígidos de siete radios distintos y una capa elástica sobre sustrato rígido, comparando gradientes detectados con predicción analítica. Fujifilm especifica exactitud bajo 23 °C y 65% RH. Estudios históricos muestran dependencia fuerte de humedad y evolución temporal de la mancha."
+fuentes:
+  - url: "https://pubmed.ncbi.nlm.nih.gov/1522730/"
+    titulo: "Contact stress gradient detection limits of Pressensor film"
+    tipo: "paper experimental revisado por pares"
+    fecha: "1992-08"
+  - url: "https://cir.nii.ac.jp/crid/1390282679390025088"
+    titulo: "An Evaluation of Prescale Sheets for Measuring Pressure"
+    tipo: "paper experimental"
+    fecha: "1980"
+  - url: "https://saemobilus.sae.org/papers/fuji-prescale-a-picture-pressure-850186"
+    titulo: "Fuji Prescale-A Picture of Pressure"
+    tipo: "technical paper SAE"
+    fecha: "1985-02-01"
+  - url: "https://asset.fujifilm.com/www/em-global/files/2026-04/3da8a2e5f3987fb63a34b82e05b77f77/southeastasia2026_02.pdf"
+    titulo: "Prescale Pressure Measurement Film"
+    tipo: "documentación técnica institucional"
+    fecha: "2026-04"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "Hale & Brown: errores reportados ~10–15% en campos de contacto relativamente suaves."
+  - "Evaluación de 1980: rango estudiado 8–450 kg/cm²; precisión indicada 2.0 kg/cm² en película de baja presión, 8.0 kg/cm² intermedia y 20.0 kg/cm² alta."
+  - "En esa evaluación, una misma carga de 44 kg/cm² produjo densidad 0.94 a 22.0 °C/50% RH y 1.35 a 23.5 °C/83% RH, evidenciando sensibilidad ambiental."
+  - "SAE 850186: cuantificación con densitómetro reportada con exactitud ±2%."
+  - "Documentación Fujifilm 2026: variantes disponibles cubren aproximadamente 0.006–300 MPa."
+mecanismo_o_principio: "La presión rompe selectivamente microcápsulas cuya población está diseñada con umbrales de ruptura; el colorante liberado reacciona con una capa reveladora. La densidad de cápsulas activadas produce una imagen espacial que funciona simultáneamente como transductor y memoria física del evento. Observación directa: huella de ruptura/color en el film. Medición de presión: inferencia calibrada desde densidad óptica. Inferir fuerza total, calidad de contacto o condición del artefacto es un nivel adicional de inferencia."
+limitaciones:
+  - "Es consumible/de un solo evento; no entrega serie temporal ni orden de múltiples cargas superpuestas."
+  - "Temperatura y humedad alteran sensibilidad y exigen condiciones o curvas de calibración apropiadas."
+  - "La densidad óptica cambia después de la exposición; el tiempo entre carga y lectura debe controlarse."
+  - "El film introduce espesor/compliance en la interfaz y puede modificar el contacto que pretende medir, especialmente en geometrías sensibles, rugosas o de alta curvatura."
+  - "Gradientes fuertes y discontinuidades locales dificultan la reconstrucción cuantitativa aunque el patrón cualitativo siga siendo observable."
+  - "Lectura visual elimina electrónica pero reduce precisión; densitometría/imaging puede mejorar cuantificación a costa de instrumentación."
+contradicciones:
+  - "La precisión no es una propiedad universal: se encuentran ~10–15% en experimentos biomecánicos, ±10% en especificaciones técnicas y ±2% con densitometría reportada en SAE; dependen de procedimiento, calibración y campo de presión."
+  - "Aunque el registro químico es permanente a escala práctica, estudios muestran evolución/fading de densidad después de la carga; 'permanente' no equivale a valor óptico temporalmente invariante."
+etiquetas_neutrales:
+  - pressure-sensitive-film
+  - microcapsule-rupture
+  - passive-recording
+  - contact-pressure
+  - colorimetry
+  - witness-material
+  - no-electronics
+  - minimally-invasive
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
