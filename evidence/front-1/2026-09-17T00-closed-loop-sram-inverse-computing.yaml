@@ -1,0 +1,43 @@
+id: f1-20260917-0001
+frente: front-1
+cycle_id: 2026-09-17T00
+tema_objeto: calculo analogico cerrado en memoria SRAM
+afirmacion_principal: "HECHO: un circuito integrado CMOS de 90 nm con dos matrices SRAM 64x64 dentro de un lazo analogico ejecuta experimentalmente multiplicacion matriz-vector inversa y la usa como primitiva para inversion recursiva, filtro de Kalman e inversa cinematica. INTERPRETACION: el lazo fisico convierte una operacion digital tipicamente iterativa/cubica en una solucion analogica de equilibrio, desplazando parte del calculo hacia la dinamica del circuito."
+capacidad_nueva: "resolver operaciones inversas de algebra lineal directamente en memoria mediante realimentacion analogica integrada"
+mecanismo_o_principio: "conductancias programadas representan la matriz; amplificadores operacionales cierran un lazo cuya condicion de equilibrio implementa la solucion inversa, con DAC/ADC integrados para interfaz"
+dominio: "computacion analogica; in-memory computing; algebra lineal; control"
+fuentes:
+  - url: "https://www.nature.com/articles/s41928-025-01549-1"
+    titulo: "A fully integrated analogue closed-loop in-memory computing accelerator based on static random-access memory"
+    tipo: paper original revisado por pares
+    fecha: 2026-01-14
+  - url: "https://assets-eu.researchsquare.com/files/rs-5595805/v1/0e9563f120b97acf76a8daec.pdf"
+    titulo: "An SRAM-based fully-integrated analog closed-loop in-memory computing accelerator"
+    tipo: manuscrito primario/preprint
+    fecha: 2025
+nivel_evidencia: A
+datos_cuantitativos:
+  proceso: "90 nm CMOS"
+  matrices: "2 x 64x64"
+  inversion_demostrada: "sistemas hasta 512x512 mediante recursive block inversion"
+  inverse_kinematics: "250x mejora de eficiencia energetica frente al FPGA comparado por los autores; throughput similar pese a mas iteraciones por precision reducida"
+condiciones_de_prueba: "chip fabricado; demostraciones experimentales de inversion, seguimiento de trayectoria mediante Kalman e inversa cinematica; comparaciones a precision equivalente del IC"
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: "no aplica; entradas electricas mediante DAC"
+tipo_de_memoria_o_estado: "SRAM programada + estado analogico transitorio del lazo"
+tipo_de_adaptacion: "ninguna intrinseca demostrada"
+tipo_de_actuacion: "salida electrica analogica/digital"
+madurez_tecnica: "prototipo de circuito integrado experimental"
+limitaciones:
+  - "el chip actual no esta optimizado para rendimiento y usa periferia DAC/ADC/opamps"
+  - "precision analogica reducida puede exigir mas iteraciones en tareas como inversa cinematica"
+  - "las proyecciones a 14 nm no son resultados medidos del chip fabricado"
+contradicciones:
+  - "la ventaja O(1) describe la primitiva analogica; problemas mayores requieren particion/recursive block inversion y no eliminan toda la computacion digital"
+  - "la cifra 250x corresponde al benchmark de energia de inversa cinematica frente al FPGA seleccionado, no a una ventaja universal"
+etiquetas_neutrales: [analog-computing, in-memory-computing, closed-loop, SRAM, matrix-inversion, kalman, inverse-kinematics]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
+hipotesis: "La misma clase de lazo podria generalizarse a otras operaciones implicitas, pero este paquete no atribuye capacidades no demostradas."
+interpretacion: "La novedad material es integrar fisicamente una primitiva inversa cerrada que antes era mucho menos madura que MVM en IMC, no simplemente acelerar una red neuronal."
