@@ -54,3 +54,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** abrir un módulo específico de resonador temporal o memoria tiempo-temperatura.
 - **Razón:** ambos mecanismos nuevos encajan en contratos activos existentes; el resonador aún no comparte benchmark ejecutado y el TTI no reconstruye un historial térmico único. El cryotron es evidencia histórica redundante.
 - **Consecuencia:** se mantiene el límite de tres módulos y se prioriza medir artefactos M3 existentes.
+
+## 2026-09-17 — cycle 09 consolidation
+- **Decisión:** fusionar `f1-20260917-0901` en `temporal-in-sensor-processing`, `f3-20260917-0901` en `physical-state-interface` y deduplicar `f2-20260917-0901` con el precedente de magnetic bubble memory; sin promoción.
+- **Evidencia:** `f1-20260917-0901`, `f2-20260917-0901`, `f3-20260917-0901`.
+- **Alternativa rechazada:** abrir módulos específicos para optoelectronic reservoir o damage imaging.
+- **Razón:** F1-0901 repite y fortalece una arquitectura sensor-estado-computo ya activa pero no aporta coste end-to-end; F3-0901 aporta transduccion mecano-optica localizada pero su intensidad no es una medida universal de daño; F2-0901 es continuidad historica de un nodo ya existente.
+- **Consecuencia:** se mantiene el límite de tres módulos y M3; el siguiente incremento de evidencia sigue siendo ejecutar/medir los prototipos existentes.
