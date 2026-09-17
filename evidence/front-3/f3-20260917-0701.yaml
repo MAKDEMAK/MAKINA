@@ -1,0 +1,34 @@
+id: f3-20260917-0701
+frente: front-3
+cycle_id: 2026-09-17T07
+tema_objeto: indicador pasivo irreversible de historia tiempo-temperatura
+afirmacion_principal: Una reacción química irreversible con cinética Arrhenius ajustable puede convertir la historia acumulada de exposición térmica en un estado óptico persistente, registrando información sin electrónica ni computación digital.
+funcion: registrar
+principio_de_mediacion: cinética química dependiente de temperatura (pardeamiento no enzimático fructosa-glicina) traducida a cambio de absorbancia/color
+variable_fisica_entrada: historia acumulada de tiempo y temperatura
+señal_o_estado_salida: cambio irreversible de color/absorbancia a 420 nm
+modalidad: química-colorimétrica pasiva
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: no
+requiere_computacion_digital: no
+resolucion_o_precision: No es termometría instantánea; respuesta integrada cuya cinética puede ajustarse. Energías de activación experimentales 58.09-95.54 kJ/mol.
+latencia: dependiente de temperatura, pH y composición; integra exposición en el tiempo
+condiciones_de_prueba: 12 formulaciones con cuatro concentraciones de sustrato y pH 8.0-10.0; modelos de absorbancia-tiempo-temperatura y ajuste Arrhenius.
+fuentes:
+  - url: https://doi.org/10.1111/jfpe.13027
+    titulo: Development and characterization of a new nonenzymatic colored time-temperature indicator
+    tipo: paper experimental
+    fecha: 2019-02-15
+  - url: https://doi.org/10.1002/pts.2695
+    titulo: Time temperature indicators made with sublimating azulene derivatives as the functional dye for use of fast reaction rate
+    tipo: paper experimental independiente sobre el mismo principio de registro cinético
+    fecha: 2023
+nivel_evidencia: A
+datos_cuantitativos: "Ea 58.09-95.54 kJ/mol en indicadores fructosa-glicina. Como corroboración de la clase de mecanismo, TTIs por sublimación mostraron Ea 91.87 y 97.99 kJ/mol y tiempos para ΔE*ab=30 desde 9.1 h a 37 °C hasta 102.5 días a 5 °C según formulación."
+mecanismo_o_principio: "MEDICIÓN/REGISTRO DIRECTO de una variable integrada: la velocidad de una transformación irreversible depende exponencialmente de la temperatura; el avance químico conserva físicamente la exposición acumulada como estado óptico. No reconstruye de forma única la serie temporal de temperaturas."
+limitaciones: "No entrega temperatura instantánea ni historial temporal único. Distintos perfiles térmicos pueden producir estados finales equivalentes; exige calibrar cinética y estabilidad para el rango objetivo. Lectura visual reduce precisión; lectura instrumental de absorbancia puede mejorar cuantificación pero añade instrumentación."
+contradicciones: "El color no equivale directamente a temperatura: es una integral cinética dependiente de formulación. La utilidad como proxy de degradación requiere aproximar la energía de activación del proceso observado; fuera de esa correspondencia la inferencia puede sesgarse."
+etiquetas_neutrales: [sensor_pasivo, registro_fisico, tiempo_temperatura, colorimetria, cinetica_arrhenius, sin_electronica, memoria_material]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
