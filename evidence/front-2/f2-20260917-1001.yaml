@@ -1,0 +1,101 @@
+id: f2-20260917-1001
+frente: front-2
+cycle_id: 2026-09-17T10
+tema_objeto: logica digital por oscilacion parametrica
+nombre_proyecto_o_artefacto: Parametron / PC-1
+periodo_historico: 1954-1960s
+pais_contexto: Japon
+disciplina: computacion digital / electronica magnetica
+afirmacion_principal: >-
+  El parametron fue una familia real y comercial de logica digital japonesa basada en
+  oscilacion parametrica; alcanzo computadores de proposito general y otras aplicaciones,
+  pero fue sustituido rapidamente por transistores al quedar limitado en frecuencia,
+  potencia y amplitud de aplicaciones.
+problema_original: >-
+  Construir logica y memoria digital fiable y economica cuando tubos y transistores
+  tempranos eran costosos o poco fiables.
+principio_tecnico: >-
+  Un resonador LC con reactancia no lineal excitado aproximadamente a 2f oscila a f en
+  uno de dos estados de fase separados por pi; esas fases codifican bits. Acoplamientos
+  entre parametrons realizan retardo/memoria, NOT y logica mayoritaria de la que se
+  derivan AND/OR.
+estado_historico: sustitucion
+resultado_real_alcanzado: >-
+  HECHO DOCUMENTADO: Goto publico el principio en 1959. El PC-1 de la Universidad de
+  Tokio fue completado en 1958 y uso 4200 parametrons, memoria de 512 palabras cortas,
+  suma/resta de 0.4 ms, multiplicacion de 36 bits de 4.4 ms y division de 16.1 ms.
+  La IPSJ documenta multiples computadores comerciales japoneses basados en parametrons;
+  Fujitsu entrego el FACOM 212 y lo exporto a Filipinas en 1963.
+causa_documentada: >-
+  La IPSJ atribuye el fin del desarrollo a que los parametrons eran mas lentos y
+  consumian mas potencia que los computadores de transistores, tenian un techo de
+  mejora y perdieron su ventaja cuando aumento la fiabilidad del transistor.
+causas_alternativas: >-
+  INTERPRETACION HISTORICA respaldada por IEEE Milestone: el transistor servia ademas
+  para radio y circuitos analogicos, atrayendo una base de inversion en I+D mucho mayor;
+  por tanto la sustitucion no fue solo una comparacion aislada de velocidad.
+camino_que_lo_desplazo_si_existe: logica digital basada en transistores de union
+fuentes:
+  - url: https://doi.org/10.1109/JRPROC.1959.287195
+    titulo: The Parametron, a Digital Computing Element Which Utilizes Parametric Oscillation
+    tipo: paper original
+    fecha: 1959-08
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/history.html
+    titulo: Brief History - Computer Museum
+    tipo: archivo institucional / historia tecnica
+    fecha: desconocida
+  - url: https://museum.ipsj.or.jp/en/computer/dawn/0016.html
+    titulo: PC-1 Parametron Computer
+    tipo: archivo institucional / ficha tecnica
+    fecha: desconocida
+  - url: https://global.fujitsu/en-global/about/corporate/museum/products/products/computer-mainframe-facom212
+    titulo: FACOM212 (1959)
+    tipo: archivo corporativo historico
+    fecha: desconocida
+  - url: https://ethw.org/Milestones%3AParametron%2C_1954
+    titulo: IEEE Milestone - Parametron, 1954
+    tipo: archivo institucional retrospectivo
+    fecha: 2025
+aivel_evidencia: A
+nivel_evidencia: A
+datos_cuantitativos:
+  pc1_parametrons: 4200
+  pc1_memoria_palabras_cortas: 512
+  pc1_suma_resta_ms: 0.4
+  pc1_multiplicacion_36bit_ms: 4.4
+  pc1_division_ms: 16.1
+  pc1_reloj_khz: 15
+  pc1_potencia_kw_aprox: 3
+limitaciones: >-
+  Frecuencia operativa baja frente a transistores posteriores; consumo elevado a escala
+  de computador; resonadores requieren excitacion sincronizada y ajuste; elemento
+  especializado principalmente en logica.
+contradicciones: >-
+  No fue un prototipo marginal ni un fracaso inmediato: existieron multiples productos
+  comerciales y hacia 1959 Goto reportaba parametrons en cerca de la mitad de los
+  computadores electronicos japoneses en operacion. Tampoco el principio desaparecio
+  conceptualmente: osciladores parametricos posteriores reutilizaron estados de fase,
+  aunque eso no constituye continuidad comercial directa del parametron original.
+incertidumbres: >-
+  Las cifras agregadas de cuota y ventas de modelos comerciales provienen de fuentes
+  historicas retrospectivas y no se usan aqui como medida exacta de mercado.
+etiquetas_neutrales:
+  - parametric-oscillation
+  - phase-encoded-logic
+  - ferrite
+  - majority-logic
+  - japan
+  - transistor-substitution
+separacion_epistemica:
+  hecho_documentado: >-
+    El principio, PC-1 y computadores comerciales existieron y estan documentados por
+    el paper original, IPSJ, Fujitsu e IEEE.
+  testimonio: >-
+    La evaluacion contemporanea de Goto describia al parametron como robusto, estable,
+    durable y barato, y reportaba amplia adopcion japonesa en 1959.
+  interpretacion: >-
+    La trayectoria se clasifica como sustitucion tecnologica: una alternativa funcional
+    y comercial perdio frente a una plataforma transistor que mejoro mas rapido y tenia
+    un espacio de aplicaciones e inversion mayor.
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
