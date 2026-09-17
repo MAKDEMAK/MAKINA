@@ -1,0 +1,38 @@
+id: f1-20260917-0401
+frente: front-1
+cycle_id: 2026-09-17T04
+tema_objeto: convolucion visual dentro de sensor optoelectronico memristivo autoalimentado
+afirmacion_principal:
+  HECHO: "Un memristor optoelectronico Ag/Sb2Se3/FTO integra deteccion optica, preprocesamiento analogico y almacenamiento de pesos, y permite convolucion dentro del sensor sin energia electrica de operaciones MAC."
+  HIPOTESIS: "Integrar deteccion y convolucion en el mismo dispositivo puede reducir de forma material el movimiento de datos y energia de vision neuromorfica."
+  INTERPRETACION: "La capacidad nueva relevante es desplazar una operacion espacial aprendida desde computacion digital separada hacia la propia respuesta fisica programable del sensor."
+capacidad_nueva: convolucion visual programable en el propio sensor con fotorespuesta autoalimentada y almacenamiento sinaptico local
+mecanismo_o_principio: "La heteroestructura Ag/Sb2Se3/FTO combina conmutacion memristiva bipolar y fotorespuesta programable por estado; estados conductivos almacenan pesos y la iluminacion produce respuestas que realizan la convolucion fisicamente antes de la red de spikes."
+dominio: neuromorfica / vision / in-sensor computing
+fuentes:
+  - url: "https://doi.org/10.1021/acsmaterialslett.5c01557"
+    titulo: "In-Sensor Vision Convolution Based on Self-Powered Optoelectronic Memristors for Energy-Efficient Binarized Spiking Neural Networks"
+    tipo: paper experimental revisado por pares, ACS Materials Letters
+    fecha: 2026-03-12
+nivel_evidencia: A
+datos_cuantitativos:
+  - "98.09% accuracy con convolucion experimental integrada en BSNN; 98.42% para BSNN software de referencia."
+  - "1.4 uJ de energia total de red reportada; 97.10% menor que CNN full-precision de referencia."
+  - "endurance >500 ciclos."
+condiciones_de_prueba: "Dispositivos Ag/Sb2Se3/FTO caracterizados experimentalmente; la convolucion fisica medida se incorpora a una binarized spiking neural network para evaluacion de clasificacion."
+requiere_computacion_digital: parcial
+requiere_alimentacion: parcial
+tipo_de_sensado: optico
+tipo_de_memoria_o_estado: estado resistivo memristivo no volatil / pesos sinapticos
+tipo_de_adaptacion: pesos programables; no se demuestra aprendizaje autonomo dentro del sensor
+tipo_de_actuacion: ninguna
+madurez_tecnica: demostracion experimental de dispositivo e integracion funcional de laboratorio
+limitaciones:
+  - "La afirmacion de autoalimentacion aplica a la fotorespuesta/convolucion del sensor, no implica que toda la BSNN carezca de alimentacion."
+  - "La comparacion energetica reportada es contra una CNN full-precision y no aisla todos los costes perifericos de un sistema completo."
+  - "Endurance superior a 500 ciclos sigue siendo modesta frente a requisitos de muchas memorias comerciales."
+contradicciones:
+  - "La precision 98.09% queda ligeramente por debajo del 98.42% de la BSNN software; la ventaja demostrada es principalmente integracion/energia, no mejora de exactitud."
+etiquetas_neutrales: [optoelectronic-memristor, in-sensor-computing, convolution, self-powered-photoresponse, spiking-neural-network, analog-preprocessing]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
