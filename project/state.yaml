@@ -6,24 +6,24 @@ active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.95
-    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701]
+    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001, f1-20260917-0002, f3-20260917-0001, f1-20260917-0101, f3-20260917-0101, f1-20260917-0301, f3-20260917-0301, f3-20260917-0401, f3-20260917-0701, f3-20260917-0901]
     current_architecture: "physical input -> geometry/material transduction or preprocessing -> physical/distributed state -> externally readable state"
     success_criterion: "Entrada fisica produce estado o representacion reproducible con rango, ambiguedad, persistencia cuando aplique y falsos cambios cuantificados."
-    next_action: "Mantener M3 y medir el prototipo existente. F3-0701 refuerza memoria material pasiva e irreversible, pero no mide el artefacto del repo para M4."
+    next_action: "Mantener M3 y medir el prototipo existente. F3-0901 agrega transduccion mecano-optica localizada en tiempo real, pero intensidad depende de concentracion y tasa de carga y no satisface M4 del artefacto existente."
   - id: embodied-dynamics-computation
     maturity: M1
     confidence: 0.90
     evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301, f1-20260917-0701]
     current_architecture: "physical dynamics -> distributed transient state -> readout"
     success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
-    next_action: "No promover: F1-0701 aporta un resonador PZT con 98.5% en paridad de 3 bits a 5000 bit/s, pero aun falta ejecutar un benchmark comun entre sustratos."
+    next_action: "No promover: falta ejecutar un benchmark comun entre sustratos."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
-    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101, f1-20260917-0002]
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101, f1-20260917-0002, f1-20260917-0901]
     current_architecture: "temporal signal -> local transduction/state or event encoder -> common event task -> metrics"
     success_criterion: "Conservar >=95% del score digital o mejorarlo y reducir >=10x volumen transferido; separar energia local y periferica."
-    next_action: "Ejecutar benchmark y tests existentes antes de M4. F1-0701 es evidencia temporal relevante, pero su tarea de paridad no satisface por si sola el criterio comun del modulo."
+    next_action: "Ejecutar benchmark y tests existentes antes de M4. F1-0901 refuerza integracion sensor-estado-computo, pero sus ~25.5 fJ/spike no son energia end-to-end y mantiene preprocesamiento/readout externo."
 waiting_modules:
   - id: legacy-noninvasive-observability
     evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301]
@@ -39,7 +39,7 @@ archived_modules:
   - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
   - {id: synchronized-facsimile-path, reason: "sin traduccion funcional suficiente"}
   - {id: differential-computing-precedents, reason: "deduplicado; sin necesidad arquitectonica actual"}
-  - {id: magnetic-mobile-state-precedent, reason: "deduplicado"}
+  - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-20260917-0901], reason: "deduplicado; F2-0901 confirma comercializacion, sustitucion y supervivencia de nicho sin nueva traduccion funcional al nucleo"}
   - {id: parametric-phase-logic-precedent, reason: "sustituido; sin traduccion funcional nueva"}
   - {id: saturable-magnetic-logic-precedent, reason: "sin traduccion funcional especifica"}
   - {id: mechanical-video-density-precedent, reason: "sin convergencia funcional"}
@@ -56,5 +56,5 @@ archived_modules:
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "demuestra multiplexacion temporal analogica en servicio experimental y posterior sustitucion por PCM/TDM; precedente historico valido pero sin traduccion funcional medible que desplace modulos activos"}
 current_architecture: "physical variable/event -> geometry/material transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar ejecucion/medicion de prototipos existentes. F1-0701 fortalece dinamica temporal fisica y F3-0701 memoria material pasiva, pero ninguno justifica un cuarto modulo ni una promocion de madurez."
-last_synthesized_cycle: 2026-09-17T07
+next_action: "Priorizar medicion de prototipos existentes. T09 refuerza sensor-computo temporal y transduccion mecano-optica, pero no satisface criterios de M4 ni justifica cuarto modulo."
+last_synthesized_cycle: 2026-09-17T09
