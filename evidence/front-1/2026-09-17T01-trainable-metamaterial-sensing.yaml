@@ -1,0 +1,28 @@
+id: f1-20260917-0101
+frente: front-1
+cycle_id: 2026-09-17T01
+tema_objeto: sensing intelligence as a trainable metamaterial property
+afirmacion_principal: "HECHO: la geometría de un metamaterial puede optimizarse junto con una red neuronal para preprocesar físicamente estímulos antes de la transducción electrónica; los autores reportan escenarios numéricos y experimentales con hasta 5x mejora de precisión o casi 10x menos sensores electrónicos. HIPÓTESIS: el cuerpo mecánico puede asumir parte creciente del cómputo perceptivo. INTERPRETACIÓN: la capacidad emergente es coentrenar materia/geometría y decodificador en vez de tratar el cuerpo como canal pasivo."
+capacidad_nueva: co-optimización diferenciable de geometría física para transformar estímulos en representaciones más separables con menos sensado electrónico
+mecanismo_o_principio: backpropagation de la pérdida de sensado hasta parámetros geométricos mediante simulación diferenciable; la deformación/vibración del metamaterial realiza preprocesamiento físico antes del clasificador
+dominio: inteligencia física / metamateriales / aprendizaje diferenciable
+fuentes:
+  - url: https://arxiv.org/abs/2605.23967
+    titulo: Sensing Intelligence as a Trainable Metamaterial Property
+    tipo: preprint original con escenarios numéricos y experimentales
+    fecha: 2026-06-22
+nivel_evidencia: B
+datos_cuantitativos: "hasta 5x mejora en precisión de sensado; reducción del número de sensores electrónicos cercana a un orden de magnitud, según el preprint"
+condiciones_de_prueba: escenarios de sensado numéricos y experimentales; optimización de geometría mediante simulación diferenciable y decodificación neuronal
+requiere_computacion_digital: si
+requiere_alimentacion: parcial
+tipo_de_sensado: deformación/vibración física transformada por geometría y posteriormente transducida
+tipo_de_memoria_o_estado: estado mecánico instantáneo/distribuido; no se demuestra memoria persistente como capacidad central
+tipo_de_adaptacion: geometría optimizada offline por gradiente junto al sistema de inferencia
+tipo_de_actuacion: ninguna requerida durante inferencia; respuesta mecánica pasiva del cuerpo
+madurez_tecnica: demostración experimental de investigación; preprint, no evidencia de despliegue práctico
+limitaciones: requiere entrenamiento digital y modelo diferenciable durante diseño; el beneficio depende de tarea y correspondencia simulación-realidad; no elimina el decodificador ni todos los sensores
+contradicciones: no demuestra inteligencia autónoma ni aprendizaje físico online; la geometría queda fija tras fabricación y el cómputo neuronal sigue siendo parte del sistema
+etiquetas_neutrales: [metamaterial, physical-preprocessing, differentiable-design, sensor-reduction, embodied-sensing]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
