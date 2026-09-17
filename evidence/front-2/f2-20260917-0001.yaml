@@ -1,0 +1,58 @@
+id: f2-20260917-0001
+frente: front-2
+cycle_id: 2026-09-17T00
+tema_objeto: videodisco analógico de lectura capacitiva por contacto
+afirmacion_principal: "HECHO DOCUMENTADO: RCA llevó CED/SelectaVision desde investigación iniciada en 1964 hasta un producto comercial en 1981 que almacenaba video analógico de alta densidad en un disco conductivo y lo leía mediante variaciones de capacitancia entre disco y stylus. El camino funcionó técnicamente pero llegó tarde y fue sustituido en consumo por videocassette grabable y, en videodisco, por lectura óptica. INTERPRETACIÓN: el principio técnico no continuado como plataforma dominante fue usar una interfaz mecánica de guiado por surco junto con transducción eléctrica capacitiva de variaciones submicrométricas, separando contacto mecánico de lectura puramente mecánica."
+nombre_proyecto_o_artefacto: "RCA Capacitance Electronic Disc (CED) / SelectaVision VideoDisc"
+periodo_historico: "1964-1986; comercialización 1981-1984 para reproductores y hasta 1986 para discos"
+pais_contexto: "Estados Unidos"
+disciplina: "electrónica de consumo; almacenamiento audiovisual; transducción capacitiva; fabricación de precisión"
+problema_original: "Distribuir películas y video doméstico pregrabado en un medio replicable por prensado, con reproductor de consumo relativamente simple."
+principio_tecnico: "Disco de PVC conductivo con surco de alta densidad; un stylus de diamante con electrodo sigue el surco y detecta cambios extremadamente pequeños de capacitancia producidos por las modulaciones del fondo. La señal FM recuperada se procesa electrónicamente."
+estado_historico: sustitucion
+resultado_real_alcanzado: "Producto comercial. El modelo introductorio SFT100 ofrecía 2 h totales (1 h por lado) en disco de 30.2 cm, 450 rpm NTSC, caddy protector y lectura capacitiva; la cronología técnica documenta imagen reconocible en 1970, 20 min/lado en 1973, 30 min/lado en 1975 y 1 h/lado en 1978 antes del lanzamiento de 1981."
+causa_documentada: "El desarrollo se prolongó hasta 1981. La contaminación, huellas, polvo y rayaduras obligaron al caddy; el contacto físico mantuvo sensibilidad al estado del disco. Para entonces VHS ofrecía grabación doméstica, menor precio de medios y una biblioteca/mercado más fuerte. RCA terminó la venta de reproductores en 1984 tras ventas acumuladas de alrededor de 550000 unidades y grandes pérdidas."
+causas_alternativas:
+  - "Retrasos de ingeniería y gestión redujeron la ventana competitiva: RCA anunció previamente lanzamientos que no se materializaron."
+  - "La duración evolucionó de 20-30 min por lado a 60 min por lado, pero películas de más de dos horas requerían más de un disco."
+  - "LaserDisc ofrecía una ruta de lectura sin contacto óptico, evitando parte del desgaste/contaminación inherente al stylus."
+camino_que_lo_desplazo_si_existe: "Principalmente VHS/Betamax en video doméstico por grababilidad y ecosistema; LaserDisc como alternativa de videodisco de lectura óptica."
+fuentes:
+  - url: "https://sid.onlinelibrary.wiley.com/doi/full/10.1002/j.2637-496X.1982.tb05003.x"
+    titulo: "Six Million Video Discs in 1982"
+    tipo: "artículo técnico contemporáneo / Information Display"
+    fecha: "1982"
+  - url: "https://spectrum.ieee.org/rca-videodisc"
+    titulo: "RCA VideoDisc's Legacy: Scanning Capacitance Microscope"
+    tipo: "historia técnica IEEE Spectrum basada en archivos y legado de RCA"
+    fecha: "2025"
+  - url: "https://americanhistory.si.edu/collections/search/object/nmah_1201055"
+    titulo: "RCA model SFT-100W SelectaVision video disc player"
+    tipo: "colección institucional / Smithsonian National Museum of American History"
+    fecha: desconocida
+nivel_evidencia: A
+datos_cuantitativos:
+  - "SFT100: 2 h totales, 1 h/lado; disco 30.2 cm; 35 W; 9.1 kg."
+  - "Cronología RCA: 1973 20 min/lado y 1600 surcos/cm; 1975 30 min/lado y 2200 surcos/cm; 1978 1 h/lado y 3800 surcos/cm."
+  - "Lectura: variaciones de capacitancia del orden de femtofaradios; electrónica del stylus alrededor de 900-910 MHz."
+  - "Aproximadamente 550000 reproductores vendidos antes de terminar hardware en 1984."
+limitaciones:
+  - "Medio de solo reproducción: no resolvía la grabación doméstica que ofrecía VCR."
+  - "Lectura por contacto y densidad elevada hacían crítica la contaminación y el desgaste; requirió caddy."
+  - "60 min/lado obligaba a voltear o usar varios discos en contenido largo."
+contradicciones:
+  - "No debe clasificarse como fracaso técnico absoluto: llegó a fabricación masiva y mercado, y alcanzó la especificación de una hora por lado."
+  - "Tampoco fue simplemente desplazado por LaserDisc: en mercado doméstico el competidor decisivo fue el videocassette, especialmente VHS."
+incertidumbres:
+  - "Las estimaciones públicas del coste/pérdida total del programa varían aproximadamente entre US$500 y US$650 millones según fuente y criterio contable."
+  - "La fecha exacta de cierre depende de distinguir fin de reproductores (1984) de producción de discos (1986)."
+etiquetas_neutrales:
+  - almacenamiento_analogico
+  - lectura_capacitiva
+  - contacto_mecanico
+  - videodisco
+  - transduccion
+  - sustitucion
+  - fabricacion_alta_densidad
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
