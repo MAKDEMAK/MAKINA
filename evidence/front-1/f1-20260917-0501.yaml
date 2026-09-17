@@ -1,0 +1,37 @@
+id: f1-20260917-0501
+frente: front-1
+cycle_id: 2026-09-17T05
+tema_objeto: aprendizaje neuromorfico analogico multimodal autoalimentado
+afirmacion_principal:
+  HECHO: "Un sistema experimental compuesto por sensores y memristores realiza sensado multimodal, codificacion en spikes y aprendizaje no supervisado enteramente en hardware analogico, sin circuiteria digital ni alimentacion externa."
+  HIPOTESIS: "La separacion convencional entre sensor, codificador y memoria de aprendizaje no es necesaria para ciertas tareas multimodales de baja potencia."
+  INTERPRETACION: "La capacidad materialmente nueva es aprendizaje sensorial local impulsado directamente por energia de las propias señales ambientales, no solo inferencia preprogramada."
+capacidad_nueva: "fusion sensorial y aprendizaje no supervisado analogico in situ sin computacion digital ni fuente externa"
+mecanismo_o_principio: "memristores difusivos extraen correlaciones temporales y generan codificacion dinamica; memristores de deriva conservan pesos sinapticos no volatiles; las señales de sensores impulsan directamente el circuito"
+dominio: neuromorfica_analogica
+fuentes:
+  - url: https://doi.org/10.1038/s44460-026-00067-7
+    titulo: "Self-powered analogue neuromorphic system for multimodal sensing, encoding and learning with diffusive and drift memristors"
+    tipo: paper_original_revisado_por_pares
+    fecha: 2026-04-30
+nivel_evidencia: A
+datos_cuantitativos:
+  - "integracion de sensado, computacion, memoria y aprendizaje en una sola PCB"
+  - "opera sin circuiteria digital y sin alimentacion externa"
+condiciones_de_prueba: "demostracion experimental en PCB con multiples canales sensoriales; aprendizaje homo-sinaptico y hetero-sinaptico"
+requiere_computacion_digital: no
+requiere_alimentacion: no
+tipo_de_sensado: multimodal_analogico
+tipo_de_memoria_o_estado: "dinamica temporal volatil + pesos sinapticos no volatiles"
+tipo_de_adaptacion: "plasticidad homo-sinaptica y hetero-sinaptica; aprendizaje no supervisado"
+tipo_de_actuacion: ninguna_demostrada
+madurez_tecnica: prototipo_experimental
+limitaciones:
+  - "La demostracion es de laboratorio/PCB; no establece escalabilidad industrial."
+  - "La ausencia de alimentacion externa no implica energia cero: el sistema obtiene energia de las señales/sensores."
+  - "Variabilidad, fiabilidad y escalabilidad de arquitecturas memristivas siguen siendo limites generales para esta clase de sistemas."
+contradicciones:
+  - "No contradice que procesamiento digital pueda ser superior en flexibilidad o precision; demuestra que no es requisito funcional para las tareas ensayadas."
+etiquetas_neutrales: [memristor, analogico, neuromorfico, autoalimentado, multimodal, aprendizaje_no_supervisado, sensor_computacion_memoria]
+fecha_hallazgo: 2026-09-17T05:01:19-03:00
+fecha_revision: 2026-09-17T05:01:19-03:00
