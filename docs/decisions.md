@@ -52,3 +52,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** abrir un cuarto módulo de control mecánico pasivo o una línea independiente de memoria química acumulativa.
 - **Razón:** F1 demuestra sensado+decisión+reconfiguración mecánica sin electrónica, pero con lógica predeterminada; F3 demuestra memoria material acumulativa sin electrónica, pero no identifica de forma única la trayectoria térmica; ambos convergen funcionalmente con el módulo físico existente. FLODAC es continuidad histórica ya representada.
 - **Consecuencia:** el siguiente incremento de evidencia sigue siendo ejecutar y medir los prototipos M3 existentes antes de M4.
+
+## 2026-09-17 — cycle 19 consolidation
+- **Decisión:** fusionar `f1-20260917-1901` y `f3-20260917-1901` en `physical-state-interface`; deduplicar `f2-20260917-1901` dentro de `air-cushion-transport`. Mantener M3/M1/M3 y no crear prototipo nuevo.
+- **Evidencia:** `f1-20260917-1901`, `f2-20260917-1901`, `f3-20260917-1901`.
+- **Alternativa rechazada:** abrir un modulo iontronico independiente o promover memoria espacial de presion como cuarto modulo.
+- **Razón:** F1 aporta estado/plasticidad material multiescala por transporte ionico y F3 aporta transduccion+memoria espacial mecano-quimica; ambos amplian el mismo patron funcional de estado fisico ya activo. Aerotrain ya estaba representado y sigue sin traduccion funcional al nucleo.
+- **Consecuencia:** no M4; medir los artefactos M3 existentes sigue teniendo mayor valor de informacion que crear otro prototipo.
