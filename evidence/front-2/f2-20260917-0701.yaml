@@ -1,0 +1,94 @@
+id: f2-20260917-0701
+frente: front-2
+cycle_id: 2026-09-17T07
+tema_objeto: logica y memoria digital superconductora basada en cryotrons
+afirmacion_principal: >-
+  El cryotron fue una via fisicamente demostrada para construir logica y memoria digital mediante
+  conmutacion de superconductividad controlada magneticamente. Paso de dispositivos y circuitos
+  elementales a memorias y arreglos integrados experimentales, pero la arquitectura informatica
+  basada en cryotrons fue desplazada durante los anos 1960 por transistores y circuitos integrados
+  de silicio; partes del linaje superconductivo continuaron posteriormente por otras vias.
+nombre_proyecto_o_artefacto: Cryotron / cryotron recognition-unit and integrated cryotron arrays
+periodo_historico: 1953-1960s
+pais_contexto: Estados Unidos
+disciplina: computacion; electronica superconductora; microcircuitos
+problema_original: >-
+  Reducir drasticamente tamano, disipacion y numero de componentes de computadores digitales,
+  y construir logica y memoria de alta densidad antes de la consolidacion del circuito integrado
+  semiconductor.
+principio_tecnico: >-
+  Un campo magnetico generado por una corriente de control lleva un conductor superconductivo
+  por encima de su campo critico y lo conmuta al estado resistivo. La ganancia de corriente y
+  potencia permite encadenar cryotrons como elementos logicos activos; versiones de pelicula
+  delgada permitian fabricar arreglos integrados.
+estado_historico: sustitucion con prototipos funcionales y continuidad tecnologica parcial
+resultado_real_alcanzado:
+  hecho_documentado:
+    - En 1955 Dudley A. Buck documento el dispositivo, su ganancia y circuitos de computador basados en cryotrons en el Lincoln Laboratory Memorandum 6M-3843.
+    - Buck diseno flip-flops, compuertas, sumadores, acumuladores y otros circuitos binarios basados exclusivamente en cryotrons.
+    - Con patrocinio de la NSA se inicio una recognition unit de memoria direccionable por contenido propuesta con 75000 cryotrons; se construyo primero un arreglo de memoria de prueba.
+    - GE desarrollo cryotrons de pelicula delgada y posteriormente se construyo un computador experimental a partir de tres arreglos integrados de cryotrons.
+  testimonio: >-
+    La reconstruccion historica de IEEE Spectrum describe programas importantes de GE, IBM, RCA y
+    organismos militares estadounidenses inspirados por el trabajo de Buck antes del giro hacia silicio.
+  interpretacion: >-
+    No fue un concepto meramente especulativo ni un fracaso binario: el elemento, circuitos y arreglos
+    existieron, mientras que el computador general basado en esa familia no alcanzo una trayectoria
+    comercial sostenida.
+causa_documentada: >-
+  Los cryotrons iniciales conmutaban lentamente y requerian refrigeracion criogenica con helio liquido.
+  Durante los anos 1960 el rapido desarrollo de microchips de silicio redujo el coste de la electronica
+  y desplazo a los programas de cryotron para logica y memoria digital general.
+causas_alternativas:
+  - La muerte de Dudley Buck en 1959 interrumpio su programa personal, pero no explica por si sola el abandono porque GE, IBM, RCA y otros continuaron investigando cryotrons.
+  - La exigencia criogenica imponia complejidad de sistema incluso cuando el elemento logico disipaba poca potencia.
+  - La velocidad de los primeros dispositivos wire-wound era apenas superior a la de reles electromecanicos; la miniaturizacion en pelicula delgada mejoro ese limite, por lo que no debe presentarse como una incapacidad intrinseca absoluta.
+camino_que_lo_desplazo_si_existe: >-
+  Transistores y circuitos integrados de silicio para logica, junto con memoria de nucleos magneticos
+  y posteriormente memoria semiconductor. En computacion superconductora el linaje no desaparecio:
+  continuaron Josephson junctions y, mucho despues, dispositivos nano-cryotron relacionados pero no
+  identicos al cryotron magnetico original.
+fuentes:
+  - url: https://dome.mit.edu/handle/1721.3/40618
+    titulo: The cryotron - a superconductive computer component
+    tipo: documento contemporaneo / Lincoln Laboratory memorandum
+    fecha: 1955-08-22
+  - url: https://spectrum.ieee.org/dudley-bucks-forgotten-cryotron-computer
+    titulo: Dudley Buck's Forgotten Cryotron Computer
+    tipo: reconstruccion historica tecnica / IEEE Spectrum
+    fecha: 2014
+  - url: https://www.aps.org/apsnews/2012/02/1957-mit-introduces-first-cryotron
+    titulo: 'February 6, 1957: MIT introduces the first cryotron'
+    tipo: historia institucional / American Physical Society
+    fecha: 2012-02-01
+  - url: https://news.mit.edu/2021/nanowire-superconducting-transistor-0211
+    titulo: Nanowire could provide a stable, easy-to-make superconducting transistor
+    tipo: fuente institucional retrospectiva / MIT
+    fecha: 2021-02-11
+nivel_evidencia: A
+datos_cuantitativos:
+  - Recognition unit propuesta: 75000 cryotrons, aproximadamente 3.2 kB.
+  - Una pelicula superconductora experimental de Buck conmutaba en aproximadamente 0.1 microsegundos.
+  - El computador imaginado por Buck buscaba aproximadamente la capacidad de Whirlwind, cuyo sistema ocupaba varias salas y consumia cerca de 150 kW.
+limitaciones:
+  - Refrigeracion con helio liquido cercana al cero absoluto.
+  - Los primeros cryotrons wire-wound tenian velocidad de conmutacion baja.
+  - La recognition unit completa de 75000 elementos no esta documentada en las fuentes consultadas como sistema terminado.
+  - El computador experimental posterior demuestra integracion, no viabilidad economica o escalado industrial.
+contradicciones:
+  - La narrativa de que el cryotron simplemente desaparecio es incorrecta: tecnologias superconductoras derivadas o relacionadas continuaron, aunque la arquitectura original perdio la competencia por computacion general.
+  - Atribuir el final exclusivamente a la muerte de Buck contradice la continuidad posterior de programas en GE, IBM, RCA y otros laboratorios.
+incertidumbres:
+  - Las fuentes consultadas no fijan aqui una fecha unica de cancelacion para todos los programas industriales; el desplazamiento ocurrio de forma distribuida durante los anos 1960.
+  - La relacion genealogica entre cryotron magnetico, Josephson logic y nano-cryotron debe tratarse como continuidad parcial, no equivalencia tecnica.
+etiquetas_neutrales:
+  - superconductividad
+  - logica_fisica
+  - memoria
+  - conmutacion_magnetica
+  - criogenia
+  - pelicula_delgada
+  - sustitucion
+  - prototipo_no_escalado
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
