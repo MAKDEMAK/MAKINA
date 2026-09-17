@@ -1,0 +1,43 @@
+id: f2-20260917-0801
+frente: front-2
+cycle_id: 2026-09-17T08
+tema_objeto: computador digital de lógica fluídica sin partes móviles
+afirmacion_principal: "HECHO DOCUMENTADO: FLODAC demostró en 1964 que un computador digital programable podía construirse con elementos lógicos puramente fluídicos, usando chorros y amplificadores sin partes móviles; la ruta no escaló como computación general y fue desplazada por electrónica digital, aunque la fluídica continuó en nichos de control y sensado."
+nombre_proyecto_o_artefacto: FLODAC (Fluid Operated Digital Automatic Computer)
+periodo_historico: 1963-1964
+pais_contexto: Estados Unidos
+disciplina: [computacion, fluidica, control]
+problema_original: "Realizar lógica y computación digital robusta mediante fluidos, evitando componentes eléctricos y partes mecánicas móviles."
+principio_tecnico: "Chorros de fluido y amplificadores fluídicos bistables implementan conmutación, ganancia, memoria y puertas lógicas; una corriente de control débil desvía una corriente de potencia."
+estado_historico: prototipo_no_escalado
+resultado_real_alcanzado: "UNIVAC construyó un computador experimental y Gluskin, Jacoby y Reader publicaron FLODAC: a pure fluid digital computer en AFIPS Fall Joint Computer Conference de 1964, pp. 631-641. Fuentes históricas secundarias lo describen como un prototipo funcional; cifras de 250 puertas NOR, palabra de 4 bits y memoria de 4 palabras aparecen en fuentes retrospectivas y se conservan aquí con cautela hasta verificar el texto completo primario."
+causa_documentada: "La literatura posterior sobre control neumático documenta que durante los años 1970 la electrónica entró al mercado con menor coste y desplazó gran parte de la lógica fluídica; también identifica necesidad de aire limpio como limitación práctica de instalaciones tempranas."
+causas_alternativas: ["menor velocidad que la electrónica", "dificultad de miniaturizacion y escalado", "contaminacion/calidad del fluido de trabajo", "rápida mejora de circuitos integrados"]
+camino_que_lo_desplazo_si_existe: "circuitos integrados electrónicos y control digital electrónico"
+fuentes:
+  - url: "https://doi.org/10.1145/1464052.1464112"
+    titulo: "FLODAC: a pure fluid digital computer"
+    tipo: "proceedings contemporaneo / fuente primaria"
+    fecha: "1964-10-27"
+  - url: "https://miriam-english.org/files/fluidics/FluidControlDevices.html"
+    titulo: "Fluid Control Devices"
+    tipo: "revista tecnica contemporanea, Scientific American (copia OCR)"
+    fecha: "1964-12"
+  - url: "https://magazine.asme.org/issues/march-2025/vault-1985-pneumatic-logic-present-and-future"
+    titulo: "Pneumatic Logic—Present and Future (1985 archive)"
+    tipo: "testimonio tecnico retrospectivo ASME"
+    fecha: "1985"
+nivel_evidencia: A
+datos_cuantitativos:
+  publicacion_primaria: "AFIPS 1964, paginas 631-641"
+  cifras_retrospectivas_no_confirmadas_en_primaria: "250 puertas NOR; palabra 4-bit; memoria 4 palabras"
+limitaciones: "Las cifras arquitectónicas detalladas proceden de fuentes retrospectivas accesibles, no del texto completo del paper primario consultado en esta ronda. No se atribuye la desaparición total de la fluídica: sobrevivió en aplicaciones especializadas."
+contradicciones: "La narrativa 'fluidics failed/disappeared' es demasiado fuerte: controles fluídicos persistieron en sensado, instrumentación, ambientes explosivos y otros nichos; además el principio reapareció posteriormente en microfluídica."
+incertidumbres: "No se verificó en fuente primaria accesible el rendimiento de reloj ni todas las cifras de arquitectura del prototipo."
+etiquetas_neutrales: [fluidica, logica_sin_electronica, computacion_no_convencional, prototipo_no_escalado, sustitucion, control]
+separacion_epistemica:
+  hecho_documentado: "Existencia y publicación contemporánea de FLODAC como pure fluid digital computer; auge de dispositivos fluídicos sin partes móviles durante los 1960."
+  testimonio: "ASME retrospectivamente atribuye el declive a requisitos prácticos como aire limpio y a la entrada de electrónica barata durante los 1970."
+  interpretacion: "FLODAC representa una bifurcación técnica real hacia computación digital materialmente implementada por dinámica de fluidos que no escaló como arquitectura general, más que un concepto meramente especulativo."
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
