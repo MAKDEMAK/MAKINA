@@ -1,0 +1,46 @@
+id: f3-20260917-1301
+frente: front-3
+cycle_id: 2026-09-17T13
+tema_objeto: sensado inalámbrico pasivo bidimensional de esfuerzo mediante efecto magnetostrictivo inverso
+afirmacion_principal:
+  HECHO: "Material magnetostrictivo adherido a una estructura puede traducir tensión y torsión en cambios inalámbricamente interrogables de armónicos magnéticos, sin alimentación local del sensor."
+  HIPOTESIS: "La misma mediación puede generalizarse a observación de carga en estructuras existentes cuando sea posible adherir el elemento y calibrar la geometría."
+  INTERPRETACION: "Es un principio de observabilidad física pasiva: el estado mecánico altera permeabilidad magnética y el lector externo recupera esa alteración."
+funcion: medir
+principio_de_mediacion: "Efecto magnetostrictivo inverso: la carga cambia la permeabilidad del material; una excitación magnética externa permite leer inalámbricamente cambios en amplitud de armónicos superiores."
+variable_fisica_entrada: "tensión axial y torque"
+señal_o_estado_salida: "amplitud de armónicos magnéticos dependiente de carga"
+modalidad: magnetica
+invasividad: minima
+requiere_contacto: si
+requiere_electronica: no
+requiere_computacion_digital: opcional
+resolucion_o_precision: "error tras calibración/desacoplamiento: 3.4% para Fx y 4.2% para Tx bajo carga compuesta de 35 N y 3.5 N·m"
+latencia: desconocida
+condiciones_de_prueba: "prototipo con tres piezas magnetostrictivas sobre base elastomérica; rangos efectivos 0-40 N tensión y 0-4 N·m torque; ensayo compuesto 35 N + 3.5 N·m"
+fuentes:
+  - url: "https://doi.org/10.3390/s19010135"
+    titulo: "A Two-Dimensional Wireless and Passive Sensor for Stress Monitoring"
+    tipo: paper experimental
+    fecha: 2019-01-02
+  - url: "https://pubmed.ncbi.nlm.nih.gov/30609763/"
+    titulo: "A Two-Dimensional Wireless and Passive Sensor for Stress Monitoring"
+    tipo: indice institucional
+    fecha: 2019-01-02
+nivel_evidencia: A
+datos_cuantitativos:
+  rango_tension_N: "0-40"
+  rango_torque_Nm: "0-4"
+  error_Fx_pct: 3.4
+  error_Tx_pct: 4.2
+  carga_compuesta_validacion: "35 N; 3.5 N·m"
+mecanismo_o_principio: "La deformación modifica la permeabilidad de Metglas/material magnetostrictivo; la respuesta magnética no lineal bajo interrogación externa codifica componentes de carga."
+limitaciones:
+  - "Requiere adhesión mecánica del material sensor y calibración/desacoplamiento."
+  - "La validación reportada corresponde a un prototipo y rangos de carga definidos; no demuestra universalidad entre geometrías/materiales."
+  - "La pasividad corresponde al elemento sensor; la interrogación requiere campo y lector externos."
+contradicciones:
+  - "'Wireless/passive' no implica infraestructura totalmente sin energía: el lector externo aporta interrogación y adquisición."
+etiquetas_neutrales: [magnetoelastico, magnetostriccion_inversa, esfuerzo, torque, wireless, pasivo, observabilidad]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
