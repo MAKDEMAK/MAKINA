@@ -2,56 +2,39 @@ core:
   title: MAKINA
   status: active
   description: "Ecosistema experimental para trasladar sensado, estado, memoria, adaptacion y computacion hacia la capa fisica cuando la evidencia lo justifique."
-
 active_modules:
   - id: physical-state-interface
     maturity: M3
     confidence: 0.94
-    evidence_ids: [f1-20260915-2101, f1-20260915-2103, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260915-22-wiegand-counter, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916-02-lc-photonic-memory, f3-20260916-02-hygromechanical-indicator, f3-20260916-03-adhesive-tape-latching-memory, f3-20260916T04-passive-tti, f3-20260916T07-passive-impact-threshold-memory, f3-20260916-0901, f1-20260916-1001, f3-20260916-1601, f1-20260916-1701, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001]
-    success_criterion: "Una entrada fisica debe producir un estado reproducible y verificable con umbral/rango documentado, persistencia medible y falsos cambios cuantificables; memorias de historia deben medir resolucion, destructividad y ambiguedad; escritura remota debe medir selectividad, error y energia."
-    next_action: "Mantener M3. F1-20 es continuacion/deduplicacion del metamaterial mecanico ADC ya incorporado: confirma reprogramacion estructural y logica, pero sigue sin cifras de precision, bits efectivos, velocidad o durabilidad necesarias para M4."
-
+    evidence_ids: [f1-20260915-2101, f3-20260915-21-passive-crack, f3-20260915-21-passive-rf-temp, f3-20260916-1601, f3-20260916-1701, f3-20260916-1801, f1-20260916-2001]
+    current_architecture: "physical input -> material transduction/state -> externally readable state"
+    success_criterion: "Entrada fisica produce estado reproducible con rango, persistencia y falsos cambios cuantificados."
+    next_action: "Mantener M3; ciclo 23 no aporta medicion del prototipo existente para M4."
   - id: embodied-dynamics-computation
     maturity: M1
-    confidence: 0.88
-    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260915-22-light-programmable-mechanical-logic, f1-20260916T00-mycelium-reservoir, f1-20260916T00-active-colloid-reservoir, f1-20260916-02-flare, f1-20260916-02-magnetic-self-learning, f1-20260916t03-zro2-aftj, f1-20260916t03-learning-shape-metamaterial, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916T04-hydrogel-fluidic-memristor, f1-20260916T04-ti3c2tx-homogeneous-rc, f1-20260916-0901, f1-20260916-1501, f1-20260916-1601, f1-20260916-1801, f1-20260916-1901, f1-20260916-2001, f1-20260916-2101]
-    success_criterion: "Definir una tarea computacional comun y medible sobre al menos dos clases de sustrato fisico y compararla con referencia digital usando la misma metrica, separando inferencia, memoria, aprendizaje, reset y perifericos."
-    next_action: "No promover. F1-21 refuerza una linea ya presente (F1-15/F1-18): sensado, codificacion temporal, fusion y aprendizaje analogicos autoalimentados en PCB. Sigue faltando benchmark comun y evidencia de escalado; el microcontrolador externo de sincronizacion impide interpretar la prueba como autonomia total."
-
+    confidence: 0.89
+    evidence_ids: [f1-20260915-22-wave-metamaterial-robot, f1-20260916T00-mycelium-reservoir, f1-20260916T04-pneumatic-soft-robot-prc, f1-20260916-1601, f1-20260916-2101, f1-20260916-2301]
+    current_architecture: "physical dynamics -> distributed transient state -> readout"
+    success_criterion: "Misma tarea computacional sobre al menos dos sustratos fisicos, comparada con referencia digital mediante la misma metrica."
+    next_action: "No promover: F1-23 confirma memoria/no linealidad mecanicas y >85% de rendimiento con ~35% de variables de lectura en simulacion, pero falta benchmark comun."
   - id: temporal-in-sensor-processing
     maturity: M3
     confidence: 0.90
-    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f1-20260916-0901, f3-20260916-1401, f1-20260916-1501, f1-20260916-1801, f1-20260916-2101]
-    current_architecture: "synthetic temporal signal -> uniform reference | threshold-event encoder | latency+fading-state encoder -> common event task -> transfer/error/score metrics"
-    success_criterion: "Sobre una misma señal y tarea, la cadena fisica/analogica debe conservar >=95% del score de referencia digital o mejorarlo y reducir >=10x el volumen transferido; reportar energia local y periferica por separado."
-    next_action: "Ejecutar src/temporal_benchmark.py y tests/test_temporal_benchmark.py en entorno reproducible y persistir resultados antes de M4; F1-21 confirma que latencia puede ser el codigo fisico, pero no sustituye el benchmark."
-
+    evidence_ids: [f1-20260915-2102, f3-20260915-21-event-vision, f3-20260916T04-event-vibration, f3-20260916-1401, f1-20260916-2101]
+    current_architecture: "temporal signal -> event/latency encoder -> common event task -> metrics"
+    success_criterion: "Conservar >=95% del score digital o mejorarlo y reducir >=10x volumen transferido; separar energia local y periferica."
+    next_action: "Ejecutar benchmark y tests existentes antes de M4; ciclo 23 no cambia este requisito."
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-2026-09-16T00-clamp-on-ultrasonic-flow, f3-20260916-02-motor-stray-flux-state, f3-20260915-20-self-powered-triboelectric-vibration, f3-2026-09-16T06-triboelectric-vibration, f3-20260916-1001, f3-20260916-1501, f3-20260916-1901, f3-20260916-2001]
-    reason: "F3-21 produjo cero hallazgos persistidos; no cambia la evaluacion. F3-20 agrega observabilidad espacial basada en modelo, pero requiere FEM/sensores de contacto y no resuelve una variable objetivo comun ni presupuesto de incertidumbre transferible entre maquinas."
-
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301]
+    reason: "F3-23 agrega deformacion pasiva magnetoelastica con 37100 Hz/strain, pero requiere fijacion e instrumentacion externa y aun no existe variable objetivo comun ni presupuesto de incertidumbre transferible."
 archived_modules:
-  - {id: air-cushion-transport, evidence_ids: [f2-20260915-21-aerotrain], reason: "Sin convergencia funcional suficiente con el nucleo."}
-  - {id: networked-management-precedents, evidence_ids: [f2-20260915T22-cybersyn, f2-20260915T22-minitel], reason: "Redes/coordinacion sin traduccion funcional directa al nucleo fisico."}
-  - {id: synchronized-facsimile-path, evidence_ids: [f2-2026-09-16T00-caselli-pantelegraph], reason: "Barrido/sincronizacion historicos sin traduccion funcional suficiente."}
-  - {id: differential-computing-precedents, evidence_ids: [f2-2026-09-16T00-nordsieck-differential-analyzer, f2-2026-09-16T00-maddida-dda, f2-20260916-1001, f2-20260916-2001], reason: "F2-20 es continuacion/deduplicacion del integrador hidraulico ya registrado: confirma produccion y sustitucion digital, sin necesidad arquitectonica actual."}
-  - {id: magnetic-mobile-state-precedent, evidence_ids: [f2-20260915T22-magnetic-bubble-memory, f2-2026-09-16T02-magnetic-bubble-memory], reason: "Precedente de estado magnetico fisico; deduplicado."}
-  - {id: parametric-phase-logic-precedent, evidence_ids: [f2-2026-09-16T03-parametron, f2-20260916-1501, f2-20260916-1901], reason: "F2-19 confirma linea industrial y sustitucion por transistor; no aporta traduccion funcional nueva al nucleo y queda deduplicado."}
-  - {id: saturable-magnetic-logic-precedent, evidence_ids: [f2-2026-09-16T04-magnetic-amplifier-computing], reason: "Logica por saturacion sin traduccion funcional especifica."}
-  - {id: mechanical-video-density-precedent, evidence_ids: [f2-2026-09-16T04-ted-mechanical-videodisc], reason: "Sin convergencia funcional."}
-  - {id: integrated-office-automation-precedent, evidence_ids: [f2-2026-09-16T06-hofgaard-office-machine, f2-20260916-1601], reason: "Sin traduccion funcional medible al nucleo."}
-  - {id: cartridge-decoupled-precision-transport, evidence_ids: [f2-2026-09-16T07-elcaset], reason: "Sin convergencia medible."}
-  - {id: subharmonic-synthesis-precedent, evidence_ids: [f2-20260916-0801], reason: "Sin traduccion funcional medible."}
-  - {id: dynamic-track-following-precedent, evidence_ids: [f2-20260915-21-video2000, f2-20260916-0901], reason: "Precedente de feedback medio-transductor, sin promover modulo."}
-  - {id: balanced-ternary-precedent, evidence_ids: [f2-20260915-21-setun, f2-20260916-1401], reason: "Continuacion deduplicada; sin traduccion funcional nueva."}
-  - {id: fluidic-general-computing-precedent, evidence_ids: [f2-20260916-1701, f2-20260916-2101], reason: "F2-21 confirma/deduplica FLODAC: computacion fluida general funcional pero limitada por propagacion y sustituida por electronica; no crea necesidad arquitectonica nueva."}
-  - {id: domestic-humanoid-generalist-precedent, evidence_ids: [f2-20260916-1801], reason: "Prototipos humanoides teleoperados con tareas limitadas; sin traduccion funcional medible al nucleo y sin evidencia de autonomia general demostrada."}
-
-current_architecture: "physical variable/event -> transduction or direct material response -> threshold/continuous accumulation or sparse/latency physical encoding -> persistent/fading physical state -> optional local association/learning -> externally observable event/state -> optional physical dynamics/logic -> output/action; characterize information preserved, persistence, reset, ambiguity, selectivity, robustness, local energy and total peripheral cost"
-last_synthesized_cycle: 2026-09-16T21
-
-rules:
-  max_active_modules: 3
-  promotion: {M0: signal, M1: supported_convergence, M2: functional_specification, M3: real_minimum_prototype, M4: test_or_measurement, M5: demonstrable_system}
-  death_criteria: [insufficient_evidence, aesthetic_or_verbal_only_relation, no_functional_translation, not_measurable, impractical_to_prototype, redundant, disproportionate_cost, contradicted_by_new_evidence, stagnant_without_path_to_M2_M3]
+  - id: mechanically-addressed-storage-precedent
+    evidence_ids: [f2-20260916-2301]
+    reason: "Direccionamiento mecanico granular demostrado, pero complejidad/dependabilidad perdieron frente al disco y no hay traduccion funcional medible al nucleo actual."
+  - id: prior-archived-lines
+    reason: "Conservadas en historial Git; ninguna es reactivada por ciclo 23."
+current_architecture: "physical variable/event -> transduction/direct response -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
+success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
+next_action: "Priorizar medicion de prototipos existentes sobre nueva documentacion."
+last_synthesized_cycle: 2026-09-16T23
