@@ -51,5 +51,16 @@ final_assessment:
   maturity_change: none
   new_prototype: false
   strongest_convergence: "physical-state-interface"
-  principal_blocker: "falta de ejecucion y medicion de los prototipos M3 existentes"
+  principal_blocker: "falta de medicion fisica; los sustitutos digitales fueron ejecutados y latency_fading fallo el criterio temporal"
   research_automations: disabled
+
+final_validation:
+  pytest: "15/16 passed"
+  physical_event_state: "14/14 passed; digital surrogate only"
+  temporal_threshold: "28.99x reduction, score 1.0, ~3 ms error; passes digital criterion"
+  temporal_latency_fading: "500x reduction, score 0.0, ~44.98 ms error; fails criterion"
+  maturity_change: none
+  artifacts:
+    - artifacts/f4-final-validation.json
+    - artifacts/temporal-benchmark/metrics.json
+    - artifacts/temporal-benchmark/comparison.csv
