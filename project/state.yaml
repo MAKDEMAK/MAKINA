@@ -1,6 +1,6 @@
 core:
   title: MAKINA
-  status: active
+  status: closed
   description: "Ecosistema experimental para trasladar sensado, estado, memoria, adaptacion y computacion hacia la capa fisica cuando la evidencia lo justifique."
 active_modules:
   - id: physical-state-interface
@@ -26,7 +26,7 @@ active_modules:
     next_action: "Ejecutar benchmark y tests existentes antes de M4."
 waiting_modules:
   - id: legacy-noninvasive-observability
-    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101, f3-20260917-1501, f3-20260917-1601, f3-20260917-1701]
+    evidence_ids: [f3-20260915-22-stray-flux, f3-20260915-22-laser-speckle, f3-20260916-2001, f3-20260916-2301, f3-20260917-1001, f3-20260917-1101, f3-20260917-1501, f3-20260917-1601, f3-20260917-1701, f3-20260917-2101]
     reason: "Ruta fuerte de observabilidad legacy, pero no desplaza un modulo activo y depende de calibracion/lectores externos segun modalidad."
   - id: implicit-analog-solver
     evidence_ids: [f1-20260917-0001]
@@ -38,7 +38,7 @@ waiting_modules:
     evidence_ids: [f1-20260917-1001]
     reason: "Computacion programable y autocorreccion demostradas, pero escala temporal y periferia impiden desplazar un modulo activo."
 archived_modules:
-  - {id: air-cushion-transport, evidence_ids: [f2-20260915-21-aerotrain, f2-20260917-1901], reason: "sin convergencia funcional; T19 triangula Aerotrain pero no aporta traduccion al nucleo"}
+  - {id: air-cushion-transport, evidence_ids: [f2-20260915-21-aerotrain, f2-20260917-1901, f2-20260917-2101], reason: "sin convergencia funcional; TALAV agrega una linea brasileña independiente de transporte guiado por colchon de aire, sin traduccion al nucleo"}
   - {id: networked-management-precedents, reason: "sin traduccion al nucleo fisico"}
   - {id: synchronized-facsimile-path, reason: "sin traduccion funcional suficiente"}
   - {id: differential-computing-precedents, reason: "deduplicado; sin necesidad arquitectonica actual"}
@@ -59,7 +59,8 @@ archived_modules:
   - {id: analog-pam-tdm-switching-precedent, evidence_ids: [f2-20260917-0401], reason: "precedente historico valido sin traduccion funcional medible"}
   - {id: insectothopter-fluidic-flight-precedent, evidence_ids: [f2-20260917-1501], reason: "sin convergencia funcional medible"}
   - {id: rasterized-videotex-precedent, evidence_ids: [f2-20260917-1701], reason: "sin traduccion funcional medible al nucleo"}
+  - {id: non-hilbertian-kernel-methods, evidence_ids: [f1-20260917-2101], reason: "capacidad matematica valida para kernels PSD sobre distancias no-CND, pero sin traduccion funcional defendible al nucleo fisico actual"}
 current_architecture: "physical variable/event -> geometry/material/ionic transduction or preprocessing -> physical state or dynamics -> observable readout -> optional logic/action; characterize information, persistence, reset, ambiguity, robustness and total peripheral cost"
 success_criterion: "Promover solo con criterio verificable y artefacto real cuando corresponda."
-next_action: "Priorizar medicion de prototipos M3. T19 refuerza physical-state-interface mediante plasticidad ionica multestado y memoria espacial pasiva de presion; Aerotrain es continuidad historica sin traduccion funcional."
-last_synthesized_cycle: 2026-09-17T19
+next_action: "Investigacion cerrada. Estado preservado como snapshot final; cualquier continuacion requiere reapertura explicita y nueva evidencia/medicion."
+last_synthesized_cycle: 2026-09-17T21
