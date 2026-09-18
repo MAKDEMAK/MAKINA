@@ -1,0 +1,51 @@
+id: f3-20260917-2101
+frente: front-3
+cycle_id: 2026-09-17T21
+tema_objeto: "espesor de recubrimientos no magnéticos sobre sustratos ferromagnéticos"
+afirmacion_principal: "Una sonda externa multifrecuencia de corrientes de Foucault puede convertir la interacción electromagnética con un sistema recubrimiento/sustrato en espesor estimado sin cortar ni penetrar la pieza; un método basado en inductancia insensible al lift-off reportó error de espesor dentro de 3% con separaciones de sonda de hasta 10 mm."
+funcion: medir
+principio_de_mediacion: "Excitación magnética alterna induce corrientes de Foucault; la impedancia/inductancia de la bobina cambia con separación, conductividad, permeabilidad y espesor. Rasgos multifrecuencia permiten estimar primero lift-off y luego invertir el espesor."
+variable_fisica_entrada: "espesor del recubrimiento y propiedades electromagnéticas del sistema recubrimiento/sustrato"
+señal_o_estado_salida: "inductancia/impedancia multifrecuencia; espesor estimado tras inversión"
+modalidad: "electromagnética / corrientes de Foucault multifrecuencia"
+invasividad: nula
+requiere_contacto: no
+requiere_electronica: si
+requiere_computacion_digital: si
+resolucion_o_precision: "error de espesor <=3% en el estudio experimental principal; error de lift-off <=0.2 mm aproximadamente; literatura relacionada reporta <0.02 mm para una sonda calibrada específica"
+latencia: "no cuantificada; el método principal se formula para recuperación online/embebida"
+condiciones_de_prueba: "recubrimientos no magnéticos de distintos materiales y espesores sobre acero DP1000; barrido multifrecuencia, con inversión de lift-off basada en alta frecuencia (incluido 500 kHz) y separaciones de sonda hasta 10 mm"
+fuentes:
+  - url: "https://doi.org/10.3390/s21020419"
+    titulo: "Evaluation of Coating Thickness Using Lift-Off Insensitivity of Eddy Current Sensor"
+    tipo: "paper experimental"
+    fecha: "2021-01-09"
+  - url: "https://doi.org/10.3233/JAE-141847"
+    titulo: "Absorbing coating thickness measurement based on lift-off effect of eddy current testing"
+    tipo: "paper experimental"
+    fecha: "2014-05-01"
+  - url: "https://www.iso.org/standard/72333.html"
+    titulo: "ISO 21968:2019 Non-magnetic metallic coatings on metallic and non-metallic basis materials — Measurement of coating thickness — Phase-sensitive eddy-current method"
+    tipo: "estándar/metrología"
+    fecha: "2019"
+nivel_evidencia: A
+datos_cuantitativos:
+  - "error de espesor controlado dentro de 3% con lift-off hasta 10 mm (Meng et al., 2021)"
+  - "error de lift-off controlado dentro de aproximadamente 0.2 mm para distintos espesores de recubrimiento (Meng et al., 2021)"
+  - "otro diseño experimental reportó error de espesor <0.02 mm para recubrimiento absorbente ferromagnético (Cheng et al., 2014)"
+mecanismo_o_principio: "La magnitud medida directamente es la respuesta electromagnética de la bobina (impedancia/inductancia). El espesor es una inferencia indirecta obtenida por inversión; separar sensibilidades mediante frecuencia permite tratar el lift-off como variable observable/compensable en vez de mero error."
+limitaciones:
+  - "conductividad y permeabilidad del material, geometría de la sonda, rugosidad, presión/posición de la sonda y lift-off alteran la respuesta"
+  - "la precisión depende del régimen de frecuencia y del modelo de inversión; a frecuencias altas aparecen efectos resonantes, de proximidad, parásitos y ruido Barkhausen"
+  - "el resultado experimental de <=3% no implica precisión universal para otros sistemas de materiales o geometrías"
+contradicciones:
+  - "ISO 21968 describe compensación convencional de lift-off típicamente hasta alrededor de 1 mm, mientras el método experimental multifrecuencia reporta inversión hasta 10 mm; no son capacidades directamente equivalentes porque usan diseños y algoritmos distintos."
+etiquetas_neutrales:
+  - eddy-current
+  - coating-thickness
+  - lift-off
+  - electromagnetic
+  - non-destructive-testing
+  - inverse-measurement
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
