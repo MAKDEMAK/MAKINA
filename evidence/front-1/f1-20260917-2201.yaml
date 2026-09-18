@@ -1,0 +1,61 @@
+id: f1-20260917-2201
+frente: front-1
+cycle_id: 2026-09-17T22
+tema_objeto: computacion_molecular_favorecida_termodinamicamente
+afirmacion_principal:
+  hecho: "Un computador molecular de ADN programable ejecuta algoritmos haciendo que el estado de salida correcto sea el equilibrio energeticamente favorecido, en vez de mantener el resultado mediante control cinetico fuera de equilibrio."
+  hipotesis: "El principio de programar paisajes de energia para que la respuesta sea el atractor termodinamico podria trasladarse a otros sustratos sinteticos distintos del ADN."
+  interpretacion: "La capacidad emergente es convertir relajacion espontanea hacia equilibrio en ejecucion computacional y correccion fisica de errores, desplazando parte del control desde circuitos/protocolos activos al paisaje energetico del material."
+capacidad_nueva: "Computacion molecular reprogramable y reutilizable cuyo resultado correcto emerge por relajacion termodinamica; demostro maquinas de estados finitos, hasta 50 bits de entrada y 100 bits de computo, sin subsistema explicito de correccion de errores por redundancia."
+mecanismo_o_principio: "Scaffolded DNA Computer (SDC): un scaffold 1D contiene posiciones de union; tiles/strands competidores codifican programa y datos. Coincidencias entre dominios vecinos son entalpicamente favorecidas y los mismatches tienen penalizacion energetica, por lo que ciclos reversibles de union/reemplazo conducen al estado objetivo de minima energia. Tiles en exceso sobre el scaffold y afinidades debiles facilitan ocupacion y correccion por reemplazo."
+dominio:
+  - computacion_no_convencional
+  - computacion_molecular
+  - termodinamica
+  - ADN
+fuentes:
+  - url: "https://doi.org/10.1038/s41586-026-10996-5"
+    titulo: "A thermodynamically favoured molecular computer"
+    tipo: paper_original_peer_reviewed
+    fecha: 2026-09-16
+nivel_evidencia: A
+datos_cuantitativos:
+  programas_demostrados: 10
+  computaciones_reportadas: ">700"
+  entrada_maxima_bits: 50
+  computo_maximo_bits: 100
+  ejemplo_escalado: "suma de dos numeros de 25 bits; 25 carry + 25 output = 100 bits de computo"
+  tiempo_instancias_pequenas: "30 s a <1 min en anneals super-rapidos; separacion clara de salidas"
+  rendimiento_anneal_tipico_N4_medio: "95.3% (s.d. 0.035)"
+  rendimiento_adicion_N4_medio: "96.7% (s.d. 0.027); peor bit 91.6%"
+  rendimiento_anneal_1min_adicion: "82.4% (s.d. 0.116)"
+  rendimiento_anneal_1min_global: "81.2% (s.d. 0.16)"
+  escala_temporal_25bit: "aprox. 1 h para caso M=4; 14 h para ejemplo M=5"
+  reutilizacion: "programas renovables; el articulo reporta reutilizacion decenas de veces"
+condiciones_de_prueba: "Experimentos en volumen de 35 uL en placa/tubo PCR de 0.1 mL, 12.5 mM Mg++ en buffer TAE + 0.01% Tween. Annealing desde 80 C a 20 C entre 30 s y 24 h. Lectura por fluorescencia ATTO590 en QuantStudio 5. Resultados promediados sobre al menos dos repeticiones tecnicas."
+requiere_computacion_digital: no
+requiere_alimentacion: parcial
+tipo_de_sensado: "No aplica como sensor; entrada codificada por seleccion/concentracion de strands de ADN. La instrumentacion de laboratorio usa fluorescencia para leer el resultado."
+tipo_de_memoria_o_estado: "Configuracion molecular de strands unidos al scaffold; el estado computacional queda representado espacialmente por tiles y dominios adyacentes."
+tipo_de_adaptacion: "Reequilibrio reversible por union/reemplazo molecular; errores locales son energeticamente penalizados y tienden a ser sustituidos. Reprogramacion/renovacion mediante cambio de strands de entrada."
+tipo_de_actuacion: "Autoensamblaje, desensamblaje y reemplazo molecular; sin actuacion macroscopica."
+madurez_tecnica: "Demostracion experimental de laboratorio, peer-reviewed; arquitectura molecular programable pero no plataforma practica de computo general."
+limitaciones:
+  - "La preparacion y lectura experimental dependen de instrumentacion externa; no es un computador autonomo end-to-end."
+  - "Las instancias escaladas pueden tardar horas; el ejemplo M=5 requirio 14 h."
+  - "El escalado encontro energeticas de scaffold no uniformes: en un N=11 inicial, mismatches de bases mejoraron yield solo de 39% a 57% tras anneal de 8 h."
+  - "No se reporta una comparacion energetica end-to-end frente a computacion digital."
+  - "La demostracion programatica se concentra en FSMs/algoritmos compilables al modelo; no equivale a computacion general de alto rendimiento."
+contradicciones:
+  - "'Termodinamicamente favorecido' no significa energia cero: preparar strands, calentar/enfriar y medir fluorescencia tiene coste; la afirmacion concierne al mecanismo de convergencia/correccion dentro del sistema molecular."
+  - "El paper evita correccion de errores explicita por redundancia en la arquitectura demostrada, pero el propio escalado usa diseno de secuencia y, para Addition, sinks/non-sinks que absorben carries y truncan vias de error; no debe interpretarse como inmunidad universal a errores."
+etiquetas_neutrales:
+  - equilibrium_computing
+  - molecular_computing
+  - DNA
+  - energy_landscape
+  - self_assembly
+  - reversible_binding
+  - finite_state_machine
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
