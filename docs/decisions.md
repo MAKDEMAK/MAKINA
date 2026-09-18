@@ -68,3 +68,10 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Consecuencia:** no hay promoción de madurez. El snapshot final mantiene `physical-state-interface` M3, `embodied-dynamics-computation` M1 y `temporal-in-sensor-processing` M3.
 - **Auditoría:** ciclos con evidencia parcial pero sin marcador común completo no se sintetizan: T05, T06, T08, T12, T14, T20 y T22.
 
+## 2026-09-17 — final F4 execution validation
+- **Decisión:** ejecutar los artefactos M3 existentes antes del cierre definitivo y no promover por mera existencia del código.
+- **Resultado:** 15/16 tests pasan. `physical_state` + `event_state`: 14/14. En temporal, `threshold_event_encoding` obtiene 28.99x reducción, score 1.0 y ~3 ms de error; `latency_fading` obtiene 500x reducción pero score 0.0 y ~44.98 ms de error.
+- **Alternativa rechazada:** promover a M4 por el éxito del sustituto digital o ajustar el test para hacerlo pasar.
+- **Razón:** no existe medición física/hardware y una de las dos variantes temporales falla el criterio definido.
+- **Consecuencia:** madurez final sin cambios: `physical-state-interface` M3, `embodied-dynamics-computation` M1, `temporal-in-sensor-processing` M3. Resultados persistidos en `artifacts/`.
+
