@@ -1,0 +1,62 @@
+id: f2-20260917-2201
+frente: front-2
+cycle_id: 2026-09-17T22
+tema_objeto: "tren de mercancías autopropulsado modular para cargas menores que un tren completo"
+afirmacion_principal: >-
+  HECHO DOCUMENTADO: DB Cargo llevó a servicio experimental el CargoSprinter, una unidad ferroviaria de carga autopropulsada concebida para recoger cargas pequeñas directamente, acoplar varias unidades para el tramo principal y volver a separarlas sin clasificación convencional. La vía técnica funcionó físicamente y prestó servicio, pero DB la retiró tras menos de cinco años; una retrospectiva sectorial contemporánea al cierre atribuyó la retirada principalmente a que los costes de adquisición no alcanzaron el objetivo económico y a que la ventaja de coste de la tracción diésel frente a una locomotora eléctrica fue menor de lo previsto. TESTIMONIO: Hans Wenger, antiguo director de Kombiverkehr, reconstruyó el caso en la historia de UIRR publicada en 2001. INTERPRETACIÓN: corresponde a sustitución/prototipo comercial no escalado, no a fracaso mecánico demostrado; parte de la arquitectura sobrevivió desviada hacia vehículos ferroviarios multipropósito y de servicio.
+nombre_proyecto_o_artefacto: "CargoSprinter (DB clases 690/691)"
+periodo_historico: "1995-2000"
+pais_contexto: "Alemania"
+disciplina: "transporte ferroviario; logística intermodal; mecánica; control distribuido"
+problema_original: >-
+  Hacer económicamente viable el transporte ferroviario rápido de volúmenes inferiores a un tren completo, evitando clasificación y locomotoras sobredimensionadas: unidades pequeñas debían recoger carga en ramales, acoplarse para la línea principal y separarse nuevamente cerca del destino.
+principio_tecnico: >-
+  Unidad de cinco vehículos con tracción diésel bajo piso en los extremos, cabinas propias y capacidad de mando múltiple; hasta siete unidades podían formar temporalmente un tren y ser gobernadas desde una sola cabina, combinando autonomía local con acoplamiento para el recorrido troncal.
+estado_historico: "sustitución; prototipo comercial no escalado; absorción parcial en vehículos de servicio"
+resultado_real_alcanzado: >-
+  HECHO DOCUMENTADO: DB Cargo presentó el sistema como producto operativo en 1997; cada unidad podía transportar hasta diez contenedores/unidades intermodales y hasta siete CargoSprinter podían combinarse. La retrospectiva UIRR registra adquisición por DB Cargo en 1996 y retirada después de menos de cinco años de explotación.
+causa_documentada: >-
+  HECHO DOCUMENTADO/TESTIMONIO RETROSPECTIVO: Wenger/UIRR indica que los costes resultaron demasiado altos para aproximarse al objetivo de coste de cinco camiones y que el ahorro operativo de la tracción diésel frente a una locomotora eléctrica fue menor de lo previsto.
+causas_alternativas:
+  - "La evidencia secundaria describe interrupciones en la conexión ferroviaria durante el segundo año y pérdida de clientes, pero esta causa no queda elevada a hecho principal sin una fuente primaria independiente localizada en este ciclo."
+  - "El modelo dependía de suficiente densidad de cargas pequeñas y de que el ahorro por evitar clasificación compensara duplicar sistemas de tracción y cabinas en unidades reducidas. Esto se conserva como interpretación económica, no como causa documental única."
+camino_que_lo_desplazo_si_existe: >-
+  Para DB, continuaron predominando trenes de carga convencionales/directos y redes intermodales con locomotora. La arquitectura CargoSprinter no desapareció completamente: fuentes históricas posteriores registran su derivación hacia Windhoff MPV, trenes de mantenimiento/rescate y el uso de una unidad como base mecánica del concepto automatizado CargoMover de Siemens.
+fuentes:
+  - url: "https://www.deutschebahn.com/resource/blob/250942/03aef93e5e3d747c30b30a8199b14254/umweltbericht__1997-data.pdf"
+    titulo: "Umweltbericht 1997 — Der CargoSprinter: neue Chance für Gleisanschlüsse der Wirtschaft"
+    tipo: "documento institucional contemporáneo — Deutsche Bahn"
+    fecha: "1997"
+  - url: "https://www.uirr.com/sites/default/files/downloads/UIRR30ans-F-final.pdf"
+    titulo: "L’UIRR a 30 ans — L’histoire du Transport Combiné Rail-Route en Europe, 1970–2000"
+    tipo: "historia sectorial / testimonio retrospectivo de Hans Wenger, editado por UIRR"
+    fecha: "2001"
+  - url: "https://www.europarl.europa.eu/RegData/etudes/STUD/1998/167055/DG-4-TRAN_ET(1998)167055_EN.pdf"
+    titulo: "Deutsche Bahn — Der CargoSprinter"
+    tipo: "estudio institucional contemporáneo — Parlamento Europeo"
+    fecha: "1998"
+nivel_evidencia: A
+datos_cuantitativos:
+  unidades_prototipo: 7
+  vehiculos_por_unidad: 5
+  capacidad_maxima_unidades_intermodales_por_tren: 10
+  maximo_unidades_acoplables: 7
+  velocidad_maxima_kmh: 120
+  periodo_servicio_aproximado: "1997-2000"
+limitaciones: >-
+  No se localizó en este ciclo un informe interno de DB de cierre que detalle la decisión corporativa final; la explicación económica más explícita procede de Wenger/UIRR (2001), actor sectorial con experiencia directa pero retrospectivo.
+contradicciones: >-
+  Algunas reconstrucciones posteriores enfatizan pérdida de clientes por obras en una línea como detonante del fin del servicio; Wenger/UIRR enfatiza costes de adquisición y una ventaja de tracción menor a la prevista. No se fuerza una causa única.
+incertidumbres: >-
+  No queda demostrado que una deficiencia técnica concreta del vehículo causara la retirada. Tampoco debe describirse la idea como extinta: hubo absorción parcial de la plataforma en vehículos multipropósito y conceptos ferroviarios posteriores.
+etiquetas_neutrales:
+  - ferrocarril
+  - carga_intermodal
+  - tren_autopropulsado
+  - modularidad
+  - train_sharing
+  - sustitucion
+  - no_escalado
+  - absorcion_parcial
+fecha_hallazgo: "2026-09-17"
+fecha_revision: "2026-09-17"
