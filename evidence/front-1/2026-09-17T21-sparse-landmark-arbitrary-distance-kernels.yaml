@@ -1,0 +1,38 @@
+id: f1-20260917-2101
+frente: front-1
+cycle_id: 2026-09-17T21
+tema_objeto: kernels PSD para distancias no-Hilbertianas mediante Sparse Landmark Embedding
+afirmacion_principal:
+  hecho: "SLE transforma cada entrada en un vector disperso mediante bump functions de soporte compacto centradas en los puntos de entrenamiento; aplicar después un kernel PSD estándar garantiza una matriz kernel PSD incluso cuando la distancia original no es CND."
+  hipotesis: "Puede ampliar Gaussian Processes y otros métodos kernel a geometrías y distribuciones donde la distancia natural antes requería kernels especializados o correcciones."
+  interpretacion: "La capacidad emergente es desacoplar la validez matemática del kernel de la condición Hilbertiana de la métrica de dominio, conservando incertidumbre probabilística sobre espacios con distancias naturales más generales."
+capacidad_nueva: "Construir kernels PSD con garantías para medidas de distancia arbitrarias, incluidas geodésicas y Wasserstein no-CND, mediante una representación intermedia dispersa."
+mecanismo_o_principio: "Embedding de landmarks de dimensión |D| con funciones bump compactamente soportadas; el soporte compacto induce dispersidad y el kernel PSD aplicado en el espacio embebido hereda positividad semidefinida."
+dominio: [machine-learning, matematicas, gaussian-processes, kernel-methods, uncertainty-quantification]
+fuentes:
+  - url: "https://arxiv.org/abs/2609.19083"
+    titulo: "A General Kernel Framework for Non-CND Distance Measures Using |D|-Dimensional Sparse Landmark Embeddings"
+    tipo: preprint_original
+    fecha: 2026-09-16
+nivel_evidencia: B
+datos_cuantitativos:
+  dimension_embedding: "|D| (un landmark por punto de entrenamiento)"
+  evaluacion_reportada: "experimentos con distancias geodésicas y Wasserstein; el abstract reporta igualar o superar sustancialmente baselines específicos en precisión predictiva y cuantificación de incertidumbre, sin cifra agregada única"
+condiciones_de_prueba: "Validación numérica reportada en el preprint; no hardware ni sistema físico."
+requiere_computacion_digital: si
+requiere_alimentacion: si
+tipo_de_sensado: ninguno
+tipo_de_memoria_o_estado: "representación dispersa dependiente del conjunto de entrenamiento"
+tipo_de_adaptacion: "aprendizaje estadístico/kernel sobre embedding construido desde landmarks"
+tipo_de_actuacion: ninguno
+madurez_tecnica: "preprint con garantías teóricas y experimentos numéricos; sin revisión por pares confirmada"
+limitaciones:
+  - "La dimensión ambiente del embedding crece con el número de datos de entrenamiento |D|, aunque el soporte compacto induce dispersidad."
+  - "La afirmación de tractabilidad depende de esa dispersidad; no implica coste constante al escalar D."
+  - "No hay todavía validación independiente ni revisión por pares confirmada."
+contradicciones:
+  - "No elimina el coste de elegir/calcular una distancia de dominio; elimina la exigencia CND para obtener un kernel PSD válido."
+  - "'Arbitrary distance measures' es una garantía de construcción PSD, no garantía de mejor precisión para cualquier métrica."
+etiquetas_neutrales: [SLE, kernel-PSD, non-CND, sparse-embedding, gaussian-process, geodesic-distance, Wasserstein]
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
