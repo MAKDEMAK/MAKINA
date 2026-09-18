@@ -1,0 +1,55 @@
+status: closed
+closed_at: 2026-09-17T22:19:00-03:00
+latest_common_complete_cycle: 2026-09-17T21
+previous_last_synthesized_cycle: 2026-09-17T19
+final_last_synthesized_cycle: 2026-09-17T21
+protocol:
+  rule: "solo sintetizar ciclos con marcadores complete en front-1, front-2 y front-3"
+  excluded_cycles_without_common_complete_marker:
+    - 2026-09-17T05
+    - 2026-09-17T06
+    - 2026-09-17T08
+    - 2026-09-17T12
+    - 2026-09-17T14
+    - 2026-09-17T20
+    - 2026-09-17T22
+  note: "algunos ciclos excluidos contienen archivos de evidencia subidos; se preservan como evidencia parcial pero no forman parte de la sintesis final"
+final_core:
+  description: "desplazar sensado, estado, memoria y computacion hacia geometria, materiales y dinamica fisica cuando exista evidencia verificable"
+  active_modules:
+    - id: physical-state-interface
+      maturity: M3
+      confidence: 0.95
+      conclusion: "linea mas consolidada; integra transduccion, memoria/estado fisico y lectura externa, pero no alcanzo M4 porque los prototipos del repo no fueron medidos"
+    - id: embodied-dynamics-computation
+      maturity: M1
+      confidence: 0.91
+      conclusion: "reservorios y computacion mediante dinamica fisica tienen evidencia experimental amplia, pero falta benchmark comun end-to-end entre sustratos"
+    - id: temporal-in-sensor-processing
+      maturity: M3
+      confidence: 0.90
+      conclusion: "existe benchmark/prototipo minimo en repo; M4 queda bloqueado por falta de ejecucion y metricas"
+  waiting_modules:
+    - legacy-noninvasive-observability
+    - implicit-analog-solver
+    - spatial-in-sensor-processing
+    - thermodynamic-molecular-computation
+cycle_21:
+  front_1:
+    evidence_id: f1-20260917-2101
+    disposition: archived
+    reason: "capacidad matematica real, sin relacion funcional defendible con el nucleo fisico actual"
+  front_2:
+    evidence_id: f2-20260917-2101
+    disposition: deduplicated
+    target: air-cushion-transport
+  front_3:
+    evidence_id: f3-20260917-2101
+    disposition: waiting_module
+    target: legacy-noninvasive-observability
+final_assessment:
+  maturity_change: none
+  new_prototype: false
+  strongest_convergence: "physical-state-interface"
+  principal_blocker: "falta de ejecucion y medicion de los prototipos M3 existentes"
+  research_automations: disabled
