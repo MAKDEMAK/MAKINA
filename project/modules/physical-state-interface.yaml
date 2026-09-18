@@ -21,9 +21,12 @@ success_criterion: >-
 prototype:
   implementation: src/physical_state.py
   tests: tests/test_physical_state.py
-  status: created_not_executed
+  status: executed_digital_surrogate
   scope: "sustituto digital del contrato transduccion -> cuantizacion multestable -> FSM; no representa integracion fisica demostrada"
-next_action: "Ejecutar y medir el prototipo; despues parametrizarlo con una curva experimental real de F3 antes de especificar hardware."
+validation:
+  pytest: "14/14 tests de physical_state + event_state pasaron"
+  scope: "validacion del sustituto digital; no medicion de hardware"
+next_action: "Mantener M3. Parametrizar con curva experimental real y medir un mecanismo fisico antes de M4."
 limitations:
   - "No existe aun evidencia de integracion fisica entre los sensores F3 y los mecanismos F1."
   - "La arquitectura es una inferencia de diseño; no una causalidad demostrada."
