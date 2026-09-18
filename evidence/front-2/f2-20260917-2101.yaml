@@ -1,0 +1,91 @@
+id: f2-20260917-2101
+frente: front-2
+cycle_id: 2026-09-17T21
+tema_objeto: transporte guiado sobre colchón de aire
+nombre_proyecto_o_artefacto: TALAV (Trem Aerodinâmico Leve de Alta Velocidade)
+periodo_historico: 1970-1973
+pais_contexto: Brasil
+disciplina:
+  - ingeniería de transporte
+  - mecánica
+  - aerodeslizamiento
+  - infraestructura guiada
+afirmacion_principal:
+  hecho_documentado: >-
+    La FEI desarrolló en 1972 un prototipo a escala real de un vehículo guiado de alta velocidad que sustentaba el vehículo mediante colchón de aire sobre una vía dedicada. El prototipo fue concebido para 20 pasajeros, con estructura ligera de aluminio y fibra de vidrio, y fue exhibido públicamente en Brasil Export 72; la etapa siguiente exigía construir una pista de pruebas, que no se concretó.
+  testimonio: >-
+    Fuentes retrospectivas vinculadas a la historia de FEI atribuyen la interrupción de la siguiente etapa a una combinación de necesidad de nuevo financiamiento, crisis del petróleo de 1973 y transición del gobierno Médici al gobierno Geisel.
+  interpretacion: >-
+    El TALAV constituye un prototipo no escalado de transporte guiado por colchón de aire. La evidencia disponible permite documentar la existencia física del vehículo y la interrupción antes de una infraestructura de prueba completa, pero no demuestra que el principio técnico fuera inviable.
+problema_original: >-
+  Crear transporte intermunicipal de alta velocidad mediante vehículos ligeros capaces de desplazarse sobre vías exclusivas con baja fricción y con configuraciones modulares para pasajeros o carga.
+principio_tecnico: >-
+  Sustentación por colchón de aire en canaleta/vía guiada dedicada, reduciendo el contacto mecánico; propulsión aerodinámica prevista mediante hélice, turbohélice o reacción. El diseño separaba el chasis de sustentación del módulo superior de pasajeros/carga.
+estado_historico:
+  clasificacion:
+    - prototipo no escalado
+    - abandono
+  detalle: >-
+    Se construyó un prototipo de escala real y se mostró públicamente, pero la pista de pruebas necesaria para validar y desarrollar el sistema como transporte implantable no llegó a construirse.
+resultado_real_alcanzado: >-
+  Prototipo físico a escala real para 20 pasajeros, de aproximadamente 15.6 m y unas 6 t cargado según reconstrucciones históricas; presentado en Brasil Export 72 y nuevamente asociado a Brasil Export 73. Existieron además estudios/prototipos menores previos relacionados con sustentación y propulsión.
+causa_documentada: >-
+  La historia institucional de FEI señala que para avanzar a producción/implantación era necesaria una pista de pruebas; la etapa no se concretó por necesidad de financiamiento, crisis del petróleo de 1973 y transición política entre los gobiernos Médici y Geisel.
+causas_alternativas:
+  - >-
+    La infraestructura exclusiva era una barrera estructural: la propia historia institucional señala que la complejidad del Sistema Delta y la exigencia de vías exclusivas dificultaban su implantación en ciudades existentes.
+  - >-
+    Una fuente histórica secundaria afirma simplemente falta de nuevos financiamientos; esto es compatible con la historia institucional, pero no permite aislar una sola causa decisiva.
+camino_que_lo_desplazo_si_existe: >-
+  No se documenta en las fuentes consultadas un único sistema sucesor que sustituyera directamente al TALAV. La línea brasileña específica no escaló a red comercial; no debe equipararse automáticamente su abandono con una victoria técnica de ferrocarril convencional o maglev.
+fuentes:
+  - url: https://gerenciador.fei.edu.br/Content/Arquivos/Template/junho2017/Themes/Resources/docs/ppcs/civil_ppc.pdf
+    titulo: Projeto Pedagógico do Curso de Engenharia Civil — histórico do projeto TALAV
+    tipo: documento institucional retrospectivo
+    fecha: 2018
+  - url: https://portal.fei.edu.br/noticia/1731/semana-do-automovel-conheca-alguns-dos-projetos-historicos-que-marcaram-o-desenvolvimento-automobilistico-da-fei
+    titulo: Semana do Automóvel — projetos históricos da FEI
+    tipo: archivo institucional retrospectivo
+    fecha: 2024
+  - url: https://journals.eco-vector.com/transsyst/article/view/10993/0
+    titulo: 'Air Cushion Vehicle (ACV): History Development and Maglev Comparison'
+    tipo: artículo histórico-técnico
+    fecha: 2019
+  - url: https://tede2.pucsp.br/handle/handle/13375
+    titulo: 'A Faculdade de Engenharia Industrial: fundação, desenvolvimento e contribuições para a sociedade na formação de recursos humanos e tecnologia (1946-1985)'
+    tipo: tesis histórica
+    fecha: 2008
+  - url: https://www.lexicarbrasil.com.br/fei/
+    titulo: FEI — Lexicar Brasil
+    tipo: historia técnica secundaria
+    fecha: 2014
+nivel_evidencia: B
+datos_cuantitativos:
+  capacidad_prototipo: 20 pasajeros
+  longitud_aproximada: 15.6 m
+  masa_total_cargado_reportada: 6 t
+  velocidad_objetivo_reportada: hasta 200 km/h
+  propulsion_prototipo_reportada: dos turbinas Turbomeca Marboré de 480 kgf
+  sustentacion_auxiliar_reportada: motor Ford Corcel de 60 cv
+limitaciones:
+  - No se localizó en este ciclo un informe contemporáneo completo de ensayos instrumentados del TALAV a escala real.
+  - Varias cifras técnicas provienen de reconstrucciones históricas posteriores, no de una ficha de ingeniería contemporánea recuperada directamente.
+contradicciones:
+  - >-
+    Lexicar Brasil afirma que TALAV no llegó a ser probado en condiciones reales por falta de nuevo financiamiento, mientras una publicación histórica secundaria sobre el Uirapuru/TALAV afirma una demostración experimental de 40 km. Sin documentación contemporánea del supuesto recorrido, no se toma ese dato como hecho establecido.
+  - >-
+    Algunas fuentes describen dos turbinas a reacción instaladas y otras caracterizan el vehículo de forma más general como impulsado por hélice; puede reflejar variantes de diseño/exhibición y requiere documentación primaria para resolverlo.
+incertidumbres:
+  - Alcance exacto de las pruebas dinámicas efectuadas con el prototipo grande antes de la cancelación.
+  - Peso relativo de financiamiento, crisis energética y cambio de gobierno en la decisión final.
+  - Configuración propulsiva efectivamente operativa durante las demostraciones públicas.
+etiquetas_neutrales:
+  - transporte guiado
+  - colchón de aire
+  - aerodeslizador
+  - infraestructura dedicada
+  - Brasil
+  - década de 1970
+  - prototipo no escalado
+fecha_hallazgo: 2026-09-17
+fecha_revision: 2026-09-17
