@@ -1,0 +1,18 @@
+{
+  "status": "executed_with_partial_failure",
+  "scope": "final F4 validation of existing M3 digital artifacts",
+  "results": {
+    "pytest_total": 16,
+    "pytest_passed": 15,
+    "pytest_failed": 1,
+    "physical_state_and_event_state_tests": "14/14 passed",
+    "temporal_tests": "1/2 passed",
+    "benchmark_exit_status": "success"
+  },
+  "decision": {
+    "physical-state-interface": "remain M3",
+    "temporal-in-sensor-processing": "remain M3",
+    "embodied-dynamics-computation": "remain M1"
+  },
+  "reason": "Digital surrogate execution is real validation, but it is not physical measurement; additionally latency_fading fails the event-score criterion."
+}
