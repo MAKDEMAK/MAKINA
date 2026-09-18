@@ -1,0 +1,39 @@
+{
+  "emulation": true,
+  "hardware_energy_measured": false,
+  "pytest": {
+    "total": 16,
+    "passed": 15,
+    "failed": 1,
+    "failed_test": "tests/test_temporal_benchmark.py::test_event_detection_is_nonzero"
+  },
+  "rows": [
+    {
+      "variant": "conventional_uniform_sampling",
+      "transferred_items": 2000,
+      "reduction_x": 1.0,
+      "event_score": 1.0,
+      "temporal_error_ms": 0.0,
+      "energy_status": "not_measured"
+    },
+    {
+      "variant": "threshold_event_encoding",
+      "transferred_items": 69,
+      "reduction_x": 28.985507246376812,
+      "event_score": 1.0,
+      "temporal_error_ms": 2.999999999999947,
+      "meets_digital_success_criterion": true,
+      "energy_status": "not_measured"
+    },
+    {
+      "variant": "latency_encoding_with_fading_state",
+      "transferred_items": 4,
+      "reduction_x": 500.0,
+      "event_score": 0.0,
+      "temporal_error_ms": 44.97617182702,
+      "meets_digital_success_criterion": false,
+      "energy_status": "not_measured"
+    }
+  ],
+  "epistemic_limit": "Digital emulation only; no physical hardware energy, sensor-chain accuracy, or end-to-end physical measurement."
+}
