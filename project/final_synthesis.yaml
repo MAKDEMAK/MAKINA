@@ -28,7 +28,7 @@ final_core:
     - id: temporal-in-sensor-processing
       maturity: M3
       confidence: 0.90
-      conclusion: "existe benchmark/prototipo minimo en repo; M4 queda bloqueado por falta de ejecucion y metricas"
+      conclusion: "benchmark ejecutado: threshold encoding cumple el criterio digital, latency_fading falla; M4 queda bloqueado por falta de medicion fisica/hardware"
   waiting_modules:
     - legacy-noninvasive-observability
     - implicit-analog-solver
