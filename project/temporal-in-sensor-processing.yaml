@@ -18,7 +18,7 @@ success_criterion: "Sobre una misma señal y tarea, una cadena física/analógic
 prototype:
   implementation: src/temporal_benchmark.py
   tests: tests/test_temporal_benchmark.py
-  status: created_not_executed
+  status: executed_with_partial_failure
   variants: [conventional_uniform_sampling, threshold_event_encoding, latency_encoding_with_fading_state]
   expected_outputs: [artifacts/temporal-benchmark/metrics.json, artifacts/temporal-benchmark/event_stream.jsonl, artifacts/temporal-benchmark/comparison.csv]
   epistemic_limit: "Emulación digital del principio; no demuestra energía, latencia ni precisión de hardware físico."
@@ -26,4 +26,9 @@ constraints:
   - "No asumir que self-powered elimina energía de instrumentación o lectura."
   - "Separar evidencia experimental de emulación digital del mecanismo."
   - "No equiparar clasificación con precisión metrológica."
-next_action: "Ejecutar tests y benchmark; registrar métricas producidas. No promover a M4 hasta ejecución/medición."
+execution_results:
+  pytest: "1/2 temporal tests passed; latency_fading event detection failed"
+  threshold_event_encoding: "69 items; 28.99x reduction; event_score 1.0; temporal_error ~3 ms"
+  latency_encoding_with_fading_state: "4 items; 500x reduction; event_score 0.0; temporal_error ~44.98 ms"
+  artifacts: [artifacts/temporal-benchmark/metrics.json, artifacts/temporal-benchmark/comparison.csv]
+next_action: "Mantener M3. Corregir o descartar latency_fading y repetir sobre una cadena fisica/analogica real; medir energia/periferia antes de considerar M4."
