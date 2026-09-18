@@ -1,0 +1,4 @@
+variant,transferred_items,reduction_x,event_score,temporal_error_ms,meets_digital_success_criterion,energy_status
+conventional_uniform_sampling,2000,1.0,1.0,0.0,reference,not_measured
+threshold_event_encoding,69,28.985507246376812,1.0,2.999999999999947,true,not_measured
+latency_encoding_with_fading_state,4,500.0,0.0,44.97617182702,false,not_measured
