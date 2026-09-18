@@ -59,3 +59,12 @@ Registro breve de decisiones de síntesis y desarrollo.
 - **Alternativa rechazada:** abrir un modulo iontronico independiente o promover memoria espacial de presion como cuarto modulo.
 - **Razón:** F1 aporta estado/plasticidad material multiescala por transporte ionico y F3 aporta transduccion+memoria espacial mecano-quimica; ambos amplian el mismo patron funcional de estado fisico ya activo. Aerotrain ya estaba representado y sigue sin traduccion funcional al nucleo.
 - **Consecuencia:** no M4; medir los artefactos M3 existentes sigue teniendo mayor valor de informacion que crear otro prototipo.
+
+## 2026-09-17 — cycle 21 final consolidation
+- **Decisión:** cerrar la síntesis en el último ciclo común completo, `2026-09-17T21`, y cerrar la investigación MAKINA.
+- **Evidencia:** `f1-20260917-2101`, `f2-20260917-2101`, `f3-20260917-2101`.
+- **Integración:** `f3-20260917-2101` se suma a `legacy-noninvasive-observability`; `f2-20260917-2101` se deduplica en `air-cushion-transport`; `f1-20260917-2101` queda archivado como `non-hilbertian-kernel-methods` por ausencia de traducción funcional defendible al núcleo físico.
+- **Alternativa rechazada:** abrir un cuarto módulo activo o forzar una relación entre kernels no-CND y los módulos físicos existentes.
+- **Consecuencia:** no hay promoción de madurez. El snapshot final mantiene `physical-state-interface` M3, `embodied-dynamics-computation` M1 y `temporal-in-sensor-processing` M3.
+- **Auditoría:** ciclos con evidencia parcial pero sin marcador común completo no se sintetizan: T05, T06, T08, T12, T14, T20 y T22.
+
