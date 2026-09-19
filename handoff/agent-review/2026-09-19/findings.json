@@ -1,0 +1,83 @@
+{
+  "schema": "makina-agent-findings-v1",
+  "findings": [
+    {
+      "id": "xio-canonical-repo",
+      "status": "verified",
+      "claim": "XIO tiene repo propio activo y su rama por defecto es xio-router.",
+      "evidence": [
+        "GitHub repository metadata: ligereza/XIO",
+        "default_branch=xio-router",
+        "connector permissions: pull=true, push=false"
+      ],
+      "consequence": "No desarrollar una segunda autoridad XIO dentro de MAKINA."
+    },
+    {
+      "id": "xio-vision-existing",
+      "status": "verified",
+      "claim": "XIO ya contiene una base Android de visión en xio/vision/android.",
+      "evidence": [
+        "ligereza/XIO:xio/vision/android"
+      ],
+      "consequence": "El problema útil es conectar/adaptar capacidades existentes, no inventar una nueva app visual desde cero."
+    },
+    {
+      "id": "xio-optical-automap-existing",
+      "status": "verified",
+      "claim": "XIO ya tiene automapping óptico off-device con Hadamard y test sintético.",
+      "evidence": [
+        "ligereza/XIO:xio/new-plugins/showcontrol/automap.py",
+        "ligereza/XIO:xio/new-plugins/showcontrol/test_automap.py"
+      ],
+      "consequence": "Adaptive sampling debe complementar observaciones opcionales; no debe omitir frames obligatorios de una secuencia de calibración Hadamard."
+    },
+    {
+      "id": "maxine-xio-prototype",
+      "status": "verified_artifact_not_physical",
+      "claim": "MAKINA ya contiene un prototipo MAXINE→XIO de adaptive sampling.",
+      "evidence": [
+        "MAKDEMAK/MAKINA:integrations/xio-maxine/adaptive_sampling_baseline.py"
+      ],
+      "consequence": "Revisar, portar o descartar por duplicación; no seguir desarrollando dos copias operativas."
+    },
+    {
+      "id": "maxine-equal-budget-criterion",
+      "status": "derived_from_closed_spec",
+      "claim": "La integración útil debe comparar política adaptativa vs uniforme bajo el mismo presupuesto y proteger métricas con tolerancias explícitas.",
+      "evidence": [
+        "MAKDEMAK/MAXINE:project/modules/adaptive-visual-sampling/spec.yaml"
+      ],
+      "consequence": "El candidato en esta carpeta implementa ese gate sin inventar tolerancias."
+    },
+    {
+      "id": "azure-language-storage",
+      "status": "verified_in_vibecodeine_docs",
+      "claim": "Azure conserva usos acotados documentados: Language NER opcional y Storage privado para backup.",
+      "evidence": [
+        "ligereza/vibecodeine:docs/AZURE_MAK_TEMPORAL.md",
+        "ligereza/vibecodeine:cultura/mak_curatoria/triangular.py"
+      ],
+      "consequence": "No tratar Azure como integración inexistente ni como plano central obligatorio."
+    },
+    {
+      "id": "azure-research-llm-retired",
+      "status": "verified_in_tests",
+      "claim": "Azure está retirado del roster LLM de Research aunque exista RESEARCH_AZURE_ENABLED=1.",
+      "evidence": [
+        "ligereza/vibecodeine:tests/test_mak_mirror_fixes.py::test_azure_is_retired_even_if_old_flag_exists",
+        "assert llm.order == ['cerebras','gemini'] when input includes azure"
+      ],
+      "consequence": "No reintroducir Azure Foundry al routing por defecto sin benchmark explícito."
+    },
+    {
+      "id": "mak-runtime-needs-measurement-not-more-inventory",
+      "status": "supported",
+      "claim": "VIBECODEINE ya conserva mapas de autoridad/runtime, mak_status y diagnósticos; el siguiente valor está en medir el MAK vivo, no repetir inventario general.",
+      "evidence": [
+        "ligereza/vibecodeine:tools/mak_status.py",
+        "documentación de estado/autoridad en VIBECODEINE"
+      ],
+      "consequence": "Cuando exista acceso a MAK, usar diagnósticos existentes y resolver discrepancias observadas."
+    }
+  ]
+}

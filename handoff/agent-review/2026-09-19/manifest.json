@@ -1,0 +1,40 @@
+{
+  "schema": "makina-agent-handoff-v1",
+  "created_at": "2026-09-19T20:22:00-03:00",
+  "purpose": "Material de cierre para que un agente posterior decida qué información o artefactos vale la pena integrar. Nada en esta carpeta debe interpretarse como integración aprobada por defecto.",
+  "repository": "MAKDEMAK/MAKINA",
+  "repository_role": "memoria experimental y arquitectónica; no autoridad operativa de XIO, FLUJO o MAK vivo",
+  "automations": {
+    "active_count": 0,
+    "stopped": [
+      "MAK Runtime Architect",
+      "VIBECODEINE Azure ML Integrator",
+      "XIO MAXINE Edge Vision",
+      "Director Creativo MAK",
+      "MEJORA de Agentes",
+      "F1 Frontier Capabilities",
+      "F2 Technical Archaeology",
+      "F3 Physical Information Layer",
+      "F4 Synthesis Build"
+    ]
+  },
+  "review_rules": [
+    "Verificar contra repos fuente antes de integrar.",
+    "Priorizar reutilización/adaptación sobre reconstrucción.",
+    "Distinguir propuesta, artefacto off-device, build, despliegue y prueba física.",
+    "No reabrir estados históricos cerrados de MAKINA/MAXINE para hacer staging operativo.",
+    "Un hallazgo puede ser valioso sin convertirse en código."
+  ],
+  "key_correction": {
+    "xio_authority": "ligereza/XIO",
+    "xio_default_branch": "xio-router",
+    "connector_permission": "pull=true, push=false",
+    "implication": "La copia XIO dentro de VIBECODEINE sirve como integración/proyección, pero la autoridad actual de desarrollo XIO es ligereza/XIO."
+  },
+  "paths": {
+    "findings": "handoff/agent-review/2026-09-19/findings.json",
+    "review_queue": "handoff/agent-review/2026-09-19/review_queue.json",
+    "constraints": "handoff/agent-review/2026-09-19/constraints_and_alternatives.json",
+    "xio_candidate": "handoff/agent-review/2026-09-19/candidates/xio_maxine/"
+  }
+}

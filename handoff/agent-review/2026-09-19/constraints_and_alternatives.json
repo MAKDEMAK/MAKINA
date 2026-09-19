@@ -1,0 +1,60 @@
+{
+  "schema": "makina-constraints-alternatives-v1",
+  "constraints": [
+    {
+      "id": "xio-github-write",
+      "observed": "La conexión actual confirma pull=true y push=false para ligereza/XIO.",
+      "impact": "No se puede persistir directamente el candidato en XIO desde esta conexión.",
+      "alternatives": [
+        "Aplicar/portar el candidato desde una sesión con push a ligereza/XIO.",
+        "Usar los archivos conservados en este handoff como fuente de revisión.",
+        "Solicitar/ampliar permisos sólo si realmente se decide integrar."
+      ]
+    },
+    {
+      "id": "ligereza-write-inconsistency",
+      "observed": "Durante el cierre, operaciones de escritura hacia repos ligereza devolvieron 403 Resource not accessible by integration; metadatos previos de VIBECODEINE habían sugerido push.",
+      "impact": "No asumir permiso de escritura por metadatos históricos.",
+      "alternatives": [
+        "Reprobar permiso con una operación segura antes de planificar persistencia.",
+        "Preparar artefactos en MAKINA como handoff sin afirmar integración."
+      ]
+    },
+    {
+      "id": "android-build-local",
+      "observed": "Existe precedente en ligereza/XIO para compilar APK por GitHub Actions cuando la PC local no tiene Java/Android SDK.",
+      "evidence": "ligereza/XIO:.github/workflows/build-xio-apk.yml",
+      "alternative": "El candidato build_xio_vision_apk.yml replica el patrón para xio/vision/android. Está preparado, no ejecutado."
+    },
+    {
+      "id": "xiaomi-physical-access",
+      "observed": "El cierre no tuvo acceso físico/ADB al Xiaomi.",
+      "impact": "No hay validación física de cámara, rendimiento, energía ni instalación.",
+      "alternatives": [
+        "Validar off-device primero.",
+        "Construir APK por CI.",
+        "Instalar/probar en Xiaomi cuando haya ADB.",
+        "Registrar por separado prueba física vs simulación."
+      ]
+    },
+    {
+      "id": "mak-runtime-access",
+      "observed": "El chat no tiene el runtime vivo de MAK.",
+      "impact": "No puede declarar salud real de servicios sólo leyendo el repo.",
+      "alternatives": [
+        "Usar herramientas de diagnóstico ya existentes cuando MAK esté accesible.",
+        "No crear otro inventario como sustituto de la medición."
+      ]
+    },
+    {
+      "id": "flujo-read-only",
+      "observed": "FLUJO upstream es read-only desde esta conexión.",
+      "impact": "No empujar cambios upstream directamente.",
+      "alternatives": [
+        "Preparar adapters/patches en la capa que sí sea escribible.",
+        "Aplicar upstream desde una sesión autorizada.",
+        "No crear un segundo FLUJO como workaround."
+      ]
+    }
+  ]
+}

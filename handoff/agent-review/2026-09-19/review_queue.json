@@ -1,0 +1,57 @@
+{
+  "schema": "makina-review-queue-v1",
+  "instruction": "Revisar cada candidato de forma independiente. La prioridad indica utilidad esperada para revisión, no aprobación.",
+  "candidates": [
+    {
+      "id": "xio-maxine-adaptive-observation",
+      "priority": "high",
+      "source_paths": [
+        "handoff/agent-review/2026-09-19/candidates/xio_maxine/adaptive_sampling.py",
+        "handoff/agent-review/2026-09-19/candidates/xio_maxine/test_adaptive_sampling.py",
+        "handoff/agent-review/2026-09-19/candidates/xio_maxine/build_xio_vision_apk.yml",
+        "handoff/agent-review/2026-09-19/candidates/xio_maxine/validation.json"
+      ],
+      "target_candidate": "ligereza/XIO",
+      "decision_options": [
+        "integrate",
+        "adapt",
+        "split",
+        "discard_as_duplicate"
+      ],
+      "questions": [
+        "¿La política aporta algo que XIO Vision no haga ya?",
+        "¿Debe operar antes de captura, sobre ROIs, sobre retención de frames o como presupuesto posterior?",
+        "¿Cómo se conectaría sin interferir con automap/Hadamard?",
+        "¿Qué métricas y tolerancias reales deben protegerse en Xiaomi?"
+      ]
+    },
+    {
+      "id": "azure-benchmark-only-if-needed",
+      "priority": "medium",
+      "decision_options": [
+        "leave_retired",
+        "benchmark_foundry",
+        "reuse_language_or_storage_only"
+      ],
+      "questions": [
+        "¿Existe una tarea creativa/productiva concreta donde la cadena actual falle?",
+        "¿Azure mejora calidad, latencia, coste, disponibilidad o privacidad frente a la cadena vigente?",
+        "¿La mejora justifica reintroducir complejidad?"
+      ]
+    },
+    {
+      "id": "mak-runtime-ground-truth",
+      "priority": "high_when_machine_access_exists",
+      "decision_options": [
+        "measure_then_fix",
+        "no_change_if_healthy"
+      ],
+      "commands_to_reverify_on_mak": [
+        "python3 tools/mak_status.py --db data/mak_knowledge.db",
+        "python3 -m flujo doctor",
+        "python3 -m flujo verify"
+      ],
+      "constraint": "Estos comandos no fueron ejecutados desde el entorno de cierre; no inferir estado físico actual sólo desde Git."
+    }
+  ]
+}

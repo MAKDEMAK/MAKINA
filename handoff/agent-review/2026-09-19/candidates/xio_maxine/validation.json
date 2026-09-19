@@ -1,0 +1,21 @@
+{
+  "schema": "xio-maxine-candidate-validation-v1",
+  "validation_scope": "off-device only",
+  "adaptive_sampling_tests": {
+    "command": "python -m pytest -q test_adaptive_sampling.py",
+    "result": "5 passed",
+    "duration_seconds": 0.04
+  },
+  "workflow": {
+    "status": "prepared_not_executed",
+    "basis": "Pattern copied from ligereza/XIO:.github/workflows/build-xio-apk.yml and exact pinned action SHAs verified there.",
+    "target_working_directory": "xio/vision/android"
+  },
+  "physical_validation": {
+    "xiaomi": false,
+    "adb": false,
+    "camera_runtime": false,
+    "apk_installation": false
+  },
+  "epistemic_limit": "Passing off-device tests does not prove camera behavior, APK build success, Xiaomi installation, latency, energy or field robustness."
+}
